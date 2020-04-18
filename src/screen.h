@@ -17,7 +17,7 @@ extern unsigned int MainRGBPalette[256];
 extern unsigned int CtrlRGBPalette[16];
 extern int fe2_bgcol;
 
-extern SDL_Surface *sdlscrn;
+extern SDL_Window *sdlscrn;
 extern BOOL bGrabMouse;
 extern BOOL bInFullScreen;
 enum RENDERERS {

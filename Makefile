@@ -1,5 +1,5 @@
 export CFLAGS = -O2 -g -Wall -DOGG_MUSIC
-export LIBS = -lGL -lGLU -lvorbisfile -lvorbis -logg
+export LIBS = -framework OpenGL -lvorbisfile -lvorbis -logg
 export FE2OBJS = ../fe2.part1.o ../fe2.part2.o
 
 THIS=Makefile
@@ -7,7 +7,7 @@ VERSION=20060623
 
 default:
 	$(MAKE) -C as68k/
-	$(MAKE) -f $(THIS) fe2obj
+	$(MAKE) -f $(THIS) fe2.s.bin
 	$(MAKE) -C src/
 
 fe2clean:
@@ -19,10 +19,10 @@ fe2clean:
 
 fe2:
 	$(MAKE) -f $(THIS) fe2clean
-	$(MAKE) -f $(THIS) fe2obj
+	$(MAKE) -f $(THIS) fe2.s.bin
 	$(MAKE) -C src/
 
-fe2obj:
+fe2.s.bin: fe2.s
 	as68k/as68k --output-c fe2.s
 	# this bit can be optimised because it is lots of small functions
 	$(CC) -DPART1 -O1 -fomit-frame-pointer -Wall -Wno-unused -s `sdl-config --cflags` -c fe2.s.c -o fe2.part1.o
@@ -79,4 +79,3 @@ audio-dist:
 	cp music/* frontvm-audio-$(VERSION)/music
 	tar cvjf frontvm-audio-$(VERSION).tar.bz2 frontvm-audio-$(VERSION)
 	rm -rf frontvm-audio-$(VERSION)
-

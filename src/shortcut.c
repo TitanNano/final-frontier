@@ -104,13 +104,11 @@ void ShortCut_MouseMode(void)
   {
     if(bGrabMouse)
     {
-      SDL_WM_GrabInput(SDL_GRAB_ON);
+      SDL_SetRelativeMouseMode(SDL_TRUE);
     }
     else
     {
-      SDL_WM_GrabInput(SDL_GRAB_OFF);
+      SDL_SetRelativeMouseMode(SDL_FALSE);
     }
   }
 }
-
-

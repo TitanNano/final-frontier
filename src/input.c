@@ -14,7 +14,7 @@ void Call_GetMouseInput ()
 {
 	short *mouse_mov, *mouse_abs;
 	unsigned long params;
-	
+
 	params = GetReg (REG_A7);
 	params -= SIZE_WORD;
 	/* Pointer passed to struct:
@@ -31,20 +31,20 @@ void Call_GetMouseInput ()
 			//printf ("That fucking input bug! %d,%d\n", input.motion_x, input.motion_y);
 			input.motion_x = input.motion_y = 0;
 	}
-	
+
 	mouse_mov[0] = SDL_SwapBE16 (SDL_SwapBE16 (mouse_mov[0]) + input.motion_x);
 	mouse_mov[1] = SDL_SwapBE16 (SDL_SwapBE16 (mouse_mov[1]) + input.motion_y);
-	
+
 	mouse_abs[0] = SDL_SwapBE16 (320*input.abs_x/screen_w);
 	mouse_abs[1] = SDL_SwapBE16 (200*input.abs_y/screen_h);
-	
+
 	//if (input.mbuf_head != input.mbuf_tail) {
 	//	mouse_mov[2] = SDL_SwapBE16 (0xf8 | input.mousebut_buf [input.mbuf_head++]);
 	//	input.mbuf_head %= SIZE_KEYBUF;
 	//} else {
 		mouse_mov[2] = SDL_SwapBE16 (0xf8 | input.cur_mousebut_state);
 	//}
-	
+
 	input.motion_x = input.motion_y = 0;
 }
 
@@ -83,9 +83,9 @@ static void do_mouse_grab ()
 {
 	/* grab mouse on right-button hold for correct controls */
 	if (input.cur_mousebut_state & 0x1) {
-		SDL_WM_GrabInput (SDL_GRAB_ON);
+		SDL_SetRelativeMouseMode(SDL_TRUE);
 	} else {
-		SDL_WM_GrabInput (SDL_GRAB_OFF);
+		SDL_SetRelativeMouseMode(SDL_FALSE);
 	}
 }
 
@@ -97,7 +97,7 @@ void Input_MousePress (int button)
 		return;
 	}
 	do_mouse_grab ();
-	
+
 	input.mousebut_buf [input.mbuf_tail++] = input.cur_mousebut_state;
 	input.mbuf_tail %= SIZE_MOUSEBUF;
 }
@@ -112,4 +112,3 @@ void Input_MouseRelease (int button)
 
 	do_mouse_grab ();
 }
-

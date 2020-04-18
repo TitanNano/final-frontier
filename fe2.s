@@ -4877,7 +4877,7 @@ L1afae:
 		dc.b	$17,$0,$a3,$b,$1,$0,$1,$1,$0,$5d,$5d,$1,$17,$46,$5d,$ff
 		dc.b	$e6,$10,$4,$1,$2,$3,$0,$0,$0,$0,$b,$24,$9e,$fe,$e2,$4
 		dc.b	$6,$fe,$e2,$8,$9,$0,$0,$16,$54
-		
+
 L2af80_gamedata2:
 L2af80:
 		dc.w	l2b160-L2af80
@@ -5214,7 +5214,7 @@ L2af80:
 		dc.b	$1,$0,$6,$6,$ff,$c6,$10,$78,$cc,$c,$0,$2,$4,$6,$8,$a
 		dc.b	$c,$e,$7f,$7f,$10,$98,$ff,$7,$0,$10,$7f,$7f,$0,$0,$0,$8
 		dc.b	$0,$9,$0,$a,$0,$b,$0,$0,$0,$0
-		
+
 L2c5de_sine_table:
 		dc.b	$0,$0,$0,$32,$0,$64,$0,$96,$0,$c9,$0,$fb,$1,$2d,$1,$5f
 		dc.b	$1,$92,$1,$c4,$1,$f6,$2,$28,$2,$5b,$2,$8d,$2,$bf,$2,$f1
@@ -5560,7 +5560,7 @@ L2ecc2_MakePalette:
 		lea	L5dae_dyn_cols,a0
 		lea	L2dc48_col_indices(pc),a2
 		move.w	(a0),d0
-		
+
 		subq.w	#8,d0
 		bmi.s	l2ec80
 		moveq	#0,d1
@@ -5597,12 +5597,12 @@ L2eef8:
 		move.w	d1,(a3)+
 		dbra	d0,l2ef66
 		movea.l	(a7)+,a5
-		
+
 		rts
 
 line_draw_col:
 		dc.w	0
-		
+
 		* ($ffc8 in table)
 :		move.w	line_draw_col(pc),-(a7)
 		hcall	#Call_FillLine
@@ -8294,7 +8294,7 @@ L36742_32BitDotProduct:
 		bpl.s	l3674e
 		neg.l	d3
 		move.l	d3,d0
-	l3674e:	
+	l3674e:
 		swap	d3
 		mulu	d3,d0
 		add.l	d0,d0
@@ -8303,7 +8303,7 @@ L36742_32BitDotProduct:
 		mulu	d3,d3
 		* d3.l = high 32 bits of 64-bit result (x*x)
 		add.l	d0,d3
-		
+
 		move.l	d4,d0
 		bpl.s	l36764
 		neg.l	d4
@@ -8316,7 +8316,7 @@ L36742_32BitDotProduct:
 		mulu	d4,d4
 		* d4.l = high 32 bits of 64-bit result (y*y)
 		add.l	d0,d4
-		
+
 		move.l	d5,d0
 		bpl.s	l3677a
 		neg.l	d5
@@ -9743,7 +9743,7 @@ L38150_TubeEndShit:
 * This is squished to the sin table's 4096 = 360 degrees. (2 bytes per value)
 * Vectors v1 (in a0), v2 (in a1) are perpendicular. This fucking function
 * rotates them about the 3rd perpendicular thingy in 3dness.
-* 
+*
 * Does: v1' =  v2*sin(ang) + v1*cos(ang)
 *       v2' = -v1*sin(ang) + v2*cos(ang)
 
@@ -9880,7 +9880,7 @@ L385ea_Clear3DView:
 		move.w	#$3c,L5eae
 		move.w	L9d3a,L9cd6_main_pal1_col14
 		move.w	L9d3a,L9cf6_main_pal2_col14
-		
+
 		hcall	#Nu_3DViewInit
 		rts
 
@@ -9917,7 +9917,7 @@ L3866e_Draw3DView:
 		move.w	12(a0),d0
 		jsr	L386ce(pc,d0.w)
 		bra.s	l3868c
-		
+
 :		movea.w	(a0)+,a1
 		move.l	a0,L385e0_3dview_thing3
 		lea	L5dae_dyn_cols,a0
@@ -9941,7 +9941,7 @@ L386ce:
 		movea.l	(a7)+,a0
 		adda.w	L385e6_3dview_word2(pc),a0
 		bra.s	l386d2
-		
+
 :		move.w	#$0,L385e6_3dview_word2
 		addq.l	#8,a7
 		rts
@@ -9950,23 +9950,23 @@ L386ce:
 		nop
 		nop
 		nop
-		
+
 :		bsr.w	L3506e
 		lea	14(a0),a0
 	l38700:	move.w	(a0)+,d0
 		jmp	L386ce(pc,d0.w)
-		
+
 :		movem.w	(a0)+,d0-3
 		bsr.w	L350e2
 		move.w	(a0)+,d0
 		jmp	L386ce(pc,d0.w)
-		
+
 :		movem.w	-6(a0),d0-1
 		movem.w	(a0)+,d2-3
 		bsr.w	L350e2
 	l38722:	move.w	(a0)+,d0
 		jmp	L386ce(pc,d0.w)
-	
+
 * 2dprim 0x5a
 :		movem.w	(a0)+,d0-7
 		bsr.w	L35028
@@ -9984,12 +9984,12 @@ L386ce:
 		move.w	a0,L385e6_3dview_word2
 		rts
 
-		
+
 :		nop
 		nop
 		nop
 		nop
-		
+
 * object drawer: planets and stars (the round thingy bit)
 :		bsr.w	L358b6
 		lea	14(a0),a0
@@ -10077,7 +10077,7 @@ L38832:
 		bra.w	L34bf8_DrawCircleClipped
 	l3887e:	rts
 
-	
+
 :		move.w	#$c,L385e6_3dview_word2
 :		movem.w	16(a0),d0/d3-4/d6
 		asl.w	#5,d4
@@ -10182,7 +10182,7 @@ L389fe:
 		lea	L5dae_dyn_cols,a0
 		movea.w	4(a0,d6.w),a0
 		bra.w	L34bf8_DrawCircleClipped
-	
+
 	* 28 bytes span
 	* Obj drawer: lines
 :		move.w	#$c,L385e6_3dview_word2
@@ -10190,7 +10190,7 @@ L389fe:
 		lea	L5dae_dyn_cols,a0
 		movea.w	4(a0,d6.w),a0
 		bra.w	L34d56_DrawStraightLine
-		
+
 	* 28 "" ""
 	* Obj drawer: triangles
 :		move.w	#$10,L385e6_3dview_word2
@@ -10198,26 +10198,26 @@ L389fe:
 		lea	L5dae_dyn_cols,a0
 		movea.w	4(a0,d6.w),a0
 		bra.w	L343ac_DrawTriangle
-		
+
 	* Obj drawer: quads
 :		move.w	#$14,L385e6_3dview_word2
 :		movem.w	14(a0),d0-7/a1
 		lea	L5dae_dyn_cols,a0
 		movea.w	4(a0,a1.w),a0
 		bra.w	L34530_DrawQuad
-	
+
 	* Obj drawer: ellipses
 :		move.w	#$14,L385e6_3dview_word2
 :		movem.w	14(a0),d0-7/a1
 		lea	L5dae_dyn_cols,a0
 		movea.w	4(a0,a1.w),a0
 		bra.w	L34f6a_DrawEllipse
-		
+
 :		nop
 		nop
 		nop
 		nop
-		
+
 :		lea	14(a0),a5
 		movem.w	(a5)+,d2/a1
 		lea	L5dae_dyn_cols,a0
@@ -10244,7 +10244,7 @@ L389fe:
 		move.w	a5,L385e6_3dview_word2
 		rts
 
-		
+
 	l38ca8:	addq.l	#2,a5
 		bra.s	l38cbe
 	l38cac:	cmp.w	#$2,d2
@@ -10279,7 +10279,7 @@ L389fe:
 		bra.s	l38c98
 	l38d00:	addq.l	#2,a7
 		bra.s	l38c98
-		
+
 	l38d04:	move.w	d2,-(a7)
 		move.w	a0,line_draw_col
 		lea	new_linecrap,a0
@@ -10295,7 +10295,7 @@ L389fe:
 :		move.w	#$2,L385e6_3dview_word2
 		rts
 
-		
+
 		* Used to write system names in 3d starmap view
 :		move.w	#$e,L385e6_3dview_word2
 :		movem.w	14(a0),d0-5
@@ -10391,7 +10391,7 @@ L38d66_MatrixMulWTF:
 		add.l	d3,d6
 		add.l	d6,d6
 		swap	d6
-		
+
 		movem.w	d4-6,76(a0)
 		movem.w	12(a1),d0-2
 		movea.l	a0,a2
@@ -10425,7 +10425,7 @@ L38d66_MatrixMulWTF:
 		add.l	d3,d6
 		add.l	d6,d6
 		swap	d6
-		
+
 		movem.w	d4-6,82(a0)
 		move.b	L60d0_gameloop_iter,92(a0)
 		rts
@@ -11300,7 +11300,7 @@ L397be_TransformModelCoords:
 		cmp.w	#$2ff,d1
 		* type > 2
 		bgt.w	L398e8_TransformModelCoords_T3_4
-		
+
 		move.w	d2,18(a0)
 		move.w	d2,50(a0)
 		asl.w	#8,d1
@@ -11319,7 +11319,7 @@ L397be_TransformModelCoords:
 		muls	d1,d0
 		move.l	d0,-(a7)
 		add.l	d0,d4
-		
+
 		move.w	12(a1),d5
 		muls	d3,d5
 		move.w	6(a1),d0
@@ -11329,7 +11329,7 @@ L397be_TransformModelCoords:
 		muls	d1,d0
 		move.l	d0,-(a7)
 		add.l	d0,d5
-		
+
 		move.w	12(a1),d6
 		muls	d3,d6
 		move.w	6(a1),d0
@@ -11339,7 +11339,7 @@ L397be_TransformModelCoords:
 		muls	d1,d0
 		move.l	d0,-(a7)
 		add.l	d0,d6
-		
+
 		movem.l	(a7)+,d1-3
 		* some hideous scaling value
 		moveq	#7,d7
@@ -11416,7 +11416,7 @@ L3988c_AddViewingTransformAndProject_2:
 * specified in d3. put in 0(a0). put min model z of both in 12(a0).
 * for 32(a0) vertex do above but with vertex ids eor 0x1.
 * for vertex type 3,4
-L398e8_TransformModelCoords_T3_4:	
+L398e8_TransformModelCoords_T3_4:
 		cmp.w	#$4ff,d1
 		bgt.w	L399c0_TransformModelCoords_T5_6
 		move.l	a2,-(a7)
@@ -11449,7 +11449,7 @@ L398e8_TransformModelCoords_T3_4:
 		add.l	d3,d1
 		asr.l	#1,d1
 		movem.w	d0-1,(a2)
-		
+
 		movem.l	4(a0),d0-2
 		movem.l	4(a1),d3-5
 
@@ -11487,7 +11487,7 @@ L398e8_TransformModelCoords_T3_4:
 		add.l	d3,d1
 		asr.l	#1,d1
 		movem.w	d0-1,32(a2)
-		
+
 		movem.l	4(a0),d0-2
 		movem.l	4(a1),d3-5
 
@@ -11619,7 +11619,7 @@ L39af2_TransformModelCoords_T9_a:
 		muls	d1,d0
 		move.l	d0,-(a7)
 		add.l	d0,d4
-		
+
 		move.w	12(a1),d5
 		muls	d3,d5
 		move.w	6(a1),d0
@@ -11629,7 +11629,7 @@ L39af2_TransformModelCoords_T9_a:
 		muls	d1,d0
 		move.l	d0,-(a7)
 		add.l	d0,d5
-		
+
 		move.w	12(a1),d6
 		muls	d3,d6
 		move.w	6(a1),d0
@@ -11639,7 +11639,7 @@ L39af2_TransformModelCoords_T9_a:
 		muls	d1,d0
 		move.l	d0,-(a7)
 		add.l	d0,d6
-		
+
 		movem.l	(a7)+,d1-3
 		* different scaling
 		moveq	#23,d7
@@ -11655,7 +11655,7 @@ L39af2_TransformModelCoords_T9_a:
 		sub.l	d2,d5
 		sub.l	d1,d6
 		bra.w	L3987c
-	
+
 * vertex type 0xb
 * Project vertices indexed by d1 and d3.
 * Return average of their viewing coords and project.
@@ -12220,7 +12220,7 @@ L3a0f4:
 		move.w	#$0,(a1)
 		rts
 
-	
+
 	l3a1ae:	movea.l	L385c8_primitives_end,a0
 		addq.l	#2,L385c8_primitives_end
 		move.w	#$1e,(a0)
@@ -12275,7 +12275,7 @@ L3a202:
 		bmi.s	l3a224
 		lsr.l	d5,d4
 		beq.s	l3a224
-	l3a24a:	
+	l3a24a:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		lea	2(a1),a0
@@ -12311,7 +12311,7 @@ L3a202:
 		bmi.s	l3a280
 		lsr.l	d5,d4
 		beq.s	l3a280
-	l3a2a6:	
+	l3a2a6:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		lea	2(a1),a0
@@ -12500,7 +12500,7 @@ L3a202:
 		bmi.s	l3a456
 		lsr.l	d5,d4
 		beq.s	l3a456
-	l3a47c:	
+	l3a47c:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		lea	2(a1),a0
@@ -12553,7 +12553,7 @@ L3a4b4:
 		bmi.s	l3a4e4
 		lsr.l	d5,d4
 		beq.s	l3a4e4
-	l3a50a:	
+	l3a50a:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		lea	2(a1),a0
@@ -12576,7 +12576,7 @@ L3a4b4:
 	l3a554:	move.w	(a7)+,d6
 	l3a556:	rts
 
-		
+
 L3a558_ProjectCircle:
 		move.l	(a5)+,d7
 
@@ -12781,14 +12781,14 @@ L3a68c:
 		bmi.s	l3a72c
 		lsr.l	d5,d4
 		beq.s	l3a72c
-	l3a752:	
+	l3a752:
 		move.l	a0,vertex_a0
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
-	l3a756:	
+	l3a756:
 		move.l	vertex_a0,a0
 		hcall	#Nu_PutCircle
-		
+
 		lea	82(a1),a0
 		move.l	a0,L385c8_primitives_end
 		move.w	#$2a,(a1)+
@@ -12987,10 +12987,10 @@ L3a93c_project_real_circle:
 		bmi.s	l3a976
 		lsr.l	d5,d4
 		beq.s	l3a976
-	l3a99c:	
+	l3a99c:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
-	l3a9a0:	
+	l3a9a0:
 		move.l	vertex_a0,a0
 		btst	#$7,-147(a6)
 		* have star twinkly spikes or not?
@@ -13080,9 +13080,9 @@ L3aa74:
 		dc.b	$0,$0
 	l3aa96:	btst	#$7,-147(a6)
 		bne.s	l3aa48
-	l3aa9e:	
+	l3aa9e:
 		move.l	a0,vertex_a0
-	
+
 		movea.l	L385c8_primitives_end,a1
 		tst.w	L385e4_3dview_word1
 		bne.s	l3aaf2
@@ -13113,13 +13113,13 @@ L3aa74:
 		bmi.s	l3aac8
 		lsr.l	d5,d4
 		beq.s	l3aac8
-	l3aaee:	
+	l3aaee:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 	l3aaf2:
 		move.l	vertex_a0,a0
 		hcall	#Nu_PutCircle
-		
+
 		lea	10(a1),a0
 		move.l	a0,L385c8_primitives_end
 		move.w	#$4f8,(a1)
@@ -13217,11 +13217,11 @@ L3ab42_ProjectBlobs:
 		bmi.s	l3abd0
 		lsr.l	d5,d4
 		beq.s	l3abd0
-	l3abf6:	
+	l3abf6:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		move.l	a1,L385c8_primitives_end
-	l3ac00:	
+	l3ac00:
 		movea.l	a1,a2
 		move.w	#$588,(a1)+
 		* radius to 2d prim
@@ -13258,15 +13258,15 @@ L3ab42_ProjectBlobs:
 		cmp.b	-152(a6),d5
 		beq.s	l3ac5a
 		bsr.w	L3977c_ProjectCoords
-	l3ac5a:	
+	l3ac5a:
 		cmpi.l	#$40,12(a0)
 		blt.s	l3ac7c
-		
+
 		* stardust, some other blobs eg. in starmap
 		move.w	blob_col(pc),d0
 		move.w	blob_rad(pc),d1
 		hcall	#Nu_PutBlob
-		
+
 		movem.w	(a0),d0-1
 		subq.w	#1,d0
 		subq.w	#1,d1
@@ -13287,15 +13287,15 @@ L3ab42_ProjectBlobs:
 		cmp.b	-152(a6),d5
 		beq.s	l3ac9a
 		bsr.w	L3977c_ProjectCoords
-	l3ac9a:	
+	l3ac9a:
 		cmpi.l	#$40,12(a0)
 		blt.s	l3acbc
-		
+
 		* stardust, (and that line of dots i don't want :(
 		move.w	blob_col(pc),d0
 		move.w	blob_rad(pc),d1
 		hcall	#Nu_PutBlob
-		
+
 		movem.w	(a0),d0-1
 		subq.w	#1,d0
 		subq.w	#1,d1
@@ -13320,7 +13320,7 @@ L3ab42_ProjectBlobs:
 		bne.s	l3acd6
 		rts
 
-		
+
 L3ace0_ProjectLine_1:
 		move.w	(a5)+,d7
 
@@ -13375,7 +13375,7 @@ L3ad66_put_line_primitive:
 		move.w	d6,prim_col
 		move.l	a0,vertex_a0
 		move.l	a1,vertex_a1
-		
+
 		movea.l	L385c8_primitives_end,a1
 		tst.w	L385e4_3dview_word1
 		bne.s	l3adba
@@ -13406,17 +13406,17 @@ L3ad66_put_line_primitive:
 		bmi.s	l3ad90
 		lsr.l	d5,d4
 		beq.s	l3ad90
-	l3adb6:	
+	l3adb6:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
-	l3adba:	
+	l3adba:
 		movem.l	d6/a0-1,-(a7)
 		move.l	vertex_a0,a0
 		move.l	vertex_a1,a1
 		move.w	prim_col,d6
 		hcall	#Nu_PutLine
 		movem.l	(a7)+,a0-1/d6
-	
+
 		lea	12(a1),a0
 		move.l	a0,L385c8_primitives_end
 		move.w	#$518,(a1)
@@ -13520,7 +13520,7 @@ L3aeca_ProjectTriangle_2:
 		move.w	-150(a6),d6
 		move.l	-148(a6),-(a7)
 		subq.l	#4,a5
-		
+
 L3aee6_ProjectTriangle_1:
 		move.l	(a5)+,d7
 	l3aee8:
@@ -13575,19 +13575,19 @@ L3aee6_ProjectTriangle_1:
 		cmp.b	-152(a6),d5
 		beq.s	l3af7a
 		bsr.w	L3977c_ProjectCoords
-	l3af7a:	
+	l3af7a:
 		move.w	d6,prim_col
 		move.l	a0,vertex_a0
 		move.l	a1,vertex_a1
 		move.l	a2,vertex_a2
-		
+
 		movem.w	(a0),d0-1
 		movem.w	(a1),d2-3
 		movem.w	(a2),d4-5
-		
+
 		tst.w	gl_renderer_on
 		bne.s	l3afd0
-		
+
 		cmp.w	#$140,d0
 		bcc.w	l3b05a
 		cmp.w	#$a8,d1
@@ -13631,7 +13631,7 @@ L3aee6_ProjectTriangle_1:
 		bmi.s	l3afe0
 		lsr.l	d5,d4
 		beq.s	l3afe0
-	l3b006:	
+	l3b006:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 	l3b00a:
@@ -13642,7 +13642,7 @@ L3aee6_ProjectTriangle_1:
 		move.w	prim_col,d6
 		hcall	#Nu_PutTriangle
 		movem.l	(a7)+,a0-2/d6
-	
+
 		lea	16(a1),a0
 		move.l	a0,L385c8_primitives_end
 		* triangle primitive
@@ -13668,7 +13668,7 @@ L3aee6_ProjectTriangle_1:
 		move.l	d6,2(a0,d6.w)
 		addq.w	#4,(a0)
 	l3b052:	movem.w	d0-6,2(a1)
-		
+
 	l3b058:	rts
 
 	l3b05a:	cmp.w	#$140,d2
@@ -13686,7 +13686,7 @@ L3aee6_ProjectTriangle_1:
 		bra.w	L3b276
 	l3b07e:	movea.l	a2,a3
 		bra.w	L3b30a
-		
+
 L3b084_ProjectQuad_2:
 		move.w	d6,-150(a6)
 		move.l	(a7)+,-148(a6)
@@ -13698,7 +13698,7 @@ L3b084_ProjectQuad_2:
 		move.w	-150(a6),d6
 		move.l	-148(a6),-(a7)
 		subq.l	#6,a5
-		
+
 L3b0a6_ProjectQuad_1:
 		move.l	(a5)+,d7
 		move.w	(a5)+,d0
@@ -13764,23 +13764,23 @@ L3b0a6_ProjectQuad_1:
 		cmp.b	-152(a6),d5
 		beq.s	l3b154
 		bsr.w	L3977c_ProjectCoords
-	l3b154:	
+	l3b154:
 		move.w	(a7),d6
 		move.w	d6,prim_col
 		move.l	a0,vertex_a0
 		move.l	a1,vertex_a1
 		move.l	a2,vertex_a2
 		move.l	a3,vertex_a3
-		
-	
+
+
 		movem.w	(a0),d0-1
 		movem.w	(a1),d2-3
 		movem.w	(a2),d6-7
 		movem.w	(a3),d4-5
-		
+
 		tst.w	gl_renderer_on
 		bne.s	l3b1a0
-		
+
 		cmp.w	#$140,d0
 		bcc.w	l3b24c
 		cmp.w	#$a8,d1
@@ -13828,10 +13828,10 @@ L3b0a6_ProjectQuad_1:
 		bmi.s	l3b1ce
 		lsr.l	d5,d4
 		beq.s	l3b1ce
-	l3b1f4:	
+	l3b1f4:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
-	l3b1f8:	
+	l3b1f8:
 		movem.l	d6/a0-3,-(a7)
 		move.l	vertex_a0,a0
 		move.l	vertex_a1,a1
@@ -13840,7 +13840,7 @@ L3b0a6_ProjectQuad_1:
 		move.w	prim_col,d6
 		hcall	#Nu_PutQuad
 		movem.l	(a7)+,a0-3/d6
-	
+
 		lea	20(a1),a0
 		move.l	a0,L385c8_primitives_end
 		* push quad primitive
@@ -13978,7 +13978,7 @@ L3b30a:
 		bmi.s	l3b33e
 		lsr.l	d5,d4
 		beq.s	l3b33e
-	l3b364:	
+	l3b364:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		move.l	a1,L385c8_primitives_end
@@ -14131,9 +14131,9 @@ L3b4f8_ComplexBegin:
 		cmp.b	-152(a6),d5
 		beq.s	l3b560
 		bsr.w	L3977c_ProjectCoords
-	l3b560:	
+	l3b560:
 		hcall	#Nu_ComplexStart
-		
+
 		movea.l	L385c8_primitives_end,a1
 		tst.w	L385e4_3dview_word1
 		bne.s	l3b5b4
@@ -14164,7 +14164,7 @@ L3b4f8_ComplexBegin:
 		bmi.s	l3b58a
 		lsr.l	d5,d4
 		beq.s	l3b58a
-	l3b5b0:	
+	l3b5b0:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 	l3b5b4:	lea	2(a1),a0
@@ -14281,12 +14281,12 @@ L3b6b4:
 		cmp.b	-152(a6),d5
 		beq.s	l3b6ea
 		bsr.w	L3977c_ProjectCoords
-	l3b6ea:	
+	l3b6ea:
 		move.l	d6,-(a7)
 		move.w	-160(a6),d6
 		hcall	#Nu_ComplexSBegin
 		move.l	(a7)+,d6
-		
+
 		move.l	a0,-176(a6)
 		move.w	#$ffff,-162(a6)
 		cmpi.l	#$40,12(a1)
@@ -14436,13 +14436,13 @@ L3b8a8:
 		cmp.b	-152(a6),d5
 		beq.s	l3b8d0
 		bsr.w	L3977c_ProjectCoords
-	l3b8d0:	
+	l3b8d0:
 		* MARKER red
 		move.l	d0,-(a7)
 		move.w	#$f00,d0
 		hcall	#Nu_PutColoredPoint
 		move.l	(a7)+,d0
-		
+
 		cmpi.l	#$40,12(a0)
 		bge.w	l3b834
 	l3b8dc:	move.l	a0,-176(a6)
@@ -14461,7 +14461,7 @@ L3b8e2_ComplexBezierBit:
 	l3b8fc:
 		move.w	-160(a6),d6
 		hcall	#Nu_ComplexStartInner
-		
+
 		movea.l	a0,a1
 		move.l	a0,-172(a6)
 	l3b902:	move.b	(a5)+,d0
@@ -14506,7 +14506,7 @@ L3b8e2_ComplexBezierBit:
 		movem.w	(a2),d2-3
 		movem.w	(a3),d4-5
 		movem.w	(a0),d6-7
-	
+
 		movem.l	d6/a0-3,-(a7)
 		exg	a0,a1
 		exg	a1,a2
@@ -14531,13 +14531,13 @@ L3b9aa_FilledOvalThingy:
 		cmp.b	-152(a6),d5
 		beq.s	l3b9c2
 		bsr.w	L3977c_ProjectCoords
-	l3b9c2:	
+	l3b9c2:
 		* MARKER dark green
 		move.l	d0,-(a7)
 		move.w	#$070,d0
 		hcall	#Nu_PutColoredPoint
 		move.l	(a7)+,d0
-	
+
 		cmpi.l	#$40,12(a0)
 		ble.w	l3baaa
 		moveq	#0,d6
@@ -14728,7 +14728,7 @@ L3bab8_ProjectBezierLine:
 		bmi.s	l3bbc2
 		lsr.l	d5,d4
 		beq.s	l3bbc2
-	l3bbe8:	
+	l3bbe8:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 	l3bbec:	lea	20(a1),a0
@@ -14792,7 +14792,7 @@ L3bc46_ProjectThrust:
 		cmp.b	-152(a6),d5
 		beq.s	l3bc98
 		bsr.w	L3977c_ProjectCoords
-		* tail of engine thrust 
+		* tail of engine thrust
 	l3bc98:	cmpi.l	#$200,12(a0)
 		ble.s	l3bc44
 		exg	a1,a0
@@ -14816,10 +14816,10 @@ L3bc46_ProjectThrust:
 		beq.w	l3bc44
 		cmp.w	#$8,d7
 		ble.w	l3ad3e
-		
+
 		move.l	a0,vertex_a0
 		move.l	a1,vertex_a1
-		
+
 		movem.w	(a0),d0-1
 		movem.w	(a1),d2-3
 		sub.w	d2,d0
@@ -14888,16 +14888,16 @@ L3bc46_ProjectThrust:
 		bmi.s	l3bd70
 		lsr.l	d5,d4
 		beq.s	l3bd70
-	l3bd96:	
+	l3bd96:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
-	l3bd9a:	
+	l3bd9a:
 		movem.l	a0-1,-(a7)
 		move.l	vertex_a0,a0
 		move.l	vertex_a1,a1
 		hcall	#Nu_PutTeardrop
 		movem.l	(a7)+,a0-1
-		
+
 		lea	24(a1),a0
 		move.l	a0,L385c8_primitives_end
 		movea.l	a1,a2
@@ -15012,7 +15012,7 @@ L3be90_ProjectCylinder_2:
 		cmp.b	-152(a6),d5
 		beq.s	l3bebc
 		bsr.w	L3977c_ProjectCoords
-	l3bebc:	
+	l3bebc:
 		move.l	a0,cylinder_v1
 		movea.l	a0,a1
 		cmpi.l	#$40,12(a1)
@@ -15025,7 +15025,7 @@ L3be90_ProjectCylinder_2:
 		cmp.b	-152(a6),d5
 		beq.s	l3bee0
 		bsr.w	L3977c_ProjectCoords
-	l3bee0:	
+	l3bee0:
 		move.l	a0,cylinder_v2
 		cmpi.l	#$40,12(a0)
 		ble.w	l3be7c
@@ -15137,11 +15137,11 @@ L3be90_ProjectCylinder_2:
 		bmi.s	l3bff2
 		lsr.l	d5,d4
 		beq.s	l3bff2
-	l3c018:	
+	l3c018:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		move.l	a1,L385c8_primitives_end
-	l3c022:	
+	l3c022:
 		movea.l	a1,a2
 		movea.l	a1,a3
 		move.w	-150(a6),d6
@@ -15312,7 +15312,7 @@ L3be90_ProjectCylinder_2:
 		bclr	#$4,d6
 		beq.s	l3c250
 		add.w	-154(a6),d6
-	l3c250:	
+	l3c250:
 		* base color of shaded sides?? always black>>
 		jsr	L2ec48_AllocDynCol
 		move.w	d6,(a2)+
@@ -15389,8 +15389,8 @@ L3be90_ProjectCylinder_2:
 		add.l	d0,L385c8_primitives_end
 		lea	226(a7),a7
 		movea.l	(a7)+,a5
-		
-		
+
+
 		movem.l	a4/d3-5,-(a7)
 		movea.l	cylinder_v1(pc),a2
 		movea.l	cylinder_v2(pc),a3
@@ -15409,8 +15409,8 @@ L3be90_ProjectCylinder_2:
 		move.w	-104(a6),d3
 		hcall	#Nu_PutCylinder
 		movem.l	(a7)+,a4/d3-5
-		
-		
+
+
 		rts
 
 	l3c35e:	lea	104(a7),a7
@@ -15489,7 +15489,7 @@ L3c47e:
 		dc.b	$0,$0,$0,$2,$0,$4,$0,$0,$0,$2,$0,$4,$0,$0,$0,$0
 		dc.b	$0,$4,$0,$0,$0,$2,$0,$0,$0,$4,$0,$2,$0,$0,$0,$0
 		dc.b	$0,$2,$0,$0,$0,$4,$0,$0,$0,$0,$0,$4,$0,$2
-		
+
 L3c4ac:
 		tst.w	d6
 		bmi.w	l3c59e
@@ -15650,7 +15650,7 @@ L3c614:
 		movem.w	d3-5,-122(a6,a2.w)
 		rts
 
-	
+
 	l3c672:	addq.l	#4,a5
 		rts
 
@@ -15831,7 +15831,7 @@ L3c82a:
 		bmi.s	l3c88a
 		lsr.l	d5,d4
 		beq.s	l3c88a
-	l3c8b0:	
+	l3c8b0:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 	l3c8b4:	lea	14(a1),a0
@@ -15845,7 +15845,7 @@ L3c82a:
 
 		tst.w	gl_renderer_on
 		beq.s	l3c8d6
-		
+
 		* rank hack. see hardware/screen.c:Nu_QueueDrawStr
 		movem.l	d0-7/a0-6,-(a7)
 		movem.w	2(a1),d0-5
@@ -15862,7 +15862,7 @@ L3c82a:
 		lea	256(a7),a7
 		movem.l	(a7)+,d0-7/a0-6
 
-		
+
 	l3c8d6:	rts
 
 L3c8d8_ProjectCloudShadowPos:
@@ -16365,7 +16365,7 @@ L3cd9c_ProjectPlanet:
 		beq.s	l3cdd8
 		* loc of planet!!!!!!
 		bsr.w	L3977c_ProjectCoords
-	l3cdd8:	
+	l3cdd8:
 		move.l	d7,d6
 		swap	d6
 		moveq	#7,d7
@@ -16379,7 +16379,7 @@ L3cd9c_ProjectPlanet:
 		lsr.w	#1,d6
 	* d6.w is planet radius (shifted by some unknown value...)
 	* itsybitsyfy x,y,z
-	l3cdf0:	
+	l3cdf0:
 		movem.l	4(a0),d1-3
 		moveq	#0,d4
 		movea.l	#$4000,a2
@@ -16413,8 +16413,8 @@ L3cd9c_ProjectPlanet:
 		cmp.l	a2,d5
 		bge.s	l3ce30
 	* itsybitsyfying shift in d4
-	l3ce38:	
-	
+	l3ce38:
+
 		asr.l	d4,d1
 		asr.l	d4,d2
 		asr.l	d4,d3
@@ -16426,13 +16426,13 @@ L3cd9c_ProjectPlanet:
 		subi.w	#$1f,d5
 		neg.w	d5
 		asr.l	d5,d0
-		
+
 		move.l	d0,-(a7)
 		move.l	a0,planet_pos
 		asl.l	d4,d0
 		move.l	d0,planet_rad
 		move.l	(a7)+,d0
-		
+
 		* tiny! don't bother drawing
 		beq.w	l3cd8e_AbortPlanetDraw
 		move.w	d5,192(a3)
@@ -17044,18 +17044,18 @@ L3d452_PlanetFeatureLoop:
 		add.l	d6,d2
 		add.l	d2,d2
 		swap	d2
-		
+
 		tst.w	34(a3)
 		bne.s	l3d50a
 		tst.b	(a5)
 		bne.s	l3d4fe
-		
+
 		* MARKER2 red
 		move.l	d7,-(a7)
 		move.l	#$f00,d7
 		bsr.w	L3da98_ProjectPlanetCoord
 		move.l	(a7)+,d7
-		
+
 		addq.l	#1,a5
 		move.b	(a5)+,d3
 		cmpi.w	#$1000,120(a3)
@@ -17176,7 +17176,7 @@ L3d5dc_PushPlanetCol:
 	l3d5e2:	move.w	0(a3,d1.w),d6
 		* colour of planets at some distance
 		move.w	d6,planet_col1
-		
+
 		lea	L2dc48_col_indices,a2
 		moveq	#0,d0
 		move.b	0(a2,d6.w),d0
@@ -17209,7 +17209,7 @@ L3d5dc_PushPlanetCol:
 		move.l	a5,-(a7)
 		* planet colour what??
 		move.w	d6,planet_col2
-		
+
 		jsr	L2ec48_AllocDynCol
 	l3d63c:	move.w	d6,(a1)+
 		addq.w	#2,d1
@@ -17256,7 +17256,7 @@ L3d648_PutPlanetRings:
 		bmi.s	l3d68c
 		lsr.l	d5,d4
 		beq.s	l3d68c
-	l3d6b2:	
+	l3d6b2:
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
 		move.l	a1,L385c8_primitives_end
@@ -17470,7 +17470,7 @@ L3d6d0_PutPlanetCircle:
 		moveq	#-1,d4
 		hcall	#Nu_InsertZNode
 		bsr.w	L38594_InsertIntoZTree
-	l3d908:	
+	l3d908:
 		* this is the atmosphere shading
 		lea	62(a1),a0
 		move.l	a0,L385c8_primitives_end
@@ -17686,7 +17686,7 @@ L3da98_ProjectPlanetCoord:
 		move.w	d1,d5
 		rts
 
-		
+
 	l3db4e:	andi.w	#$21,d3
 		bset	#$6,d3
 		addi.w	#$50,d1
@@ -17696,14 +17696,14 @@ L3da98_ProjectPlanetCoord:
 	l3db64:	movem.w	(a7)+,d0-2
 		rts
 
-		
+
 	l3db6a:	andi.w	#$21,d3
 		bset	#$6,d3
 		bset	#$1,d3
 		movem.w	(a7)+,d0-2
 		rts
 
-		
+
 	* circles on planet surface...
 	l3db7c:	clr.w	174(a3)
 		move.b	(a5)+,d3
@@ -17715,7 +17715,7 @@ L3da98_ProjectPlanetCoord:
 		neg.w	d3
 		neg.w	d4
 		neg.w	d5
-		
+
 		lea	-36(a6),a4
 		move.w	12(a4),d0
 		muls	d5,d0
@@ -17747,7 +17747,7 @@ L3da98_ProjectPlanetCoord:
 		add.l	d6,d2
 		add.l	d2,d2
 		swap	d2
-		
+
 		moveq	#0,d3
 		move.b	(a5)+,d3
 		asl.w	#6,d3
@@ -17891,22 +17891,22 @@ L3dcbc:
 		neg.w	d0
 		neg.w	d1
 		neg.w	d2
-		
+
 		* MARKER3
 		move.l	#$f70,d7
 		bsr.s	L3ddc0
-		
+
 		movem.w	138(a3),d0-1
 		neg.w	d0
 		neg.w	d1
 		moveq	#0,d2
-		
+
 		* MARKER3
 		move.l	#$ff0,d7
 		bsr.s	L3ddc0
-		
+
 		movem.w	142(a3),d0-2
-		
+
 		* MARKER3
 		move.l	#$f0f,d7
 		bsr.s	L3ddc0
@@ -17924,7 +17924,7 @@ L3dd6e:
 	l3dd90:	clr.b	210(a3)
 		rts
 
-		
+
 	l3dd96:	tst.w	184(a3)
 		beq.s	l3ddb6
 		bmi.s	l3dd90
@@ -17935,7 +17935,7 @@ L3dd6e:
 		clr.b	210(a3)
 		rts
 
-		
+
 	l3ddb6:	tst.w	188(a3)
 		bne.w	l3e02e
 		rts
@@ -18178,7 +18178,7 @@ L3e036:
 		move.l	#$77f,d7
 		bsr.w	L3da98_ProjectPlanetCoord
 		move.l	(a7)+,d7
-		
+
 		movem.w	d0-5,148(a3)
 		movem.w	d0-5,160(a3)
 		rts
@@ -18562,7 +18562,7 @@ L3e67a:
 
 L3e67f:
 		dc.b	$20,$6b,$6d,$7c,$0
-		
+
 L3e684:
 		move.l	d3,d2
 L3e686:
@@ -18768,7 +18768,7 @@ L3e878_BabyStringTable:
 		dc.b	$0
 		dc.b	"how are you"
 		dc.b	$0
-		
+
 		dc.b	$ff,$30,$01
 		dc.b	" FPS, "
 		dc.b	$ff,$30,$02
@@ -22808,7 +22808,7 @@ L41a70_BlitPhys2Log:
 		move.l	L5d9e_logscreen,-(a7)
 		hcall	#Call_Memcpy
 		lea	12(a7),a7
-	
+
 		jsr	L423d2_DrawMouse1
 		rts
 
@@ -22881,7 +22881,7 @@ L41b2e_FlipScreen:
 		move.l	a0,L5d9e_logscreen
 		move.l	a1,L5da2_physcreen
 		move.l	a0,L5da6_logscreen2
-		
+
 		move.l	a1,-(a7)
 		hcall	#Call_SetScreenBase
 		addq.l	#4,a7
@@ -22895,12 +22895,12 @@ N_HostFlip:
 		move.l	a0,-(a7)
 		hcall	#Call_SetCtrlPalette
 		addq.l	#4,a7
-		
+
 		lea	A6_main_palette1(a6),a0
 		move.l	a0,-(a7)
 		hcall	#Call_SetMainPalette
 		addq.l	#4,a7
-		
+
 		hcall	#Nu_DrawScreen
 		rts
 
@@ -22931,7 +22931,7 @@ L41bc4_LimitFrameRate:
 		bgt.s	l41ba4
 		* XXX This breaks some interface clicks (fe2 bug)
 		* It was #$2, but that limits to 25fps
-		move.w	#$1,L5eb2_vblank_waits
+		move.w	#$2,L5eb2_vblank_waits
 		rts
 
 L41bd6_keymap_lower:
@@ -22986,7 +22986,7 @@ L41cd6_GetAsciiKey:
 
 		tst.b	d0
 		beq.s	l41cfc
-	
+
 		rts
 
 * mouse interaction with ui is done by pushing keypresses
@@ -23038,7 +23038,7 @@ L41d76_SetupHandlers:
 		bsr.w	L4221c
 		move.l	d0,A6_mouse_int_motion_x(a6)
 		move.w	d0,A6_mouse_buttons(a6)
-		
+
 		lea	L41e2a_vblank,a0
 		moveq	#0,d0
 		hcall	#Call_SetExceptionHandler
@@ -23053,11 +23053,11 @@ L41ddc:
 
 PollInput:
 		movem.l	d0-1/a0/a6,-(a7)
-		
+
 		hcall	#Call_HostUpdate
-		
+
 		lea	L5eb6_a6_base,a6
-		
+
 		pea	A6_mouse_abs_x(a6)
 		pea	A6_mouse_int_motion_x(a6)
 		hcall	#Call_GetMouseInput
@@ -23113,21 +23113,21 @@ L41e2a_vblank:
 		tst.w	L5eb2_vblank_waits
 		beq.s	l41e76
 		subq.w	#1,L5eb2_vblank_waits
-	l41e76:	
+	l41e76:
 		bsr.w	PollInput
-	
+
 		moveq	#0,d3
 		movem.w	A6_mouse_int_motion_x(a6),d0-2
 		move.l	d3,A6_mouse_int_motion_x(a6)
 		bsr.w	L41fe8_UpdateMouse
 		bsr.w	L42114_UpdateKBnJoystick
-		
+
 		move.l	14482(a6),d0
 		add.l	d0,14450(a6)
 		addi.l	#$3e2,14458(a6)
 		addi.l	#$3e2,666(a6)
 		movem.l	(a7)+,d0-7/a0-6
-		
+
 		* Zero fps counter every 50 vblanks (1 second)
 		subq.w	#1,count_vblanks
 		bne.s	vbl_end
@@ -23175,7 +23175,7 @@ L41fe8_UpdateMouse:
 		move.b	d0,14499(a6)
 	l42016:	move.b	d0,A6_scancode_for_GetAscii2(a6)
 		bra.w	L42412_WipeMouse1
-	
+
 	l4201e:	move.b	14499(a6),d3
 		move.b	d2,14499(a6)
 		moveq	#0,d0
@@ -23206,7 +23206,7 @@ L41fe8_UpdateMouse:
 	l42072:	moveq	#0,d4
 	l42074:
 		hcall	#Call_NotifyMousePos
-		
+
 		movem.w	d3-4,A6_mouse_abs_x(a6)
 		move.w	d3,d0
 		move.w	d4,d1
@@ -23657,7 +23657,7 @@ L426e2_main:
 		move.l	a0,-(a7)
 		hcall	#Call_SetScreenBase
 		addq.l	#4,a7
-		
+
 		* Tell the host where our screen address thingies are held
 		move.l	#L5d9e_logscreen,-(a7)
 		move.l	#L5da2_physcreen,-(a7)
@@ -23835,7 +23835,7 @@ L428c6_GameLoop:
 		tst.w	show_stats
 		bne.s	l42995
 		jsr	L41bc4_LimitFrameRate
-		
+
 	l42995:	btst	#$0,A6_do_clr_2_space_cols(a6)
 		beq.s	l429b8
 		jsr	N34174_FillBlueLogscreen
@@ -23843,7 +23843,7 @@ L428c6_GameLoop:
 	l429b8:	jsr	Fn_Draw3DView
 		jsr	L45854_CallHUDModfuncs
 
-		
+
 		jsr	L41b2e_FlipScreen
 		bra.w	L428c6_GameLoop
 		jsr	L41bc4_LimitFrameRate
@@ -26731,7 +26731,7 @@ L448c2:
 		move.l	276(a0),276(a1)
 		move.l	280(a0),280(a1)
 		move.w	284(a0),284(a1)
-	l4493a:	
+	l4493a:
 		* (a7) = d1 passed to L448b6
 		move.l	(a7),d3
 		tst.w	d3
@@ -27922,7 +27922,7 @@ L45960:
 		swap	d4
 		sub.w	d4,d4
 		add.l	d4,d1
-	l459b2:	
+	l459b2:
 		* d1:d0 *= 8
 		asl.l	#1,d0
 		roxl.l	#1,d1
@@ -28019,7 +28019,7 @@ L45a4a:
 		move.l	d7,64(a0)
 		rts
 
-		
+
 	l45aa8:	moveq	#0,d0
 		lsr.l	#1,d3
 		beq.s	l45ab6
@@ -28040,7 +28040,7 @@ L45a4a:
 		dbra	d6,l45abe
 		rts
 
-		
+
 	l45ad0:	moveq	#-1,d0
 	l45ad2:	addq.w	#1,d0
 		lsr.l	#1,d2
@@ -28049,7 +28049,7 @@ L45a4a:
 		move.w	d0,-(a7)
 		bsr.s	l45b08
 		bra.s	l45abc
-		
+
 	l45ae4:	neg.l	d2
 		negx.l	d3
 		bsr.s	l45afc
@@ -28076,7 +28076,7 @@ l45afe:
 * Multiply (d4.l, d5.l, d6.l) by s16 d2*4.
 l45b08:
 		move.l	d2,d7
-	
+
 		move.w	d4,d0
 		swap	d4
 		mulu	d7,d0
@@ -28088,7 +28088,7 @@ l45b08:
 		add.l	d4,d0
 		moveq	#0,d4
 		addx.l	d4,d3
-		
+
 		move.w	d5,d1
 		swap	d5
 		mulu	d7,d1
@@ -28100,7 +28100,7 @@ l45b08:
 		add.l	d5,d1
 		moveq	#0,d5
 		addx.l	d5,d4
-		
+
 		move.w	d6,d2
 		swap	d6
 		mulu	d7,d2
@@ -28112,21 +28112,21 @@ l45b08:
 		add.l	d6,d2
 		moveq	#0,d6
 		addx.l	d6,d5
-		
+
 		asr.l	#1,d3
 		roxr.l	#1,d0
 		asr.l	#1,d4
 		roxr.l	#1,d1
 		asr.l	#1,d5
 		roxr.l	#1,d2
-		
+
 		asr.l	#1,d3
 		roxr.l	#1,d0
 		asr.l	#1,d4
 		roxr.l	#1,d1
 		asr.l	#1,d5
 		roxr.l	#1,d2
-		
+
 		rts
 
 L45b66:
@@ -28196,7 +28196,7 @@ L45c22_UseMainGameData:
 		move.l	#L3e894,A6_game_strings(a6)
 		rts
 
-* Same as L2ec48_AllocDynCol except clobbers no registers 
+* Same as L2ec48_AllocDynCol except clobbers no registers
 * rgb col in d0.
 L45c34_AllocDynCol:
 		movem.l	a0-1/d1,-(a7)
@@ -29565,7 +29565,7 @@ L46cb4:
 L46ea4:
 		rts
 
-		
+
 :		move.w	660(a6),d2
 		move.w	32(a0),d1
 		cmp.w	#$139,d1
@@ -38030,7 +38030,7 @@ L5ff8e:
 		dc.b	$0,$19,$0,$28,$0,$2d,$0,$32,$0,$32,$0,$37,$0,$3c,$0,$4b
 		dc.b	$0,$64,$0,$7d,$0,$96,$0,$c8,$0,$fa,$1,$2c,$1,$5e,$1,$90
 		dc.b	$1,$f4
-		
+
 L5ffb0:
 		bset	#$0,125(a0)
 		bne.s	l6001e
@@ -39935,7 +39935,7 @@ L6186e:
 		movem.l	(a7)+,a0/a3
 	l61898:	rts
 
-		
+
 L6189a:
 		cmp.b	#$1,d0
 		bne.s	l61898
@@ -39963,7 +39963,7 @@ L6189a:
 		movem.w	682(a6),d0-1
 		jsr	A5_SetMouseCtrlMotion(a5)
 		bra.w	L63e6e
-		
+
 L61902:
 		tst.w	d0
 		bne.s	l61922
@@ -39997,7 +39997,7 @@ L6194e:
 		dc.b	$0,$bc,$0,$e0,$0,$c8,$0,$62,$0,$60,$0,$bc,$0,$70,$0,$c8
 		dc.b	$0,$2f,$0,$b0,$0,$bc,$0,$c0,$0,$c8,$0,$72,$0,$c0,$0,$bc
 		dc.b	$0,$d0,$0,$c8,$0,$64,$ff,$ff
-		
+
 		movem.l	(a7)+,d2-3
 		rts
 L6199c:
@@ -40109,7 +40109,7 @@ L61af2_mod3_fn24_PlayerPhysics:
 		move.b	704(a6),d7
 		move.w	L61b2c(pc,d7.w),d7
 		jmp	L61b2c(pc,d7.w)
-		
+
 L61b1e_mod3_fn16:
 		moveq	#0,d7
 		move.b	704(a6),d7
@@ -42882,7 +42882,7 @@ L63d9e_DrawTargetTunnelSquare:
 		movea.l	(a7)+,a0
 	l63e22:	rts
 
-		
+
 L63e24:
 		andi.w	#$3fe,d0
 		lea	L653c8(pc),a1
@@ -44435,19 +44435,19 @@ L677e6_PutStartScr:
 		*cmpi.l	#$4b3ea,d0
 		cmpi.l	#$3f0ea,d0
 		bcs.s	l677c6
-		
+
 		hcall	#Call_IsMusicPlaying
 		tst.w	d0
 		bne.s	l677e8
-		
+
 		moveq	#1,d0
 		jsr	A5_StartMusic(a5)
-	
+
 	l677e8:
 		move.l	A6_time_of_day(a6),d0
 		*tst.w	L164
 		*bne.s	l677e0
-		
+
 		cmpi.l	#$15cb40,d0
 		bcs.s	l677c6
 		tst.b	A6_hblank_do_pal(a6)
@@ -44946,10 +44946,10 @@ L685d0:
 		dc.b	$c1,$5d,$7,$c1,$c1,$d,$50,$c1,$c2,$4d,$1,$c1,$c2,$1d,$c2,$68
 		dc.b	$1,$bc,$0,$c2,$83,$5c,$0,$c1,$c3,$4d,$1,$c6,$c3,$dd,$c3,$50
 		dc.b	$c3,$5d,$2,$c3,$0,$ae,$6,$4,$0,$0,$0,$0
-		
+
 		* XXX this object is the spinning gametek quad at the very start
 		* of the intro. Study it well!
-	l688bc:	
+	l688bc:
 		* WORD offset to 3D primitives info, WORD offset to vertex data
 		* 0.w - offset to start of code
 		dc.b	$0,$28
@@ -44967,7 +44967,7 @@ L685d0:
 		dc.b	$0,$0
 		* 14.w - ???
 		dc.b	$0,$48
-		
+
 		* start of vertex data (base + 2(base).w)
 		* vertices are type,x,y,z.
 		dc.b	$1,$0,$0,$48
@@ -44975,13 +44975,13 @@ L685d0:
 		dc.b	$1,$0,$f8,$48
 		dc.b	$1,$0,$f8,$4
 		dc.b	$1,$0,$8,$4,
-		
+
 		* normals (base + 6(base).w)
 		dc.b	$0,$81,$0,$0
-		
+
 		* Start of 3D primitives info. base + 0(base).w
 		* a5 points to this when Project3DObj is called.
-		
+
 		* in form $rg,$bf where:
 		* r,g,b = red,green,blue (low bit not used)
 		* f (actually 0x1f, hence low bit thing) = projection func
@@ -48192,7 +48192,7 @@ L724a4_mod10_fn4:
 		rts
 
 	* 'load last saved shit'
-	l72548:	
+	l72548:
 		* XXX comment this out!
 		*jmp	debug_loader
 		* XXX
@@ -48839,7 +48839,7 @@ L72cf3_default_drv:
 
 L72cf6_fsel_msg_parentdir:
 		dc.b	".. (Parent Dir)"
-		dc.b	$0 
+		dc.b	$0
 
 *L72d0a_fsel_msg_A:
 *		dc.b	"A:"
@@ -48912,7 +48912,7 @@ L72dcc_ReadDir:
 		jsr	A5_FmtDrawStrShadowed(a5)
 		clr.w	A6_dir_list_len(a6)
 		lea	17348(a6),a0
-		
+
 		bsr.w	L72d1a
 		lea	A6_current_dir(a6),a0
 		lea	17392(a6),a2
@@ -48920,22 +48920,22 @@ L72dcc_ReadDir:
 		bne.s	l72e08
 		subq.l	#1,a2
 		lea	17392(a6),a2
-		
+
 		hcall	#Call_Fopendir
 		tst.w	d0
 		bne.s	l72e7b
-		
+
 		lea	17378(a6),a0
 		* Reads filename to a0, attribs d2, len d1
 		hcall	#Call_Freaddir
 		tst.w	d0
 		bne.s	l72e7b
-		
+
 		move.l	d2,d0
 		andi.w	#$10,d0
 		lsr.w	#3,d0
 		bsr.w	L72c8e_AddToFsel
-	l72e4a:	
+	l72e4a:
 		lea	17378(a6),a0
 		hcall	#Call_Freaddir
 		tst.w	d0
@@ -48967,7 +48967,7 @@ L72e92_ReadSavefile:
 		lea	-74(a7),a7
 		movea.l	a7,a2
 		bsr.w	L72d60_ConcatPath
-		
+
 		* a4 = buf
 		* d0 = length
 		* d1 = filename
@@ -48979,7 +48979,7 @@ L72e92_ReadSavefile:
 		moveq	#-1,d0
 		rts
 
-	l72f10:	
+	l72f10:
 		move.l	d0,d1
 		lea	74(a7),a7
 		moveq	#0,d0
@@ -48999,7 +48999,7 @@ L72f36_WriteSavefile:
 		lea	-74(a7),a7
 		movea.l	a7,a2
 		bsr.w	L72d60_ConcatPath
-		
+
 		* a4 = buf
 		* d0 = length
 		* d1 = filename
@@ -49011,7 +49011,7 @@ L72f36_WriteSavefile:
 		moveq	#-1,d0
 		rts
 
-	l72fb4:	
+	l72fb4:
 		lea	74(a7),a7
 		move.l	d0,d1
 		moveq	#0,d0
@@ -49037,9 +49037,9 @@ L72fda_DeleteSavefile:
 		lea	-74(a7),a7
 		movea.l	a7,a2
 		bsr.w	L72d60_ConcatPath
-		
+
 		hcall	#Call_Fdelete
-		
+
 		lea	74(a7),a7
 		tst.l	d0
 		bne.s	l7302c
@@ -51115,7 +51115,7 @@ L75444:
 		movem.w	d0-2,214(a0)
 		bra.s	L7549a
 	l75494:	move.w	#$fa0,218(a0)
-	
+
 L7549a:
 		bsr.w	L75248
 		move.b	210(a0),d0
@@ -51610,7 +51610,7 @@ L75a7e:
 L75a80:
 		rts
 
-		
+
 L75a82_rts:
 		rts
 
@@ -51690,7 +51690,7 @@ L75b46:
 		jsr	32(a2)
 	l75b5e:	rts
 
-		
+
 L75b60_rts:
 		rts
 
@@ -52910,7 +52910,7 @@ L76b72:
 		dc.w	L76c38-L76b72
 		dc.w	L76c40-L76b72
 		dc.w	L76d28-L76b72
-	
+
 	l76b80:	movea.l	674(a6),a0
 		move.b	8(a3,d6.w),d0
 		ext.w	d0
@@ -52925,7 +52925,7 @@ L76b92:
 		dc.w	L76de6-L76b92
 		dc.w	L76dfe-L76b92
 		dc.w	L76d46-L76b92
-		
+
 L76ba0:
 		move.l	158(a0),d7
 		move.b	10(a3,d6.w),d3
@@ -53416,7 +53416,7 @@ L771dc:
 		jsr	A5_UISetIconPositions(a5)
 		move.w	#$98d9,d0
 		bsr.w	L76130
-		
+
 L771f0:
 		bsr.w	L75f2a
 		move.w	#$98bc,11726(a6)
@@ -53486,7 +53486,7 @@ L772d0:
 		dc.b	$98,$82,$1,$b5,$98,$99,$f4,$24,$98,$90,$12,$8e,$98,$91,$13,$88
 		dc.b	$98,$8b,$a,$be,$98,$86,$3,$e8,$98,$79,$0,$32,$98,$8f,$11,$17
 		dc.b	$98,$7a,$0,$64,$98,$78,$0,$19
-		
+
 L77318:
 		mulu	#$a,d3
 		sub.l	d3,734(a6)
@@ -53501,7 +53501,7 @@ L77318:
 		move.w	#$98da,d0
 		bsr.w	L76130
 		bra.w	L771f0
-		
+
 L77348:
 		mulu	#$a,d3
 		sub.l	d3,734(a6)
@@ -53509,7 +53509,7 @@ L77348:
 		movea.l	674(a6),a0
 		addq.w	#1,184(a0)
 		bra.w	L771f0
-		
+
 L77360:
 		mulu	#$a,d3
 		sub.l	d3,734(a6)
@@ -53535,7 +53535,7 @@ L77360:
 		lea	894(a6),a2
 		move.w	-8(a3,d1.w),0(a2,d1.w)
 		bra.w	L771f0
-		
+
 L773bc:
 		mulu	#$a,d3
 		sub.l	d3,734(a6)
@@ -53547,7 +53547,7 @@ L773bc:
 		move.w	#$98db,d0
 		bsr.w	L76130
 		bra.w	L771f0
-		
+
 L773ec:
 		mulu	#$a,d3
 		sub.l	d3,734(a6)
@@ -53557,7 +53557,7 @@ L773ec:
 		move.w	#$98dc,d0
 		bsr.w	L76130
 		bra.w	L771f0
-		
+
 L77410:
 		mulu	#$a,d3
 		sub.l	d3,734(a6)
@@ -54456,7 +54456,7 @@ L77f88:
 		bne.s	l77fb6
 	l77fc4:	rts
 
-		
+
 L77fc6:
 		bsr.w	L75f2a
 		move.w	#$98c1,11726(a6)
@@ -55132,13 +55132,13 @@ L787da:
 		add.w	d2,d1
 		movem.w	d0-1,11914(a6)
 		jsr	A5_WaitVBlankWaits(a5)
-		
+
 		* black box around 3d bit
 		movem.l	a3-6,-(a7)
 		movem.w	L78776(pc),d0-7/a0
 		jsr	N_Wipe3DArea
 		movem.l	(a7)+,a3-6
-		
+
 		bsr.w	L787b0
 		movem.l	a3-6,-(a7)
 		bclr	#$0,A6_do_clr_2_space_cols(a6)
@@ -57434,7 +57434,7 @@ N_Wipe3DArea:
 		* black box around your rotating ship view thingy...
 		tst.w	gl_renderer_on
 		bne.s	l_poop
-		
+
 		jsr	A5_DrawQuad(a5)
 		bra.s	l_poop2
 	l_poop:
@@ -57444,7 +57444,7 @@ N_Wipe3DArea:
 	l_poop2:
 		rts
 
-		
+
 L7e28e:
 		dc.b	$b6,$19,$b6,$19,$49,$e7
 
@@ -58190,7 +58190,7 @@ L7ec22:
 
 L7ec5c:
 		dc.w	0
-		
+
 L7ec5e:
 		dc.w	0
 		dc.w	0
@@ -65042,10 +65042,10 @@ L8a996:
 L8aa08:
 		dc.b	$0,$0,$1,$11,$2,$22,$3,$33,$4,$44,$5,$55,$6,$66,$7,$77
 		dc.b	$8,$88,$9,$99,$b,$bb,$d,$dd,$f,$44,$8,$f8,$f,$8f,$a,$aa
-		
+
 		dc.b	$0,$0,$1,$11,$2,$22,$3,$33,$4,$44,$5,$55,$6,$66,$7,$77
 		dc.b	$8,$88,$9,$99,$b,$bb,$d,$dd,$f,$44,$8,$f8,$f,$8f,$a,$aa
-		
+
 L8aa48:
 		movem.l	a4-6,-(a7)
 		move.w	d2,d3
@@ -65079,7 +65079,7 @@ L8aa48:
 		moveq	#1,d5
 		movea.l	a5,a3
 		hcall	#Call_HLine
-		
+
 		movem.w	(a7)+,d0-1
 		sub.w	(a7),d0
 		dbra	d4,l8aa88
@@ -65118,7 +65118,7 @@ L8aabc:
 		andi.w	#$3f,d0
 		move.b	0(a4,d0.w),d1
 		lsl.w	#2,d1
-		
+
 		movea.l	a5,a3
 		moveq	#2,d5
 		hcall	#Call_HLine
@@ -65166,7 +65166,7 @@ L8ab40:
 		andi.w	#$3f,d0
 		move.b	0(a4,d0.w),d1
 		lsl.w	#2,d1
-		
+
 		movea.l	a5,a3
 		moveq	#4,d5
 		hcall	#Call_HLine

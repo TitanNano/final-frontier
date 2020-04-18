@@ -6,12 +6,25 @@
 */
 
 #include <SDL.h>
+#if defined(__APPLE__)
+#define GL_SILENCE_DEPRECATION
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
 #include <GL/gl.h>
 #include <GL/glu.h>
+#endif
 
 #include "main.h"
 #include "../m68000.h"
 #include "screen.h"
+
+//Apple's glu.h defines its function pointers a little differently, so this tries to fix things up:
+#ifdef __APPLE__
+#ifndef GLAPIENTRY
+typedef GLvoid (*_GLUfuncptr)(void);
+#endif
+#endif
 
 unsigned long VideoBase;                        /* Base address in ST Ram for screen(read on each VBL) */
 unsigned char *VideoRaster;                      /* Pointer to Video raster, after VideoBase in PC address space. Use to copy data on HBL */
@@ -26,7 +39,7 @@ unsigned int CtrlRGBPalette[16];
 
 unsigned long logscreen, logscreen2, physcreen, physcreen2;
 
-SDL_Surface *sdlscrn;                             /* The SDL screen surface */
+SDL_Window *sdlscrn;                             /* The SDL screen */
 BOOL bGrabMouse = FALSE;                          /* Grab the mouse cursor in the window */
 BOOL bInFullScreen = FALSE;
 
@@ -67,7 +80,7 @@ void CALLBACK beginCallback(GLenum which);
 void CALLBACK errorCallback(GLenum errorCode);
 void CALLBACK endCallback(void);
 void CALLBACK vertexCallback(GLvoid *vertex, GLvoid *poly_data);
-void CALLBACK combineCallback(GLdouble coords[3], 
+void CALLBACK combineCallback(GLdouble coords[3],
                      GLdouble *vertex_data[4],
                      GLfloat weight[4], GLdouble **dataOut );
 
@@ -84,25 +97,23 @@ static void set_ctrl_viewport ()
 
 static void change_vidmode ()
 {
-	const SDL_VideoInfo *info = NULL;
 	int modes;
 
-	info = SDL_GetVideoInfo ();
-
-	assert (info != NULL);
-
 	SDL_GL_SetAttribute (SDL_GL_DOUBLEBUFFER, 1);
-	
-	modes = SDL_OPENGL | SDL_ANYFORMAT | (bInFullScreen ? SDL_FULLSCREEN : 0);
-	
-	if ((sdlscrn = SDL_SetVideoMode (screen_w, screen_h,
-				info->vfmt->BitsPerPixel, modes)) == 0) {
+
+	modes = SDL_WINDOW_OPENGL | (bInFullScreen ? SDL_WINDOW_FULLSCREEN : 0);
+
+	if ((sdlscrn = SDL_CreateWindow("Frontier",
+        SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+        screen_w, screen_h, modes)) == 0) {
 		fprintf (stderr, "Video mode set failed: %s\n", SDL_GetError ());
 		SDL_Quit ();
 		exit (-1);
 	}
 
-	glDisable (GL_CULL_FACE);
+  SDL_GLContext glcontext = SDL_GL_CreateContext(sdlscrn);
+
+  glDisable (GL_CULL_FACE);
 	glShadeModel (GL_FLAT);
 	glDisable (GL_DEPTH_TEST);
 	glClearColor (0, 0, 0, 0);
@@ -116,14 +127,14 @@ static void change_vidmode ()
 	glGenTextures (1, &screen_tex);
 	glBindTexture (GL_TEXTURE_2D, screen_tex);
 	glTexImage2D (GL_TEXTURE_2D, 0, GL_RGBA, SCR_TEX_W, SCR_TEX_H, 0, GL_RGBA, GL_INT, 0);
-	glTexParameterf (GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP);
-	glTexParameterf (GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP);
+	glTexParameterf (GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);
+	glTexParameterf (GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
 	glTexParameterf (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	glTexParameterf (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-	
+
 	glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glDisable (GL_TEXTURE_2D);
-	
+
 	glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glMatrixMode (GL_MODELVIEW);
 	glLoadIdentity ();
@@ -133,19 +144,18 @@ static void change_vidmode ()
 void Screen_Init(void)
 {
 	change_vidmode ();
-	
+
 	qobj = gluNewQuadric ();
 
 	tobj = gluNewTess ();
-		
+
 	gluTessCallback(tobj, GLU_TESS_VERTEX_DATA, (_GLUfuncptr) vertexCallback);
 	gluTessCallback(tobj, GLU_TESS_BEGIN, (_GLUfuncptr) beginCallback);
 	gluTessCallback(tobj, GLU_TESS_END, (_GLUfuncptr) endCallback);
 	gluTessCallback(tobj, GLU_TESS_ERROR, (_GLUfuncptr) errorCallback);
 	gluTessCallback(tobj, GLU_TESS_COMBINE, (_GLUfuncptr) combineCallback);
-	
+
 	/* Configure some SDL stuff: */
-	SDL_WM_SetCaption(PROG_NAME, "Frontier");
 	SDL_EventState(SDL_MOUSEMOTION, SDL_ENABLE);
 	SDL_EventState(SDL_MOUSEBUTTONDOWN, SDL_ENABLE);
 	SDL_EventState(SDL_MOUSEBUTTONUP, SDL_ENABLE);
@@ -242,16 +252,16 @@ static int DrawChar (int col, int xoffset, char *scrline, int chr)
 	const char *font_pos;
 	char *pix;
 	int i;
-	
+
 	font_pos = font_bmp;
 	font_pos += (chr&0xff)*10;
 	scrline += xoffset;
-	
+
 	if (xoffset < 0) {
 		font_pos += 9;
 		return xoffset + *font_pos;
 	}
-	
+
 	for (i=0; i<8; i++, font_pos++, scrline += SCREENBYTES_LINE) {
 		pix = scrline;
 		if (xoffset > 319) continue;
@@ -307,7 +317,7 @@ int DrawStr (int xpos, int ypos, int col, unsigned char *str, bool shadowed)
 
 	x = xpos;
 	y = ypos;
-	
+
 	if ((y > 192) || (y<0)) return x;
 set_line:
 	screen = LOGSCREEN2;
@@ -315,7 +325,7 @@ set_line:
 
 	while (*str) {
 		chr = *(str++);
-		
+
 		if (chr < 0x1e) {
 			if (chr == '\r') {
 				y += 10;
@@ -336,7 +346,7 @@ set_line:
 			y = *(str++);
 			goto set_line;
 		}
-		
+
 		//if (x > 316) continue;
 
 		if (shadowed) {
@@ -383,7 +393,7 @@ static void draw_control_panel ()
 	unsigned int *pal;
 
 	set_ctrl_viewport ();
-	
+
 	/* this is a big fucking hack to make starsystem names
 	 * in the starmap show up. they are the only bitmap text
 	 * things drawn within the fe2 3d renderer, which makes
@@ -399,9 +409,9 @@ static void draw_control_panel ()
 	}
 	logscreen2 = y;
 	/****************************************************/
-	
+
 	scr = VideoRaster;
-	
+
 	/* intro likes black at the bottom */
 	/* hack hack hack what a pile of shite this is */
 	push_ortho ();
@@ -412,18 +422,18 @@ static void draw_control_panel ()
 		glVertex3f (0, 0, 0);
 		glVertex3f (319, 0, 0);
 	glEnd ();
-	
+
 	glEnable (GL_TEXTURE_2D);
-	
+
 	glBindTexture (GL_TEXTURE_2D, screen_tex);
 
 	pal = MainRGBPalette;
-	
+
 	/* copy whole 320x200 screen to texture */
 	for (y=0; y<200; y++) {
 		/* the control panel at the bottom has its own palette */
 		if (y >= 168) pal = CtrlRGBPalette;
-		
+
 		for (x=0; x<320; x++) {
 			/* in gl mode the ui texture has transparent crap where no shit is */
 			if ((*(scr)) == 255) {
@@ -436,7 +446,7 @@ static void draw_control_panel ()
 		glTexSubImage2D (GL_TEXTURE_2D, 0, 0, y, 320, 2, GL_RGBA, GL_UNSIGNED_BYTE, line);
 	}
 	glTexEnvf (GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
-	
+
 	if (use_renderer == R_OLD) {
 		glBegin (GL_TRIANGLE_STRIP);
 			glTexCoord2f (0.0f, 200.0f/SCR_TEX_H);
@@ -462,9 +472,9 @@ static void draw_control_panel ()
 		glEnd ();
 		glDisable (GL_BLEND);
 	}
-	
+
 	glDisable (GL_TEXTURE_2D);
-	
+
 	pop_ortho ();
 }
 
@@ -611,7 +621,7 @@ static void znode_rdmatrix (void **data, GLfloat m[16])
 		val = znode_rdword (data);	\
 		m[idx] = ((float)val)/-32768.0;	\
 	}
-	
+
 	rdmatrixval (0);
 	rdmatrixval (1);
 	rdmatrixval (2);
@@ -711,7 +721,7 @@ static void add_node (struct ZNode **node, unsigned int zval)
 	assert (znode_buf_pos < MAX_ZNODES);
 	/* end previous znode display list!!!!!!! */
 	if (znode_cur) end_node ();
-	
+
 	*node = znode_cur = &znode_buf[znode_buf_pos++];
 	znode_cur->z = zval;
 	znode_cur->less = NULL;
@@ -770,7 +780,7 @@ static void lighting_on (float light_vec[4], int rgb444_light_col, int rgb444_ex
 	unsigned int extra_col[4], obj_col[4], light_col[4];
 
 	do_not_light = rgb444_obj_col & (1<<8);
-	
+
 	/* object color bit 0x8 set means DO NOT LIGHT */
 	if (do_not_light) {
 		rgb444_obj_col ^= (1<<8);
@@ -843,7 +853,7 @@ void CALLBACK vertexCallback(GLvoid *vertex, GLvoid *poly_data)
  *  but weight[4] may be used to average color, normal, or texture
  *  coordinate data.  In this program, color is weighted.
  */
-void CALLBACK combineCallback(GLdouble coords[3], 
+void CALLBACK combineCallback(GLdouble coords[3],
                      GLdouble *vertex_data[4],
                      GLfloat weight[4], GLdouble **dataOut )
 {
@@ -933,12 +943,12 @@ void Nu_ComplexStart ()
 void Nu_DrawComplexStart (void **data)
 {
 	tess_vpos = 0;
-	
+
 	if (use_renderer == R_GL) {
 		glGetDoublev (GL_MODELVIEW_MATRIX, tessModelMatrix);
 		glGetDoublev (GL_PROJECTION_MATRIX, tessProjMatrix);
 		glGetIntegerv (GL_VIEWPORT, tessViewport);
-		
+
 		glMatrixMode (GL_PROJECTION);
 		glPushMatrix ();
 		glLoadIdentity ();
@@ -947,7 +957,7 @@ void Nu_DrawComplexStart (void **data)
 		glMatrixMode (GL_MODELVIEW);
 		glPushMatrix ();
 		glLoadIdentity ();
-		
+
 		gluTessNormal (tobj, 0, 0, 1);
 		gluTessProperty(tobj, GLU_TESS_WINDING_RULE, GLU_TESS_WINDING_ODD);
 		gluTessBeginPolygon (tobj, NULL);
@@ -973,7 +983,7 @@ void Nu_DrawComplexEnd (void **data)
 	if (use_renderer == R_GL) {
 		gluTessEndContour (tobj);
 		gluTessEndPolygon (tobj);
-		
+
 		glMatrixMode (GL_PROJECTION);
 		glPopMatrix ();
 		glMatrixMode (GL_MODELVIEW);
@@ -1013,19 +1023,19 @@ static void eval_bezier (GLdouble *out, float _t, float ctrlpoints[4][3])
 	a = b*c;
 	b = b*_t*3.0f;
 	c = c*3.0f*t2;
-	/* x */	
+	/* x */
 	out[0] =
 	    ctrlpoints[0][0] * a +
 	    ctrlpoints[1][0] * b +
 	    ctrlpoints[2][0] * c +
 	    ctrlpoints[3][0] * d;
-	/* y */	
+	/* y */
 	out[1] =
 	    ctrlpoints[0][1] * a +
 	    ctrlpoints[1][1] * b +
 	    ctrlpoints[2][1] * c +
 	    ctrlpoints[3][1] * d;
-	/* y */	
+	/* y */
 	out[2] =
 	    ctrlpoints[0][2] * a +
 	    ctrlpoints[1][2] * b +
@@ -1049,19 +1059,19 @@ void Nu_DrawComplexBezier (void **data)
 	float delta;
 	double v[3];
 	GLfloat ctrlpoints[4][3];
-	
+
 	znode_rdvertexf (data, ctrlpoints[0]);
 	znode_rdvertexf (data, ctrlpoints[1]);
 	znode_rdvertexf (data, ctrlpoints[2]);
 	znode_rdvertexf (data, ctrlpoints[3]);
-	
+
 	/*float poo = MAX (abs (ctrlpoints[0][0]-ctrlpoints[3][0]),
 			 abs (ctrlpoints[0][1]-ctrlpoints[3][1]));
 	poo /= MIN (ctrlpoints[0][2], ctrlpoints[3][2]);
 	bezier_steps = MIN (6 - 20*poo, 16);*/
 	//printf ("%d ", bezier_steps);
 	bezier_steps = 10;
-	
+
 	assert (tess_vpos + bezier_steps < MAX_TESS_VERTICES);
 	delta = 1.0f/bezier_steps;
 
@@ -1105,30 +1115,30 @@ void Nu_DrawTeardrop (void **data)
 #define TD_STRETCH	1.3333333333
 #define TD_BROADEN	0.33
 #define TD_BEZIER_STEPS	40
-	
+
 	if (use_renderer == R_OLD) return;
 	znode_rdvertexf (data, dir);
 	znode_rdvertexf (data, ctrlpoints[0]);
 	znode_rdcolor (data, &r, &g, &b);
-	
+
 	dir[0] -= ctrlpoints[0][0];
 	dir[1] -= ctrlpoints[0][1];
 	dir[2] -= ctrlpoints[0][2];
-	
+
 	ppd[0] = -dir[1];
 	ppd[1] = dir[0];
 	ppd[2] = dir[2];
 
 	//h = sqrt (dir[0]*dir[0] + dir[1]*dir[1] + dir[2]*dir[2]);
-	
+
 	ctrlpoints[1][0] = ctrlpoints[0][0] + TD_STRETCH*dir[0] + TD_BROADEN*ppd[0];
 	ctrlpoints[1][1] = ctrlpoints[0][1] + TD_STRETCH*dir[1] + TD_BROADEN*ppd[1];
 	ctrlpoints[1][2] = ctrlpoints[0][2] + dir[2];
-	
+
 	ctrlpoints[2][0] = ctrlpoints[0][0] + TD_STRETCH*dir[0] - TD_BROADEN*ppd[0];
 	ctrlpoints[2][1] = ctrlpoints[0][1] + TD_STRETCH*dir[1] - TD_BROADEN*ppd[1];
 	ctrlpoints[2][2] = ctrlpoints[0][2] + dir[2];
-	
+
 	ctrlpoints[3][0] = ctrlpoints[0][0];
 	ctrlpoints[3][1] = ctrlpoints[0][1];
 	ctrlpoints[3][2] = ctrlpoints[0][2];
@@ -1167,7 +1177,7 @@ void Nu_DrawBezierLine (void **data)
 	znode_rdvertexf (data, ctrlpoints[2]);
 	znode_rdvertexf (data, ctrlpoints[3]);
 	znode_rdcolor (data, &r, &g, &b);
-	
+
 	delta = 1.0f/20;
 	glColor3ub (r, g, b);
 	glBegin (GL_LINE_STRIP);
@@ -1191,7 +1201,7 @@ void Nu_DrawTriangle (void **data)
 {
 	float v1[3], v2[3], v3[3];
 	int rgb[3];
-	
+
 	znode_rdvertexf (data, v1);
 	znode_rdvertexf (data, v2);
 	znode_rdvertexf (data, v3);
@@ -1227,13 +1237,13 @@ void Nu_DrawQuad (void **data)
 {
 	int v1[3], v2[3], v3[3], v4[3];
 	int r, g, b;
-	
+
 	znode_rdvertex (data, v1);
 	znode_rdvertex (data, v2);
 	znode_rdvertex (data, v3);
 	znode_rdvertex (data, v4);
 	znode_rdcolor (data, &r, &g, &b);
-	
+
 	glColor3ub (r, g, b);
 	if (use_renderer == R_GLWIRE) {
 		glBegin (GL_LINE_STRIP);
@@ -1270,21 +1280,21 @@ void Nu_DrawTwinklyCircle (void **data)
 	dreg2 = znode_rdlong (data);
 	znode_rdvertex (data, v1);
 	znode_rdcolor (data, &r, &g, &b);
-	
+
 	glColor3ub (r, g, b);
 
 	isize = (dreg2 << 16) | (dreg2 >> 16);
 	//printf ("%x (%x)\n", GetReg (2), isize);
-	
+
 	size = -0.002*((short)dreg2)*v1[2];
-	
+
 	glPushMatrix ();
 	glTranslatef (v1[0], v1[1], v1[2]);
-	
+
 	if (size > 0.0f) gluDisk (qobj, 0.0, size, 32, 1);
-	
+
 	size = -0.002*((short) dreg2)*v1[2] - 0.016*v1[2];
-	
+
 	//printf ("Size %.2f\n", size);
 	if (size > 0.0f) {
 		glBegin (GL_LINES);
@@ -1327,7 +1337,7 @@ void Nu_Draw2DLine (void **data)
 	col = MainRGBPalette[(znode_rdword (data)&0xffff)>>2];
 
 	//printf ("%x,%x,%x,%x\n", col, col&0xff, (col>>8)&0xff, (col>>16)&0xff);
-	
+
 	push_ortho ();
 	set_ctrl_viewport ();
 	//glColor3ub (col&0xff, (col>>8)&0xff, (col>>16)&0xff);
@@ -1420,7 +1430,7 @@ void nuSphere (float size)
 void Nu_PutPlanet ()
 {
 	if (use_renderer == R_OLD) return;
-	
+
 	/*{
 		int cunt, i;
 		cunt = GetReg (REG_A6);
@@ -1433,7 +1443,7 @@ void Nu_PutPlanet ()
 		}
 		printf ("\n");
 	}*/
-	
+
 	znode_wrlong (NU_PLANET);
 	znode_wrlong (GetReg (REG_D6));
 	znode_wrlong (GetReg (REG_D1));
@@ -1461,10 +1471,10 @@ void Nu_DrawPlanet (void **data)
 	light_col[3] = 0;
 
 	size = znode_rdlong (data);
-	
+
 	znode_rdvertexf (data, light_vec);
 	light_vec[3] = 0.0f;
-	
+
 	glLightfv (GL_LIGHT1, GL_POSITION, light_vec);
 
 	glLightiv (GL_LIGHT1, GL_DIFFUSE, light_col);
@@ -1474,14 +1484,14 @@ void Nu_DrawPlanet (void **data)
 	glEnable (GL_LIGHTING);
 	glEnable (GL_LIGHT1);
 	glEnable (GL_NORMALIZE);
-	
+
 	glShadeModel (GL_SMOOTH);
 //	glColor3uiv (obj_col);
 	znode_rdvertex (data, v1);
 	znode_rdmatrix (data, rot_matrix);
 
 	//printf ("planet size %d, pos (%d,%d,%d)\n", size,v1[0],v1[1],v1[2]);
-	
+
 	glPushMatrix ();
 	glTranslatef (v1[0], v1[1], v1[2]);
 	glRotatef (180.0f, 1, 0, 0);
@@ -1494,7 +1504,7 @@ void Nu_DrawPlanet (void **data)
 	//gluSphere (qobj, size, 100, 100);
 	glDisable (GL_CULL_FACE);
 	glPopMatrix ();
-	
+
 	glDisable (GL_NORMALIZE);
 	glDisable (GL_LIGHTING);
 	glDisable (GL_LIGHT1);
@@ -1518,14 +1528,14 @@ void Nu_DrawCircle (void **data)
 	dreg2 = znode_rdlong (data);
 	znode_rdvertex (data, v1);
 	znode_rdcolor (data, &r, &g, &b);
-	
+
 	glColor3ub (r, g, b);
 
 	isize = (dreg2 << 16) | (dreg2 >> 16);
 	//printf ("%x (%x)\n", GetReg (2), isize);
-	
+
 	size = -0.002*((short)dreg2)*v1[2];
-	
+
 	glPushMatrix ();
 	glTranslatef (v1[0], v1[1], v1[2]);
 	gluDisk (qobj, 0.0, size, 32, 1);
@@ -1568,33 +1578,33 @@ void Nu_DrawCylinder (void **data)
 	vdiff[0] = v2[0] - v1[0];
 	vdiff[1] = v2[1] - v1[1];
 	vdiff[2] = v2[2] - v1[2];
-	
+
 	h = sqrt (vdiff[0]*vdiff[0] + vdiff[1]*vdiff[1] + vdiff[2]*vdiff[2]);
-	
+
 	rad1 = znode_rdlong (data) & 0xffff;
 	rad2 = znode_rdlong (data) & 0xffff;
-	
+
 	glShadeModel (GL_SMOOTH);
-	
+
 	glPushMatrix ();
 	glTranslatef (v1[0], v1[1], v1[2]);
 	glRotatef (-RAD_2_DEG * (atan2 (vdiff[2], vdiff[0]) - M_PI/2), 0.0f, 1.0f, 0.0f);
 	glRotatef (-RAD_2_DEG * asin (vdiff[1]/h), 1.0f, 0.0f, 0.0f);
 #define CYLINDER_POOP	20
-	
+
 	lighting_on (light_vec, light_col, extra_col, znode_rdlong (data));
 	gluDisk (qobj, 0.0, rad1, CYLINDER_POOP, 1);
 	glTranslatef (0, 0, h);
-	
+
 	lighting_on (light_vec, light_col, extra_col, znode_rdlong (data));
 	gluDisk (qobj, 0.0, rad2, CYLINDER_POOP, 1);
 	glTranslatef (0, 0, -h);
-	
+
 	glEnable (GL_CULL_FACE);
 	lighting_on (light_vec, light_col, extra_col, obj_col);
 	gluCylinder (qobj, rad1, rad2, h, CYLINDER_POOP, 1);
 	glDisable (GL_CULL_FACE);
-		
+
 	glPopMatrix ();
 	lighting_off ();
 }
@@ -1607,7 +1617,7 @@ void Nu_PutOval ()
 	if (use_renderer == R_OLD) return;
 	znode_wrlong (NU_OVALTHINGY);
 	znode_wrvertex (GetReg (REG_A0)+4);
-	
+
 	znode_wrlong (GetReg (REG_D3));
 	znode_wrlong (GetReg (REG_D4));
 	znode_wrlong (GetReg (REG_D5));
@@ -1625,12 +1635,12 @@ void Nu_DrawOval (void **data)
 	r = 0;
 	g = 0;
 	b = 0;
-	
+
 	d = (short) znode_rdlong (data);
 	e = (short) znode_rdlong (data);
 	f = (short) znode_rdlong (data);
 	rad = (short) znode_rdlong (data);
-	
+
 	glColor3ub (r, g, b);
 	glPushMatrix ();
 	glTranslatef (v1[0], v1[1], v1[2]);
@@ -1656,12 +1666,12 @@ void Nu_DrawBlob (void **data)
 	unsigned int r, g, b;
 	int rad;
 	int edges;
-	
+
 	znode_rdvertex (data, v1);
 	split_rgb444i (znode_rdlong (data), &r, &g, &b);
 	rad = znode_rdlong (data) & 0xffff;
 	edges = rad+4;
-	
+
 	glColor3ui (r, g, b);
 	if (rad < 3) {
 		glPointSize ((rad/2)+1);
@@ -1721,11 +1731,11 @@ void Nu_DrawLine (void **data)
 {
 	int v1[3], v2[3];
 	int r, g, b;
-	
+
 	znode_rdvertex (data, v1);
 	znode_rdvertex (data, v2);
 	znode_rdcolor (data, &r, &g, &b);
-	
+
 	glColor3ub (r, g, b);
 	glBegin (GL_LINES);
 		glVertex3iv (v1);
@@ -1752,7 +1762,7 @@ void Nu_GLClearArea ()
 	y1 = GetReg (1)&0xffff;
 	x2 = GetReg (2)&0xffff;
 	y2 = GetReg (3)&0xffff;
-	
+
 	push_ortho ();
 	set_ctrl_viewport ();
 	glColor3f (0.0f, 0.0f, 0.0f);
@@ -1808,7 +1818,7 @@ NU_DRAWFUNC nu_drawfuncs[NU_MAX] = {
 static void Nu_DrawPrimitive (void *data)
 {
 	int fnum;
-	
+
 	for (;;) {
 		fnum = znode_rdlong (&data);
 		//fprintf (stderr, "%d ", fnum);
@@ -1827,7 +1837,7 @@ static void draw_3dview (struct ZNode *node)
 {
 	if (node == NULL) return;
 	if (node->more) draw_3dview (node->more);
-	
+
 	if (use_renderer) {
 		//fprintf (stderr, "Z=%d ", node->z);
 		Nu_DrawPrimitive (node->data);
@@ -1850,7 +1860,7 @@ void Nu_DrawScreen ()
 	/* build RGB palettes */
 	_BuildRGBPalette (MainRGBPalette, MainPalette, len_main_palette);
 	_BuildRGBPalette (CtrlRGBPalette, CtrlPalette, 16);
-	
+
 	//fprintf (stderr, "Render: ");
 	if (znode_cur) end_node ();
 	//printf ("Frame: %d znodes.\n", znode_buf_pos);
@@ -1865,19 +1875,19 @@ void Nu_DrawScreen ()
 	}
 	draw_control_panel ();
 	glFlush ();
-	
-	SDL_GL_SwapBuffers ();
 
-	/* frontier background color... */
+  SDL_GL_SwapWindow(sdlscrn);
+
+  /* frontier background color... */
 	if (use_renderer == R_GLWIRE) {
 		glClearColor (0,0,0,0);
 	} else {
 		set_gl_clear_col (MainRGBPalette[fe2_bgcol]);
 	}
-	
+
 	glMatrixMode (GL_MODELVIEW);
 	glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glLoadIdentity ();
-	
+
 	set_main_viewport ();
 }
