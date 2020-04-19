@@ -6,7 +6,7 @@
 
 #include <SDL.h>
 
-#include "main.h"
+#include "lib_main.h"
 #include "audio.h"
 #include "screen.h"
 #include "shortcut.h"

@@ -2,3 +2,8 @@
 *.s.bin
 *.s.c
 frontier
+
+
+#Added by cargo
+
+/target

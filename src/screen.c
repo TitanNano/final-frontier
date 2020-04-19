@@ -15,7 +15,7 @@
 #include <GL/glu.h>
 #endif
 
-#include "main.h"
+#include "lib_main.h"
 #include "../m68000.h"
 #include "screen.h"
 

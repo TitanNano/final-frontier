@@ -9,7 +9,7 @@
 
 #include <SDL.h>
 
-#include "main.h"
+#include "lib_main.h"
 #include "audio.h"
 #include "../m68000.h"
 
@@ -54,7 +54,7 @@ static void play_music (int track)
 	FILE *f;
 
 	if (music_playing == TRUE) ov_clear (&music_file);
-	
+
 	snprintf (buf, sizeof (buf), "music/%02d.ogg", track);
 
 	f = fopen (buf, "rb");
@@ -107,7 +107,7 @@ void Call_PlayMusic ()
 	if (GetReg (2)&0xff0000) enabled_tracks |= 0x20;
 	if (GetReg (2)&0xff00) enabled_tracks |= 0x40;
 	if (GetReg (2)&0xff) enabled_tracks |= 0x80;
-	
+
 	SDL_LockAudio ();
 	switch (music_mode) {
 		case -2:
@@ -162,7 +162,7 @@ void Call_PlaySFX ()
 	int sample, chan;
 
 	SDL_LockAudio ();
-	
+
 	sample = (short) GetReg (REG_D0);
 	chan = (short) GetReg (REG_D1);
 	//printf ("Playing sample %d on channel %d.\n", sample, chan);
@@ -185,9 +185,9 @@ void Audio_CallBack(void *userdata, Uint8 *pDestBuffer, int len)
 	int i, j;
 	short sample;
 	BOOL playing = FALSE;
-	
+
 	pBuffer = pDestBuffer;
-	
+
 	for (i=0; i<MAX_CHANNELS; i++) {
 		if (wav_channels[i].buf != NULL) {
 			playing = TRUE;
@@ -220,9 +220,9 @@ void Audio_CallBack(void *userdata, Uint8 *pDestBuffer, int len)
 		}
 	}
 #endif /* OGG_MUSIC */
-	
+
 	if (!playing) return;
-	
+
 	for (i = 0; i < len; i+=4) {
 		sample = 0;
 		for (j=0; j<MAX_CHANNELS; j++) {
@@ -336,13 +336,13 @@ void Audio_Init(void)
 		sfx_buf[i].buf = NULL;
 	  }
 	  check_sample_format (&desiredAudioSpec, &sfx_buf[i].buf, &sfx_buf[i].buf_len, filename);
-	  
+
 	  /* 19 (hyperspace) and 23 (noise) loop */
 	  if (i == 19) sfx_buf[i].loop = SND_FREQ; /* loop to about 0.5 sec in */
 	  else if (i == 23) sfx_buf[i].loop = 0;
 	  else sfx_buf[i].loop = -1;
   }
-  
+
   /* All OK */
   bSoundWorking = TRUE;
   /* And begin */
@@ -382,4 +382,3 @@ void Audio_EnableAudio(BOOL bEnable)
     bPlayingBuffer = bEnable;
   }
 }
-

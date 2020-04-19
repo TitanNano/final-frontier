@@ -2,7 +2,7 @@
 #include <SDL_endian.h>
 #include <SDL_mouse.h>
 
-#include "main.h"
+#include "lib_main.h"
 #include "input.h"
 #include "../m68000.h"
 #include "shortcut.h"

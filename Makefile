@@ -1,4 +1,4 @@
-export CFLAGS = -O2 -g -Wall -DOGG_MUSIC
+export CFLAGS = -g -Wall -DOGG_MUSIC
 export LIBS = -framework OpenGL -lvorbisfile -lvorbis -logg
 export FE2OBJS = ../fe2.part1.o ../fe2.part2.o
 

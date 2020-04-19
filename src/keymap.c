@@ -7,7 +7,7 @@
   Here we process a key press and the remapping of the scancodes.
 */
 
-#include "main.h"
+#include "lib_main.h"
 #include "keymap.h"
 #include "input.h"
 #include "shortcut.h"

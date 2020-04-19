@@ -23,7 +23,7 @@
 #include <dirent.h>
 #include <unistd.h>
 
-#include "main.h"
+#include "lib_main.h"
 #include "../m68000.h"
 #include "hostcall.h"
 #include "screen.h"
@@ -75,13 +75,13 @@ void Call_Memset ()
 {
 	int adr, count;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	count = STMemory_ReadLong (Params+SIZE_WORD);
 	adr = STMemory_ReadLong (Params+SIZE_WORD+SIZE_LONG);
-	
+
 	if (use_renderer == R_OLD) {
 		memset (STRam+adr, 0, count);
 	} else {
@@ -94,10 +94,10 @@ void Call_MemsetBlue ()
 {
 	int adr, count;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	count = STMemory_ReadLong (Params+SIZE_WORD);
 	adr = STMemory_ReadLong (Params+SIZE_WORD+SIZE_LONG);
 	if (use_renderer == R_OLD) {
@@ -112,10 +112,10 @@ void Call_Memcpy ()
 {
 	int dest, src, count;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 
 	dest = STMemory_ReadLong (Params + SIZE_WORD);
 	src = STMemory_ReadLong (Params + SIZE_WORD + SIZE_LONG);
@@ -153,10 +153,10 @@ void Call_BlitCursor ()
 	const char *bmp;
 	Uint8 *save;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	org_x = STMemory_ReadLong (Params+SIZE_WORD);
 	org_y = STMemory_ReadLong (Params+SIZE_WORD+SIZE_LONG);
 	adr = STMemory_ReadLong (Params+SIZE_WORD+2*SIZE_LONG);
@@ -187,10 +187,10 @@ void Call_RestoreUnderCursor ()
 	Uint8 *pixbase, *pix;
 	char *bmp;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	org_x = STMemory_ReadLong (Params+SIZE_WORD);
 	org_y = STMemory_ReadLong (Params+SIZE_WORD+SIZE_LONG);
 	adr = STMemory_ReadLong (Params+SIZE_WORD+2*SIZE_LONG);
@@ -215,10 +215,10 @@ void Call_PutPix ()
 	int col, org_x, scr;
 	char *pix;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	col = STMemory_ReadWord (Params+SIZE_WORD)>>2;
 	org_x = (unsigned short) GetReg (REG_D4);
 	scr = GetReg (REG_A3);
@@ -245,16 +245,16 @@ void Call_FillLine ()
 	int org_x,len,scr,col;
 	char *pix;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 
 	col = STMemory_ReadWord (Params+SIZE_WORD)>>2;
 	org_x = (unsigned short) GetReg (REG_D4);
 	len = (~GetReg (REG_D5)) & 0xffff;
 	scr = GetReg (REG_A3);
-	
+
 	/* hack to fix screen line. frontier's logic still thinks
 	 * there are 160 bytes per line */
 	/* which screen buffer it is based on */
@@ -291,15 +291,15 @@ void Call_BackHLine ()
 	int i,scr,col,bitfield;
 	char *pix;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 
 	col = STMemory_ReadWord (Params+SIZE_WORD)>>2;
 	scr = GetReg (REG_A3);
 	bitfield = (unsigned short) GetReg (REG_D7);
-	
+
 	/* hack to fix screen line. frontier's logic still thinks
 	 * there are 160 bytes per line */
 	/* which screen buffer it is based on */
@@ -324,17 +324,17 @@ void Call_OldHLine ()
 	int org_x,len,scr,col;
 	char *pix;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 
 	col = STMemory_ReadWord (Params+SIZE_WORD)>>2;
 	//printf ("col=%d, d4=%d, (idx) d5=%d, (scr_line) a3=%p\n", col, Regs[REG_D4]&0xffff, Regs[REG_D5]&0xffff, (void*)Regs[REG_A3]);
 	org_x = (unsigned short) GetReg (REG_D4);
 	len = (unsigned short) GetReg (REG_D5);
 	scr = GetReg (REG_A3);
-	
+
 	/* hack to fix screen line. frontier's logic still thinks
 	 * there are 160 bytes per line */
 	/* which screen buffer it is based on */
@@ -365,7 +365,7 @@ void Call_HLine ()
 	org_x = GetReg(REG_D4) & 0xffff;
 	len = GetReg(REG_D5) & 0xffff;
 	scr = GetReg(REG_A3);
-	
+
 	/* horizontal line */
 	pix = STRam + scr + org_x;
 	while (len--) {
@@ -382,15 +382,15 @@ void Call_BlitBmp ()
 	int width, height, org_x, org_y, bmp, scr;
 	char *bmp_pix, *scr_pix, *ybase;
 	int xpoo, i, ypoo, plane_incr;
-	
+
 	short word0, word1, word2, word3;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
 
-	
+
+
 	width = STMemory_ReadWord (Params+SIZE_WORD);
 	height = STMemory_ReadWord (Params+SIZE_WORD*2);
 	org_x = STMemory_ReadWord (Params+SIZE_WORD*3);
@@ -408,9 +408,9 @@ void Call_BlitBmp ()
 	if (org_y < 0) return;
 	if (height > 200) return;
 	if (width > 320) return;
-	
+
 	plane_incr = 2*height*width;
-	
+
 	ypoo = height;
 	while (ypoo--) {
 		scr_pix = (char *)ybase;
@@ -423,7 +423,7 @@ void Call_BlitBmp ()
 			word2 = SDL_SwapBE16 (*((short*)bmp_pix));
 			bmp_pix += plane_incr;
 			word3 = SDL_SwapBE16 (*((short*)bmp_pix));
-			
+
 			for (i=0; i<16; i++) {
 				*scr_pix = (word0 >> (15-i))&0x1;
 				*scr_pix |= ((word1 >> (15-i))&0x1)<<1;
@@ -462,7 +462,7 @@ void Call_BlitBmp ()
 	glMatrixMode (GL_MODELVIEW);
 	glPopMatrix ();
 	glEnable (GL_DEPTH_TEST);
-#endif	
+#endif
 }
 
 #define SCR_W	320
@@ -470,7 +470,7 @@ void Call_BlitBmp ()
 void Call_DrawStrShadowed ()
 {
 	unsigned char *str;
-	
+
 	str = GetReg (REG_A0) + STRam;
 
 	SetReg (REG_D1, DrawStr (
@@ -481,7 +481,7 @@ void Call_DrawStrShadowed ()
 void Call_DrawStr ()
 {
 	unsigned char *str;
-	
+
 	str = GetReg (REG_A0) + STRam;
 
 	SetReg (REG_D1, DrawStr (
@@ -497,10 +497,10 @@ void Call_SetMainPalette ()
 
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
-	
+
+
 	pal_ptr = STMemory_ReadLong (Params+SIZE_WORD);
-	
+
 	for (i=0; i<16; i++) {
 		MainPalette[i] = STMemory_ReadWord (pal_ptr);
 		//printf ("%hx ", MainPalette[i]);
@@ -514,13 +514,13 @@ void Call_SetCtrlPalette ()
 	Uint32 pal_ptr;
 	int i;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
-	
+
+
 	pal_ptr = STMemory_ReadLong (Params+SIZE_WORD);
-	
+
 	for (i=0; i<16; i++) {
 		CtrlPalette[i] = STMemory_ReadWord (pal_ptr);
 		pal_ptr+=2;
@@ -533,10 +533,10 @@ unsigned short working_ext_pal[240];
 void Call_InformScreens ()
 {
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	physcreen2 = STMemory_ReadLong (Params+SIZE_WORD);
 	logscreen2 = STMemory_ReadLong (Params+SIZE_WORD+SIZE_LONG);
 	physcreen = STMemory_ReadLong (Params+SIZE_WORD+2*SIZE_LONG);
@@ -548,10 +548,10 @@ void Call_SetScreenBase ()
 {
 	int i;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 	VideoBase = STMemory_ReadLong (Params+SIZE_WORD);
 	VideoRaster = STRam + VideoBase;
 
@@ -565,10 +565,10 @@ void Call_MakeExtPalette ()
 {
 	int col_list, len, col_idx, col_val, i;
 	unsigned long Params;
-	
+
 	Params = GetReg (REG_A7);
 	Params -= SIZE_WORD;
-	
+
 
 	col_list = STMemory_ReadLong (Params+SIZE_WORD);
 
@@ -606,9 +606,9 @@ void Call_DumpDebug ()
 {
 	int i, j;
 	printf ("Debug info. PC @ 68k line %d.\n", line_no);
-	
+
 	Call_DumpRegs ();
-	
+
 	printf ("Stack:");
 	j = GetReg (15);
 	for (i=0; i<8; i++) {
@@ -624,17 +624,17 @@ void Call_NotifyMousePos ()
 {
 #if 0
 	int x, y;
-	
+
 	x = GetReg (REG_D3) & 0xffff;
 	y = GetReg (REG_D4) & 0xffff;
 
 	x *= ScreenDraw.MouseScale;
 	y *= ScreenDraw.MouseScale;
-	
+
 	SDL_EventState (SDL_MOUSEMOTION, SDL_DISABLE);
 	SDL_WarpMouse (x, y);
 	SDL_EventState (SDL_MOUSEMOTION, SDL_ENABLE);
-	SDL_ShowCursor (SDL_ENABLE);	
+	SDL_ShowCursor (SDL_ENABLE);
 #endif /* 0 */
 }
 
@@ -716,13 +716,13 @@ void DumpRegsChanged ()
 	_V = GetVFlag ();
 	_N = GetNFlag ();
 	_C = GetCFlag ();
-	
+
 	if (_X) putchar ('X');
 	if (_Z) putchar ('Z');
 	if (_N) putchar ('N');
 	if (_V) putchar ('V');
 	if (_C) putchar ('C');
-	
+
 	for (i=0; i<16; i++) {
 		if (PrevRegs[i] != GetReg (i)) {
 			printf (" %c%d:%x->%x", (i<8?'d':'a'), (i<8?i:i-8), PrevRegs[i], GetReg (i));
@@ -767,7 +767,7 @@ static void Call_Fwrite ()
 		fclose (f);
 	}
 }
-	
+
 static void Call_Fread ()
 {
 	int p, i;
@@ -807,7 +807,7 @@ static void Call_Fopendir ()
 	}
 
 	strncpy (cur_dir, name, 1024);
-	
+
 	poodir = opendir (name);
 	if (poodir) {
 		struct dirent *dent;
@@ -842,15 +842,15 @@ static void Call_Freaddir ()
 	}
 	strncpy (name, dent->d_name, MAX_FILENAME_LEN);
 	name[MAX_FILENAME_LEN-1] = '\0';
-	
+
 	strncpy (full_path_shit, cur_dir, 1024);
 	strncat (full_path_shit, "/", 1024);
 	strncat (full_path_shit, dent->d_name, 1024);
 	stat (full_path_shit, &_stat);
-	
+
 	len = _stat.st_size;
 	attribs = (S_ISDIR (_stat.st_mode) ? 0x10 : 0);
-	
+
 	p = GetReg (REG_A0);
 	for (i=0; i<MAX_FILENAME_LEN; i++) {
 		STMemory_WriteByte (p++, name[i]);

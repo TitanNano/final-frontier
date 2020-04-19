@@ -2,7 +2,7 @@
 SDLLIB = $(shell sdl2-config --libs) $(LIBS)
 SDLFLAGS = $(shell sdl2-config --cflags) -L/usr/X11R6/include
 
-SRCS = audio.c hostcall.c keymap.c main.c screen.c shortcut.c input.c
+SRCS = audio.c hostcall.c keymap.c main.c screen.c shortcut.c input.c lib_main.c
 
 OBJS = $(SRCS:.c=.o)
 
