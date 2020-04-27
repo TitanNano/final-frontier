@@ -2,4 +2,4 @@
 
 extern void Call_DumpDebug ();
 extern unsigned long HCall_OpCode (u32 opcode);
-
+extern void Call_Idle ();

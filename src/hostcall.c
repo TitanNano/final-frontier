@@ -638,11 +638,6 @@ void Call_NotifyMousePos ()
 #endif /* 0 */
 }
 
-static void Call_Idle ()
-{
-	SDL_Delay (0);
-}
-
 void Call_HostUpdate ()
 {
 	/* Clear any key presses which are due to be de-bounced (held for one ST frame) */

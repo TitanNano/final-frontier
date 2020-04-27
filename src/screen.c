@@ -48,10 +48,10 @@ enum RENDERERS use_renderer = R_GL;
 /* mouse shown this frame? */
 int mouse_shown = 0;
 /* fe2 UI blits are done to old screen memory and copied to this texture. */
-static unsigned int screen_tex;
+unsigned int screen_tex;
 
-static GLUquadricObj *qobj;
-static GLUtesselator *tobj;
+GLUquadricObj *qobj;
+GLUtesselator *tobj;
 
 float hack;
 
@@ -84,7 +84,7 @@ void CALLBACK combineCallback(GLdouble coords[3],
                      GLdouble *vertex_data[4],
                      GLfloat weight[4], GLdouble **dataOut );
 
-static void set_main_viewport ()
+void set_main_viewport ()
 {
 	int ctrl_h = 32*screen_h/200;
 	glViewport (0, ctrl_h, screen_w, screen_h - ctrl_h);
@@ -385,7 +385,7 @@ void Screen_ToggleRenderer ()
 	if (use_renderer >= R_MAX) use_renderer = 0;
 }
 
-static void draw_control_panel ()
+void draw_control_panel ()
 {
 	int x, y;
 	unsigned char *scr;
@@ -525,8 +525,8 @@ static int obj_data_pos;
 #define MAX_ZNODES	1000
 static struct ZNode znode_buf[MAX_ZNODES];
 static int znode_buf_pos;
-static struct ZNode *znode_start;
-static struct ZNode *znode_cur;
+struct ZNode *znode_start;
+struct ZNode *znode_cur;
 
 static inline void znode_databegin ()
 {
@@ -711,7 +711,7 @@ enum NuPrimitive {
 	NU_MAX
 };
 
-static inline void end_node ()
+void end_node ()
 {
 	znode_wrlong (0);
 }
@@ -1833,7 +1833,7 @@ static void Nu_DrawPrimitive (void *data)
  *
  * Draw this crap starting from biggest value znodes.
  */
-static void draw_3dview (struct ZNode *node)
+void draw_3dview (struct ZNode *node)
 {
 	if (node == NULL) return;
 	if (node->more) draw_3dview (node->more);
@@ -1846,7 +1846,7 @@ static void draw_3dview (struct ZNode *node)
 	if (node->less) draw_3dview (node->less);
 }
 
-static void set_gl_clear_col (int rgb)
+void set_gl_clear_col (int rgb)
 {
 	float r,g,b;
 	r = (rgb&0xff)/255.0f;
@@ -1855,7 +1855,7 @@ static void set_gl_clear_col (int rgb)
 	glClearColor (r,g,b,0);
 }
 
-void Nu_DrawScreen ()
+void Nu_DrawScreen_DISABLED ()
 {
 	/* build RGB palettes */
 	_BuildRGBPalette (MainRGBPalette, MainPalette, len_main_palette);

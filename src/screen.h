@@ -67,7 +67,7 @@ extern void Nu_3DViewInit ();
 extern void Nu_InsertZNode ();
 extern void Nu_ComplexStartInner ();
 extern void Nu_ComplexBezier ();
-extern void Nu_DrawScreen ();
+// extern void Nu_DrawScreen ();
 extern void Nu_PutTeardrop ();
 extern void Nu_PutOval ();
 extern void Nu_IsGLRenderer ();

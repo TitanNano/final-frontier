@@ -198,4 +198,5 @@ extern void Main_EventHandler();
 extern int lib_main(int argc, char *argv[]);
 extern void Main_ReadParameters(int argc, char *argv[]);
 extern void Main_Init(void);
+extern void Main_UnInit(void);
 extern SDL_TimerID export_SDL_AddTimer(Uint32 interval, SDL_TimerCallback callback, void* param);

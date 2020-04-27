@@ -81,9 +81,7 @@ where
         }
     }
 }
-pub const PROG_NAME: &'static [u8; 18usize] = b"Frontier: Elite 2\0";
-pub const MAX_FILENAME_LENGTH: u32 = 256;
-pub const MAX_STRING_LENGTH: u32 = 512;
+pub const __WORDSIZE: u32 = 64;
 pub const __DARWIN_ONLY_64_BIT_INO_T: u32 = 0;
 pub const __DARWIN_ONLY_VERS_1050: u32 = 0;
 pub const __DARWIN_ONLY_UNIX_CONFORMANCE: u32 = 1;
@@ -102,6 +100,2274 @@ pub const __DARWIN_NO_LONG_LONG: u32 = 0;
 pub const _DARWIN_FEATURE_64_BIT_INODE: u32 = 1;
 pub const _DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE: u32 = 1;
 pub const _DARWIN_FEATURE_UNIX_CONFORMANCE: u32 = 3;
+pub const __PTHREAD_SIZE__: u32 = 8176;
+pub const __PTHREAD_ATTR_SIZE__: u32 = 56;
+pub const __PTHREAD_MUTEXATTR_SIZE__: u32 = 8;
+pub const __PTHREAD_MUTEX_SIZE__: u32 = 56;
+pub const __PTHREAD_CONDATTR_SIZE__: u32 = 8;
+pub const __PTHREAD_COND_SIZE__: u32 = 40;
+pub const __PTHREAD_ONCE_SIZE__: u32 = 8;
+pub const __PTHREAD_RWLOCK_SIZE__: u32 = 192;
+pub const __PTHREAD_RWLOCKATTR_SIZE__: u32 = 16;
+pub const INT8_MAX: u32 = 127;
+pub const INT16_MAX: u32 = 32767;
+pub const INT32_MAX: u32 = 2147483647;
+pub const INT64_MAX: u64 = 9223372036854775807;
+pub const INT8_MIN: i32 = -128;
+pub const INT16_MIN: i32 = -32768;
+pub const INT32_MIN: i32 = -2147483648;
+pub const INT64_MIN: i64 = -9223372036854775808;
+pub const UINT8_MAX: u32 = 255;
+pub const UINT16_MAX: u32 = 65535;
+pub const UINT32_MAX: u32 = 4294967295;
+pub const UINT64_MAX: i32 = -1;
+pub const INT_LEAST8_MIN: i32 = -128;
+pub const INT_LEAST16_MIN: i32 = -32768;
+pub const INT_LEAST32_MIN: i32 = -2147483648;
+pub const INT_LEAST64_MIN: i64 = -9223372036854775808;
+pub const INT_LEAST8_MAX: u32 = 127;
+pub const INT_LEAST16_MAX: u32 = 32767;
+pub const INT_LEAST32_MAX: u32 = 2147483647;
+pub const INT_LEAST64_MAX: u64 = 9223372036854775807;
+pub const UINT_LEAST8_MAX: u32 = 255;
+pub const UINT_LEAST16_MAX: u32 = 65535;
+pub const UINT_LEAST32_MAX: u32 = 4294967295;
+pub const UINT_LEAST64_MAX: i32 = -1;
+pub const INT_FAST8_MIN: i32 = -128;
+pub const INT_FAST16_MIN: i32 = -32768;
+pub const INT_FAST32_MIN: i32 = -2147483648;
+pub const INT_FAST64_MIN: i64 = -9223372036854775808;
+pub const INT_FAST8_MAX: u32 = 127;
+pub const INT_FAST16_MAX: u32 = 32767;
+pub const INT_FAST32_MAX: u32 = 2147483647;
+pub const INT_FAST64_MAX: u64 = 9223372036854775807;
+pub const UINT_FAST8_MAX: u32 = 255;
+pub const UINT_FAST16_MAX: u32 = 65535;
+pub const UINT_FAST32_MAX: u32 = 4294967295;
+pub const UINT_FAST64_MAX: i32 = -1;
+pub const INTPTR_MAX: u64 = 9223372036854775807;
+pub const INTPTR_MIN: i64 = -9223372036854775808;
+pub const UINTPTR_MAX: i32 = -1;
+pub const SIZE_MAX: i32 = -1;
+pub const RSIZE_MAX: i32 = -1;
+pub const WINT_MIN: i32 = -2147483648;
+pub const WINT_MAX: u32 = 2147483647;
+pub const SIG_ATOMIC_MIN: i32 = -2147483648;
+pub const SIG_ATOMIC_MAX: u32 = 2147483647;
+pub const GL_ARB_color_buffer_float: u32 = 1;
+pub const GL_ARB_depth_buffer_float: u32 = 1;
+pub const GL_ARB_depth_clamp: u32 = 1;
+pub const GL_ARB_depth_texture: u32 = 1;
+pub const GL_ARB_draw_buffers: u32 = 1;
+pub const GL_ARB_draw_elements_base_vertex: u32 = 1;
+pub const GL_ARB_draw_instanced: u32 = 1;
+pub const GL_ARB_fragment_program: u32 = 1;
+pub const GL_ARB_fragment_program_shadow: u32 = 1;
+pub const GL_ARB_fragment_shader: u32 = 1;
+pub const GL_ARB_framebuffer_object: u32 = 1;
+pub const GL_ARB_framebuffer_sRGB: u32 = 1;
+pub const GL_ARB_half_float_pixel: u32 = 1;
+pub const GL_ARB_half_float_vertex: u32 = 1;
+pub const GL_ARB_imaging: u32 = 1;
+pub const GL_ARB_instanced_arrays: u32 = 1;
+pub const GL_ARB_multisample: u32 = 1;
+pub const GL_ARB_multitexture: u32 = 1;
+pub const GL_ARB_occlusion_query: u32 = 1;
+pub const GL_ARB_pixel_buffer_object: u32 = 1;
+pub const GL_ARB_point_parameters: u32 = 1;
+pub const GL_ARB_point_sprite: u32 = 1;
+pub const GL_ARB_provoking_vertex: u32 = 1;
+pub const GL_ARB_seamless_cube_map: u32 = 1;
+pub const GL_ARB_shader_objects: u32 = 1;
+pub const GL_ARB_shader_texture_lod: u32 = 1;
+pub const GL_ARB_shading_language_100: u32 = 1;
+pub const GL_ARB_shadow: u32 = 1;
+pub const GL_ARB_shadow_ambient: u32 = 1;
+pub const GL_ARB_sync: u32 = 1;
+pub const GL_ARB_texture_border_clamp: u32 = 1;
+pub const GL_ARB_texture_compression: u32 = 1;
+pub const GL_ARB_texture_compression_rgtc: u32 = 1;
+pub const GL_ARB_texture_cube_map: u32 = 1;
+pub const GL_ARB_texture_env_add: u32 = 1;
+pub const GL_ARB_texture_env_combine: u32 = 1;
+pub const GL_ARB_texture_env_crossbar: u32 = 1;
+pub const GL_ARB_texture_env_dot3: u32 = 1;
+pub const GL_ARB_texture_float: u32 = 1;
+pub const GL_ARB_texture_mirrored_repeat: u32 = 1;
+pub const GL_ARB_texture_non_power_of_two: u32 = 1;
+pub const GL_ARB_texture_rectangle: u32 = 1;
+pub const GL_ARB_texture_rg: u32 = 1;
+pub const GL_ARB_transpose_matrix: u32 = 1;
+pub const GL_ARB_vertex_array_bgra: u32 = 1;
+pub const GL_ARB_vertex_blend: u32 = 1;
+pub const GL_ARB_vertex_buffer_object: u32 = 1;
+pub const GL_ARB_vertex_program: u32 = 1;
+pub const GL_ARB_vertex_shader: u32 = 1;
+pub const GL_ARB_window_pos: u32 = 1;
+pub const GL_EXT_abgr: u32 = 1;
+pub const GL_EXT_bgra: u32 = 1;
+pub const GL_EXT_bindable_uniform: u32 = 1;
+pub const GL_EXT_blend_color: u32 = 1;
+pub const GL_EXT_blend_equation_separate: u32 = 1;
+pub const GL_EXT_blend_func_separate: u32 = 1;
+pub const GL_EXT_blend_minmax: u32 = 1;
+pub const GL_EXT_blend_subtract: u32 = 1;
+pub const GL_EXT_clip_volume_hint: u32 = 1;
+pub const GL_EXT_debug_label: u32 = 1;
+pub const GL_EXT_debug_marker: u32 = 1;
+pub const GL_EXT_depth_bounds_test: u32 = 1;
+pub const GL_EXT_draw_buffers2: u32 = 1;
+pub const GL_EXT_draw_range_elements: u32 = 1;
+pub const GL_EXT_fog_coord: u32 = 1;
+pub const GL_EXT_framebuffer_blit: u32 = 1;
+pub const GL_EXT_framebuffer_multisample: u32 = 1;
+pub const GL_EXT_framebuffer_multisample_blit_scaled: u32 = 1;
+pub const GL_EXT_framebuffer_object: u32 = 1;
+pub const GL_EXT_framebuffer_sRGB: u32 = 1;
+pub const GL_EXT_geometry_shader4: u32 = 1;
+pub const GL_EXT_gpu_program_parameters: u32 = 1;
+pub const GL_EXT_gpu_shader4: u32 = 1;
+pub const GL_EXT_multi_draw_arrays: u32 = 1;
+pub const GL_EXT_packed_depth_stencil: u32 = 1;
+pub const GL_EXT_packed_float: u32 = 1;
+pub const GL_EXT_provoking_vertex: u32 = 1;
+pub const GL_EXT_rescale_normal: u32 = 1;
+pub const GL_EXT_secondary_color: u32 = 1;
+pub const GL_EXT_separate_specular_color: u32 = 1;
+pub const GL_EXT_shadow_funcs: u32 = 1;
+pub const GL_EXT_stencil_two_side: u32 = 1;
+pub const GL_EXT_stencil_wrap: u32 = 1;
+pub const GL_EXT_texture_array: u32 = 1;
+pub const GL_EXT_texture_compression_dxt1: u32 = 1;
+pub const GL_EXT_texture_compression_s3tc: u32 = 1;
+pub const GL_EXT_texture_env_add: u32 = 1;
+pub const GL_EXT_texture_filter_anisotropic: u32 = 1;
+pub const GL_EXT_texture_integer: u32 = 1;
+pub const GL_EXT_texture_lod_bias: u32 = 1;
+pub const GL_EXT_texture_mirror_clamp: u32 = 1;
+pub const GL_EXT_texture_rectangle: u32 = 1;
+pub const GL_EXT_texture_shared_exponent: u32 = 1;
+pub const GL_EXT_texture_sRGB: u32 = 1;
+pub const GL_EXT_texture_sRGB_decode: u32 = 1;
+pub const GL_EXT_timer_query: u32 = 1;
+pub const GL_EXT_transform_feedback: u32 = 1;
+pub const GL_EXT_vertex_array_bgra: u32 = 1;
+pub const GL_APPLE_aux_depth_stencil: u32 = 1;
+pub const GL_APPLE_client_storage: u32 = 1;
+pub const GL_APPLE_element_array: u32 = 1;
+pub const GL_APPLE_fence: u32 = 1;
+pub const GL_APPLE_float_pixels: u32 = 1;
+pub const GL_APPLE_flush_buffer_range: u32 = 1;
+pub const GL_APPLE_flush_render: u32 = 1;
+pub const GL_APPLE_object_purgeable: u32 = 1;
+pub const GL_APPLE_packed_pixels: u32 = 1;
+pub const GL_APPLE_pixel_buffer: u32 = 1;
+pub const GL_APPLE_rgb_422: u32 = 1;
+pub const GL_APPLE_row_bytes: u32 = 1;
+pub const GL_APPLE_specular_vector: u32 = 1;
+pub const GL_APPLE_texture_range: u32 = 1;
+pub const GL_APPLE_transform_hint: u32 = 1;
+pub const GL_APPLE_vertex_array_object: u32 = 1;
+pub const GL_APPLE_vertex_array_range: u32 = 1;
+pub const GL_APPLE_vertex_point_size: u32 = 1;
+pub const GL_APPLE_vertex_program_evaluators: u32 = 1;
+pub const GL_APPLE_ycbcr_422: u32 = 1;
+pub const GL_ATI_blend_equation_separate: u32 = 1;
+pub const GL_ATI_blend_weighted_minmax: u32 = 1;
+pub const GL_ATI_separate_stencil: u32 = 1;
+pub const GL_ATI_texture_compression_3dc: u32 = 1;
+pub const GL_ATI_texture_env_combine3: u32 = 1;
+pub const GL_ATI_texture_float: u32 = 1;
+pub const GL_ATI_texture_mirror_once: u32 = 1;
+pub const GL_IBM_rasterpos_clip: u32 = 1;
+pub const GL_NV_blend_square: u32 = 1;
+pub const GL_NV_conditional_render: u32 = 1;
+pub const GL_NV_depth_clamp: u32 = 1;
+pub const GL_NV_fog_distance: u32 = 1;
+pub const GL_NV_fragment_program_option: u32 = 1;
+pub const GL_NV_fragment_program2: u32 = 1;
+pub const GL_NV_light_max_exponent: u32 = 1;
+pub const GL_NV_multisample_filter_hint: u32 = 1;
+pub const GL_NV_point_sprite: u32 = 1;
+pub const GL_NV_texgen_reflection: u32 = 1;
+pub const GL_NV_texture_barrier: u32 = 1;
+pub const GL_NV_vertex_program2_option: u32 = 1;
+pub const GL_NV_vertex_program3: u32 = 1;
+pub const GL_SGI_color_matrix: u32 = 1;
+pub const GL_SGIS_generate_mipmap: u32 = 1;
+pub const GL_SGIS_texture_edge_clamp: u32 = 1;
+pub const GL_SGIS_texture_lod: u32 = 1;
+pub const GL_GLEXT_VERSION: u32 = 8;
+pub const GL_RGBA_FLOAT_MODE_ARB: u32 = 34848;
+pub const GL_CLAMP_VERTEX_COLOR_ARB: u32 = 35098;
+pub const GL_CLAMP_FRAGMENT_COLOR_ARB: u32 = 35099;
+pub const GL_CLAMP_READ_COLOR_ARB: u32 = 35100;
+pub const GL_FIXED_ONLY_ARB: u32 = 35101;
+pub const GL_DEPTH_COMPONENT32F: u32 = 36012;
+pub const GL_DEPTH32F_STENCIL8: u32 = 36013;
+pub const GL_FLOAT_32_UNSIGNED_INT_24_8_REV: u32 = 36269;
+pub const GL_DEPTH_CLAMP: u32 = 34383;
+pub const GL_DEPTH_COMPONENT16_ARB: u32 = 33189;
+pub const GL_DEPTH_COMPONENT24_ARB: u32 = 33190;
+pub const GL_DEPTH_COMPONENT32_ARB: u32 = 33191;
+pub const GL_TEXTURE_DEPTH_SIZE_ARB: u32 = 34890;
+pub const GL_DEPTH_TEXTURE_MODE_ARB: u32 = 34891;
+pub const GL_MAX_DRAW_BUFFERS_ARB: u32 = 34852;
+pub const GL_DRAW_BUFFER0_ARB: u32 = 34853;
+pub const GL_DRAW_BUFFER1_ARB: u32 = 34854;
+pub const GL_DRAW_BUFFER2_ARB: u32 = 34855;
+pub const GL_DRAW_BUFFER3_ARB: u32 = 34856;
+pub const GL_DRAW_BUFFER4_ARB: u32 = 34857;
+pub const GL_DRAW_BUFFER5_ARB: u32 = 34858;
+pub const GL_DRAW_BUFFER6_ARB: u32 = 34859;
+pub const GL_DRAW_BUFFER7_ARB: u32 = 34860;
+pub const GL_DRAW_BUFFER8_ARB: u32 = 34861;
+pub const GL_DRAW_BUFFER9_ARB: u32 = 34862;
+pub const GL_DRAW_BUFFER10_ARB: u32 = 34863;
+pub const GL_DRAW_BUFFER11_ARB: u32 = 34864;
+pub const GL_DRAW_BUFFER12_ARB: u32 = 34865;
+pub const GL_DRAW_BUFFER13_ARB: u32 = 34866;
+pub const GL_DRAW_BUFFER14_ARB: u32 = 34867;
+pub const GL_DRAW_BUFFER15_ARB: u32 = 34868;
+pub const GL_FRAGMENT_PROGRAM_ARB: u32 = 34820;
+pub const GL_PROGRAM_ALU_INSTRUCTIONS_ARB: u32 = 34821;
+pub const GL_PROGRAM_TEX_INSTRUCTIONS_ARB: u32 = 34822;
+pub const GL_PROGRAM_TEX_INDIRECTIONS_ARB: u32 = 34823;
+pub const GL_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB: u32 = 34824;
+pub const GL_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB: u32 = 34825;
+pub const GL_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB: u32 = 34826;
+pub const GL_MAX_PROGRAM_ALU_INSTRUCTIONS_ARB: u32 = 34827;
+pub const GL_MAX_PROGRAM_TEX_INSTRUCTIONS_ARB: u32 = 34828;
+pub const GL_MAX_PROGRAM_TEX_INDIRECTIONS_ARB: u32 = 34829;
+pub const GL_MAX_PROGRAM_NATIVE_ALU_INSTRUCTIONS_ARB: u32 = 34830;
+pub const GL_MAX_PROGRAM_NATIVE_TEX_INSTRUCTIONS_ARB: u32 = 34831;
+pub const GL_MAX_PROGRAM_NATIVE_TEX_INDIRECTIONS_ARB: u32 = 34832;
+pub const GL_MAX_TEXTURE_COORDS_ARB: u32 = 34929;
+pub const GL_MAX_TEXTURE_IMAGE_UNITS_ARB: u32 = 34930;
+pub const GL_FRAGMENT_SHADER_ARB: u32 = 35632;
+pub const GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB: u32 = 35657;
+pub const GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB: u32 = 35723;
+pub const GL_INVALID_FRAMEBUFFER_OPERATION: u32 = 1286;
+pub const GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: u32 = 33296;
+pub const GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: u32 = 33297;
+pub const GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE: u32 = 33298;
+pub const GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: u32 = 33299;
+pub const GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE: u32 = 33300;
+pub const GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE: u32 = 33301;
+pub const GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: u32 = 33302;
+pub const GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE: u32 = 33303;
+pub const GL_FRAMEBUFFER_DEFAULT: u32 = 33304;
+pub const GL_FRAMEBUFFER_UNDEFINED: u32 = 33305;
+pub const GL_DEPTH_STENCIL_ATTACHMENT: u32 = 33306;
+pub const GL_MAX_RENDERBUFFER_SIZE: u32 = 34024;
+pub const GL_DEPTH_STENCIL: u32 = 34041;
+pub const GL_UNSIGNED_INT_24_8: u32 = 34042;
+pub const GL_DEPTH24_STENCIL8: u32 = 35056;
+pub const GL_TEXTURE_STENCIL_SIZE: u32 = 35057;
+pub const GL_TEXTURE_RED_TYPE: u32 = 35856;
+pub const GL_TEXTURE_GREEN_TYPE: u32 = 35857;
+pub const GL_TEXTURE_BLUE_TYPE: u32 = 35858;
+pub const GL_TEXTURE_ALPHA_TYPE: u32 = 35859;
+pub const GL_TEXTURE_DEPTH_TYPE: u32 = 35862;
+pub const GL_UNSIGNED_NORMALIZED: u32 = 35863;
+pub const GL_FRAMEBUFFER_BINDING: u32 = 36006;
+pub const GL_DRAW_FRAMEBUFFER_BINDING: u32 = 36006;
+pub const GL_RENDERBUFFER_BINDING: u32 = 36007;
+pub const GL_READ_FRAMEBUFFER: u32 = 36008;
+pub const GL_DRAW_FRAMEBUFFER: u32 = 36009;
+pub const GL_READ_FRAMEBUFFER_BINDING: u32 = 36010;
+pub const GL_RENDERBUFFER_SAMPLES: u32 = 36011;
+pub const GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE: u32 = 36048;
+pub const GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME: u32 = 36049;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL: u32 = 36050;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE: u32 = 36051;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER: u32 = 36052;
+pub const GL_FRAMEBUFFER_COMPLETE: u32 = 36053;
+pub const GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT: u32 = 36054;
+pub const GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: u32 = 36055;
+pub const GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER: u32 = 36059;
+pub const GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER: u32 = 36060;
+pub const GL_FRAMEBUFFER_UNSUPPORTED: u32 = 36061;
+pub const GL_MAX_COLOR_ATTACHMENTS: u32 = 36063;
+pub const GL_COLOR_ATTACHMENT0: u32 = 36064;
+pub const GL_COLOR_ATTACHMENT1: u32 = 36065;
+pub const GL_COLOR_ATTACHMENT2: u32 = 36066;
+pub const GL_COLOR_ATTACHMENT3: u32 = 36067;
+pub const GL_COLOR_ATTACHMENT4: u32 = 36068;
+pub const GL_COLOR_ATTACHMENT5: u32 = 36069;
+pub const GL_COLOR_ATTACHMENT6: u32 = 36070;
+pub const GL_COLOR_ATTACHMENT7: u32 = 36071;
+pub const GL_COLOR_ATTACHMENT8: u32 = 36072;
+pub const GL_COLOR_ATTACHMENT9: u32 = 36073;
+pub const GL_COLOR_ATTACHMENT10: u32 = 36074;
+pub const GL_COLOR_ATTACHMENT11: u32 = 36075;
+pub const GL_COLOR_ATTACHMENT12: u32 = 36076;
+pub const GL_COLOR_ATTACHMENT13: u32 = 36077;
+pub const GL_COLOR_ATTACHMENT14: u32 = 36078;
+pub const GL_COLOR_ATTACHMENT15: u32 = 36079;
+pub const GL_DEPTH_ATTACHMENT: u32 = 36096;
+pub const GL_STENCIL_ATTACHMENT: u32 = 36128;
+pub const GL_FRAMEBUFFER: u32 = 36160;
+pub const GL_RENDERBUFFER: u32 = 36161;
+pub const GL_RENDERBUFFER_WIDTH: u32 = 36162;
+pub const GL_RENDERBUFFER_HEIGHT: u32 = 36163;
+pub const GL_RENDERBUFFER_INTERNAL_FORMAT: u32 = 36164;
+pub const GL_STENCIL_INDEX1: u32 = 36166;
+pub const GL_STENCIL_INDEX4: u32 = 36167;
+pub const GL_STENCIL_INDEX8: u32 = 36168;
+pub const GL_STENCIL_INDEX16: u32 = 36169;
+pub const GL_RENDERBUFFER_RED_SIZE: u32 = 36176;
+pub const GL_RENDERBUFFER_GREEN_SIZE: u32 = 36177;
+pub const GL_RENDERBUFFER_BLUE_SIZE: u32 = 36178;
+pub const GL_RENDERBUFFER_ALPHA_SIZE: u32 = 36179;
+pub const GL_RENDERBUFFER_DEPTH_SIZE: u32 = 36180;
+pub const GL_RENDERBUFFER_STENCIL_SIZE: u32 = 36181;
+pub const GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: u32 = 36182;
+pub const GL_MAX_SAMPLES: u32 = 36183;
+pub const GL_FRAMEBUFFER_SRGB: u32 = 36281;
+pub const GL_HALF_FLOAT_ARB: u32 = 5131;
+pub const GL_HALF_FLOAT: u32 = 5131;
+pub const GL_VERTEX_ATTRIB_ARRAY_DIVISOR_ARB: u32 = 35070;
+pub const GL_MULTISAMPLE_ARB: u32 = 32925;
+pub const GL_SAMPLE_ALPHA_TO_COVERAGE_ARB: u32 = 32926;
+pub const GL_SAMPLE_ALPHA_TO_ONE_ARB: u32 = 32927;
+pub const GL_SAMPLE_COVERAGE_ARB: u32 = 32928;
+pub const GL_SAMPLE_BUFFERS_ARB: u32 = 32936;
+pub const GL_SAMPLES_ARB: u32 = 32937;
+pub const GL_SAMPLE_COVERAGE_VALUE_ARB: u32 = 32938;
+pub const GL_SAMPLE_COVERAGE_INVERT_ARB: u32 = 32939;
+pub const GL_MULTISAMPLE_BIT_ARB: u32 = 536870912;
+pub const GL_TEXTURE0_ARB: u32 = 33984;
+pub const GL_TEXTURE1_ARB: u32 = 33985;
+pub const GL_TEXTURE2_ARB: u32 = 33986;
+pub const GL_TEXTURE3_ARB: u32 = 33987;
+pub const GL_TEXTURE4_ARB: u32 = 33988;
+pub const GL_TEXTURE5_ARB: u32 = 33989;
+pub const GL_TEXTURE6_ARB: u32 = 33990;
+pub const GL_TEXTURE7_ARB: u32 = 33991;
+pub const GL_TEXTURE8_ARB: u32 = 33992;
+pub const GL_TEXTURE9_ARB: u32 = 33993;
+pub const GL_TEXTURE10_ARB: u32 = 33994;
+pub const GL_TEXTURE11_ARB: u32 = 33995;
+pub const GL_TEXTURE12_ARB: u32 = 33996;
+pub const GL_TEXTURE13_ARB: u32 = 33997;
+pub const GL_TEXTURE14_ARB: u32 = 33998;
+pub const GL_TEXTURE15_ARB: u32 = 33999;
+pub const GL_TEXTURE16_ARB: u32 = 34000;
+pub const GL_TEXTURE17_ARB: u32 = 34001;
+pub const GL_TEXTURE18_ARB: u32 = 34002;
+pub const GL_TEXTURE19_ARB: u32 = 34003;
+pub const GL_TEXTURE20_ARB: u32 = 34004;
+pub const GL_TEXTURE21_ARB: u32 = 34005;
+pub const GL_TEXTURE22_ARB: u32 = 34006;
+pub const GL_TEXTURE23_ARB: u32 = 34007;
+pub const GL_TEXTURE24_ARB: u32 = 34008;
+pub const GL_TEXTURE25_ARB: u32 = 34009;
+pub const GL_TEXTURE26_ARB: u32 = 34010;
+pub const GL_TEXTURE27_ARB: u32 = 34011;
+pub const GL_TEXTURE28_ARB: u32 = 34012;
+pub const GL_TEXTURE29_ARB: u32 = 34013;
+pub const GL_TEXTURE30_ARB: u32 = 34014;
+pub const GL_TEXTURE31_ARB: u32 = 34015;
+pub const GL_ACTIVE_TEXTURE_ARB: u32 = 34016;
+pub const GL_CLIENT_ACTIVE_TEXTURE_ARB: u32 = 34017;
+pub const GL_MAX_TEXTURE_UNITS_ARB: u32 = 34018;
+pub const GL_SAMPLES_PASSED_ARB: u32 = 35092;
+pub const GL_QUERY_COUNTER_BITS_ARB: u32 = 34916;
+pub const GL_CURRENT_QUERY_ARB: u32 = 34917;
+pub const GL_QUERY_RESULT_ARB: u32 = 34918;
+pub const GL_QUERY_RESULT_AVAILABLE_ARB: u32 = 34919;
+pub const GL_PIXEL_PACK_BUFFER_ARB: u32 = 35051;
+pub const GL_PIXEL_UNPACK_BUFFER_ARB: u32 = 35052;
+pub const GL_PIXEL_PACK_BUFFER_BINDING_ARB: u32 = 35053;
+pub const GL_PIXEL_UNPACK_BUFFER_BINDING_ARB: u32 = 35055;
+pub const GL_POINT_SIZE_MIN_ARB: u32 = 33062;
+pub const GL_POINT_SIZE_MAX_ARB: u32 = 33063;
+pub const GL_POINT_FADE_THRESHOLD_SIZE_ARB: u32 = 33064;
+pub const GL_POINT_DISTANCE_ATTENUATION_ARB: u32 = 33065;
+pub const GL_POINT_SPRITE_ARB: u32 = 34913;
+pub const GL_COORD_REPLACE_ARB: u32 = 34914;
+pub const GL_FIRST_VERTEX_CONVENTION: u32 = 36429;
+pub const GL_LAST_VERTEX_CONVENTION: u32 = 36430;
+pub const GL_PROVOKING_VERTEX: u32 = 36431;
+pub const GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION: u32 = 36428;
+pub const GL_TEXTURE_CUBE_MAP_SEAMLESS: u32 = 34895;
+pub const GL_PROGRAM_OBJECT_ARB: u32 = 35648;
+pub const GL_OBJECT_TYPE_ARB: u32 = 35662;
+pub const GL_OBJECT_SUBTYPE_ARB: u32 = 35663;
+pub const GL_OBJECT_DELETE_STATUS_ARB: u32 = 35712;
+pub const GL_OBJECT_COMPILE_STATUS_ARB: u32 = 35713;
+pub const GL_OBJECT_LINK_STATUS_ARB: u32 = 35714;
+pub const GL_OBJECT_VALIDATE_STATUS_ARB: u32 = 35715;
+pub const GL_OBJECT_INFO_LOG_LENGTH_ARB: u32 = 35716;
+pub const GL_OBJECT_ATTACHED_OBJECTS_ARB: u32 = 35717;
+pub const GL_OBJECT_ACTIVE_UNIFORMS_ARB: u32 = 35718;
+pub const GL_OBJECT_ACTIVE_UNIFORM_MAX_LENGTH_ARB: u32 = 35719;
+pub const GL_OBJECT_SHADER_SOURCE_LENGTH_ARB: u32 = 35720;
+pub const GL_SHADER_OBJECT_ARB: u32 = 35656;
+pub const GL_FLOAT_VEC2_ARB: u32 = 35664;
+pub const GL_FLOAT_VEC3_ARB: u32 = 35665;
+pub const GL_FLOAT_VEC4_ARB: u32 = 35666;
+pub const GL_INT_VEC2_ARB: u32 = 35667;
+pub const GL_INT_VEC3_ARB: u32 = 35668;
+pub const GL_INT_VEC4_ARB: u32 = 35669;
+pub const GL_BOOL_ARB: u32 = 35670;
+pub const GL_BOOL_VEC2_ARB: u32 = 35671;
+pub const GL_BOOL_VEC3_ARB: u32 = 35672;
+pub const GL_BOOL_VEC4_ARB: u32 = 35673;
+pub const GL_FLOAT_MAT2_ARB: u32 = 35674;
+pub const GL_FLOAT_MAT3_ARB: u32 = 35675;
+pub const GL_FLOAT_MAT4_ARB: u32 = 35676;
+pub const GL_SAMPLER_1D_ARB: u32 = 35677;
+pub const GL_SAMPLER_2D_ARB: u32 = 35678;
+pub const GL_SAMPLER_3D_ARB: u32 = 35679;
+pub const GL_SAMPLER_CUBE_ARB: u32 = 35680;
+pub const GL_SAMPLER_1D_SHADOW_ARB: u32 = 35681;
+pub const GL_SAMPLER_2D_SHADOW_ARB: u32 = 35682;
+pub const GL_SAMPLER_2D_RECT_ARB: u32 = 35683;
+pub const GL_SAMPLER_2D_RECT_SHADOW_ARB: u32 = 35684;
+pub const GL_SHADING_LANGUAGE_VERSION_ARB: u32 = 35724;
+pub const GL_TEXTURE_COMPARE_MODE_ARB: u32 = 34892;
+pub const GL_TEXTURE_COMPARE_FUNC_ARB: u32 = 34893;
+pub const GL_COMPARE_R_TO_TEXTURE_ARB: u32 = 34894;
+pub const GL_TEXTURE_COMPARE_FAIL_VALUE_ARB: u32 = 32959;
+pub const GL_MAX_SERVER_WAIT_TIMEOUT: u32 = 37137;
+pub const GL_OBJECT_TYPE: u32 = 37138;
+pub const GL_SYNC_CONDITION: u32 = 37139;
+pub const GL_SYNC_STATUS: u32 = 37140;
+pub const GL_SYNC_FLAGS: u32 = 37141;
+pub const GL_SYNC_FENCE: u32 = 37142;
+pub const GL_SYNC_GPU_COMMANDS_COMPLETE: u32 = 37143;
+pub const GL_UNSIGNALED: u32 = 37144;
+pub const GL_SIGNALED: u32 = 37145;
+pub const GL_ALREADY_SIGNALED: u32 = 37146;
+pub const GL_TIMEOUT_EXPIRED: u32 = 37147;
+pub const GL_CONDITION_SATISFIED: u32 = 37148;
+pub const GL_WAIT_FAILED: u32 = 37149;
+pub const GL_SYNC_FLUSH_COMMANDS_BIT: u32 = 1;
+pub const GL_TIMEOUT_IGNORED: i32 = -1;
+pub const GL_CLAMP_TO_BORDER_ARB: u32 = 33069;
+pub const GL_COMPRESSED_ALPHA_ARB: u32 = 34025;
+pub const GL_COMPRESSED_LUMINANCE_ARB: u32 = 34026;
+pub const GL_COMPRESSED_LUMINANCE_ALPHA_ARB: u32 = 34027;
+pub const GL_COMPRESSED_INTENSITY_ARB: u32 = 34028;
+pub const GL_COMPRESSED_RGB_ARB: u32 = 34029;
+pub const GL_COMPRESSED_RGBA_ARB: u32 = 34030;
+pub const GL_TEXTURE_COMPRESSION_HINT_ARB: u32 = 34031;
+pub const GL_TEXTURE_COMPRESSED_IMAGE_SIZE_ARB: u32 = 34464;
+pub const GL_TEXTURE_COMPRESSED_ARB: u32 = 34465;
+pub const GL_NUM_COMPRESSED_TEXTURE_FORMATS_ARB: u32 = 34466;
+pub const GL_COMPRESSED_TEXTURE_FORMATS_ARB: u32 = 34467;
+pub const GL_COMPRESSED_RED_RGTC1: u32 = 36283;
+pub const GL_COMPRESSED_SIGNED_RED_RGTC1: u32 = 36284;
+pub const GL_COMPRESSED_RG_RGTC2: u32 = 36285;
+pub const GL_COMPRESSED_SIGNED_RG_RGTC2: u32 = 36286;
+pub const GL_NORMAL_MAP_ARB: u32 = 34065;
+pub const GL_REFLECTION_MAP_ARB: u32 = 34066;
+pub const GL_TEXTURE_CUBE_MAP_ARB: u32 = 34067;
+pub const GL_TEXTURE_BINDING_CUBE_MAP_ARB: u32 = 34068;
+pub const GL_TEXTURE_CUBE_MAP_POSITIVE_X_ARB: u32 = 34069;
+pub const GL_TEXTURE_CUBE_MAP_NEGATIVE_X_ARB: u32 = 34070;
+pub const GL_TEXTURE_CUBE_MAP_POSITIVE_Y_ARB: u32 = 34071;
+pub const GL_TEXTURE_CUBE_MAP_NEGATIVE_Y_ARB: u32 = 34072;
+pub const GL_TEXTURE_CUBE_MAP_POSITIVE_Z_ARB: u32 = 34073;
+pub const GL_TEXTURE_CUBE_MAP_NEGATIVE_Z_ARB: u32 = 34074;
+pub const GL_PROXY_TEXTURE_CUBE_MAP_ARB: u32 = 34075;
+pub const GL_MAX_CUBE_MAP_TEXTURE_SIZE_ARB: u32 = 34076;
+pub const GL_COMBINE_ARB: u32 = 34160;
+pub const GL_COMBINE_RGB_ARB: u32 = 34161;
+pub const GL_COMBINE_ALPHA_ARB: u32 = 34162;
+pub const GL_RGB_SCALE_ARB: u32 = 34163;
+pub const GL_ADD_SIGNED_ARB: u32 = 34164;
+pub const GL_INTERPOLATE_ARB: u32 = 34165;
+pub const GL_CONSTANT_ARB: u32 = 34166;
+pub const GL_PRIMARY_COLOR_ARB: u32 = 34167;
+pub const GL_PREVIOUS_ARB: u32 = 34168;
+pub const GL_SUBTRACT_ARB: u32 = 34023;
+pub const GL_SOURCE0_RGB_ARB: u32 = 34176;
+pub const GL_SOURCE1_RGB_ARB: u32 = 34177;
+pub const GL_SOURCE2_RGB_ARB: u32 = 34178;
+pub const GL_SOURCE0_ALPHA_ARB: u32 = 34184;
+pub const GL_SOURCE1_ALPHA_ARB: u32 = 34185;
+pub const GL_SOURCE2_ALPHA_ARB: u32 = 34186;
+pub const GL_OPERAND0_RGB_ARB: u32 = 34192;
+pub const GL_OPERAND1_RGB_ARB: u32 = 34193;
+pub const GL_OPERAND2_RGB_ARB: u32 = 34194;
+pub const GL_OPERAND0_ALPHA_ARB: u32 = 34200;
+pub const GL_OPERAND1_ALPHA_ARB: u32 = 34201;
+pub const GL_OPERAND2_ALPHA_ARB: u32 = 34202;
+pub const GL_DOT3_RGB_ARB: u32 = 34478;
+pub const GL_DOT3_RGBA_ARB: u32 = 34479;
+pub const GL_TEXTURE_RED_TYPE_ARB: u32 = 35856;
+pub const GL_TEXTURE_GREEN_TYPE_ARB: u32 = 35857;
+pub const GL_TEXTURE_BLUE_TYPE_ARB: u32 = 35858;
+pub const GL_TEXTURE_ALPHA_TYPE_ARB: u32 = 35859;
+pub const GL_TEXTURE_LUMINANCE_TYPE_ARB: u32 = 35860;
+pub const GL_TEXTURE_INTENSITY_TYPE_ARB: u32 = 35861;
+pub const GL_TEXTURE_DEPTH_TYPE_ARB: u32 = 35862;
+pub const GL_UNSIGNED_NORMALIZED_ARB: u32 = 35863;
+pub const GL_RGBA32F_ARB: u32 = 34836;
+pub const GL_RGB32F_ARB: u32 = 34837;
+pub const GL_ALPHA32F_ARB: u32 = 34838;
+pub const GL_INTENSITY32F_ARB: u32 = 34839;
+pub const GL_LUMINANCE32F_ARB: u32 = 34840;
+pub const GL_LUMINANCE_ALPHA32F_ARB: u32 = 34841;
+pub const GL_RGBA16F_ARB: u32 = 34842;
+pub const GL_RGB16F_ARB: u32 = 34843;
+pub const GL_ALPHA16F_ARB: u32 = 34844;
+pub const GL_INTENSITY16F_ARB: u32 = 34845;
+pub const GL_LUMINANCE16F_ARB: u32 = 34846;
+pub const GL_LUMINANCE_ALPHA16F_ARB: u32 = 34847;
+pub const GL_MIRRORED_REPEAT_ARB: u32 = 33648;
+pub const GL_TEXTURE_RECTANGLE_ARB: u32 = 34037;
+pub const GL_TEXTURE_BINDING_RECTANGLE_ARB: u32 = 34038;
+pub const GL_PROXY_TEXTURE_RECTANGLE_ARB: u32 = 34039;
+pub const GL_MAX_RECTANGLE_TEXTURE_SIZE_ARB: u32 = 34040;
+pub const GL_COMPRESSED_RED: u32 = 33317;
+pub const GL_COMPRESSED_RG: u32 = 33318;
+pub const GL_RG: u32 = 33319;
+pub const GL_RG_INTEGER: u32 = 33320;
+pub const GL_R8: u32 = 33321;
+pub const GL_R16: u32 = 33322;
+pub const GL_RG8: u32 = 33323;
+pub const GL_RG16: u32 = 33324;
+pub const GL_R16F: u32 = 33325;
+pub const GL_R32F: u32 = 33326;
+pub const GL_RG16F: u32 = 33327;
+pub const GL_RG32F: u32 = 33328;
+pub const GL_R8I: u32 = 33329;
+pub const GL_R8UI: u32 = 33330;
+pub const GL_R16I: u32 = 33331;
+pub const GL_R16UI: u32 = 33332;
+pub const GL_R32I: u32 = 33333;
+pub const GL_R32UI: u32 = 33334;
+pub const GL_RG8I: u32 = 33335;
+pub const GL_RG8UI: u32 = 33336;
+pub const GL_RG16I: u32 = 33337;
+pub const GL_RG16UI: u32 = 33338;
+pub const GL_RG32I: u32 = 33339;
+pub const GL_RG32UI: u32 = 33340;
+pub const GL_TRANSPOSE_MODELVIEW_MATRIX_ARB: u32 = 34019;
+pub const GL_TRANSPOSE_PROJECTION_MATRIX_ARB: u32 = 34020;
+pub const GL_TRANSPOSE_TEXTURE_MATRIX_ARB: u32 = 34021;
+pub const GL_TRANSPOSE_COLOR_MATRIX_ARB: u32 = 34022;
+pub const GL_MAX_VERTEX_UNITS_ARB: u32 = 34468;
+pub const GL_ACTIVE_VERTEX_UNITS_ARB: u32 = 34469;
+pub const GL_WEIGHT_SUM_UNITY_ARB: u32 = 34470;
+pub const GL_VERTEX_BLEND_ARB: u32 = 34471;
+pub const GL_CURRENT_WEIGHT_ARB: u32 = 34472;
+pub const GL_WEIGHT_ARRAY_TYPE_ARB: u32 = 34473;
+pub const GL_WEIGHT_ARRAY_STRIDE_ARB: u32 = 34474;
+pub const GL_WEIGHT_ARRAY_SIZE_ARB: u32 = 34475;
+pub const GL_WEIGHT_ARRAY_POINTER_ARB: u32 = 34476;
+pub const GL_WEIGHT_ARRAY_ARB: u32 = 34477;
+pub const GL_MODELVIEW0_ARB: u32 = 5888;
+pub const GL_MODELVIEW1_ARB: u32 = 34058;
+pub const GL_MODELVIEW2_ARB: u32 = 34594;
+pub const GL_MODELVIEW3_ARB: u32 = 34595;
+pub const GL_MODELVIEW4_ARB: u32 = 34596;
+pub const GL_MODELVIEW5_ARB: u32 = 34597;
+pub const GL_MODELVIEW6_ARB: u32 = 34598;
+pub const GL_MODELVIEW7_ARB: u32 = 34599;
+pub const GL_MODELVIEW8_ARB: u32 = 34600;
+pub const GL_MODELVIEW9_ARB: u32 = 34601;
+pub const GL_MODELVIEW10_ARB: u32 = 34602;
+pub const GL_MODELVIEW11_ARB: u32 = 34603;
+pub const GL_MODELVIEW12_ARB: u32 = 34604;
+pub const GL_MODELVIEW13_ARB: u32 = 34605;
+pub const GL_MODELVIEW14_ARB: u32 = 34606;
+pub const GL_MODELVIEW15_ARB: u32 = 34607;
+pub const GL_MODELVIEW16_ARB: u32 = 34608;
+pub const GL_MODELVIEW17_ARB: u32 = 34609;
+pub const GL_MODELVIEW18_ARB: u32 = 34610;
+pub const GL_MODELVIEW19_ARB: u32 = 34611;
+pub const GL_MODELVIEW20_ARB: u32 = 34612;
+pub const GL_MODELVIEW21_ARB: u32 = 34613;
+pub const GL_MODELVIEW22_ARB: u32 = 34614;
+pub const GL_MODELVIEW23_ARB: u32 = 34615;
+pub const GL_MODELVIEW24_ARB: u32 = 34616;
+pub const GL_MODELVIEW25_ARB: u32 = 34617;
+pub const GL_MODELVIEW26_ARB: u32 = 34618;
+pub const GL_MODELVIEW27_ARB: u32 = 34619;
+pub const GL_MODELVIEW28_ARB: u32 = 34620;
+pub const GL_MODELVIEW29_ARB: u32 = 34621;
+pub const GL_MODELVIEW30_ARB: u32 = 34622;
+pub const GL_MODELVIEW31_ARB: u32 = 34623;
+pub const GL_ARRAY_BUFFER_ARB: u32 = 34962;
+pub const GL_ELEMENT_ARRAY_BUFFER_ARB: u32 = 34963;
+pub const GL_ARRAY_BUFFER_BINDING_ARB: u32 = 34964;
+pub const GL_ELEMENT_ARRAY_BUFFER_BINDING_ARB: u32 = 34965;
+pub const GL_VERTEX_ARRAY_BUFFER_BINDING_ARB: u32 = 34966;
+pub const GL_NORMAL_ARRAY_BUFFER_BINDING_ARB: u32 = 34967;
+pub const GL_COLOR_ARRAY_BUFFER_BINDING_ARB: u32 = 34968;
+pub const GL_INDEX_ARRAY_BUFFER_BINDING_ARB: u32 = 34969;
+pub const GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING_ARB: u32 = 34970;
+pub const GL_EDGE_FLAG_ARRAY_BUFFER_BINDING_ARB: u32 = 34971;
+pub const GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING_ARB: u32 = 34972;
+pub const GL_FOG_COORD_ARRAY_BUFFER_BINDING_ARB: u32 = 34973;
+pub const GL_WEIGHT_ARRAY_BUFFER_BINDING_ARB: u32 = 34974;
+pub const GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING_ARB: u32 = 34975;
+pub const GL_STREAM_DRAW_ARB: u32 = 35040;
+pub const GL_STREAM_READ_ARB: u32 = 35041;
+pub const GL_STREAM_COPY_ARB: u32 = 35042;
+pub const GL_STATIC_DRAW_ARB: u32 = 35044;
+pub const GL_STATIC_READ_ARB: u32 = 35045;
+pub const GL_STATIC_COPY_ARB: u32 = 35046;
+pub const GL_DYNAMIC_DRAW_ARB: u32 = 35048;
+pub const GL_DYNAMIC_READ_ARB: u32 = 35049;
+pub const GL_DYNAMIC_COPY_ARB: u32 = 35050;
+pub const GL_READ_ONLY_ARB: u32 = 35000;
+pub const GL_WRITE_ONLY_ARB: u32 = 35001;
+pub const GL_READ_WRITE_ARB: u32 = 35002;
+pub const GL_BUFFER_SIZE_ARB: u32 = 34660;
+pub const GL_BUFFER_USAGE_ARB: u32 = 34661;
+pub const GL_BUFFER_ACCESS_ARB: u32 = 35003;
+pub const GL_BUFFER_MAPPED_ARB: u32 = 35004;
+pub const GL_BUFFER_MAP_POINTER_ARB: u32 = 35005;
+pub const GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING_ARB: u32 = 34973;
+pub const GL_VERTEX_PROGRAM_ARB: u32 = 34336;
+pub const GL_VERTEX_PROGRAM_POINT_SIZE_ARB: u32 = 34370;
+pub const GL_VERTEX_PROGRAM_TWO_SIDE_ARB: u32 = 34371;
+pub const GL_PROGRAM_FORMAT_ASCII_ARB: u32 = 34933;
+pub const GL_VERTEX_ATTRIB_ARRAY_ENABLED_ARB: u32 = 34338;
+pub const GL_VERTEX_ATTRIB_ARRAY_SIZE_ARB: u32 = 34339;
+pub const GL_VERTEX_ATTRIB_ARRAY_STRIDE_ARB: u32 = 34340;
+pub const GL_VERTEX_ATTRIB_ARRAY_TYPE_ARB: u32 = 34341;
+pub const GL_VERTEX_ATTRIB_ARRAY_NORMALIZED_ARB: u32 = 34922;
+pub const GL_CURRENT_VERTEX_ATTRIB_ARB: u32 = 34342;
+pub const GL_VERTEX_ATTRIB_ARRAY_POINTER_ARB: u32 = 34373;
+pub const GL_PROGRAM_LENGTH_ARB: u32 = 34343;
+pub const GL_PROGRAM_FORMAT_ARB: u32 = 34934;
+pub const GL_PROGRAM_NAME_ARB: u32 = 34423;
+pub const GL_PROGRAM_BINDING_ARB: u32 = 34423;
+pub const GL_PROGRAM_INSTRUCTIONS_ARB: u32 = 34976;
+pub const GL_MAX_PROGRAM_INSTRUCTIONS_ARB: u32 = 34977;
+pub const GL_PROGRAM_NATIVE_INSTRUCTIONS_ARB: u32 = 34978;
+pub const GL_MAX_PROGRAM_NATIVE_INSTRUCTIONS_ARB: u32 = 34979;
+pub const GL_PROGRAM_TEMPORARIES_ARB: u32 = 34980;
+pub const GL_MAX_PROGRAM_TEMPORARIES_ARB: u32 = 34981;
+pub const GL_PROGRAM_NATIVE_TEMPORARIES_ARB: u32 = 34982;
+pub const GL_MAX_PROGRAM_NATIVE_TEMPORARIES_ARB: u32 = 34983;
+pub const GL_PROGRAM_PARAMETERS_ARB: u32 = 34984;
+pub const GL_MAX_PROGRAM_PARAMETERS_ARB: u32 = 34985;
+pub const GL_PROGRAM_NATIVE_PARAMETERS_ARB: u32 = 34986;
+pub const GL_MAX_PROGRAM_NATIVE_PARAMETERS_ARB: u32 = 34987;
+pub const GL_PROGRAM_ATTRIBS_ARB: u32 = 34988;
+pub const GL_MAX_PROGRAM_ATTRIBS_ARB: u32 = 34989;
+pub const GL_PROGRAM_NATIVE_ATTRIBS_ARB: u32 = 34990;
+pub const GL_MAX_PROGRAM_NATIVE_ATTRIBS_ARB: u32 = 34991;
+pub const GL_PROGRAM_ADDRESS_REGISTERS_ARB: u32 = 34992;
+pub const GL_MAX_PROGRAM_ADDRESS_REGISTERS_ARB: u32 = 34993;
+pub const GL_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB: u32 = 34994;
+pub const GL_MAX_PROGRAM_NATIVE_ADDRESS_REGISTERS_ARB: u32 = 34995;
+pub const GL_MAX_PROGRAM_LOCAL_PARAMETERS_ARB: u32 = 34996;
+pub const GL_MAX_PROGRAM_ENV_PARAMETERS_ARB: u32 = 34997;
+pub const GL_PROGRAM_UNDER_NATIVE_LIMITS_ARB: u32 = 34998;
+pub const GL_PROGRAM_STRING_ARB: u32 = 34344;
+pub const GL_PROGRAM_ERROR_POSITION_ARB: u32 = 34379;
+pub const GL_CURRENT_MATRIX_ARB: u32 = 34369;
+pub const GL_TRANSPOSE_CURRENT_MATRIX_ARB: u32 = 34999;
+pub const GL_CURRENT_MATRIX_STACK_DEPTH_ARB: u32 = 34368;
+pub const GL_MAX_VERTEX_ATTRIBS_ARB: u32 = 34921;
+pub const GL_MAX_PROGRAM_MATRICES_ARB: u32 = 34351;
+pub const GL_MAX_PROGRAM_MATRIX_STACK_DEPTH_ARB: u32 = 34350;
+pub const GL_PROGRAM_ERROR_STRING_ARB: u32 = 34932;
+pub const GL_MATRIX0_ARB: u32 = 35008;
+pub const GL_MATRIX1_ARB: u32 = 35009;
+pub const GL_MATRIX2_ARB: u32 = 35010;
+pub const GL_MATRIX3_ARB: u32 = 35011;
+pub const GL_MATRIX4_ARB: u32 = 35012;
+pub const GL_MATRIX5_ARB: u32 = 35013;
+pub const GL_MATRIX6_ARB: u32 = 35014;
+pub const GL_MATRIX7_ARB: u32 = 35015;
+pub const GL_MATRIX8_ARB: u32 = 35016;
+pub const GL_MATRIX9_ARB: u32 = 35017;
+pub const GL_MATRIX10_ARB: u32 = 35018;
+pub const GL_MATRIX11_ARB: u32 = 35019;
+pub const GL_MATRIX12_ARB: u32 = 35020;
+pub const GL_MATRIX13_ARB: u32 = 35021;
+pub const GL_MATRIX14_ARB: u32 = 35022;
+pub const GL_MATRIX15_ARB: u32 = 35023;
+pub const GL_MATRIX16_ARB: u32 = 35024;
+pub const GL_MATRIX17_ARB: u32 = 35025;
+pub const GL_MATRIX18_ARB: u32 = 35026;
+pub const GL_MATRIX19_ARB: u32 = 35027;
+pub const GL_MATRIX20_ARB: u32 = 35028;
+pub const GL_MATRIX21_ARB: u32 = 35029;
+pub const GL_MATRIX22_ARB: u32 = 35030;
+pub const GL_MATRIX23_ARB: u32 = 35031;
+pub const GL_MATRIX24_ARB: u32 = 35032;
+pub const GL_MATRIX25_ARB: u32 = 35033;
+pub const GL_MATRIX26_ARB: u32 = 35034;
+pub const GL_MATRIX27_ARB: u32 = 35035;
+pub const GL_MATRIX28_ARB: u32 = 35036;
+pub const GL_MATRIX29_ARB: u32 = 35037;
+pub const GL_MATRIX30_ARB: u32 = 35038;
+pub const GL_MATRIX31_ARB: u32 = 35039;
+pub const GL_COLOR_SUM_ARB: u32 = 33880;
+pub const GL_VERTEX_SHADER_ARB: u32 = 35633;
+pub const GL_MAX_VERTEX_UNIFORM_COMPONENTS_ARB: u32 = 35658;
+pub const GL_MAX_VARYING_FLOATS_ARB: u32 = 35659;
+pub const GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS_ARB: u32 = 35661;
+pub const GL_OBJECT_ACTIVE_ATTRIBUTES_ARB: u32 = 35721;
+pub const GL_OBJECT_ACTIVE_ATTRIBUTE_MAX_LENGTH_ARB: u32 = 35722;
+pub const GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS_ARB: u32 = 35660;
+pub const GL_ABGR_EXT: u32 = 32768;
+pub const GL_BGR_EXT: u32 = 32992;
+pub const GL_BGRA_EXT: u32 = 32993;
+pub const GL_MAX_VERTEX_BINDABLE_UNIFORMS_EXT: u32 = 36322;
+pub const GL_MAX_FRAGMENT_BINDABLE_UNIFORMS_EXT: u32 = 36323;
+pub const GL_MAX_GEOMETRY_BINDABLE_UNIFORMS_EXT: u32 = 36324;
+pub const GL_MAX_BINDABLE_UNIFORM_SIZE_EXT: u32 = 36333;
+pub const GL_UNIFORM_BUFFER_BINDING_EXT: u32 = 36335;
+pub const GL_UNIFORM_BUFFER_EXT: u32 = 36334;
+pub const GL_CONSTANT_COLOR_EXT: u32 = 32769;
+pub const GL_ONE_MINUS_CONSTANT_COLOR_EXT: u32 = 32770;
+pub const GL_CONSTANT_ALPHA_EXT: u32 = 32771;
+pub const GL_ONE_MINUS_CONSTANT_ALPHA_EXT: u32 = 32772;
+pub const GL_BLEND_COLOR_EXT: u32 = 32773;
+pub const GL_BLEND_EQUATION_RGB_EXT: u32 = 32777;
+pub const GL_BLEND_EQUATION_ALPHA_EXT: u32 = 34877;
+pub const GL_BLEND_DST_RGB_EXT: u32 = 32968;
+pub const GL_BLEND_SRC_RGB_EXT: u32 = 32969;
+pub const GL_BLEND_DST_ALPHA_EXT: u32 = 32970;
+pub const GL_BLEND_SRC_ALPHA_EXT: u32 = 32971;
+pub const GL_FUNC_ADD_EXT: u32 = 32774;
+pub const GL_MIN_EXT: u32 = 32775;
+pub const GL_MAX_EXT: u32 = 32776;
+pub const GL_BLEND_EQUATION_EXT: u32 = 32777;
+pub const GL_FUNC_SUBTRACT_EXT: u32 = 32778;
+pub const GL_FUNC_REVERSE_SUBTRACT_EXT: u32 = 32779;
+pub const GL_CLIP_VOLUME_CLIPPING_HINT_EXT: u32 = 33008;
+pub const GL_BUFFER_OBJECT_EXT: u32 = 37201;
+pub const GL_SHADER_OBJECT_EXT: u32 = 35656;
+pub const GL_PROGRAM_OBJECT_EXT: u32 = 35648;
+pub const GL_QUERY_OBJECT_EXT: u32 = 37203;
+pub const GL_VERTEX_ARRAY_OBJECT_EXT: u32 = 37204;
+pub const GL_SAMPLER: u32 = 33510;
+pub const GL_SYNC_OBJECT_APPLE: u32 = 35411;
+pub const GL_DEPTH_BOUNDS_TEST_EXT: u32 = 34960;
+pub const GL_DEPTH_BOUNDS_EXT: u32 = 34961;
+pub const GL_MAX_ELEMENTS_VERTICES_EXT: u32 = 33000;
+pub const GL_MAX_ELEMENTS_INDICES_EXT: u32 = 33001;
+pub const GL_FOG_COORDINATE_SOURCE_EXT: u32 = 33872;
+pub const GL_FOG_COORDINATE_EXT: u32 = 33873;
+pub const GL_FRAGMENT_DEPTH_EXT: u32 = 33874;
+pub const GL_CURRENT_FOG_COORDINATE_EXT: u32 = 33875;
+pub const GL_FOG_COORDINATE_ARRAY_TYPE_EXT: u32 = 33876;
+pub const GL_FOG_COORDINATE_ARRAY_STRIDE_EXT: u32 = 33877;
+pub const GL_FOG_COORDINATE_ARRAY_POINTER_EXT: u32 = 33878;
+pub const GL_FOG_COORDINATE_ARRAY_EXT: u32 = 33879;
+pub const GL_READ_FRAMEBUFFER_EXT: u32 = 36008;
+pub const GL_DRAW_FRAMEBUFFER_EXT: u32 = 36009;
+pub const GL_DRAW_FRAMEBUFFER_BINDING_EXT: u32 = 36006;
+pub const GL_READ_FRAMEBUFFER_BINDING_EXT: u32 = 36010;
+pub const GL_RENDERBUFFER_SAMPLES_EXT: u32 = 36011;
+pub const GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE_EXT: u32 = 36182;
+pub const GL_MAX_SAMPLES_EXT: u32 = 36183;
+pub const GL_SCALED_RESOLVE_FASTEST_EXT: u32 = 37050;
+pub const GL_SCALED_RESOLVE_NICEST_EXT: u32 = 37051;
+pub const GL_FRAMEBUFFER_EXT: u32 = 36160;
+pub const GL_RENDERBUFFER_EXT: u32 = 36161;
+pub const GL_STENCIL_INDEX1_EXT: u32 = 36166;
+pub const GL_STENCIL_INDEX4_EXT: u32 = 36167;
+pub const GL_STENCIL_INDEX8_EXT: u32 = 36168;
+pub const GL_STENCIL_INDEX16_EXT: u32 = 36169;
+pub const GL_RENDERBUFFER_WIDTH_EXT: u32 = 36162;
+pub const GL_RENDERBUFFER_HEIGHT_EXT: u32 = 36163;
+pub const GL_RENDERBUFFER_INTERNAL_FORMAT_EXT: u32 = 36164;
+pub const GL_RENDERBUFFER_RED_SIZE_EXT: u32 = 36176;
+pub const GL_RENDERBUFFER_GREEN_SIZE_EXT: u32 = 36177;
+pub const GL_RENDERBUFFER_BLUE_SIZE_EXT: u32 = 36178;
+pub const GL_RENDERBUFFER_ALPHA_SIZE_EXT: u32 = 36179;
+pub const GL_RENDERBUFFER_DEPTH_SIZE_EXT: u32 = 36180;
+pub const GL_RENDERBUFFER_STENCIL_SIZE_EXT: u32 = 36181;
+pub const GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_EXT: u32 = 36048;
+pub const GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_EXT: u32 = 36049;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_EXT: u32 = 36050;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_EXT: u32 = 36051;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_3D_ZOFFSET_EXT: u32 = 36052;
+pub const GL_COLOR_ATTACHMENT0_EXT: u32 = 36064;
+pub const GL_COLOR_ATTACHMENT1_EXT: u32 = 36065;
+pub const GL_COLOR_ATTACHMENT2_EXT: u32 = 36066;
+pub const GL_COLOR_ATTACHMENT3_EXT: u32 = 36067;
+pub const GL_COLOR_ATTACHMENT4_EXT: u32 = 36068;
+pub const GL_COLOR_ATTACHMENT5_EXT: u32 = 36069;
+pub const GL_COLOR_ATTACHMENT6_EXT: u32 = 36070;
+pub const GL_COLOR_ATTACHMENT7_EXT: u32 = 36071;
+pub const GL_COLOR_ATTACHMENT8_EXT: u32 = 36072;
+pub const GL_COLOR_ATTACHMENT9_EXT: u32 = 36073;
+pub const GL_COLOR_ATTACHMENT10_EXT: u32 = 36074;
+pub const GL_COLOR_ATTACHMENT11_EXT: u32 = 36075;
+pub const GL_COLOR_ATTACHMENT12_EXT: u32 = 36076;
+pub const GL_COLOR_ATTACHMENT13_EXT: u32 = 36077;
+pub const GL_COLOR_ATTACHMENT14_EXT: u32 = 36078;
+pub const GL_COLOR_ATTACHMENT15_EXT: u32 = 36079;
+pub const GL_DEPTH_ATTACHMENT_EXT: u32 = 36096;
+pub const GL_STENCIL_ATTACHMENT_EXT: u32 = 36128;
+pub const GL_FRAMEBUFFER_COMPLETE_EXT: u32 = 36053;
+pub const GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_EXT: u32 = 36054;
+pub const GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_EXT: u32 = 36055;
+pub const GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_EXT: u32 = 36057;
+pub const GL_FRAMEBUFFER_INCOMPLETE_FORMATS_EXT: u32 = 36058;
+pub const GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_EXT: u32 = 36059;
+pub const GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_EXT: u32 = 36060;
+pub const GL_FRAMEBUFFER_UNSUPPORTED_EXT: u32 = 36061;
+pub const GL_FRAMEBUFFER_BINDING_EXT: u32 = 36006;
+pub const GL_RENDERBUFFER_BINDING_EXT: u32 = 36007;
+pub const GL_MAX_COLOR_ATTACHMENTS_EXT: u32 = 36063;
+pub const GL_MAX_RENDERBUFFER_SIZE_EXT: u32 = 34024;
+pub const GL_INVALID_FRAMEBUFFER_OPERATION_EXT: u32 = 1286;
+pub const GL_FRAMEBUFFER_SRGB_EXT: u32 = 36281;
+pub const GL_FRAMEBUFFER_SRGB_CAPABLE_EXT: u32 = 36282;
+pub const GL_GEOMETRY_SHADER_EXT: u32 = 36313;
+pub const GL_GEOMETRY_VERTICES_OUT_EXT: u32 = 36314;
+pub const GL_GEOMETRY_INPUT_TYPE_EXT: u32 = 36315;
+pub const GL_GEOMETRY_OUTPUT_TYPE_EXT: u32 = 36316;
+pub const GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT: u32 = 35881;
+pub const GL_MAX_GEOMETRY_VARYING_COMPONENTS_EXT: u32 = 36317;
+pub const GL_MAX_VERTEX_VARYING_COMPONENTS_EXT: u32 = 36318;
+pub const GL_MAX_VARYING_COMPONENTS_EXT: u32 = 35659;
+pub const GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT: u32 = 36319;
+pub const GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT: u32 = 36320;
+pub const GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT: u32 = 36321;
+pub const GL_LINES_ADJACENCY_EXT: u32 = 10;
+pub const GL_LINE_STRIP_ADJACENCY_EXT: u32 = 11;
+pub const GL_TRIANGLES_ADJACENCY_EXT: u32 = 12;
+pub const GL_TRIANGLE_STRIP_ADJACENCY_EXT: u32 = 13;
+pub const GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT: u32 = 36264;
+pub const GL_FRAMEBUFFER_INCOMPLETE_LAYER_COUNT_EXT: u32 = 36265;
+pub const GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT: u32 = 36263;
+pub const GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER_EXT: u32 = 36052;
+pub const GL_PROGRAM_POINT_SIZE_EXT: u32 = 34370;
+pub const GL_VERTEX_ATTRIB_ARRAY_INTEGER_EXT: u32 = 35069;
+pub const GL_SAMPLER_1D_ARRAY_EXT: u32 = 36288;
+pub const GL_SAMPLER_2D_ARRAY_EXT: u32 = 36289;
+pub const GL_SAMPLER_BUFFER_EXT: u32 = 36290;
+pub const GL_SAMPLER_1D_ARRAY_SHADOW_EXT: u32 = 36291;
+pub const GL_SAMPLER_2D_ARRAY_SHADOW_EXT: u32 = 36292;
+pub const GL_SAMPLER_CUBE_SHADOW_EXT: u32 = 36293;
+pub const GL_UNSIGNED_INT_VEC2_EXT: u32 = 36294;
+pub const GL_UNSIGNED_INT_VEC3_EXT: u32 = 36295;
+pub const GL_UNSIGNED_INT_VEC4_EXT: u32 = 36296;
+pub const GL_INT_SAMPLER_1D_EXT: u32 = 36297;
+pub const GL_INT_SAMPLER_2D_EXT: u32 = 36298;
+pub const GL_INT_SAMPLER_3D_EXT: u32 = 36299;
+pub const GL_INT_SAMPLER_CUBE_EXT: u32 = 36300;
+pub const GL_INT_SAMPLER_2D_RECT_EXT: u32 = 36301;
+pub const GL_INT_SAMPLER_1D_ARRAY_EXT: u32 = 36302;
+pub const GL_INT_SAMPLER_2D_ARRAY_EXT: u32 = 36303;
+pub const GL_INT_SAMPLER_BUFFER_EXT: u32 = 36304;
+pub const GL_UNSIGNED_INT_SAMPLER_1D_EXT: u32 = 36305;
+pub const GL_UNSIGNED_INT_SAMPLER_2D_EXT: u32 = 36306;
+pub const GL_UNSIGNED_INT_SAMPLER_3D_EXT: u32 = 36307;
+pub const GL_UNSIGNED_INT_SAMPLER_CUBE_EXT: u32 = 36308;
+pub const GL_UNSIGNED_INT_SAMPLER_2D_RECT_EXT: u32 = 36309;
+pub const GL_UNSIGNED_INT_SAMPLER_1D_ARRAY_EXT: u32 = 36310;
+pub const GL_UNSIGNED_INT_SAMPLER_2D_ARRAY_EXT: u32 = 36311;
+pub const GL_UNSIGNED_INT_SAMPLER_BUFFER_EXT: u32 = 36312;
+pub const GL_MIN_PROGRAM_TEXEL_OFFSET_EXT: u32 = 35076;
+pub const GL_MAX_PROGRAM_TEXEL_OFFSET_EXT: u32 = 35077;
+pub const GL_DEPTH_STENCIL_EXT: u32 = 34041;
+pub const GL_UNSIGNED_INT_24_8_EXT: u32 = 34042;
+pub const GL_DEPTH24_STENCIL8_EXT: u32 = 35056;
+pub const GL_TEXTURE_STENCIL_SIZE_EXT: u32 = 35057;
+pub const GL_R11F_G11F_B10F_EXT: u32 = 35898;
+pub const GL_UNSIGNED_INT_10F_11F_11F_REV_EXT: u32 = 35899;
+pub const GL_RGBA_SIGNED_COMPONENTS_EXT: u32 = 35900;
+pub const GL_FIRST_VERTEX_CONVENTION_EXT: u32 = 36429;
+pub const GL_LAST_VERTEX_CONVENTION_EXT: u32 = 36430;
+pub const GL_PROVOKING_VERTEX_EXT: u32 = 36431;
+pub const GL_QUADS_FOLLOW_PROVOKING_VERTEX_CONVENTION_EXT: u32 = 36428;
+pub const GL_RESCALE_NORMAL_EXT: u32 = 32826;
+pub const GL_COLOR_SUM_EXT: u32 = 33880;
+pub const GL_CURRENT_SECONDARY_COLOR_EXT: u32 = 33881;
+pub const GL_SECONDARY_COLOR_ARRAY_SIZE_EXT: u32 = 33882;
+pub const GL_SECONDARY_COLOR_ARRAY_TYPE_EXT: u32 = 33883;
+pub const GL_SECONDARY_COLOR_ARRAY_STRIDE_EXT: u32 = 33884;
+pub const GL_SECONDARY_COLOR_ARRAY_POINTER_EXT: u32 = 33885;
+pub const GL_SECONDARY_COLOR_ARRAY_EXT: u32 = 33886;
+pub const GL_LIGHT_MODEL_COLOR_CONTROL_EXT: u32 = 33272;
+pub const GL_SINGLE_COLOR_EXT: u32 = 33273;
+pub const GL_SEPARATE_SPECULAR_COLOR_EXT: u32 = 33274;
+pub const GL_STENCIL_TEST_TWO_SIDE_EXT: u32 = 35088;
+pub const GL_ACTIVE_STENCIL_FACE_EXT: u32 = 35089;
+pub const GL_INCR_WRAP_EXT: u32 = 34055;
+pub const GL_DECR_WRAP_EXT: u32 = 34056;
+pub const GL_TEXTURE_1D_ARRAY_EXT: u32 = 35864;
+pub const GL_PROXY_TEXTURE_1D_ARRAY_EXT: u32 = 35865;
+pub const GL_TEXTURE_2D_ARRAY_EXT: u32 = 35866;
+pub const GL_PROXY_TEXTURE_2D_ARRAY_EXT: u32 = 35867;
+pub const GL_TEXTURE_BINDING_1D_ARRAY_EXT: u32 = 35868;
+pub const GL_TEXTURE_BINDING_2D_ARRAY_EXT: u32 = 35869;
+pub const GL_MAX_ARRAY_TEXTURE_LAYERS_EXT: u32 = 35071;
+pub const GL_COMPARE_REF_DEPTH_TO_TEXTURE_EXT: u32 = 34894;
+pub const GL_COMPRESSED_RGB_S3TC_DXT1_EXT: u32 = 33776;
+pub const GL_COMPRESSED_RGBA_S3TC_DXT1_EXT: u32 = 33777;
+pub const GL_COMPRESSED_RGBA_S3TC_DXT3_EXT: u32 = 33778;
+pub const GL_COMPRESSED_RGBA_S3TC_DXT5_EXT: u32 = 33779;
+pub const GL_TEXTURE_MAX_ANISOTROPY_EXT: u32 = 34046;
+pub const GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: u32 = 34047;
+pub const GL_RGBA_INTEGER_MODE_EXT: u32 = 36254;
+pub const GL_RGBA32UI_EXT: u32 = 36208;
+pub const GL_RGB32UI_EXT: u32 = 36209;
+pub const GL_ALPHA32UI_EXT: u32 = 36210;
+pub const GL_INTENSITY32UI_EXT: u32 = 36211;
+pub const GL_LUMINANCE32UI_EXT: u32 = 36212;
+pub const GL_LUMINANCE_ALPHA32UI_EXT: u32 = 36213;
+pub const GL_RGBA16UI_EXT: u32 = 36214;
+pub const GL_RGB16UI_EXT: u32 = 36215;
+pub const GL_ALPHA16UI_EXT: u32 = 36216;
+pub const GL_INTENSITY16UI_EXT: u32 = 36217;
+pub const GL_LUMINANCE16UI_EXT: u32 = 36218;
+pub const GL_LUMINANCE_ALPHA16UI_EXT: u32 = 36219;
+pub const GL_RGBA8UI_EXT: u32 = 36220;
+pub const GL_RGB8UI_EXT: u32 = 36221;
+pub const GL_ALPHA8UI_EXT: u32 = 36222;
+pub const GL_INTENSITY8UI_EXT: u32 = 36223;
+pub const GL_LUMINANCE8UI_EXT: u32 = 36224;
+pub const GL_LUMINANCE_ALPHA8UI_EXT: u32 = 36225;
+pub const GL_RGBA32I_EXT: u32 = 36226;
+pub const GL_RGB32I_EXT: u32 = 36227;
+pub const GL_ALPHA32I_EXT: u32 = 36228;
+pub const GL_INTENSITY32I_EXT: u32 = 36229;
+pub const GL_LUMINANCE32I_EXT: u32 = 36230;
+pub const GL_LUMINANCE_ALPHA32I_EXT: u32 = 36231;
+pub const GL_RGBA16I_EXT: u32 = 36232;
+pub const GL_RGB16I_EXT: u32 = 36233;
+pub const GL_ALPHA16I_EXT: u32 = 36234;
+pub const GL_INTENSITY16I_EXT: u32 = 36235;
+pub const GL_LUMINANCE16I_EXT: u32 = 36236;
+pub const GL_LUMINANCE_ALPHA16I_EXT: u32 = 36237;
+pub const GL_RGBA8I_EXT: u32 = 36238;
+pub const GL_RGB8I_EXT: u32 = 36239;
+pub const GL_ALPHA8I_EXT: u32 = 36240;
+pub const GL_INTENSITY8I_EXT: u32 = 36241;
+pub const GL_LUMINANCE8I_EXT: u32 = 36242;
+pub const GL_LUMINANCE_ALPHA8I_EXT: u32 = 36243;
+pub const GL_RED_INTEGER_EXT: u32 = 36244;
+pub const GL_GREEN_INTEGER_EXT: u32 = 36245;
+pub const GL_BLUE_INTEGER_EXT: u32 = 36246;
+pub const GL_ALPHA_INTEGER_EXT: u32 = 36247;
+pub const GL_RGB_INTEGER_EXT: u32 = 36248;
+pub const GL_RGBA_INTEGER_EXT: u32 = 36249;
+pub const GL_BGR_INTEGER_EXT: u32 = 36250;
+pub const GL_BGRA_INTEGER_EXT: u32 = 36251;
+pub const GL_LUMINANCE_INTEGER_EXT: u32 = 36252;
+pub const GL_LUMINANCE_ALPHA_INTEGER_EXT: u32 = 36253;
+pub const GL_MAX_TEXTURE_LOD_BIAS_EXT: u32 = 34045;
+pub const GL_TEXTURE_FILTER_CONTROL_EXT: u32 = 34048;
+pub const GL_TEXTURE_LOD_BIAS_EXT: u32 = 34049;
+pub const GL_MIRROR_CLAMP_EXT: u32 = 34626;
+pub const GL_MIRROR_CLAMP_TO_EDGE_EXT: u32 = 34627;
+pub const GL_MIRROR_CLAMP_TO_BORDER_EXT: u32 = 35090;
+pub const GL_TEXTURE_RECTANGLE_EXT: u32 = 34037;
+pub const GL_TEXTURE_BINDING_RECTANGLE_EXT: u32 = 34038;
+pub const GL_PROXY_TEXTURE_RECTANGLE_EXT: u32 = 34039;
+pub const GL_MAX_RECTANGLE_TEXTURE_SIZE_EXT: u32 = 34040;
+pub const GL_RGB9_E5_EXT: u32 = 35901;
+pub const GL_UNSIGNED_INT_5_9_9_9_REV_EXT: u32 = 35902;
+pub const GL_TEXTURE_SHARED_SIZE_EXT: u32 = 35903;
+pub const GL_SRGB_EXT: u32 = 35904;
+pub const GL_SRGB8_EXT: u32 = 35905;
+pub const GL_SRGB_ALPHA_EXT: u32 = 35906;
+pub const GL_SRGB8_ALPHA8_EXT: u32 = 35907;
+pub const GL_SLUMINANCE_ALPHA_EXT: u32 = 35908;
+pub const GL_SLUMINANCE8_ALPHA8_EXT: u32 = 35909;
+pub const GL_SLUMINANCE_EXT: u32 = 35910;
+pub const GL_SLUMINANCE8_EXT: u32 = 35911;
+pub const GL_COMPRESSED_SRGB_EXT: u32 = 35912;
+pub const GL_COMPRESSED_SRGB_ALPHA_EXT: u32 = 35913;
+pub const GL_COMPRESSED_SLUMINANCE_EXT: u32 = 35914;
+pub const GL_COMPRESSED_SLUMINANCE_ALPHA_EXT: u32 = 35915;
+pub const GL_COMPRESSED_SRGB_S3TC_DXT1_EXT: u32 = 35916;
+pub const GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: u32 = 35917;
+pub const GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT: u32 = 35918;
+pub const GL_COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT: u32 = 35919;
+pub const GL_TEXTURE_SRGB_DECODE_EXT: u32 = 35400;
+pub const GL_DECODE_EXT: u32 = 35401;
+pub const GL_SKIP_DECODE_EXT: u32 = 35402;
+pub const GL_TIME_ELAPSED_EXT: u32 = 35007;
+pub const GL_TRANSFORM_FEEDBACK_BUFFER_EXT: u32 = 35982;
+pub const GL_TRANSFORM_FEEDBACK_BUFFER_START_EXT: u32 = 35972;
+pub const GL_TRANSFORM_FEEDBACK_BUFFER_SIZE_EXT: u32 = 35973;
+pub const GL_TRANSFORM_FEEDBACK_BUFFER_BINDING_EXT: u32 = 35983;
+pub const GL_INTERLEAVED_ATTRIBS_EXT: u32 = 35980;
+pub const GL_SEPARATE_ATTRIBS_EXT: u32 = 35981;
+pub const GL_PRIMITIVES_GENERATED_EXT: u32 = 35975;
+pub const GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN_EXT: u32 = 35976;
+pub const GL_RASTERIZER_DISCARD_EXT: u32 = 35977;
+pub const GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS_EXT: u32 = 35978;
+pub const GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS_EXT: u32 = 35979;
+pub const GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS_EXT: u32 = 35968;
+pub const GL_TRANSFORM_FEEDBACK_VARYINGS_EXT: u32 = 35971;
+pub const GL_TRANSFORM_FEEDBACK_BUFFER_MODE_EXT: u32 = 35967;
+pub const GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH_EXT: u32 = 35958;
+pub const GL_AUX_DEPTH_STENCIL_APPLE: u32 = 35348;
+pub const GL_UNPACK_CLIENT_STORAGE_APPLE: u32 = 34226;
+pub const GL_ELEMENT_ARRAY_APPLE: u32 = 35340;
+pub const GL_ELEMENT_ARRAY_TYPE_APPLE: u32 = 35341;
+pub const GL_ELEMENT_ARRAY_POINTER_APPLE: u32 = 35342;
+pub const GL_DRAW_PIXELS_APPLE: u32 = 35338;
+pub const GL_FENCE_APPLE: u32 = 35339;
+pub const GL_BUFFER_OBJECT_APPLE: u32 = 34227;
+pub const GL_HALF_APPLE: u32 = 5131;
+pub const GL_COLOR_FLOAT_APPLE: u32 = 35343;
+pub const GL_RGBA_FLOAT32_APPLE: u32 = 34836;
+pub const GL_RGB_FLOAT32_APPLE: u32 = 34837;
+pub const GL_ALPHA_FLOAT32_APPLE: u32 = 34838;
+pub const GL_INTENSITY_FLOAT32_APPLE: u32 = 34839;
+pub const GL_LUMINANCE_FLOAT32_APPLE: u32 = 34840;
+pub const GL_LUMINANCE_ALPHA_FLOAT32_APPLE: u32 = 34841;
+pub const GL_RGBA_FLOAT16_APPLE: u32 = 34842;
+pub const GL_RGB_FLOAT16_APPLE: u32 = 34843;
+pub const GL_ALPHA_FLOAT16_APPLE: u32 = 34844;
+pub const GL_INTENSITY_FLOAT16_APPLE: u32 = 34845;
+pub const GL_LUMINANCE_FLOAT16_APPLE: u32 = 34846;
+pub const GL_LUMINANCE_ALPHA_FLOAT16_APPLE: u32 = 34847;
+pub const GL_BUFFER_SERIALIZED_MODIFY_APPLE: u32 = 35346;
+pub const GL_BUFFER_FLUSHING_UNMAP_APPLE: u32 = 35347;
+pub const GL_RELEASED_APPLE: u32 = 35353;
+pub const GL_VOLATILE_APPLE: u32 = 35354;
+pub const GL_RETAINED_APPLE: u32 = 35355;
+pub const GL_UNDEFINED_APPLE: u32 = 35356;
+pub const GL_PURGEABLE_APPLE: u32 = 35357;
+pub const GL_MIN_PBUFFER_VIEWPORT_DIMS_APPLE: u32 = 35344;
+pub const GL_RGB_422_APPLE: u32 = 35359;
+pub const GL_PACK_ROW_BYTES_APPLE: u32 = 35349;
+pub const GL_UNPACK_ROW_BYTES_APPLE: u32 = 35350;
+pub const GL_PACK_IMAGE_BYTES_APPLE: u32 = 35351;
+pub const GL_UNPACK_IMAGE_BYTES_APPLE: u32 = 35352;
+pub const GL_LIGHT_MODEL_SPECULAR_VECTOR_APPLE: u32 = 34224;
+pub const GL_TEXTURE_RANGE_LENGTH_APPLE: u32 = 34231;
+pub const GL_TEXTURE_RANGE_POINTER_APPLE: u32 = 34232;
+pub const GL_TEXTURE_STORAGE_HINT_APPLE: u32 = 34236;
+pub const GL_TEXTURE_MINIMIZE_STORAGE_APPLE: u32 = 34230;
+pub const GL_STORAGE_PRIVATE_APPLE: u32 = 34237;
+pub const GL_STORAGE_CACHED_APPLE: u32 = 34238;
+pub const GL_STORAGE_SHARED_APPLE: u32 = 34239;
+pub const GL_TRANSFORM_HINT_APPLE: u32 = 34225;
+pub const GL_VERTEX_ARRAY_BINDING_APPLE: u32 = 34229;
+pub const GL_VERTEX_ARRAY_RANGE_APPLE: u32 = 34077;
+pub const GL_VERTEX_ARRAY_RANGE_LENGTH_APPLE: u32 = 34078;
+pub const GL_MAX_VERTEX_ARRAY_RANGE_ELEMENT_APPLE: u32 = 34080;
+pub const GL_VERTEX_ARRAY_RANGE_POINTER_APPLE: u32 = 34081;
+pub const GL_VERTEX_ARRAY_STORAGE_HINT_APPLE: u32 = 34079;
+pub const GL_STORAGE_CLIENT_APPLE: u32 = 34228;
+pub const GL_VERTEX_POINT_SIZE_APPLE: u32 = 35366;
+pub const GL_CURRENT_POINT_SIZE_APPLE: u32 = 35367;
+pub const GL_POINT_SIZE_ARRAY_APPLE: u32 = 35740;
+pub const GL_POINT_SIZE_ARRAY_TYPE_APPLE: u32 = 35210;
+pub const GL_POINT_SIZE_ARRAY_STRIDE_APPLE: u32 = 35211;
+pub const GL_POINT_SIZE_ARRAY_POINTER_APPLE: u32 = 35212;
+pub const GL_POINT_SIZE_ARRAY_BUFFER_BINDING_APPLE: u32 = 35743;
+pub const GL_VERTEX_ATTRIB_MAP1_APPLE: u32 = 35328;
+pub const GL_VERTEX_ATTRIB_MAP2_APPLE: u32 = 35329;
+pub const GL_VERTEX_ATTRIB_MAP1_SIZE_APPLE: u32 = 35330;
+pub const GL_VERTEX_ATTRIB_MAP1_COEFF_APPLE: u32 = 35331;
+pub const GL_VERTEX_ATTRIB_MAP1_ORDER_APPLE: u32 = 35332;
+pub const GL_VERTEX_ATTRIB_MAP1_DOMAIN_APPLE: u32 = 35333;
+pub const GL_VERTEX_ATTRIB_MAP2_SIZE_APPLE: u32 = 35334;
+pub const GL_VERTEX_ATTRIB_MAP2_COEFF_APPLE: u32 = 35335;
+pub const GL_VERTEX_ATTRIB_MAP2_ORDER_APPLE: u32 = 35336;
+pub const GL_VERTEX_ATTRIB_MAP2_DOMAIN_APPLE: u32 = 35337;
+pub const GL_YCBCR_422_APPLE: u32 = 34233;
+pub const GL_UNSIGNED_SHORT_8_8_APPLE: u32 = 34234;
+pub const GL_UNSIGNED_SHORT_8_8_REV_APPLE: u32 = 34235;
+pub const GL_ALPHA_BLEND_EQUATION_ATI: u32 = 34877;
+pub const GL_MIN_WEIGHTED_ATI: u32 = 34685;
+pub const GL_MAX_WEIGHTED_ATI: u32 = 34686;
+pub const GL_STENCIL_BACK_FUNC_ATI: u32 = 34816;
+pub const GL_STENCIL_BACK_FAIL_ATI: u32 = 34817;
+pub const GL_STENCIL_BACK_PASS_DEPTH_FAIL_ATI: u32 = 34818;
+pub const GL_STENCIL_BACK_PASS_DEPTH_PASS_ATI: u32 = 34819;
+pub const GL_COMPRESSED_LUMINANCE_ALPHA_3DC_ATI: u32 = 34871;
+pub const GL_MODULATE_ADD_ATI: u32 = 34628;
+pub const GL_MODULATE_SIGNED_ADD_ATI: u32 = 34629;
+pub const GL_MODULATE_SUBTRACT_ATI: u32 = 34630;
+pub const GL_RGBA_FLOAT32_ATI: u32 = 34836;
+pub const GL_RGB_FLOAT32_ATI: u32 = 34837;
+pub const GL_ALPHA_FLOAT32_ATI: u32 = 34838;
+pub const GL_INTENSITY_FLOAT32_ATI: u32 = 34839;
+pub const GL_LUMINANCE_FLOAT32_ATI: u32 = 34840;
+pub const GL_LUMINANCE_ALPHA_FLOAT32_ATI: u32 = 34841;
+pub const GL_RGBA_FLOAT16_ATI: u32 = 34842;
+pub const GL_RGB_FLOAT16_ATI: u32 = 34843;
+pub const GL_ALPHA_FLOAT16_ATI: u32 = 34844;
+pub const GL_INTENSITY_FLOAT16_ATI: u32 = 34845;
+pub const GL_LUMINANCE_FLOAT16_ATI: u32 = 34846;
+pub const GL_LUMINANCE_ALPHA_FLOAT16_ATI: u32 = 34847;
+pub const GL_MIRROR_CLAMP_ATI: u32 = 34626;
+pub const GL_MIRROR_CLAMP_TO_EDGE_ATI: u32 = 34627;
+pub const GL_RASTER_POSITION_UNCLIPPED_IBM: u32 = 103010;
+pub const GL_QUERY_WAIT_NV: u32 = 36371;
+pub const GL_QUERY_NO_WAIT_NV: u32 = 36372;
+pub const GL_QUERY_BY_REGION_WAIT_NV: u32 = 36373;
+pub const GL_QUERY_BY_REGION_NO_WAIT_NV: u32 = 36374;
+pub const GL_DEPTH_CLAMP_NV: u32 = 34383;
+pub const GL_FOG_DISTANCE_MODE_NV: u32 = 34138;
+pub const GL_EYE_RADIAL_NV: u32 = 34139;
+pub const GL_EYE_PLANE_ABSOLUTE_NV: u32 = 34140;
+pub const GL_MAX_PROGRAM_IF_DEPTH_NV: u32 = 35062;
+pub const GL_MAX_PROGRAM_LOOP_DEPTH_NV: u32 = 35063;
+pub const GL_MAX_PROGRAM_LOOP_COUNT_NV: u32 = 35064;
+pub const GL_MAX_PROGRAM_EXEC_INSTRUCTIONS_NV: u32 = 35060;
+pub const GL_MAX_PROGRAM_CALL_DEPTH_NV: u32 = 35061;
+pub const GL_MAX_SHININESS_NV: u32 = 34052;
+pub const GL_MAX_SPOT_EXPONENT_NV: u32 = 34053;
+pub const GL_MULTISAMPLE_FILTER_HINT_NV: u32 = 34100;
+pub const GL_POINT_SPRITE_NV: u32 = 34913;
+pub const GL_COORD_REPLACE_NV: u32 = 34914;
+pub const GL_POINT_SPRITE_R_MODE_NV: u32 = 34915;
+pub const GL_NORMAL_MAP_NV: u32 = 34065;
+pub const GL_REFLECTION_MAP_NV: u32 = 34066;
+pub const GL_COLOR_MATRIX_SGI: u32 = 32945;
+pub const GL_COLOR_MATRIX_STACK_DEPTH_SGI: u32 = 32946;
+pub const GL_MAX_COLOR_MATRIX_STACK_DEPTH_SGI: u32 = 32947;
+pub const GL_POST_COLOR_MATRIX_RED_SCALE_SGI: u32 = 32948;
+pub const GL_POST_COLOR_MATRIX_GREEN_SCALE_SGI: u32 = 32949;
+pub const GL_POST_COLOR_MATRIX_BLUE_SCALE_SGI: u32 = 32950;
+pub const GL_POST_COLOR_MATRIX_ALPHA_SCALE_SGI: u32 = 32951;
+pub const GL_POST_COLOR_MATRIX_RED_BIAS_SGI: u32 = 32952;
+pub const GL_POST_COLOR_MATRIX_GREEN_BIAS_SGI: u32 = 32953;
+pub const GL_POST_COLOR_MATRIX_BLUE_BIAS_SGI: u32 = 32954;
+pub const GL_POST_COLOR_MATRIX_ALPHA_BIAS_SGI: u32 = 32955;
+pub const GL_GENERATE_MIPMAP_SGIS: u32 = 33169;
+pub const GL_GENERATE_MIPMAP_HINT_SGIS: u32 = 33170;
+pub const GL_CLAMP_TO_EDGE_SGIS: u32 = 33071;
+pub const GL_TEXTURE_MIN_LOD_SGIS: u32 = 33082;
+pub const GL_TEXTURE_MAX_LOD_SGIS: u32 = 33083;
+pub const GL_TEXTURE_BASE_LEVEL_SGIS: u32 = 33084;
+pub const GL_TEXTURE_MAX_LEVEL_SGIS: u32 = 33085;
+pub const API_TO_BE_DEPRECATED: u32 = 100000;
+pub const __ENABLE_LEGACY_MAC_AVAILABILITY: u32 = 1;
+pub const GL_VERSION_1_1: u32 = 1;
+pub const GL_VERSION_1_2: u32 = 1;
+pub const GL_VERSION_1_3: u32 = 1;
+pub const GL_VERSION_1_4: u32 = 1;
+pub const GL_VERSION_1_5: u32 = 1;
+pub const GL_VERSION_2_0: u32 = 1;
+pub const GL_VERSION_2_1: u32 = 1;
+pub const GL_ACCUM: u32 = 256;
+pub const GL_LOAD: u32 = 257;
+pub const GL_RETURN: u32 = 258;
+pub const GL_MULT: u32 = 259;
+pub const GL_ADD: u32 = 260;
+pub const GL_NEVER: u32 = 512;
+pub const GL_LESS: u32 = 513;
+pub const GL_EQUAL: u32 = 514;
+pub const GL_LEQUAL: u32 = 515;
+pub const GL_GREATER: u32 = 516;
+pub const GL_NOTEQUAL: u32 = 517;
+pub const GL_GEQUAL: u32 = 518;
+pub const GL_ALWAYS: u32 = 519;
+pub const GL_CURRENT_BIT: u32 = 1;
+pub const GL_POINT_BIT: u32 = 2;
+pub const GL_LINE_BIT: u32 = 4;
+pub const GL_POLYGON_BIT: u32 = 8;
+pub const GL_POLYGON_STIPPLE_BIT: u32 = 16;
+pub const GL_PIXEL_MODE_BIT: u32 = 32;
+pub const GL_LIGHTING_BIT: u32 = 64;
+pub const GL_FOG_BIT: u32 = 128;
+pub const GL_DEPTH_BUFFER_BIT: u32 = 256;
+pub const GL_ACCUM_BUFFER_BIT: u32 = 512;
+pub const GL_STENCIL_BUFFER_BIT: u32 = 1024;
+pub const GL_VIEWPORT_BIT: u32 = 2048;
+pub const GL_TRANSFORM_BIT: u32 = 4096;
+pub const GL_ENABLE_BIT: u32 = 8192;
+pub const GL_COLOR_BUFFER_BIT: u32 = 16384;
+pub const GL_HINT_BIT: u32 = 32768;
+pub const GL_EVAL_BIT: u32 = 65536;
+pub const GL_LIST_BIT: u32 = 131072;
+pub const GL_TEXTURE_BIT: u32 = 262144;
+pub const GL_SCISSOR_BIT: u32 = 524288;
+pub const GL_ALL_ATTRIB_BITS: u32 = 1048575;
+pub const GL_POINTS: u32 = 0;
+pub const GL_LINES: u32 = 1;
+pub const GL_LINE_LOOP: u32 = 2;
+pub const GL_LINE_STRIP: u32 = 3;
+pub const GL_TRIANGLES: u32 = 4;
+pub const GL_TRIANGLE_STRIP: u32 = 5;
+pub const GL_TRIANGLE_FAN: u32 = 6;
+pub const GL_QUADS: u32 = 7;
+pub const GL_QUAD_STRIP: u32 = 8;
+pub const GL_POLYGON: u32 = 9;
+pub const GL_ZERO: u32 = 0;
+pub const GL_ONE: u32 = 1;
+pub const GL_SRC_COLOR: u32 = 768;
+pub const GL_ONE_MINUS_SRC_COLOR: u32 = 769;
+pub const GL_SRC_ALPHA: u32 = 770;
+pub const GL_ONE_MINUS_SRC_ALPHA: u32 = 771;
+pub const GL_DST_ALPHA: u32 = 772;
+pub const GL_ONE_MINUS_DST_ALPHA: u32 = 773;
+pub const GL_DST_COLOR: u32 = 774;
+pub const GL_ONE_MINUS_DST_COLOR: u32 = 775;
+pub const GL_SRC_ALPHA_SATURATE: u32 = 776;
+pub const GL_TRUE: u32 = 1;
+pub const GL_FALSE: u32 = 0;
+pub const GL_CLIP_PLANE0: u32 = 12288;
+pub const GL_CLIP_PLANE1: u32 = 12289;
+pub const GL_CLIP_PLANE2: u32 = 12290;
+pub const GL_CLIP_PLANE3: u32 = 12291;
+pub const GL_CLIP_PLANE4: u32 = 12292;
+pub const GL_CLIP_PLANE5: u32 = 12293;
+pub const GL_BYTE: u32 = 5120;
+pub const GL_UNSIGNED_BYTE: u32 = 5121;
+pub const GL_SHORT: u32 = 5122;
+pub const GL_UNSIGNED_SHORT: u32 = 5123;
+pub const GL_INT: u32 = 5124;
+pub const GL_UNSIGNED_INT: u32 = 5125;
+pub const GL_FLOAT: u32 = 5126;
+pub const GL_2_BYTES: u32 = 5127;
+pub const GL_3_BYTES: u32 = 5128;
+pub const GL_4_BYTES: u32 = 5129;
+pub const GL_DOUBLE: u32 = 5130;
+pub const GL_NONE: u32 = 0;
+pub const GL_FRONT_LEFT: u32 = 1024;
+pub const GL_FRONT_RIGHT: u32 = 1025;
+pub const GL_BACK_LEFT: u32 = 1026;
+pub const GL_BACK_RIGHT: u32 = 1027;
+pub const GL_FRONT: u32 = 1028;
+pub const GL_BACK: u32 = 1029;
+pub const GL_LEFT: u32 = 1030;
+pub const GL_RIGHT: u32 = 1031;
+pub const GL_FRONT_AND_BACK: u32 = 1032;
+pub const GL_AUX0: u32 = 1033;
+pub const GL_AUX1: u32 = 1034;
+pub const GL_AUX2: u32 = 1035;
+pub const GL_AUX3: u32 = 1036;
+pub const GL_NO_ERROR: u32 = 0;
+pub const GL_INVALID_ENUM: u32 = 1280;
+pub const GL_INVALID_VALUE: u32 = 1281;
+pub const GL_INVALID_OPERATION: u32 = 1282;
+pub const GL_STACK_OVERFLOW: u32 = 1283;
+pub const GL_STACK_UNDERFLOW: u32 = 1284;
+pub const GL_OUT_OF_MEMORY: u32 = 1285;
+pub const GL_2D: u32 = 1536;
+pub const GL_3D: u32 = 1537;
+pub const GL_3D_COLOR: u32 = 1538;
+pub const GL_3D_COLOR_TEXTURE: u32 = 1539;
+pub const GL_4D_COLOR_TEXTURE: u32 = 1540;
+pub const GL_PASS_THROUGH_TOKEN: u32 = 1792;
+pub const GL_POINT_TOKEN: u32 = 1793;
+pub const GL_LINE_TOKEN: u32 = 1794;
+pub const GL_POLYGON_TOKEN: u32 = 1795;
+pub const GL_BITMAP_TOKEN: u32 = 1796;
+pub const GL_DRAW_PIXEL_TOKEN: u32 = 1797;
+pub const GL_COPY_PIXEL_TOKEN: u32 = 1798;
+pub const GL_LINE_RESET_TOKEN: u32 = 1799;
+pub const GL_EXP: u32 = 2048;
+pub const GL_EXP2: u32 = 2049;
+pub const GL_CW: u32 = 2304;
+pub const GL_CCW: u32 = 2305;
+pub const GL_COEFF: u32 = 2560;
+pub const GL_ORDER: u32 = 2561;
+pub const GL_DOMAIN: u32 = 2562;
+pub const GL_CURRENT_COLOR: u32 = 2816;
+pub const GL_CURRENT_INDEX: u32 = 2817;
+pub const GL_CURRENT_NORMAL: u32 = 2818;
+pub const GL_CURRENT_TEXTURE_COORDS: u32 = 2819;
+pub const GL_CURRENT_RASTER_COLOR: u32 = 2820;
+pub const GL_CURRENT_RASTER_INDEX: u32 = 2821;
+pub const GL_CURRENT_RASTER_TEXTURE_COORDS: u32 = 2822;
+pub const GL_CURRENT_RASTER_POSITION: u32 = 2823;
+pub const GL_CURRENT_RASTER_POSITION_VALID: u32 = 2824;
+pub const GL_CURRENT_RASTER_DISTANCE: u32 = 2825;
+pub const GL_POINT_SMOOTH: u32 = 2832;
+pub const GL_POINT_SIZE: u32 = 2833;
+pub const GL_POINT_SIZE_RANGE: u32 = 2834;
+pub const GL_POINT_SIZE_GRANULARITY: u32 = 2835;
+pub const GL_LINE_SMOOTH: u32 = 2848;
+pub const GL_LINE_WIDTH: u32 = 2849;
+pub const GL_LINE_WIDTH_RANGE: u32 = 2850;
+pub const GL_LINE_WIDTH_GRANULARITY: u32 = 2851;
+pub const GL_LINE_STIPPLE: u32 = 2852;
+pub const GL_LINE_STIPPLE_PATTERN: u32 = 2853;
+pub const GL_LINE_STIPPLE_REPEAT: u32 = 2854;
+pub const GL_LIST_MODE: u32 = 2864;
+pub const GL_MAX_LIST_NESTING: u32 = 2865;
+pub const GL_LIST_BASE: u32 = 2866;
+pub const GL_LIST_INDEX: u32 = 2867;
+pub const GL_POLYGON_MODE: u32 = 2880;
+pub const GL_POLYGON_SMOOTH: u32 = 2881;
+pub const GL_POLYGON_STIPPLE: u32 = 2882;
+pub const GL_EDGE_FLAG: u32 = 2883;
+pub const GL_CULL_FACE: u32 = 2884;
+pub const GL_CULL_FACE_MODE: u32 = 2885;
+pub const GL_FRONT_FACE: u32 = 2886;
+pub const GL_LIGHTING: u32 = 2896;
+pub const GL_LIGHT_MODEL_LOCAL_VIEWER: u32 = 2897;
+pub const GL_LIGHT_MODEL_TWO_SIDE: u32 = 2898;
+pub const GL_LIGHT_MODEL_AMBIENT: u32 = 2899;
+pub const GL_SHADE_MODEL: u32 = 2900;
+pub const GL_COLOR_MATERIAL_FACE: u32 = 2901;
+pub const GL_COLOR_MATERIAL_PARAMETER: u32 = 2902;
+pub const GL_COLOR_MATERIAL: u32 = 2903;
+pub const GL_FOG: u32 = 2912;
+pub const GL_FOG_INDEX: u32 = 2913;
+pub const GL_FOG_DENSITY: u32 = 2914;
+pub const GL_FOG_START: u32 = 2915;
+pub const GL_FOG_END: u32 = 2916;
+pub const GL_FOG_MODE: u32 = 2917;
+pub const GL_FOG_COLOR: u32 = 2918;
+pub const GL_DEPTH_RANGE: u32 = 2928;
+pub const GL_DEPTH_TEST: u32 = 2929;
+pub const GL_DEPTH_WRITEMASK: u32 = 2930;
+pub const GL_DEPTH_CLEAR_VALUE: u32 = 2931;
+pub const GL_DEPTH_FUNC: u32 = 2932;
+pub const GL_ACCUM_CLEAR_VALUE: u32 = 2944;
+pub const GL_STENCIL_TEST: u32 = 2960;
+pub const GL_STENCIL_CLEAR_VALUE: u32 = 2961;
+pub const GL_STENCIL_FUNC: u32 = 2962;
+pub const GL_STENCIL_VALUE_MASK: u32 = 2963;
+pub const GL_STENCIL_FAIL: u32 = 2964;
+pub const GL_STENCIL_PASS_DEPTH_FAIL: u32 = 2965;
+pub const GL_STENCIL_PASS_DEPTH_PASS: u32 = 2966;
+pub const GL_STENCIL_REF: u32 = 2967;
+pub const GL_STENCIL_WRITEMASK: u32 = 2968;
+pub const GL_MATRIX_MODE: u32 = 2976;
+pub const GL_NORMALIZE: u32 = 2977;
+pub const GL_VIEWPORT: u32 = 2978;
+pub const GL_MODELVIEW_STACK_DEPTH: u32 = 2979;
+pub const GL_PROJECTION_STACK_DEPTH: u32 = 2980;
+pub const GL_TEXTURE_STACK_DEPTH: u32 = 2981;
+pub const GL_MODELVIEW_MATRIX: u32 = 2982;
+pub const GL_PROJECTION_MATRIX: u32 = 2983;
+pub const GL_TEXTURE_MATRIX: u32 = 2984;
+pub const GL_ATTRIB_STACK_DEPTH: u32 = 2992;
+pub const GL_CLIENT_ATTRIB_STACK_DEPTH: u32 = 2993;
+pub const GL_ALPHA_TEST: u32 = 3008;
+pub const GL_ALPHA_TEST_FUNC: u32 = 3009;
+pub const GL_ALPHA_TEST_REF: u32 = 3010;
+pub const GL_DITHER: u32 = 3024;
+pub const GL_BLEND_DST: u32 = 3040;
+pub const GL_BLEND_SRC: u32 = 3041;
+pub const GL_BLEND: u32 = 3042;
+pub const GL_LOGIC_OP_MODE: u32 = 3056;
+pub const GL_INDEX_LOGIC_OP: u32 = 3057;
+pub const GL_COLOR_LOGIC_OP: u32 = 3058;
+pub const GL_AUX_BUFFERS: u32 = 3072;
+pub const GL_DRAW_BUFFER: u32 = 3073;
+pub const GL_READ_BUFFER: u32 = 3074;
+pub const GL_SCISSOR_BOX: u32 = 3088;
+pub const GL_SCISSOR_TEST: u32 = 3089;
+pub const GL_INDEX_CLEAR_VALUE: u32 = 3104;
+pub const GL_INDEX_WRITEMASK: u32 = 3105;
+pub const GL_COLOR_CLEAR_VALUE: u32 = 3106;
+pub const GL_COLOR_WRITEMASK: u32 = 3107;
+pub const GL_INDEX_MODE: u32 = 3120;
+pub const GL_RGBA_MODE: u32 = 3121;
+pub const GL_DOUBLEBUFFER: u32 = 3122;
+pub const GL_STEREO: u32 = 3123;
+pub const GL_RENDER_MODE: u32 = 3136;
+pub const GL_PERSPECTIVE_CORRECTION_HINT: u32 = 3152;
+pub const GL_POINT_SMOOTH_HINT: u32 = 3153;
+pub const GL_LINE_SMOOTH_HINT: u32 = 3154;
+pub const GL_POLYGON_SMOOTH_HINT: u32 = 3155;
+pub const GL_FOG_HINT: u32 = 3156;
+pub const GL_TEXTURE_GEN_S: u32 = 3168;
+pub const GL_TEXTURE_GEN_T: u32 = 3169;
+pub const GL_TEXTURE_GEN_R: u32 = 3170;
+pub const GL_TEXTURE_GEN_Q: u32 = 3171;
+pub const GL_PIXEL_MAP_I_TO_I: u32 = 3184;
+pub const GL_PIXEL_MAP_S_TO_S: u32 = 3185;
+pub const GL_PIXEL_MAP_I_TO_R: u32 = 3186;
+pub const GL_PIXEL_MAP_I_TO_G: u32 = 3187;
+pub const GL_PIXEL_MAP_I_TO_B: u32 = 3188;
+pub const GL_PIXEL_MAP_I_TO_A: u32 = 3189;
+pub const GL_PIXEL_MAP_R_TO_R: u32 = 3190;
+pub const GL_PIXEL_MAP_G_TO_G: u32 = 3191;
+pub const GL_PIXEL_MAP_B_TO_B: u32 = 3192;
+pub const GL_PIXEL_MAP_A_TO_A: u32 = 3193;
+pub const GL_PIXEL_MAP_I_TO_I_SIZE: u32 = 3248;
+pub const GL_PIXEL_MAP_S_TO_S_SIZE: u32 = 3249;
+pub const GL_PIXEL_MAP_I_TO_R_SIZE: u32 = 3250;
+pub const GL_PIXEL_MAP_I_TO_G_SIZE: u32 = 3251;
+pub const GL_PIXEL_MAP_I_TO_B_SIZE: u32 = 3252;
+pub const GL_PIXEL_MAP_I_TO_A_SIZE: u32 = 3253;
+pub const GL_PIXEL_MAP_R_TO_R_SIZE: u32 = 3254;
+pub const GL_PIXEL_MAP_G_TO_G_SIZE: u32 = 3255;
+pub const GL_PIXEL_MAP_B_TO_B_SIZE: u32 = 3256;
+pub const GL_PIXEL_MAP_A_TO_A_SIZE: u32 = 3257;
+pub const GL_UNPACK_SWAP_BYTES: u32 = 3312;
+pub const GL_UNPACK_LSB_FIRST: u32 = 3313;
+pub const GL_UNPACK_ROW_LENGTH: u32 = 3314;
+pub const GL_UNPACK_SKIP_ROWS: u32 = 3315;
+pub const GL_UNPACK_SKIP_PIXELS: u32 = 3316;
+pub const GL_UNPACK_ALIGNMENT: u32 = 3317;
+pub const GL_PACK_SWAP_BYTES: u32 = 3328;
+pub const GL_PACK_LSB_FIRST: u32 = 3329;
+pub const GL_PACK_ROW_LENGTH: u32 = 3330;
+pub const GL_PACK_SKIP_ROWS: u32 = 3331;
+pub const GL_PACK_SKIP_PIXELS: u32 = 3332;
+pub const GL_PACK_ALIGNMENT: u32 = 3333;
+pub const GL_MAP_COLOR: u32 = 3344;
+pub const GL_MAP_STENCIL: u32 = 3345;
+pub const GL_INDEX_SHIFT: u32 = 3346;
+pub const GL_INDEX_OFFSET: u32 = 3347;
+pub const GL_RED_SCALE: u32 = 3348;
+pub const GL_RED_BIAS: u32 = 3349;
+pub const GL_ZOOM_X: u32 = 3350;
+pub const GL_ZOOM_Y: u32 = 3351;
+pub const GL_GREEN_SCALE: u32 = 3352;
+pub const GL_GREEN_BIAS: u32 = 3353;
+pub const GL_BLUE_SCALE: u32 = 3354;
+pub const GL_BLUE_BIAS: u32 = 3355;
+pub const GL_ALPHA_SCALE: u32 = 3356;
+pub const GL_ALPHA_BIAS: u32 = 3357;
+pub const GL_DEPTH_SCALE: u32 = 3358;
+pub const GL_DEPTH_BIAS: u32 = 3359;
+pub const GL_MAX_EVAL_ORDER: u32 = 3376;
+pub const GL_MAX_LIGHTS: u32 = 3377;
+pub const GL_MAX_CLIP_PLANES: u32 = 3378;
+pub const GL_MAX_TEXTURE_SIZE: u32 = 3379;
+pub const GL_MAX_PIXEL_MAP_TABLE: u32 = 3380;
+pub const GL_MAX_ATTRIB_STACK_DEPTH: u32 = 3381;
+pub const GL_MAX_MODELVIEW_STACK_DEPTH: u32 = 3382;
+pub const GL_MAX_NAME_STACK_DEPTH: u32 = 3383;
+pub const GL_MAX_PROJECTION_STACK_DEPTH: u32 = 3384;
+pub const GL_MAX_TEXTURE_STACK_DEPTH: u32 = 3385;
+pub const GL_MAX_VIEWPORT_DIMS: u32 = 3386;
+pub const GL_MAX_CLIENT_ATTRIB_STACK_DEPTH: u32 = 3387;
+pub const GL_SUBPIXEL_BITS: u32 = 3408;
+pub const GL_INDEX_BITS: u32 = 3409;
+pub const GL_RED_BITS: u32 = 3410;
+pub const GL_GREEN_BITS: u32 = 3411;
+pub const GL_BLUE_BITS: u32 = 3412;
+pub const GL_ALPHA_BITS: u32 = 3413;
+pub const GL_DEPTH_BITS: u32 = 3414;
+pub const GL_STENCIL_BITS: u32 = 3415;
+pub const GL_ACCUM_RED_BITS: u32 = 3416;
+pub const GL_ACCUM_GREEN_BITS: u32 = 3417;
+pub const GL_ACCUM_BLUE_BITS: u32 = 3418;
+pub const GL_ACCUM_ALPHA_BITS: u32 = 3419;
+pub const GL_NAME_STACK_DEPTH: u32 = 3440;
+pub const GL_AUTO_NORMAL: u32 = 3456;
+pub const GL_MAP1_COLOR_4: u32 = 3472;
+pub const GL_MAP1_INDEX: u32 = 3473;
+pub const GL_MAP1_NORMAL: u32 = 3474;
+pub const GL_MAP1_TEXTURE_COORD_1: u32 = 3475;
+pub const GL_MAP1_TEXTURE_COORD_2: u32 = 3476;
+pub const GL_MAP1_TEXTURE_COORD_3: u32 = 3477;
+pub const GL_MAP1_TEXTURE_COORD_4: u32 = 3478;
+pub const GL_MAP1_VERTEX_3: u32 = 3479;
+pub const GL_MAP1_VERTEX_4: u32 = 3480;
+pub const GL_MAP2_COLOR_4: u32 = 3504;
+pub const GL_MAP2_INDEX: u32 = 3505;
+pub const GL_MAP2_NORMAL: u32 = 3506;
+pub const GL_MAP2_TEXTURE_COORD_1: u32 = 3507;
+pub const GL_MAP2_TEXTURE_COORD_2: u32 = 3508;
+pub const GL_MAP2_TEXTURE_COORD_3: u32 = 3509;
+pub const GL_MAP2_TEXTURE_COORD_4: u32 = 3510;
+pub const GL_MAP2_VERTEX_3: u32 = 3511;
+pub const GL_MAP2_VERTEX_4: u32 = 3512;
+pub const GL_MAP1_GRID_DOMAIN: u32 = 3536;
+pub const GL_MAP1_GRID_SEGMENTS: u32 = 3537;
+pub const GL_MAP2_GRID_DOMAIN: u32 = 3538;
+pub const GL_MAP2_GRID_SEGMENTS: u32 = 3539;
+pub const GL_TEXTURE_1D: u32 = 3552;
+pub const GL_TEXTURE_2D: u32 = 3553;
+pub const GL_FEEDBACK_BUFFER_POINTER: u32 = 3568;
+pub const GL_FEEDBACK_BUFFER_SIZE: u32 = 3569;
+pub const GL_FEEDBACK_BUFFER_TYPE: u32 = 3570;
+pub const GL_SELECTION_BUFFER_POINTER: u32 = 3571;
+pub const GL_SELECTION_BUFFER_SIZE: u32 = 3572;
+pub const GL_TEXTURE_WIDTH: u32 = 4096;
+pub const GL_TEXTURE_HEIGHT: u32 = 4097;
+pub const GL_TEXTURE_INTERNAL_FORMAT: u32 = 4099;
+pub const GL_TEXTURE_BORDER_COLOR: u32 = 4100;
+pub const GL_TEXTURE_BORDER: u32 = 4101;
+pub const GL_DONT_CARE: u32 = 4352;
+pub const GL_FASTEST: u32 = 4353;
+pub const GL_NICEST: u32 = 4354;
+pub const GL_LIGHT0: u32 = 16384;
+pub const GL_LIGHT1: u32 = 16385;
+pub const GL_LIGHT2: u32 = 16386;
+pub const GL_LIGHT3: u32 = 16387;
+pub const GL_LIGHT4: u32 = 16388;
+pub const GL_LIGHT5: u32 = 16389;
+pub const GL_LIGHT6: u32 = 16390;
+pub const GL_LIGHT7: u32 = 16391;
+pub const GL_AMBIENT: u32 = 4608;
+pub const GL_DIFFUSE: u32 = 4609;
+pub const GL_SPECULAR: u32 = 4610;
+pub const GL_POSITION: u32 = 4611;
+pub const GL_SPOT_DIRECTION: u32 = 4612;
+pub const GL_SPOT_EXPONENT: u32 = 4613;
+pub const GL_SPOT_CUTOFF: u32 = 4614;
+pub const GL_CONSTANT_ATTENUATION: u32 = 4615;
+pub const GL_LINEAR_ATTENUATION: u32 = 4616;
+pub const GL_QUADRATIC_ATTENUATION: u32 = 4617;
+pub const GL_COMPILE: u32 = 4864;
+pub const GL_COMPILE_AND_EXECUTE: u32 = 4865;
+pub const GL_CLEAR: u32 = 5376;
+pub const GL_AND: u32 = 5377;
+pub const GL_AND_REVERSE: u32 = 5378;
+pub const GL_COPY: u32 = 5379;
+pub const GL_AND_INVERTED: u32 = 5380;
+pub const GL_NOOP: u32 = 5381;
+pub const GL_XOR: u32 = 5382;
+pub const GL_OR: u32 = 5383;
+pub const GL_NOR: u32 = 5384;
+pub const GL_EQUIV: u32 = 5385;
+pub const GL_INVERT: u32 = 5386;
+pub const GL_OR_REVERSE: u32 = 5387;
+pub const GL_COPY_INVERTED: u32 = 5388;
+pub const GL_OR_INVERTED: u32 = 5389;
+pub const GL_NAND: u32 = 5390;
+pub const GL_SET: u32 = 5391;
+pub const GL_EMISSION: u32 = 5632;
+pub const GL_SHININESS: u32 = 5633;
+pub const GL_AMBIENT_AND_DIFFUSE: u32 = 5634;
+pub const GL_COLOR_INDEXES: u32 = 5635;
+pub const GL_MODELVIEW: u32 = 5888;
+pub const GL_PROJECTION: u32 = 5889;
+pub const GL_TEXTURE: u32 = 5890;
+pub const GL_COLOR: u32 = 6144;
+pub const GL_DEPTH: u32 = 6145;
+pub const GL_STENCIL: u32 = 6146;
+pub const GL_COLOR_INDEX: u32 = 6400;
+pub const GL_STENCIL_INDEX: u32 = 6401;
+pub const GL_DEPTH_COMPONENT: u32 = 6402;
+pub const GL_RED: u32 = 6403;
+pub const GL_GREEN: u32 = 6404;
+pub const GL_BLUE: u32 = 6405;
+pub const GL_ALPHA: u32 = 6406;
+pub const GL_RGB: u32 = 6407;
+pub const GL_RGBA: u32 = 6408;
+pub const GL_LUMINANCE: u32 = 6409;
+pub const GL_LUMINANCE_ALPHA: u32 = 6410;
+pub const GL_BITMAP: u32 = 6656;
+pub const GL_POINT: u32 = 6912;
+pub const GL_LINE: u32 = 6913;
+pub const GL_FILL: u32 = 6914;
+pub const GL_RENDER: u32 = 7168;
+pub const GL_FEEDBACK: u32 = 7169;
+pub const GL_SELECT: u32 = 7170;
+pub const GL_FLAT: u32 = 7424;
+pub const GL_SMOOTH: u32 = 7425;
+pub const GL_KEEP: u32 = 7680;
+pub const GL_REPLACE: u32 = 7681;
+pub const GL_INCR: u32 = 7682;
+pub const GL_DECR: u32 = 7683;
+pub const GL_VENDOR: u32 = 7936;
+pub const GL_RENDERER: u32 = 7937;
+pub const GL_VERSION: u32 = 7938;
+pub const GL_EXTENSIONS: u32 = 7939;
+pub const GL_S: u32 = 8192;
+pub const GL_T: u32 = 8193;
+pub const GL_R: u32 = 8194;
+pub const GL_Q: u32 = 8195;
+pub const GL_MODULATE: u32 = 8448;
+pub const GL_DECAL: u32 = 8449;
+pub const GL_TEXTURE_ENV_MODE: u32 = 8704;
+pub const GL_TEXTURE_ENV_COLOR: u32 = 8705;
+pub const GL_TEXTURE_ENV: u32 = 8960;
+pub const GL_EYE_LINEAR: u32 = 9216;
+pub const GL_OBJECT_LINEAR: u32 = 9217;
+pub const GL_SPHERE_MAP: u32 = 9218;
+pub const GL_TEXTURE_GEN_MODE: u32 = 9472;
+pub const GL_OBJECT_PLANE: u32 = 9473;
+pub const GL_EYE_PLANE: u32 = 9474;
+pub const GL_NEAREST: u32 = 9728;
+pub const GL_LINEAR: u32 = 9729;
+pub const GL_NEAREST_MIPMAP_NEAREST: u32 = 9984;
+pub const GL_LINEAR_MIPMAP_NEAREST: u32 = 9985;
+pub const GL_NEAREST_MIPMAP_LINEAR: u32 = 9986;
+pub const GL_LINEAR_MIPMAP_LINEAR: u32 = 9987;
+pub const GL_TEXTURE_MAG_FILTER: u32 = 10240;
+pub const GL_TEXTURE_MIN_FILTER: u32 = 10241;
+pub const GL_TEXTURE_WRAP_S: u32 = 10242;
+pub const GL_TEXTURE_WRAP_T: u32 = 10243;
+pub const GL_CLAMP: u32 = 10496;
+pub const GL_REPEAT: u32 = 10497;
+pub const GL_CLIENT_PIXEL_STORE_BIT: u32 = 1;
+pub const GL_CLIENT_VERTEX_ARRAY_BIT: u32 = 2;
+pub const GL_CLIENT_ALL_ATTRIB_BITS: u32 = 4294967295;
+pub const GL_POLYGON_OFFSET_FACTOR: u32 = 32824;
+pub const GL_POLYGON_OFFSET_UNITS: u32 = 10752;
+pub const GL_POLYGON_OFFSET_POINT: u32 = 10753;
+pub const GL_POLYGON_OFFSET_LINE: u32 = 10754;
+pub const GL_POLYGON_OFFSET_FILL: u32 = 32823;
+pub const GL_ALPHA4: u32 = 32827;
+pub const GL_ALPHA8: u32 = 32828;
+pub const GL_ALPHA12: u32 = 32829;
+pub const GL_ALPHA16: u32 = 32830;
+pub const GL_LUMINANCE4: u32 = 32831;
+pub const GL_LUMINANCE8: u32 = 32832;
+pub const GL_LUMINANCE12: u32 = 32833;
+pub const GL_LUMINANCE16: u32 = 32834;
+pub const GL_LUMINANCE4_ALPHA4: u32 = 32835;
+pub const GL_LUMINANCE6_ALPHA2: u32 = 32836;
+pub const GL_LUMINANCE8_ALPHA8: u32 = 32837;
+pub const GL_LUMINANCE12_ALPHA4: u32 = 32838;
+pub const GL_LUMINANCE12_ALPHA12: u32 = 32839;
+pub const GL_LUMINANCE16_ALPHA16: u32 = 32840;
+pub const GL_INTENSITY: u32 = 32841;
+pub const GL_INTENSITY4: u32 = 32842;
+pub const GL_INTENSITY8: u32 = 32843;
+pub const GL_INTENSITY12: u32 = 32844;
+pub const GL_INTENSITY16: u32 = 32845;
+pub const GL_R3_G3_B2: u32 = 10768;
+pub const GL_RGB4: u32 = 32847;
+pub const GL_RGB5: u32 = 32848;
+pub const GL_RGB8: u32 = 32849;
+pub const GL_RGB10: u32 = 32850;
+pub const GL_RGB12: u32 = 32851;
+pub const GL_RGB16: u32 = 32852;
+pub const GL_RGBA2: u32 = 32853;
+pub const GL_RGBA4: u32 = 32854;
+pub const GL_RGB5_A1: u32 = 32855;
+pub const GL_RGBA8: u32 = 32856;
+pub const GL_RGB10_A2: u32 = 32857;
+pub const GL_RGBA12: u32 = 32858;
+pub const GL_RGBA16: u32 = 32859;
+pub const GL_TEXTURE_RED_SIZE: u32 = 32860;
+pub const GL_TEXTURE_GREEN_SIZE: u32 = 32861;
+pub const GL_TEXTURE_BLUE_SIZE: u32 = 32862;
+pub const GL_TEXTURE_ALPHA_SIZE: u32 = 32863;
+pub const GL_TEXTURE_LUMINANCE_SIZE: u32 = 32864;
+pub const GL_TEXTURE_INTENSITY_SIZE: u32 = 32865;
+pub const GL_PROXY_TEXTURE_1D: u32 = 32867;
+pub const GL_PROXY_TEXTURE_2D: u32 = 32868;
+pub const GL_TEXTURE_PRIORITY: u32 = 32870;
+pub const GL_TEXTURE_RESIDENT: u32 = 32871;
+pub const GL_TEXTURE_BINDING_1D: u32 = 32872;
+pub const GL_TEXTURE_BINDING_2D: u32 = 32873;
+pub const GL_TEXTURE_BINDING_3D: u32 = 32874;
+pub const GL_VERTEX_ARRAY: u32 = 32884;
+pub const GL_NORMAL_ARRAY: u32 = 32885;
+pub const GL_COLOR_ARRAY: u32 = 32886;
+pub const GL_INDEX_ARRAY: u32 = 32887;
+pub const GL_TEXTURE_COORD_ARRAY: u32 = 32888;
+pub const GL_EDGE_FLAG_ARRAY: u32 = 32889;
+pub const GL_VERTEX_ARRAY_SIZE: u32 = 32890;
+pub const GL_VERTEX_ARRAY_TYPE: u32 = 32891;
+pub const GL_VERTEX_ARRAY_STRIDE: u32 = 32892;
+pub const GL_NORMAL_ARRAY_TYPE: u32 = 32894;
+pub const GL_NORMAL_ARRAY_STRIDE: u32 = 32895;
+pub const GL_COLOR_ARRAY_SIZE: u32 = 32897;
+pub const GL_COLOR_ARRAY_TYPE: u32 = 32898;
+pub const GL_COLOR_ARRAY_STRIDE: u32 = 32899;
+pub const GL_INDEX_ARRAY_TYPE: u32 = 32901;
+pub const GL_INDEX_ARRAY_STRIDE: u32 = 32902;
+pub const GL_TEXTURE_COORD_ARRAY_SIZE: u32 = 32904;
+pub const GL_TEXTURE_COORD_ARRAY_TYPE: u32 = 32905;
+pub const GL_TEXTURE_COORD_ARRAY_STRIDE: u32 = 32906;
+pub const GL_EDGE_FLAG_ARRAY_STRIDE: u32 = 32908;
+pub const GL_VERTEX_ARRAY_POINTER: u32 = 32910;
+pub const GL_NORMAL_ARRAY_POINTER: u32 = 32911;
+pub const GL_COLOR_ARRAY_POINTER: u32 = 32912;
+pub const GL_INDEX_ARRAY_POINTER: u32 = 32913;
+pub const GL_TEXTURE_COORD_ARRAY_POINTER: u32 = 32914;
+pub const GL_EDGE_FLAG_ARRAY_POINTER: u32 = 32915;
+pub const GL_V2F: u32 = 10784;
+pub const GL_V3F: u32 = 10785;
+pub const GL_C4UB_V2F: u32 = 10786;
+pub const GL_C4UB_V3F: u32 = 10787;
+pub const GL_C3F_V3F: u32 = 10788;
+pub const GL_N3F_V3F: u32 = 10789;
+pub const GL_C4F_N3F_V3F: u32 = 10790;
+pub const GL_T2F_V3F: u32 = 10791;
+pub const GL_T4F_V4F: u32 = 10792;
+pub const GL_T2F_C4UB_V3F: u32 = 10793;
+pub const GL_T2F_C3F_V3F: u32 = 10794;
+pub const GL_T2F_N3F_V3F: u32 = 10795;
+pub const GL_T2F_C4F_N3F_V3F: u32 = 10796;
+pub const GL_T4F_C4F_N3F_V4F: u32 = 10797;
+pub const GL_BGR: u32 = 32992;
+pub const GL_BGRA: u32 = 32993;
+pub const GL_CONSTANT_COLOR: u32 = 32769;
+pub const GL_ONE_MINUS_CONSTANT_COLOR: u32 = 32770;
+pub const GL_CONSTANT_ALPHA: u32 = 32771;
+pub const GL_ONE_MINUS_CONSTANT_ALPHA: u32 = 32772;
+pub const GL_BLEND_COLOR: u32 = 32773;
+pub const GL_FUNC_ADD: u32 = 32774;
+pub const GL_MIN: u32 = 32775;
+pub const GL_MAX: u32 = 32776;
+pub const GL_BLEND_EQUATION: u32 = 32777;
+pub const GL_BLEND_EQUATION_RGB: u32 = 32777;
+pub const GL_BLEND_EQUATION_ALPHA: u32 = 34877;
+pub const GL_FUNC_SUBTRACT: u32 = 32778;
+pub const GL_FUNC_REVERSE_SUBTRACT: u32 = 32779;
+pub const GL_COLOR_MATRIX: u32 = 32945;
+pub const GL_COLOR_MATRIX_STACK_DEPTH: u32 = 32946;
+pub const GL_MAX_COLOR_MATRIX_STACK_DEPTH: u32 = 32947;
+pub const GL_POST_COLOR_MATRIX_RED_SCALE: u32 = 32948;
+pub const GL_POST_COLOR_MATRIX_GREEN_SCALE: u32 = 32949;
+pub const GL_POST_COLOR_MATRIX_BLUE_SCALE: u32 = 32950;
+pub const GL_POST_COLOR_MATRIX_ALPHA_SCALE: u32 = 32951;
+pub const GL_POST_COLOR_MATRIX_RED_BIAS: u32 = 32952;
+pub const GL_POST_COLOR_MATRIX_GREEN_BIAS: u32 = 32953;
+pub const GL_POST_COLOR_MATRIX_BLUE_BIAS: u32 = 32954;
+pub const GL_POST_COLOR_MATRIX_ALPHA_BIAS: u32 = 32955;
+pub const GL_COLOR_TABLE: u32 = 32976;
+pub const GL_POST_CONVOLUTION_COLOR_TABLE: u32 = 32977;
+pub const GL_POST_COLOR_MATRIX_COLOR_TABLE: u32 = 32978;
+pub const GL_PROXY_COLOR_TABLE: u32 = 32979;
+pub const GL_PROXY_POST_CONVOLUTION_COLOR_TABLE: u32 = 32980;
+pub const GL_PROXY_POST_COLOR_MATRIX_COLOR_TABLE: u32 = 32981;
+pub const GL_COLOR_TABLE_SCALE: u32 = 32982;
+pub const GL_COLOR_TABLE_BIAS: u32 = 32983;
+pub const GL_COLOR_TABLE_FORMAT: u32 = 32984;
+pub const GL_COLOR_TABLE_WIDTH: u32 = 32985;
+pub const GL_COLOR_TABLE_RED_SIZE: u32 = 32986;
+pub const GL_COLOR_TABLE_GREEN_SIZE: u32 = 32987;
+pub const GL_COLOR_TABLE_BLUE_SIZE: u32 = 32988;
+pub const GL_COLOR_TABLE_ALPHA_SIZE: u32 = 32989;
+pub const GL_COLOR_TABLE_LUMINANCE_SIZE: u32 = 32990;
+pub const GL_COLOR_TABLE_INTENSITY_SIZE: u32 = 32991;
+pub const GL_CONVOLUTION_1D: u32 = 32784;
+pub const GL_CONVOLUTION_2D: u32 = 32785;
+pub const GL_SEPARABLE_2D: u32 = 32786;
+pub const GL_CONVOLUTION_BORDER_MODE: u32 = 32787;
+pub const GL_CONVOLUTION_FILTER_SCALE: u32 = 32788;
+pub const GL_CONVOLUTION_FILTER_BIAS: u32 = 32789;
+pub const GL_REDUCE: u32 = 32790;
+pub const GL_CONVOLUTION_FORMAT: u32 = 32791;
+pub const GL_CONVOLUTION_WIDTH: u32 = 32792;
+pub const GL_CONVOLUTION_HEIGHT: u32 = 32793;
+pub const GL_MAX_CONVOLUTION_WIDTH: u32 = 32794;
+pub const GL_MAX_CONVOLUTION_HEIGHT: u32 = 32795;
+pub const GL_POST_CONVOLUTION_RED_SCALE: u32 = 32796;
+pub const GL_POST_CONVOLUTION_GREEN_SCALE: u32 = 32797;
+pub const GL_POST_CONVOLUTION_BLUE_SCALE: u32 = 32798;
+pub const GL_POST_CONVOLUTION_ALPHA_SCALE: u32 = 32799;
+pub const GL_POST_CONVOLUTION_RED_BIAS: u32 = 32800;
+pub const GL_POST_CONVOLUTION_GREEN_BIAS: u32 = 32801;
+pub const GL_POST_CONVOLUTION_BLUE_BIAS: u32 = 32802;
+pub const GL_POST_CONVOLUTION_ALPHA_BIAS: u32 = 32803;
+pub const GL_CONSTANT_BORDER: u32 = 33105;
+pub const GL_REPLICATE_BORDER: u32 = 33107;
+pub const GL_CONVOLUTION_BORDER_COLOR: u32 = 33108;
+pub const GL_MAX_ELEMENTS_VERTICES: u32 = 33000;
+pub const GL_MAX_ELEMENTS_INDICES: u32 = 33001;
+pub const GL_HISTOGRAM: u32 = 32804;
+pub const GL_PROXY_HISTOGRAM: u32 = 32805;
+pub const GL_HISTOGRAM_WIDTH: u32 = 32806;
+pub const GL_HISTOGRAM_FORMAT: u32 = 32807;
+pub const GL_HISTOGRAM_RED_SIZE: u32 = 32808;
+pub const GL_HISTOGRAM_GREEN_SIZE: u32 = 32809;
+pub const GL_HISTOGRAM_BLUE_SIZE: u32 = 32810;
+pub const GL_HISTOGRAM_ALPHA_SIZE: u32 = 32811;
+pub const GL_HISTOGRAM_LUMINANCE_SIZE: u32 = 32812;
+pub const GL_HISTOGRAM_SINK: u32 = 32813;
+pub const GL_MINMAX: u32 = 32814;
+pub const GL_MINMAX_FORMAT: u32 = 32815;
+pub const GL_MINMAX_SINK: u32 = 32816;
+pub const GL_TABLE_TOO_LARGE: u32 = 32817;
+pub const GL_UNSIGNED_BYTE_3_3_2: u32 = 32818;
+pub const GL_UNSIGNED_SHORT_4_4_4_4: u32 = 32819;
+pub const GL_UNSIGNED_SHORT_5_5_5_1: u32 = 32820;
+pub const GL_UNSIGNED_INT_8_8_8_8: u32 = 32821;
+pub const GL_UNSIGNED_INT_10_10_10_2: u32 = 32822;
+pub const GL_UNSIGNED_BYTE_2_3_3_REV: u32 = 33634;
+pub const GL_UNSIGNED_SHORT_5_6_5: u32 = 33635;
+pub const GL_UNSIGNED_SHORT_5_6_5_REV: u32 = 33636;
+pub const GL_UNSIGNED_SHORT_4_4_4_4_REV: u32 = 33637;
+pub const GL_UNSIGNED_SHORT_1_5_5_5_REV: u32 = 33638;
+pub const GL_UNSIGNED_INT_8_8_8_8_REV: u32 = 33639;
+pub const GL_UNSIGNED_INT_2_10_10_10_REV: u32 = 33640;
+pub const GL_RESCALE_NORMAL: u32 = 32826;
+pub const GL_LIGHT_MODEL_COLOR_CONTROL: u32 = 33272;
+pub const GL_SINGLE_COLOR: u32 = 33273;
+pub const GL_SEPARATE_SPECULAR_COLOR: u32 = 33274;
+pub const GL_PACK_SKIP_IMAGES: u32 = 32875;
+pub const GL_PACK_IMAGE_HEIGHT: u32 = 32876;
+pub const GL_UNPACK_SKIP_IMAGES: u32 = 32877;
+pub const GL_UNPACK_IMAGE_HEIGHT: u32 = 32878;
+pub const GL_TEXTURE_3D: u32 = 32879;
+pub const GL_PROXY_TEXTURE_3D: u32 = 32880;
+pub const GL_TEXTURE_DEPTH: u32 = 32881;
+pub const GL_TEXTURE_WRAP_R: u32 = 32882;
+pub const GL_MAX_3D_TEXTURE_SIZE: u32 = 32883;
+pub const GL_CLAMP_TO_EDGE: u32 = 33071;
+pub const GL_CLAMP_TO_BORDER: u32 = 33069;
+pub const GL_TEXTURE_MIN_LOD: u32 = 33082;
+pub const GL_TEXTURE_MAX_LOD: u32 = 33083;
+pub const GL_TEXTURE_BASE_LEVEL: u32 = 33084;
+pub const GL_TEXTURE_MAX_LEVEL: u32 = 33085;
+pub const GL_SMOOTH_POINT_SIZE_RANGE: u32 = 2834;
+pub const GL_SMOOTH_POINT_SIZE_GRANULARITY: u32 = 2835;
+pub const GL_SMOOTH_LINE_WIDTH_RANGE: u32 = 2850;
+pub const GL_SMOOTH_LINE_WIDTH_GRANULARITY: u32 = 2851;
+pub const GL_ALIASED_POINT_SIZE_RANGE: u32 = 33901;
+pub const GL_ALIASED_LINE_WIDTH_RANGE: u32 = 33902;
+pub const GL_TEXTURE0: u32 = 33984;
+pub const GL_TEXTURE1: u32 = 33985;
+pub const GL_TEXTURE2: u32 = 33986;
+pub const GL_TEXTURE3: u32 = 33987;
+pub const GL_TEXTURE4: u32 = 33988;
+pub const GL_TEXTURE5: u32 = 33989;
+pub const GL_TEXTURE6: u32 = 33990;
+pub const GL_TEXTURE7: u32 = 33991;
+pub const GL_TEXTURE8: u32 = 33992;
+pub const GL_TEXTURE9: u32 = 33993;
+pub const GL_TEXTURE10: u32 = 33994;
+pub const GL_TEXTURE11: u32 = 33995;
+pub const GL_TEXTURE12: u32 = 33996;
+pub const GL_TEXTURE13: u32 = 33997;
+pub const GL_TEXTURE14: u32 = 33998;
+pub const GL_TEXTURE15: u32 = 33999;
+pub const GL_TEXTURE16: u32 = 34000;
+pub const GL_TEXTURE17: u32 = 34001;
+pub const GL_TEXTURE18: u32 = 34002;
+pub const GL_TEXTURE19: u32 = 34003;
+pub const GL_TEXTURE20: u32 = 34004;
+pub const GL_TEXTURE21: u32 = 34005;
+pub const GL_TEXTURE22: u32 = 34006;
+pub const GL_TEXTURE23: u32 = 34007;
+pub const GL_TEXTURE24: u32 = 34008;
+pub const GL_TEXTURE25: u32 = 34009;
+pub const GL_TEXTURE26: u32 = 34010;
+pub const GL_TEXTURE27: u32 = 34011;
+pub const GL_TEXTURE28: u32 = 34012;
+pub const GL_TEXTURE29: u32 = 34013;
+pub const GL_TEXTURE30: u32 = 34014;
+pub const GL_TEXTURE31: u32 = 34015;
+pub const GL_ACTIVE_TEXTURE: u32 = 34016;
+pub const GL_CLIENT_ACTIVE_TEXTURE: u32 = 34017;
+pub const GL_MAX_TEXTURE_UNITS: u32 = 34018;
+pub const GL_COMBINE: u32 = 34160;
+pub const GL_COMBINE_RGB: u32 = 34161;
+pub const GL_COMBINE_ALPHA: u32 = 34162;
+pub const GL_RGB_SCALE: u32 = 34163;
+pub const GL_ADD_SIGNED: u32 = 34164;
+pub const GL_INTERPOLATE: u32 = 34165;
+pub const GL_CONSTANT: u32 = 34166;
+pub const GL_PRIMARY_COLOR: u32 = 34167;
+pub const GL_PREVIOUS: u32 = 34168;
+pub const GL_SUBTRACT: u32 = 34023;
+pub const GL_SRC0_RGB: u32 = 34176;
+pub const GL_SRC1_RGB: u32 = 34177;
+pub const GL_SRC2_RGB: u32 = 34178;
+pub const GL_SRC0_ALPHA: u32 = 34184;
+pub const GL_SRC1_ALPHA: u32 = 34185;
+pub const GL_SRC2_ALPHA: u32 = 34186;
+pub const GL_SOURCE0_RGB: u32 = 34176;
+pub const GL_SOURCE1_RGB: u32 = 34177;
+pub const GL_SOURCE2_RGB: u32 = 34178;
+pub const GL_SOURCE0_ALPHA: u32 = 34184;
+pub const GL_SOURCE1_ALPHA: u32 = 34185;
+pub const GL_SOURCE2_ALPHA: u32 = 34186;
+pub const GL_OPERAND0_RGB: u32 = 34192;
+pub const GL_OPERAND1_RGB: u32 = 34193;
+pub const GL_OPERAND2_RGB: u32 = 34194;
+pub const GL_OPERAND0_ALPHA: u32 = 34200;
+pub const GL_OPERAND1_ALPHA: u32 = 34201;
+pub const GL_OPERAND2_ALPHA: u32 = 34202;
+pub const GL_DOT3_RGB: u32 = 34478;
+pub const GL_DOT3_RGBA: u32 = 34479;
+pub const GL_TRANSPOSE_MODELVIEW_MATRIX: u32 = 34019;
+pub const GL_TRANSPOSE_PROJECTION_MATRIX: u32 = 34020;
+pub const GL_TRANSPOSE_TEXTURE_MATRIX: u32 = 34021;
+pub const GL_TRANSPOSE_COLOR_MATRIX: u32 = 34022;
+pub const GL_NORMAL_MAP: u32 = 34065;
+pub const GL_REFLECTION_MAP: u32 = 34066;
+pub const GL_TEXTURE_CUBE_MAP: u32 = 34067;
+pub const GL_TEXTURE_BINDING_CUBE_MAP: u32 = 34068;
+pub const GL_TEXTURE_CUBE_MAP_POSITIVE_X: u32 = 34069;
+pub const GL_TEXTURE_CUBE_MAP_NEGATIVE_X: u32 = 34070;
+pub const GL_TEXTURE_CUBE_MAP_POSITIVE_Y: u32 = 34071;
+pub const GL_TEXTURE_CUBE_MAP_NEGATIVE_Y: u32 = 34072;
+pub const GL_TEXTURE_CUBE_MAP_POSITIVE_Z: u32 = 34073;
+pub const GL_TEXTURE_CUBE_MAP_NEGATIVE_Z: u32 = 34074;
+pub const GL_PROXY_TEXTURE_CUBE_MAP: u32 = 34075;
+pub const GL_MAX_CUBE_MAP_TEXTURE_SIZE: u32 = 34076;
+pub const GL_COMPRESSED_ALPHA: u32 = 34025;
+pub const GL_COMPRESSED_LUMINANCE: u32 = 34026;
+pub const GL_COMPRESSED_LUMINANCE_ALPHA: u32 = 34027;
+pub const GL_COMPRESSED_INTENSITY: u32 = 34028;
+pub const GL_COMPRESSED_RGB: u32 = 34029;
+pub const GL_COMPRESSED_RGBA: u32 = 34030;
+pub const GL_TEXTURE_COMPRESSION_HINT: u32 = 34031;
+pub const GL_TEXTURE_COMPRESSED_IMAGE_SIZE: u32 = 34464;
+pub const GL_TEXTURE_COMPRESSED: u32 = 34465;
+pub const GL_NUM_COMPRESSED_TEXTURE_FORMATS: u32 = 34466;
+pub const GL_COMPRESSED_TEXTURE_FORMATS: u32 = 34467;
+pub const GL_MULTISAMPLE: u32 = 32925;
+pub const GL_SAMPLE_ALPHA_TO_COVERAGE: u32 = 32926;
+pub const GL_SAMPLE_ALPHA_TO_ONE: u32 = 32927;
+pub const GL_SAMPLE_COVERAGE: u32 = 32928;
+pub const GL_SAMPLE_BUFFERS: u32 = 32936;
+pub const GL_SAMPLES: u32 = 32937;
+pub const GL_SAMPLE_COVERAGE_VALUE: u32 = 32938;
+pub const GL_SAMPLE_COVERAGE_INVERT: u32 = 32939;
+pub const GL_MULTISAMPLE_BIT: u32 = 536870912;
+pub const GL_DEPTH_COMPONENT16: u32 = 33189;
+pub const GL_DEPTH_COMPONENT24: u32 = 33190;
+pub const GL_DEPTH_COMPONENT32: u32 = 33191;
+pub const GL_TEXTURE_DEPTH_SIZE: u32 = 34890;
+pub const GL_DEPTH_TEXTURE_MODE: u32 = 34891;
+pub const GL_TEXTURE_COMPARE_MODE: u32 = 34892;
+pub const GL_TEXTURE_COMPARE_FUNC: u32 = 34893;
+pub const GL_COMPARE_R_TO_TEXTURE: u32 = 34894;
+pub const GL_QUERY_COUNTER_BITS: u32 = 34916;
+pub const GL_CURRENT_QUERY: u32 = 34917;
+pub const GL_QUERY_RESULT: u32 = 34918;
+pub const GL_QUERY_RESULT_AVAILABLE: u32 = 34919;
+pub const GL_SAMPLES_PASSED: u32 = 35092;
+pub const GL_FOG_COORD_SRC: u32 = 33872;
+pub const GL_FOG_COORD: u32 = 33873;
+pub const GL_FRAGMENT_DEPTH: u32 = 33874;
+pub const GL_CURRENT_FOG_COORD: u32 = 33875;
+pub const GL_FOG_COORD_ARRAY_TYPE: u32 = 33876;
+pub const GL_FOG_COORD_ARRAY_STRIDE: u32 = 33877;
+pub const GL_FOG_COORD_ARRAY_POINTER: u32 = 33878;
+pub const GL_FOG_COORD_ARRAY: u32 = 33879;
+pub const GL_FOG_COORDINATE_SOURCE: u32 = 33872;
+pub const GL_FOG_COORDINATE: u32 = 33873;
+pub const GL_CURRENT_FOG_COORDINATE: u32 = 33875;
+pub const GL_FOG_COORDINATE_ARRAY_TYPE: u32 = 33876;
+pub const GL_FOG_COORDINATE_ARRAY_STRIDE: u32 = 33877;
+pub const GL_FOG_COORDINATE_ARRAY_POINTER: u32 = 33878;
+pub const GL_FOG_COORDINATE_ARRAY: u32 = 33879;
+pub const GL_COLOR_SUM: u32 = 33880;
+pub const GL_CURRENT_SECONDARY_COLOR: u32 = 33881;
+pub const GL_SECONDARY_COLOR_ARRAY_SIZE: u32 = 33882;
+pub const GL_SECONDARY_COLOR_ARRAY_TYPE: u32 = 33883;
+pub const GL_SECONDARY_COLOR_ARRAY_STRIDE: u32 = 33884;
+pub const GL_SECONDARY_COLOR_ARRAY_POINTER: u32 = 33885;
+pub const GL_SECONDARY_COLOR_ARRAY: u32 = 33886;
+pub const GL_POINT_SIZE_MIN: u32 = 33062;
+pub const GL_POINT_SIZE_MAX: u32 = 33063;
+pub const GL_POINT_FADE_THRESHOLD_SIZE: u32 = 33064;
+pub const GL_POINT_DISTANCE_ATTENUATION: u32 = 33065;
+pub const GL_BLEND_DST_RGB: u32 = 32968;
+pub const GL_BLEND_SRC_RGB: u32 = 32969;
+pub const GL_BLEND_DST_ALPHA: u32 = 32970;
+pub const GL_BLEND_SRC_ALPHA: u32 = 32971;
+pub const GL_GENERATE_MIPMAP: u32 = 33169;
+pub const GL_GENERATE_MIPMAP_HINT: u32 = 33170;
+pub const GL_INCR_WRAP: u32 = 34055;
+pub const GL_DECR_WRAP: u32 = 34056;
+pub const GL_MIRRORED_REPEAT: u32 = 33648;
+pub const GL_MAX_TEXTURE_LOD_BIAS: u32 = 34045;
+pub const GL_TEXTURE_FILTER_CONTROL: u32 = 34048;
+pub const GL_TEXTURE_LOD_BIAS: u32 = 34049;
+pub const GL_ARRAY_BUFFER: u32 = 34962;
+pub const GL_ELEMENT_ARRAY_BUFFER: u32 = 34963;
+pub const GL_ARRAY_BUFFER_BINDING: u32 = 34964;
+pub const GL_ELEMENT_ARRAY_BUFFER_BINDING: u32 = 34965;
+pub const GL_VERTEX_ARRAY_BUFFER_BINDING: u32 = 34966;
+pub const GL_NORMAL_ARRAY_BUFFER_BINDING: u32 = 34967;
+pub const GL_COLOR_ARRAY_BUFFER_BINDING: u32 = 34968;
+pub const GL_INDEX_ARRAY_BUFFER_BINDING: u32 = 34969;
+pub const GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING: u32 = 34970;
+pub const GL_EDGE_FLAG_ARRAY_BUFFER_BINDING: u32 = 34971;
+pub const GL_SECONDARY_COLOR_ARRAY_BUFFER_BINDING: u32 = 34972;
+pub const GL_FOG_COORD_ARRAY_BUFFER_BINDING: u32 = 34973;
+pub const GL_WEIGHT_ARRAY_BUFFER_BINDING: u32 = 34974;
+pub const GL_VERTEX_ATTRIB_ARRAY_BUFFER_BINDING: u32 = 34975;
+pub const GL_STREAM_DRAW: u32 = 35040;
+pub const GL_STREAM_READ: u32 = 35041;
+pub const GL_STREAM_COPY: u32 = 35042;
+pub const GL_STATIC_DRAW: u32 = 35044;
+pub const GL_STATIC_READ: u32 = 35045;
+pub const GL_STATIC_COPY: u32 = 35046;
+pub const GL_DYNAMIC_DRAW: u32 = 35048;
+pub const GL_DYNAMIC_READ: u32 = 35049;
+pub const GL_DYNAMIC_COPY: u32 = 35050;
+pub const GL_READ_ONLY: u32 = 35000;
+pub const GL_WRITE_ONLY: u32 = 35001;
+pub const GL_READ_WRITE: u32 = 35002;
+pub const GL_BUFFER_SIZE: u32 = 34660;
+pub const GL_BUFFER_USAGE: u32 = 34661;
+pub const GL_BUFFER_ACCESS: u32 = 35003;
+pub const GL_BUFFER_MAPPED: u32 = 35004;
+pub const GL_BUFFER_MAP_POINTER: u32 = 35005;
+pub const GL_FOG_COORDINATE_ARRAY_BUFFER_BINDING: u32 = 34973;
+pub const GL_CURRENT_PROGRAM: u32 = 35725;
+pub const GL_SHADER_TYPE: u32 = 35663;
+pub const GL_DELETE_STATUS: u32 = 35712;
+pub const GL_COMPILE_STATUS: u32 = 35713;
+pub const GL_LINK_STATUS: u32 = 35714;
+pub const GL_VALIDATE_STATUS: u32 = 35715;
+pub const GL_INFO_LOG_LENGTH: u32 = 35716;
+pub const GL_ATTACHED_SHADERS: u32 = 35717;
+pub const GL_ACTIVE_UNIFORMS: u32 = 35718;
+pub const GL_ACTIVE_UNIFORM_MAX_LENGTH: u32 = 35719;
+pub const GL_SHADER_SOURCE_LENGTH: u32 = 35720;
+pub const GL_FLOAT_VEC2: u32 = 35664;
+pub const GL_FLOAT_VEC3: u32 = 35665;
+pub const GL_FLOAT_VEC4: u32 = 35666;
+pub const GL_INT_VEC2: u32 = 35667;
+pub const GL_INT_VEC3: u32 = 35668;
+pub const GL_INT_VEC4: u32 = 35669;
+pub const GL_BOOL: u32 = 35670;
+pub const GL_BOOL_VEC2: u32 = 35671;
+pub const GL_BOOL_VEC3: u32 = 35672;
+pub const GL_BOOL_VEC4: u32 = 35673;
+pub const GL_FLOAT_MAT2: u32 = 35674;
+pub const GL_FLOAT_MAT3: u32 = 35675;
+pub const GL_FLOAT_MAT4: u32 = 35676;
+pub const GL_SAMPLER_1D: u32 = 35677;
+pub const GL_SAMPLER_2D: u32 = 35678;
+pub const GL_SAMPLER_3D: u32 = 35679;
+pub const GL_SAMPLER_CUBE: u32 = 35680;
+pub const GL_SAMPLER_1D_SHADOW: u32 = 35681;
+pub const GL_SAMPLER_2D_SHADOW: u32 = 35682;
+pub const GL_SHADING_LANGUAGE_VERSION: u32 = 35724;
+pub const GL_VERTEX_SHADER: u32 = 35633;
+pub const GL_MAX_VERTEX_UNIFORM_COMPONENTS: u32 = 35658;
+pub const GL_MAX_VARYING_FLOATS: u32 = 35659;
+pub const GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS: u32 = 35660;
+pub const GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: u32 = 35661;
+pub const GL_ACTIVE_ATTRIBUTES: u32 = 35721;
+pub const GL_ACTIVE_ATTRIBUTE_MAX_LENGTH: u32 = 35722;
+pub const GL_FRAGMENT_SHADER: u32 = 35632;
+pub const GL_MAX_FRAGMENT_UNIFORM_COMPONENTS: u32 = 35657;
+pub const GL_FRAGMENT_SHADER_DERIVATIVE_HINT: u32 = 35723;
+pub const GL_MAX_VERTEX_ATTRIBS: u32 = 34921;
+pub const GL_VERTEX_ATTRIB_ARRAY_ENABLED: u32 = 34338;
+pub const GL_VERTEX_ATTRIB_ARRAY_SIZE: u32 = 34339;
+pub const GL_VERTEX_ATTRIB_ARRAY_STRIDE: u32 = 34340;
+pub const GL_VERTEX_ATTRIB_ARRAY_TYPE: u32 = 34341;
+pub const GL_VERTEX_ATTRIB_ARRAY_NORMALIZED: u32 = 34922;
+pub const GL_CURRENT_VERTEX_ATTRIB: u32 = 34342;
+pub const GL_VERTEX_ATTRIB_ARRAY_POINTER: u32 = 34373;
+pub const GL_VERTEX_PROGRAM_POINT_SIZE: u32 = 34370;
+pub const GL_VERTEX_PROGRAM_TWO_SIDE: u32 = 34371;
+pub const GL_MAX_TEXTURE_COORDS: u32 = 34929;
+pub const GL_MAX_TEXTURE_IMAGE_UNITS: u32 = 34930;
+pub const GL_MAX_DRAW_BUFFERS: u32 = 34852;
+pub const GL_DRAW_BUFFER0: u32 = 34853;
+pub const GL_DRAW_BUFFER1: u32 = 34854;
+pub const GL_DRAW_BUFFER2: u32 = 34855;
+pub const GL_DRAW_BUFFER3: u32 = 34856;
+pub const GL_DRAW_BUFFER4: u32 = 34857;
+pub const GL_DRAW_BUFFER5: u32 = 34858;
+pub const GL_DRAW_BUFFER6: u32 = 34859;
+pub const GL_DRAW_BUFFER7: u32 = 34860;
+pub const GL_DRAW_BUFFER8: u32 = 34861;
+pub const GL_DRAW_BUFFER9: u32 = 34862;
+pub const GL_DRAW_BUFFER10: u32 = 34863;
+pub const GL_DRAW_BUFFER11: u32 = 34864;
+pub const GL_DRAW_BUFFER12: u32 = 34865;
+pub const GL_DRAW_BUFFER13: u32 = 34866;
+pub const GL_DRAW_BUFFER14: u32 = 34867;
+pub const GL_DRAW_BUFFER15: u32 = 34868;
+pub const GL_POINT_SPRITE: u32 = 34913;
+pub const GL_COORD_REPLACE: u32 = 34914;
+pub const GL_POINT_SPRITE_COORD_ORIGIN: u32 = 36000;
+pub const GL_LOWER_LEFT: u32 = 36001;
+pub const GL_UPPER_LEFT: u32 = 36002;
+pub const GL_STENCIL_BACK_FUNC: u32 = 34816;
+pub const GL_STENCIL_BACK_VALUE_MASK: u32 = 36004;
+pub const GL_STENCIL_BACK_REF: u32 = 36003;
+pub const GL_STENCIL_BACK_FAIL: u32 = 34817;
+pub const GL_STENCIL_BACK_PASS_DEPTH_FAIL: u32 = 34818;
+pub const GL_STENCIL_BACK_PASS_DEPTH_PASS: u32 = 34819;
+pub const GL_STENCIL_BACK_WRITEMASK: u32 = 36005;
+pub const GL_CURRENT_RASTER_SECONDARY_COLOR: u32 = 33887;
+pub const GL_PIXEL_PACK_BUFFER: u32 = 35051;
+pub const GL_PIXEL_UNPACK_BUFFER: u32 = 35052;
+pub const GL_PIXEL_PACK_BUFFER_BINDING: u32 = 35053;
+pub const GL_PIXEL_UNPACK_BUFFER_BINDING: u32 = 35055;
+pub const GL_FLOAT_MAT2x3: u32 = 35685;
+pub const GL_FLOAT_MAT2x4: u32 = 35686;
+pub const GL_FLOAT_MAT3x2: u32 = 35687;
+pub const GL_FLOAT_MAT3x4: u32 = 35688;
+pub const GL_FLOAT_MAT4x2: u32 = 35689;
+pub const GL_FLOAT_MAT4x3: u32 = 35690;
+pub const GL_SRGB: u32 = 35904;
+pub const GL_SRGB8: u32 = 35905;
+pub const GL_SRGB_ALPHA: u32 = 35906;
+pub const GL_SRGB8_ALPHA8: u32 = 35907;
+pub const GL_SLUMINANCE_ALPHA: u32 = 35908;
+pub const GL_SLUMINANCE8_ALPHA8: u32 = 35909;
+pub const GL_SLUMINANCE: u32 = 35910;
+pub const GL_SLUMINANCE8: u32 = 35911;
+pub const GL_COMPRESSED_SRGB: u32 = 35912;
+pub const GL_COMPRESSED_SRGB_ALPHA: u32 = 35913;
+pub const GL_COMPRESSED_SLUMINANCE: u32 = 35914;
+pub const GL_COMPRESSED_SLUMINANCE_ALPHA: u32 = 35915;
+pub const GLU_EXT_object_space_tess: u32 = 1;
+pub const GLU_EXT_nurbs_tessellator: u32 = 1;
+pub const GLU_FALSE: u32 = 0;
+pub const GLU_TRUE: u32 = 1;
+pub const GLU_VERSION_1_1: u32 = 1;
+pub const GLU_VERSION_1_2: u32 = 1;
+pub const GLU_VERSION_1_3: u32 = 1;
+pub const GLU_VERSION: u32 = 100800;
+pub const GLU_EXTENSIONS: u32 = 100801;
+pub const GLU_INVALID_ENUM: u32 = 100900;
+pub const GLU_INVALID_VALUE: u32 = 100901;
+pub const GLU_OUT_OF_MEMORY: u32 = 100902;
+pub const GLU_INCOMPATIBLE_GL_VERSION: u32 = 100903;
+pub const GLU_INVALID_OPERATION: u32 = 100904;
+pub const GLU_OUTLINE_POLYGON: u32 = 100240;
+pub const GLU_OUTLINE_PATCH: u32 = 100241;
+pub const GLU_NURBS_ERROR: u32 = 100103;
+pub const GLU_ERROR: u32 = 100103;
+pub const GLU_NURBS_BEGIN: u32 = 100164;
+pub const GLU_NURBS_BEGIN_EXT: u32 = 100164;
+pub const GLU_NURBS_VERTEX: u32 = 100165;
+pub const GLU_NURBS_VERTEX_EXT: u32 = 100165;
+pub const GLU_NURBS_NORMAL: u32 = 100166;
+pub const GLU_NURBS_NORMAL_EXT: u32 = 100166;
+pub const GLU_NURBS_COLOR: u32 = 100167;
+pub const GLU_NURBS_COLOR_EXT: u32 = 100167;
+pub const GLU_NURBS_TEXTURE_COORD: u32 = 100168;
+pub const GLU_NURBS_TEX_COORD_EXT: u32 = 100168;
+pub const GLU_NURBS_END: u32 = 100169;
+pub const GLU_NURBS_END_EXT: u32 = 100169;
+pub const GLU_NURBS_BEGIN_DATA: u32 = 100170;
+pub const GLU_NURBS_BEGIN_DATA_EXT: u32 = 100170;
+pub const GLU_NURBS_VERTEX_DATA: u32 = 100171;
+pub const GLU_NURBS_VERTEX_DATA_EXT: u32 = 100171;
+pub const GLU_NURBS_NORMAL_DATA: u32 = 100172;
+pub const GLU_NURBS_NORMAL_DATA_EXT: u32 = 100172;
+pub const GLU_NURBS_COLOR_DATA: u32 = 100173;
+pub const GLU_NURBS_COLOR_DATA_EXT: u32 = 100173;
+pub const GLU_NURBS_TEXTURE_COORD_DATA: u32 = 100174;
+pub const GLU_NURBS_TEX_COORD_DATA_EXT: u32 = 100174;
+pub const GLU_NURBS_END_DATA: u32 = 100175;
+pub const GLU_NURBS_END_DATA_EXT: u32 = 100175;
+pub const GLU_NURBS_ERROR1: u32 = 100251;
+pub const GLU_NURBS_ERROR2: u32 = 100252;
+pub const GLU_NURBS_ERROR3: u32 = 100253;
+pub const GLU_NURBS_ERROR4: u32 = 100254;
+pub const GLU_NURBS_ERROR5: u32 = 100255;
+pub const GLU_NURBS_ERROR6: u32 = 100256;
+pub const GLU_NURBS_ERROR7: u32 = 100257;
+pub const GLU_NURBS_ERROR8: u32 = 100258;
+pub const GLU_NURBS_ERROR9: u32 = 100259;
+pub const GLU_NURBS_ERROR10: u32 = 100260;
+pub const GLU_NURBS_ERROR11: u32 = 100261;
+pub const GLU_NURBS_ERROR12: u32 = 100262;
+pub const GLU_NURBS_ERROR13: u32 = 100263;
+pub const GLU_NURBS_ERROR14: u32 = 100264;
+pub const GLU_NURBS_ERROR15: u32 = 100265;
+pub const GLU_NURBS_ERROR16: u32 = 100266;
+pub const GLU_NURBS_ERROR17: u32 = 100267;
+pub const GLU_NURBS_ERROR18: u32 = 100268;
+pub const GLU_NURBS_ERROR19: u32 = 100269;
+pub const GLU_NURBS_ERROR20: u32 = 100270;
+pub const GLU_NURBS_ERROR21: u32 = 100271;
+pub const GLU_NURBS_ERROR22: u32 = 100272;
+pub const GLU_NURBS_ERROR23: u32 = 100273;
+pub const GLU_NURBS_ERROR24: u32 = 100274;
+pub const GLU_NURBS_ERROR25: u32 = 100275;
+pub const GLU_NURBS_ERROR26: u32 = 100276;
+pub const GLU_NURBS_ERROR27: u32 = 100277;
+pub const GLU_NURBS_ERROR28: u32 = 100278;
+pub const GLU_NURBS_ERROR29: u32 = 100279;
+pub const GLU_NURBS_ERROR30: u32 = 100280;
+pub const GLU_NURBS_ERROR31: u32 = 100281;
+pub const GLU_NURBS_ERROR32: u32 = 100282;
+pub const GLU_NURBS_ERROR33: u32 = 100283;
+pub const GLU_NURBS_ERROR34: u32 = 100284;
+pub const GLU_NURBS_ERROR35: u32 = 100285;
+pub const GLU_NURBS_ERROR36: u32 = 100286;
+pub const GLU_NURBS_ERROR37: u32 = 100287;
+pub const GLU_AUTO_LOAD_MATRIX: u32 = 100200;
+pub const GLU_CULLING: u32 = 100201;
+pub const GLU_SAMPLING_TOLERANCE: u32 = 100203;
+pub const GLU_DISPLAY_MODE: u32 = 100204;
+pub const GLU_PARAMETRIC_TOLERANCE: u32 = 100202;
+pub const GLU_SAMPLING_METHOD: u32 = 100205;
+pub const GLU_U_STEP: u32 = 100206;
+pub const GLU_V_STEP: u32 = 100207;
+pub const GLU_NURBS_MODE: u32 = 100160;
+pub const GLU_NURBS_MODE_EXT: u32 = 100160;
+pub const GLU_NURBS_TESSELLATOR: u32 = 100161;
+pub const GLU_NURBS_TESSELLATOR_EXT: u32 = 100161;
+pub const GLU_NURBS_RENDERER: u32 = 100162;
+pub const GLU_NURBS_RENDERER_EXT: u32 = 100162;
+pub const GLU_OBJECT_PARAMETRIC_ERROR: u32 = 100208;
+pub const GLU_OBJECT_PARAMETRIC_ERROR_EXT: u32 = 100208;
+pub const GLU_OBJECT_PATH_LENGTH: u32 = 100209;
+pub const GLU_OBJECT_PATH_LENGTH_EXT: u32 = 100209;
+pub const GLU_PATH_LENGTH: u32 = 100215;
+pub const GLU_PARAMETRIC_ERROR: u32 = 100216;
+pub const GLU_DOMAIN_DISTANCE: u32 = 100217;
+pub const GLU_MAP1_TRIM_2: u32 = 100210;
+pub const GLU_MAP1_TRIM_3: u32 = 100211;
+pub const GLU_POINT: u32 = 100010;
+pub const GLU_LINE: u32 = 100011;
+pub const GLU_FILL: u32 = 100012;
+pub const GLU_SILHOUETTE: u32 = 100013;
+pub const GLU_SMOOTH: u32 = 100000;
+pub const GLU_FLAT: u32 = 100001;
+pub const GLU_NONE: u32 = 100002;
+pub const GLU_OUTSIDE: u32 = 100020;
+pub const GLU_INSIDE: u32 = 100021;
+pub const GLU_TESS_BEGIN: u32 = 100100;
+pub const GLU_BEGIN: u32 = 100100;
+pub const GLU_TESS_VERTEX: u32 = 100101;
+pub const GLU_VERTEX: u32 = 100101;
+pub const GLU_TESS_END: u32 = 100102;
+pub const GLU_END: u32 = 100102;
+pub const GLU_TESS_ERROR: u32 = 100103;
+pub const GLU_TESS_EDGE_FLAG: u32 = 100104;
+pub const GLU_EDGE_FLAG: u32 = 100104;
+pub const GLU_TESS_COMBINE: u32 = 100105;
+pub const GLU_TESS_BEGIN_DATA: u32 = 100106;
+pub const GLU_TESS_VERTEX_DATA: u32 = 100107;
+pub const GLU_TESS_END_DATA: u32 = 100108;
+pub const GLU_TESS_ERROR_DATA: u32 = 100109;
+pub const GLU_TESS_EDGE_FLAG_DATA: u32 = 100110;
+pub const GLU_TESS_COMBINE_DATA: u32 = 100111;
+pub const GLU_CW: u32 = 100120;
+pub const GLU_CCW: u32 = 100121;
+pub const GLU_INTERIOR: u32 = 100122;
+pub const GLU_EXTERIOR: u32 = 100123;
+pub const GLU_UNKNOWN: u32 = 100124;
+pub const GLU_TESS_WINDING_RULE: u32 = 100140;
+pub const GLU_TESS_BOUNDARY_ONLY: u32 = 100141;
+pub const GLU_TESS_TOLERANCE: u32 = 100142;
+pub const GLU_TESS_ERROR1: u32 = 100151;
+pub const GLU_TESS_ERROR2: u32 = 100152;
+pub const GLU_TESS_ERROR3: u32 = 100153;
+pub const GLU_TESS_ERROR4: u32 = 100154;
+pub const GLU_TESS_ERROR5: u32 = 100155;
+pub const GLU_TESS_ERROR6: u32 = 100156;
+pub const GLU_TESS_ERROR7: u32 = 100157;
+pub const GLU_TESS_ERROR8: u32 = 100158;
+pub const GLU_TESS_MISSING_BEGIN_POLYGON: u32 = 100151;
+pub const GLU_TESS_MISSING_BEGIN_CONTOUR: u32 = 100152;
+pub const GLU_TESS_MISSING_END_POLYGON: u32 = 100153;
+pub const GLU_TESS_MISSING_END_CONTOUR: u32 = 100154;
+pub const GLU_TESS_COORD_TOO_LARGE: u32 = 100155;
+pub const GLU_TESS_NEED_COMBINE_CALLBACK: u32 = 100156;
+pub const GLU_TESS_WINDING_ODD: u32 = 100130;
+pub const GLU_TESS_WINDING_NONZERO: u32 = 100131;
+pub const GLU_TESS_WINDING_POSITIVE: u32 = 100132;
+pub const GLU_TESS_WINDING_NEGATIVE: u32 = 100133;
+pub const GLU_TESS_WINDING_ABS_GEQ_TWO: u32 = 100134;
+pub const FALSE: u32 = 0;
+pub const MAC_OS_X_VERSION_10_0: u32 = 1000;
+pub const MAC_OS_X_VERSION_10_1: u32 = 1010;
+pub const MAC_OS_X_VERSION_10_2: u32 = 1020;
+pub const MAC_OS_X_VERSION_10_3: u32 = 1030;
+pub const MAC_OS_X_VERSION_10_4: u32 = 1040;
+pub const MAC_OS_X_VERSION_10_5: u32 = 1050;
+pub const MAC_OS_X_VERSION_10_6: u32 = 1060;
+pub const MAC_OS_X_VERSION_10_7: u32 = 1070;
+pub const MAC_OS_X_VERSION_10_8: u32 = 1080;
+pub const MAC_OS_X_VERSION_10_9: u32 = 1090;
+pub const MAC_OS_X_VERSION_10_10: u32 = 101000;
+pub const MAC_OS_X_VERSION_10_10_2: u32 = 101002;
+pub const MAC_OS_X_VERSION_10_10_3: u32 = 101003;
+pub const MAC_OS_X_VERSION_10_11: u32 = 101100;
+pub const MAC_OS_X_VERSION_10_11_2: u32 = 101102;
+pub const MAC_OS_X_VERSION_10_11_3: u32 = 101103;
+pub const MAC_OS_X_VERSION_10_11_4: u32 = 101104;
+pub const MAC_OS_X_VERSION_10_12: u32 = 101200;
+pub const MAC_OS_X_VERSION_10_12_1: u32 = 101201;
+pub const MAC_OS_X_VERSION_10_12_2: u32 = 101202;
+pub const MAC_OS_X_VERSION_10_12_4: u32 = 101204;
+pub const MAC_OS_X_VERSION_10_13: u32 = 101300;
+pub const MAC_OS_X_VERSION_10_13_1: u32 = 101301;
+pub const MAC_OS_X_VERSION_10_13_2: u32 = 101302;
+pub const MAC_OS_X_VERSION_10_13_4: u32 = 101304;
+pub const MAC_OS_X_VERSION_10_14: u32 = 101400;
+pub const MAC_OS_X_VERSION_10_14_1: u32 = 101401;
+pub const MAC_OS_X_VERSION_10_14_4: u32 = 101404;
+pub const MAC_OS_X_VERSION_10_15: u32 = 101500;
+pub const MAC_OS_X_VERSION_10_15_1: u32 = 101501;
+pub const MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 101500;
 pub const __API_TO_BE_DEPRECATED: u32 = 100000;
 pub const __MAC_10_0: u32 = 1000;
 pub const __MAC_10_1: u32 = 1010;
@@ -216,363 +2482,6 @@ pub const __WATCHOS_6_0: u32 = 60000;
 pub const __WATCHOS_6_1: u32 = 60100;
 pub const __WATCHOS_6_2: u32 = 60200;
 pub const __DRIVERKIT_19_0: u32 = 190000;
-pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 101500;
-pub const __ENABLE_LEGACY_MAC_AVAILABILITY: u32 = 1;
-pub const __PTHREAD_SIZE__: u32 = 8176;
-pub const __PTHREAD_ATTR_SIZE__: u32 = 56;
-pub const __PTHREAD_MUTEXATTR_SIZE__: u32 = 8;
-pub const __PTHREAD_MUTEX_SIZE__: u32 = 56;
-pub const __PTHREAD_CONDATTR_SIZE__: u32 = 8;
-pub const __PTHREAD_COND_SIZE__: u32 = 40;
-pub const __PTHREAD_ONCE_SIZE__: u32 = 8;
-pub const __PTHREAD_RWLOCK_SIZE__: u32 = 192;
-pub const __PTHREAD_RWLOCKATTR_SIZE__: u32 = 16;
-pub const __DARWIN_WCHAR_MIN: i32 = -2147483648;
-pub const _FORTIFY_SOURCE: u32 = 2;
-pub const RENAME_SECLUDE: u32 = 1;
-pub const RENAME_SWAP: u32 = 2;
-pub const RENAME_EXCL: u32 = 4;
-pub const __SLBF: u32 = 1;
-pub const __SNBF: u32 = 2;
-pub const __SRD: u32 = 4;
-pub const __SWR: u32 = 8;
-pub const __SRW: u32 = 16;
-pub const __SEOF: u32 = 32;
-pub const __SERR: u32 = 64;
-pub const __SMBF: u32 = 128;
-pub const __SAPP: u32 = 256;
-pub const __SSTR: u32 = 512;
-pub const __SOPT: u32 = 1024;
-pub const __SNPT: u32 = 2048;
-pub const __SOFF: u32 = 4096;
-pub const __SMOD: u32 = 8192;
-pub const __SALC: u32 = 16384;
-pub const __SIGN: u32 = 32768;
-pub const _IOFBF: u32 = 0;
-pub const _IOLBF: u32 = 1;
-pub const _IONBF: u32 = 2;
-pub const BUFSIZ: u32 = 1024;
-pub const EOF: i32 = -1;
-pub const FOPEN_MAX: u32 = 20;
-pub const FILENAME_MAX: u32 = 1024;
-pub const P_tmpdir: &'static [u8; 10usize] = b"/var/tmp/\0";
-pub const L_tmpnam: u32 = 1024;
-pub const TMP_MAX: u32 = 308915776;
-pub const SEEK_SET: u32 = 0;
-pub const SEEK_CUR: u32 = 1;
-pub const SEEK_END: u32 = 2;
-pub const L_ctermid: u32 = 1024;
-pub const _USE_FORTIFY_LEVEL: u32 = 2;
-pub const __DARWIN_NSIG: u32 = 32;
-pub const NSIG: u32 = 32;
-pub const _I386_SIGNAL_H_: u32 = 1;
-pub const SIGHUP: u32 = 1;
-pub const SIGINT: u32 = 2;
-pub const SIGQUIT: u32 = 3;
-pub const SIGILL: u32 = 4;
-pub const SIGTRAP: u32 = 5;
-pub const SIGABRT: u32 = 6;
-pub const SIGIOT: u32 = 6;
-pub const SIGEMT: u32 = 7;
-pub const SIGFPE: u32 = 8;
-pub const SIGKILL: u32 = 9;
-pub const SIGBUS: u32 = 10;
-pub const SIGSEGV: u32 = 11;
-pub const SIGSYS: u32 = 12;
-pub const SIGPIPE: u32 = 13;
-pub const SIGALRM: u32 = 14;
-pub const SIGTERM: u32 = 15;
-pub const SIGURG: u32 = 16;
-pub const SIGSTOP: u32 = 17;
-pub const SIGTSTP: u32 = 18;
-pub const SIGCONT: u32 = 19;
-pub const SIGCHLD: u32 = 20;
-pub const SIGTTIN: u32 = 21;
-pub const SIGTTOU: u32 = 22;
-pub const SIGIO: u32 = 23;
-pub const SIGXCPU: u32 = 24;
-pub const SIGXFSZ: u32 = 25;
-pub const SIGVTALRM: u32 = 26;
-pub const SIGPROF: u32 = 27;
-pub const SIGWINCH: u32 = 28;
-pub const SIGINFO: u32 = 29;
-pub const SIGUSR1: u32 = 30;
-pub const SIGUSR2: u32 = 31;
-pub const FP_PREC_24B: u32 = 0;
-pub const FP_PREC_53B: u32 = 2;
-pub const FP_PREC_64B: u32 = 3;
-pub const FP_RND_NEAR: u32 = 0;
-pub const FP_RND_DOWN: u32 = 1;
-pub const FP_RND_UP: u32 = 2;
-pub const FP_CHOP: u32 = 3;
-pub const FP_STATE_BYTES: u32 = 512;
-pub const SIGEV_NONE: u32 = 0;
-pub const SIGEV_SIGNAL: u32 = 1;
-pub const SIGEV_THREAD: u32 = 3;
-pub const ILL_NOOP: u32 = 0;
-pub const ILL_ILLOPC: u32 = 1;
-pub const ILL_ILLTRP: u32 = 2;
-pub const ILL_PRVOPC: u32 = 3;
-pub const ILL_ILLOPN: u32 = 4;
-pub const ILL_ILLADR: u32 = 5;
-pub const ILL_PRVREG: u32 = 6;
-pub const ILL_COPROC: u32 = 7;
-pub const ILL_BADSTK: u32 = 8;
-pub const FPE_NOOP: u32 = 0;
-pub const FPE_FLTDIV: u32 = 1;
-pub const FPE_FLTOVF: u32 = 2;
-pub const FPE_FLTUND: u32 = 3;
-pub const FPE_FLTRES: u32 = 4;
-pub const FPE_FLTINV: u32 = 5;
-pub const FPE_FLTSUB: u32 = 6;
-pub const FPE_INTDIV: u32 = 7;
-pub const FPE_INTOVF: u32 = 8;
-pub const SEGV_NOOP: u32 = 0;
-pub const SEGV_MAPERR: u32 = 1;
-pub const SEGV_ACCERR: u32 = 2;
-pub const BUS_NOOP: u32 = 0;
-pub const BUS_ADRALN: u32 = 1;
-pub const BUS_ADRERR: u32 = 2;
-pub const BUS_OBJERR: u32 = 3;
-pub const TRAP_BRKPT: u32 = 1;
-pub const TRAP_TRACE: u32 = 2;
-pub const CLD_NOOP: u32 = 0;
-pub const CLD_EXITED: u32 = 1;
-pub const CLD_KILLED: u32 = 2;
-pub const CLD_DUMPED: u32 = 3;
-pub const CLD_TRAPPED: u32 = 4;
-pub const CLD_STOPPED: u32 = 5;
-pub const CLD_CONTINUED: u32 = 6;
-pub const POLL_IN: u32 = 1;
-pub const POLL_OUT: u32 = 2;
-pub const POLL_MSG: u32 = 3;
-pub const POLL_ERR: u32 = 4;
-pub const POLL_PRI: u32 = 5;
-pub const POLL_HUP: u32 = 6;
-pub const SA_ONSTACK: u32 = 1;
-pub const SA_RESTART: u32 = 2;
-pub const SA_RESETHAND: u32 = 4;
-pub const SA_NOCLDSTOP: u32 = 8;
-pub const SA_NODEFER: u32 = 16;
-pub const SA_NOCLDWAIT: u32 = 32;
-pub const SA_SIGINFO: u32 = 64;
-pub const SA_USERTRAMP: u32 = 256;
-pub const SA_64REGSET: u32 = 512;
-pub const SA_USERSPACE_MASK: u32 = 127;
-pub const SIG_BLOCK: u32 = 1;
-pub const SIG_UNBLOCK: u32 = 2;
-pub const SIG_SETMASK: u32 = 3;
-pub const SI_USER: u32 = 65537;
-pub const SI_QUEUE: u32 = 65538;
-pub const SI_TIMER: u32 = 65539;
-pub const SI_ASYNCIO: u32 = 65540;
-pub const SI_MESGQ: u32 = 65541;
-pub const SS_ONSTACK: u32 = 1;
-pub const SS_DISABLE: u32 = 4;
-pub const MINSIGSTKSZ: u32 = 32768;
-pub const SIGSTKSZ: u32 = 131072;
-pub const SV_ONSTACK: u32 = 1;
-pub const SV_INTERRUPT: u32 = 2;
-pub const SV_RESETHAND: u32 = 4;
-pub const SV_NODEFER: u32 = 16;
-pub const SV_NOCLDSTOP: u32 = 8;
-pub const SV_SIGINFO: u32 = 64;
-pub const __WORDSIZE: u32 = 64;
-pub const INT8_MAX: u32 = 127;
-pub const INT16_MAX: u32 = 32767;
-pub const INT32_MAX: u32 = 2147483647;
-pub const INT64_MAX: u64 = 9223372036854775807;
-pub const INT8_MIN: i32 = -128;
-pub const INT16_MIN: i32 = -32768;
-pub const INT32_MIN: i32 = -2147483648;
-pub const INT64_MIN: i64 = -9223372036854775808;
-pub const UINT8_MAX: u32 = 255;
-pub const UINT16_MAX: u32 = 65535;
-pub const UINT32_MAX: u32 = 4294967295;
-pub const UINT64_MAX: i32 = -1;
-pub const INT_LEAST8_MIN: i32 = -128;
-pub const INT_LEAST16_MIN: i32 = -32768;
-pub const INT_LEAST32_MIN: i32 = -2147483648;
-pub const INT_LEAST64_MIN: i64 = -9223372036854775808;
-pub const INT_LEAST8_MAX: u32 = 127;
-pub const INT_LEAST16_MAX: u32 = 32767;
-pub const INT_LEAST32_MAX: u32 = 2147483647;
-pub const INT_LEAST64_MAX: u64 = 9223372036854775807;
-pub const UINT_LEAST8_MAX: u32 = 255;
-pub const UINT_LEAST16_MAX: u32 = 65535;
-pub const UINT_LEAST32_MAX: u32 = 4294967295;
-pub const UINT_LEAST64_MAX: i32 = -1;
-pub const INT_FAST8_MIN: i32 = -128;
-pub const INT_FAST16_MIN: i32 = -32768;
-pub const INT_FAST32_MIN: i32 = -2147483648;
-pub const INT_FAST64_MIN: i64 = -9223372036854775808;
-pub const INT_FAST8_MAX: u32 = 127;
-pub const INT_FAST16_MAX: u32 = 32767;
-pub const INT_FAST32_MAX: u32 = 2147483647;
-pub const INT_FAST64_MAX: u64 = 9223372036854775807;
-pub const UINT_FAST8_MAX: u32 = 255;
-pub const UINT_FAST16_MAX: u32 = 65535;
-pub const UINT_FAST32_MAX: u32 = 4294967295;
-pub const UINT_FAST64_MAX: i32 = -1;
-pub const INTPTR_MAX: u64 = 9223372036854775807;
-pub const INTPTR_MIN: i64 = -9223372036854775808;
-pub const UINTPTR_MAX: i32 = -1;
-pub const SIZE_MAX: i32 = -1;
-pub const RSIZE_MAX: i32 = -1;
-pub const WINT_MIN: i32 = -2147483648;
-pub const WINT_MAX: u32 = 2147483647;
-pub const SIG_ATOMIC_MIN: i32 = -2147483648;
-pub const SIG_ATOMIC_MAX: u32 = 2147483647;
-pub const PRIO_PROCESS: u32 = 0;
-pub const PRIO_PGRP: u32 = 1;
-pub const PRIO_USER: u32 = 2;
-pub const PRIO_DARWIN_THREAD: u32 = 3;
-pub const PRIO_DARWIN_PROCESS: u32 = 4;
-pub const PRIO_MIN: i32 = -20;
-pub const PRIO_MAX: u32 = 20;
-pub const PRIO_DARWIN_BG: u32 = 4096;
-pub const PRIO_DARWIN_NONUI: u32 = 4097;
-pub const RUSAGE_SELF: u32 = 0;
-pub const RUSAGE_CHILDREN: i32 = -1;
-pub const RUSAGE_INFO_V0: u32 = 0;
-pub const RUSAGE_INFO_V1: u32 = 1;
-pub const RUSAGE_INFO_V2: u32 = 2;
-pub const RUSAGE_INFO_V3: u32 = 3;
-pub const RUSAGE_INFO_V4: u32 = 4;
-pub const RUSAGE_INFO_CURRENT: u32 = 4;
-pub const RLIMIT_CPU: u32 = 0;
-pub const RLIMIT_FSIZE: u32 = 1;
-pub const RLIMIT_DATA: u32 = 2;
-pub const RLIMIT_STACK: u32 = 3;
-pub const RLIMIT_CORE: u32 = 4;
-pub const RLIMIT_AS: u32 = 5;
-pub const RLIMIT_RSS: u32 = 5;
-pub const RLIMIT_MEMLOCK: u32 = 6;
-pub const RLIMIT_NPROC: u32 = 7;
-pub const RLIMIT_NOFILE: u32 = 8;
-pub const RLIM_NLIMITS: u32 = 9;
-pub const _RLIMIT_POSIX_FLAG: u32 = 4096;
-pub const RLIMIT_WAKEUPS_MONITOR: u32 = 1;
-pub const RLIMIT_CPU_USAGE_MONITOR: u32 = 2;
-pub const RLIMIT_THREAD_CPULIMITS: u32 = 3;
-pub const RLIMIT_FOOTPRINT_INTERVAL: u32 = 4;
-pub const WAKEMON_ENABLE: u32 = 1;
-pub const WAKEMON_DISABLE: u32 = 2;
-pub const WAKEMON_GET_PARAMS: u32 = 4;
-pub const WAKEMON_SET_DEFAULTS: u32 = 8;
-pub const WAKEMON_MAKE_FATAL: u32 = 16;
-pub const CPUMON_MAKE_FATAL: u32 = 4096;
-pub const FOOTPRINT_INTERVAL_RESET: u32 = 1;
-pub const IOPOL_TYPE_DISK: u32 = 0;
-pub const IOPOL_TYPE_VFS_ATIME_UPDATES: u32 = 2;
-pub const IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES: u32 = 3;
-pub const IOPOL_TYPE_VFS_STATFS_NO_DATA_VOLUME: u32 = 4;
-pub const IOPOL_SCOPE_PROCESS: u32 = 0;
-pub const IOPOL_SCOPE_THREAD: u32 = 1;
-pub const IOPOL_SCOPE_DARWIN_BG: u32 = 2;
-pub const IOPOL_DEFAULT: u32 = 0;
-pub const IOPOL_IMPORTANT: u32 = 1;
-pub const IOPOL_PASSIVE: u32 = 2;
-pub const IOPOL_THROTTLE: u32 = 3;
-pub const IOPOL_UTILITY: u32 = 4;
-pub const IOPOL_STANDARD: u32 = 5;
-pub const IOPOL_APPLICATION: u32 = 5;
-pub const IOPOL_NORMAL: u32 = 1;
-pub const IOPOL_ATIME_UPDATES_DEFAULT: u32 = 0;
-pub const IOPOL_ATIME_UPDATES_OFF: u32 = 1;
-pub const IOPOL_MATERIALIZE_DATALESS_FILES_DEFAULT: u32 = 0;
-pub const IOPOL_MATERIALIZE_DATALESS_FILES_OFF: u32 = 1;
-pub const IOPOL_MATERIALIZE_DATALESS_FILES_ON: u32 = 2;
-pub const IOPOL_VFS_STATFS_NO_DATA_VOLUME_DEFAULT: u32 = 0;
-pub const IOPOL_VFS_STATFS_FORCE_NO_DATA_VOLUME: u32 = 1;
-pub const WNOHANG: u32 = 1;
-pub const WUNTRACED: u32 = 2;
-pub const WCOREFLAG: u32 = 128;
-pub const _WSTOPPED: u32 = 127;
-pub const WEXITED: u32 = 4;
-pub const WSTOPPED: u32 = 8;
-pub const WCONTINUED: u32 = 16;
-pub const WNOWAIT: u32 = 32;
-pub const WAIT_ANY: i32 = -1;
-pub const WAIT_MYPGRP: u32 = 0;
-pub const _QUAD_HIGHWORD: u32 = 1;
-pub const _QUAD_LOWWORD: u32 = 0;
-pub const __DARWIN_LITTLE_ENDIAN: u32 = 1234;
-pub const __DARWIN_BIG_ENDIAN: u32 = 4321;
-pub const __DARWIN_PDP_ENDIAN: u32 = 3412;
-pub const __DARWIN_BYTE_ORDER: u32 = 1234;
-pub const LITTLE_ENDIAN: u32 = 1234;
-pub const BIG_ENDIAN: u32 = 4321;
-pub const PDP_ENDIAN: u32 = 3412;
-pub const BYTE_ORDER: u32 = 1234;
-pub const EXIT_FAILURE: u32 = 1;
-pub const EXIT_SUCCESS: u32 = 0;
-pub const RAND_MAX: u32 = 2147483647;
-pub const __HAS_FIXED_CHK_PROTOTYPES: u32 = 1;
-pub const FP_NAN: u32 = 1;
-pub const FP_INFINITE: u32 = 2;
-pub const FP_ZERO: u32 = 3;
-pub const FP_NORMAL: u32 = 4;
-pub const FP_SUBNORMAL: u32 = 5;
-pub const FP_SUPERNORMAL: u32 = 6;
-pub const FP_ILOGB0: i32 = -2147483648;
-pub const FP_ILOGBNAN: i32 = -2147483648;
-pub const MATH_ERRNO: u32 = 1;
-pub const MATH_ERREXCEPT: u32 = 2;
-pub const M_E: f64 = 2.718281828459045;
-pub const M_LOG2E: f64 = 1.4426950408889634;
-pub const M_LOG10E: f64 = 0.4342944819032518;
-pub const M_LN2: f64 = 0.6931471805599453;
-pub const M_LN10: f64 = 2.302585092994046;
-pub const M_PI: f64 = 3.141592653589793;
-pub const M_PI_2: f64 = 1.5707963267948966;
-pub const M_PI_4: f64 = 0.7853981633974483;
-pub const M_1_PI: f64 = 0.3183098861837907;
-pub const M_2_PI: f64 = 0.6366197723675814;
-pub const M_2_SQRTPI: f64 = 1.1283791670955126;
-pub const M_SQRT2: f64 = 1.4142135623730951;
-pub const M_SQRT1_2: f64 = 0.7071067811865476;
-pub const FP_SNAN: u32 = 1;
-pub const FP_QNAN: u32 = 1;
-pub const DOMAIN: u32 = 1;
-pub const SING: u32 = 2;
-pub const OVERFLOW: u32 = 3;
-pub const UNDERFLOW: u32 = 4;
-pub const TLOSS: u32 = 5;
-pub const PLOSS: u32 = 6;
-pub const CLOCKS_PER_SEC: u32 = 1000000;
-pub const TIME_UTC: u32 = 1;
-pub const MAC_OS_X_VERSION_10_0: u32 = 1000;
-pub const MAC_OS_X_VERSION_10_1: u32 = 1010;
-pub const MAC_OS_X_VERSION_10_2: u32 = 1020;
-pub const MAC_OS_X_VERSION_10_3: u32 = 1030;
-pub const MAC_OS_X_VERSION_10_4: u32 = 1040;
-pub const MAC_OS_X_VERSION_10_5: u32 = 1050;
-pub const MAC_OS_X_VERSION_10_6: u32 = 1060;
-pub const MAC_OS_X_VERSION_10_7: u32 = 1070;
-pub const MAC_OS_X_VERSION_10_8: u32 = 1080;
-pub const MAC_OS_X_VERSION_10_9: u32 = 1090;
-pub const MAC_OS_X_VERSION_10_10: u32 = 101000;
-pub const MAC_OS_X_VERSION_10_10_2: u32 = 101002;
-pub const MAC_OS_X_VERSION_10_10_3: u32 = 101003;
-pub const MAC_OS_X_VERSION_10_11: u32 = 101100;
-pub const MAC_OS_X_VERSION_10_11_2: u32 = 101102;
-pub const MAC_OS_X_VERSION_10_11_3: u32 = 101103;
-pub const MAC_OS_X_VERSION_10_11_4: u32 = 101104;
-pub const MAC_OS_X_VERSION_10_12: u32 = 101200;
-pub const MAC_OS_X_VERSION_10_12_1: u32 = 101201;
-pub const MAC_OS_X_VERSION_10_12_2: u32 = 101202;
-pub const MAC_OS_X_VERSION_10_12_4: u32 = 101204;
-pub const MAC_OS_X_VERSION_10_13: u32 = 101300;
-pub const MAC_OS_X_VERSION_10_13_1: u32 = 101301;
-pub const MAC_OS_X_VERSION_10_13_2: u32 = 101302;
-pub const MAC_OS_X_VERSION_10_13_4: u32 = 101304;
-pub const MAC_OS_X_VERSION_10_14: u32 = 101400;
-pub const MAC_OS_X_VERSION_10_14_1: u32 = 101401;
-pub const MAC_OS_X_VERSION_10_14_4: u32 = 101404;
-pub const MAC_OS_X_VERSION_10_15: u32 = 101500;
-pub const MAC_OS_X_VERSION_10_15_1: u32 = 101501;
-pub const MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 101500;
 pub const __AVAILABILITY_MACROS_USES_AVAILABILITY: u32 = 1;
 pub const __IPHONE_COMPAT_VERSION: u32 = 40000;
 pub const DYNAMIC_TARGETS_ENABLED: u32 = 0;
@@ -746,11 +2655,249 @@ pub const SDL_VIDEO_METAL: u32 = 1;
 pub const SDL_POWER_MACOSX: u32 = 1;
 pub const SDL_FILESYSTEM_COCOA: u32 = 1;
 pub const SDL_ASSEMBLY_ROUTINES: u32 = 1;
+pub const _QUAD_HIGHWORD: u32 = 1;
+pub const _QUAD_LOWWORD: u32 = 0;
+pub const __DARWIN_LITTLE_ENDIAN: u32 = 1234;
+pub const __DARWIN_BIG_ENDIAN: u32 = 4321;
+pub const __DARWIN_PDP_ENDIAN: u32 = 3412;
+pub const __DARWIN_BYTE_ORDER: u32 = 1234;
+pub const LITTLE_ENDIAN: u32 = 1234;
+pub const BIG_ENDIAN: u32 = 4321;
+pub const PDP_ENDIAN: u32 = 3412;
+pub const BYTE_ORDER: u32 = 1234;
 pub const __DARWIN_FD_SETSIZE: u32 = 1024;
 pub const __DARWIN_NBBY: u32 = 8;
 pub const NBBY: u32 = 8;
 pub const FD_SETSIZE: u32 = 1024;
+pub const __DARWIN_WCHAR_MIN: i32 = -2147483648;
+pub const _FORTIFY_SOURCE: u32 = 2;
+pub const RENAME_SECLUDE: u32 = 1;
+pub const RENAME_SWAP: u32 = 2;
+pub const RENAME_EXCL: u32 = 4;
+pub const __SLBF: u32 = 1;
+pub const __SNBF: u32 = 2;
+pub const __SRD: u32 = 4;
+pub const __SWR: u32 = 8;
+pub const __SRW: u32 = 16;
+pub const __SEOF: u32 = 32;
+pub const __SERR: u32 = 64;
+pub const __SMBF: u32 = 128;
+pub const __SAPP: u32 = 256;
+pub const __SSTR: u32 = 512;
+pub const __SOPT: u32 = 1024;
+pub const __SNPT: u32 = 2048;
+pub const __SOFF: u32 = 4096;
+pub const __SMOD: u32 = 8192;
+pub const __SALC: u32 = 16384;
+pub const __SIGN: u32 = 32768;
+pub const _IOFBF: u32 = 0;
+pub const _IOLBF: u32 = 1;
+pub const _IONBF: u32 = 2;
+pub const BUFSIZ: u32 = 1024;
+pub const EOF: i32 = -1;
+pub const FOPEN_MAX: u32 = 20;
+pub const FILENAME_MAX: u32 = 1024;
+pub const P_tmpdir: &'static [u8; 10usize] = b"/var/tmp/\0";
+pub const L_tmpnam: u32 = 1024;
+pub const TMP_MAX: u32 = 308915776;
+pub const SEEK_SET: u32 = 0;
+pub const SEEK_CUR: u32 = 1;
+pub const SEEK_END: u32 = 2;
+pub const L_ctermid: u32 = 1024;
+pub const _USE_FORTIFY_LEVEL: u32 = 2;
+pub const __DARWIN_NSIG: u32 = 32;
+pub const NSIG: u32 = 32;
+pub const _I386_SIGNAL_H_: u32 = 1;
+pub const SIGHUP: u32 = 1;
+pub const SIGINT: u32 = 2;
+pub const SIGQUIT: u32 = 3;
+pub const SIGILL: u32 = 4;
+pub const SIGTRAP: u32 = 5;
+pub const SIGABRT: u32 = 6;
+pub const SIGIOT: u32 = 6;
+pub const SIGEMT: u32 = 7;
+pub const SIGFPE: u32 = 8;
+pub const SIGKILL: u32 = 9;
+pub const SIGBUS: u32 = 10;
+pub const SIGSEGV: u32 = 11;
+pub const SIGSYS: u32 = 12;
+pub const SIGPIPE: u32 = 13;
+pub const SIGALRM: u32 = 14;
+pub const SIGTERM: u32 = 15;
+pub const SIGURG: u32 = 16;
+pub const SIGSTOP: u32 = 17;
+pub const SIGTSTP: u32 = 18;
+pub const SIGCONT: u32 = 19;
+pub const SIGCHLD: u32 = 20;
+pub const SIGTTIN: u32 = 21;
+pub const SIGTTOU: u32 = 22;
+pub const SIGIO: u32 = 23;
+pub const SIGXCPU: u32 = 24;
+pub const SIGXFSZ: u32 = 25;
+pub const SIGVTALRM: u32 = 26;
+pub const SIGPROF: u32 = 27;
+pub const SIGWINCH: u32 = 28;
+pub const SIGINFO: u32 = 29;
+pub const SIGUSR1: u32 = 30;
+pub const SIGUSR2: u32 = 31;
+pub const FP_PREC_24B: u32 = 0;
+pub const FP_PREC_53B: u32 = 2;
+pub const FP_PREC_64B: u32 = 3;
+pub const FP_RND_NEAR: u32 = 0;
+pub const FP_RND_DOWN: u32 = 1;
+pub const FP_RND_UP: u32 = 2;
+pub const FP_CHOP: u32 = 3;
+pub const FP_STATE_BYTES: u32 = 512;
+pub const SIGEV_NONE: u32 = 0;
+pub const SIGEV_SIGNAL: u32 = 1;
+pub const SIGEV_THREAD: u32 = 3;
+pub const ILL_NOOP: u32 = 0;
+pub const ILL_ILLOPC: u32 = 1;
+pub const ILL_ILLTRP: u32 = 2;
+pub const ILL_PRVOPC: u32 = 3;
+pub const ILL_ILLOPN: u32 = 4;
+pub const ILL_ILLADR: u32 = 5;
+pub const ILL_PRVREG: u32 = 6;
+pub const ILL_COPROC: u32 = 7;
+pub const ILL_BADSTK: u32 = 8;
+pub const FPE_NOOP: u32 = 0;
+pub const FPE_FLTDIV: u32 = 1;
+pub const FPE_FLTOVF: u32 = 2;
+pub const FPE_FLTUND: u32 = 3;
+pub const FPE_FLTRES: u32 = 4;
+pub const FPE_FLTINV: u32 = 5;
+pub const FPE_FLTSUB: u32 = 6;
+pub const FPE_INTDIV: u32 = 7;
+pub const FPE_INTOVF: u32 = 8;
+pub const SEGV_NOOP: u32 = 0;
+pub const SEGV_MAPERR: u32 = 1;
+pub const SEGV_ACCERR: u32 = 2;
+pub const BUS_NOOP: u32 = 0;
+pub const BUS_ADRALN: u32 = 1;
+pub const BUS_ADRERR: u32 = 2;
+pub const BUS_OBJERR: u32 = 3;
+pub const TRAP_BRKPT: u32 = 1;
+pub const TRAP_TRACE: u32 = 2;
+pub const CLD_NOOP: u32 = 0;
+pub const CLD_EXITED: u32 = 1;
+pub const CLD_KILLED: u32 = 2;
+pub const CLD_DUMPED: u32 = 3;
+pub const CLD_TRAPPED: u32 = 4;
+pub const CLD_STOPPED: u32 = 5;
+pub const CLD_CONTINUED: u32 = 6;
+pub const POLL_IN: u32 = 1;
+pub const POLL_OUT: u32 = 2;
+pub const POLL_MSG: u32 = 3;
+pub const POLL_ERR: u32 = 4;
+pub const POLL_PRI: u32 = 5;
+pub const POLL_HUP: u32 = 6;
+pub const SA_ONSTACK: u32 = 1;
+pub const SA_RESTART: u32 = 2;
+pub const SA_RESETHAND: u32 = 4;
+pub const SA_NOCLDSTOP: u32 = 8;
+pub const SA_NODEFER: u32 = 16;
+pub const SA_NOCLDWAIT: u32 = 32;
+pub const SA_SIGINFO: u32 = 64;
+pub const SA_USERTRAMP: u32 = 256;
+pub const SA_64REGSET: u32 = 512;
+pub const SA_USERSPACE_MASK: u32 = 127;
+pub const SIG_BLOCK: u32 = 1;
+pub const SIG_UNBLOCK: u32 = 2;
+pub const SIG_SETMASK: u32 = 3;
+pub const SI_USER: u32 = 65537;
+pub const SI_QUEUE: u32 = 65538;
+pub const SI_TIMER: u32 = 65539;
+pub const SI_ASYNCIO: u32 = 65540;
+pub const SI_MESGQ: u32 = 65541;
+pub const SS_ONSTACK: u32 = 1;
+pub const SS_DISABLE: u32 = 4;
+pub const MINSIGSTKSZ: u32 = 32768;
+pub const SIGSTKSZ: u32 = 131072;
+pub const SV_ONSTACK: u32 = 1;
+pub const SV_INTERRUPT: u32 = 2;
+pub const SV_RESETHAND: u32 = 4;
+pub const SV_NODEFER: u32 = 16;
+pub const SV_NOCLDSTOP: u32 = 8;
+pub const SV_SIGINFO: u32 = 64;
+pub const PRIO_PROCESS: u32 = 0;
+pub const PRIO_PGRP: u32 = 1;
+pub const PRIO_USER: u32 = 2;
+pub const PRIO_DARWIN_THREAD: u32 = 3;
+pub const PRIO_DARWIN_PROCESS: u32 = 4;
+pub const PRIO_MIN: i32 = -20;
+pub const PRIO_MAX: u32 = 20;
+pub const PRIO_DARWIN_BG: u32 = 4096;
+pub const PRIO_DARWIN_NONUI: u32 = 4097;
+pub const RUSAGE_SELF: u32 = 0;
+pub const RUSAGE_CHILDREN: i32 = -1;
+pub const RUSAGE_INFO_V0: u32 = 0;
+pub const RUSAGE_INFO_V1: u32 = 1;
+pub const RUSAGE_INFO_V2: u32 = 2;
+pub const RUSAGE_INFO_V3: u32 = 3;
+pub const RUSAGE_INFO_V4: u32 = 4;
+pub const RUSAGE_INFO_CURRENT: u32 = 4;
+pub const RLIMIT_CPU: u32 = 0;
+pub const RLIMIT_FSIZE: u32 = 1;
+pub const RLIMIT_DATA: u32 = 2;
+pub const RLIMIT_STACK: u32 = 3;
+pub const RLIMIT_CORE: u32 = 4;
+pub const RLIMIT_AS: u32 = 5;
+pub const RLIMIT_RSS: u32 = 5;
+pub const RLIMIT_MEMLOCK: u32 = 6;
+pub const RLIMIT_NPROC: u32 = 7;
+pub const RLIMIT_NOFILE: u32 = 8;
+pub const RLIM_NLIMITS: u32 = 9;
+pub const _RLIMIT_POSIX_FLAG: u32 = 4096;
+pub const RLIMIT_WAKEUPS_MONITOR: u32 = 1;
+pub const RLIMIT_CPU_USAGE_MONITOR: u32 = 2;
+pub const RLIMIT_THREAD_CPULIMITS: u32 = 3;
+pub const RLIMIT_FOOTPRINT_INTERVAL: u32 = 4;
+pub const WAKEMON_ENABLE: u32 = 1;
+pub const WAKEMON_DISABLE: u32 = 2;
+pub const WAKEMON_GET_PARAMS: u32 = 4;
+pub const WAKEMON_SET_DEFAULTS: u32 = 8;
+pub const WAKEMON_MAKE_FATAL: u32 = 16;
+pub const CPUMON_MAKE_FATAL: u32 = 4096;
+pub const FOOTPRINT_INTERVAL_RESET: u32 = 1;
+pub const IOPOL_TYPE_DISK: u32 = 0;
+pub const IOPOL_TYPE_VFS_ATIME_UPDATES: u32 = 2;
+pub const IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES: u32 = 3;
+pub const IOPOL_TYPE_VFS_STATFS_NO_DATA_VOLUME: u32 = 4;
+pub const IOPOL_SCOPE_PROCESS: u32 = 0;
+pub const IOPOL_SCOPE_THREAD: u32 = 1;
+pub const IOPOL_SCOPE_DARWIN_BG: u32 = 2;
+pub const IOPOL_DEFAULT: u32 = 0;
+pub const IOPOL_IMPORTANT: u32 = 1;
+pub const IOPOL_PASSIVE: u32 = 2;
+pub const IOPOL_THROTTLE: u32 = 3;
+pub const IOPOL_UTILITY: u32 = 4;
+pub const IOPOL_STANDARD: u32 = 5;
+pub const IOPOL_APPLICATION: u32 = 5;
+pub const IOPOL_NORMAL: u32 = 1;
+pub const IOPOL_ATIME_UPDATES_DEFAULT: u32 = 0;
+pub const IOPOL_ATIME_UPDATES_OFF: u32 = 1;
+pub const IOPOL_MATERIALIZE_DATALESS_FILES_DEFAULT: u32 = 0;
+pub const IOPOL_MATERIALIZE_DATALESS_FILES_OFF: u32 = 1;
+pub const IOPOL_MATERIALIZE_DATALESS_FILES_ON: u32 = 2;
+pub const IOPOL_VFS_STATFS_NO_DATA_VOLUME_DEFAULT: u32 = 0;
+pub const IOPOL_VFS_STATFS_FORCE_NO_DATA_VOLUME: u32 = 1;
+pub const WNOHANG: u32 = 1;
+pub const WUNTRACED: u32 = 2;
+pub const WCOREFLAG: u32 = 128;
+pub const _WSTOPPED: u32 = 127;
+pub const WEXITED: u32 = 4;
+pub const WSTOPPED: u32 = 8;
+pub const WCONTINUED: u32 = 16;
+pub const WNOWAIT: u32 = 32;
+pub const WAIT_ANY: i32 = -1;
+pub const WAIT_MYPGRP: u32 = 0;
+pub const EXIT_FAILURE: u32 = 1;
+pub const EXIT_SUCCESS: u32 = 0;
+pub const RAND_MAX: u32 = 2147483647;
 pub const __GNUC_VA_LIST: u32 = 1;
+pub const __HAS_FIXED_CHK_PROTOTYPES: u32 = 1;
+pub const CLOCKS_PER_SEC: u32 = 1000000;
+pub const TIME_UTC: u32 = 1;
 pub const _CACHED_RUNES: u32 = 256;
 pub const _CRMASK: i32 = -256;
 pub const _RUNE_MAGIC_A: &'static [u8; 9usize] = b"RuneMagA\0";
@@ -933,6 +3080,37 @@ pub const SCNiMAX: &'static [u8; 3usize] = b"ji\0";
 pub const SCNoMAX: &'static [u8; 3usize] = b"jo\0";
 pub const SCNuMAX: &'static [u8; 3usize] = b"ju\0";
 pub const SCNxMAX: &'static [u8; 3usize] = b"jx\0";
+pub const FP_NAN: u32 = 1;
+pub const FP_INFINITE: u32 = 2;
+pub const FP_ZERO: u32 = 3;
+pub const FP_NORMAL: u32 = 4;
+pub const FP_SUBNORMAL: u32 = 5;
+pub const FP_SUPERNORMAL: u32 = 6;
+pub const FP_ILOGB0: i32 = -2147483648;
+pub const FP_ILOGBNAN: i32 = -2147483648;
+pub const MATH_ERRNO: u32 = 1;
+pub const MATH_ERREXCEPT: u32 = 2;
+pub const M_E: f64 = 2.718281828459045;
+pub const M_LOG2E: f64 = 1.4426950408889634;
+pub const M_LOG10E: f64 = 0.4342944819032518;
+pub const M_LN2: f64 = 0.6931471805599453;
+pub const M_LN10: f64 = 2.302585092994046;
+pub const M_PI: f64 = 3.141592653589793;
+pub const M_PI_2: f64 = 1.5707963267948966;
+pub const M_PI_4: f64 = 0.7853981633974483;
+pub const M_1_PI: f64 = 0.3183098861837907;
+pub const M_2_PI: f64 = 0.6366197723675814;
+pub const M_2_SQRTPI: f64 = 1.1283791670955126;
+pub const M_SQRT2: f64 = 1.4142135623730951;
+pub const M_SQRT1_2: f64 = 0.7071067811865476;
+pub const FP_SNAN: u32 = 1;
+pub const FP_QNAN: u32 = 1;
+pub const DOMAIN: u32 = 1;
+pub const SING: u32 = 2;
+pub const OVERFLOW: u32 = 3;
+pub const UNDERFLOW: u32 = 4;
+pub const TLOSS: u32 = 5;
+pub const PLOSS: u32 = 6;
 pub const FLT_HAS_SUBNORM: u32 = 1;
 pub const DBL_HAS_SUBNORM: u32 = 1;
 pub const LDBL_HAS_SUBNORM: u32 = 1;
@@ -940,12 +3118,11 @@ pub const SDL_PRIs64: &'static [u8; 4usize] = b"lld\0";
 pub const SDL_PRIu64: &'static [u8; 4usize] = b"llu\0";
 pub const SDL_PRIx64: &'static [u8; 4usize] = b"llx\0";
 pub const SDL_PRIX64: &'static [u8; 4usize] = b"llX\0";
-pub const SDL_ASSERT_LEVEL: u32 = 2;
-pub const SDL_NULL_WHILE_LOOP_CONDITION: u32 = 0;
 pub const SDL_LIL_ENDIAN: u32 = 1234;
 pub const SDL_BIG_ENDIAN: u32 = 4321;
 pub const SDL_BYTEORDER: u32 = 1234;
-pub const SDL_MUTEX_TIMEDOUT: u32 = 1;
+pub const SDL_ALPHA_OPAQUE: u32 = 255;
+pub const SDL_ALPHA_TRANSPARENT: u32 = 0;
 pub const SDL_RWOPS_UNKNOWN: u32 = 0;
 pub const SDL_RWOPS_WINFILE: u32 = 1;
 pub const SDL_RWOPS_STDFILE: u32 = 2;
@@ -955,138 +3132,6 @@ pub const SDL_RWOPS_MEMORY_RO: u32 = 5;
 pub const RW_SEEK_SET: u32 = 0;
 pub const RW_SEEK_CUR: u32 = 1;
 pub const RW_SEEK_END: u32 = 2;
-pub const SDL_AUDIO_MASK_BITSIZE: u32 = 255;
-pub const SDL_AUDIO_MASK_DATATYPE: u32 = 256;
-pub const SDL_AUDIO_MASK_ENDIAN: u32 = 4096;
-pub const SDL_AUDIO_MASK_SIGNED: u32 = 32768;
-pub const AUDIO_U8: u32 = 8;
-pub const AUDIO_S8: u32 = 32776;
-pub const AUDIO_U16LSB: u32 = 16;
-pub const AUDIO_S16LSB: u32 = 32784;
-pub const AUDIO_U16MSB: u32 = 4112;
-pub const AUDIO_S16MSB: u32 = 36880;
-pub const AUDIO_U16: u32 = 16;
-pub const AUDIO_S16: u32 = 32784;
-pub const AUDIO_S32LSB: u32 = 32800;
-pub const AUDIO_S32MSB: u32 = 36896;
-pub const AUDIO_S32: u32 = 32800;
-pub const AUDIO_F32LSB: u32 = 33056;
-pub const AUDIO_F32MSB: u32 = 37152;
-pub const AUDIO_F32: u32 = 33056;
-pub const AUDIO_U16SYS: u32 = 16;
-pub const AUDIO_S16SYS: u32 = 32784;
-pub const AUDIO_S32SYS: u32 = 32800;
-pub const AUDIO_F32SYS: u32 = 33056;
-pub const SDL_AUDIO_ALLOW_FREQUENCY_CHANGE: u32 = 1;
-pub const SDL_AUDIO_ALLOW_FORMAT_CHANGE: u32 = 2;
-pub const SDL_AUDIO_ALLOW_CHANNELS_CHANGE: u32 = 4;
-pub const SDL_AUDIO_ALLOW_SAMPLES_CHANGE: u32 = 8;
-pub const SDL_AUDIO_ALLOW_ANY_CHANGE: u32 = 15;
-pub const SDL_AUDIOCVT_MAX_FILTERS: u32 = 9;
-pub const SDL_MIX_MAXVOLUME: u32 = 128;
-pub const _MM_HINT_ET0: u32 = 7;
-pub const _MM_HINT_ET1: u32 = 6;
-pub const _MM_HINT_T0: u32 = 3;
-pub const _MM_HINT_T1: u32 = 2;
-pub const _MM_HINT_T2: u32 = 1;
-pub const _MM_HINT_NTA: u32 = 0;
-pub const _MM_EXCEPT_INVALID: u32 = 1;
-pub const _MM_EXCEPT_DENORM: u32 = 2;
-pub const _MM_EXCEPT_DIV_ZERO: u32 = 4;
-pub const _MM_EXCEPT_OVERFLOW: u32 = 8;
-pub const _MM_EXCEPT_UNDERFLOW: u32 = 16;
-pub const _MM_EXCEPT_INEXACT: u32 = 32;
-pub const _MM_EXCEPT_MASK: u32 = 63;
-pub const _MM_MASK_INVALID: u32 = 128;
-pub const _MM_MASK_DENORM: u32 = 256;
-pub const _MM_MASK_DIV_ZERO: u32 = 512;
-pub const _MM_MASK_OVERFLOW: u32 = 1024;
-pub const _MM_MASK_UNDERFLOW: u32 = 2048;
-pub const _MM_MASK_INEXACT: u32 = 4096;
-pub const _MM_MASK_MASK: u32 = 8064;
-pub const _MM_ROUND_NEAREST: u32 = 0;
-pub const _MM_ROUND_DOWN: u32 = 8192;
-pub const _MM_ROUND_UP: u32 = 16384;
-pub const _MM_ROUND_TOWARD_ZERO: u32 = 24576;
-pub const _MM_ROUND_MASK: u32 = 24576;
-pub const _MM_FLUSH_ZERO_MASK: u32 = 32768;
-pub const _MM_FLUSH_ZERO_ON: u32 = 32768;
-pub const _MM_FLUSH_ZERO_OFF: u32 = 0;
-pub const _MM_DENORMALS_ZERO_ON: u32 = 64;
-pub const _MM_DENORMALS_ZERO_OFF: u32 = 0;
-pub const _MM_DENORMALS_ZERO_MASK: u32 = 64;
-pub const _MM_FROUND_TO_NEAREST_INT: u32 = 0;
-pub const _MM_FROUND_TO_NEG_INF: u32 = 1;
-pub const _MM_FROUND_TO_POS_INF: u32 = 2;
-pub const _MM_FROUND_TO_ZERO: u32 = 3;
-pub const _MM_FROUND_CUR_DIRECTION: u32 = 4;
-pub const _MM_FROUND_RAISE_EXC: u32 = 0;
-pub const _MM_FROUND_NO_EXC: u32 = 8;
-pub const _MM_FROUND_NINT: u32 = 0;
-pub const _MM_FROUND_FLOOR: u32 = 1;
-pub const _MM_FROUND_CEIL: u32 = 2;
-pub const _MM_FROUND_TRUNC: u32 = 3;
-pub const _MM_FROUND_RINT: u32 = 4;
-pub const _MM_FROUND_NEARBYINT: u32 = 12;
-pub const _SIDD_UBYTE_OPS: u32 = 0;
-pub const _SIDD_UWORD_OPS: u32 = 1;
-pub const _SIDD_SBYTE_OPS: u32 = 2;
-pub const _SIDD_SWORD_OPS: u32 = 3;
-pub const _SIDD_CMP_EQUAL_ANY: u32 = 0;
-pub const _SIDD_CMP_RANGES: u32 = 4;
-pub const _SIDD_CMP_EQUAL_EACH: u32 = 8;
-pub const _SIDD_CMP_EQUAL_ORDERED: u32 = 12;
-pub const _SIDD_POSITIVE_POLARITY: u32 = 0;
-pub const _SIDD_NEGATIVE_POLARITY: u32 = 16;
-pub const _SIDD_MASKED_POSITIVE_POLARITY: u32 = 32;
-pub const _SIDD_MASKED_NEGATIVE_POLARITY: u32 = 48;
-pub const _SIDD_LEAST_SIGNIFICANT: u32 = 0;
-pub const _SIDD_MOST_SIGNIFICANT: u32 = 64;
-pub const _SIDD_BIT_MASK: u32 = 0;
-pub const _SIDD_UNIT_MASK: u32 = 64;
-pub const _CMP_EQ_OQ: u32 = 0;
-pub const _CMP_LT_OS: u32 = 1;
-pub const _CMP_LE_OS: u32 = 2;
-pub const _CMP_UNORD_Q: u32 = 3;
-pub const _CMP_NEQ_UQ: u32 = 4;
-pub const _CMP_NLT_US: u32 = 5;
-pub const _CMP_NLE_US: u32 = 6;
-pub const _CMP_ORD_Q: u32 = 7;
-pub const _CMP_EQ_UQ: u32 = 8;
-pub const _CMP_NGE_US: u32 = 9;
-pub const _CMP_NGT_US: u32 = 10;
-pub const _CMP_FALSE_OQ: u32 = 11;
-pub const _CMP_NEQ_OQ: u32 = 12;
-pub const _CMP_GE_OS: u32 = 13;
-pub const _CMP_GT_OS: u32 = 14;
-pub const _CMP_TRUE_UQ: u32 = 15;
-pub const _CMP_EQ_OS: u32 = 16;
-pub const _CMP_LT_OQ: u32 = 17;
-pub const _CMP_LE_OQ: u32 = 18;
-pub const _CMP_UNORD_S: u32 = 19;
-pub const _CMP_NEQ_US: u32 = 20;
-pub const _CMP_NLT_UQ: u32 = 21;
-pub const _CMP_NLE_UQ: u32 = 22;
-pub const _CMP_ORD_S: u32 = 23;
-pub const _CMP_EQ_US: u32 = 24;
-pub const _CMP_NGE_UQ: u32 = 25;
-pub const _CMP_NGT_UQ: u32 = 26;
-pub const _CMP_FALSE_OS: u32 = 27;
-pub const _CMP_NEQ_OS: u32 = 28;
-pub const _CMP_GE_OQ: u32 = 29;
-pub const _CMP_GT_OQ: u32 = 30;
-pub const _CMP_TRUE_US: u32 = 31;
-pub const _XBEGIN_STARTED: i32 = -1;
-pub const _XABORT_EXPLICIT: u32 = 1;
-pub const _XABORT_RETRY: u32 = 2;
-pub const _XABORT_CONFLICT: u32 = 4;
-pub const _XABORT_CAPACITY: u32 = 8;
-pub const _XABORT_DEBUG: u32 = 16;
-pub const _XABORT_NESTED: u32 = 32;
-pub const __PCONFIG_KEY_PROGRAM: u32 = 1;
-pub const SDL_CACHELINE_SIZE: u32 = 128;
-pub const SDL_ALPHA_OPAQUE: u32 = 255;
-pub const SDL_ALPHA_TRANSPARENT: u32 = 0;
 pub const SDL_SWSURFACE: u32 = 0;
 pub const SDL_PREALLOC: u32 = 1;
 pub const SDL_RLEACCEL: u32 = 2;
@@ -1095,275 +3140,24 @@ pub const SDL_SIMD_ALIGNED: u32 = 8;
 pub const SDL_WINDOWPOS_UNDEFINED_MASK: u32 = 536805376;
 pub const SDL_WINDOWPOS_CENTERED_MASK: u32 = 805240832;
 pub const SDLK_SCANCODE_MASK: u32 = 1073741824;
-pub const SDL_BUTTON_LEFT: u32 = 1;
-pub const SDL_BUTTON_MIDDLE: u32 = 2;
-pub const SDL_BUTTON_RIGHT: u32 = 3;
-pub const SDL_BUTTON_X1: u32 = 4;
-pub const SDL_BUTTON_X2: u32 = 5;
-pub const SDL_JOYSTICK_AXIS_MAX: u32 = 32767;
-pub const SDL_JOYSTICK_AXIS_MIN: i32 = -32768;
-pub const SDL_HAT_CENTERED: u32 = 0;
-pub const SDL_HAT_UP: u32 = 1;
-pub const SDL_HAT_RIGHT: u32 = 2;
-pub const SDL_HAT_DOWN: u32 = 4;
-pub const SDL_HAT_LEFT: u32 = 8;
-pub const SDL_HAT_RIGHTUP: u32 = 3;
-pub const SDL_HAT_RIGHTDOWN: u32 = 6;
-pub const SDL_HAT_LEFTUP: u32 = 9;
-pub const SDL_HAT_LEFTDOWN: u32 = 12;
-pub const SDL_RELEASED: u32 = 0;
-pub const SDL_PRESSED: u32 = 1;
-pub const SDL_TEXTEDITINGEVENT_TEXT_SIZE: u32 = 32;
-pub const SDL_TEXTINPUTEVENT_TEXT_SIZE: u32 = 32;
-pub const SDL_QUERY: i32 = -1;
-pub const SDL_IGNORE: u32 = 0;
-pub const SDL_DISABLE: u32 = 0;
-pub const SDL_ENABLE: u32 = 1;
-pub const SDL_HAPTIC_CONSTANT: u32 = 1;
-pub const SDL_HAPTIC_SINE: u32 = 2;
-pub const SDL_HAPTIC_LEFTRIGHT: u32 = 4;
-pub const SDL_HAPTIC_TRIANGLE: u32 = 8;
-pub const SDL_HAPTIC_SAWTOOTHUP: u32 = 16;
-pub const SDL_HAPTIC_SAWTOOTHDOWN: u32 = 32;
-pub const SDL_HAPTIC_RAMP: u32 = 64;
-pub const SDL_HAPTIC_SPRING: u32 = 128;
-pub const SDL_HAPTIC_DAMPER: u32 = 256;
-pub const SDL_HAPTIC_INERTIA: u32 = 512;
-pub const SDL_HAPTIC_FRICTION: u32 = 1024;
-pub const SDL_HAPTIC_CUSTOM: u32 = 2048;
-pub const SDL_HAPTIC_GAIN: u32 = 4096;
-pub const SDL_HAPTIC_AUTOCENTER: u32 = 8192;
-pub const SDL_HAPTIC_STATUS: u32 = 16384;
-pub const SDL_HAPTIC_PAUSE: u32 = 32768;
-pub const SDL_HAPTIC_POLAR: u32 = 0;
-pub const SDL_HAPTIC_CARTESIAN: u32 = 1;
-pub const SDL_HAPTIC_SPHERICAL: u32 = 2;
-pub const SDL_HAPTIC_INFINITY: u32 = 4294967295;
-pub const SDL_HINT_FRAMEBUFFER_ACCELERATION: &'static [u8; 29usize] =
-    b"SDL_FRAMEBUFFER_ACCELERATION\0";
-pub const SDL_HINT_RENDER_DRIVER: &'static [u8; 18usize] = b"SDL_RENDER_DRIVER\0";
-pub const SDL_HINT_RENDER_OPENGL_SHADERS: &'static [u8; 26usize] = b"SDL_RENDER_OPENGL_SHADERS\0";
-pub const SDL_HINT_RENDER_DIRECT3D_THREADSAFE: &'static [u8; 31usize] =
-    b"SDL_RENDER_DIRECT3D_THREADSAFE\0";
-pub const SDL_HINT_RENDER_DIRECT3D11_DEBUG: &'static [u8; 28usize] =
-    b"SDL_RENDER_DIRECT3D11_DEBUG\0";
-pub const SDL_HINT_RENDER_LOGICAL_SIZE_MODE: &'static [u8; 29usize] =
-    b"SDL_RENDER_LOGICAL_SIZE_MODE\0";
-pub const SDL_HINT_RENDER_SCALE_QUALITY: &'static [u8; 25usize] = b"SDL_RENDER_SCALE_QUALITY\0";
-pub const SDL_HINT_RENDER_VSYNC: &'static [u8; 17usize] = b"SDL_RENDER_VSYNC\0";
-pub const SDL_HINT_VIDEO_ALLOW_SCREENSAVER: &'static [u8; 28usize] =
-    b"SDL_VIDEO_ALLOW_SCREENSAVER\0";
-pub const SDL_HINT_VIDEO_EXTERNAL_CONTEXT: &'static [u8; 27usize] = b"SDL_VIDEO_EXTERNAL_CONTEXT\0";
-pub const SDL_HINT_VIDEO_X11_XVIDMODE: &'static [u8; 23usize] = b"SDL_VIDEO_X11_XVIDMODE\0";
-pub const SDL_HINT_VIDEO_X11_XINERAMA: &'static [u8; 23usize] = b"SDL_VIDEO_X11_XINERAMA\0";
-pub const SDL_HINT_VIDEO_X11_XRANDR: &'static [u8; 21usize] = b"SDL_VIDEO_X11_XRANDR\0";
-pub const SDL_HINT_VIDEO_X11_WINDOW_VISUALID: &'static [u8; 30usize] =
-    b"SDL_VIDEO_X11_WINDOW_VISUALID\0";
-pub const SDL_HINT_VIDEO_X11_NET_WM_PING: &'static [u8; 26usize] = b"SDL_VIDEO_X11_NET_WM_PING\0";
-pub const SDL_HINT_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR: &'static [u8; 39usize] =
-    b"SDL_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR\0";
-pub const SDL_HINT_VIDEO_X11_FORCE_EGL: &'static [u8; 24usize] = b"SDL_VIDEO_X11_FORCE_EGL\0";
-pub const SDL_HINT_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN: &'static [u8; 44usize] =
-    b"SDL_WINDOW_FRAME_USABLE_WHILE_CURSOR_HIDDEN\0";
-pub const SDL_HINT_WINDOWS_INTRESOURCE_ICON: &'static [u8; 29usize] =
-    b"SDL_WINDOWS_INTRESOURCE_ICON\0";
-pub const SDL_HINT_WINDOWS_INTRESOURCE_ICON_SMALL: &'static [u8; 35usize] =
-    b"SDL_WINDOWS_INTRESOURCE_ICON_SMALL\0";
-pub const SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP: &'static [u8; 31usize] =
-    b"SDL_WINDOWS_ENABLE_MESSAGELOOP\0";
-pub const SDL_HINT_GRAB_KEYBOARD: &'static [u8; 18usize] = b"SDL_GRAB_KEYBOARD\0";
-pub const SDL_HINT_MOUSE_DOUBLE_CLICK_TIME: &'static [u8; 28usize] =
-    b"SDL_MOUSE_DOUBLE_CLICK_TIME\0";
-pub const SDL_HINT_MOUSE_DOUBLE_CLICK_RADIUS: &'static [u8; 30usize] =
-    b"SDL_MOUSE_DOUBLE_CLICK_RADIUS\0";
-pub const SDL_HINT_MOUSE_NORMAL_SPEED_SCALE: &'static [u8; 29usize] =
-    b"SDL_MOUSE_NORMAL_SPEED_SCALE\0";
-pub const SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE: &'static [u8; 31usize] =
-    b"SDL_MOUSE_RELATIVE_SPEED_SCALE\0";
-pub const SDL_HINT_MOUSE_RELATIVE_MODE_WARP: &'static [u8; 29usize] =
-    b"SDL_MOUSE_RELATIVE_MODE_WARP\0";
-pub const SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH: &'static [u8; 29usize] =
-    b"SDL_MOUSE_FOCUS_CLICKTHROUGH\0";
-pub const SDL_HINT_TOUCH_MOUSE_EVENTS: &'static [u8; 23usize] = b"SDL_TOUCH_MOUSE_EVENTS\0";
-pub const SDL_HINT_MOUSE_TOUCH_EVENTS: &'static [u8; 23usize] = b"SDL_MOUSE_TOUCH_EVENTS\0";
-pub const SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS: &'static [u8; 33usize] =
-    b"SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS\0";
-pub const SDL_HINT_IDLE_TIMER_DISABLED: &'static [u8; 28usize] = b"SDL_IOS_IDLE_TIMER_DISABLED\0";
-pub const SDL_HINT_ORIENTATIONS: &'static [u8; 21usize] = b"SDL_IOS_ORIENTATIONS\0";
-pub const SDL_HINT_APPLE_TV_CONTROLLER_UI_EVENTS: &'static [u8; 34usize] =
-    b"SDL_APPLE_TV_CONTROLLER_UI_EVENTS\0";
-pub const SDL_HINT_APPLE_TV_REMOTE_ALLOW_ROTATION: &'static [u8; 35usize] =
-    b"SDL_APPLE_TV_REMOTE_ALLOW_ROTATION\0";
-pub const SDL_HINT_IOS_HIDE_HOME_INDICATOR: &'static [u8; 28usize] =
-    b"SDL_IOS_HIDE_HOME_INDICATOR\0";
-pub const SDL_HINT_ACCELEROMETER_AS_JOYSTICK: &'static [u8; 30usize] =
-    b"SDL_ACCELEROMETER_AS_JOYSTICK\0";
-pub const SDL_HINT_TV_REMOTE_AS_JOYSTICK: &'static [u8; 26usize] = b"SDL_TV_REMOTE_AS_JOYSTICK\0";
-pub const SDL_HINT_XINPUT_ENABLED: &'static [u8; 19usize] = b"SDL_XINPUT_ENABLED\0";
-pub const SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING: &'static [u8; 36usize] =
-    b"SDL_XINPUT_USE_OLD_JOYSTICK_MAPPING\0";
-pub const SDL_HINT_GAMECONTROLLERTYPE: &'static [u8; 23usize] = b"SDL_GAMECONTROLLERTYPE\0";
-pub const SDL_HINT_GAMECONTROLLERCONFIG: &'static [u8; 25usize] = b"SDL_GAMECONTROLLERCONFIG\0";
-pub const SDL_HINT_GAMECONTROLLERCONFIG_FILE: &'static [u8; 30usize] =
-    b"SDL_GAMECONTROLLERCONFIG_FILE\0";
-pub const SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES: &'static [u8; 34usize] =
-    b"SDL_GAMECONTROLLER_IGNORE_DEVICES\0";
-pub const SDL_HINT_GAMECONTROLLER_IGNORE_DEVICES_EXCEPT: &'static [u8; 41usize] =
-    b"SDL_GAMECONTROLLER_IGNORE_DEVICES_EXCEPT\0";
-pub const SDL_HINT_GAMECONTROLLER_USE_BUTTON_LABELS: &'static [u8; 37usize] =
-    b"SDL_GAMECONTROLLER_USE_BUTTON_LABELS\0";
-pub const SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS: &'static [u8; 37usize] =
-    b"SDL_JOYSTICK_ALLOW_BACKGROUND_EVENTS\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI: &'static [u8; 20usize] = b"SDL_JOYSTICK_HIDAPI\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI_PS4: &'static [u8; 24usize] = b"SDL_JOYSTICK_HIDAPI_PS4\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI_PS4_RUMBLE: &'static [u8; 31usize] =
-    b"SDL_JOYSTICK_HIDAPI_PS4_RUMBLE\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI_STEAM: &'static [u8; 26usize] = b"SDL_JOYSTICK_HIDAPI_STEAM\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI_SWITCH: &'static [u8; 27usize] = b"SDL_JOYSTICK_HIDAPI_SWITCH\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI_XBOX: &'static [u8; 25usize] = b"SDL_JOYSTICK_HIDAPI_XBOX\0";
-pub const SDL_HINT_JOYSTICK_HIDAPI_GAMECUBE: &'static [u8; 29usize] =
-    b"SDL_JOYSTICK_HIDAPI_GAMECUBE\0";
-pub const SDL_HINT_ENABLE_STEAM_CONTROLLERS: &'static [u8; 29usize] =
-    b"SDL_ENABLE_STEAM_CONTROLLERS\0";
-pub const SDL_HINT_ALLOW_TOPMOST: &'static [u8; 18usize] = b"SDL_ALLOW_TOPMOST\0";
-pub const SDL_HINT_TIMER_RESOLUTION: &'static [u8; 21usize] = b"SDL_TIMER_RESOLUTION\0";
-pub const SDL_HINT_QTWAYLAND_CONTENT_ORIENTATION: &'static [u8; 34usize] =
-    b"SDL_QTWAYLAND_CONTENT_ORIENTATION\0";
-pub const SDL_HINT_QTWAYLAND_WINDOW_FLAGS: &'static [u8; 27usize] = b"SDL_QTWAYLAND_WINDOW_FLAGS\0";
-pub const SDL_HINT_THREAD_STACK_SIZE: &'static [u8; 22usize] = b"SDL_THREAD_STACK_SIZE\0";
-pub const SDL_HINT_VIDEO_HIGHDPI_DISABLED: &'static [u8; 27usize] = b"SDL_VIDEO_HIGHDPI_DISABLED\0";
-pub const SDL_HINT_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK: &'static [u8; 39usize] =
-    b"SDL_MAC_CTRL_CLICK_EMULATE_RIGHT_CLICK\0";
-pub const SDL_HINT_VIDEO_WIN_D3DCOMPILER: &'static [u8; 26usize] = b"SDL_VIDEO_WIN_D3DCOMPILER\0";
-pub const SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT: &'static [u8; 36usize] =
-    b"SDL_VIDEO_WINDOW_SHARE_PIXEL_FORMAT\0";
-pub const SDL_HINT_WINRT_PRIVACY_POLICY_URL: &'static [u8; 29usize] =
-    b"SDL_WINRT_PRIVACY_POLICY_URL\0";
-pub const SDL_HINT_WINRT_PRIVACY_POLICY_LABEL: &'static [u8; 31usize] =
-    b"SDL_WINRT_PRIVACY_POLICY_LABEL\0";
-pub const SDL_HINT_WINRT_HANDLE_BACK_BUTTON: &'static [u8; 29usize] =
-    b"SDL_WINRT_HANDLE_BACK_BUTTON\0";
-pub const SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES: &'static [u8; 32usize] =
-    b"SDL_VIDEO_MAC_FULLSCREEN_SPACES\0";
-pub const SDL_HINT_MAC_BACKGROUND_APP: &'static [u8; 23usize] = b"SDL_MAC_BACKGROUND_APP\0";
-pub const SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION: &'static [u8; 44usize] =
-    b"SDL_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION\0";
-pub const SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION: &'static [u8; 45usize] =
-    b"SDL_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION\0";
-pub const SDL_HINT_IME_INTERNAL_EDITING: &'static [u8; 25usize] = b"SDL_IME_INTERNAL_EDITING\0";
-pub const SDL_HINT_ANDROID_TRAP_BACK_BUTTON: &'static [u8; 29usize] =
-    b"SDL_ANDROID_TRAP_BACK_BUTTON\0";
-pub const SDL_HINT_ANDROID_BLOCK_ON_PAUSE: &'static [u8; 27usize] = b"SDL_ANDROID_BLOCK_ON_PAUSE\0";
-pub const SDL_HINT_RETURN_KEY_HIDES_IME: &'static [u8; 25usize] = b"SDL_RETURN_KEY_HIDES_IME\0";
-pub const SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT: &'static [u8; 32usize] =
-    b"SDL_EMSCRIPTEN_KEYBOARD_ELEMENT\0";
-pub const SDL_HINT_NO_SIGNAL_HANDLERS: &'static [u8; 23usize] = b"SDL_NO_SIGNAL_HANDLERS\0";
-pub const SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4: &'static [u8; 31usize] =
-    b"SDL_WINDOWS_NO_CLOSE_ON_ALT_F4\0";
-pub const SDL_HINT_BMP_SAVE_LEGACY_FORMAT: &'static [u8; 27usize] = b"SDL_BMP_SAVE_LEGACY_FORMAT\0";
-pub const SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING: &'static [u8; 34usize] =
-    b"SDL_WINDOWS_DISABLE_THREAD_NAMING\0";
-pub const SDL_HINT_RPI_VIDEO_LAYER: &'static [u8; 20usize] = b"SDL_RPI_VIDEO_LAYER\0";
-pub const SDL_HINT_VIDEO_DOUBLE_BUFFER: &'static [u8; 24usize] = b"SDL_VIDEO_DOUBLE_BUFFER\0";
-pub const SDL_HINT_OPENGL_ES_DRIVER: &'static [u8; 21usize] = b"SDL_OPENGL_ES_DRIVER\0";
-pub const SDL_HINT_AUDIO_RESAMPLING_MODE: &'static [u8; 26usize] = b"SDL_AUDIO_RESAMPLING_MODE\0";
-pub const SDL_HINT_AUDIO_CATEGORY: &'static [u8; 19usize] = b"SDL_AUDIO_CATEGORY\0";
-pub const SDL_HINT_RENDER_BATCHING: &'static [u8; 20usize] = b"SDL_RENDER_BATCHING\0";
-pub const SDL_HINT_EVENT_LOGGING: &'static [u8; 18usize] = b"SDL_EVENT_LOGGING\0";
-pub const SDL_HINT_WAVE_RIFF_CHUNK_SIZE: &'static [u8; 25usize] = b"SDL_WAVE_RIFF_CHUNK_SIZE\0";
-pub const SDL_HINT_WAVE_TRUNCATION: &'static [u8; 20usize] = b"SDL_WAVE_TRUNCATION\0";
-pub const SDL_HINT_WAVE_FACT_CHUNK: &'static [u8; 20usize] = b"SDL_WAVE_FACT_CHUNK\0";
-pub const SDL_HINT_DISPLAY_USABLE_BOUNDS: &'static [u8; 26usize] = b"SDL_DISPLAY_USABLE_BOUNDS\0";
-pub const SDL_MAX_LOG_MESSAGE: u32 = 4096;
-pub const SDL_STANDARD_GRAVITY: f64 = 9.80665;
-pub const SDL_NONSHAPEABLE_WINDOW: i32 = -1;
-pub const SDL_INVALID_SHAPE_ARGUMENT: i32 = -2;
-pub const SDL_WINDOW_LACKS_SHAPE: i32 = -3;
-pub const SDL_MAJOR_VERSION: u32 = 2;
-pub const SDL_MINOR_VERSION: u32 = 0;
-pub const SDL_PATCHLEVEL: u32 = 12;
-pub const SDL_INIT_TIMER: u32 = 1;
-pub const SDL_INIT_AUDIO: u32 = 16;
-pub const SDL_INIT_VIDEO: u32 = 32;
-pub const SDL_INIT_JOYSTICK: u32 = 512;
-pub const SDL_INIT_HAPTIC: u32 = 4096;
-pub const SDL_INIT_GAMECONTROLLER: u32 = 8192;
-pub const SDL_INIT_EVENTS: u32 = 16384;
-pub const SDL_INIT_SENSOR: u32 = 32768;
-pub const SDL_INIT_NOPARACHUTE: u32 = 1048576;
-pub const SDL_INIT_EVERYTHING: u32 = 62001;
-pub const FALSE: u32 = 0;
-pub const MEMORY_SIZE: u32 = 2097152;
-pub const SIZE_BYTE: u32 = 1;
-pub const SIZE_WORD: u32 = 2;
-pub const SIZE_LONG: u32 = 4;
-pub const PC_CARRY: u32 = 1;
-pub const PC_AUX: u32 = 16;
-pub const PC_ZERO: u32 = 64;
-pub const PC_NEG: u32 = 128;
-pub const PC_OVERFLOW: u32 = 2048;
-pub const SR_AUX: u32 = 16;
-pub const SR_NEG: u32 = 8;
-pub const SR_ZERO: u32 = 4;
-pub const SR_OVERFLOW: u32 = 2;
-pub const SR_CARRY: u32 = 1;
-pub const SR_CLEAR_AUX: u32 = 65519;
-pub const SR_CLEAR_NEG: u32 = 65527;
-pub const SR_CLEAR_ZERO: u32 = 65531;
-pub const SR_CLEAR_OVERFLOW: u32 = 65533;
-pub const SR_CLEAR_CARRY: u32 = 65534;
-pub const SR_CCODE_MASK: u32 = 31;
-pub const SR_MASK: u32 = 65504;
-pub const SR_TRACEMODE: u32 = 32768;
-pub const SR_SUPERMODE: u32 = 8192;
-pub const SR_IPL: u32 = 1792;
-pub const SR_CLEAR_IPL: u32 = 63743;
-pub const SR_CLEAR_TRACEMODE: u32 = 32767;
-pub const SR_CLEAR_SUPERMODE: u32 = 57343;
-pub const EMU_X: u32 = 256;
-pub const EMU_N: u32 = 128;
-pub const EMU_Z: u32 = 64;
-pub const EMU_V: u32 = 32;
-pub const EMU_C: u32 = 16;
-pub const EMU_CLEAR_X: u32 = 65279;
-pub const EMU_CLEAR_N: u32 = 65407;
-pub const EMU_CLEAR_Z: u32 = 65471;
-pub const EMU_CLEAR_V: u32 = 65503;
-pub const EMU_CLEAR_C: u32 = 65519;
-pub const EXCEPTION_BUSERROR: u32 = 8;
-pub const EXCEPTION_ADDRERROR: u32 = 12;
-pub const EXCEPTION_ILLEGALINS: u32 = 16;
-pub const EXCEPTION_DIVZERO: u32 = 20;
-pub const EXCEPTION_CHK: u32 = 24;
-pub const EXCEPTION_TRAPV: u32 = 28;
-pub const EXCEPTION_TRACE: u32 = 36;
-pub const EXCEPTION_LINE_A: u32 = 40;
-pub const EXCEPTION_LINE_F: u32 = 44;
-pub const EXCEPTION_HBLANK: u32 = 104;
-pub const EXCEPTION_VBLANK: u32 = 112;
-pub const EXCEPTION_INPUT: u32 = 116;
-pub const EXCEPTION_TRAP0: u32 = 128;
-pub const EXCEPTION_TRAP1: u32 = 132;
-pub const EXCEPTION_TRAP2: u32 = 136;
-pub const EXCEPTION_TRAP13: u32 = 180;
-pub const EXCEPTION_TRAP14: u32 = 184;
-pub const MAX_68000_INSTRUCTION_SIZE: u32 = 10;
-pub const MIN_68000_INSTRUCTION_SIZE: u32 = 2;
-pub const SCREEN_HEIGHT_HBL: u32 = 200;
-pub const SCREENBYTES_LINE: u32 = 320;
-pub const SCREEN_START_CYCLE: u32 = 96;
-pub const SCANLINES_PER_FRAME: u32 = 313;
-pub const CYCLES_PER_LINE: u32 = 512;
-pub const CYCLES_PER_FRAME: u32 = 160256;
-pub const CYCLES_PER_SEC: u32 = 8012800;
-pub const CYCLES_ENDLINE: u32 = 512;
-pub const CYCLES_HBL: u32 = 608;
-pub const CYCLES_DEBUGGER: u32 = 3000;
-pub const HOSTCALL_OPCODE: u32 = 10;
-pub const HCALL_OPCODE: u32 = 11;
-pub const PRG_HEADER_SIZE: u32 = 28;
-pub type BOOL = ::std::os::raw::c_int;
-pub type bool_ = ::std::os::raw::c_int;
+pub const SIZE_KEYBUF: u32 = 16;
+pub const SIZE_MOUSEBUF: u32 = 16;
+pub type int_least8_t = i8;
+pub type int_least16_t = i16;
+pub type int_least32_t = i32;
+pub type int_least64_t = i64;
+pub type uint_least8_t = u8;
+pub type uint_least16_t = u16;
+pub type uint_least32_t = u32;
+pub type uint_least64_t = u64;
+pub type int_fast8_t = i8;
+pub type int_fast16_t = i16;
+pub type int_fast32_t = i32;
+pub type int_fast64_t = i64;
+pub type uint_fast8_t = u8;
+pub type uint_fast16_t = u16;
+pub type uint_fast32_t = u32;
+pub type uint_fast64_t = u64;
 pub type __int8_t = ::std::os::raw::c_schar;
 pub type __uint8_t = ::std::os::raw::c_uchar;
 pub type __int16_t = ::std::os::raw::c_short;
@@ -1892,9 +3686,6 @@ pub type __darwin_pthread_once_t = _opaque_pthread_once_t;
 pub type __darwin_pthread_rwlock_t = _opaque_pthread_rwlock_t;
 pub type __darwin_pthread_rwlockattr_t = _opaque_pthread_rwlockattr_t;
 pub type __darwin_pthread_t = *mut _opaque_pthread_t;
-pub type __darwin_nl_item = ::std::os::raw::c_int;
-pub type __darwin_wctrans_t = ::std::os::raw::c_int;
-pub type __darwin_wctype_t = __uint32_t;
 pub type u_int8_t = ::std::os::raw::c_uchar;
 pub type u_int16_t = ::std::os::raw::c_ushort;
 pub type u_int32_t = ::std::os::raw::c_uint;
@@ -1908,8 +3699,4585 @@ pub type user_ulong_t = u_int64_t;
 pub type user_time_t = i64;
 pub type user_off_t = i64;
 pub type syscall_arg_t = u_int64_t;
-pub type va_list = __darwin_va_list;
+pub type intmax_t = ::std::os::raw::c_long;
+pub type uintmax_t = ::std::os::raw::c_ulong;
+pub type GLbitfield = u32;
+pub type GLboolean = u8;
+pub type GLbyte = i8;
+pub type GLclampf = f32;
+pub type GLenum = u32;
+pub type GLfloat = f32;
+pub type GLint = i32;
+pub type GLshort = i16;
+pub type GLsizei = i32;
+pub type GLubyte = u8;
+pub type GLuint = u32;
+pub type GLushort = u16;
+pub type GLvoid = ::std::os::raw::c_void;
+pub type GLchar = ::std::os::raw::c_char;
+pub type GLcharARB = ::std::os::raw::c_char;
+pub type GLhandleARB = *mut ::std::os::raw::c_void;
+pub type GLdouble = f64;
+pub type GLclampd = f64;
+pub type GLfixed = i32;
+pub type GLhalf = u16;
+pub type GLhalfARB = u16;
+pub type GLint64 = i64;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __GLsync {
+    _unused: [u8; 0],
+}
+pub type GLsync = *mut __GLsync;
+pub type GLuint64 = u64;
+pub type GLint64EXT = i64;
+pub type GLuint64EXT = u64;
+pub type GLintptr = isize;
+pub type GLsizeiptr = isize;
+pub type GLintptrARB = isize;
+pub type GLsizeiptrARB = isize;
+extern "C" {
+    pub fn glClampColorARB(target: GLenum, clamp: GLenum);
+}
+extern "C" {
+    pub fn glDrawBuffersARB(n: GLsizei, bufs: *const GLenum);
+}
+extern "C" {
+    pub fn glDrawElementsBaseVertex(
+        mode: GLenum,
+        count: GLsizei,
+        type_: GLenum,
+        indices: *const GLvoid,
+        base_vertex: GLint,
+    );
+}
+extern "C" {
+    pub fn glDrawRangeElementsBaseVertex(
+        mode: GLenum,
+        start: GLuint,
+        end: GLuint,
+        count: GLsizei,
+        type_: GLenum,
+        indices: *const GLvoid,
+        base_vertex: GLint,
+    );
+}
+extern "C" {
+    pub fn glDrawElementsInstancedBaseVertex(
+        mode: GLenum,
+        count: GLsizei,
+        type_: GLenum,
+        indices: *const GLvoid,
+        primcount: GLsizei,
+        base_vertex: GLint,
+    );
+}
+extern "C" {
+    pub fn glMultiDrawElementsBaseVertex(
+        mode: GLenum,
+        count: *const GLsizei,
+        type_: GLenum,
+        indices: *const *const GLvoid,
+        primcount: GLsizei,
+        base_vertex: *const GLint,
+    );
+}
+extern "C" {
+    pub fn glDrawArraysInstancedARB(mode: GLenum, first: GLint, count: GLsizei, primcount: GLsizei);
+}
+extern "C" {
+    pub fn glDrawElementsInstancedARB(
+        mode: GLenum,
+        count: GLsizei,
+        type_: GLenum,
+        indices: *const GLvoid,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glIsRenderbuffer(renderbuffer: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBindRenderbuffer(target: GLenum, renderbuffer: GLuint);
+}
+extern "C" {
+    pub fn glDeleteRenderbuffers(n: GLsizei, renderbuffers: *const GLuint);
+}
+extern "C" {
+    pub fn glGenRenderbuffers(n: GLsizei, renderbuffers: *mut GLuint);
+}
+extern "C" {
+    pub fn glRenderbufferStorage(
+        target: GLenum,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glGetRenderbufferParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glIsFramebuffer(framebuffer: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBindFramebuffer(target: GLenum, framebuffer: GLuint);
+}
+extern "C" {
+    pub fn glDeleteFramebuffers(n: GLsizei, framebuffers: *const GLuint);
+}
+extern "C" {
+    pub fn glGenFramebuffers(n: GLsizei, framebuffers: *mut GLuint);
+}
+extern "C" {
+    pub fn glCheckFramebufferStatus(target: GLenum) -> GLenum;
+}
+extern "C" {
+    pub fn glFramebufferTexture1D(
+        target: GLenum,
+        attachment: GLenum,
+        textarget: GLenum,
+        texture: GLuint,
+        level: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTexture2D(
+        target: GLenum,
+        attachment: GLenum,
+        textarget: GLenum,
+        texture: GLuint,
+        level: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTexture3D(
+        target: GLenum,
+        attachment: GLenum,
+        textarget: GLenum,
+        texture: GLuint,
+        level: GLint,
+        zoffset: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferRenderbuffer(
+        target: GLenum,
+        attachment: GLenum,
+        renderbuffertarget: GLenum,
+        renderbuffer: GLuint,
+    );
+}
+extern "C" {
+    pub fn glGetFramebufferAttachmentParameteriv(
+        target: GLenum,
+        attachment: GLenum,
+        pname: GLenum,
+        params: *mut GLint,
+    );
+}
+extern "C" {
+    pub fn glGenerateMipmap(target: GLenum);
+}
+extern "C" {
+    pub fn glBlitFramebuffer(
+        srcX0: GLint,
+        srcY0: GLint,
+        srcX1: GLint,
+        srcY1: GLint,
+        dstX0: GLint,
+        dstY0: GLint,
+        dstX1: GLint,
+        dstY1: GLint,
+        mask: GLbitfield,
+        filter: GLenum,
+    );
+}
+extern "C" {
+    pub fn glRenderbufferStorageMultisample(
+        target: GLenum,
+        samples: GLsizei,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTextureLayer(
+        target: GLenum,
+        attachment: GLenum,
+        texture: GLuint,
+        level: GLint,
+        layer: GLint,
+    );
+}
+extern "C" {
+    pub fn glVertexAttribDivisorARB(index: GLuint, divisor: GLuint);
+}
+extern "C" {
+    pub fn glSampleCoverageARB(value: GLclampf, invert: GLboolean);
+}
+extern "C" {
+    pub fn glActiveTextureARB(texture: GLenum);
+}
+extern "C" {
+    pub fn glClientActiveTextureARB(texture: GLenum);
+}
+extern "C" {
+    pub fn glMultiTexCoord1dARB(target: GLenum, s: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord1dvARB(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord1fARB(target: GLenum, s: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord1fvARB(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord1iARB(target: GLenum, s: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord1ivARB(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord1sARB(target: GLenum, s: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord1svARB(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord2dARB(target: GLenum, s: GLdouble, t: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord2dvARB(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord2fARB(target: GLenum, s: GLfloat, t: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord2fvARB(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord2iARB(target: GLenum, s: GLint, t: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord2ivARB(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord2sARB(target: GLenum, s: GLshort, t: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord2svARB(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord3dARB(target: GLenum, s: GLdouble, t: GLdouble, r: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord3dvARB(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord3fARB(target: GLenum, s: GLfloat, t: GLfloat, r: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord3fvARB(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord3iARB(target: GLenum, s: GLint, t: GLint, r: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord3ivARB(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord3sARB(target: GLenum, s: GLshort, t: GLshort, r: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord3svARB(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord4dARB(target: GLenum, s: GLdouble, t: GLdouble, r: GLdouble, q: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord4dvARB(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord4fARB(target: GLenum, s: GLfloat, t: GLfloat, r: GLfloat, q: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord4fvARB(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord4iARB(target: GLenum, s: GLint, t: GLint, r: GLint, q: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord4ivARB(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord4sARB(target: GLenum, s: GLshort, t: GLshort, r: GLshort, q: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord4svARB(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glGenQueriesARB(n: GLsizei, ids: *mut GLuint);
+}
+extern "C" {
+    pub fn glDeleteQueriesARB(n: GLsizei, ids: *const GLuint);
+}
+extern "C" {
+    pub fn glIsQueryARB(id: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBeginQueryARB(target: GLenum, id: GLuint);
+}
+extern "C" {
+    pub fn glEndQueryARB(target: GLenum);
+}
+extern "C" {
+    pub fn glGetQueryivARB(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetQueryObjectivARB(id: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetQueryObjectuivARB(id: GLuint, pname: GLenum, params: *mut GLuint);
+}
+extern "C" {
+    pub fn glPointParameterfARB(pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glPointParameterfvARB(pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glProvokingVertex(mode: GLenum);
+}
+extern "C" {
+    pub fn glDeleteObjectARB(obj: GLhandleARB);
+}
+extern "C" {
+    pub fn glGetHandleARB(pname: GLenum) -> GLhandleARB;
+}
+extern "C" {
+    pub fn glDetachObjectARB(containerObj: GLhandleARB, attachedObj: GLhandleARB);
+}
+extern "C" {
+    pub fn glCreateShaderObjectARB(shaderType: GLenum) -> GLhandleARB;
+}
+extern "C" {
+    pub fn glShaderSourceARB(
+        shaderObj: GLhandleARB,
+        count: GLsizei,
+        string: *const *const GLcharARB,
+        length: *const GLint,
+    );
+}
+extern "C" {
+    pub fn glCompileShaderARB(shaderObj: GLhandleARB);
+}
+extern "C" {
+    pub fn glCreateProgramObjectARB() -> GLhandleARB;
+}
+extern "C" {
+    pub fn glAttachObjectARB(containerObj: GLhandleARB, obj: GLhandleARB);
+}
+extern "C" {
+    pub fn glLinkProgramARB(programObj: GLhandleARB);
+}
+extern "C" {
+    pub fn glUseProgramObjectARB(programObj: GLhandleARB);
+}
+extern "C" {
+    pub fn glValidateProgramARB(programObj: GLhandleARB);
+}
+extern "C" {
+    pub fn glUniform1fARB(location: GLint, v0: GLfloat);
+}
+extern "C" {
+    pub fn glUniform2fARB(location: GLint, v0: GLfloat, v1: GLfloat);
+}
+extern "C" {
+    pub fn glUniform3fARB(location: GLint, v0: GLfloat, v1: GLfloat, v2: GLfloat);
+}
+extern "C" {
+    pub fn glUniform4fARB(location: GLint, v0: GLfloat, v1: GLfloat, v2: GLfloat, v3: GLfloat);
+}
+extern "C" {
+    pub fn glUniform1iARB(location: GLint, v0: GLint);
+}
+extern "C" {
+    pub fn glUniform2iARB(location: GLint, v0: GLint, v1: GLint);
+}
+extern "C" {
+    pub fn glUniform3iARB(location: GLint, v0: GLint, v1: GLint, v2: GLint);
+}
+extern "C" {
+    pub fn glUniform4iARB(location: GLint, v0: GLint, v1: GLint, v2: GLint, v3: GLint);
+}
+extern "C" {
+    pub fn glUniform1fvARB(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform2fvARB(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform3fvARB(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform4fvARB(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform1ivARB(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniform2ivARB(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniform3ivARB(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniform4ivARB(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniformMatrix2fvARB(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix3fvARB(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix4fvARB(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glGetObjectParameterfvARB(obj: GLhandleARB, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetObjectParameterivARB(obj: GLhandleARB, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetInfoLogARB(
+        obj: GLhandleARB,
+        maxLength: GLsizei,
+        length: *mut GLsizei,
+        infoLog: *mut GLcharARB,
+    );
+}
+extern "C" {
+    pub fn glGetAttachedObjectsARB(
+        containerObj: GLhandleARB,
+        maxCount: GLsizei,
+        count: *mut GLsizei,
+        obj: *mut GLhandleARB,
+    );
+}
+extern "C" {
+    pub fn glGetUniformLocationARB(programObj: GLhandleARB, name: *const GLcharARB) -> GLint;
+}
+extern "C" {
+    pub fn glGetActiveUniformARB(
+        programObj: GLhandleARB,
+        index: GLuint,
+        maxLength: GLsizei,
+        length: *mut GLsizei,
+        size: *mut GLint,
+        type_: *mut GLenum,
+        name: *mut GLcharARB,
+    );
+}
+extern "C" {
+    pub fn glGetUniformfvARB(programObj: GLhandleARB, location: GLint, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetUniformivARB(programObj: GLhandleARB, location: GLint, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetShaderSourceARB(
+        obj: GLhandleARB,
+        maxLength: GLsizei,
+        length: *mut GLsizei,
+        source: *mut GLcharARB,
+    );
+}
+extern "C" {
+    pub fn glFenceSync(condition: GLenum, flags: GLbitfield) -> GLsync;
+}
+extern "C" {
+    pub fn glIsSync(sync: GLsync) -> GLboolean;
+}
+extern "C" {
+    pub fn glDeleteSync(sync: GLsync);
+}
+extern "C" {
+    pub fn glClientWaitSync(sync: GLsync, flags: GLbitfield, timeout: GLuint64) -> GLenum;
+}
+extern "C" {
+    pub fn glWaitSync(sync: GLsync, flags: GLbitfield, timeout: GLuint64);
+}
+extern "C" {
+    pub fn glGetInteger64v(pname: GLenum, params: *mut GLint64);
+}
+extern "C" {
+    pub fn glGetSynciv(
+        sync: GLsync,
+        pname: GLenum,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        values: *mut GLint,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexImage3DARB(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        border: GLint,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexImage2DARB(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+        border: GLint,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexImage1DARB(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        width: GLsizei,
+        border: GLint,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexSubImage3DARB(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        zoffset: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        format: GLenum,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexSubImage2DARB(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexSubImage1DARB(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        width: GLsizei,
+        format: GLenum,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetCompressedTexImageARB(target: GLenum, level: GLint, data: *mut GLvoid);
+}
+extern "C" {
+    pub fn glLoadTransposeMatrixfARB(m: *const GLfloat);
+}
+extern "C" {
+    pub fn glLoadTransposeMatrixdARB(m: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultTransposeMatrixfARB(m: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultTransposeMatrixdARB(m: *const GLdouble);
+}
+extern "C" {
+    pub fn glWeightbvARB(size: GLint, weights: *const GLbyte);
+}
+extern "C" {
+    pub fn glWeightsvARB(size: GLint, weights: *const GLshort);
+}
+extern "C" {
+    pub fn glWeightivARB(size: GLint, weights: *const GLint);
+}
+extern "C" {
+    pub fn glWeightfvARB(size: GLint, weights: *const GLfloat);
+}
+extern "C" {
+    pub fn glWeightdvARB(size: GLint, weights: *const GLdouble);
+}
+extern "C" {
+    pub fn glWeightubvARB(size: GLint, weights: *const GLubyte);
+}
+extern "C" {
+    pub fn glWeightusvARB(size: GLint, weights: *const GLushort);
+}
+extern "C" {
+    pub fn glWeightuivARB(size: GLint, weights: *const GLuint);
+}
+extern "C" {
+    pub fn glWeightPointerARB(size: GLint, type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glVertexBlendARB(count: GLint);
+}
+extern "C" {
+    pub fn glBindBufferARB(target: GLenum, buffer: GLuint);
+}
+extern "C" {
+    pub fn glDeleteBuffersARB(n: GLsizei, buffers: *const GLuint);
+}
+extern "C" {
+    pub fn glGenBuffersARB(n: GLsizei, buffers: *mut GLuint);
+}
+extern "C" {
+    pub fn glIsBufferARB(buffer: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBufferDataARB(target: GLenum, size: GLsizeiptrARB, data: *const GLvoid, usage: GLenum);
+}
+extern "C" {
+    pub fn glBufferSubDataARB(
+        target: GLenum,
+        offset: GLintptrARB,
+        size: GLsizeiptrARB,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetBufferSubDataARB(
+        target: GLenum,
+        offset: GLintptrARB,
+        size: GLsizeiptrARB,
+        data: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glMapBufferARB(target: GLenum, access: GLenum) -> *mut GLvoid;
+}
+extern "C" {
+    pub fn glUnmapBufferARB(target: GLenum) -> GLboolean;
+}
+extern "C" {
+    pub fn glGetBufferParameterivARB(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetBufferPointervARB(target: GLenum, pname: GLenum, params: *mut *mut GLvoid);
+}
+extern "C" {
+    pub fn glBindProgramARB(target: GLenum, program: GLuint);
+}
+extern "C" {
+    pub fn glDeleteProgramsARB(n: GLsizei, programs: *const GLuint);
+}
+extern "C" {
+    pub fn glGenProgramsARB(n: GLsizei, programs: *mut GLuint);
+}
+extern "C" {
+    pub fn glIsProgramARB(program: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glProgramEnvParameter4dARB(
+        target: GLenum,
+        index: GLuint,
+        x: GLdouble,
+        y: GLdouble,
+        z: GLdouble,
+        w: GLdouble,
+    );
+}
+extern "C" {
+    pub fn glProgramEnvParameter4dvARB(target: GLenum, index: GLuint, params: *const GLdouble);
+}
+extern "C" {
+    pub fn glProgramEnvParameter4fARB(
+        target: GLenum,
+        index: GLuint,
+        x: GLfloat,
+        y: GLfloat,
+        z: GLfloat,
+        w: GLfloat,
+    );
+}
+extern "C" {
+    pub fn glProgramEnvParameter4fvARB(target: GLenum, index: GLuint, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glProgramLocalParameter4dARB(
+        target: GLenum,
+        index: GLuint,
+        x: GLdouble,
+        y: GLdouble,
+        z: GLdouble,
+        w: GLdouble,
+    );
+}
+extern "C" {
+    pub fn glProgramLocalParameter4dvARB(target: GLenum, index: GLuint, params: *const GLdouble);
+}
+extern "C" {
+    pub fn glProgramLocalParameter4fARB(
+        target: GLenum,
+        index: GLuint,
+        x: GLfloat,
+        y: GLfloat,
+        z: GLfloat,
+        w: GLfloat,
+    );
+}
+extern "C" {
+    pub fn glProgramLocalParameter4fvARB(target: GLenum, index: GLuint, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glGetProgramEnvParameterdvARB(target: GLenum, index: GLuint, params: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetProgramEnvParameterfvARB(target: GLenum, index: GLuint, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glProgramEnvParameters4fvEXT(
+        target: GLenum,
+        index: GLuint,
+        count: GLsizei,
+        params: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glProgramLocalParameters4fvEXT(
+        target: GLenum,
+        index: GLuint,
+        count: GLsizei,
+        params: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glGetProgramLocalParameterdvARB(target: GLenum, index: GLuint, params: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetProgramLocalParameterfvARB(target: GLenum, index: GLuint, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glProgramStringARB(target: GLenum, format: GLenum, len: GLsizei, string: *const GLvoid);
+}
+extern "C" {
+    pub fn glGetProgramStringARB(target: GLenum, pname: GLenum, string: *mut GLvoid);
+}
+extern "C" {
+    pub fn glGetProgramivARB(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glBindAttribLocationARB(programObj: GLhandleARB, index: GLuint, name: *const GLcharARB);
+}
+extern "C" {
+    pub fn glGetActiveAttribARB(
+        programObj: GLhandleARB,
+        index: GLuint,
+        maxLength: GLsizei,
+        length: *mut GLsizei,
+        size: *mut GLint,
+        type_: *mut GLenum,
+        name: *mut GLcharARB,
+    );
+}
+extern "C" {
+    pub fn glGetAttribLocationARB(programObj: GLhandleARB, name: *const GLcharARB) -> GLint;
+}
+extern "C" {
+    pub fn glVertexAttrib1dARB(index: GLuint, x: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib1dvARB(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib1fARB(index: GLuint, x: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib1fvARB(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib1sARB(index: GLuint, x: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib1svARB(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib2dARB(index: GLuint, x: GLdouble, y: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib2dvARB(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib2fARB(index: GLuint, x: GLfloat, y: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib2fvARB(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib2sARB(index: GLuint, x: GLshort, y: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib2svARB(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib3dARB(index: GLuint, x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib3dvARB(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib3fARB(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib3fvARB(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib3sARB(index: GLuint, x: GLshort, y: GLshort, z: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib3svARB(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4NbvARB(index: GLuint, v: *const GLbyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4NivARB(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttrib4NsvARB(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4NubARB(index: GLuint, x: GLubyte, y: GLubyte, z: GLubyte, w: GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4NubvARB(index: GLuint, v: *const GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4NuivARB(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttrib4NusvARB(index: GLuint, v: *const GLushort);
+}
+extern "C" {
+    pub fn glVertexAttrib4bvARB(index: GLuint, v: *const GLbyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4dARB(index: GLuint, x: GLdouble, y: GLdouble, z: GLdouble, w: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib4dvARB(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib4fARB(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib4fvARB(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib4ivARB(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttrib4sARB(index: GLuint, x: GLshort, y: GLshort, z: GLshort, w: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4svARB(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4ubvARB(index: GLuint, v: *const GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4uivARB(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttrib4usvARB(index: GLuint, v: *const GLushort);
+}
+extern "C" {
+    pub fn glVertexAttribPointerARB(
+        index: GLuint,
+        size: GLint,
+        type_: GLenum,
+        normalized: GLboolean,
+        stride: GLsizei,
+        pointer: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glDisableVertexAttribArrayARB(index: GLuint);
+}
+extern "C" {
+    pub fn glEnableVertexAttribArrayARB(index: GLuint);
+}
+extern "C" {
+    pub fn glGetVertexAttribPointervARB(index: GLuint, pname: GLenum, pointer: *mut *mut GLvoid);
+}
+extern "C" {
+    pub fn glGetVertexAttribdvARB(index: GLuint, pname: GLenum, params: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetVertexAttribfvARB(index: GLuint, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetVertexAttribivARB(index: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glWindowPos2dARB(x: GLdouble, y: GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos2dvARB(p: *const GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos2fARB(x: GLfloat, y: GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos2fvARB(p: *const GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos2iARB(x: GLint, y: GLint);
+}
+extern "C" {
+    pub fn glWindowPos2ivARB(p: *const GLint);
+}
+extern "C" {
+    pub fn glWindowPos2sARB(x: GLshort, y: GLshort);
+}
+extern "C" {
+    pub fn glWindowPos2svARB(p: *const GLshort);
+}
+extern "C" {
+    pub fn glWindowPos3dARB(x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos3dvARB(p: *const GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos3fARB(x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos3fvARB(p: *const GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos3iARB(x: GLint, y: GLint, z: GLint);
+}
+extern "C" {
+    pub fn glWindowPos3ivARB(p: *const GLint);
+}
+extern "C" {
+    pub fn glWindowPos3sARB(x: GLshort, y: GLshort, z: GLshort);
+}
+extern "C" {
+    pub fn glWindowPos3svARB(p: *const GLshort);
+}
+extern "C" {
+    pub fn glUniformBufferEXT(program: GLuint, location: GLint, buffer: GLuint);
+}
+extern "C" {
+    pub fn glGetUniformBufferSizeEXT(program: GLuint, location: GLint) -> GLint;
+}
+extern "C" {
+    pub fn glGetUniformOffsetEXT(program: GLuint, location: GLint) -> GLintptr;
+}
+extern "C" {
+    pub fn glBlendColorEXT(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf);
+}
+extern "C" {
+    pub fn glBlendEquationSeparateEXT(modeRGB: GLenum, modeAlpha: GLenum);
+}
+extern "C" {
+    pub fn glBlendFuncSeparateEXT(
+        sfactorRGB: GLenum,
+        dfactorRGB: GLenum,
+        sfactorAlpha: GLenum,
+        dfactorAlpha: GLenum,
+    );
+}
+extern "C" {
+    pub fn glBlendEquationEXT(mode: GLenum);
+}
+extern "C" {
+    pub fn glLabelObjectEXT(type_: GLenum, object: GLuint, length: GLsizei, label: *const GLchar);
+}
+extern "C" {
+    pub fn glGetObjectLabelEXT(
+        type_: GLenum,
+        object: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        label: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glInsertEventMarkerEXT(length: GLsizei, marker: *const ::std::os::raw::c_char);
+}
+extern "C" {
+    pub fn glPushGroupMarkerEXT(length: GLsizei, marker: *const ::std::os::raw::c_char);
+}
+extern "C" {
+    pub fn glPopGroupMarkerEXT();
+}
+extern "C" {
+    pub fn glDepthBoundsEXT(zmin: GLclampd, zmax: GLclampd);
+}
+extern "C" {
+    pub fn glColorMaskIndexedEXT(
+        index: GLuint,
+        r: GLboolean,
+        g: GLboolean,
+        b: GLboolean,
+        a: GLboolean,
+    );
+}
+extern "C" {
+    pub fn glEnableIndexedEXT(target: GLenum, index: GLuint);
+}
+extern "C" {
+    pub fn glDisableIndexedEXT(target: GLenum, index: GLuint);
+}
+extern "C" {
+    pub fn glIsEnabledIndexedEXT(target: GLenum, index: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glDrawRangeElementsEXT(
+        mode: GLenum,
+        start: GLuint,
+        end: GLuint,
+        count: GLsizei,
+        type_: GLenum,
+        indices: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glFogCoordfEXT(coord: GLfloat);
+}
+extern "C" {
+    pub fn glFogCoordfvEXT(coord: *const GLfloat);
+}
+extern "C" {
+    pub fn glFogCoorddEXT(coord: GLdouble);
+}
+extern "C" {
+    pub fn glFogCoorddvEXT(coord: *const GLdouble);
+}
+extern "C" {
+    pub fn glFogCoordPointerEXT(type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glBlitFramebufferEXT(
+        srcX0: GLint,
+        srcY0: GLint,
+        srcX1: GLint,
+        srcY1: GLint,
+        dstX0: GLint,
+        dstY0: GLint,
+        dstX1: GLint,
+        dstY1: GLint,
+        mask: GLbitfield,
+        filter: GLenum,
+    );
+}
+extern "C" {
+    pub fn glRenderbufferStorageMultisampleEXT(
+        target: GLenum,
+        samples: GLsizei,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glIsRenderbufferEXT(renderbuffer: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBindRenderbufferEXT(target: GLenum, renderbuffer: GLuint);
+}
+extern "C" {
+    pub fn glDeleteRenderbuffersEXT(n: GLsizei, renderbuffers: *const GLuint);
+}
+extern "C" {
+    pub fn glGenRenderbuffersEXT(n: GLsizei, renderbuffers: *mut GLuint);
+}
+extern "C" {
+    pub fn glRenderbufferStorageEXT(
+        target: GLenum,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glGetRenderbufferParameterivEXT(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glIsFramebufferEXT(framebuffer: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBindFramebufferEXT(target: GLenum, framebuffer: GLuint);
+}
+extern "C" {
+    pub fn glDeleteFramebuffersEXT(n: GLsizei, framebuffers: *const GLuint);
+}
+extern "C" {
+    pub fn glGenFramebuffersEXT(n: GLsizei, framebuffers: *mut GLuint);
+}
+extern "C" {
+    pub fn glCheckFramebufferStatusEXT(target: GLenum) -> GLenum;
+}
+extern "C" {
+    pub fn glFramebufferTexture1DEXT(
+        target: GLenum,
+        attachment: GLenum,
+        textarget: GLenum,
+        texture: GLuint,
+        level: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTexture2DEXT(
+        target: GLenum,
+        attachment: GLenum,
+        textarget: GLenum,
+        texture: GLuint,
+        level: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTexture3DEXT(
+        target: GLenum,
+        attachment: GLenum,
+        textarget: GLenum,
+        texture: GLuint,
+        level: GLint,
+        zoffset: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferRenderbufferEXT(
+        target: GLenum,
+        attachment: GLenum,
+        renderbuffertarget: GLenum,
+        renderbuffer: GLuint,
+    );
+}
+extern "C" {
+    pub fn glGetFramebufferAttachmentParameterivEXT(
+        target: GLenum,
+        attachment: GLenum,
+        pname: GLenum,
+        params: *mut GLint,
+    );
+}
+extern "C" {
+    pub fn glGenerateMipmapEXT(target: GLenum);
+}
+extern "C" {
+    pub fn glProgramParameteriEXT(program: GLuint, pname: GLenum, value: GLint);
+}
+extern "C" {
+    pub fn glFramebufferTextureEXT(
+        target: GLenum,
+        attachment: GLenum,
+        texture: GLuint,
+        level: GLint,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTextureFaceEXT(
+        target: GLenum,
+        attachment: GLenum,
+        texture: GLuint,
+        level: GLint,
+        face: GLenum,
+    );
+}
+extern "C" {
+    pub fn glFramebufferTextureLayerEXT(
+        target: GLenum,
+        attachment: GLenum,
+        texture: GLuint,
+        level: GLint,
+        layer: GLint,
+    );
+}
+extern "C" {
+    pub fn glVertexAttribI1iEXT(index: GLuint, x: GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI2iEXT(index: GLuint, x: GLint, y: GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI3iEXT(index: GLuint, x: GLint, y: GLint, z: GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI4iEXT(index: GLuint, x: GLint, y: GLint, z: GLint, w: GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI1uiEXT(index: GLuint, x: GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI2uiEXT(index: GLuint, x: GLuint, y: GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI3uiEXT(index: GLuint, x: GLuint, y: GLuint, z: GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI4uiEXT(index: GLuint, x: GLuint, y: GLuint, z: GLuint, w: GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI1ivEXT(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI2ivEXT(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI3ivEXT(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI4ivEXT(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttribI1uivEXT(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI2uivEXT(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI3uivEXT(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI4uivEXT(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttribI4bvEXT(index: GLuint, v: *const GLbyte);
+}
+extern "C" {
+    pub fn glVertexAttribI4svEXT(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttribI4ubvEXT(index: GLuint, v: *const GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttribI4usvEXT(index: GLuint, v: *const GLushort);
+}
+extern "C" {
+    pub fn glVertexAttribIPointerEXT(
+        index: GLuint,
+        size: GLint,
+        type_: GLenum,
+        stride: GLsizei,
+        pointer: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetVertexAttribIivEXT(index: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetVertexAttribIuivEXT(index: GLuint, pname: GLenum, params: *mut GLuint);
+}
+extern "C" {
+    pub fn glUniform1uiEXT(location: GLint, v0: GLuint);
+}
+extern "C" {
+    pub fn glUniform2uiEXT(location: GLint, v0: GLuint, v1: GLuint);
+}
+extern "C" {
+    pub fn glUniform3uiEXT(location: GLint, v0: GLuint, v1: GLuint, v2: GLuint);
+}
+extern "C" {
+    pub fn glUniform4uiEXT(location: GLint, v0: GLuint, v1: GLuint, v2: GLuint, v3: GLuint);
+}
+extern "C" {
+    pub fn glUniform1uivEXT(location: GLint, count: GLsizei, value: *const GLuint);
+}
+extern "C" {
+    pub fn glUniform2uivEXT(location: GLint, count: GLsizei, value: *const GLuint);
+}
+extern "C" {
+    pub fn glUniform3uivEXT(location: GLint, count: GLsizei, value: *const GLuint);
+}
+extern "C" {
+    pub fn glUniform4uivEXT(location: GLint, count: GLsizei, value: *const GLuint);
+}
+extern "C" {
+    pub fn glGetUniformuivEXT(program: GLuint, location: GLint, params: *mut GLuint);
+}
+extern "C" {
+    pub fn glBindFragDataLocationEXT(program: GLuint, colorNumber: GLuint, name: *const GLchar);
+}
+extern "C" {
+    pub fn glGetFragDataLocationEXT(program: GLuint, name: *const GLchar) -> GLint;
+}
+extern "C" {
+    pub fn glMultiDrawArraysEXT(
+        mode: GLenum,
+        first: *const GLint,
+        count: *const GLsizei,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glMultiDrawElementsEXT(
+        mode: GLenum,
+        count: *const GLsizei,
+        type_: GLenum,
+        indices: *const *const GLvoid,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glProvokingVertexEXT(mode: GLenum);
+}
+extern "C" {
+    pub fn glSecondaryColor3bEXT(red: GLbyte, green: GLbyte, blue: GLbyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3bvEXT(v: *const GLbyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3dEXT(red: GLdouble, green: GLdouble, blue: GLdouble);
+}
+extern "C" {
+    pub fn glSecondaryColor3dvEXT(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glSecondaryColor3fEXT(red: GLfloat, green: GLfloat, blue: GLfloat);
+}
+extern "C" {
+    pub fn glSecondaryColor3fvEXT(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glSecondaryColor3iEXT(red: GLint, green: GLint, blue: GLint);
+}
+extern "C" {
+    pub fn glSecondaryColor3ivEXT(v: *const GLint);
+}
+extern "C" {
+    pub fn glSecondaryColor3sEXT(red: GLshort, green: GLshort, blue: GLshort);
+}
+extern "C" {
+    pub fn glSecondaryColor3svEXT(v: *const GLshort);
+}
+extern "C" {
+    pub fn glSecondaryColor3ubEXT(red: GLubyte, green: GLubyte, blue: GLubyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3ubvEXT(v: *const GLubyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3uiEXT(red: GLuint, green: GLuint, blue: GLuint);
+}
+extern "C" {
+    pub fn glSecondaryColor3uivEXT(v: *const GLuint);
+}
+extern "C" {
+    pub fn glSecondaryColor3usEXT(red: GLushort, green: GLushort, blue: GLushort);
+}
+extern "C" {
+    pub fn glSecondaryColor3usvEXT(v: *const GLushort);
+}
+extern "C" {
+    pub fn glSecondaryColorPointerEXT(
+        size: GLint,
+        type_: GLenum,
+        stride: GLsizei,
+        pointer: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glActiveStencilFaceEXT(face: GLenum);
+}
+extern "C" {
+    pub fn glClearColorIiEXT(r: GLint, g: GLint, b: GLint, a: GLint);
+}
+extern "C" {
+    pub fn glClearColorIuiEXT(r: GLuint, g: GLuint, b: GLuint, a: GLuint);
+}
+extern "C" {
+    pub fn glTexParameterIivEXT(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glTexParameterIuivEXT(target: GLenum, pname: GLenum, params: *mut GLuint);
+}
+extern "C" {
+    pub fn glGetTexParameterIivEXT(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetTexParameterIuivEXT(target: GLenum, pname: GLenum, params: *mut GLuint);
+}
+extern "C" {
+    pub fn glGetQueryObjecti64vEXT(id: GLuint, pname: GLenum, params: *mut GLint64EXT);
+}
+extern "C" {
+    pub fn glGetQueryObjectui64vEXT(id: GLuint, pname: GLenum, params: *mut GLuint64EXT);
+}
+extern "C" {
+    pub fn glBindBufferRangeEXT(
+        target: GLenum,
+        index: GLuint,
+        buffer: GLuint,
+        offset: GLintptr,
+        size: GLsizeiptr,
+    );
+}
+extern "C" {
+    pub fn glBindBufferOffsetEXT(target: GLenum, index: GLuint, buffer: GLuint, offset: GLintptr);
+}
+extern "C" {
+    pub fn glBindBufferBaseEXT(target: GLenum, index: GLuint, buffer: GLuint);
+}
+extern "C" {
+    pub fn glBeginTransformFeedbackEXT(primitiveMode: GLenum);
+}
+extern "C" {
+    pub fn glEndTransformFeedbackEXT();
+}
+extern "C" {
+    pub fn glTransformFeedbackVaryingsEXT(
+        program: GLuint,
+        count: GLsizei,
+        varyings: *const *const GLchar,
+        bufferMode: GLenum,
+    );
+}
+extern "C" {
+    pub fn glGetTransformFeedbackVaryingEXT(
+        program: GLuint,
+        index: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        size: *mut GLsizei,
+        type_: *mut GLenum,
+        name: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glGetIntegerIndexedvEXT(param: GLenum, index: GLuint, values: *mut GLint);
+}
+extern "C" {
+    pub fn glGetBooleanIndexedvEXT(param: GLenum, index: GLuint, values: *mut GLboolean);
+}
+extern "C" {
+    pub fn glElementPointerAPPLE(type_: GLenum, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glDrawElementArrayAPPLE(mode: GLenum, first: GLint, count: GLsizei);
+}
+extern "C" {
+    pub fn glDrawRangeElementArrayAPPLE(
+        mode: GLenum,
+        start: GLuint,
+        end: GLuint,
+        first: GLint,
+        count: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glMultiDrawElementArrayAPPLE(
+        mode: GLenum,
+        first: *const GLint,
+        count: *const GLsizei,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glMultiDrawRangeElementArrayAPPLE(
+        mode: GLenum,
+        start: GLuint,
+        end: GLuint,
+        first: *const GLint,
+        count: *const GLsizei,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glGenFencesAPPLE(n: GLsizei, fences: *mut GLuint);
+}
+extern "C" {
+    pub fn glDeleteFencesAPPLE(n: GLsizei, fences: *const GLuint);
+}
+extern "C" {
+    pub fn glSetFenceAPPLE(fence: GLuint);
+}
+extern "C" {
+    pub fn glIsFenceAPPLE(fence: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glTestFenceAPPLE(fence: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glFinishFenceAPPLE(fence: GLuint);
+}
+extern "C" {
+    pub fn glTestObjectAPPLE(object: GLenum, name: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glFinishObjectAPPLE(object: GLenum, name: GLuint);
+}
+extern "C" {
+    pub fn glBufferParameteriAPPLE(target: GLenum, pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glFlushMappedBufferRangeAPPLE(target: GLenum, offset: GLintptr, size: GLsizeiptr);
+}
+extern "C" {
+    pub fn glFlushRenderAPPLE();
+}
+extern "C" {
+    pub fn glFinishRenderAPPLE();
+}
+extern "C" {
+    pub fn glSwapAPPLE();
+}
+extern "C" {
+    pub fn glObjectPurgeableAPPLE(objectType: GLenum, name: GLuint, option: GLenum) -> GLenum;
+}
+extern "C" {
+    pub fn glObjectUnpurgeableAPPLE(objectType: GLenum, name: GLuint, option: GLenum) -> GLenum;
+}
+extern "C" {
+    pub fn glGetObjectParameterivAPPLE(
+        objectType: GLenum,
+        name: GLuint,
+        pname: GLenum,
+        params: *mut GLint,
+    );
+}
+extern "C" {
+    pub fn glTextureRangeAPPLE(target: GLenum, length: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glGetTexParameterPointervAPPLE(target: GLenum, pname: GLenum, params: *mut *mut GLvoid);
+}
+extern "C" {
+    pub fn glBindVertexArrayAPPLE(id: GLuint);
+}
+extern "C" {
+    pub fn glDeleteVertexArraysAPPLE(n: GLsizei, ids: *const GLuint);
+}
+extern "C" {
+    pub fn glGenVertexArraysAPPLE(n: GLsizei, ids: *mut GLuint);
+}
+extern "C" {
+    pub fn glIsVertexArrayAPPLE(id: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glVertexArrayRangeAPPLE(length: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glFlushVertexArrayRangeAPPLE(length: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glVertexArrayParameteriAPPLE(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glPointSizePointerAPPLE(type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glVertexPointSizefAPPLE(size: GLfloat);
+}
+extern "C" {
+    pub fn glEnableVertexAttribAPPLE(index: GLuint, pname: GLenum);
+}
+extern "C" {
+    pub fn glDisableVertexAttribAPPLE(index: GLuint, pname: GLenum);
+}
+extern "C" {
+    pub fn glIsVertexAttribEnabledAPPLE(index: GLuint, pname: GLenum) -> GLboolean;
+}
+extern "C" {
+    pub fn glMapVertexAttrib1dAPPLE(
+        index: GLuint,
+        size: GLuint,
+        u1: GLdouble,
+        u2: GLdouble,
+        stride: GLint,
+        order: GLint,
+        points: *const GLdouble,
+    );
+}
+extern "C" {
+    pub fn glMapVertexAttrib1fAPPLE(
+        index: GLuint,
+        size: GLuint,
+        u1: GLfloat,
+        u2: GLfloat,
+        stride: GLint,
+        order: GLint,
+        points: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glMapVertexAttrib2dAPPLE(
+        index: GLuint,
+        size: GLuint,
+        u1: GLdouble,
+        u2: GLdouble,
+        ustride: GLint,
+        uorder: GLint,
+        v1: GLdouble,
+        v2: GLdouble,
+        vstride: GLint,
+        vorder: GLint,
+        points: *const GLdouble,
+    );
+}
+extern "C" {
+    pub fn glMapVertexAttrib2fAPPLE(
+        index: GLuint,
+        size: GLuint,
+        u1: GLfloat,
+        u2: GLfloat,
+        ustride: GLint,
+        uorder: GLint,
+        v1: GLfloat,
+        v2: GLfloat,
+        vstride: GLint,
+        vorder: GLint,
+        points: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glBlendEquationSeparateATI(equationRGB: GLenum, equationAlpha: GLenum);
+}
+extern "C" {
+    pub fn glStencilOpSeparateATI(face: GLenum, sfail: GLenum, dpfail: GLenum, dppass: GLenum);
+}
+extern "C" {
+    pub fn glStencilFuncSeparateATI(frontfunc: GLenum, backfunc: GLenum, ref_: GLint, mask: GLuint);
+}
+extern "C" {
+    pub fn glBeginConditionalRenderNV(id: GLuint, mode: GLenum);
+}
+extern "C" {
+    pub fn glEndConditionalRenderNV();
+}
+extern "C" {
+    pub fn glPointParameteriNV(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glPointParameterivNV(pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glTextureBarrierNV();
+}
+extern "C" {
+    pub fn glAccum(op: GLenum, value: GLfloat);
+}
+extern "C" {
+    pub fn glAlphaFunc(func: GLenum, ref_: GLclampf);
+}
+extern "C" {
+    pub fn glAreTexturesResident(
+        n: GLsizei,
+        textures: *const GLuint,
+        residences: *mut GLboolean,
+    ) -> GLboolean;
+}
+extern "C" {
+    pub fn glArrayElement(i: GLint);
+}
+extern "C" {
+    pub fn glBegin(mode: GLenum);
+}
+extern "C" {
+    pub fn glBindTexture(target: GLenum, texture: GLuint);
+}
+extern "C" {
+    pub fn glBitmap(
+        width: GLsizei,
+        height: GLsizei,
+        xorig: GLfloat,
+        yorig: GLfloat,
+        xmove: GLfloat,
+        ymove: GLfloat,
+        bitmap: *const GLubyte,
+    );
+}
+extern "C" {
+    pub fn glBlendColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf);
+}
+extern "C" {
+    pub fn glBlendEquation(mode: GLenum);
+}
+extern "C" {
+    pub fn glBlendEquationSeparate(modeRGB: GLenum, modeAlpha: GLenum);
+}
+extern "C" {
+    pub fn glBlendFunc(sfactor: GLenum, dfactor: GLenum);
+}
+extern "C" {
+    pub fn glCallList(list: GLuint);
+}
+extern "C" {
+    pub fn glCallLists(n: GLsizei, type_: GLenum, lists: *const GLvoid);
+}
+extern "C" {
+    pub fn glClear(mask: GLbitfield);
+}
+extern "C" {
+    pub fn glClearAccum(red: GLfloat, green: GLfloat, blue: GLfloat, alpha: GLfloat);
+}
+extern "C" {
+    pub fn glClearColor(red: GLclampf, green: GLclampf, blue: GLclampf, alpha: GLclampf);
+}
+extern "C" {
+    pub fn glClearDepth(depth: GLclampd);
+}
+extern "C" {
+    pub fn glClearIndex(c: GLfloat);
+}
+extern "C" {
+    pub fn glClearStencil(s: GLint);
+}
+extern "C" {
+    pub fn glClipPlane(plane: GLenum, equation: *const GLdouble);
+}
+extern "C" {
+    pub fn glColor3b(red: GLbyte, green: GLbyte, blue: GLbyte);
+}
+extern "C" {
+    pub fn glColor3bv(v: *const GLbyte);
+}
+extern "C" {
+    pub fn glColor3d(red: GLdouble, green: GLdouble, blue: GLdouble);
+}
+extern "C" {
+    pub fn glColor3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glColor3f(red: GLfloat, green: GLfloat, blue: GLfloat);
+}
+extern "C" {
+    pub fn glColor3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glColor3i(red: GLint, green: GLint, blue: GLint);
+}
+extern "C" {
+    pub fn glColor3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glColor3s(red: GLshort, green: GLshort, blue: GLshort);
+}
+extern "C" {
+    pub fn glColor3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glColor3ub(red: GLubyte, green: GLubyte, blue: GLubyte);
+}
+extern "C" {
+    pub fn glColor3ubv(v: *const GLubyte);
+}
+extern "C" {
+    pub fn glColor3ui(red: GLuint, green: GLuint, blue: GLuint);
+}
+extern "C" {
+    pub fn glColor3uiv(v: *const GLuint);
+}
+extern "C" {
+    pub fn glColor3us(red: GLushort, green: GLushort, blue: GLushort);
+}
+extern "C" {
+    pub fn glColor3usv(v: *const GLushort);
+}
+extern "C" {
+    pub fn glColor4b(red: GLbyte, green: GLbyte, blue: GLbyte, alpha: GLbyte);
+}
+extern "C" {
+    pub fn glColor4bv(v: *const GLbyte);
+}
+extern "C" {
+    pub fn glColor4d(red: GLdouble, green: GLdouble, blue: GLdouble, alpha: GLdouble);
+}
+extern "C" {
+    pub fn glColor4dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glColor4f(red: GLfloat, green: GLfloat, blue: GLfloat, alpha: GLfloat);
+}
+extern "C" {
+    pub fn glColor4fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glColor4i(red: GLint, green: GLint, blue: GLint, alpha: GLint);
+}
+extern "C" {
+    pub fn glColor4iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glColor4s(red: GLshort, green: GLshort, blue: GLshort, alpha: GLshort);
+}
+extern "C" {
+    pub fn glColor4sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glColor4ub(red: GLubyte, green: GLubyte, blue: GLubyte, alpha: GLubyte);
+}
+extern "C" {
+    pub fn glColor4ubv(v: *const GLubyte);
+}
+extern "C" {
+    pub fn glColor4ui(red: GLuint, green: GLuint, blue: GLuint, alpha: GLuint);
+}
+extern "C" {
+    pub fn glColor4uiv(v: *const GLuint);
+}
+extern "C" {
+    pub fn glColor4us(red: GLushort, green: GLushort, blue: GLushort, alpha: GLushort);
+}
+extern "C" {
+    pub fn glColor4usv(v: *const GLushort);
+}
+extern "C" {
+    pub fn glColorMask(red: GLboolean, green: GLboolean, blue: GLboolean, alpha: GLboolean);
+}
+extern "C" {
+    pub fn glColorMaterial(face: GLenum, mode: GLenum);
+}
+extern "C" {
+    pub fn glColorPointer(size: GLint, type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glColorSubTable(
+        target: GLenum,
+        start: GLsizei,
+        count: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glColorTable(
+        target: GLenum,
+        internalformat: GLenum,
+        width: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        table: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glColorTableParameterfv(target: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glColorTableParameteriv(target: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glConvolutionFilter1D(
+        target: GLenum,
+        internalformat: GLenum,
+        width: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        image: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glConvolutionFilter2D(
+        target: GLenum,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        image: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glConvolutionParameterf(target: GLenum, pname: GLenum, params: GLfloat);
+}
+extern "C" {
+    pub fn glConvolutionParameterfv(target: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glConvolutionParameteri(target: GLenum, pname: GLenum, params: GLint);
+}
+extern "C" {
+    pub fn glConvolutionParameteriv(target: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glCopyColorSubTable(target: GLenum, start: GLsizei, x: GLint, y: GLint, width: GLsizei);
+}
+extern "C" {
+    pub fn glCopyColorTable(
+        target: GLenum,
+        internalformat: GLenum,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glCopyConvolutionFilter1D(
+        target: GLenum,
+        internalformat: GLenum,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glCopyConvolutionFilter2D(
+        target: GLenum,
+        internalformat: GLenum,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glCopyPixels(x: GLint, y: GLint, width: GLsizei, height: GLsizei, type_: GLenum);
+}
+extern "C" {
+    pub fn glCopyTexImage1D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+        border: GLint,
+    );
+}
+extern "C" {
+    pub fn glCopyTexImage2D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        border: GLint,
+    );
+}
+extern "C" {
+    pub fn glCopyTexSubImage1D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glCopyTexSubImage2D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glCopyTexSubImage3D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        zoffset: GLint,
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+        height: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glCullFace(mode: GLenum);
+}
+extern "C" {
+    pub fn glDeleteLists(list: GLuint, range: GLsizei);
+}
+extern "C" {
+    pub fn glDeleteTextures(n: GLsizei, textures: *const GLuint);
+}
+extern "C" {
+    pub fn glDepthFunc(func: GLenum);
+}
+extern "C" {
+    pub fn glDepthMask(flag: GLboolean);
+}
+extern "C" {
+    pub fn glDepthRange(zNear: GLclampd, zFar: GLclampd);
+}
+extern "C" {
+    pub fn glDisable(cap: GLenum);
+}
+extern "C" {
+    pub fn glDisableClientState(array: GLenum);
+}
+extern "C" {
+    pub fn glDrawArrays(mode: GLenum, first: GLint, count: GLsizei);
+}
+extern "C" {
+    pub fn glDrawBuffer(mode: GLenum);
+}
+extern "C" {
+    pub fn glDrawElements(mode: GLenum, count: GLsizei, type_: GLenum, indices: *const GLvoid);
+}
+extern "C" {
+    pub fn glDrawPixels(
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glDrawRangeElements(
+        mode: GLenum,
+        start: GLuint,
+        end: GLuint,
+        count: GLsizei,
+        type_: GLenum,
+        indices: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glEdgeFlag(flag: GLboolean);
+}
+extern "C" {
+    pub fn glEdgeFlagPointer(stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glEdgeFlagv(flag: *const GLboolean);
+}
+extern "C" {
+    pub fn glEnable(cap: GLenum);
+}
+extern "C" {
+    pub fn glEnableClientState(array: GLenum);
+}
+extern "C" {
+    pub fn glEnd();
+}
+extern "C" {
+    pub fn glEndList();
+}
+extern "C" {
+    pub fn glEvalCoord1d(u: GLdouble);
+}
+extern "C" {
+    pub fn glEvalCoord1dv(u: *const GLdouble);
+}
+extern "C" {
+    pub fn glEvalCoord1f(u: GLfloat);
+}
+extern "C" {
+    pub fn glEvalCoord1fv(u: *const GLfloat);
+}
+extern "C" {
+    pub fn glEvalCoord2d(u: GLdouble, v: GLdouble);
+}
+extern "C" {
+    pub fn glEvalCoord2dv(u: *const GLdouble);
+}
+extern "C" {
+    pub fn glEvalCoord2f(u: GLfloat, v: GLfloat);
+}
+extern "C" {
+    pub fn glEvalCoord2fv(u: *const GLfloat);
+}
+extern "C" {
+    pub fn glEvalMesh1(mode: GLenum, i1: GLint, i2: GLint);
+}
+extern "C" {
+    pub fn glEvalMesh2(mode: GLenum, i1: GLint, i2: GLint, j1: GLint, j2: GLint);
+}
+extern "C" {
+    pub fn glEvalPoint1(i: GLint);
+}
+extern "C" {
+    pub fn glEvalPoint2(i: GLint, j: GLint);
+}
+extern "C" {
+    pub fn glFeedbackBuffer(size: GLsizei, type_: GLenum, buffer: *mut GLfloat);
+}
+extern "C" {
+    pub fn glFinish();
+}
+extern "C" {
+    pub fn glFlush();
+}
+extern "C" {
+    pub fn glFogf(pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glFogfv(pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glFogi(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glFogiv(pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glFrontFace(mode: GLenum);
+}
+extern "C" {
+    pub fn glFrustum(
+        left: GLdouble,
+        right: GLdouble,
+        bottom: GLdouble,
+        top: GLdouble,
+        zNear: GLdouble,
+        zFar: GLdouble,
+    );
+}
+extern "C" {
+    pub fn glGenLists(range: GLsizei) -> GLuint;
+}
+extern "C" {
+    pub fn glGenTextures(n: GLsizei, textures: *mut GLuint);
+}
+extern "C" {
+    pub fn glGetBooleanv(pname: GLenum, params: *mut GLboolean);
+}
+extern "C" {
+    pub fn glGetClipPlane(plane: GLenum, equation: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetColorTable(target: GLenum, format: GLenum, type_: GLenum, table: *mut GLvoid);
+}
+extern "C" {
+    pub fn glGetColorTableParameterfv(target: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetColorTableParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetConvolutionFilter(
+        target: GLenum,
+        format: GLenum,
+        type_: GLenum,
+        image: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetConvolutionParameterfv(target: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetConvolutionParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetDoublev(pname: GLenum, params: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetError() -> GLenum;
+}
+extern "C" {
+    pub fn glGetFloatv(pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetHistogram(
+        target: GLenum,
+        reset: GLboolean,
+        format: GLenum,
+        type_: GLenum,
+        values: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetHistogramParameterfv(target: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetHistogramParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetIntegerv(pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetLightfv(light: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetLightiv(light: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetMapdv(target: GLenum, query: GLenum, v: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetMapfv(target: GLenum, query: GLenum, v: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetMapiv(target: GLenum, query: GLenum, v: *mut GLint);
+}
+extern "C" {
+    pub fn glGetMaterialfv(face: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetMaterialiv(face: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetMinmax(
+        target: GLenum,
+        reset: GLboolean,
+        format: GLenum,
+        type_: GLenum,
+        values: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetMinmaxParameterfv(target: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetMinmaxParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetPixelMapfv(map: GLenum, values: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetPixelMapuiv(map: GLenum, values: *mut GLuint);
+}
+extern "C" {
+    pub fn glGetPixelMapusv(map: GLenum, values: *mut GLushort);
+}
+extern "C" {
+    pub fn glGetPointerv(pname: GLenum, params: *mut *mut GLvoid);
+}
+extern "C" {
+    pub fn glGetPolygonStipple(mask: *mut GLubyte);
+}
+extern "C" {
+    pub fn glGetSeparableFilter(
+        target: GLenum,
+        format: GLenum,
+        type_: GLenum,
+        row: *mut GLvoid,
+        column: *mut GLvoid,
+        span: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetString(name: GLenum) -> *const GLubyte;
+}
+extern "C" {
+    pub fn glGetTexEnvfv(target: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetTexEnviv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetTexGendv(coord: GLenum, pname: GLenum, params: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetTexGenfv(coord: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetTexGeniv(coord: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetTexImage(
+        target: GLenum,
+        level: GLint,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetTexLevelParameterfv(
+        target: GLenum,
+        level: GLint,
+        pname: GLenum,
+        params: *mut GLfloat,
+    );
+}
+extern "C" {
+    pub fn glGetTexLevelParameteriv(
+        target: GLenum,
+        level: GLint,
+        pname: GLenum,
+        params: *mut GLint,
+    );
+}
+extern "C" {
+    pub fn glGetTexParameterfv(target: GLenum, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetTexParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glHint(target: GLenum, mode: GLenum);
+}
+extern "C" {
+    pub fn glHistogram(target: GLenum, width: GLsizei, internalformat: GLenum, sink: GLboolean);
+}
+extern "C" {
+    pub fn glIndexMask(mask: GLuint);
+}
+extern "C" {
+    pub fn glIndexPointer(type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glIndexd(c: GLdouble);
+}
+extern "C" {
+    pub fn glIndexdv(c: *const GLdouble);
+}
+extern "C" {
+    pub fn glIndexf(c: GLfloat);
+}
+extern "C" {
+    pub fn glIndexfv(c: *const GLfloat);
+}
+extern "C" {
+    pub fn glIndexi(c: GLint);
+}
+extern "C" {
+    pub fn glIndexiv(c: *const GLint);
+}
+extern "C" {
+    pub fn glIndexs(c: GLshort);
+}
+extern "C" {
+    pub fn glIndexsv(c: *const GLshort);
+}
+extern "C" {
+    pub fn glIndexub(c: GLubyte);
+}
+extern "C" {
+    pub fn glIndexubv(c: *const GLubyte);
+}
+extern "C" {
+    pub fn glInitNames();
+}
+extern "C" {
+    pub fn glInterleavedArrays(format: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glIsEnabled(cap: GLenum) -> GLboolean;
+}
+extern "C" {
+    pub fn glIsList(list: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glIsTexture(texture: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glLightModelf(pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glLightModelfv(pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glLightModeli(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glLightModeliv(pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glLightf(light: GLenum, pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glLightfv(light: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glLighti(light: GLenum, pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glLightiv(light: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glLineStipple(factor: GLint, pattern: GLushort);
+}
+extern "C" {
+    pub fn glLineWidth(width: GLfloat);
+}
+extern "C" {
+    pub fn glListBase(base: GLuint);
+}
+extern "C" {
+    pub fn glLoadIdentity();
+}
+extern "C" {
+    pub fn glLoadMatrixd(m: *const GLdouble);
+}
+extern "C" {
+    pub fn glLoadMatrixf(m: *const GLfloat);
+}
+extern "C" {
+    pub fn glLoadName(name: GLuint);
+}
+extern "C" {
+    pub fn glLogicOp(opcode: GLenum);
+}
+extern "C" {
+    pub fn glMap1d(
+        target: GLenum,
+        u1: GLdouble,
+        u2: GLdouble,
+        stride: GLint,
+        order: GLint,
+        points: *const GLdouble,
+    );
+}
+extern "C" {
+    pub fn glMap1f(
+        target: GLenum,
+        u1: GLfloat,
+        u2: GLfloat,
+        stride: GLint,
+        order: GLint,
+        points: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glMap2d(
+        target: GLenum,
+        u1: GLdouble,
+        u2: GLdouble,
+        ustride: GLint,
+        uorder: GLint,
+        v1: GLdouble,
+        v2: GLdouble,
+        vstride: GLint,
+        vorder: GLint,
+        points: *const GLdouble,
+    );
+}
+extern "C" {
+    pub fn glMap2f(
+        target: GLenum,
+        u1: GLfloat,
+        u2: GLfloat,
+        ustride: GLint,
+        uorder: GLint,
+        v1: GLfloat,
+        v2: GLfloat,
+        vstride: GLint,
+        vorder: GLint,
+        points: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glMapGrid1d(un: GLint, u1: GLdouble, u2: GLdouble);
+}
+extern "C" {
+    pub fn glMapGrid1f(un: GLint, u1: GLfloat, u2: GLfloat);
+}
+extern "C" {
+    pub fn glMapGrid2d(
+        un: GLint,
+        u1: GLdouble,
+        u2: GLdouble,
+        vn: GLint,
+        v1: GLdouble,
+        v2: GLdouble,
+    );
+}
+extern "C" {
+    pub fn glMapGrid2f(un: GLint, u1: GLfloat, u2: GLfloat, vn: GLint, v1: GLfloat, v2: GLfloat);
+}
+extern "C" {
+    pub fn glMaterialf(face: GLenum, pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glMaterialfv(face: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glMateriali(face: GLenum, pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glMaterialiv(face: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glMatrixMode(mode: GLenum);
+}
+extern "C" {
+    pub fn glMinmax(target: GLenum, internalformat: GLenum, sink: GLboolean);
+}
+extern "C" {
+    pub fn glMultMatrixd(m: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultMatrixf(m: *const GLfloat);
+}
+extern "C" {
+    pub fn glNewList(list: GLuint, mode: GLenum);
+}
+extern "C" {
+    pub fn glNormal3b(nx: GLbyte, ny: GLbyte, nz: GLbyte);
+}
+extern "C" {
+    pub fn glNormal3bv(v: *const GLbyte);
+}
+extern "C" {
+    pub fn glNormal3d(nx: GLdouble, ny: GLdouble, nz: GLdouble);
+}
+extern "C" {
+    pub fn glNormal3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glNormal3f(nx: GLfloat, ny: GLfloat, nz: GLfloat);
+}
+extern "C" {
+    pub fn glNormal3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glNormal3i(nx: GLint, ny: GLint, nz: GLint);
+}
+extern "C" {
+    pub fn glNormal3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glNormal3s(nx: GLshort, ny: GLshort, nz: GLshort);
+}
+extern "C" {
+    pub fn glNormal3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glNormalPointer(type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glOrtho(
+        left: GLdouble,
+        right: GLdouble,
+        bottom: GLdouble,
+        top: GLdouble,
+        zNear: GLdouble,
+        zFar: GLdouble,
+    );
+}
+extern "C" {
+    pub fn glPassThrough(token: GLfloat);
+}
+extern "C" {
+    pub fn glPixelMapfv(map: GLenum, mapsize: GLint, values: *const GLfloat);
+}
+extern "C" {
+    pub fn glPixelMapuiv(map: GLenum, mapsize: GLint, values: *const GLuint);
+}
+extern "C" {
+    pub fn glPixelMapusv(map: GLenum, mapsize: GLint, values: *const GLushort);
+}
+extern "C" {
+    pub fn glPixelStoref(pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glPixelStorei(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glPixelTransferf(pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glPixelTransferi(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glPixelZoom(xfactor: GLfloat, yfactor: GLfloat);
+}
+extern "C" {
+    pub fn glPointSize(size: GLfloat);
+}
+extern "C" {
+    pub fn glPolygonMode(face: GLenum, mode: GLenum);
+}
+extern "C" {
+    pub fn glPolygonOffset(factor: GLfloat, units: GLfloat);
+}
+extern "C" {
+    pub fn glPolygonStipple(mask: *const GLubyte);
+}
+extern "C" {
+    pub fn glPopAttrib();
+}
+extern "C" {
+    pub fn glPopClientAttrib();
+}
+extern "C" {
+    pub fn glPopMatrix();
+}
+extern "C" {
+    pub fn glPopName();
+}
+extern "C" {
+    pub fn glPrioritizeTextures(n: GLsizei, textures: *const GLuint, priorities: *const GLclampf);
+}
+extern "C" {
+    pub fn glPushAttrib(mask: GLbitfield);
+}
+extern "C" {
+    pub fn glPushClientAttrib(mask: GLbitfield);
+}
+extern "C" {
+    pub fn glPushMatrix();
+}
+extern "C" {
+    pub fn glPushName(name: GLuint);
+}
+extern "C" {
+    pub fn glRasterPos2d(x: GLdouble, y: GLdouble);
+}
+extern "C" {
+    pub fn glRasterPos2dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glRasterPos2f(x: GLfloat, y: GLfloat);
+}
+extern "C" {
+    pub fn glRasterPos2fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glRasterPos2i(x: GLint, y: GLint);
+}
+extern "C" {
+    pub fn glRasterPos2iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glRasterPos2s(x: GLshort, y: GLshort);
+}
+extern "C" {
+    pub fn glRasterPos2sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glRasterPos3d(x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glRasterPos3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glRasterPos3f(x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glRasterPos3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glRasterPos3i(x: GLint, y: GLint, z: GLint);
+}
+extern "C" {
+    pub fn glRasterPos3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glRasterPos3s(x: GLshort, y: GLshort, z: GLshort);
+}
+extern "C" {
+    pub fn glRasterPos3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glRasterPos4d(x: GLdouble, y: GLdouble, z: GLdouble, w: GLdouble);
+}
+extern "C" {
+    pub fn glRasterPos4dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glRasterPos4f(x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat);
+}
+extern "C" {
+    pub fn glRasterPos4fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glRasterPos4i(x: GLint, y: GLint, z: GLint, w: GLint);
+}
+extern "C" {
+    pub fn glRasterPos4iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glRasterPos4s(x: GLshort, y: GLshort, z: GLshort, w: GLshort);
+}
+extern "C" {
+    pub fn glRasterPos4sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glReadBuffer(mode: GLenum);
+}
+extern "C" {
+    pub fn glReadPixels(
+        x: GLint,
+        y: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glRectd(x1: GLdouble, y1: GLdouble, x2: GLdouble, y2: GLdouble);
+}
+extern "C" {
+    pub fn glRectdv(v1: *const GLdouble, v2: *const GLdouble);
+}
+extern "C" {
+    pub fn glRectf(x1: GLfloat, y1: GLfloat, x2: GLfloat, y2: GLfloat);
+}
+extern "C" {
+    pub fn glRectfv(v1: *const GLfloat, v2: *const GLfloat);
+}
+extern "C" {
+    pub fn glRecti(x1: GLint, y1: GLint, x2: GLint, y2: GLint);
+}
+extern "C" {
+    pub fn glRectiv(v1: *const GLint, v2: *const GLint);
+}
+extern "C" {
+    pub fn glRects(x1: GLshort, y1: GLshort, x2: GLshort, y2: GLshort);
+}
+extern "C" {
+    pub fn glRectsv(v1: *const GLshort, v2: *const GLshort);
+}
+extern "C" {
+    pub fn glRenderMode(mode: GLenum) -> GLint;
+}
+extern "C" {
+    pub fn glResetHistogram(target: GLenum);
+}
+extern "C" {
+    pub fn glResetMinmax(target: GLenum);
+}
+extern "C" {
+    pub fn glRotated(angle: GLdouble, x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glRotatef(angle: GLfloat, x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glScaled(x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glScalef(x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glScissor(x: GLint, y: GLint, width: GLsizei, height: GLsizei);
+}
+extern "C" {
+    pub fn glSelectBuffer(size: GLsizei, buffer: *mut GLuint);
+}
+extern "C" {
+    pub fn glSeparableFilter2D(
+        target: GLenum,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        row: *const GLvoid,
+        column: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glShadeModel(mode: GLenum);
+}
+extern "C" {
+    pub fn glStencilFunc(func: GLenum, ref_: GLint, mask: GLuint);
+}
+extern "C" {
+    pub fn glStencilMask(mask: GLuint);
+}
+extern "C" {
+    pub fn glStencilOp(fail: GLenum, zfail: GLenum, zpass: GLenum);
+}
+extern "C" {
+    pub fn glTexCoord1d(s: GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord1dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord1f(s: GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord1fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord1i(s: GLint);
+}
+extern "C" {
+    pub fn glTexCoord1iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glTexCoord1s(s: GLshort);
+}
+extern "C" {
+    pub fn glTexCoord1sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glTexCoord2d(s: GLdouble, t: GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord2dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord2f(s: GLfloat, t: GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord2fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord2i(s: GLint, t: GLint);
+}
+extern "C" {
+    pub fn glTexCoord2iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glTexCoord2s(s: GLshort, t: GLshort);
+}
+extern "C" {
+    pub fn glTexCoord2sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glTexCoord3d(s: GLdouble, t: GLdouble, r: GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord3f(s: GLfloat, t: GLfloat, r: GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord3i(s: GLint, t: GLint, r: GLint);
+}
+extern "C" {
+    pub fn glTexCoord3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glTexCoord3s(s: GLshort, t: GLshort, r: GLshort);
+}
+extern "C" {
+    pub fn glTexCoord3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glTexCoord4d(s: GLdouble, t: GLdouble, r: GLdouble, q: GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord4dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glTexCoord4f(s: GLfloat, t: GLfloat, r: GLfloat, q: GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord4fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexCoord4i(s: GLint, t: GLint, r: GLint, q: GLint);
+}
+extern "C" {
+    pub fn glTexCoord4iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glTexCoord4s(s: GLshort, t: GLshort, r: GLshort, q: GLshort);
+}
+extern "C" {
+    pub fn glTexCoord4sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glTexCoordPointer(size: GLint, type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glTexEnvf(target: GLenum, pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glTexEnvfv(target: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexEnvi(target: GLenum, pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glTexEnviv(target: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glTexGend(coord: GLenum, pname: GLenum, param: GLdouble);
+}
+extern "C" {
+    pub fn glTexGendv(coord: GLenum, pname: GLenum, params: *const GLdouble);
+}
+extern "C" {
+    pub fn glTexGenf(coord: GLenum, pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glTexGenfv(coord: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexGeni(coord: GLenum, pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glTexGeniv(coord: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glTexImage1D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLint,
+        width: GLsizei,
+        border: GLint,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glTexImage2D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        border: GLint,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glTexImage3D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        border: GLint,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glTexParameterf(target: GLenum, pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glTexParameterfv(target: GLenum, pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glTexParameteri(target: GLenum, pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glTexParameteriv(target: GLenum, pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glTexSubImage1D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        width: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glTexSubImage2D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glTexSubImage3D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        zoffset: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        pixels: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glTranslated(x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glTranslatef(x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glVertex2d(x: GLdouble, y: GLdouble);
+}
+extern "C" {
+    pub fn glVertex2dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertex2f(x: GLfloat, y: GLfloat);
+}
+extern "C" {
+    pub fn glVertex2fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertex2i(x: GLint, y: GLint);
+}
+extern "C" {
+    pub fn glVertex2iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glVertex2s(x: GLshort, y: GLshort);
+}
+extern "C" {
+    pub fn glVertex2sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertex3d(x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glVertex3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertex3f(x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glVertex3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertex3i(x: GLint, y: GLint, z: GLint);
+}
+extern "C" {
+    pub fn glVertex3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glVertex3s(x: GLshort, y: GLshort, z: GLshort);
+}
+extern "C" {
+    pub fn glVertex3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertex4d(x: GLdouble, y: GLdouble, z: GLdouble, w: GLdouble);
+}
+extern "C" {
+    pub fn glVertex4dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertex4f(x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat);
+}
+extern "C" {
+    pub fn glVertex4fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertex4i(x: GLint, y: GLint, z: GLint, w: GLint);
+}
+extern "C" {
+    pub fn glVertex4iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glVertex4s(x: GLshort, y: GLshort, z: GLshort, w: GLshort);
+}
+extern "C" {
+    pub fn glVertex4sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexPointer(size: GLint, type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glViewport(x: GLint, y: GLint, width: GLsizei, height: GLsizei);
+}
+extern "C" {
+    pub fn glSampleCoverage(value: GLclampf, invert: GLboolean);
+}
+extern "C" {
+    pub fn glLoadTransposeMatrixf(m: *const GLfloat);
+}
+extern "C" {
+    pub fn glLoadTransposeMatrixd(m: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultTransposeMatrixf(m: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultTransposeMatrixd(m: *const GLdouble);
+}
+extern "C" {
+    pub fn glCompressedTexImage3D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        border: GLint,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexImage2D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        width: GLsizei,
+        height: GLsizei,
+        border: GLint,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexImage1D(
+        target: GLenum,
+        level: GLint,
+        internalformat: GLenum,
+        width: GLsizei,
+        border: GLint,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexSubImage3D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        zoffset: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        format: GLenum,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexSubImage2D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        yoffset: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glCompressedTexSubImage1D(
+        target: GLenum,
+        level: GLint,
+        xoffset: GLint,
+        width: GLsizei,
+        format: GLenum,
+        imageSize: GLsizei,
+        data: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glGetCompressedTexImage(target: GLenum, lod: GLint, img: *mut GLvoid);
+}
+extern "C" {
+    pub fn glActiveTexture(texture: GLenum);
+}
+extern "C" {
+    pub fn glClientActiveTexture(texture: GLenum);
+}
+extern "C" {
+    pub fn glMultiTexCoord1d(target: GLenum, s: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord1dv(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord1f(target: GLenum, s: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord1fv(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord1i(target: GLenum, s: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord1iv(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord1s(target: GLenum, s: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord1sv(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord2d(target: GLenum, s: GLdouble, t: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord2dv(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord2f(target: GLenum, s: GLfloat, t: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord2fv(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord2i(target: GLenum, s: GLint, t: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord2iv(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord2s(target: GLenum, s: GLshort, t: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord2sv(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord3d(target: GLenum, s: GLdouble, t: GLdouble, r: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord3dv(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord3f(target: GLenum, s: GLfloat, t: GLfloat, r: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord3fv(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord3i(target: GLenum, s: GLint, t: GLint, r: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord3iv(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord3s(target: GLenum, s: GLshort, t: GLshort, r: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord3sv(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord4d(target: GLenum, s: GLdouble, t: GLdouble, r: GLdouble, q: GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord4dv(target: GLenum, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glMultiTexCoord4f(target: GLenum, s: GLfloat, t: GLfloat, r: GLfloat, q: GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord4fv(target: GLenum, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glMultiTexCoord4i(target: GLenum, s: GLint, t: GLint, r: GLint, q: GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord4iv(target: GLenum, v: *const GLint);
+}
+extern "C" {
+    pub fn glMultiTexCoord4s(target: GLenum, s: GLshort, t: GLshort, r: GLshort, q: GLshort);
+}
+extern "C" {
+    pub fn glMultiTexCoord4sv(target: GLenum, v: *const GLshort);
+}
+extern "C" {
+    pub fn glFogCoordf(coord: GLfloat);
+}
+extern "C" {
+    pub fn glFogCoordfv(coord: *const GLfloat);
+}
+extern "C" {
+    pub fn glFogCoordd(coord: GLdouble);
+}
+extern "C" {
+    pub fn glFogCoorddv(coord: *const GLdouble);
+}
+extern "C" {
+    pub fn glFogCoordPointer(type_: GLenum, stride: GLsizei, pointer: *const GLvoid);
+}
+extern "C" {
+    pub fn glSecondaryColor3b(red: GLbyte, green: GLbyte, blue: GLbyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3bv(v: *const GLbyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3d(red: GLdouble, green: GLdouble, blue: GLdouble);
+}
+extern "C" {
+    pub fn glSecondaryColor3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glSecondaryColor3f(red: GLfloat, green: GLfloat, blue: GLfloat);
+}
+extern "C" {
+    pub fn glSecondaryColor3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glSecondaryColor3i(red: GLint, green: GLint, blue: GLint);
+}
+extern "C" {
+    pub fn glSecondaryColor3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glSecondaryColor3s(red: GLshort, green: GLshort, blue: GLshort);
+}
+extern "C" {
+    pub fn glSecondaryColor3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glSecondaryColor3ub(red: GLubyte, green: GLubyte, blue: GLubyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3ubv(v: *const GLubyte);
+}
+extern "C" {
+    pub fn glSecondaryColor3ui(red: GLuint, green: GLuint, blue: GLuint);
+}
+extern "C" {
+    pub fn glSecondaryColor3uiv(v: *const GLuint);
+}
+extern "C" {
+    pub fn glSecondaryColor3us(red: GLushort, green: GLushort, blue: GLushort);
+}
+extern "C" {
+    pub fn glSecondaryColor3usv(v: *const GLushort);
+}
+extern "C" {
+    pub fn glSecondaryColorPointer(
+        size: GLint,
+        type_: GLenum,
+        stride: GLsizei,
+        pointer: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glPointParameterf(pname: GLenum, param: GLfloat);
+}
+extern "C" {
+    pub fn glPointParameterfv(pname: GLenum, params: *const GLfloat);
+}
+extern "C" {
+    pub fn glPointParameteri(pname: GLenum, param: GLint);
+}
+extern "C" {
+    pub fn glPointParameteriv(pname: GLenum, params: *const GLint);
+}
+extern "C" {
+    pub fn glBlendFuncSeparate(srcRGB: GLenum, dstRGB: GLenum, srcAlpha: GLenum, dstAlpha: GLenum);
+}
+extern "C" {
+    pub fn glMultiDrawArrays(
+        mode: GLenum,
+        first: *const GLint,
+        count: *const GLsizei,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glMultiDrawElements(
+        mode: GLenum,
+        count: *const GLsizei,
+        type_: GLenum,
+        indices: *const *const GLvoid,
+        primcount: GLsizei,
+    );
+}
+extern "C" {
+    pub fn glWindowPos2d(x: GLdouble, y: GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos2dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos2f(x: GLfloat, y: GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos2fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos2i(x: GLint, y: GLint);
+}
+extern "C" {
+    pub fn glWindowPos2iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glWindowPos2s(x: GLshort, y: GLshort);
+}
+extern "C" {
+    pub fn glWindowPos2sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glWindowPos3d(x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos3dv(v: *const GLdouble);
+}
+extern "C" {
+    pub fn glWindowPos3f(x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos3fv(v: *const GLfloat);
+}
+extern "C" {
+    pub fn glWindowPos3i(x: GLint, y: GLint, z: GLint);
+}
+extern "C" {
+    pub fn glWindowPos3iv(v: *const GLint);
+}
+extern "C" {
+    pub fn glWindowPos3s(x: GLshort, y: GLshort, z: GLshort);
+}
+extern "C" {
+    pub fn glWindowPos3sv(v: *const GLshort);
+}
+extern "C" {
+    pub fn glGenQueries(n: GLsizei, ids: *mut GLuint);
+}
+extern "C" {
+    pub fn glDeleteQueries(n: GLsizei, ids: *const GLuint);
+}
+extern "C" {
+    pub fn glIsQuery(id: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBeginQuery(target: GLenum, id: GLuint);
+}
+extern "C" {
+    pub fn glEndQuery(target: GLenum);
+}
+extern "C" {
+    pub fn glGetQueryiv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetQueryObjectiv(id: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetQueryObjectuiv(id: GLuint, pname: GLenum, params: *mut GLuint);
+}
+extern "C" {
+    pub fn glBindBuffer(target: GLenum, buffer: GLuint);
+}
+extern "C" {
+    pub fn glDeleteBuffers(n: GLsizei, buffers: *const GLuint);
+}
+extern "C" {
+    pub fn glGenBuffers(n: GLsizei, buffers: *mut GLuint);
+}
+extern "C" {
+    pub fn glIsBuffer(buffer: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glBufferData(target: GLenum, size: GLsizeiptr, data: *const GLvoid, usage: GLenum);
+}
+extern "C" {
+    pub fn glBufferSubData(target: GLenum, offset: GLintptr, size: GLsizeiptr, data: *const GLvoid);
+}
+extern "C" {
+    pub fn glGetBufferSubData(
+        target: GLenum,
+        offset: GLintptr,
+        size: GLsizeiptr,
+        data: *mut GLvoid,
+    );
+}
+extern "C" {
+    pub fn glMapBuffer(target: GLenum, access: GLenum) -> *mut GLvoid;
+}
+extern "C" {
+    pub fn glUnmapBuffer(target: GLenum) -> GLboolean;
+}
+extern "C" {
+    pub fn glGetBufferParameteriv(target: GLenum, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetBufferPointerv(target: GLenum, pname: GLenum, params: *mut *mut GLvoid);
+}
+extern "C" {
+    pub fn glDrawBuffers(n: GLsizei, bufs: *const GLenum);
+}
+extern "C" {
+    pub fn glVertexAttrib1d(index: GLuint, x: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib1dv(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib1f(index: GLuint, x: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib1fv(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib1s(index: GLuint, x: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib1sv(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib2d(index: GLuint, x: GLdouble, y: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib2dv(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib2f(index: GLuint, x: GLfloat, y: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib2fv(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib2s(index: GLuint, x: GLshort, y: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib2sv(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib3d(index: GLuint, x: GLdouble, y: GLdouble, z: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib3dv(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib3f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib3fv(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib3s(index: GLuint, x: GLshort, y: GLshort, z: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib3sv(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4Nbv(index: GLuint, v: *const GLbyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4Niv(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttrib4Nsv(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4Nub(index: GLuint, x: GLubyte, y: GLubyte, z: GLubyte, w: GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4Nubv(index: GLuint, v: *const GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4Nuiv(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttrib4Nusv(index: GLuint, v: *const GLushort);
+}
+extern "C" {
+    pub fn glVertexAttrib4bv(index: GLuint, v: *const GLbyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4d(index: GLuint, x: GLdouble, y: GLdouble, z: GLdouble, w: GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib4dv(index: GLuint, v: *const GLdouble);
+}
+extern "C" {
+    pub fn glVertexAttrib4f(index: GLuint, x: GLfloat, y: GLfloat, z: GLfloat, w: GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib4fv(index: GLuint, v: *const GLfloat);
+}
+extern "C" {
+    pub fn glVertexAttrib4iv(index: GLuint, v: *const GLint);
+}
+extern "C" {
+    pub fn glVertexAttrib4s(index: GLuint, x: GLshort, y: GLshort, z: GLshort, w: GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4sv(index: GLuint, v: *const GLshort);
+}
+extern "C" {
+    pub fn glVertexAttrib4ubv(index: GLuint, v: *const GLubyte);
+}
+extern "C" {
+    pub fn glVertexAttrib4uiv(index: GLuint, v: *const GLuint);
+}
+extern "C" {
+    pub fn glVertexAttrib4usv(index: GLuint, v: *const GLushort);
+}
+extern "C" {
+    pub fn glVertexAttribPointer(
+        index: GLuint,
+        size: GLint,
+        type_: GLenum,
+        normalized: GLboolean,
+        stride: GLsizei,
+        pointer: *const GLvoid,
+    );
+}
+extern "C" {
+    pub fn glEnableVertexAttribArray(index: GLuint);
+}
+extern "C" {
+    pub fn glDisableVertexAttribArray(index: GLuint);
+}
+extern "C" {
+    pub fn glGetVertexAttribdv(index: GLuint, pname: GLenum, params: *mut GLdouble);
+}
+extern "C" {
+    pub fn glGetVertexAttribfv(index: GLuint, pname: GLenum, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetVertexAttribiv(index: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetVertexAttribPointerv(index: GLuint, pname: GLenum, pointer: *mut *mut GLvoid);
+}
+extern "C" {
+    pub fn glDeleteShader(shader: GLuint);
+}
+extern "C" {
+    pub fn glDetachShader(program: GLuint, shader: GLuint);
+}
+extern "C" {
+    pub fn glCreateShader(type_: GLenum) -> GLuint;
+}
+extern "C" {
+    pub fn glShaderSource(
+        shader: GLuint,
+        count: GLsizei,
+        string: *const *const GLchar,
+        length: *const GLint,
+    );
+}
+extern "C" {
+    pub fn glCompileShader(shader: GLuint);
+}
+extern "C" {
+    pub fn glCreateProgram() -> GLuint;
+}
+extern "C" {
+    pub fn glAttachShader(program: GLuint, shader: GLuint);
+}
+extern "C" {
+    pub fn glLinkProgram(program: GLuint);
+}
+extern "C" {
+    pub fn glUseProgram(program: GLuint);
+}
+extern "C" {
+    pub fn glDeleteProgram(program: GLuint);
+}
+extern "C" {
+    pub fn glValidateProgram(program: GLuint);
+}
+extern "C" {
+    pub fn glUniform1f(location: GLint, v0: GLfloat);
+}
+extern "C" {
+    pub fn glUniform2f(location: GLint, v0: GLfloat, v1: GLfloat);
+}
+extern "C" {
+    pub fn glUniform3f(location: GLint, v0: GLfloat, v1: GLfloat, v2: GLfloat);
+}
+extern "C" {
+    pub fn glUniform4f(location: GLint, v0: GLfloat, v1: GLfloat, v2: GLfloat, v3: GLfloat);
+}
+extern "C" {
+    pub fn glUniform1i(location: GLint, v0: GLint);
+}
+extern "C" {
+    pub fn glUniform2i(location: GLint, v0: GLint, v1: GLint);
+}
+extern "C" {
+    pub fn glUniform3i(location: GLint, v0: GLint, v1: GLint, v2: GLint);
+}
+extern "C" {
+    pub fn glUniform4i(location: GLint, v0: GLint, v1: GLint, v2: GLint, v3: GLint);
+}
+extern "C" {
+    pub fn glUniform1fv(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform2fv(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform3fv(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform4fv(location: GLint, count: GLsizei, value: *const GLfloat);
+}
+extern "C" {
+    pub fn glUniform1iv(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniform2iv(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniform3iv(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniform4iv(location: GLint, count: GLsizei, value: *const GLint);
+}
+extern "C" {
+    pub fn glUniformMatrix2fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix3fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix4fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glIsShader(shader: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glIsProgram(program: GLuint) -> GLboolean;
+}
+extern "C" {
+    pub fn glGetShaderiv(shader: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetProgramiv(program: GLuint, pname: GLenum, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetAttachedShaders(
+        program: GLuint,
+        maxCount: GLsizei,
+        count: *mut GLsizei,
+        shaders: *mut GLuint,
+    );
+}
+extern "C" {
+    pub fn glGetShaderInfoLog(
+        shader: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        infoLog: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glGetProgramInfoLog(
+        program: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        infoLog: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glGetUniformLocation(program: GLuint, name: *const GLchar) -> GLint;
+}
+extern "C" {
+    pub fn glGetActiveUniform(
+        program: GLuint,
+        index: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        size: *mut GLint,
+        type_: *mut GLenum,
+        name: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glGetUniformfv(program: GLuint, location: GLint, params: *mut GLfloat);
+}
+extern "C" {
+    pub fn glGetUniformiv(program: GLuint, location: GLint, params: *mut GLint);
+}
+extern "C" {
+    pub fn glGetShaderSource(
+        shader: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        source: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glBindAttribLocation(program: GLuint, index: GLuint, name: *const GLchar);
+}
+extern "C" {
+    pub fn glGetActiveAttrib(
+        program: GLuint,
+        index: GLuint,
+        bufSize: GLsizei,
+        length: *mut GLsizei,
+        size: *mut GLint,
+        type_: *mut GLenum,
+        name: *mut GLchar,
+    );
+}
+extern "C" {
+    pub fn glGetAttribLocation(program: GLuint, name: *const GLchar) -> GLint;
+}
+extern "C" {
+    pub fn glStencilFuncSeparate(face: GLenum, func: GLenum, ref_: GLint, mask: GLuint);
+}
+extern "C" {
+    pub fn glStencilOpSeparate(face: GLenum, fail: GLenum, zfail: GLenum, zpass: GLenum);
+}
+extern "C" {
+    pub fn glStencilMaskSeparate(face: GLenum, mask: GLuint);
+}
+extern "C" {
+    pub fn glUniformMatrix2x3fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix3x2fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix2x4fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix4x2fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix3x4fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+extern "C" {
+    pub fn glUniformMatrix4x3fv(
+        location: GLint,
+        count: GLsizei,
+        transpose: GLboolean,
+        value: *const GLfloat,
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct GLUnurbs {
+    _unused: [u8; 0],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct GLUquadric {
+    _unused: [u8; 0],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct GLUtesselator {
+    _unused: [u8; 0],
+}
+pub type GLUnurbsObj = GLUnurbs;
+pub type GLUquadricObj = GLUquadric;
+pub type GLUtesselatorObj = GLUtesselator;
+pub type GLUtriangulatorObj = GLUtesselator;
+extern "C" {
+    pub fn gluBeginCurve(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluBeginPolygon(tess: *mut GLUtesselator);
+}
+extern "C" {
+    pub fn gluBeginSurface(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluBeginTrim(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluBuild1DMipmapLevels(
+        target: GLenum,
+        internalFormat: GLint,
+        width: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        level: GLint,
+        base: GLint,
+        max: GLint,
+        data: *const ::std::os::raw::c_void,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluBuild1DMipmaps(
+        target: GLenum,
+        internalFormat: GLint,
+        width: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        data: *const ::std::os::raw::c_void,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluBuild2DMipmapLevels(
+        target: GLenum,
+        internalFormat: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        level: GLint,
+        base: GLint,
+        max: GLint,
+        data: *const ::std::os::raw::c_void,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluBuild2DMipmaps(
+        target: GLenum,
+        internalFormat: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        data: *const ::std::os::raw::c_void,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluBuild3DMipmapLevels(
+        target: GLenum,
+        internalFormat: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        level: GLint,
+        base: GLint,
+        max: GLint,
+        data: *const ::std::os::raw::c_void,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluBuild3DMipmaps(
+        target: GLenum,
+        internalFormat: GLint,
+        width: GLsizei,
+        height: GLsizei,
+        depth: GLsizei,
+        format: GLenum,
+        type_: GLenum,
+        data: *const ::std::os::raw::c_void,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluCheckExtension(extName: *const GLubyte, extString: *const GLubyte) -> GLboolean;
+}
+extern "C" {
+    pub fn gluCylinder(
+        quad: *mut GLUquadric,
+        base: GLdouble,
+        top: GLdouble,
+        height: GLdouble,
+        slices: GLint,
+        stacks: GLint,
+    );
+}
+extern "C" {
+    pub fn gluDeleteNurbsRenderer(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluDeleteQuadric(quad: *mut GLUquadric);
+}
+extern "C" {
+    pub fn gluDeleteTess(tess: *mut GLUtesselator);
+}
+extern "C" {
+    pub fn gluDisk(
+        quad: *mut GLUquadric,
+        inner: GLdouble,
+        outer: GLdouble,
+        slices: GLint,
+        loops: GLint,
+    );
+}
+extern "C" {
+    pub fn gluEndCurve(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluEndPolygon(tess: *mut GLUtesselator);
+}
+extern "C" {
+    pub fn gluEndSurface(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluEndTrim(nurb: *mut GLUnurbs);
+}
+extern "C" {
+    pub fn gluErrorString(error: GLenum) -> *const GLubyte;
+}
+extern "C" {
+    pub fn gluGetNurbsProperty(nurb: *mut GLUnurbs, property: GLenum, data: *mut GLfloat);
+}
+extern "C" {
+    pub fn gluGetString(name: GLenum) -> *const GLubyte;
+}
+extern "C" {
+    pub fn gluGetTessProperty(tess: *mut GLUtesselator, which: GLenum, data: *mut GLdouble);
+}
+extern "C" {
+    pub fn gluLoadSamplingMatrices(
+        nurb: *mut GLUnurbs,
+        model: *const GLfloat,
+        perspective: *const GLfloat,
+        view: *const GLint,
+    );
+}
+extern "C" {
+    pub fn gluLookAt(
+        eyeX: GLdouble,
+        eyeY: GLdouble,
+        eyeZ: GLdouble,
+        centerX: GLdouble,
+        centerY: GLdouble,
+        centerZ: GLdouble,
+        upX: GLdouble,
+        upY: GLdouble,
+        upZ: GLdouble,
+    );
+}
+extern "C" {
+    pub fn gluNewNurbsRenderer() -> *mut GLUnurbs;
+}
+extern "C" {
+    pub fn gluNewQuadric() -> *mut GLUquadric;
+}
+extern "C" {
+    pub fn gluNewTess() -> *mut GLUtesselator;
+}
+extern "C" {
+    pub fn gluNextContour(tess: *mut GLUtesselator, type_: GLenum);
+}
+extern "C" {
+    pub fn gluNurbsCallback(
+        nurb: *mut GLUnurbs,
+        which: GLenum,
+        CallBackFunc: ::std::option::Option<unsafe extern "C" fn() -> GLvoid>,
+    );
+}
+extern "C" {
+    pub fn gluNurbsCallbackData(nurb: *mut GLUnurbs, userData: *mut GLvoid);
+}
+extern "C" {
+    pub fn gluNurbsCallbackDataEXT(nurb: *mut GLUnurbs, userData: *mut GLvoid);
+}
+extern "C" {
+    pub fn gluNurbsCurve(
+        nurb: *mut GLUnurbs,
+        knotCount: GLint,
+        knots: *mut GLfloat,
+        stride: GLint,
+        control: *mut GLfloat,
+        order: GLint,
+        type_: GLenum,
+    );
+}
+extern "C" {
+    pub fn gluNurbsProperty(nurb: *mut GLUnurbs, property: GLenum, value: GLfloat);
+}
+extern "C" {
+    pub fn gluNurbsSurface(
+        nurb: *mut GLUnurbs,
+        sKnotCount: GLint,
+        sKnots: *mut GLfloat,
+        tKnotCount: GLint,
+        tKnots: *mut GLfloat,
+        sStride: GLint,
+        tStride: GLint,
+        control: *mut GLfloat,
+        sOrder: GLint,
+        tOrder: GLint,
+        type_: GLenum,
+    );
+}
+extern "C" {
+    pub fn gluOrtho2D(left: GLdouble, right: GLdouble, bottom: GLdouble, top: GLdouble);
+}
+extern "C" {
+    pub fn gluPartialDisk(
+        quad: *mut GLUquadric,
+        inner: GLdouble,
+        outer: GLdouble,
+        slices: GLint,
+        loops: GLint,
+        start: GLdouble,
+        sweep: GLdouble,
+    );
+}
+extern "C" {
+    pub fn gluPerspective(fovy: GLdouble, aspect: GLdouble, zNear: GLdouble, zFar: GLdouble);
+}
+extern "C" {
+    pub fn gluPickMatrix(
+        x: GLdouble,
+        y: GLdouble,
+        delX: GLdouble,
+        delY: GLdouble,
+        viewport: *mut GLint,
+    );
+}
+extern "C" {
+    pub fn gluProject(
+        objX: GLdouble,
+        objY: GLdouble,
+        objZ: GLdouble,
+        model: *const GLdouble,
+        proj: *const GLdouble,
+        view: *const GLint,
+        winX: *mut GLdouble,
+        winY: *mut GLdouble,
+        winZ: *mut GLdouble,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluPwlCurve(
+        nurb: *mut GLUnurbs,
+        count: GLint,
+        data: *mut GLfloat,
+        stride: GLint,
+        type_: GLenum,
+    );
+}
+extern "C" {
+    pub fn gluQuadricCallback(
+        quad: *mut GLUquadric,
+        which: GLenum,
+        CallBackFunc: ::std::option::Option<unsafe extern "C" fn() -> GLvoid>,
+    );
+}
+extern "C" {
+    pub fn gluQuadricDrawStyle(quad: *mut GLUquadric, draw: GLenum);
+}
+extern "C" {
+    pub fn gluQuadricNormals(quad: *mut GLUquadric, normal: GLenum);
+}
+extern "C" {
+    pub fn gluQuadricOrientation(quad: *mut GLUquadric, orientation: GLenum);
+}
+extern "C" {
+    pub fn gluQuadricTexture(quad: *mut GLUquadric, texture: GLboolean);
+}
+extern "C" {
+    pub fn gluScaleImage(
+        format: GLenum,
+        wIn: GLsizei,
+        hIn: GLsizei,
+        typeIn: GLenum,
+        dataIn: *const ::std::os::raw::c_void,
+        wOut: GLsizei,
+        hOut: GLsizei,
+        typeOut: GLenum,
+        dataOut: *mut GLvoid,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluSphere(quad: *mut GLUquadric, radius: GLdouble, slices: GLint, stacks: GLint);
+}
+extern "C" {
+    pub fn gluTessBeginContour(tess: *mut GLUtesselator);
+}
+extern "C" {
+    pub fn gluTessBeginPolygon(tess: *mut GLUtesselator, data: *mut GLvoid);
+}
+extern "C" {
+    pub fn gluTessCallback(
+        tess: *mut GLUtesselator,
+        which: GLenum,
+        CallBackFunc: ::std::option::Option<unsafe extern "C" fn() -> GLvoid>,
+    );
+}
+extern "C" {
+    pub fn gluTessEndContour(tess: *mut GLUtesselator);
+}
+extern "C" {
+    pub fn gluTessEndPolygon(tess: *mut GLUtesselator);
+}
+extern "C" {
+    pub fn gluTessNormal(
+        tess: *mut GLUtesselator,
+        valueX: GLdouble,
+        valueY: GLdouble,
+        valueZ: GLdouble,
+    );
+}
+extern "C" {
+    pub fn gluTessProperty(tess: *mut GLUtesselator, which: GLenum, data: GLdouble);
+}
+extern "C" {
+    pub fn gluTessVertex(tess: *mut GLUtesselator, location: *mut GLdouble, data: *mut GLvoid);
+}
+extern "C" {
+    pub fn gluUnProject(
+        winX: GLdouble,
+        winY: GLdouble,
+        winZ: GLdouble,
+        model: *const GLdouble,
+        proj: *const GLdouble,
+        view: *const GLint,
+        objX: *mut GLdouble,
+        objY: *mut GLdouble,
+        objZ: *mut GLdouble,
+    ) -> GLint;
+}
+extern "C" {
+    pub fn gluUnProject4(
+        winX: GLdouble,
+        winY: GLdouble,
+        winZ: GLdouble,
+        clipW: GLdouble,
+        model: *const GLdouble,
+        proj: *const GLdouble,
+        view: *const GLint,
+        nearPlane: GLdouble,
+        farPlane: GLdouble,
+        objX: *mut GLdouble,
+        objY: *mut GLdouble,
+        objZ: *mut GLdouble,
+        objW: *mut GLdouble,
+    ) -> GLint;
+}
+pub type p68K = ::std::os::raw::c_uint;
+pub type u32 = ::std::os::raw::c_uint;
+pub type u16 = ::std::os::raw::c_ushort;
+pub type u8 = ::std::os::raw::c_uchar;
+pub type s32 = ::std::os::raw::c_int;
+pub type s16 = ::std::os::raw::c_short;
+pub type s8 = ::std::os::raw::c_schar;
+pub type HOSTCALL = ::std::option::Option<unsafe extern "C" fn()>;
+extern "C" {
+    pub static mut hcalls: [HOSTCALL; 0usize];
+}
+extern "C" {
+    pub static mut STRam: *mut ::std::os::raw::c_char;
+}
+extern "C" {
+    pub static mut line_no: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn Init680x0() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn Start680x0();
+}
+extern "C" {
+    pub fn FlagException(num: ::std::os::raw::c_int);
+}
+extern "C" {
+    pub fn GetReg(reg: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn SetReg(reg: ::std::os::raw::c_int, val: ::std::os::raw::c_int);
+}
+extern "C" {
+    pub static mut exception_handlers: [p68K; 32usize];
+}
+extern "C" {
+    pub fn MemReadByte(pos: p68K) -> ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn MemReadWord(pos: p68K) -> ::std::os::raw::c_short;
+}
+extern "C" {
+    pub fn MemReadLong(pos: p68K) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn MemWriteByte(pos: p68K, val: ::std::os::raw::c_int);
+}
+extern "C" {
+    pub fn MemWriteWord(pos: p68K, val: ::std::os::raw::c_int);
+}
+extern "C" {
+    pub fn MemWriteLong(pos: p68K, val: ::std::os::raw::c_int);
+}
+extern "C" {
+    pub fn GetXFlag() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn GetZFlag() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn GetNFlag() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn GetVFlag() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn GetCFlag() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn SetZFlag(val: ::std::os::raw::c_char);
+}
+pub type _GLUfuncptr = ::std::option::Option<unsafe extern "C" fn() -> GLvoid>;
+pub type BOOL = ::std::os::raw::c_int;
+pub type bool_ = ::std::os::raw::c_int;
+pub const TRUE: ::std::os::raw::c_int = 1;
+pub const REG_D0: _bindgen_ty_1 = 0;
+pub const REG_D1: _bindgen_ty_1 = 1;
+pub const REG_D2: _bindgen_ty_1 = 2;
+pub const REG_D3: _bindgen_ty_1 = 3;
+pub const REG_D4: _bindgen_ty_1 = 4;
+pub const REG_D5: _bindgen_ty_1 = 5;
+pub const REG_D6: _bindgen_ty_1 = 6;
+pub const REG_D7: _bindgen_ty_1 = 7;
+pub const REG_A0: _bindgen_ty_1 = 8;
+pub const REG_A1: _bindgen_ty_1 = 9;
+pub const REG_A2: _bindgen_ty_1 = 10;
+pub const REG_A3: _bindgen_ty_1 = 11;
+pub const REG_A4: _bindgen_ty_1 = 12;
+pub const REG_A5: _bindgen_ty_1 = 13;
+pub const REG_A6: _bindgen_ty_1 = 14;
+pub const REG_A7: _bindgen_ty_1 = 15;
+pub type _bindgen_ty_1 = u32;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct ZNode {
+    pub z: ::std::os::raw::c_uint,
+    pub less: *mut ZNode,
+    pub more: *mut ZNode,
+    pub data: *mut ::std::os::raw::c_void,
+}
+#[test]
+fn bindgen_test_layout_ZNode() {
+    assert_eq!(
+        ::std::mem::size_of::<ZNode>(),
+        32usize,
+        concat!("Size of: ", stringify!(ZNode))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<ZNode>(),
+        8usize,
+        concat!("Alignment of ", stringify!(ZNode))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<ZNode>())).z as *const _ as usize },
+        0usize,
+        concat!("Offset of field: ", stringify!(ZNode), "::", stringify!(z))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<ZNode>())).less as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(ZNode),
+            "::",
+            stringify!(less)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<ZNode>())).more as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(ZNode),
+            "::",
+            stringify!(more)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<ZNode>())).data as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(ZNode),
+            "::",
+            stringify!(data)
+        )
+    );
+}
+extern "C" {
+    pub static mut qobj: *mut GLUquadricObj;
+}
+extern "C" {
+    pub static mut tobj: *mut GLUtesselator;
+}
+extern "C" {
+    pub static mut screen_tex: ::std::os::raw::c_uint;
+}
+extern "C" {
+    pub static mut znode_start: *mut ZNode;
+}
+extern "C" {
+    pub static mut znode_cur: *mut ZNode;
+}
+extern "C" {
+    pub fn beginCallback(which: GLenum);
+}
+extern "C" {
+    pub fn errorCallback(errorCode: GLenum);
+}
+extern "C" {
+    pub fn endCallback();
+}
+extern "C" {
+    pub fn vertexCallback(vertex: *mut GLvoid, poly_data: *mut GLvoid);
+}
+extern "C" {
+    pub fn combineCallback(
+        coords: *mut GLdouble,
+        vertex_data: *mut *mut GLdouble,
+        weight: *mut GLfloat,
+        dataOut: *mut *mut GLdouble,
+    );
+}
+extern "C" {
+    pub fn end_node();
+}
+extern "C" {
+    pub fn draw_3dview(node: *mut ZNode);
+}
+extern "C" {
+    pub fn draw_control_panel();
+}
+extern "C" {
+    pub fn set_gl_clear_col(rgb: ::std::os::raw::c_int);
+}
+extern "C" {
+    pub fn set_main_viewport();
+}
+extern "C" {
+    #[doc = "  \\brief Gets the name of the platform."]
+    pub fn SDL_GetPlatform() -> *const ::std::os::raw::c_char;
+}
+pub type u_char = ::std::os::raw::c_uchar;
+pub type u_short = ::std::os::raw::c_ushort;
+pub type u_int = ::std::os::raw::c_uint;
+pub type u_long = ::std::os::raw::c_ulong;
+pub type ushort = ::std::os::raw::c_ushort;
+pub type uint = ::std::os::raw::c_uint;
+pub type u_quad_t = u_int64_t;
+pub type quad_t = i64;
+pub type qaddr_t = *mut quad_t;
+pub type caddr_t = *mut ::std::os::raw::c_char;
+pub type daddr_t = i32;
+pub type dev_t = __darwin_dev_t;
+pub type fixpt_t = u_int32_t;
+pub type blkcnt_t = __darwin_blkcnt_t;
+pub type blksize_t = __darwin_blksize_t;
+pub type gid_t = __darwin_gid_t;
+pub type in_addr_t = __uint32_t;
+pub type in_port_t = __uint16_t;
+pub type ino_t = __darwin_ino_t;
+pub type ino64_t = __darwin_ino64_t;
+pub type key_t = __int32_t;
+pub type mode_t = __darwin_mode_t;
+pub type nlink_t = __uint16_t;
+pub type id_t = __darwin_id_t;
+pub type pid_t = __darwin_pid_t;
+pub type off_t = __darwin_off_t;
+pub type segsz_t = i32;
+pub type swblk_t = i32;
+pub type uid_t = __darwin_uid_t;
+pub type clock_t = __darwin_clock_t;
 pub type size_t = __darwin_size_t;
+pub type ssize_t = __darwin_ssize_t;
+pub type time_t = __darwin_time_t;
+pub type useconds_t = __darwin_useconds_t;
+pub type suseconds_t = __darwin_suseconds_t;
+pub type rsize_t = __darwin_size_t;
+pub type errno_t = ::std::os::raw::c_int;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct fd_set {
+    pub fds_bits: [__int32_t; 32usize],
+}
+#[test]
+fn bindgen_test_layout_fd_set() {
+    assert_eq!(
+        ::std::mem::size_of::<fd_set>(),
+        128usize,
+        concat!("Size of: ", stringify!(fd_set))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<fd_set>(),
+        4usize,
+        concat!("Alignment of ", stringify!(fd_set))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<fd_set>())).fds_bits as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(fd_set),
+            "::",
+            stringify!(fds_bits)
+        )
+    );
+}
+extern "C" {
+    pub fn __darwin_check_fd_set_overflow(
+        arg1: ::std::os::raw::c_int,
+        arg2: *const ::std::os::raw::c_void,
+        arg3: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
+}
+pub type fd_mask = __int32_t;
+pub type pthread_attr_t = __darwin_pthread_attr_t;
+pub type pthread_cond_t = __darwin_pthread_cond_t;
+pub type pthread_condattr_t = __darwin_pthread_condattr_t;
+pub type pthread_mutex_t = __darwin_pthread_mutex_t;
+pub type pthread_mutexattr_t = __darwin_pthread_mutexattr_t;
+pub type pthread_once_t = __darwin_pthread_once_t;
+pub type pthread_rwlock_t = __darwin_pthread_rwlock_t;
+pub type pthread_rwlockattr_t = __darwin_pthread_rwlockattr_t;
+pub type pthread_t = __darwin_pthread_t;
+pub type pthread_key_t = __darwin_pthread_key_t;
+pub type fsblkcnt_t = __darwin_fsblkcnt_t;
+pub type fsfilcnt_t = __darwin_fsfilcnt_t;
+pub type __darwin_nl_item = ::std::os::raw::c_int;
+pub type __darwin_wctrans_t = ::std::os::raw::c_int;
+pub type __darwin_wctype_t = __uint32_t;
+pub type va_list = __darwin_va_list;
 extern "C" {
     pub fn renameat(
         arg1: ::std::os::raw::c_int,
@@ -2493,7 +8861,6 @@ extern "C" {
         __prefix: *const ::std::os::raw::c_char,
     ) -> *mut ::std::os::raw::c_char;
 }
-pub type off_t = __darwin_off_t;
 extern "C" {
     pub fn fseeko(
         __stream: *mut FILE,
@@ -2540,7 +8907,6 @@ extern "C" {
         arg1: *mut __va_list_tag,
     ) -> ::std::os::raw::c_int;
 }
-pub type ssize_t = __darwin_ssize_t;
 extern "C" {
     pub fn dprintf(
         arg1: ::std::os::raw::c_int,
@@ -2706,8 +9072,6 @@ pub const idtype_t_P_ALL: idtype_t = 0;
 pub const idtype_t_P_PID: idtype_t = 1;
 pub const idtype_t_P_PGID: idtype_t = 2;
 pub type idtype_t = u32;
-pub type pid_t = __darwin_pid_t;
-pub type id_t = __darwin_id_t;
 pub type sig_atomic_t = ::std::os::raw::c_int;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -9124,7 +15488,6 @@ fn bindgen_test_layout___darwin_mcontext_avx512_64_full() {
     );
 }
 pub type mcontext_t = *mut __darwin_mcontext64;
-pub type pthread_attr_t = __darwin_pthread_attr_t;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct __darwin_sigaltstack {
@@ -9261,7 +15624,6 @@ fn bindgen_test_layout___darwin_ucontext() {
 }
 pub type ucontext_t = __darwin_ucontext;
 pub type sigset_t = __darwin_sigset_t;
-pub type uid_t = __darwin_uid_t;
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub union sigval {
@@ -9770,24 +16132,6 @@ extern "C" {
         ),
     >;
 }
-pub type int_least8_t = i8;
-pub type int_least16_t = i16;
-pub type int_least32_t = i32;
-pub type int_least64_t = i64;
-pub type uint_least8_t = u8;
-pub type uint_least16_t = u16;
-pub type uint_least32_t = u32;
-pub type uint_least64_t = u64;
-pub type int_fast8_t = i8;
-pub type int_fast16_t = i16;
-pub type int_fast32_t = i32;
-pub type int_fast64_t = i64;
-pub type uint_fast8_t = u8;
-pub type uint_fast16_t = u16;
-pub type uint_fast32_t = u32;
-pub type uint_fast64_t = u64;
-pub type intmax_t = ::std::os::raw::c_long;
-pub type uintmax_t = ::std::os::raw::c_ulong;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct timeval {
@@ -12281,8 +18625,6 @@ extern "C" {
 extern "C" {
     pub fn unsetenv(arg1: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int;
 }
-pub type dev_t = __darwin_dev_t;
-pub type mode_t = __darwin_mode_t;
 extern "C" {
     pub fn arc4random() -> u32;
 }
@@ -12550,6 +18892,8 @@ extern "C" {
 extern "C" {
     pub static mut suboptarg: *mut ::std::os::raw::c_char;
 }
+pub type max_align_t = u128;
+pub type __gnuc_va_list = __builtin_va_list;
 extern "C" {
     pub fn memchr(
         __s: *const ::std::os::raw::c_void,
@@ -12735,8 +19079,6 @@ extern "C" {
 extern "C" {
     pub fn strsignal(__sig: ::std::os::raw::c_int) -> *mut ::std::os::raw::c_char;
 }
-pub type rsize_t = __darwin_size_t;
-pub type errno_t = ::std::os::raw::c_int;
 extern "C" {
     pub fn memset_s(
         __s: *mut ::std::os::raw::c_void,
@@ -12884,775 +19226,7 @@ extern "C" {
 extern "C" {
     pub fn flsll(arg1: ::std::os::raw::c_longlong) -> ::std::os::raw::c_int;
 }
-pub type float_t = f32;
-pub type double_t = f64;
-extern "C" {
-    pub fn __math_errhandling() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn __fpclassifyf(arg1: f32) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn __fpclassifyd(arg1: f64) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn __fpclassifyl(arg1: u128) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn acosf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn acos(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn acosl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn asinf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn asin(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn asinl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn atanf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn atan(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn atanl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn atan2f(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn atan2(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn atan2l(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn cosf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn cos(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn cosl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn sinf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn sin(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn sinl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn tanf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn tan(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn tanl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn acoshf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn acosh(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn acoshl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn asinhf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn asinh(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn asinhl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn atanhf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn atanh(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn atanhl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn coshf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn cosh(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn coshl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn sinhf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn sinh(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn sinhl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn tanhf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn tanh(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn tanhl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn expf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn exp(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn expl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn exp2f(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn exp2(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn exp2l(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn expm1f(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn expm1(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn expm1l(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn logf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn log(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn logl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn log10f(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn log10(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn log10l(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn log2f(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn log2(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn log2l(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn log1pf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn log1p(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn log1pl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn logbf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn logb(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn logbl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn modff(arg1: f32, arg2: *mut f32) -> f32;
-}
-extern "C" {
-    pub fn modf(arg1: f64, arg2: *mut f64) -> f64;
-}
-extern "C" {
-    pub fn modfl(arg1: u128, arg2: *mut u128) -> u128;
-}
-extern "C" {
-    pub fn ldexpf(arg1: f32, arg2: ::std::os::raw::c_int) -> f32;
-}
-extern "C" {
-    pub fn ldexp(arg1: f64, arg2: ::std::os::raw::c_int) -> f64;
-}
-extern "C" {
-    pub fn ldexpl(arg1: u128, arg2: ::std::os::raw::c_int) -> u128;
-}
-extern "C" {
-    pub fn frexpf(arg1: f32, arg2: *mut ::std::os::raw::c_int) -> f32;
-}
-extern "C" {
-    pub fn frexp(arg1: f64, arg2: *mut ::std::os::raw::c_int) -> f64;
-}
-extern "C" {
-    pub fn frexpl(arg1: u128, arg2: *mut ::std::os::raw::c_int) -> u128;
-}
-extern "C" {
-    pub fn ilogbf(arg1: f32) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn ilogb(arg1: f64) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn ilogbl(arg1: u128) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn scalbnf(arg1: f32, arg2: ::std::os::raw::c_int) -> f32;
-}
-extern "C" {
-    pub fn scalbn(arg1: f64, arg2: ::std::os::raw::c_int) -> f64;
-}
-extern "C" {
-    pub fn scalbnl(arg1: u128, arg2: ::std::os::raw::c_int) -> u128;
-}
-extern "C" {
-    pub fn scalblnf(arg1: f32, arg2: ::std::os::raw::c_long) -> f32;
-}
-extern "C" {
-    pub fn scalbln(arg1: f64, arg2: ::std::os::raw::c_long) -> f64;
-}
-extern "C" {
-    pub fn scalblnl(arg1: u128, arg2: ::std::os::raw::c_long) -> u128;
-}
-extern "C" {
-    pub fn fabsf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn fabs(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn fabsl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn cbrtf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn cbrt(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn cbrtl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn hypotf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn hypot(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn hypotl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn powf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn pow(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn powl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn sqrtf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn sqrt(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn sqrtl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn erff(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn erf(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn erfl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn erfcf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn erfc(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn erfcl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn lgammaf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn lgamma(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn lgammal(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn tgammaf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn tgamma(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn tgammal(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn ceilf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn ceil(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn ceill(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn floorf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn floor(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn floorl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn nearbyintf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn nearbyint(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn nearbyintl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn rintf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn rint(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn rintl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn lrintf(arg1: f32) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn lrint(arg1: f64) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn lrintl(arg1: u128) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn roundf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn round(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn roundl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn lroundf(arg1: f32) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn lround(arg1: f64) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn lroundl(arg1: u128) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn llrintf(arg1: f32) -> ::std::os::raw::c_longlong;
-}
-extern "C" {
-    pub fn llrint(arg1: f64) -> ::std::os::raw::c_longlong;
-}
-extern "C" {
-    pub fn llrintl(arg1: u128) -> ::std::os::raw::c_longlong;
-}
-extern "C" {
-    pub fn llroundf(arg1: f32) -> ::std::os::raw::c_longlong;
-}
-extern "C" {
-    pub fn llround(arg1: f64) -> ::std::os::raw::c_longlong;
-}
-extern "C" {
-    pub fn llroundl(arg1: u128) -> ::std::os::raw::c_longlong;
-}
-extern "C" {
-    pub fn truncf(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn trunc(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn truncl(arg1: u128) -> u128;
-}
-extern "C" {
-    pub fn fmodf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn fmod(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn fmodl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn remainderf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn remainder(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn remainderl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn remquof(arg1: f32, arg2: f32, arg3: *mut ::std::os::raw::c_int) -> f32;
-}
-extern "C" {
-    pub fn remquo(arg1: f64, arg2: f64, arg3: *mut ::std::os::raw::c_int) -> f64;
-}
-extern "C" {
-    pub fn remquol(arg1: u128, arg2: u128, arg3: *mut ::std::os::raw::c_int) -> u128;
-}
-extern "C" {
-    pub fn copysignf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn copysign(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn copysignl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn nanf(arg1: *const ::std::os::raw::c_char) -> f32;
-}
-extern "C" {
-    pub fn nan(arg1: *const ::std::os::raw::c_char) -> f64;
-}
-extern "C" {
-    pub fn nanl(arg1: *const ::std::os::raw::c_char) -> u128;
-}
-extern "C" {
-    pub fn nextafterf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn nextafter(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn nextafterl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn nexttoward(arg1: f64, arg2: u128) -> f64;
-}
-extern "C" {
-    pub fn nexttowardf(arg1: f32, arg2: u128) -> f32;
-}
-extern "C" {
-    pub fn nexttowardl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn fdimf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn fdim(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn fdiml(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn fmaxf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn fmax(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn fmaxl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn fminf(arg1: f32, arg2: f32) -> f32;
-}
-extern "C" {
-    pub fn fmin(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn fminl(arg1: u128, arg2: u128) -> u128;
-}
-extern "C" {
-    pub fn fmaf(arg1: f32, arg2: f32, arg3: f32) -> f32;
-}
-extern "C" {
-    pub fn fma(arg1: f64, arg2: f64, arg3: f64) -> f64;
-}
-extern "C" {
-    pub fn fmal(arg1: u128, arg2: u128, arg3: u128) -> u128;
-}
-extern "C" {
-    pub fn __inff() -> f32;
-}
-extern "C" {
-    pub fn __inf() -> f64;
-}
-extern "C" {
-    pub fn __infl() -> u128;
-}
-extern "C" {
-    pub fn __nan() -> f32;
-}
-extern "C" {
-    pub fn __exp10f(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn __exp10(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn __cospif(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn __cospi(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn __sinpif(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn __sinpi(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn __tanpif(arg1: f32) -> f32;
-}
-extern "C" {
-    pub fn __tanpi(arg1: f64) -> f64;
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct __float2 {
-    pub __sinval: f32,
-    pub __cosval: f32,
-}
-#[test]
-fn bindgen_test_layout___float2() {
-    assert_eq!(
-        ::std::mem::size_of::<__float2>(),
-        8usize,
-        concat!("Size of: ", stringify!(__float2))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<__float2>(),
-        4usize,
-        concat!("Alignment of ", stringify!(__float2))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<__float2>())).__sinval as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__float2),
-            "::",
-            stringify!(__sinval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<__float2>())).__cosval as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__float2),
-            "::",
-            stringify!(__cosval)
-        )
-    );
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct __double2 {
-    pub __sinval: f64,
-    pub __cosval: f64,
-}
-#[test]
-fn bindgen_test_layout___double2() {
-    assert_eq!(
-        ::std::mem::size_of::<__double2>(),
-        16usize,
-        concat!("Size of: ", stringify!(__double2))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<__double2>(),
-        8usize,
-        concat!("Alignment of ", stringify!(__double2))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<__double2>())).__sinval as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__double2),
-            "::",
-            stringify!(__sinval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<__double2>())).__cosval as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(__double2),
-            "::",
-            stringify!(__cosval)
-        )
-    );
-}
-extern "C" {
-    pub fn __sincosf_stret(arg1: f32) -> __float2;
-}
-extern "C" {
-    pub fn __sincos_stret(arg1: f64) -> __double2;
-}
-extern "C" {
-    pub fn __sincospif_stret(arg1: f32) -> __float2;
-}
-extern "C" {
-    pub fn __sincospi_stret(arg1: f64) -> __double2;
-}
-extern "C" {
-    pub fn j0(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn j1(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn jn(arg1: ::std::os::raw::c_int, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn y0(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn y1(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn yn(arg1: ::std::os::raw::c_int, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn scalb(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub static mut signgam: ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn rinttol(arg1: f64) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn roundtol(arg1: f64) -> ::std::os::raw::c_long;
-}
-extern "C" {
-    pub fn drem(arg1: f64, arg2: f64) -> f64;
-}
-extern "C" {
-    pub fn finite(arg1: f64) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn gamma(arg1: f64) -> f64;
-}
-extern "C" {
-    pub fn significand(arg1: f64) -> f64;
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct exception {
-    pub type_: ::std::os::raw::c_int,
-    pub name: *mut ::std::os::raw::c_char,
-    pub arg1: f64,
-    pub arg2: f64,
-    pub retval: f64,
-}
-#[test]
-fn bindgen_test_layout_exception() {
-    assert_eq!(
-        ::std::mem::size_of::<exception>(),
-        40usize,
-        concat!("Size of: ", stringify!(exception))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<exception>(),
-        8usize,
-        concat!("Alignment of ", stringify!(exception))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<exception>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(exception),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<exception>())).name as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(exception),
-            "::",
-            stringify!(name)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<exception>())).arg1 as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(exception),
-            "::",
-            stringify!(arg1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<exception>())).arg2 as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(exception),
-            "::",
-            stringify!(arg2)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<exception>())).retval as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(exception),
-            "::",
-            stringify!(retval)
-        )
-    );
-}
-pub type clock_t = __darwin_clock_t;
-pub type time_t = __darwin_time_t;
+pub type mbstate_t = __darwin_mbstate_t;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct timespec {
@@ -13947,93 +19521,6 @@ extern "C" {
 extern "C" {
     pub fn timespec_get(ts: *mut timespec, base: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
 }
-extern "C" {
-    pub fn __assert_rtn(
-        arg1: *const ::std::os::raw::c_char,
-        arg2: *const ::std::os::raw::c_char,
-        arg3: ::std::os::raw::c_int,
-        arg4: *const ::std::os::raw::c_char,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Gets the name of the platform."]
-    pub fn SDL_GetPlatform() -> *const ::std::os::raw::c_char;
-}
-pub type u_char = ::std::os::raw::c_uchar;
-pub type u_short = ::std::os::raw::c_ushort;
-pub type u_int = ::std::os::raw::c_uint;
-pub type u_long = ::std::os::raw::c_ulong;
-pub type ushort = ::std::os::raw::c_ushort;
-pub type uint = ::std::os::raw::c_uint;
-pub type u_quad_t = u_int64_t;
-pub type quad_t = i64;
-pub type qaddr_t = *mut quad_t;
-pub type caddr_t = *mut ::std::os::raw::c_char;
-pub type daddr_t = i32;
-pub type fixpt_t = u_int32_t;
-pub type blkcnt_t = __darwin_blkcnt_t;
-pub type blksize_t = __darwin_blksize_t;
-pub type gid_t = __darwin_gid_t;
-pub type in_addr_t = __uint32_t;
-pub type in_port_t = __uint16_t;
-pub type ino_t = __darwin_ino_t;
-pub type ino64_t = __darwin_ino64_t;
-pub type key_t = __int32_t;
-pub type nlink_t = __uint16_t;
-pub type segsz_t = i32;
-pub type swblk_t = i32;
-pub type useconds_t = __darwin_useconds_t;
-pub type suseconds_t = __darwin_suseconds_t;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct fd_set {
-    pub fds_bits: [__int32_t; 32usize],
-}
-#[test]
-fn bindgen_test_layout_fd_set() {
-    assert_eq!(
-        ::std::mem::size_of::<fd_set>(),
-        128usize,
-        concat!("Size of: ", stringify!(fd_set))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<fd_set>(),
-        4usize,
-        concat!("Alignment of ", stringify!(fd_set))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<fd_set>())).fds_bits as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(fd_set),
-            "::",
-            stringify!(fds_bits)
-        )
-    );
-}
-extern "C" {
-    pub fn __darwin_check_fd_set_overflow(
-        arg1: ::std::os::raw::c_int,
-        arg2: *const ::std::os::raw::c_void,
-        arg3: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-pub type fd_mask = __int32_t;
-pub type pthread_cond_t = __darwin_pthread_cond_t;
-pub type pthread_condattr_t = __darwin_pthread_condattr_t;
-pub type pthread_mutex_t = __darwin_pthread_mutex_t;
-pub type pthread_mutexattr_t = __darwin_pthread_mutexattr_t;
-pub type pthread_once_t = __darwin_pthread_once_t;
-pub type pthread_rwlock_t = __darwin_pthread_rwlock_t;
-pub type pthread_rwlockattr_t = __darwin_pthread_rwlockattr_t;
-pub type pthread_t = __darwin_pthread_t;
-pub type pthread_key_t = __darwin_pthread_key_t;
-pub type fsblkcnt_t = __darwin_fsblkcnt_t;
-pub type fsfilcnt_t = __darwin_fsfilcnt_t;
-pub type max_align_t = u128;
-pub type __gnuc_va_list = __builtin_va_list;
-pub type mbstate_t = __darwin_mbstate_t;
 pub type wint_t = __darwin_wint_t;
 pub type wctype_t = __darwin_wctype_t;
 #[repr(C)]
@@ -14805,6 +20292,773 @@ extern "C" {
         __base: ::std::os::raw::c_int,
     ) -> uintmax_t;
 }
+pub type float_t = f32;
+pub type double_t = f64;
+extern "C" {
+    pub fn __math_errhandling() -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn __fpclassifyf(arg1: f32) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn __fpclassifyd(arg1: f64) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn __fpclassifyl(arg1: u128) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn acosf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn acos(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn acosl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn asinf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn asin(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn asinl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn atanf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn atan(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn atanl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn atan2f(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn atan2(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn atan2l(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn cosf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn cos(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn cosl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn sinf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn sin(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn sinl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn tanf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn tan(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn tanl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn acoshf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn acosh(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn acoshl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn asinhf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn asinh(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn asinhl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn atanhf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn atanh(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn atanhl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn coshf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn cosh(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn coshl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn sinhf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn sinh(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn sinhl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn tanhf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn tanh(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn tanhl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn expf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn exp(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn expl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn exp2f(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn exp2(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn exp2l(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn expm1f(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn expm1(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn expm1l(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn logf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn log(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn logl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn log10f(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn log10(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn log10l(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn log2f(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn log2(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn log2l(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn log1pf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn log1p(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn log1pl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn logbf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn logb(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn logbl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn modff(arg1: f32, arg2: *mut f32) -> f32;
+}
+extern "C" {
+    pub fn modf(arg1: f64, arg2: *mut f64) -> f64;
+}
+extern "C" {
+    pub fn modfl(arg1: u128, arg2: *mut u128) -> u128;
+}
+extern "C" {
+    pub fn ldexpf(arg1: f32, arg2: ::std::os::raw::c_int) -> f32;
+}
+extern "C" {
+    pub fn ldexp(arg1: f64, arg2: ::std::os::raw::c_int) -> f64;
+}
+extern "C" {
+    pub fn ldexpl(arg1: u128, arg2: ::std::os::raw::c_int) -> u128;
+}
+extern "C" {
+    pub fn frexpf(arg1: f32, arg2: *mut ::std::os::raw::c_int) -> f32;
+}
+extern "C" {
+    pub fn frexp(arg1: f64, arg2: *mut ::std::os::raw::c_int) -> f64;
+}
+extern "C" {
+    pub fn frexpl(arg1: u128, arg2: *mut ::std::os::raw::c_int) -> u128;
+}
+extern "C" {
+    pub fn ilogbf(arg1: f32) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn ilogb(arg1: f64) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn ilogbl(arg1: u128) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn scalbnf(arg1: f32, arg2: ::std::os::raw::c_int) -> f32;
+}
+extern "C" {
+    pub fn scalbn(arg1: f64, arg2: ::std::os::raw::c_int) -> f64;
+}
+extern "C" {
+    pub fn scalbnl(arg1: u128, arg2: ::std::os::raw::c_int) -> u128;
+}
+extern "C" {
+    pub fn scalblnf(arg1: f32, arg2: ::std::os::raw::c_long) -> f32;
+}
+extern "C" {
+    pub fn scalbln(arg1: f64, arg2: ::std::os::raw::c_long) -> f64;
+}
+extern "C" {
+    pub fn scalblnl(arg1: u128, arg2: ::std::os::raw::c_long) -> u128;
+}
+extern "C" {
+    pub fn fabsf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn fabs(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn fabsl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn cbrtf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn cbrt(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn cbrtl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn hypotf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn hypot(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn hypotl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn powf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn pow(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn powl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn sqrtf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn sqrt(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn sqrtl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn erff(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn erf(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn erfl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn erfcf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn erfc(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn erfcl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn lgammaf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn lgamma(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn lgammal(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn tgammaf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn tgamma(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn tgammal(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn ceilf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn ceil(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn ceill(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn floorf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn floor(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn floorl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn nearbyintf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn nearbyint(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn nearbyintl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn rintf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn rint(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn rintl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn lrintf(arg1: f32) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn lrint(arg1: f64) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn lrintl(arg1: u128) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn roundf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn round(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn roundl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn lroundf(arg1: f32) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn lround(arg1: f64) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn lroundl(arg1: u128) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn llrintf(arg1: f32) -> ::std::os::raw::c_longlong;
+}
+extern "C" {
+    pub fn llrint(arg1: f64) -> ::std::os::raw::c_longlong;
+}
+extern "C" {
+    pub fn llrintl(arg1: u128) -> ::std::os::raw::c_longlong;
+}
+extern "C" {
+    pub fn llroundf(arg1: f32) -> ::std::os::raw::c_longlong;
+}
+extern "C" {
+    pub fn llround(arg1: f64) -> ::std::os::raw::c_longlong;
+}
+extern "C" {
+    pub fn llroundl(arg1: u128) -> ::std::os::raw::c_longlong;
+}
+extern "C" {
+    pub fn truncf(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn trunc(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn truncl(arg1: u128) -> u128;
+}
+extern "C" {
+    pub fn fmodf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn fmod(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn fmodl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn remainderf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn remainder(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn remainderl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn remquof(arg1: f32, arg2: f32, arg3: *mut ::std::os::raw::c_int) -> f32;
+}
+extern "C" {
+    pub fn remquo(arg1: f64, arg2: f64, arg3: *mut ::std::os::raw::c_int) -> f64;
+}
+extern "C" {
+    pub fn remquol(arg1: u128, arg2: u128, arg3: *mut ::std::os::raw::c_int) -> u128;
+}
+extern "C" {
+    pub fn copysignf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn copysign(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn copysignl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn nanf(arg1: *const ::std::os::raw::c_char) -> f32;
+}
+extern "C" {
+    pub fn nan(arg1: *const ::std::os::raw::c_char) -> f64;
+}
+extern "C" {
+    pub fn nanl(arg1: *const ::std::os::raw::c_char) -> u128;
+}
+extern "C" {
+    pub fn nextafterf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn nextafter(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn nextafterl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn nexttoward(arg1: f64, arg2: u128) -> f64;
+}
+extern "C" {
+    pub fn nexttowardf(arg1: f32, arg2: u128) -> f32;
+}
+extern "C" {
+    pub fn nexttowardl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn fdimf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn fdim(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn fdiml(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn fmaxf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn fmax(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn fmaxl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn fminf(arg1: f32, arg2: f32) -> f32;
+}
+extern "C" {
+    pub fn fmin(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn fminl(arg1: u128, arg2: u128) -> u128;
+}
+extern "C" {
+    pub fn fmaf(arg1: f32, arg2: f32, arg3: f32) -> f32;
+}
+extern "C" {
+    pub fn fma(arg1: f64, arg2: f64, arg3: f64) -> f64;
+}
+extern "C" {
+    pub fn fmal(arg1: u128, arg2: u128, arg3: u128) -> u128;
+}
+extern "C" {
+    pub fn __inff() -> f32;
+}
+extern "C" {
+    pub fn __inf() -> f64;
+}
+extern "C" {
+    pub fn __infl() -> u128;
+}
+extern "C" {
+    pub fn __nan() -> f32;
+}
+extern "C" {
+    pub fn __exp10f(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn __exp10(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn __cospif(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn __cospi(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn __sinpif(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn __sinpi(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn __tanpif(arg1: f32) -> f32;
+}
+extern "C" {
+    pub fn __tanpi(arg1: f64) -> f64;
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __float2 {
+    pub __sinval: f32,
+    pub __cosval: f32,
+}
+#[test]
+fn bindgen_test_layout___float2() {
+    assert_eq!(
+        ::std::mem::size_of::<__float2>(),
+        8usize,
+        concat!("Size of: ", stringify!(__float2))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<__float2>(),
+        4usize,
+        concat!("Alignment of ", stringify!(__float2))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__float2>())).__sinval as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__float2),
+            "::",
+            stringify!(__sinval)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__float2>())).__cosval as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__float2),
+            "::",
+            stringify!(__cosval)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __double2 {
+    pub __sinval: f64,
+    pub __cosval: f64,
+}
+#[test]
+fn bindgen_test_layout___double2() {
+    assert_eq!(
+        ::std::mem::size_of::<__double2>(),
+        16usize,
+        concat!("Size of: ", stringify!(__double2))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<__double2>(),
+        8usize,
+        concat!("Alignment of ", stringify!(__double2))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__double2>())).__sinval as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__double2),
+            "::",
+            stringify!(__sinval)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<__double2>())).__cosval as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(__double2),
+            "::",
+            stringify!(__cosval)
+        )
+    );
+}
+extern "C" {
+    pub fn __sincosf_stret(arg1: f32) -> __float2;
+}
+extern "C" {
+    pub fn __sincos_stret(arg1: f64) -> __double2;
+}
+extern "C" {
+    pub fn __sincospif_stret(arg1: f32) -> __float2;
+}
+extern "C" {
+    pub fn __sincospi_stret(arg1: f64) -> __double2;
+}
+extern "C" {
+    pub fn j0(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn j1(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn jn(arg1: ::std::os::raw::c_int, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn y0(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn y1(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn yn(arg1: ::std::os::raw::c_int, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn scalb(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub static mut signgam: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rinttol(arg1: f64) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn roundtol(arg1: f64) -> ::std::os::raw::c_long;
+}
+extern "C" {
+    pub fn drem(arg1: f64, arg2: f64) -> f64;
+}
+extern "C" {
+    pub fn finite(arg1: f64) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn gamma(arg1: f64) -> f64;
+}
+extern "C" {
+    pub fn significand(arg1: f64) -> f64;
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct exception {
+    pub type_: ::std::os::raw::c_int,
+    pub name: *mut ::std::os::raw::c_char,
+    pub arg1: f64,
+    pub arg2: f64,
+    pub retval: f64,
+}
+#[test]
+fn bindgen_test_layout_exception() {
+    assert_eq!(
+        ::std::mem::size_of::<exception>(),
+        40usize,
+        concat!("Size of: ", stringify!(exception))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<exception>(),
+        8usize,
+        concat!("Alignment of ", stringify!(exception))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<exception>())).type_ as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(exception),
+            "::",
+            stringify!(type_)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<exception>())).name as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(exception),
+            "::",
+            stringify!(name)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<exception>())).arg1 as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(exception),
+            "::",
+            stringify!(arg1)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<exception>())).arg2 as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(exception),
+            "::",
+            stringify!(arg2)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<exception>())).retval as *const _ as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(exception),
+            "::",
+            stringify!(retval)
+        )
+    );
+}
 pub const SDL_bool_SDL_FALSE: SDL_bool = 0;
 pub const SDL_bool_SDL_TRUE: SDL_bool = 1;
 pub type SDL_bool = u32;
@@ -15322,2615 +21576,6 @@ extern "C" {
         inbuf: *const ::std::os::raw::c_char,
         inbytesleft: size_t,
     ) -> *mut ::std::os::raw::c_char;
-}
-#[doc = "  The prototype for the application's main() function"]
-pub type SDL_main_func = ::std::option::Option<
-    unsafe extern "C" fn(
-        argc: ::std::os::raw::c_int,
-        argv: *mut *mut ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int,
->;
-extern "C" {
-    pub fn SDL_main(
-        argc: ::std::os::raw::c_int,
-        argv: *mut *mut ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  This is called by the real SDL main function to let the rest of the"]
-    #[doc = "  library know that initialization was done properly."]
-    #[doc = ""]
-    #[doc = "  Calling this yourself without knowing what you're doing can cause"]
-    #[doc = "  crashes and hard to diagnose problems with your application."]
-    pub fn SDL_SetMainReady();
-}
-#[doc = "< Retry the assert immediately."]
-pub const SDL_AssertState_SDL_ASSERTION_RETRY: SDL_AssertState = 0;
-#[doc = "< Make the debugger trigger a breakpoint."]
-pub const SDL_AssertState_SDL_ASSERTION_BREAK: SDL_AssertState = 1;
-#[doc = "< Terminate the program."]
-pub const SDL_AssertState_SDL_ASSERTION_ABORT: SDL_AssertState = 2;
-#[doc = "< Ignore the assert."]
-pub const SDL_AssertState_SDL_ASSERTION_IGNORE: SDL_AssertState = 3;
-#[doc = "< Ignore the assert from now on."]
-pub const SDL_AssertState_SDL_ASSERTION_ALWAYS_IGNORE: SDL_AssertState = 4;
-pub type SDL_AssertState = u32;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_AssertData {
-    pub always_ignore: ::std::os::raw::c_int,
-    pub trigger_count: ::std::os::raw::c_uint,
-    pub condition: *const ::std::os::raw::c_char,
-    pub filename: *const ::std::os::raw::c_char,
-    pub linenum: ::std::os::raw::c_int,
-    pub function: *const ::std::os::raw::c_char,
-    pub next: *const SDL_AssertData,
-}
-#[test]
-fn bindgen_test_layout_SDL_AssertData() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_AssertData>(),
-        48usize,
-        concat!("Size of: ", stringify!(SDL_AssertData))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_AssertData>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_AssertData))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).always_ignore as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(always_ignore)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).trigger_count as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(trigger_count)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).condition as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(condition)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).filename as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(filename)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).linenum as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(linenum)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).function as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(function)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AssertData>())).next as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AssertData),
-            "::",
-            stringify!(next)
-        )
-    );
-}
-extern "C" {
-    pub fn SDL_ReportAssertion(
-        arg1: *mut SDL_AssertData,
-        arg2: *const ::std::os::raw::c_char,
-        arg3: *const ::std::os::raw::c_char,
-        arg4: ::std::os::raw::c_int,
-    ) -> SDL_AssertState;
-}
-pub type SDL_AssertionHandler = ::std::option::Option<
-    unsafe extern "C" fn(
-        data: *const SDL_AssertData,
-        userdata: *mut ::std::os::raw::c_void,
-    ) -> SDL_AssertState,
->;
-extern "C" {
-    #[doc = "  \\brief Set an application-defined assertion handler."]
-    #[doc = ""]
-    #[doc = "  This allows an app to show its own assertion UI and/or force the"]
-    #[doc = "  response to an assertion failure. If the app doesn't provide this, SDL"]
-    #[doc = "  will try to do the right thing, popping up a system-specific GUI dialog,"]
-    #[doc = "  and probably minimizing any fullscreen windows."]
-    #[doc = ""]
-    #[doc = "  This callback may fire from any thread, but it runs wrapped in a mutex, so"]
-    #[doc = "  it will only fire from one thread at a time."]
-    #[doc = ""]
-    #[doc = "  Setting the callback to NULL restores SDL's original internal handler."]
-    #[doc = ""]
-    #[doc = "  This callback is NOT reset to SDL's internal handler upon SDL_Quit()!"]
-    #[doc = ""]
-    #[doc = "  Return SDL_AssertState value of how to handle the assertion failure."]
-    #[doc = ""]
-    #[doc = "  \\param handler Callback function, called when an assertion fails."]
-    #[doc = "  \\param userdata A pointer passed to the callback as-is."]
-    pub fn SDL_SetAssertionHandler(
-        handler: SDL_AssertionHandler,
-        userdata: *mut ::std::os::raw::c_void,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Get the default assertion handler."]
-    #[doc = ""]
-    #[doc = "  This returns the function pointer that is called by default when an"]
-    #[doc = "   assertion is triggered. This is an internal function provided by SDL,"]
-    #[doc = "   that is used for assertions when SDL_SetAssertionHandler() hasn't been"]
-    #[doc = "   used to provide a different function."]
-    #[doc = ""]
-    #[doc = "  \\return The default SDL_AssertionHandler that is called when an assert triggers."]
-    pub fn SDL_GetDefaultAssertionHandler() -> SDL_AssertionHandler;
-}
-extern "C" {
-    #[doc = "  \\brief Get the current assertion handler."]
-    #[doc = ""]
-    #[doc = "  This returns the function pointer that is called when an assertion is"]
-    #[doc = "   triggered. This is either the value last passed to"]
-    #[doc = "   SDL_SetAssertionHandler(), or if no application-specified function is"]
-    #[doc = "   set, is equivalent to calling SDL_GetDefaultAssertionHandler()."]
-    #[doc = ""]
-    #[doc = "   \\param puserdata Pointer to a void*, which will store the \"userdata\""]
-    #[doc = "                    pointer that was passed to SDL_SetAssertionHandler()."]
-    #[doc = "                    This value will always be NULL for the default handler."]
-    #[doc = "                    If you don't care about this data, it is safe to pass"]
-    #[doc = "                    a NULL pointer to this function to ignore it."]
-    #[doc = "  \\return The SDL_AssertionHandler that is called when an assert triggers."]
-    pub fn SDL_GetAssertionHandler(
-        puserdata: *mut *mut ::std::os::raw::c_void,
-    ) -> SDL_AssertionHandler;
-}
-extern "C" {
-    #[doc = "  \\brief Get a list of all assertion failures."]
-    #[doc = ""]
-    #[doc = "  Get all assertions triggered since last call to SDL_ResetAssertionReport(),"]
-    #[doc = "  or the start of the program."]
-    #[doc = ""]
-    #[doc = "  The proper way to examine this data looks something like this:"]
-    #[doc = ""]
-    #[doc = "  <code>"]
-    #[doc = "  const SDL_AssertData *item = SDL_GetAssertionReport();"]
-    #[doc = "  while (item) {"]
-    #[doc = "      printf(\"'%s', %s (%s:%d), triggered %u times, always ignore: %s.\\\\n\","]
-    #[doc = "             item->condition, item->function, item->filename,"]
-    #[doc = "             item->linenum, item->trigger_count,"]
-    #[doc = "             item->always_ignore ? \"yes\" : \"no\");"]
-    #[doc = "      item = item->next;"]
-    #[doc = "  }"]
-    #[doc = "  </code>"]
-    #[doc = ""]
-    #[doc = "  \\return List of all assertions."]
-    #[doc = "  \\sa SDL_ResetAssertionReport"]
-    pub fn SDL_GetAssertionReport() -> *const SDL_AssertData;
-}
-extern "C" {
-    #[doc = "  \\brief Reset the list of all assertion failures."]
-    #[doc = ""]
-    #[doc = "  Reset list of all assertions triggered."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetAssertionReport"]
-    pub fn SDL_ResetAssertionReport();
-}
-pub type SDL_SpinLock = ::std::os::raw::c_int;
-extern "C" {
-    #[doc = " \\brief Try to lock a spin lock by setting it to a non-zero value."]
-    #[doc = ""]
-    #[doc = " \\param lock Points to the lock."]
-    #[doc = ""]
-    #[doc = " \\return SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already held."]
-    pub fn SDL_AtomicTryLock(lock: *mut SDL_SpinLock) -> SDL_bool;
-}
-extern "C" {
-    #[doc = " \\brief Lock a spin lock by setting it to a non-zero value."]
-    #[doc = ""]
-    #[doc = " \\param lock Points to the lock."]
-    pub fn SDL_AtomicLock(lock: *mut SDL_SpinLock);
-}
-extern "C" {
-    #[doc = " \\brief Unlock a spin lock by setting it to 0. Always returns immediately"]
-    #[doc = ""]
-    #[doc = " \\param lock Points to the lock."]
-    pub fn SDL_AtomicUnlock(lock: *mut SDL_SpinLock);
-}
-extern "C" {
-    #[doc = " Memory barriers are designed to prevent reads and writes from being"]
-    #[doc = " reordered by the compiler and being seen out of order on multi-core CPUs."]
-    #[doc = ""]
-    #[doc = " A typical pattern would be for thread A to write some data and a flag,"]
-    #[doc = " and for thread B to read the flag and get the data. In this case you"]
-    #[doc = " would insert a release barrier between writing the data and the flag,"]
-    #[doc = " guaranteeing that the data write completes no later than the flag is"]
-    #[doc = " written, and you would insert an acquire barrier between reading the"]
-    #[doc = " flag and reading the data, to ensure that all the reads associated"]
-    #[doc = " with the flag have completed."]
-    #[doc = ""]
-    #[doc = " In this pattern you should always see a release barrier paired with"]
-    #[doc = " an acquire barrier and you should gate the data reads/writes with a"]
-    #[doc = " single flag variable."]
-    #[doc = ""]
-    #[doc = " For more information on these semantics, take a look at the blog post:"]
-    #[doc = " http://preshing.com/20120913/acquire-and-release-semantics"]
-    pub fn SDL_MemoryBarrierReleaseFunction();
-}
-extern "C" {
-    pub fn SDL_MemoryBarrierAcquireFunction();
-}
-#[doc = " \\brief A type representing an atomic integer value.  It is a struct"]
-#[doc = "        so people don't accidentally use numeric operations on it."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_atomic_t {
-    pub value: ::std::os::raw::c_int,
-}
-#[test]
-fn bindgen_test_layout_SDL_atomic_t() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_atomic_t>(),
-        4usize,
-        concat!("Size of: ", stringify!(SDL_atomic_t))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_atomic_t>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_atomic_t))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_atomic_t>())).value as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_atomic_t),
-            "::",
-            stringify!(value)
-        )
-    );
-}
-extern "C" {
-    #[doc = " \\brief Set an atomic variable to a new value if it is currently an old value."]
-    #[doc = ""]
-    #[doc = " \\return SDL_TRUE if the atomic variable was set, SDL_FALSE otherwise."]
-    #[doc = ""]
-    #[doc = " \\note If you don't know what this function is for, you shouldn't use it!"]
-    pub fn SDL_AtomicCAS(
-        a: *mut SDL_atomic_t,
-        oldval: ::std::os::raw::c_int,
-        newval: ::std::os::raw::c_int,
-    ) -> SDL_bool;
-}
-extern "C" {
-    #[doc = " \\brief Set an atomic variable to a value."]
-    #[doc = ""]
-    #[doc = " \\return The previous value of the atomic variable."]
-    pub fn SDL_AtomicSet(a: *mut SDL_atomic_t, v: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Get the value of an atomic variable"]
-    pub fn SDL_AtomicGet(a: *mut SDL_atomic_t) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Add to an atomic variable."]
-    #[doc = ""]
-    #[doc = " \\return The previous value of the atomic variable."]
-    #[doc = ""]
-    #[doc = " \\note This same style can be used for any number operation"]
-    pub fn SDL_AtomicAdd(a: *mut SDL_atomic_t, v: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Set a pointer to a new value if it is currently an old value."]
-    #[doc = ""]
-    #[doc = " \\return SDL_TRUE if the pointer was set, SDL_FALSE otherwise."]
-    #[doc = ""]
-    #[doc = " \\note If you don't know what this function is for, you shouldn't use it!"]
-    pub fn SDL_AtomicCASPtr(
-        a: *mut *mut ::std::os::raw::c_void,
-        oldval: *mut ::std::os::raw::c_void,
-        newval: *mut ::std::os::raw::c_void,
-    ) -> SDL_bool;
-}
-extern "C" {
-    #[doc = " \\brief Set a pointer to a value atomically."]
-    #[doc = ""]
-    #[doc = " \\return The previous value of the pointer."]
-    pub fn SDL_AtomicSetPtr(
-        a: *mut *mut ::std::os::raw::c_void,
-        v: *mut ::std::os::raw::c_void,
-    ) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = " \\brief Get the value of a pointer atomically."]
-    pub fn SDL_AtomicGetPtr(a: *mut *mut ::std::os::raw::c_void) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    pub fn SDL_SetError(fmt: *const ::std::os::raw::c_char, ...) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn SDL_GetError() -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn SDL_ClearError();
-}
-pub const SDL_errorcode_SDL_ENOMEM: SDL_errorcode = 0;
-pub const SDL_errorcode_SDL_EFREAD: SDL_errorcode = 1;
-pub const SDL_errorcode_SDL_EFWRITE: SDL_errorcode = 2;
-pub const SDL_errorcode_SDL_EFSEEK: SDL_errorcode = 3;
-pub const SDL_errorcode_SDL_UNSUPPORTED: SDL_errorcode = 4;
-pub const SDL_errorcode_SDL_LASTERROR: SDL_errorcode = 5;
-pub type SDL_errorcode = u32;
-extern "C" {
-    pub fn SDL_Error(code: SDL_errorcode) -> ::std::os::raw::c_int;
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_mutex {
-    _unused: [u8; 0],
-}
-extern "C" {
-    #[doc = "  Create a mutex, initialized unlocked."]
-    pub fn SDL_CreateMutex() -> *mut SDL_mutex;
-}
-extern "C" {
-    pub fn SDL_LockMutex(mutex: *mut SDL_mutex) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Try to lock the mutex"]
-    #[doc = ""]
-    #[doc = "  \\return 0, SDL_MUTEX_TIMEDOUT, or -1 on error"]
-    pub fn SDL_TryLockMutex(mutex: *mut SDL_mutex) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn SDL_UnlockMutex(mutex: *mut SDL_mutex) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Destroy a mutex."]
-    pub fn SDL_DestroyMutex(mutex: *mut SDL_mutex);
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_semaphore {
-    _unused: [u8; 0],
-}
-pub type SDL_sem = SDL_semaphore;
-extern "C" {
-    #[doc = "  Create a semaphore, initialized with value, returns NULL on failure."]
-    pub fn SDL_CreateSemaphore(initial_value: Uint32) -> *mut SDL_sem;
-}
-extern "C" {
-    #[doc = "  Destroy a semaphore."]
-    pub fn SDL_DestroySemaphore(sem: *mut SDL_sem);
-}
-extern "C" {
-    #[doc = "  This function suspends the calling thread until the semaphore pointed"]
-    #[doc = "  to by \\c sem has a positive count. It then atomically decreases the"]
-    #[doc = "  semaphore count."]
-    pub fn SDL_SemWait(sem: *mut SDL_sem) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Non-blocking variant of SDL_SemWait()."]
-    #[doc = ""]
-    #[doc = "  \\return 0 if the wait succeeds, ::SDL_MUTEX_TIMEDOUT if the wait would"]
-    #[doc = "          block, and -1 on error."]
-    pub fn SDL_SemTryWait(sem: *mut SDL_sem) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Variant of SDL_SemWait() with a timeout in milliseconds."]
-    #[doc = ""]
-    #[doc = "  \\return 0 if the wait succeeds, ::SDL_MUTEX_TIMEDOUT if the wait does not"]
-    #[doc = "          succeed in the allotted time, and -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\warning On some platforms this function is implemented by looping with a"]
-    #[doc = "           delay of 1 ms, and so should be avoided if possible."]
-    pub fn SDL_SemWaitTimeout(sem: *mut SDL_sem, ms: Uint32) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Atomically increases the semaphore's count (not blocking)."]
-    #[doc = ""]
-    #[doc = "  \\return 0, or -1 on error."]
-    pub fn SDL_SemPost(sem: *mut SDL_sem) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Returns the current count of the semaphore."]
-    pub fn SDL_SemValue(sem: *mut SDL_sem) -> Uint32;
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_cond {
-    _unused: [u8; 0],
-}
-extern "C" {
-    #[doc = "  Create a condition variable."]
-    #[doc = ""]
-    #[doc = "  Typical use of condition variables:"]
-    #[doc = ""]
-    #[doc = "  Thread A:"]
-    #[doc = "    SDL_LockMutex(lock);"]
-    #[doc = "    while ( ! condition ) {"]
-    #[doc = "        SDL_CondWait(cond, lock);"]
-    #[doc = "    }"]
-    #[doc = "    SDL_UnlockMutex(lock);"]
-    #[doc = ""]
-    #[doc = "  Thread B:"]
-    #[doc = "    SDL_LockMutex(lock);"]
-    #[doc = "    ..."]
-    #[doc = "    condition = true;"]
-    #[doc = "    ..."]
-    #[doc = "    SDL_CondSignal(cond);"]
-    #[doc = "    SDL_UnlockMutex(lock);"]
-    #[doc = ""]
-    #[doc = "  There is some discussion whether to signal the condition variable"]
-    #[doc = "  with the mutex locked or not.  There is some potential performance"]
-    #[doc = "  benefit to unlocking first on some platforms, but there are some"]
-    #[doc = "  potential race conditions depending on how your code is structured."]
-    #[doc = ""]
-    #[doc = "  In general it's safer to signal the condition variable while the"]
-    #[doc = "  mutex is locked."]
-    pub fn SDL_CreateCond() -> *mut SDL_cond;
-}
-extern "C" {
-    #[doc = "  Destroy a condition variable."]
-    pub fn SDL_DestroyCond(cond: *mut SDL_cond);
-}
-extern "C" {
-    #[doc = "  Restart one of the threads that are waiting on the condition variable."]
-    #[doc = ""]
-    #[doc = "  \\return 0 or -1 on error."]
-    pub fn SDL_CondSignal(cond: *mut SDL_cond) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Restart all threads that are waiting on the condition variable."]
-    #[doc = ""]
-    #[doc = "  \\return 0 or -1 on error."]
-    pub fn SDL_CondBroadcast(cond: *mut SDL_cond) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Wait on the condition variable, unlocking the provided mutex."]
-    #[doc = ""]
-    #[doc = "  \\warning The mutex must be locked before entering this function!"]
-    #[doc = ""]
-    #[doc = "  The mutex is re-locked once the condition variable is signaled."]
-    #[doc = ""]
-    #[doc = "  \\return 0 when it is signaled, or -1 on error."]
-    pub fn SDL_CondWait(cond: *mut SDL_cond, mutex: *mut SDL_mutex) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Waits for at most \\c ms milliseconds, and returns 0 if the condition"]
-    #[doc = "  variable is signaled, ::SDL_MUTEX_TIMEDOUT if the condition is not"]
-    #[doc = "  signaled in the allotted time, and -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\warning On some platforms this function is implemented by looping with a"]
-    #[doc = "           delay of 1 ms, and so should be avoided if possible."]
-    pub fn SDL_CondWaitTimeout(
-        cond: *mut SDL_cond,
-        mutex: *mut SDL_mutex,
-        ms: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_Thread {
-    _unused: [u8; 0],
-}
-pub type SDL_threadID = ::std::os::raw::c_ulong;
-pub type SDL_TLSID = ::std::os::raw::c_uint;
-pub const SDL_ThreadPriority_SDL_THREAD_PRIORITY_LOW: SDL_ThreadPriority = 0;
-pub const SDL_ThreadPriority_SDL_THREAD_PRIORITY_NORMAL: SDL_ThreadPriority = 1;
-pub const SDL_ThreadPriority_SDL_THREAD_PRIORITY_HIGH: SDL_ThreadPriority = 2;
-pub const SDL_ThreadPriority_SDL_THREAD_PRIORITY_TIME_CRITICAL: SDL_ThreadPriority = 3;
-#[doc = "  The SDL thread priority."]
-#[doc = ""]
-#[doc = "  \\note On many systems you require special privileges to set high or time critical priority."]
-pub type SDL_ThreadPriority = u32;
-#[doc = "  The function passed to SDL_CreateThread()."]
-#[doc = "  It is passed a void* user context parameter and returns an int."]
-pub type SDL_ThreadFunction = ::std::option::Option<
-    unsafe extern "C" fn(data: *mut ::std::os::raw::c_void) -> ::std::os::raw::c_int,
->;
-extern "C" {
-    #[doc = "  Create a thread with a default stack size."]
-    #[doc = ""]
-    #[doc = "  This is equivalent to calling:"]
-    #[doc = "  SDL_CreateThreadWithStackSize(fn, name, 0, data);"]
-    pub fn SDL_CreateThread(
-        fn_: SDL_ThreadFunction,
-        name: *const ::std::os::raw::c_char,
-        data: *mut ::std::os::raw::c_void,
-    ) -> *mut SDL_Thread;
-}
-extern "C" {
-    #[doc = "  Create a thread."]
-    #[doc = ""]
-    #[doc = "   Thread naming is a little complicated: Most systems have very small"]
-    #[doc = "    limits for the string length (Haiku has 32 bytes, Linux currently has 16,"]
-    #[doc = "    Visual C++ 6.0 has nine!), and possibly other arbitrary rules. You'll"]
-    #[doc = "    have to see what happens with your system's debugger. The name should be"]
-    #[doc = "    UTF-8 (but using the naming limits of C identifiers is a better bet)."]
-    #[doc = "   There are no requirements for thread naming conventions, so long as the"]
-    #[doc = "    string is null-terminated UTF-8, but these guidelines are helpful in"]
-    #[doc = "    choosing a name:"]
-    #[doc = ""]
-    #[doc = "    http://stackoverflow.com/questions/149932/naming-conventions-for-threads"]
-    #[doc = ""]
-    #[doc = "   If a system imposes requirements, SDL will try to munge the string for"]
-    #[doc = "    it (truncate, etc), but the original string contents will be available"]
-    #[doc = "    from SDL_GetThreadName()."]
-    #[doc = ""]
-    #[doc = "   The size (in bytes) of the new stack can be specified. Zero means \"use"]
-    #[doc = "    the system default\" which might be wildly different between platforms"]
-    #[doc = "    (x86 Linux generally defaults to eight megabytes, an embedded device"]
-    #[doc = "    might be a few kilobytes instead)."]
-    #[doc = ""]
-    #[doc = "   In SDL 2.1, stacksize will be folded into the original SDL_CreateThread"]
-    #[doc = "    function."]
-    pub fn SDL_CreateThreadWithStackSize(
-        fn_: SDL_ThreadFunction,
-        name: *const ::std::os::raw::c_char,
-        stacksize: size_t,
-        data: *mut ::std::os::raw::c_void,
-    ) -> *mut SDL_Thread;
-}
-extern "C" {
-    #[doc = " Get the thread name, as it was specified in SDL_CreateThread()."]
-    #[doc = "  This function returns a pointer to a UTF-8 string that names the"]
-    #[doc = "  specified thread, or NULL if it doesn't have a name. This is internal"]
-    #[doc = "  memory, not to be free()'d by the caller, and remains valid until the"]
-    #[doc = "  specified thread is cleaned up by SDL_WaitThread()."]
-    pub fn SDL_GetThreadName(thread: *mut SDL_Thread) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get the thread identifier for the current thread."]
-    pub fn SDL_ThreadID() -> SDL_threadID;
-}
-extern "C" {
-    #[doc = "  Get the thread identifier for the specified thread."]
-    #[doc = ""]
-    #[doc = "  Equivalent to SDL_ThreadID() if the specified thread is NULL."]
-    pub fn SDL_GetThreadID(thread: *mut SDL_Thread) -> SDL_threadID;
-}
-extern "C" {
-    #[doc = "  Set the priority for the current thread"]
-    pub fn SDL_SetThreadPriority(priority: SDL_ThreadPriority) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Wait for a thread to finish. Threads that haven't been detached will"]
-    #[doc = "  remain (as a \"zombie\") until this function cleans them up. Not doing so"]
-    #[doc = "  is a resource leak."]
-    #[doc = ""]
-    #[doc = "  Once a thread has been cleaned up through this function, the SDL_Thread"]
-    #[doc = "  that references it becomes invalid and should not be referenced again."]
-    #[doc = "  As such, only one thread may call SDL_WaitThread() on another."]
-    #[doc = ""]
-    #[doc = "  The return code for the thread function is placed in the area"]
-    #[doc = "  pointed to by \\c status, if \\c status is not NULL."]
-    #[doc = ""]
-    #[doc = "  You may not wait on a thread that has been used in a call to"]
-    #[doc = "  SDL_DetachThread(). Use either that function or this one, but not"]
-    #[doc = "  both, or behavior is undefined."]
-    #[doc = ""]
-    #[doc = "  It is safe to pass NULL to this function; it is a no-op."]
-    pub fn SDL_WaitThread(thread: *mut SDL_Thread, status: *mut ::std::os::raw::c_int);
-}
-extern "C" {
-    #[doc = "  A thread may be \"detached\" to signify that it should not remain until"]
-    #[doc = "  another thread has called SDL_WaitThread() on it. Detaching a thread"]
-    #[doc = "  is useful for long-running threads that nothing needs to synchronize"]
-    #[doc = "  with or further manage. When a detached thread is done, it simply"]
-    #[doc = "  goes away."]
-    #[doc = ""]
-    #[doc = "  There is no way to recover the return code of a detached thread. If you"]
-    #[doc = "  need this, don't detach the thread and instead use SDL_WaitThread()."]
-    #[doc = ""]
-    #[doc = "  Once a thread is detached, you should usually assume the SDL_Thread isn't"]
-    #[doc = "  safe to reference again, as it will become invalid immediately upon"]
-    #[doc = "  the detached thread's exit, instead of remaining until someone has called"]
-    #[doc = "  SDL_WaitThread() to finally clean it up. As such, don't detach the same"]
-    #[doc = "  thread more than once."]
-    #[doc = ""]
-    #[doc = "  If a thread has already exited when passed to SDL_DetachThread(), it will"]
-    #[doc = "  stop waiting for a call to SDL_WaitThread() and clean up immediately."]
-    #[doc = "  It is not safe to detach a thread that might be used with SDL_WaitThread()."]
-    #[doc = ""]
-    #[doc = "  You may not call SDL_WaitThread() on a thread that has been detached."]
-    #[doc = "  Use either that function or this one, but not both, or behavior is"]
-    #[doc = "  undefined."]
-    #[doc = ""]
-    #[doc = "  It is safe to pass NULL to this function; it is a no-op."]
-    pub fn SDL_DetachThread(thread: *mut SDL_Thread);
-}
-extern "C" {
-    #[doc = "  \\brief Create an identifier that is globally visible to all threads but refers to data that is thread-specific."]
-    #[doc = ""]
-    #[doc = "  \\return The newly created thread local storage identifier, or 0 on error"]
-    #[doc = ""]
-    #[doc = "  \\code"]
-    #[doc = "  static SDL_SpinLock tls_lock;"]
-    #[doc = "  static SDL_TLSID thread_local_storage;"]
-    #[doc = ""]
-    #[doc = "  void SetMyThreadData(void *value)"]
-    #[doc = "  {"]
-    #[doc = "      if (!thread_local_storage) {"]
-    #[doc = "          SDL_AtomicLock(&tls_lock);"]
-    #[doc = "          if (!thread_local_storage) {"]
-    #[doc = "              thread_local_storage = SDL_TLSCreate();"]
-    #[doc = "          }"]
-    #[doc = "          SDL_AtomicUnlock(&tls_lock);"]
-    #[doc = "      }"]
-    #[doc = "      SDL_TLSSet(thread_local_storage, value, 0);"]
-    #[doc = "  }"]
-    #[doc = ""]
-    #[doc = "  void *GetMyThreadData(void)"]
-    #[doc = "  {"]
-    #[doc = "      return SDL_TLSGet(thread_local_storage);"]
-    #[doc = "  }"]
-    #[doc = "  \\endcode"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_TLSGet()"]
-    #[doc = "  \\sa SDL_TLSSet()"]
-    pub fn SDL_TLSCreate() -> SDL_TLSID;
-}
-extern "C" {
-    #[doc = "  \\brief Get the value associated with a thread local storage ID for the current thread."]
-    #[doc = ""]
-    #[doc = "  \\param id The thread local storage ID"]
-    #[doc = ""]
-    #[doc = "  \\return The value associated with the ID for the current thread, or NULL if no value has been set."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_TLSCreate()"]
-    #[doc = "  \\sa SDL_TLSSet()"]
-    pub fn SDL_TLSGet(id: SDL_TLSID) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = "  \\brief Set the value associated with a thread local storage ID for the current thread."]
-    #[doc = ""]
-    #[doc = "  \\param id The thread local storage ID"]
-    #[doc = "  \\param value The value to associate with the ID for the current thread"]
-    #[doc = "  \\param destructor A function called when the thread exits, to free the value."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_TLSCreate()"]
-    #[doc = "  \\sa SDL_TLSGet()"]
-    pub fn SDL_TLSSet(
-        id: SDL_TLSID,
-        value: *const ::std::os::raw::c_void,
-        destructor: ::std::option::Option<unsafe extern "C" fn(arg1: *mut ::std::os::raw::c_void)>,
-    ) -> ::std::os::raw::c_int;
-}
-#[doc = " This is the read/write operation structure -- very basic."]
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub struct SDL_RWops {
-    #[doc = "  Return the size of the file in this rwops, or -1 if unknown"]
-    pub size: ::std::option::Option<unsafe extern "C" fn(context: *mut SDL_RWops) -> Sint64>,
-    #[doc = "  Seek to \\c offset relative to \\c whence, one of stdio's whence values:"]
-    #[doc = "  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END"]
-    #[doc = ""]
-    #[doc = "  \\return the final offset in the data stream, or -1 on error."]
-    pub seek: ::std::option::Option<
-        unsafe extern "C" fn(
-            context: *mut SDL_RWops,
-            offset: Sint64,
-            whence: ::std::os::raw::c_int,
-        ) -> Sint64,
-    >,
-    #[doc = "  Read up to \\c maxnum objects each of size \\c size from the data"]
-    #[doc = "  stream to the area pointed at by \\c ptr."]
-    #[doc = ""]
-    #[doc = "  \\return the number of objects read, or 0 at error or end of file."]
-    pub read: ::std::option::Option<
-        unsafe extern "C" fn(
-            context: *mut SDL_RWops,
-            ptr: *mut ::std::os::raw::c_void,
-            size: size_t,
-            maxnum: size_t,
-        ) -> size_t,
-    >,
-    #[doc = "  Write exactly \\c num objects each of size \\c size from the area"]
-    #[doc = "  pointed at by \\c ptr to data stream."]
-    #[doc = ""]
-    #[doc = "  \\return the number of objects written, or 0 at error or end of file."]
-    pub write: ::std::option::Option<
-        unsafe extern "C" fn(
-            context: *mut SDL_RWops,
-            ptr: *const ::std::os::raw::c_void,
-            size: size_t,
-            num: size_t,
-        ) -> size_t,
-    >,
-    #[doc = "  Close and free an allocated SDL_RWops structure."]
-    #[doc = ""]
-    #[doc = "  \\return 0 if successful or -1 on write error when flushing data."]
-    pub close: ::std::option::Option<
-        unsafe extern "C" fn(context: *mut SDL_RWops) -> ::std::os::raw::c_int,
-    >,
-    pub type_: Uint32,
-    pub hidden: SDL_RWops__bindgen_ty_1,
-}
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub union SDL_RWops__bindgen_ty_1 {
-    pub stdio: SDL_RWops__bindgen_ty_1__bindgen_ty_1,
-    pub mem: SDL_RWops__bindgen_ty_1__bindgen_ty_2,
-    pub unknown: SDL_RWops__bindgen_ty_1__bindgen_ty_3,
-    _bindgen_union_align: [u64; 3usize],
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_RWops__bindgen_ty_1__bindgen_ty_1 {
-    pub autoclose: SDL_bool,
-    pub fp: *mut FILE,
-}
-#[test]
-fn bindgen_test_layout_SDL_RWops__bindgen_ty_1__bindgen_ty_1() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>(),
-        16usize,
-        concat!(
-            "Size of: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>(),
-        8usize,
-        concat!(
-            "Alignment of ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>())).autoclose as *const _
-                as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1),
-            "::",
-            stringify!(autoclose)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>())).fp as *const _
-                as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1),
-            "::",
-            stringify!(fp)
-        )
-    );
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_RWops__bindgen_ty_1__bindgen_ty_2 {
-    pub base: *mut Uint8,
-    pub here: *mut Uint8,
-    pub stop: *mut Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_RWops__bindgen_ty_1__bindgen_ty_2() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>(),
-        24usize,
-        concat!(
-            "Size of: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>(),
-        8usize,
-        concat!(
-            "Alignment of ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>())).base as *const _
-                as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2),
-            "::",
-            stringify!(base)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>())).here as *const _
-                as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2),
-            "::",
-            stringify!(here)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>())).stop as *const _
-                as usize
-        },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2),
-            "::",
-            stringify!(stop)
-        )
-    );
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_RWops__bindgen_ty_1__bindgen_ty_3 {
-    pub data1: *mut ::std::os::raw::c_void,
-    pub data2: *mut ::std::os::raw::c_void,
-}
-#[test]
-fn bindgen_test_layout_SDL_RWops__bindgen_ty_1__bindgen_ty_3() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>(),
-        16usize,
-        concat!(
-            "Size of: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>(),
-        8usize,
-        concat!(
-            "Alignment of ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>())).data1 as *const _
-                as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3),
-            "::",
-            stringify!(data1)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>())).data2 as *const _
-                as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3),
-            "::",
-            stringify!(data2)
-        )
-    );
-}
-#[test]
-fn bindgen_test_layout_SDL_RWops__bindgen_ty_1() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1>(),
-        24usize,
-        concat!("Size of: ", stringify!(SDL_RWops__bindgen_ty_1))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_RWops__bindgen_ty_1))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1>())).stdio as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1),
-            "::",
-            stringify!(stdio)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1>())).mem as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1),
-            "::",
-            stringify!(mem)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1>())).unknown as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops__bindgen_ty_1),
-            "::",
-            stringify!(unknown)
-        )
-    );
-}
-#[test]
-fn bindgen_test_layout_SDL_RWops() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_RWops>(),
-        72usize,
-        concat!("Size of: ", stringify!(SDL_RWops))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_RWops>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_RWops))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).size as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(size)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).seek as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(seek)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).read as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(read)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).write as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(write)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).close as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(close)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).type_ as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).hidden as *const _ as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RWops),
-            "::",
-            stringify!(hidden)
-        )
-    );
-}
-extern "C" {
-    pub fn SDL_RWFromFile(
-        file: *const ::std::os::raw::c_char,
-        mode: *const ::std::os::raw::c_char,
-    ) -> *mut SDL_RWops;
-}
-extern "C" {
-    pub fn SDL_RWFromFP(fp: *mut FILE, autoclose: SDL_bool) -> *mut SDL_RWops;
-}
-extern "C" {
-    pub fn SDL_RWFromMem(
-        mem: *mut ::std::os::raw::c_void,
-        size: ::std::os::raw::c_int,
-    ) -> *mut SDL_RWops;
-}
-extern "C" {
-    pub fn SDL_RWFromConstMem(
-        mem: *const ::std::os::raw::c_void,
-        size: ::std::os::raw::c_int,
-    ) -> *mut SDL_RWops;
-}
-extern "C" {
-    pub fn SDL_AllocRW() -> *mut SDL_RWops;
-}
-extern "C" {
-    pub fn SDL_FreeRW(area: *mut SDL_RWops);
-}
-extern "C" {
-    #[doc = "  Return the size of the file in this rwops, or -1 if unknown"]
-    pub fn SDL_RWsize(context: *mut SDL_RWops) -> Sint64;
-}
-extern "C" {
-    #[doc = "  Seek to \\c offset relative to \\c whence, one of stdio's whence values:"]
-    #[doc = "  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END"]
-    #[doc = ""]
-    #[doc = "  \\return the final offset in the data stream, or -1 on error."]
-    pub fn SDL_RWseek(
-        context: *mut SDL_RWops,
-        offset: Sint64,
-        whence: ::std::os::raw::c_int,
-    ) -> Sint64;
-}
-extern "C" {
-    #[doc = "  Return the current offset in the data stream, or -1 on error."]
-    pub fn SDL_RWtell(context: *mut SDL_RWops) -> Sint64;
-}
-extern "C" {
-    #[doc = "  Read up to \\c maxnum objects each of size \\c size from the data"]
-    #[doc = "  stream to the area pointed at by \\c ptr."]
-    #[doc = ""]
-    #[doc = "  \\return the number of objects read, or 0 at error or end of file."]
-    pub fn SDL_RWread(
-        context: *mut SDL_RWops,
-        ptr: *mut ::std::os::raw::c_void,
-        size: size_t,
-        maxnum: size_t,
-    ) -> size_t;
-}
-extern "C" {
-    #[doc = "  Write exactly \\c num objects each of size \\c size from the area"]
-    #[doc = "  pointed at by \\c ptr to data stream."]
-    #[doc = ""]
-    #[doc = "  \\return the number of objects written, or 0 at error or end of file."]
-    pub fn SDL_RWwrite(
-        context: *mut SDL_RWops,
-        ptr: *const ::std::os::raw::c_void,
-        size: size_t,
-        num: size_t,
-    ) -> size_t;
-}
-extern "C" {
-    #[doc = "  Close and free an allocated SDL_RWops structure."]
-    #[doc = ""]
-    #[doc = "  \\return 0 if successful or -1 on write error when flushing data."]
-    pub fn SDL_RWclose(context: *mut SDL_RWops) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Load all the data from an SDL data stream."]
-    #[doc = ""]
-    #[doc = "  The data is allocated with a zero byte at the end (null terminated)"]
-    #[doc = ""]
-    #[doc = "  If \\c datasize is not NULL, it is filled with the size of the data read."]
-    #[doc = ""]
-    #[doc = "  If \\c freesrc is non-zero, the stream will be closed after being read."]
-    #[doc = ""]
-    #[doc = "  The data should be freed with SDL_free()."]
-    #[doc = ""]
-    #[doc = "  \\return the data, or NULL if there was an error."]
-    pub fn SDL_LoadFile_RW(
-        src: *mut SDL_RWops,
-        datasize: *mut size_t,
-        freesrc: ::std::os::raw::c_int,
-    ) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = "  Load an entire file."]
-    #[doc = ""]
-    #[doc = "  The data is allocated with a zero byte at the end (null terminated)"]
-    #[doc = ""]
-    #[doc = "  If \\c datasize is not NULL, it is filled with the size of the data read."]
-    #[doc = ""]
-    #[doc = "  If \\c freesrc is non-zero, the stream will be closed after being read."]
-    #[doc = ""]
-    #[doc = "  The data should be freed with SDL_free()."]
-    #[doc = ""]
-    #[doc = "  \\return the data, or NULL if there was an error."]
-    pub fn SDL_LoadFile(
-        file: *const ::std::os::raw::c_char,
-        datasize: *mut size_t,
-    ) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    pub fn SDL_ReadU8(src: *mut SDL_RWops) -> Uint8;
-}
-extern "C" {
-    pub fn SDL_ReadLE16(src: *mut SDL_RWops) -> Uint16;
-}
-extern "C" {
-    pub fn SDL_ReadBE16(src: *mut SDL_RWops) -> Uint16;
-}
-extern "C" {
-    pub fn SDL_ReadLE32(src: *mut SDL_RWops) -> Uint32;
-}
-extern "C" {
-    pub fn SDL_ReadBE32(src: *mut SDL_RWops) -> Uint32;
-}
-extern "C" {
-    pub fn SDL_ReadLE64(src: *mut SDL_RWops) -> Uint64;
-}
-extern "C" {
-    pub fn SDL_ReadBE64(src: *mut SDL_RWops) -> Uint64;
-}
-extern "C" {
-    pub fn SDL_WriteU8(dst: *mut SDL_RWops, value: Uint8) -> size_t;
-}
-extern "C" {
-    pub fn SDL_WriteLE16(dst: *mut SDL_RWops, value: Uint16) -> size_t;
-}
-extern "C" {
-    pub fn SDL_WriteBE16(dst: *mut SDL_RWops, value: Uint16) -> size_t;
-}
-extern "C" {
-    pub fn SDL_WriteLE32(dst: *mut SDL_RWops, value: Uint32) -> size_t;
-}
-extern "C" {
-    pub fn SDL_WriteBE32(dst: *mut SDL_RWops, value: Uint32) -> size_t;
-}
-extern "C" {
-    pub fn SDL_WriteLE64(dst: *mut SDL_RWops, value: Uint64) -> size_t;
-}
-extern "C" {
-    pub fn SDL_WriteBE64(dst: *mut SDL_RWops, value: Uint64) -> size_t;
-}
-#[doc = "  \\brief Audio format flags."]
-#[doc = ""]
-#[doc = "  These are what the 16 bits in SDL_AudioFormat currently mean..."]
-#[doc = "  (Unspecified bits are always zero)."]
-#[doc = ""]
-#[doc = "  \\verbatim"]
-#[doc = "++-----------------------sample is signed if set"]
-#[doc = "||"]
-#[doc = "||       ++-----------sample is bigendian if set"]
-#[doc = "||       ||"]
-#[doc = "||       ||          ++---sample is float if set"]
-#[doc = "||       ||          ||"]
-#[doc = "||       ||          || +---sample bit size---+"]
-#[doc = "||       ||          || |                     |"]
-#[doc = "15 14 13 12 11 10 09 08 07 06 05 04 03 02 01 00"]
-#[doc = "\\endverbatim"]
-#[doc = ""]
-#[doc = "  There are macros in SDL 2.0 and later to query these bits."]
-pub type SDL_AudioFormat = Uint16;
-#[doc = "  This function is called when the audio device needs more data."]
-#[doc = ""]
-#[doc = "  \\param userdata An application-specific parameter saved in"]
-#[doc = "                  the SDL_AudioSpec structure"]
-#[doc = "  \\param stream A pointer to the audio data buffer."]
-#[doc = "  \\param len    The length of that buffer in bytes."]
-#[doc = ""]
-#[doc = "  Once the callback returns, the buffer will no longer be valid."]
-#[doc = "  Stereo samples are stored in a LRLRLR ordering."]
-#[doc = ""]
-#[doc = "  You can choose to avoid callbacks and use SDL_QueueAudio() instead, if"]
-#[doc = "  you like. Just open your audio device with a NULL callback."]
-pub type SDL_AudioCallback = ::std::option::Option<
-    unsafe extern "C" fn(
-        userdata: *mut ::std::os::raw::c_void,
-        stream: *mut Uint8,
-        len: ::std::os::raw::c_int,
-    ),
->;
-#[doc = "  The calculated values in this structure are calculated by SDL_OpenAudio()."]
-#[doc = ""]
-#[doc = "  For multi-channel audio, the default SDL channel mapping is:"]
-#[doc = "  2:  FL FR                       (stereo)"]
-#[doc = "  3:  FL FR LFE                   (2.1 surround)"]
-#[doc = "  4:  FL FR BL BR                 (quad)"]
-#[doc = "  5:  FL FR FC BL BR              (quad + center)"]
-#[doc = "  6:  FL FR FC LFE SL SR          (5.1 surround - last two can also be BL BR)"]
-#[doc = "  7:  FL FR FC LFE BC SL SR       (6.1 surround)"]
-#[doc = "  8:  FL FR FC LFE BL BR SL SR    (7.1 surround)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_AudioSpec {
-    #[doc = "< DSP frequency -- samples per second"]
-    pub freq: ::std::os::raw::c_int,
-    #[doc = "< Audio data format"]
-    pub format: SDL_AudioFormat,
-    #[doc = "< Number of channels: 1 mono, 2 stereo"]
-    pub channels: Uint8,
-    #[doc = "< Audio buffer silence value (calculated)"]
-    pub silence: Uint8,
-    #[doc = "< Audio buffer size in sample FRAMES (total samples divided by channel count)"]
-    pub samples: Uint16,
-    #[doc = "< Necessary for some compile environments"]
-    pub padding: Uint16,
-    #[doc = "< Audio buffer size in bytes (calculated)"]
-    pub size: Uint32,
-    #[doc = "< Callback that feeds the audio device (NULL to use SDL_QueueAudio())."]
-    pub callback: SDL_AudioCallback,
-    #[doc = "< Userdata passed to callback (ignored for NULL callbacks)."]
-    pub userdata: *mut ::std::os::raw::c_void,
-}
-#[test]
-fn bindgen_test_layout_SDL_AudioSpec() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_AudioSpec>(),
-        32usize,
-        concat!("Size of: ", stringify!(SDL_AudioSpec))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_AudioSpec>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_AudioSpec))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).freq as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(freq)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).format as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(format)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).channels as *const _ as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(channels)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).silence as *const _ as usize },
-        7usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(silence)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).samples as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(samples)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).padding as *const _ as usize },
-        10usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(padding)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).size as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(size)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).callback as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(callback)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioSpec>())).userdata as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioSpec),
-            "::",
-            stringify!(userdata)
-        )
-    );
-}
-pub type SDL_AudioFilter =
-    ::std::option::Option<unsafe extern "C" fn(cvt: *mut SDL_AudioCVT, format: SDL_AudioFormat)>;
-#[repr(C, packed)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_AudioCVT {
-    #[doc = "< Set to 1 if conversion possible"]
-    pub needed: ::std::os::raw::c_int,
-    #[doc = "< Source audio format"]
-    pub src_format: SDL_AudioFormat,
-    #[doc = "< Target audio format"]
-    pub dst_format: SDL_AudioFormat,
-    #[doc = "< Rate conversion increment"]
-    pub rate_incr: f64,
-    #[doc = "< Buffer to hold entire audio data"]
-    pub buf: *mut Uint8,
-    #[doc = "< Length of original audio buffer"]
-    pub len: ::std::os::raw::c_int,
-    #[doc = "< Length of converted audio buffer"]
-    pub len_cvt: ::std::os::raw::c_int,
-    #[doc = "< buffer must be len*len_mult big"]
-    pub len_mult: ::std::os::raw::c_int,
-    #[doc = "< Given len, final size is len*len_ratio"]
-    pub len_ratio: f64,
-    #[doc = "< NULL-terminated list of filter functions"]
-    pub filters: [SDL_AudioFilter; 10usize],
-    #[doc = "< Current audio conversion function"]
-    pub filter_index: ::std::os::raw::c_int,
-}
-#[test]
-fn bindgen_test_layout_SDL_AudioCVT() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_AudioCVT>(),
-        128usize,
-        concat!("Size of: ", stringify!(SDL_AudioCVT))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_AudioCVT>(),
-        1usize,
-        concat!("Alignment of ", stringify!(SDL_AudioCVT))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).needed as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(needed)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).src_format as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(src_format)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).dst_format as *const _ as usize },
-        6usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(dst_format)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).rate_incr as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(rate_incr)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).buf as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(buf)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).len as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(len)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).len_cvt as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(len_cvt)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).len_mult as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(len_mult)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).len_ratio as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(len_ratio)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).filters as *const _ as usize },
-        44usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(filters)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioCVT>())).filter_index as *const _ as usize },
-        124usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioCVT),
-            "::",
-            stringify!(filter_index)
-        )
-    );
-}
-extern "C" {
-    pub fn SDL_GetNumAudioDrivers() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn SDL_GetAudioDriver(index: ::std::os::raw::c_int) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    pub fn SDL_AudioInit(driver_name: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    pub fn SDL_AudioQuit();
-}
-extern "C" {
-    #[doc = "  This function returns the name of the current audio driver, or NULL"]
-    #[doc = "  if no driver has been initialized."]
-    pub fn SDL_GetCurrentAudioDriver() -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  This function opens the audio device with the desired parameters, and"]
-    #[doc = "  returns 0 if successful, placing the actual hardware parameters in the"]
-    #[doc = "  structure pointed to by \\c obtained.  If \\c obtained is NULL, the audio"]
-    #[doc = "  data passed to the callback function will be guaranteed to be in the"]
-    #[doc = "  requested format, and will be automatically converted to the hardware"]
-    #[doc = "  audio format if necessary.  This function returns -1 if it failed"]
-    #[doc = "  to open the audio device, or couldn't set up the audio thread."]
-    #[doc = ""]
-    #[doc = "  When filling in the desired audio spec structure,"]
-    #[doc = "    - \\c desired->freq should be the desired audio frequency in samples-per-"]
-    #[doc = "      second."]
-    #[doc = "    - \\c desired->format should be the desired audio format."]
-    #[doc = "    - \\c desired->samples is the desired size of the audio buffer, in"]
-    #[doc = "      samples.  This number should be a power of two, and may be adjusted by"]
-    #[doc = "      the audio driver to a value more suitable for the hardware.  Good values"]
-    #[doc = "      seem to range between 512 and 8096 inclusive, depending on the"]
-    #[doc = "      application and CPU speed.  Smaller values yield faster response time,"]
-    #[doc = "      but can lead to underflow if the application is doing heavy processing"]
-    #[doc = "      and cannot fill the audio buffer in time.  A stereo sample consists of"]
-    #[doc = "      both right and left channels in LR ordering."]
-    #[doc = "      Note that the number of samples is directly related to time by the"]
-    #[doc = "      following formula:  \\code ms = (samples*1000)/freq \\endcode"]
-    #[doc = "    - \\c desired->size is the size in bytes of the audio buffer, and is"]
-    #[doc = "      calculated by SDL_OpenAudio()."]
-    #[doc = "    - \\c desired->silence is the value used to set the buffer to silence,"]
-    #[doc = "      and is calculated by SDL_OpenAudio()."]
-    #[doc = "    - \\c desired->callback should be set to a function that will be called"]
-    #[doc = "      when the audio device is ready for more data.  It is passed a pointer"]
-    #[doc = "      to the audio buffer, and the length in bytes of the audio buffer."]
-    #[doc = "      This function usually runs in a separate thread, and so you should"]
-    #[doc = "      protect data structures that it accesses by calling SDL_LockAudio()"]
-    #[doc = "      and SDL_UnlockAudio() in your code. Alternately, you may pass a NULL"]
-    #[doc = "      pointer here, and call SDL_QueueAudio() with some frequency, to queue"]
-    #[doc = "      more audio samples to be played (or for capture devices, call"]
-    #[doc = "      SDL_DequeueAudio() with some frequency, to obtain audio samples)."]
-    #[doc = "    - \\c desired->userdata is passed as the first parameter to your callback"]
-    #[doc = "      function. If you passed a NULL callback, this value is ignored."]
-    #[doc = ""]
-    #[doc = "  The audio device starts out playing silence when it's opened, and should"]
-    #[doc = "  be enabled for playing by calling \\c SDL_PauseAudio(0) when you are ready"]
-    #[doc = "  for your audio callback function to be called.  Since the audio driver"]
-    #[doc = "  may modify the requested size of the audio buffer, you should allocate"]
-    #[doc = "  any local mixing buffers after you open the audio device."]
-    pub fn SDL_OpenAudio(
-        desired: *mut SDL_AudioSpec,
-        obtained: *mut SDL_AudioSpec,
-    ) -> ::std::os::raw::c_int;
-}
-#[doc = "  SDL Audio Device IDs."]
-#[doc = ""]
-#[doc = "  A successful call to SDL_OpenAudio() is always device id 1, and legacy"]
-#[doc = "  SDL audio APIs assume you want this device ID. SDL_OpenAudioDevice() calls"]
-#[doc = "  always returns devices >= 2 on success. The legacy calls are good both"]
-#[doc = "  for backwards compatibility and when you don't care about multiple,"]
-#[doc = "  specific, or capture devices."]
-pub type SDL_AudioDeviceID = Uint32;
-extern "C" {
-    #[doc = "  Get the number of available devices exposed by the current driver."]
-    #[doc = "  Only valid after a successfully initializing the audio subsystem."]
-    #[doc = "  Returns -1 if an explicit list of devices can't be determined; this is"]
-    #[doc = "  not an error. For example, if SDL is set up to talk to a remote audio"]
-    #[doc = "  server, it can't list every one available on the Internet, but it will"]
-    #[doc = "  still allow a specific host to be specified to SDL_OpenAudioDevice()."]
-    #[doc = ""]
-    #[doc = "  In many common cases, when this function returns a value <= 0, it can still"]
-    #[doc = "  successfully open the default device (NULL for first argument of"]
-    #[doc = "  SDL_OpenAudioDevice())."]
-    pub fn SDL_GetNumAudioDevices(iscapture: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the human-readable name of a specific audio device."]
-    #[doc = "  Must be a value between 0 and (number of audio devices-1)."]
-    #[doc = "  Only valid after a successfully initializing the audio subsystem."]
-    #[doc = "  The values returned by this function reflect the latest call to"]
-    #[doc = "  SDL_GetNumAudioDevices(); recall that function to redetect available"]
-    #[doc = "  hardware."]
-    #[doc = ""]
-    #[doc = "  The string returned by this function is UTF-8 encoded, read-only, and"]
-    #[doc = "  managed internally. You are not to free it. If you need to keep the"]
-    #[doc = "  string for any length of time, you should make your own copy of it, as it"]
-    #[doc = "  will be invalid next time any of several other SDL functions is called."]
-    pub fn SDL_GetAudioDeviceName(
-        index: ::std::os::raw::c_int,
-        iscapture: ::std::os::raw::c_int,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Open a specific audio device. Passing in a device name of NULL requests"]
-    #[doc = "  the most reasonable default (and is equivalent to calling SDL_OpenAudio())."]
-    #[doc = ""]
-    #[doc = "  The device name is a UTF-8 string reported by SDL_GetAudioDeviceName(), but"]
-    #[doc = "  some drivers allow arbitrary and driver-specific strings, such as a"]
-    #[doc = "  hostname/IP address for a remote audio server, or a filename in the"]
-    #[doc = "  diskaudio driver."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on error, a valid device ID that is >= 2 on success."]
-    #[doc = ""]
-    #[doc = "  SDL_OpenAudio(), unlike this function, always acts on device ID 1."]
-    pub fn SDL_OpenAudioDevice(
-        device: *const ::std::os::raw::c_char,
-        iscapture: ::std::os::raw::c_int,
-        desired: *const SDL_AudioSpec,
-        obtained: *mut SDL_AudioSpec,
-        allowed_changes: ::std::os::raw::c_int,
-    ) -> SDL_AudioDeviceID;
-}
-pub const SDL_AudioStatus_SDL_AUDIO_STOPPED: SDL_AudioStatus = 0;
-pub const SDL_AudioStatus_SDL_AUDIO_PLAYING: SDL_AudioStatus = 1;
-pub const SDL_AudioStatus_SDL_AUDIO_PAUSED: SDL_AudioStatus = 2;
-pub type SDL_AudioStatus = u32;
-extern "C" {
-    pub fn SDL_GetAudioStatus() -> SDL_AudioStatus;
-}
-extern "C" {
-    pub fn SDL_GetAudioDeviceStatus(dev: SDL_AudioDeviceID) -> SDL_AudioStatus;
-}
-extern "C" {
-    pub fn SDL_PauseAudio(pause_on: ::std::os::raw::c_int);
-}
-extern "C" {
-    pub fn SDL_PauseAudioDevice(dev: SDL_AudioDeviceID, pause_on: ::std::os::raw::c_int);
-}
-extern "C" {
-    #[doc = "  \\brief Load the audio data of a WAVE file into memory"]
-    #[doc = ""]
-    #[doc = "  Loading a WAVE file requires \\c src, \\c spec, \\c audio_buf and \\c audio_len"]
-    #[doc = "  to be valid pointers. The entire data portion of the file is then loaded"]
-    #[doc = "  into memory and decoded if necessary."]
-    #[doc = ""]
-    #[doc = "  If \\c freesrc is non-zero, the data source gets automatically closed and"]
-    #[doc = "  freed before the function returns."]
-    #[doc = ""]
-    #[doc = "  Supported are RIFF WAVE files with the formats PCM (8, 16, 24, and 32 bits),"]
-    #[doc = "  IEEE Float (32 bits), Microsoft ADPCM and IMA ADPCM (4 bits), and A-law and"]
-    #[doc = "  µ-law (8 bits). Other formats are currently unsupported and cause an error."]
-    #[doc = ""]
-    #[doc = "  If this function succeeds, the pointer returned by it is equal to \\c spec"]
-    #[doc = "  and the pointer to the audio data allocated by the function is written to"]
-    #[doc = "  \\c audio_buf and its length in bytes to \\c audio_len. The \\ref SDL_AudioSpec"]
-    #[doc = "  members \\c freq, \\c channels, and \\c format are set to the values of the"]
-    #[doc = "  audio data in the buffer. The \\c samples member is set to a sane default and"]
-    #[doc = "  all others are set to zero."]
-    #[doc = ""]
-    #[doc = "  It's necessary to use SDL_FreeWAV() to free the audio data returned in"]
-    #[doc = "  \\c audio_buf when it is no longer used."]
-    #[doc = ""]
-    #[doc = "  Because of the underspecification of the Waveform format, there are many"]
-    #[doc = "  problematic files in the wild that cause issues with strict decoders. To"]
-    #[doc = "  provide compatibility with these files, this decoder is lenient in regards"]
-    #[doc = "  to the truncation of the file, the fact chunk, and the size of the RIFF"]
-    #[doc = "  chunk. The hints SDL_HINT_WAVE_RIFF_CHUNK_SIZE, SDL_HINT_WAVE_TRUNCATION,"]
-    #[doc = "  and SDL_HINT_WAVE_FACT_CHUNK can be used to tune the behavior of the"]
-    #[doc = "  loading process."]
-    #[doc = ""]
-    #[doc = "  Any file that is invalid (due to truncation, corruption, or wrong values in"]
-    #[doc = "  the headers), too big, or unsupported causes an error. Additionally, any"]
-    #[doc = "  critical I/O error from the data source will terminate the loading process"]
-    #[doc = "  with an error. The function returns NULL on error and in all cases (with the"]
-    #[doc = "  exception of \\c src being NULL), an appropriate error message will be set."]
-    #[doc = ""]
-    #[doc = "  It is required that the data source supports seeking."]
-    #[doc = ""]
-    #[doc = "  Example:"]
-    #[doc = "  \\code"]
-    #[doc = "      SDL_LoadWAV_RW(SDL_RWFromFile(\"sample.wav\", \"rb\"), 1, ...);"]
-    #[doc = "  \\endcode"]
-    #[doc = ""]
-    #[doc = "  \\param src The data source with the WAVE data"]
-    #[doc = "  \\param freesrc A integer value that makes the function close the data source if non-zero"]
-    #[doc = "  \\param spec A pointer filled with the audio format of the audio data"]
-    #[doc = "  \\param audio_buf A pointer filled with the audio data allocated by the function"]
-    #[doc = "  \\param audio_len A pointer filled with the length of the audio data buffer in bytes"]
-    #[doc = "  \\return NULL on error, or non-NULL on success."]
-    pub fn SDL_LoadWAV_RW(
-        src: *mut SDL_RWops,
-        freesrc: ::std::os::raw::c_int,
-        spec: *mut SDL_AudioSpec,
-        audio_buf: *mut *mut Uint8,
-        audio_len: *mut Uint32,
-    ) -> *mut SDL_AudioSpec;
-}
-extern "C" {
-    #[doc = "  This function frees data previously allocated with SDL_LoadWAV_RW()"]
-    pub fn SDL_FreeWAV(audio_buf: *mut Uint8);
-}
-extern "C" {
-    #[doc = "  This function takes a source format and rate and a destination format"]
-    #[doc = "  and rate, and initializes the \\c cvt structure with information needed"]
-    #[doc = "  by SDL_ConvertAudio() to convert a buffer of audio data from one format"]
-    #[doc = "  to the other. An unsupported format causes an error and -1 will be returned."]
-    #[doc = ""]
-    #[doc = "  \\return 0 if no conversion is needed, 1 if the audio filter is set up,"]
-    #[doc = "  or -1 on error."]
-    pub fn SDL_BuildAudioCVT(
-        cvt: *mut SDL_AudioCVT,
-        src_format: SDL_AudioFormat,
-        src_channels: Uint8,
-        src_rate: ::std::os::raw::c_int,
-        dst_format: SDL_AudioFormat,
-        dst_channels: Uint8,
-        dst_rate: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Once you have initialized the \\c cvt structure using SDL_BuildAudioCVT(),"]
-    #[doc = "  created an audio buffer \\c cvt->buf, and filled it with \\c cvt->len bytes of"]
-    #[doc = "  audio data in the source format, this function will convert it in-place"]
-    #[doc = "  to the desired format."]
-    #[doc = ""]
-    #[doc = "  The data conversion may expand the size of the audio data, so the buffer"]
-    #[doc = "  \\c cvt->buf should be allocated after the \\c cvt structure is initialized by"]
-    #[doc = "  SDL_BuildAudioCVT(), and should be \\c cvt->len*cvt->len_mult bytes long."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success or -1 if \\c cvt->buf is NULL."]
-    pub fn SDL_ConvertAudio(cvt: *mut SDL_AudioCVT) -> ::std::os::raw::c_int;
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct _SDL_AudioStream {
-    _unused: [u8; 0],
-}
-pub type SDL_AudioStream = _SDL_AudioStream;
-extern "C" {
-    #[doc = "  Create a new audio stream"]
-    #[doc = ""]
-    #[doc = "  \\param src_format The format of the source audio"]
-    #[doc = "  \\param src_channels The number of channels of the source audio"]
-    #[doc = "  \\param src_rate The sampling rate of the source audio"]
-    #[doc = "  \\param dst_format The format of the desired audio output"]
-    #[doc = "  \\param dst_channels The number of channels of the desired audio output"]
-    #[doc = "  \\param dst_rate The sampling rate of the desired audio output"]
-    #[doc = "  \\return 0 on success, or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_AudioStreamPut"]
-    #[doc = "  \\sa SDL_AudioStreamGet"]
-    #[doc = "  \\sa SDL_AudioStreamAvailable"]
-    #[doc = "  \\sa SDL_AudioStreamFlush"]
-    #[doc = "  \\sa SDL_AudioStreamClear"]
-    #[doc = "  \\sa SDL_FreeAudioStream"]
-    pub fn SDL_NewAudioStream(
-        src_format: SDL_AudioFormat,
-        src_channels: Uint8,
-        src_rate: ::std::os::raw::c_int,
-        dst_format: SDL_AudioFormat,
-        dst_channels: Uint8,
-        dst_rate: ::std::os::raw::c_int,
-    ) -> *mut SDL_AudioStream;
-}
-extern "C" {
-    #[doc = "  Add data to be converted/resampled to the stream"]
-    #[doc = ""]
-    #[doc = "  \\param stream The stream the audio data is being added to"]
-    #[doc = "  \\param buf A pointer to the audio data to add"]
-    #[doc = "  \\param len The number of bytes to write to the stream"]
-    #[doc = "  \\return 0 on success, or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NewAudioStream"]
-    #[doc = "  \\sa SDL_AudioStreamGet"]
-    #[doc = "  \\sa SDL_AudioStreamAvailable"]
-    #[doc = "  \\sa SDL_AudioStreamFlush"]
-    #[doc = "  \\sa SDL_AudioStreamClear"]
-    #[doc = "  \\sa SDL_FreeAudioStream"]
-    pub fn SDL_AudioStreamPut(
-        stream: *mut SDL_AudioStream,
-        buf: *const ::std::os::raw::c_void,
-        len: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get converted/resampled data from the stream"]
-    #[doc = ""]
-    #[doc = "  \\param stream The stream the audio is being requested from"]
-    #[doc = "  \\param buf A buffer to fill with audio data"]
-    #[doc = "  \\param len The maximum number of bytes to fill"]
-    #[doc = "  \\return The number of bytes read from the stream, or -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NewAudioStream"]
-    #[doc = "  \\sa SDL_AudioStreamPut"]
-    #[doc = "  \\sa SDL_AudioStreamAvailable"]
-    #[doc = "  \\sa SDL_AudioStreamFlush"]
-    #[doc = "  \\sa SDL_AudioStreamClear"]
-    #[doc = "  \\sa SDL_FreeAudioStream"]
-    pub fn SDL_AudioStreamGet(
-        stream: *mut SDL_AudioStream,
-        buf: *mut ::std::os::raw::c_void,
-        len: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Get the number of converted/resampled bytes available. The stream may be"]
-    #[doc = "  buffering data behind the scenes until it has enough to resample"]
-    #[doc = "  correctly, so this number might be lower than what you expect, or even"]
-    #[doc = "  be zero. Add more data or flush the stream if you need the data now."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NewAudioStream"]
-    #[doc = "  \\sa SDL_AudioStreamPut"]
-    #[doc = "  \\sa SDL_AudioStreamGet"]
-    #[doc = "  \\sa SDL_AudioStreamFlush"]
-    #[doc = "  \\sa SDL_AudioStreamClear"]
-    #[doc = "  \\sa SDL_FreeAudioStream"]
-    pub fn SDL_AudioStreamAvailable(stream: *mut SDL_AudioStream) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " Tell the stream that you're done sending data, and anything being buffered"]
-    #[doc = "  should be converted/resampled and made available immediately."]
-    #[doc = ""]
-    #[doc = " It is legal to add more data to a stream after flushing, but there will"]
-    #[doc = "  be audio gaps in the output. Generally this is intended to signal the"]
-    #[doc = "  end of input, so the complete output becomes available."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NewAudioStream"]
-    #[doc = "  \\sa SDL_AudioStreamPut"]
-    #[doc = "  \\sa SDL_AudioStreamGet"]
-    #[doc = "  \\sa SDL_AudioStreamAvailable"]
-    #[doc = "  \\sa SDL_AudioStreamClear"]
-    #[doc = "  \\sa SDL_FreeAudioStream"]
-    pub fn SDL_AudioStreamFlush(stream: *mut SDL_AudioStream) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Clear any pending data in the stream without converting it"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NewAudioStream"]
-    #[doc = "  \\sa SDL_AudioStreamPut"]
-    #[doc = "  \\sa SDL_AudioStreamGet"]
-    #[doc = "  \\sa SDL_AudioStreamAvailable"]
-    #[doc = "  \\sa SDL_AudioStreamFlush"]
-    #[doc = "  \\sa SDL_FreeAudioStream"]
-    pub fn SDL_AudioStreamClear(stream: *mut SDL_AudioStream);
-}
-extern "C" {
-    #[doc = " Free an audio stream"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NewAudioStream"]
-    #[doc = "  \\sa SDL_AudioStreamPut"]
-    #[doc = "  \\sa SDL_AudioStreamGet"]
-    #[doc = "  \\sa SDL_AudioStreamAvailable"]
-    #[doc = "  \\sa SDL_AudioStreamFlush"]
-    #[doc = "  \\sa SDL_AudioStreamClear"]
-    pub fn SDL_FreeAudioStream(stream: *mut SDL_AudioStream);
-}
-extern "C" {
-    #[doc = "  This takes two audio buffers of the playing audio format and mixes"]
-    #[doc = "  them, performing addition, volume adjustment, and overflow clipping."]
-    #[doc = "  The volume ranges from 0 - 128, and should be set to ::SDL_MIX_MAXVOLUME"]
-    #[doc = "  for full audio volume.  Note this does not change hardware volume."]
-    #[doc = "  This is provided for convenience -- you can mix your own audio data."]
-    pub fn SDL_MixAudio(
-        dst: *mut Uint8,
-        src: *const Uint8,
-        len: Uint32,
-        volume: ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  This works like SDL_MixAudio(), but you specify the audio format instead of"]
-    #[doc = "  using the format of audio device 1. Thus it can be used when no audio"]
-    #[doc = "  device is open at all."]
-    pub fn SDL_MixAudioFormat(
-        dst: *mut Uint8,
-        src: *const Uint8,
-        format: SDL_AudioFormat,
-        len: Uint32,
-        volume: ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  Queue more audio on non-callback devices."]
-    #[doc = ""]
-    #[doc = "  (If you are looking to retrieve queued audio from a non-callback capture"]
-    #[doc = "  device, you want SDL_DequeueAudio() instead. This will return -1 to"]
-    #[doc = "  signify an error if you use it with capture devices.)"]
-    #[doc = ""]
-    #[doc = "  SDL offers two ways to feed audio to the device: you can either supply a"]
-    #[doc = "  callback that SDL triggers with some frequency to obtain more audio"]
-    #[doc = "  (pull method), or you can supply no callback, and then SDL will expect"]
-    #[doc = "  you to supply data at regular intervals (push method) with this function."]
-    #[doc = ""]
-    #[doc = "  There are no limits on the amount of data you can queue, short of"]
-    #[doc = "  exhaustion of address space. Queued data will drain to the device as"]
-    #[doc = "  necessary without further intervention from you. If the device needs"]
-    #[doc = "  audio but there is not enough queued, it will play silence to make up"]
-    #[doc = "  the difference. This means you will have skips in your audio playback"]
-    #[doc = "  if you aren't routinely queueing sufficient data."]
-    #[doc = ""]
-    #[doc = "  This function copies the supplied data, so you are safe to free it when"]
-    #[doc = "  the function returns. This function is thread-safe, but queueing to the"]
-    #[doc = "  same device from two threads at once does not promise which buffer will"]
-    #[doc = "  be queued first."]
-    #[doc = ""]
-    #[doc = "  You may not queue audio on a device that is using an application-supplied"]
-    #[doc = "  callback; doing so returns an error. You have to use the audio callback"]
-    #[doc = "  or queue audio with this function, but not both."]
-    #[doc = ""]
-    #[doc = "  You should not call SDL_LockAudio() on the device before queueing; SDL"]
-    #[doc = "  handles locking internally for this function."]
-    #[doc = ""]
-    #[doc = "  \\param dev The device ID to which we will queue audio."]
-    #[doc = "  \\param data The data to queue to the device for later playback."]
-    #[doc = "  \\param len The number of bytes (not samples!) to which (data) points."]
-    #[doc = "  \\return 0 on success, or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetQueuedAudioSize"]
-    #[doc = "  \\sa SDL_ClearQueuedAudio"]
-    pub fn SDL_QueueAudio(
-        dev: SDL_AudioDeviceID,
-        data: *const ::std::os::raw::c_void,
-        len: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Dequeue more audio on non-callback devices."]
-    #[doc = ""]
-    #[doc = "  (If you are looking to queue audio for output on a non-callback playback"]
-    #[doc = "  device, you want SDL_QueueAudio() instead. This will always return 0"]
-    #[doc = "  if you use it with playback devices.)"]
-    #[doc = ""]
-    #[doc = "  SDL offers two ways to retrieve audio from a capture device: you can"]
-    #[doc = "  either supply a callback that SDL triggers with some frequency as the"]
-    #[doc = "  device records more audio data, (push method), or you can supply no"]
-    #[doc = "  callback, and then SDL will expect you to retrieve data at regular"]
-    #[doc = "  intervals (pull method) with this function."]
-    #[doc = ""]
-    #[doc = "  There are no limits on the amount of data you can queue, short of"]
-    #[doc = "  exhaustion of address space. Data from the device will keep queuing as"]
-    #[doc = "  necessary without further intervention from you. This means you will"]
-    #[doc = "  eventually run out of memory if you aren't routinely dequeueing data."]
-    #[doc = ""]
-    #[doc = "  Capture devices will not queue data when paused; if you are expecting"]
-    #[doc = "  to not need captured audio for some length of time, use"]
-    #[doc = "  SDL_PauseAudioDevice() to stop the capture device from queueing more"]
-    #[doc = "  data. This can be useful during, say, level loading times. When"]
-    #[doc = "  unpaused, capture devices will start queueing data from that point,"]
-    #[doc = "  having flushed any capturable data available while paused."]
-    #[doc = ""]
-    #[doc = "  This function is thread-safe, but dequeueing from the same device from"]
-    #[doc = "  two threads at once does not promise which thread will dequeued data"]
-    #[doc = "  first."]
-    #[doc = ""]
-    #[doc = "  You may not dequeue audio from a device that is using an"]
-    #[doc = "  application-supplied callback; doing so returns an error. You have to use"]
-    #[doc = "  the audio callback, or dequeue audio with this function, but not both."]
-    #[doc = ""]
-    #[doc = "  You should not call SDL_LockAudio() on the device before queueing; SDL"]
-    #[doc = "  handles locking internally for this function."]
-    #[doc = ""]
-    #[doc = "  \\param dev The device ID from which we will dequeue audio."]
-    #[doc = "  \\param data A pointer into where audio data should be copied."]
-    #[doc = "  \\param len The number of bytes (not samples!) to which (data) points."]
-    #[doc = "  \\return number of bytes dequeued, which could be less than requested."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetQueuedAudioSize"]
-    #[doc = "  \\sa SDL_ClearQueuedAudio"]
-    pub fn SDL_DequeueAudio(
-        dev: SDL_AudioDeviceID,
-        data: *mut ::std::os::raw::c_void,
-        len: Uint32,
-    ) -> Uint32;
-}
-extern "C" {
-    #[doc = "  Get the number of bytes of still-queued audio."]
-    #[doc = ""]
-    #[doc = "  For playback device:"]
-    #[doc = ""]
-    #[doc = "    This is the number of bytes that have been queued for playback with"]
-    #[doc = "    SDL_QueueAudio(), but have not yet been sent to the hardware. This"]
-    #[doc = "    number may shrink at any time, so this only informs of pending data."]
-    #[doc = ""]
-    #[doc = "    Once we've sent it to the hardware, this function can not decide the"]
-    #[doc = "    exact byte boundary of what has been played. It's possible that we just"]
-    #[doc = "    gave the hardware several kilobytes right before you called this"]
-    #[doc = "    function, but it hasn't played any of it yet, or maybe half of it, etc."]
-    #[doc = ""]
-    #[doc = "  For capture devices:"]
-    #[doc = ""]
-    #[doc = "    This is the number of bytes that have been captured by the device and"]
-    #[doc = "    are waiting for you to dequeue. This number may grow at any time, so"]
-    #[doc = "    this only informs of the lower-bound of available data."]
-    #[doc = ""]
-    #[doc = "  You may not queue audio on a device that is using an application-supplied"]
-    #[doc = "  callback; calling this function on such a device always returns 0."]
-    #[doc = "  You have to queue audio with SDL_QueueAudio()/SDL_DequeueAudio(), or use"]
-    #[doc = "  the audio callback, but not both."]
-    #[doc = ""]
-    #[doc = "  You should not call SDL_LockAudio() on the device before querying; SDL"]
-    #[doc = "  handles locking internally for this function."]
-    #[doc = ""]
-    #[doc = "  \\param dev The device ID of which we will query queued audio size."]
-    #[doc = "  \\return Number of bytes (not samples!) of queued audio."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_QueueAudio"]
-    #[doc = "  \\sa SDL_ClearQueuedAudio"]
-    pub fn SDL_GetQueuedAudioSize(dev: SDL_AudioDeviceID) -> Uint32;
-}
-extern "C" {
-    #[doc = "  Drop any queued audio data. For playback devices, this is any queued data"]
-    #[doc = "  still waiting to be submitted to the hardware. For capture devices, this"]
-    #[doc = "  is any data that was queued by the device that hasn't yet been dequeued by"]
-    #[doc = "  the application."]
-    #[doc = ""]
-    #[doc = "  Immediately after this call, SDL_GetQueuedAudioSize() will return 0. For"]
-    #[doc = "  playback devices, the hardware will start playing silence if more audio"]
-    #[doc = "  isn't queued. Unpaused capture devices will start filling the queue again"]
-    #[doc = "  as soon as they have more data available (which, depending on the state"]
-    #[doc = "  of the hardware and the thread, could be before this function call"]
-    #[doc = "  returns!)."]
-    #[doc = ""]
-    #[doc = "  This will not prevent playback of queued audio that's already been sent"]
-    #[doc = "  to the hardware, as we can not undo that, so expect there to be some"]
-    #[doc = "  fraction of a second of audio that might still be heard. This can be"]
-    #[doc = "  useful if you want to, say, drop any pending music during a level change"]
-    #[doc = "  in your game."]
-    #[doc = ""]
-    #[doc = "  You may not queue audio on a device that is using an application-supplied"]
-    #[doc = "  callback; calling this function on such a device is always a no-op."]
-    #[doc = "  You have to queue audio with SDL_QueueAudio()/SDL_DequeueAudio(), or use"]
-    #[doc = "  the audio callback, but not both."]
-    #[doc = ""]
-    #[doc = "  You should not call SDL_LockAudio() on the device before clearing the"]
-    #[doc = "  queue; SDL handles locking internally for this function."]
-    #[doc = ""]
-    #[doc = "  This function always succeeds and thus returns void."]
-    #[doc = ""]
-    #[doc = "  \\param dev The device ID of which to clear the audio queue."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_QueueAudio"]
-    #[doc = "  \\sa SDL_GetQueuedAudioSize"]
-    pub fn SDL_ClearQueuedAudio(dev: SDL_AudioDeviceID);
-}
-extern "C" {
-    pub fn SDL_LockAudio();
-}
-extern "C" {
-    pub fn SDL_LockAudioDevice(dev: SDL_AudioDeviceID);
-}
-extern "C" {
-    pub fn SDL_UnlockAudio();
-}
-extern "C" {
-    pub fn SDL_UnlockAudioDevice(dev: SDL_AudioDeviceID);
-}
-extern "C" {
-    #[doc = "  This function shuts down audio processing and closes the audio device."]
-    pub fn SDL_CloseAudio();
-}
-extern "C" {
-    pub fn SDL_CloseAudioDevice(dev: SDL_AudioDeviceID);
-}
-extern "C" {
-    #[doc = " \\brief Put UTF-8 text into the clipboard"]
-    #[doc = ""]
-    #[doc = " \\sa SDL_GetClipboardText()"]
-    pub fn SDL_SetClipboardText(text: *const ::std::os::raw::c_char) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Get UTF-8 text from the clipboard, which must be freed with SDL_free()"]
-    #[doc = ""]
-    #[doc = " \\sa SDL_SetClipboardText()"]
-    pub fn SDL_GetClipboardText() -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = " \\brief Returns a flag indicating whether the clipboard exists and contains a text string that is non-empty"]
-    #[doc = ""]
-    #[doc = " \\sa SDL_GetClipboardText()"]
-    pub fn SDL_HasClipboardText() -> SDL_bool;
-}
-pub type __m64 = [::std::os::raw::c_longlong; 1usize];
-pub type __v1di = [::std::os::raw::c_longlong; 1usize];
-pub type __v2si = [::std::os::raw::c_int; 2usize];
-pub type __v4hi = [::std::os::raw::c_short; 4usize];
-pub type __v8qi = [::std::os::raw::c_char; 8usize];
-pub type __v4si = [::std::os::raw::c_int; 4usize];
-pub type __v4sf = [f32; 4usize];
-pub type __m128 = [f32; 4usize];
-pub type __m128_u = [f32; 4usize];
-pub type __v4su = [::std::os::raw::c_uint; 4usize];
-extern "C" {
-    pub fn _mm_sfence();
-}
-extern "C" {
-    pub fn _mm_getcsr() -> ::std::os::raw::c_uint;
-}
-extern "C" {
-    pub fn _mm_setcsr(__i: ::std::os::raw::c_uint);
-}
-pub type __m128d = [f64; 2usize];
-pub type __m128i = [::std::os::raw::c_longlong; 2usize];
-pub type __m128d_u = [f64; 2usize];
-pub type __m128i_u = [::std::os::raw::c_longlong; 2usize];
-pub type __v2df = [f64; 2usize];
-pub type __v2di = [::std::os::raw::c_longlong; 2usize];
-pub type __v8hi = [::std::os::raw::c_short; 8usize];
-pub type __v16qi = [::std::os::raw::c_char; 16usize];
-pub type __v2du = [::std::os::raw::c_ulonglong; 2usize];
-pub type __v8hu = [::std::os::raw::c_ushort; 8usize];
-pub type __v16qu = [::std::os::raw::c_uchar; 16usize];
-pub type __v16qs = [::std::os::raw::c_schar; 16usize];
-extern "C" {
-    pub fn _mm_clflush(__p: *const ::std::os::raw::c_void);
-}
-extern "C" {
-    pub fn _mm_lfence();
-}
-extern "C" {
-    pub fn _mm_mfence();
-}
-extern "C" {
-    pub fn _mm_pause();
-}
-pub type __v4df = [f64; 4usize];
-pub type __v8sf = [f32; 8usize];
-pub type __v4di = [::std::os::raw::c_longlong; 4usize];
-pub type __v8si = [::std::os::raw::c_int; 8usize];
-pub type __v16hi = [::std::os::raw::c_short; 16usize];
-pub type __v32qi = [::std::os::raw::c_char; 32usize];
-pub type __v4du = [::std::os::raw::c_ulonglong; 4usize];
-pub type __v8su = [::std::os::raw::c_uint; 8usize];
-pub type __v16hu = [::std::os::raw::c_ushort; 16usize];
-pub type __v32qu = [::std::os::raw::c_uchar; 32usize];
-pub type __v32qs = [::std::os::raw::c_schar; 32usize];
-pub type __m256 = [f32; 8usize];
-pub type __m256d = [f64; 4usize];
-pub type __m256i = [::std::os::raw::c_longlong; 4usize];
-pub type __m256_u = [f32; 8usize];
-pub type __m256d_u = [f64; 4usize];
-pub type __m256i_u = [::std::os::raw::c_longlong; 4usize];
-pub type __v64qi = [::std::os::raw::c_char; 64usize];
-pub type __v32hi = [::std::os::raw::c_short; 32usize];
-pub type __v8df = [f64; 8usize];
-pub type __v16sf = [f32; 16usize];
-pub type __v8di = [::std::os::raw::c_longlong; 8usize];
-pub type __v16si = [::std::os::raw::c_int; 16usize];
-pub type __v64qu = [::std::os::raw::c_uchar; 64usize];
-pub type __v32hu = [::std::os::raw::c_ushort; 32usize];
-pub type __v8du = [::std::os::raw::c_ulonglong; 8usize];
-pub type __v16su = [::std::os::raw::c_uint; 16usize];
-pub type __m512 = [f32; 16usize];
-pub type __m512d = [f64; 8usize];
-pub type __m512i = [::std::os::raw::c_longlong; 8usize];
-pub type __m512_u = [f32; 16usize];
-pub type __m512d_u = [f64; 8usize];
-pub type __m512i_u = [::std::os::raw::c_longlong; 8usize];
-pub type __mmask8 = ::std::os::raw::c_uchar;
-pub type __mmask16 = ::std::os::raw::c_ushort;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_EQ: _MM_CMPINT_ENUM = 0;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_LT: _MM_CMPINT_ENUM = 1;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_LE: _MM_CMPINT_ENUM = 2;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_UNUSED: _MM_CMPINT_ENUM = 3;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_NE: _MM_CMPINT_ENUM = 4;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_NLT: _MM_CMPINT_ENUM = 5;
-pub const _MM_CMPINT_ENUM__MM_CMPINT_NLE: _MM_CMPINT_ENUM = 6;
-pub type _MM_CMPINT_ENUM = u32;
-pub const _MM_PERM_ENUM__MM_PERM_AAAA: _MM_PERM_ENUM = 0;
-pub const _MM_PERM_ENUM__MM_PERM_AAAB: _MM_PERM_ENUM = 1;
-pub const _MM_PERM_ENUM__MM_PERM_AAAC: _MM_PERM_ENUM = 2;
-pub const _MM_PERM_ENUM__MM_PERM_AAAD: _MM_PERM_ENUM = 3;
-pub const _MM_PERM_ENUM__MM_PERM_AABA: _MM_PERM_ENUM = 4;
-pub const _MM_PERM_ENUM__MM_PERM_AABB: _MM_PERM_ENUM = 5;
-pub const _MM_PERM_ENUM__MM_PERM_AABC: _MM_PERM_ENUM = 6;
-pub const _MM_PERM_ENUM__MM_PERM_AABD: _MM_PERM_ENUM = 7;
-pub const _MM_PERM_ENUM__MM_PERM_AACA: _MM_PERM_ENUM = 8;
-pub const _MM_PERM_ENUM__MM_PERM_AACB: _MM_PERM_ENUM = 9;
-pub const _MM_PERM_ENUM__MM_PERM_AACC: _MM_PERM_ENUM = 10;
-pub const _MM_PERM_ENUM__MM_PERM_AACD: _MM_PERM_ENUM = 11;
-pub const _MM_PERM_ENUM__MM_PERM_AADA: _MM_PERM_ENUM = 12;
-pub const _MM_PERM_ENUM__MM_PERM_AADB: _MM_PERM_ENUM = 13;
-pub const _MM_PERM_ENUM__MM_PERM_AADC: _MM_PERM_ENUM = 14;
-pub const _MM_PERM_ENUM__MM_PERM_AADD: _MM_PERM_ENUM = 15;
-pub const _MM_PERM_ENUM__MM_PERM_ABAA: _MM_PERM_ENUM = 16;
-pub const _MM_PERM_ENUM__MM_PERM_ABAB: _MM_PERM_ENUM = 17;
-pub const _MM_PERM_ENUM__MM_PERM_ABAC: _MM_PERM_ENUM = 18;
-pub const _MM_PERM_ENUM__MM_PERM_ABAD: _MM_PERM_ENUM = 19;
-pub const _MM_PERM_ENUM__MM_PERM_ABBA: _MM_PERM_ENUM = 20;
-pub const _MM_PERM_ENUM__MM_PERM_ABBB: _MM_PERM_ENUM = 21;
-pub const _MM_PERM_ENUM__MM_PERM_ABBC: _MM_PERM_ENUM = 22;
-pub const _MM_PERM_ENUM__MM_PERM_ABBD: _MM_PERM_ENUM = 23;
-pub const _MM_PERM_ENUM__MM_PERM_ABCA: _MM_PERM_ENUM = 24;
-pub const _MM_PERM_ENUM__MM_PERM_ABCB: _MM_PERM_ENUM = 25;
-pub const _MM_PERM_ENUM__MM_PERM_ABCC: _MM_PERM_ENUM = 26;
-pub const _MM_PERM_ENUM__MM_PERM_ABCD: _MM_PERM_ENUM = 27;
-pub const _MM_PERM_ENUM__MM_PERM_ABDA: _MM_PERM_ENUM = 28;
-pub const _MM_PERM_ENUM__MM_PERM_ABDB: _MM_PERM_ENUM = 29;
-pub const _MM_PERM_ENUM__MM_PERM_ABDC: _MM_PERM_ENUM = 30;
-pub const _MM_PERM_ENUM__MM_PERM_ABDD: _MM_PERM_ENUM = 31;
-pub const _MM_PERM_ENUM__MM_PERM_ACAA: _MM_PERM_ENUM = 32;
-pub const _MM_PERM_ENUM__MM_PERM_ACAB: _MM_PERM_ENUM = 33;
-pub const _MM_PERM_ENUM__MM_PERM_ACAC: _MM_PERM_ENUM = 34;
-pub const _MM_PERM_ENUM__MM_PERM_ACAD: _MM_PERM_ENUM = 35;
-pub const _MM_PERM_ENUM__MM_PERM_ACBA: _MM_PERM_ENUM = 36;
-pub const _MM_PERM_ENUM__MM_PERM_ACBB: _MM_PERM_ENUM = 37;
-pub const _MM_PERM_ENUM__MM_PERM_ACBC: _MM_PERM_ENUM = 38;
-pub const _MM_PERM_ENUM__MM_PERM_ACBD: _MM_PERM_ENUM = 39;
-pub const _MM_PERM_ENUM__MM_PERM_ACCA: _MM_PERM_ENUM = 40;
-pub const _MM_PERM_ENUM__MM_PERM_ACCB: _MM_PERM_ENUM = 41;
-pub const _MM_PERM_ENUM__MM_PERM_ACCC: _MM_PERM_ENUM = 42;
-pub const _MM_PERM_ENUM__MM_PERM_ACCD: _MM_PERM_ENUM = 43;
-pub const _MM_PERM_ENUM__MM_PERM_ACDA: _MM_PERM_ENUM = 44;
-pub const _MM_PERM_ENUM__MM_PERM_ACDB: _MM_PERM_ENUM = 45;
-pub const _MM_PERM_ENUM__MM_PERM_ACDC: _MM_PERM_ENUM = 46;
-pub const _MM_PERM_ENUM__MM_PERM_ACDD: _MM_PERM_ENUM = 47;
-pub const _MM_PERM_ENUM__MM_PERM_ADAA: _MM_PERM_ENUM = 48;
-pub const _MM_PERM_ENUM__MM_PERM_ADAB: _MM_PERM_ENUM = 49;
-pub const _MM_PERM_ENUM__MM_PERM_ADAC: _MM_PERM_ENUM = 50;
-pub const _MM_PERM_ENUM__MM_PERM_ADAD: _MM_PERM_ENUM = 51;
-pub const _MM_PERM_ENUM__MM_PERM_ADBA: _MM_PERM_ENUM = 52;
-pub const _MM_PERM_ENUM__MM_PERM_ADBB: _MM_PERM_ENUM = 53;
-pub const _MM_PERM_ENUM__MM_PERM_ADBC: _MM_PERM_ENUM = 54;
-pub const _MM_PERM_ENUM__MM_PERM_ADBD: _MM_PERM_ENUM = 55;
-pub const _MM_PERM_ENUM__MM_PERM_ADCA: _MM_PERM_ENUM = 56;
-pub const _MM_PERM_ENUM__MM_PERM_ADCB: _MM_PERM_ENUM = 57;
-pub const _MM_PERM_ENUM__MM_PERM_ADCC: _MM_PERM_ENUM = 58;
-pub const _MM_PERM_ENUM__MM_PERM_ADCD: _MM_PERM_ENUM = 59;
-pub const _MM_PERM_ENUM__MM_PERM_ADDA: _MM_PERM_ENUM = 60;
-pub const _MM_PERM_ENUM__MM_PERM_ADDB: _MM_PERM_ENUM = 61;
-pub const _MM_PERM_ENUM__MM_PERM_ADDC: _MM_PERM_ENUM = 62;
-pub const _MM_PERM_ENUM__MM_PERM_ADDD: _MM_PERM_ENUM = 63;
-pub const _MM_PERM_ENUM__MM_PERM_BAAA: _MM_PERM_ENUM = 64;
-pub const _MM_PERM_ENUM__MM_PERM_BAAB: _MM_PERM_ENUM = 65;
-pub const _MM_PERM_ENUM__MM_PERM_BAAC: _MM_PERM_ENUM = 66;
-pub const _MM_PERM_ENUM__MM_PERM_BAAD: _MM_PERM_ENUM = 67;
-pub const _MM_PERM_ENUM__MM_PERM_BABA: _MM_PERM_ENUM = 68;
-pub const _MM_PERM_ENUM__MM_PERM_BABB: _MM_PERM_ENUM = 69;
-pub const _MM_PERM_ENUM__MM_PERM_BABC: _MM_PERM_ENUM = 70;
-pub const _MM_PERM_ENUM__MM_PERM_BABD: _MM_PERM_ENUM = 71;
-pub const _MM_PERM_ENUM__MM_PERM_BACA: _MM_PERM_ENUM = 72;
-pub const _MM_PERM_ENUM__MM_PERM_BACB: _MM_PERM_ENUM = 73;
-pub const _MM_PERM_ENUM__MM_PERM_BACC: _MM_PERM_ENUM = 74;
-pub const _MM_PERM_ENUM__MM_PERM_BACD: _MM_PERM_ENUM = 75;
-pub const _MM_PERM_ENUM__MM_PERM_BADA: _MM_PERM_ENUM = 76;
-pub const _MM_PERM_ENUM__MM_PERM_BADB: _MM_PERM_ENUM = 77;
-pub const _MM_PERM_ENUM__MM_PERM_BADC: _MM_PERM_ENUM = 78;
-pub const _MM_PERM_ENUM__MM_PERM_BADD: _MM_PERM_ENUM = 79;
-pub const _MM_PERM_ENUM__MM_PERM_BBAA: _MM_PERM_ENUM = 80;
-pub const _MM_PERM_ENUM__MM_PERM_BBAB: _MM_PERM_ENUM = 81;
-pub const _MM_PERM_ENUM__MM_PERM_BBAC: _MM_PERM_ENUM = 82;
-pub const _MM_PERM_ENUM__MM_PERM_BBAD: _MM_PERM_ENUM = 83;
-pub const _MM_PERM_ENUM__MM_PERM_BBBA: _MM_PERM_ENUM = 84;
-pub const _MM_PERM_ENUM__MM_PERM_BBBB: _MM_PERM_ENUM = 85;
-pub const _MM_PERM_ENUM__MM_PERM_BBBC: _MM_PERM_ENUM = 86;
-pub const _MM_PERM_ENUM__MM_PERM_BBBD: _MM_PERM_ENUM = 87;
-pub const _MM_PERM_ENUM__MM_PERM_BBCA: _MM_PERM_ENUM = 88;
-pub const _MM_PERM_ENUM__MM_PERM_BBCB: _MM_PERM_ENUM = 89;
-pub const _MM_PERM_ENUM__MM_PERM_BBCC: _MM_PERM_ENUM = 90;
-pub const _MM_PERM_ENUM__MM_PERM_BBCD: _MM_PERM_ENUM = 91;
-pub const _MM_PERM_ENUM__MM_PERM_BBDA: _MM_PERM_ENUM = 92;
-pub const _MM_PERM_ENUM__MM_PERM_BBDB: _MM_PERM_ENUM = 93;
-pub const _MM_PERM_ENUM__MM_PERM_BBDC: _MM_PERM_ENUM = 94;
-pub const _MM_PERM_ENUM__MM_PERM_BBDD: _MM_PERM_ENUM = 95;
-pub const _MM_PERM_ENUM__MM_PERM_BCAA: _MM_PERM_ENUM = 96;
-pub const _MM_PERM_ENUM__MM_PERM_BCAB: _MM_PERM_ENUM = 97;
-pub const _MM_PERM_ENUM__MM_PERM_BCAC: _MM_PERM_ENUM = 98;
-pub const _MM_PERM_ENUM__MM_PERM_BCAD: _MM_PERM_ENUM = 99;
-pub const _MM_PERM_ENUM__MM_PERM_BCBA: _MM_PERM_ENUM = 100;
-pub const _MM_PERM_ENUM__MM_PERM_BCBB: _MM_PERM_ENUM = 101;
-pub const _MM_PERM_ENUM__MM_PERM_BCBC: _MM_PERM_ENUM = 102;
-pub const _MM_PERM_ENUM__MM_PERM_BCBD: _MM_PERM_ENUM = 103;
-pub const _MM_PERM_ENUM__MM_PERM_BCCA: _MM_PERM_ENUM = 104;
-pub const _MM_PERM_ENUM__MM_PERM_BCCB: _MM_PERM_ENUM = 105;
-pub const _MM_PERM_ENUM__MM_PERM_BCCC: _MM_PERM_ENUM = 106;
-pub const _MM_PERM_ENUM__MM_PERM_BCCD: _MM_PERM_ENUM = 107;
-pub const _MM_PERM_ENUM__MM_PERM_BCDA: _MM_PERM_ENUM = 108;
-pub const _MM_PERM_ENUM__MM_PERM_BCDB: _MM_PERM_ENUM = 109;
-pub const _MM_PERM_ENUM__MM_PERM_BCDC: _MM_PERM_ENUM = 110;
-pub const _MM_PERM_ENUM__MM_PERM_BCDD: _MM_PERM_ENUM = 111;
-pub const _MM_PERM_ENUM__MM_PERM_BDAA: _MM_PERM_ENUM = 112;
-pub const _MM_PERM_ENUM__MM_PERM_BDAB: _MM_PERM_ENUM = 113;
-pub const _MM_PERM_ENUM__MM_PERM_BDAC: _MM_PERM_ENUM = 114;
-pub const _MM_PERM_ENUM__MM_PERM_BDAD: _MM_PERM_ENUM = 115;
-pub const _MM_PERM_ENUM__MM_PERM_BDBA: _MM_PERM_ENUM = 116;
-pub const _MM_PERM_ENUM__MM_PERM_BDBB: _MM_PERM_ENUM = 117;
-pub const _MM_PERM_ENUM__MM_PERM_BDBC: _MM_PERM_ENUM = 118;
-pub const _MM_PERM_ENUM__MM_PERM_BDBD: _MM_PERM_ENUM = 119;
-pub const _MM_PERM_ENUM__MM_PERM_BDCA: _MM_PERM_ENUM = 120;
-pub const _MM_PERM_ENUM__MM_PERM_BDCB: _MM_PERM_ENUM = 121;
-pub const _MM_PERM_ENUM__MM_PERM_BDCC: _MM_PERM_ENUM = 122;
-pub const _MM_PERM_ENUM__MM_PERM_BDCD: _MM_PERM_ENUM = 123;
-pub const _MM_PERM_ENUM__MM_PERM_BDDA: _MM_PERM_ENUM = 124;
-pub const _MM_PERM_ENUM__MM_PERM_BDDB: _MM_PERM_ENUM = 125;
-pub const _MM_PERM_ENUM__MM_PERM_BDDC: _MM_PERM_ENUM = 126;
-pub const _MM_PERM_ENUM__MM_PERM_BDDD: _MM_PERM_ENUM = 127;
-pub const _MM_PERM_ENUM__MM_PERM_CAAA: _MM_PERM_ENUM = 128;
-pub const _MM_PERM_ENUM__MM_PERM_CAAB: _MM_PERM_ENUM = 129;
-pub const _MM_PERM_ENUM__MM_PERM_CAAC: _MM_PERM_ENUM = 130;
-pub const _MM_PERM_ENUM__MM_PERM_CAAD: _MM_PERM_ENUM = 131;
-pub const _MM_PERM_ENUM__MM_PERM_CABA: _MM_PERM_ENUM = 132;
-pub const _MM_PERM_ENUM__MM_PERM_CABB: _MM_PERM_ENUM = 133;
-pub const _MM_PERM_ENUM__MM_PERM_CABC: _MM_PERM_ENUM = 134;
-pub const _MM_PERM_ENUM__MM_PERM_CABD: _MM_PERM_ENUM = 135;
-pub const _MM_PERM_ENUM__MM_PERM_CACA: _MM_PERM_ENUM = 136;
-pub const _MM_PERM_ENUM__MM_PERM_CACB: _MM_PERM_ENUM = 137;
-pub const _MM_PERM_ENUM__MM_PERM_CACC: _MM_PERM_ENUM = 138;
-pub const _MM_PERM_ENUM__MM_PERM_CACD: _MM_PERM_ENUM = 139;
-pub const _MM_PERM_ENUM__MM_PERM_CADA: _MM_PERM_ENUM = 140;
-pub const _MM_PERM_ENUM__MM_PERM_CADB: _MM_PERM_ENUM = 141;
-pub const _MM_PERM_ENUM__MM_PERM_CADC: _MM_PERM_ENUM = 142;
-pub const _MM_PERM_ENUM__MM_PERM_CADD: _MM_PERM_ENUM = 143;
-pub const _MM_PERM_ENUM__MM_PERM_CBAA: _MM_PERM_ENUM = 144;
-pub const _MM_PERM_ENUM__MM_PERM_CBAB: _MM_PERM_ENUM = 145;
-pub const _MM_PERM_ENUM__MM_PERM_CBAC: _MM_PERM_ENUM = 146;
-pub const _MM_PERM_ENUM__MM_PERM_CBAD: _MM_PERM_ENUM = 147;
-pub const _MM_PERM_ENUM__MM_PERM_CBBA: _MM_PERM_ENUM = 148;
-pub const _MM_PERM_ENUM__MM_PERM_CBBB: _MM_PERM_ENUM = 149;
-pub const _MM_PERM_ENUM__MM_PERM_CBBC: _MM_PERM_ENUM = 150;
-pub const _MM_PERM_ENUM__MM_PERM_CBBD: _MM_PERM_ENUM = 151;
-pub const _MM_PERM_ENUM__MM_PERM_CBCA: _MM_PERM_ENUM = 152;
-pub const _MM_PERM_ENUM__MM_PERM_CBCB: _MM_PERM_ENUM = 153;
-pub const _MM_PERM_ENUM__MM_PERM_CBCC: _MM_PERM_ENUM = 154;
-pub const _MM_PERM_ENUM__MM_PERM_CBCD: _MM_PERM_ENUM = 155;
-pub const _MM_PERM_ENUM__MM_PERM_CBDA: _MM_PERM_ENUM = 156;
-pub const _MM_PERM_ENUM__MM_PERM_CBDB: _MM_PERM_ENUM = 157;
-pub const _MM_PERM_ENUM__MM_PERM_CBDC: _MM_PERM_ENUM = 158;
-pub const _MM_PERM_ENUM__MM_PERM_CBDD: _MM_PERM_ENUM = 159;
-pub const _MM_PERM_ENUM__MM_PERM_CCAA: _MM_PERM_ENUM = 160;
-pub const _MM_PERM_ENUM__MM_PERM_CCAB: _MM_PERM_ENUM = 161;
-pub const _MM_PERM_ENUM__MM_PERM_CCAC: _MM_PERM_ENUM = 162;
-pub const _MM_PERM_ENUM__MM_PERM_CCAD: _MM_PERM_ENUM = 163;
-pub const _MM_PERM_ENUM__MM_PERM_CCBA: _MM_PERM_ENUM = 164;
-pub const _MM_PERM_ENUM__MM_PERM_CCBB: _MM_PERM_ENUM = 165;
-pub const _MM_PERM_ENUM__MM_PERM_CCBC: _MM_PERM_ENUM = 166;
-pub const _MM_PERM_ENUM__MM_PERM_CCBD: _MM_PERM_ENUM = 167;
-pub const _MM_PERM_ENUM__MM_PERM_CCCA: _MM_PERM_ENUM = 168;
-pub const _MM_PERM_ENUM__MM_PERM_CCCB: _MM_PERM_ENUM = 169;
-pub const _MM_PERM_ENUM__MM_PERM_CCCC: _MM_PERM_ENUM = 170;
-pub const _MM_PERM_ENUM__MM_PERM_CCCD: _MM_PERM_ENUM = 171;
-pub const _MM_PERM_ENUM__MM_PERM_CCDA: _MM_PERM_ENUM = 172;
-pub const _MM_PERM_ENUM__MM_PERM_CCDB: _MM_PERM_ENUM = 173;
-pub const _MM_PERM_ENUM__MM_PERM_CCDC: _MM_PERM_ENUM = 174;
-pub const _MM_PERM_ENUM__MM_PERM_CCDD: _MM_PERM_ENUM = 175;
-pub const _MM_PERM_ENUM__MM_PERM_CDAA: _MM_PERM_ENUM = 176;
-pub const _MM_PERM_ENUM__MM_PERM_CDAB: _MM_PERM_ENUM = 177;
-pub const _MM_PERM_ENUM__MM_PERM_CDAC: _MM_PERM_ENUM = 178;
-pub const _MM_PERM_ENUM__MM_PERM_CDAD: _MM_PERM_ENUM = 179;
-pub const _MM_PERM_ENUM__MM_PERM_CDBA: _MM_PERM_ENUM = 180;
-pub const _MM_PERM_ENUM__MM_PERM_CDBB: _MM_PERM_ENUM = 181;
-pub const _MM_PERM_ENUM__MM_PERM_CDBC: _MM_PERM_ENUM = 182;
-pub const _MM_PERM_ENUM__MM_PERM_CDBD: _MM_PERM_ENUM = 183;
-pub const _MM_PERM_ENUM__MM_PERM_CDCA: _MM_PERM_ENUM = 184;
-pub const _MM_PERM_ENUM__MM_PERM_CDCB: _MM_PERM_ENUM = 185;
-pub const _MM_PERM_ENUM__MM_PERM_CDCC: _MM_PERM_ENUM = 186;
-pub const _MM_PERM_ENUM__MM_PERM_CDCD: _MM_PERM_ENUM = 187;
-pub const _MM_PERM_ENUM__MM_PERM_CDDA: _MM_PERM_ENUM = 188;
-pub const _MM_PERM_ENUM__MM_PERM_CDDB: _MM_PERM_ENUM = 189;
-pub const _MM_PERM_ENUM__MM_PERM_CDDC: _MM_PERM_ENUM = 190;
-pub const _MM_PERM_ENUM__MM_PERM_CDDD: _MM_PERM_ENUM = 191;
-pub const _MM_PERM_ENUM__MM_PERM_DAAA: _MM_PERM_ENUM = 192;
-pub const _MM_PERM_ENUM__MM_PERM_DAAB: _MM_PERM_ENUM = 193;
-pub const _MM_PERM_ENUM__MM_PERM_DAAC: _MM_PERM_ENUM = 194;
-pub const _MM_PERM_ENUM__MM_PERM_DAAD: _MM_PERM_ENUM = 195;
-pub const _MM_PERM_ENUM__MM_PERM_DABA: _MM_PERM_ENUM = 196;
-pub const _MM_PERM_ENUM__MM_PERM_DABB: _MM_PERM_ENUM = 197;
-pub const _MM_PERM_ENUM__MM_PERM_DABC: _MM_PERM_ENUM = 198;
-pub const _MM_PERM_ENUM__MM_PERM_DABD: _MM_PERM_ENUM = 199;
-pub const _MM_PERM_ENUM__MM_PERM_DACA: _MM_PERM_ENUM = 200;
-pub const _MM_PERM_ENUM__MM_PERM_DACB: _MM_PERM_ENUM = 201;
-pub const _MM_PERM_ENUM__MM_PERM_DACC: _MM_PERM_ENUM = 202;
-pub const _MM_PERM_ENUM__MM_PERM_DACD: _MM_PERM_ENUM = 203;
-pub const _MM_PERM_ENUM__MM_PERM_DADA: _MM_PERM_ENUM = 204;
-pub const _MM_PERM_ENUM__MM_PERM_DADB: _MM_PERM_ENUM = 205;
-pub const _MM_PERM_ENUM__MM_PERM_DADC: _MM_PERM_ENUM = 206;
-pub const _MM_PERM_ENUM__MM_PERM_DADD: _MM_PERM_ENUM = 207;
-pub const _MM_PERM_ENUM__MM_PERM_DBAA: _MM_PERM_ENUM = 208;
-pub const _MM_PERM_ENUM__MM_PERM_DBAB: _MM_PERM_ENUM = 209;
-pub const _MM_PERM_ENUM__MM_PERM_DBAC: _MM_PERM_ENUM = 210;
-pub const _MM_PERM_ENUM__MM_PERM_DBAD: _MM_PERM_ENUM = 211;
-pub const _MM_PERM_ENUM__MM_PERM_DBBA: _MM_PERM_ENUM = 212;
-pub const _MM_PERM_ENUM__MM_PERM_DBBB: _MM_PERM_ENUM = 213;
-pub const _MM_PERM_ENUM__MM_PERM_DBBC: _MM_PERM_ENUM = 214;
-pub const _MM_PERM_ENUM__MM_PERM_DBBD: _MM_PERM_ENUM = 215;
-pub const _MM_PERM_ENUM__MM_PERM_DBCA: _MM_PERM_ENUM = 216;
-pub const _MM_PERM_ENUM__MM_PERM_DBCB: _MM_PERM_ENUM = 217;
-pub const _MM_PERM_ENUM__MM_PERM_DBCC: _MM_PERM_ENUM = 218;
-pub const _MM_PERM_ENUM__MM_PERM_DBCD: _MM_PERM_ENUM = 219;
-pub const _MM_PERM_ENUM__MM_PERM_DBDA: _MM_PERM_ENUM = 220;
-pub const _MM_PERM_ENUM__MM_PERM_DBDB: _MM_PERM_ENUM = 221;
-pub const _MM_PERM_ENUM__MM_PERM_DBDC: _MM_PERM_ENUM = 222;
-pub const _MM_PERM_ENUM__MM_PERM_DBDD: _MM_PERM_ENUM = 223;
-pub const _MM_PERM_ENUM__MM_PERM_DCAA: _MM_PERM_ENUM = 224;
-pub const _MM_PERM_ENUM__MM_PERM_DCAB: _MM_PERM_ENUM = 225;
-pub const _MM_PERM_ENUM__MM_PERM_DCAC: _MM_PERM_ENUM = 226;
-pub const _MM_PERM_ENUM__MM_PERM_DCAD: _MM_PERM_ENUM = 227;
-pub const _MM_PERM_ENUM__MM_PERM_DCBA: _MM_PERM_ENUM = 228;
-pub const _MM_PERM_ENUM__MM_PERM_DCBB: _MM_PERM_ENUM = 229;
-pub const _MM_PERM_ENUM__MM_PERM_DCBC: _MM_PERM_ENUM = 230;
-pub const _MM_PERM_ENUM__MM_PERM_DCBD: _MM_PERM_ENUM = 231;
-pub const _MM_PERM_ENUM__MM_PERM_DCCA: _MM_PERM_ENUM = 232;
-pub const _MM_PERM_ENUM__MM_PERM_DCCB: _MM_PERM_ENUM = 233;
-pub const _MM_PERM_ENUM__MM_PERM_DCCC: _MM_PERM_ENUM = 234;
-pub const _MM_PERM_ENUM__MM_PERM_DCCD: _MM_PERM_ENUM = 235;
-pub const _MM_PERM_ENUM__MM_PERM_DCDA: _MM_PERM_ENUM = 236;
-pub const _MM_PERM_ENUM__MM_PERM_DCDB: _MM_PERM_ENUM = 237;
-pub const _MM_PERM_ENUM__MM_PERM_DCDC: _MM_PERM_ENUM = 238;
-pub const _MM_PERM_ENUM__MM_PERM_DCDD: _MM_PERM_ENUM = 239;
-pub const _MM_PERM_ENUM__MM_PERM_DDAA: _MM_PERM_ENUM = 240;
-pub const _MM_PERM_ENUM__MM_PERM_DDAB: _MM_PERM_ENUM = 241;
-pub const _MM_PERM_ENUM__MM_PERM_DDAC: _MM_PERM_ENUM = 242;
-pub const _MM_PERM_ENUM__MM_PERM_DDAD: _MM_PERM_ENUM = 243;
-pub const _MM_PERM_ENUM__MM_PERM_DDBA: _MM_PERM_ENUM = 244;
-pub const _MM_PERM_ENUM__MM_PERM_DDBB: _MM_PERM_ENUM = 245;
-pub const _MM_PERM_ENUM__MM_PERM_DDBC: _MM_PERM_ENUM = 246;
-pub const _MM_PERM_ENUM__MM_PERM_DDBD: _MM_PERM_ENUM = 247;
-pub const _MM_PERM_ENUM__MM_PERM_DDCA: _MM_PERM_ENUM = 248;
-pub const _MM_PERM_ENUM__MM_PERM_DDCB: _MM_PERM_ENUM = 249;
-pub const _MM_PERM_ENUM__MM_PERM_DDCC: _MM_PERM_ENUM = 250;
-pub const _MM_PERM_ENUM__MM_PERM_DDCD: _MM_PERM_ENUM = 251;
-pub const _MM_PERM_ENUM__MM_PERM_DDDA: _MM_PERM_ENUM = 252;
-pub const _MM_PERM_ENUM__MM_PERM_DDDB: _MM_PERM_ENUM = 253;
-pub const _MM_PERM_ENUM__MM_PERM_DDDC: _MM_PERM_ENUM = 254;
-pub const _MM_PERM_ENUM__MM_PERM_DDDD: _MM_PERM_ENUM = 255;
-pub type _MM_PERM_ENUM = u32;
-pub const _MM_MANTISSA_NORM_ENUM__MM_MANT_NORM_1_2: _MM_MANTISSA_NORM_ENUM = 0;
-pub const _MM_MANTISSA_NORM_ENUM__MM_MANT_NORM_p5_2: _MM_MANTISSA_NORM_ENUM = 1;
-pub const _MM_MANTISSA_NORM_ENUM__MM_MANT_NORM_p5_1: _MM_MANTISSA_NORM_ENUM = 2;
-pub const _MM_MANTISSA_NORM_ENUM__MM_MANT_NORM_p75_1p5: _MM_MANTISSA_NORM_ENUM = 3;
-pub type _MM_MANTISSA_NORM_ENUM = u32;
-pub const _MM_MANTISSA_SIGN_ENUM__MM_MANT_SIGN_src: _MM_MANTISSA_SIGN_ENUM = 0;
-pub const _MM_MANTISSA_SIGN_ENUM__MM_MANT_SIGN_zero: _MM_MANTISSA_SIGN_ENUM = 1;
-pub const _MM_MANTISSA_SIGN_ENUM__MM_MANT_SIGN_nan: _MM_MANTISSA_SIGN_ENUM = 2;
-pub type _MM_MANTISSA_SIGN_ENUM = u32;
-pub type __v2hi = [::std::os::raw::c_short; 2usize];
-pub type __v4qi = [::std::os::raw::c_char; 4usize];
-pub type __v2qi = [::std::os::raw::c_char; 2usize];
-pub type __mmask32 = ::std::os::raw::c_uint;
-pub type __mmask64 = ::std::os::raw::c_ulonglong;
-pub type __m512bh = [::std::os::raw::c_short; 32usize];
-pub type __m256bh = [::std::os::raw::c_short; 16usize];
-pub type __bfloat16 = ::std::os::raw::c_ushort;
-pub type __m128bh = [::std::os::raw::c_short; 8usize];
-extern "C" {
-    #[doc = "  This function returns the number of CPU cores available."]
-    pub fn SDL_GetCPUCount() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  This function returns the L1 cache line size of the CPU"]
-    #[doc = ""]
-    #[doc = "  This is useful for determining multi-threaded structure padding"]
-    #[doc = "  or SIMD prefetch sizes."]
-    pub fn SDL_GetCPUCacheLineSize() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has the RDTSC instruction."]
-    pub fn SDL_HasRDTSC() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has AltiVec features."]
-    pub fn SDL_HasAltiVec() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has MMX features."]
-    pub fn SDL_HasMMX() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has 3DNow! features."]
-    pub fn SDL_Has3DNow() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has SSE features."]
-    pub fn SDL_HasSSE() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has SSE2 features."]
-    pub fn SDL_HasSSE2() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has SSE3 features."]
-    pub fn SDL_HasSSE3() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has SSE4.1 features."]
-    pub fn SDL_HasSSE41() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has SSE4.2 features."]
-    pub fn SDL_HasSSE42() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has AVX features."]
-    pub fn SDL_HasAVX() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has AVX2 features."]
-    pub fn SDL_HasAVX2() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has AVX-512F (foundation) features."]
-    pub fn SDL_HasAVX512F() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has ARM SIMD (ARMv6) features."]
-    pub fn SDL_HasARMSIMD() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns true if the CPU has NEON (ARM SIMD) features."]
-    pub fn SDL_HasNEON() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function returns the amount of RAM configured in the system, in MB."]
-    pub fn SDL_GetSystemRAM() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Report the alignment this system needs for SIMD allocations."]
-    #[doc = ""]
-    #[doc = " This will return the minimum number of bytes to which a pointer must be"]
-    #[doc = "  aligned to be compatible with SIMD instructions on the current machine."]
-    #[doc = "  For example, if the machine supports SSE only, it will return 16, but if"]
-    #[doc = "  it supports AVX-512F, it'll return 64 (etc). This only reports values for"]
-    #[doc = "  instruction sets SDL knows about, so if your SDL build doesn't have"]
-    #[doc = "  SDL_HasAVX512F(), then it might return 16 for the SSE support it sees and"]
-    #[doc = "  not 64 for the AVX-512 instructions that exist but SDL doesn't know about."]
-    #[doc = "  Plan accordingly."]
-    pub fn SDL_SIMDGetAlignment() -> size_t;
-}
-extern "C" {
-    #[doc = " \\brief Allocate memory in a SIMD-friendly way."]
-    #[doc = ""]
-    #[doc = " This will allocate a block of memory that is suitable for use with SIMD"]
-    #[doc = "  instructions. Specifically, it will be properly aligned and padded for"]
-    #[doc = "  the system's supported vector instructions."]
-    #[doc = ""]
-    #[doc = " The memory returned will be padded such that it is safe to read or write"]
-    #[doc = "  an incomplete vector at the end of the memory block. This can be useful"]
-    #[doc = "  so you don't have to drop back to a scalar fallback at the end of your"]
-    #[doc = "  SIMD processing loop to deal with the final elements without overflowing"]
-    #[doc = "  the allocated buffer."]
-    #[doc = ""]
-    #[doc = " You must free this memory with SDL_FreeSIMD(), not free() or SDL_free()"]
-    #[doc = "  or delete[], etc."]
-    #[doc = ""]
-    #[doc = " Note that SDL will only deal with SIMD instruction sets it is aware of;"]
-    #[doc = "  for example, SDL 2.0.8 knows that SSE wants 16-byte vectors"]
-    #[doc = "  (SDL_HasSSE()), and AVX2 wants 32 bytes (SDL_HasAVX2()), but doesn't"]
-    #[doc = "  know that AVX-512 wants 64. To be clear: if you can't decide to use an"]
-    #[doc = "  instruction set with an SDL_Has*() function, don't use that instruction"]
-    #[doc = "  set with memory allocated through here."]
-    #[doc = ""]
-    #[doc = " SDL_AllocSIMD(0) will return a non-NULL pointer, assuming the system isn't"]
-    #[doc = "  out of memory."]
-    #[doc = ""]
-    #[doc = "  \\param len The length, in bytes, of the block to allocated. The actual"]
-    #[doc = "             allocated block might be larger due to padding, etc."]
-    #[doc = " \\return Pointer to newly-allocated block, NULL if out of memory."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_SIMDAlignment"]
-    #[doc = " \\sa SDL_SIMDFree"]
-    pub fn SDL_SIMDAlloc(len: size_t) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = " \\brief Deallocate memory obtained from SDL_SIMDAlloc"]
-    #[doc = ""]
-    #[doc = " It is not valid to use this function on a pointer from anything but"]
-    #[doc = "  SDL_SIMDAlloc(). It can't be used on pointers from malloc, realloc,"]
-    #[doc = "  SDL_malloc, memalign, new[], etc."]
-    #[doc = ""]
-    #[doc = " However, SDL_SIMDFree(NULL) is a legal no-op."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_SIMDAlloc"]
-    pub fn SDL_SIMDFree(ptr: *mut ::std::os::raw::c_void);
 }
 pub const SDL_PixelType_SDL_PIXELTYPE_UNKNOWN: SDL_PixelType = 0;
 pub const SDL_PixelType_SDL_PIXELTYPE_INDEX1: SDL_PixelType = 1;
@@ -18512,6 +22157,529 @@ extern "C" {
 extern "C" {
     #[doc = "  \\brief Calculate a 256 entry gamma ramp for a gamma value."]
     pub fn SDL_CalculateGammaRamp(gamma: f32, ramp: *mut Uint16);
+}
+extern "C" {
+    pub fn SDL_SetError(fmt: *const ::std::os::raw::c_char, ...) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn SDL_GetError() -> *const ::std::os::raw::c_char;
+}
+extern "C" {
+    pub fn SDL_ClearError();
+}
+pub const SDL_errorcode_SDL_ENOMEM: SDL_errorcode = 0;
+pub const SDL_errorcode_SDL_EFREAD: SDL_errorcode = 1;
+pub const SDL_errorcode_SDL_EFWRITE: SDL_errorcode = 2;
+pub const SDL_errorcode_SDL_EFSEEK: SDL_errorcode = 3;
+pub const SDL_errorcode_SDL_UNSUPPORTED: SDL_errorcode = 4;
+pub const SDL_errorcode_SDL_LASTERROR: SDL_errorcode = 5;
+pub type SDL_errorcode = u32;
+extern "C" {
+    pub fn SDL_Error(code: SDL_errorcode) -> ::std::os::raw::c_int;
+}
+#[doc = " This is the read/write operation structure -- very basic."]
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub struct SDL_RWops {
+    #[doc = "  Return the size of the file in this rwops, or -1 if unknown"]
+    pub size: ::std::option::Option<unsafe extern "C" fn(context: *mut SDL_RWops) -> Sint64>,
+    #[doc = "  Seek to \\c offset relative to \\c whence, one of stdio's whence values:"]
+    #[doc = "  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END"]
+    #[doc = ""]
+    #[doc = "  \\return the final offset in the data stream, or -1 on error."]
+    pub seek: ::std::option::Option<
+        unsafe extern "C" fn(
+            context: *mut SDL_RWops,
+            offset: Sint64,
+            whence: ::std::os::raw::c_int,
+        ) -> Sint64,
+    >,
+    #[doc = "  Read up to \\c maxnum objects each of size \\c size from the data"]
+    #[doc = "  stream to the area pointed at by \\c ptr."]
+    #[doc = ""]
+    #[doc = "  \\return the number of objects read, or 0 at error or end of file."]
+    pub read: ::std::option::Option<
+        unsafe extern "C" fn(
+            context: *mut SDL_RWops,
+            ptr: *mut ::std::os::raw::c_void,
+            size: size_t,
+            maxnum: size_t,
+        ) -> size_t,
+    >,
+    #[doc = "  Write exactly \\c num objects each of size \\c size from the area"]
+    #[doc = "  pointed at by \\c ptr to data stream."]
+    #[doc = ""]
+    #[doc = "  \\return the number of objects written, or 0 at error or end of file."]
+    pub write: ::std::option::Option<
+        unsafe extern "C" fn(
+            context: *mut SDL_RWops,
+            ptr: *const ::std::os::raw::c_void,
+            size: size_t,
+            num: size_t,
+        ) -> size_t,
+    >,
+    #[doc = "  Close and free an allocated SDL_RWops structure."]
+    #[doc = ""]
+    #[doc = "  \\return 0 if successful or -1 on write error when flushing data."]
+    pub close: ::std::option::Option<
+        unsafe extern "C" fn(context: *mut SDL_RWops) -> ::std::os::raw::c_int,
+    >,
+    pub type_: Uint32,
+    pub hidden: SDL_RWops__bindgen_ty_1,
+}
+#[repr(C)]
+#[derive(Copy, Clone)]
+pub union SDL_RWops__bindgen_ty_1 {
+    pub stdio: SDL_RWops__bindgen_ty_1__bindgen_ty_1,
+    pub mem: SDL_RWops__bindgen_ty_1__bindgen_ty_2,
+    pub unknown: SDL_RWops__bindgen_ty_1__bindgen_ty_3,
+    _bindgen_union_align: [u64; 3usize],
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct SDL_RWops__bindgen_ty_1__bindgen_ty_1 {
+    pub autoclose: SDL_bool,
+    pub fp: *mut FILE,
+}
+#[test]
+fn bindgen_test_layout_SDL_RWops__bindgen_ty_1__bindgen_ty_1() {
+    assert_eq!(
+        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>(),
+        16usize,
+        concat!(
+            "Size of: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>(),
+        8usize,
+        concat!(
+            "Alignment of ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>())).autoclose as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(autoclose)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_1>())).fp as *const _
+                as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_1),
+            "::",
+            stringify!(fp)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct SDL_RWops__bindgen_ty_1__bindgen_ty_2 {
+    pub base: *mut Uint8,
+    pub here: *mut Uint8,
+    pub stop: *mut Uint8,
+}
+#[test]
+fn bindgen_test_layout_SDL_RWops__bindgen_ty_1__bindgen_ty_2() {
+    assert_eq!(
+        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>(),
+        24usize,
+        concat!(
+            "Size of: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2)
+        )
+    );
+    assert_eq!(
+        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>(),
+        8usize,
+        concat!(
+            "Alignment of ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>())).base as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2),
+            "::",
+            stringify!(base)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>())).here as *const _
+                as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2),
+            "::",
+            stringify!(here)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_2>())).stop as *const _
+                as usize
+        },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_2),
+            "::",
+            stringify!(stop)
+        )
+    );
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct SDL_RWops__bindgen_ty_1__bindgen_ty_3 {
+    pub data1: *mut ::std::os::raw::c_void,
+    pub data2: *mut ::std::os::raw::c_void,
+}
+#[test]
+fn bindgen_test_layout_SDL_RWops__bindgen_ty_1__bindgen_ty_3() {
+    assert_eq!(
+        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>(),
+        16usize,
+        concat!(
+            "Size of: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3)
+        )
+    );
+    assert_eq!(
+        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>(),
+        8usize,
+        concat!(
+            "Alignment of ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>())).data1 as *const _
+                as usize
+        },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3),
+            "::",
+            stringify!(data1)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1__bindgen_ty_3>())).data2 as *const _
+                as usize
+        },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1__bindgen_ty_3),
+            "::",
+            stringify!(data2)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_SDL_RWops__bindgen_ty_1() {
+    assert_eq!(
+        ::std::mem::size_of::<SDL_RWops__bindgen_ty_1>(),
+        24usize,
+        concat!("Size of: ", stringify!(SDL_RWops__bindgen_ty_1))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<SDL_RWops__bindgen_ty_1>(),
+        8usize,
+        concat!("Alignment of ", stringify!(SDL_RWops__bindgen_ty_1))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1>())).stdio as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1),
+            "::",
+            stringify!(stdio)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1>())).mem as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1),
+            "::",
+            stringify!(mem)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops__bindgen_ty_1>())).unknown as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops__bindgen_ty_1),
+            "::",
+            stringify!(unknown)
+        )
+    );
+}
+#[test]
+fn bindgen_test_layout_SDL_RWops() {
+    assert_eq!(
+        ::std::mem::size_of::<SDL_RWops>(),
+        72usize,
+        concat!("Size of: ", stringify!(SDL_RWops))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<SDL_RWops>(),
+        8usize,
+        concat!("Alignment of ", stringify!(SDL_RWops))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).size as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).seek as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(seek)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).read as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(read)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).write as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(write)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).close as *const _ as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(close)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).type_ as *const _ as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(type_)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<SDL_RWops>())).hidden as *const _ as usize },
+        48usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(SDL_RWops),
+            "::",
+            stringify!(hidden)
+        )
+    );
+}
+extern "C" {
+    pub fn SDL_RWFromFile(
+        file: *const ::std::os::raw::c_char,
+        mode: *const ::std::os::raw::c_char,
+    ) -> *mut SDL_RWops;
+}
+extern "C" {
+    pub fn SDL_RWFromFP(fp: *mut FILE, autoclose: SDL_bool) -> *mut SDL_RWops;
+}
+extern "C" {
+    pub fn SDL_RWFromMem(
+        mem: *mut ::std::os::raw::c_void,
+        size: ::std::os::raw::c_int,
+    ) -> *mut SDL_RWops;
+}
+extern "C" {
+    pub fn SDL_RWFromConstMem(
+        mem: *const ::std::os::raw::c_void,
+        size: ::std::os::raw::c_int,
+    ) -> *mut SDL_RWops;
+}
+extern "C" {
+    pub fn SDL_AllocRW() -> *mut SDL_RWops;
+}
+extern "C" {
+    pub fn SDL_FreeRW(area: *mut SDL_RWops);
+}
+extern "C" {
+    #[doc = "  Return the size of the file in this rwops, or -1 if unknown"]
+    pub fn SDL_RWsize(context: *mut SDL_RWops) -> Sint64;
+}
+extern "C" {
+    #[doc = "  Seek to \\c offset relative to \\c whence, one of stdio's whence values:"]
+    #[doc = "  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END"]
+    #[doc = ""]
+    #[doc = "  \\return the final offset in the data stream, or -1 on error."]
+    pub fn SDL_RWseek(
+        context: *mut SDL_RWops,
+        offset: Sint64,
+        whence: ::std::os::raw::c_int,
+    ) -> Sint64;
+}
+extern "C" {
+    #[doc = "  Return the current offset in the data stream, or -1 on error."]
+    pub fn SDL_RWtell(context: *mut SDL_RWops) -> Sint64;
+}
+extern "C" {
+    #[doc = "  Read up to \\c maxnum objects each of size \\c size from the data"]
+    #[doc = "  stream to the area pointed at by \\c ptr."]
+    #[doc = ""]
+    #[doc = "  \\return the number of objects read, or 0 at error or end of file."]
+    pub fn SDL_RWread(
+        context: *mut SDL_RWops,
+        ptr: *mut ::std::os::raw::c_void,
+        size: size_t,
+        maxnum: size_t,
+    ) -> size_t;
+}
+extern "C" {
+    #[doc = "  Write exactly \\c num objects each of size \\c size from the area"]
+    #[doc = "  pointed at by \\c ptr to data stream."]
+    #[doc = ""]
+    #[doc = "  \\return the number of objects written, or 0 at error or end of file."]
+    pub fn SDL_RWwrite(
+        context: *mut SDL_RWops,
+        ptr: *const ::std::os::raw::c_void,
+        size: size_t,
+        num: size_t,
+    ) -> size_t;
+}
+extern "C" {
+    #[doc = "  Close and free an allocated SDL_RWops structure."]
+    #[doc = ""]
+    #[doc = "  \\return 0 if successful or -1 on write error when flushing data."]
+    pub fn SDL_RWclose(context: *mut SDL_RWops) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    #[doc = "  Load all the data from an SDL data stream."]
+    #[doc = ""]
+    #[doc = "  The data is allocated with a zero byte at the end (null terminated)"]
+    #[doc = ""]
+    #[doc = "  If \\c datasize is not NULL, it is filled with the size of the data read."]
+    #[doc = ""]
+    #[doc = "  If \\c freesrc is non-zero, the stream will be closed after being read."]
+    #[doc = ""]
+    #[doc = "  The data should be freed with SDL_free()."]
+    #[doc = ""]
+    #[doc = "  \\return the data, or NULL if there was an error."]
+    pub fn SDL_LoadFile_RW(
+        src: *mut SDL_RWops,
+        datasize: *mut size_t,
+        freesrc: ::std::os::raw::c_int,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    #[doc = "  Load an entire file."]
+    #[doc = ""]
+    #[doc = "  The data is allocated with a zero byte at the end (null terminated)"]
+    #[doc = ""]
+    #[doc = "  If \\c datasize is not NULL, it is filled with the size of the data read."]
+    #[doc = ""]
+    #[doc = "  If \\c freesrc is non-zero, the stream will be closed after being read."]
+    #[doc = ""]
+    #[doc = "  The data should be freed with SDL_free()."]
+    #[doc = ""]
+    #[doc = "  \\return the data, or NULL if there was an error."]
+    pub fn SDL_LoadFile(
+        file: *const ::std::os::raw::c_char,
+        datasize: *mut size_t,
+    ) -> *mut ::std::os::raw::c_void;
+}
+extern "C" {
+    pub fn SDL_ReadU8(src: *mut SDL_RWops) -> Uint8;
+}
+extern "C" {
+    pub fn SDL_ReadLE16(src: *mut SDL_RWops) -> Uint16;
+}
+extern "C" {
+    pub fn SDL_ReadBE16(src: *mut SDL_RWops) -> Uint16;
+}
+extern "C" {
+    pub fn SDL_ReadLE32(src: *mut SDL_RWops) -> Uint32;
+}
+extern "C" {
+    pub fn SDL_ReadBE32(src: *mut SDL_RWops) -> Uint32;
+}
+extern "C" {
+    pub fn SDL_ReadLE64(src: *mut SDL_RWops) -> Uint64;
+}
+extern "C" {
+    pub fn SDL_ReadBE64(src: *mut SDL_RWops) -> Uint64;
+}
+extern "C" {
+    pub fn SDL_WriteU8(dst: *mut SDL_RWops, value: Uint8) -> size_t;
+}
+extern "C" {
+    pub fn SDL_WriteLE16(dst: *mut SDL_RWops, value: Uint16) -> size_t;
+}
+extern "C" {
+    pub fn SDL_WriteBE16(dst: *mut SDL_RWops, value: Uint16) -> size_t;
+}
+extern "C" {
+    pub fn SDL_WriteLE32(dst: *mut SDL_RWops, value: Uint32) -> size_t;
+}
+extern "C" {
+    pub fn SDL_WriteBE32(dst: *mut SDL_RWops, value: Uint32) -> size_t;
+}
+extern "C" {
+    pub fn SDL_WriteLE64(dst: *mut SDL_RWops, value: Uint64) -> size_t;
+}
+extern "C" {
+    pub fn SDL_WriteBE64(dst: *mut SDL_RWops, value: Uint64) -> size_t;
 }
 #[doc = "  \\brief  The structure that defines a point (integer)"]
 #[doc = ""]
@@ -20697,6 +24865,170 @@ extern "C" {
     #[doc = "  \\sa SDL_GL_CreateContext()"]
     pub fn SDL_GL_DeleteContext(context: SDL_GLContext);
 }
+extern "C" {
+    pub static mut VideoBase: ::std::os::raw::c_ulong;
+}
+extern "C" {
+    pub static mut VideoRaster: *mut ::std::os::raw::c_uchar;
+}
+extern "C" {
+    pub static mut MainRGBPalette: [::std::os::raw::c_uint; 256usize];
+}
+extern "C" {
+    pub static mut CtrlRGBPalette: [::std::os::raw::c_uint; 16usize];
+}
+extern "C" {
+    pub static mut fe2_bgcol: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub static mut sdlscrn: *mut SDL_Window;
+}
+extern "C" {
+    pub static mut bGrabMouse: BOOL;
+}
+extern "C" {
+    pub static mut bInFullScreen: BOOL;
+}
+pub const RENDERERS_R_OLD: RENDERERS = 0;
+pub const RENDERERS_R_GLWIRE: RENDERERS = 1;
+pub const RENDERERS_R_GL: RENDERERS = 2;
+pub const RENDERERS_R_MAX: RENDERERS = 3;
+pub type RENDERERS = u32;
+extern "C" {
+    pub static mut use_renderer: RENDERERS;
+}
+extern "C" {
+    pub static mut len_main_palette: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub static mut MainPalette: [::std::os::raw::c_ushort; 256usize];
+}
+extern "C" {
+    pub static mut CtrlPalette: [::std::os::raw::c_ushort; 16usize];
+}
+extern "C" {
+    pub static mut logscreen: ::std::os::raw::c_ulong;
+}
+extern "C" {
+    pub static mut logscreen2: ::std::os::raw::c_ulong;
+}
+extern "C" {
+    pub static mut physcreen: ::std::os::raw::c_ulong;
+}
+extern "C" {
+    pub static mut physcreen2: ::std::os::raw::c_ulong;
+}
+extern "C" {
+    pub fn DrawStr(
+        xpos: ::std::os::raw::c_int,
+        ypos: ::std::os::raw::c_int,
+        col: ::std::os::raw::c_int,
+        str: *mut ::std::os::raw::c_uchar,
+        shadowed: bool_,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn Screen_Init();
+}
+extern "C" {
+    pub fn Screen_UnInit();
+}
+extern "C" {
+    pub fn Screen_ToggleFullScreen();
+}
+extern "C" {
+    pub fn Screen_ToggleRenderer();
+}
+extern "C" {
+    pub fn Nu_PutComplexStart();
+}
+extern "C" {
+    pub fn Nu_PutTriangle();
+}
+extern "C" {
+    pub fn Nu_PutQuad();
+}
+extern "C" {
+    pub fn Nu_PutLine();
+}
+extern "C" {
+    pub fn Nu_PutPoint();
+}
+extern "C" {
+    pub fn Nu_PutTwinklyCircle();
+}
+extern "C" {
+    pub fn Nu_PutCircle();
+}
+extern "C" {
+    pub fn Nu_PutColoredPoint();
+}
+extern "C" {
+    pub fn Nu_PutBezierLine();
+}
+extern "C" {
+    pub fn Nu_ComplexStart();
+}
+extern "C" {
+    pub fn Nu_ComplexSNext();
+}
+extern "C" {
+    pub fn Nu_ComplexSBegin();
+}
+extern "C" {
+    pub fn Nu_ComplexEnd();
+}
+extern "C" {
+    pub fn Nu_3DViewInit();
+}
+extern "C" {
+    pub fn Nu_InsertZNode();
+}
+extern "C" {
+    pub fn Nu_ComplexStartInner();
+}
+extern "C" {
+    pub fn Nu_ComplexBezier();
+}
+extern "C" {
+    pub fn Nu_PutTeardrop();
+}
+extern "C" {
+    pub fn Nu_PutOval();
+}
+extern "C" {
+    pub fn Nu_IsGLRenderer();
+}
+extern "C" {
+    pub fn Nu_GLClearArea();
+}
+extern "C" {
+    pub fn Nu_QueueDrawStr();
+}
+extern "C" {
+    pub fn Nu_PutCylinder();
+}
+extern "C" {
+    pub fn Nu_PutBlob();
+}
+extern "C" {
+    pub fn Nu_PutPlanet();
+}
+extern "C" {
+    pub fn Nu_Put2DLine();
+}
+extern "C" {
+    pub static mut screen_w: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub static mut screen_h: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub static mut mouse_shown: ::std::os::raw::c_int;
+}
+extern "C" {
+    pub static mut hack: f32;
+}
 pub const SDL_Scancode_SDL_SCANCODE_UNKNOWN: SDL_Scancode = 0;
 pub const SDL_Scancode_SDL_SCANCODE_A: SDL_Scancode = 4;
 pub const SDL_Scancode_SDL_SCANCODE_B: SDL_Scancode = 5;
@@ -21502,8583 +25834,196 @@ extern "C" {
     pub fn SDL_IsScreenKeyboardShown(window: *mut SDL_Window) -> SDL_bool;
 }
 #[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_Cursor {
-    _unused: [u8; 0],
-}
-#[doc = "< Arrow"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_ARROW: SDL_SystemCursor = 0;
-#[doc = "< I-beam"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_IBEAM: SDL_SystemCursor = 1;
-#[doc = "< Wait"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_WAIT: SDL_SystemCursor = 2;
-#[doc = "< Crosshair"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_CROSSHAIR: SDL_SystemCursor = 3;
-#[doc = "< Small wait cursor (or Wait if not available)"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_WAITARROW: SDL_SystemCursor = 4;
-#[doc = "< Double arrow pointing northwest and southeast"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_SIZENWSE: SDL_SystemCursor = 5;
-#[doc = "< Double arrow pointing northeast and southwest"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_SIZENESW: SDL_SystemCursor = 6;
-#[doc = "< Double arrow pointing west and east"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_SIZEWE: SDL_SystemCursor = 7;
-#[doc = "< Double arrow pointing north and south"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_SIZENS: SDL_SystemCursor = 8;
-#[doc = "< Four pointed arrow pointing north, south, east, and west"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_SIZEALL: SDL_SystemCursor = 9;
-#[doc = "< Slashed circle or crossbones"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_NO: SDL_SystemCursor = 10;
-#[doc = "< Hand"]
-pub const SDL_SystemCursor_SDL_SYSTEM_CURSOR_HAND: SDL_SystemCursor = 11;
-pub const SDL_SystemCursor_SDL_NUM_SYSTEM_CURSORS: SDL_SystemCursor = 12;
-#[doc = " \\brief Cursor types for SDL_CreateSystemCursor()."]
-pub type SDL_SystemCursor = u32;
-#[doc = "< The scroll direction is normal"]
-pub const SDL_MouseWheelDirection_SDL_MOUSEWHEEL_NORMAL: SDL_MouseWheelDirection = 0;
-#[doc = "< The scroll direction is flipped / natural"]
-pub const SDL_MouseWheelDirection_SDL_MOUSEWHEEL_FLIPPED: SDL_MouseWheelDirection = 1;
-#[doc = " \\brief Scroll direction types for the Scroll event"]
-pub type SDL_MouseWheelDirection = u32;
-extern "C" {
-    #[doc = "  \\brief Get the window which currently has mouse focus."]
-    pub fn SDL_GetMouseFocus() -> *mut SDL_Window;
-}
-extern "C" {
-    #[doc = "  \\brief Retrieve the current state of the mouse."]
-    #[doc = ""]
-    #[doc = "  The current button state is returned as a button bitmask, which can"]
-    #[doc = "  be tested using the SDL_BUTTON(X) macros, and x and y are set to the"]
-    #[doc = "  mouse cursor position relative to the focus window for the currently"]
-    #[doc = "  selected mouse.  You can pass NULL for either x or y."]
-    pub fn SDL_GetMouseState(
-        x: *mut ::std::os::raw::c_int,
-        y: *mut ::std::os::raw::c_int,
-    ) -> Uint32;
-}
-extern "C" {
-    #[doc = "  \\brief Get the current state of the mouse, in relation to the desktop"]
-    #[doc = ""]
-    #[doc = "  This works just like SDL_GetMouseState(), but the coordinates will be"]
-    #[doc = "  reported relative to the top-left of the desktop. This can be useful if"]
-    #[doc = "  you need to track the mouse outside of a specific window and"]
-    #[doc = "  SDL_CaptureMouse() doesn't fit your needs. For example, it could be"]
-    #[doc = "  useful if you need to track the mouse while dragging a window, where"]
-    #[doc = "  coordinates relative to a window might not be in sync at all times."]
-    #[doc = ""]
-    #[doc = "  \\note SDL_GetMouseState() returns the mouse position as SDL understands"]
-    #[doc = "        it from the last pump of the event queue. This function, however,"]
-    #[doc = "        queries the OS for the current mouse position, and as such, might"]
-    #[doc = "        be a slightly less efficient function. Unless you know what you're"]
-    #[doc = "        doing and have a good reason to use this function, you probably want"]
-    #[doc = "        SDL_GetMouseState() instead."]
-    #[doc = ""]
-    #[doc = "  \\param x Returns the current X coord, relative to the desktop. Can be NULL."]
-    #[doc = "  \\param y Returns the current Y coord, relative to the desktop. Can be NULL."]
-    #[doc = "  \\return The current button state as a bitmask, which can be tested using the SDL_BUTTON(X) macros."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetMouseState"]
-    pub fn SDL_GetGlobalMouseState(
-        x: *mut ::std::os::raw::c_int,
-        y: *mut ::std::os::raw::c_int,
-    ) -> Uint32;
-}
-extern "C" {
-    #[doc = "  \\brief Retrieve the relative state of the mouse."]
-    #[doc = ""]
-    #[doc = "  The current button state is returned as a button bitmask, which can"]
-    #[doc = "  be tested using the SDL_BUTTON(X) macros, and x and y are set to the"]
-    #[doc = "  mouse deltas since the last call to SDL_GetRelativeMouseState()."]
-    pub fn SDL_GetRelativeMouseState(
-        x: *mut ::std::os::raw::c_int,
-        y: *mut ::std::os::raw::c_int,
-    ) -> Uint32;
-}
-extern "C" {
-    #[doc = "  \\brief Moves the mouse to the given position within the window."]
-    #[doc = ""]
-    #[doc = "  \\param window The window to move the mouse into, or NULL for the current mouse focus"]
-    #[doc = "  \\param x The x coordinate within the window"]
-    #[doc = "  \\param y The y coordinate within the window"]
-    #[doc = ""]
-    #[doc = "  \\note This function generates a mouse motion event"]
-    pub fn SDL_WarpMouseInWindow(
-        window: *mut SDL_Window,
-        x: ::std::os::raw::c_int,
-        y: ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Moves the mouse to the given position in global screen space."]
-    #[doc = ""]
-    #[doc = "  \\param x The x coordinate"]
-    #[doc = "  \\param y The y coordinate"]
-    #[doc = "  \\return 0 on success, -1 on error (usually: unsupported by a platform)."]
-    #[doc = ""]
-    #[doc = "  \\note This function generates a mouse motion event"]
-    pub fn SDL_WarpMouseGlobal(
-        x: ::std::os::raw::c_int,
-        y: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Set relative mouse mode."]
-    #[doc = ""]
-    #[doc = "  \\param enabled Whether or not to enable relative mode"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if relative mode is not supported."]
-    #[doc = ""]
-    #[doc = "  While the mouse is in relative mode, the cursor is hidden, and the"]
-    #[doc = "  driver will try to report continuous motion in the current window."]
-    #[doc = "  Only relative motion events will be delivered, the mouse position"]
-    #[doc = "  will not change."]
-    #[doc = ""]
-    #[doc = "  \\note This function will flush any pending mouse motion."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetRelativeMouseMode()"]
-    pub fn SDL_SetRelativeMouseMode(enabled: SDL_bool) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Capture the mouse, to track input outside an SDL window."]
-    #[doc = ""]
-    #[doc = "  \\param enabled Whether or not to enable capturing"]
-    #[doc = ""]
-    #[doc = "  Capturing enables your app to obtain mouse events globally, instead of"]
-    #[doc = "  just within your window. Not all video targets support this function."]
-    #[doc = "  When capturing is enabled, the current window will get all mouse events,"]
-    #[doc = "  but unlike relative mode, no change is made to the cursor and it is"]
-    #[doc = "  not restrained to your window."]
-    #[doc = ""]
-    #[doc = "  This function may also deny mouse input to other windows--both those in"]
-    #[doc = "  your application and others on the system--so you should use this"]
-    #[doc = "  function sparingly, and in small bursts. For example, you might want to"]
-    #[doc = "  track the mouse while the user is dragging something, until the user"]
-    #[doc = "  releases a mouse button. It is not recommended that you capture the mouse"]
-    #[doc = "  for long periods of time, such as the entire time your app is running."]
-    #[doc = ""]
-    #[doc = "  While captured, mouse events still report coordinates relative to the"]
-    #[doc = "  current (foreground) window, but those coordinates may be outside the"]
-    #[doc = "  bounds of the window (including negative values). Capturing is only"]
-    #[doc = "  allowed for the foreground window. If the window loses focus while"]
-    #[doc = "  capturing, the capture will be disabled automatically."]
-    #[doc = ""]
-    #[doc = "  While capturing is enabled, the current window will have the"]
-    #[doc = "  SDL_WINDOW_MOUSE_CAPTURE flag set."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if not supported."]
-    pub fn SDL_CaptureMouse(enabled: SDL_bool) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Query whether relative mouse mode is enabled."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetRelativeMouseMode()"]
-    pub fn SDL_GetRelativeMouseMode() -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  \\brief Create a cursor, using the specified bitmap data and"]
-    #[doc = "         mask (in MSB format)."]
-    #[doc = ""]
-    #[doc = "  The cursor width must be a multiple of 8 bits."]
-    #[doc = ""]
-    #[doc = "  The cursor is created in black and white according to the following:"]
-    #[doc = "  <table>"]
-    #[doc = "  <tr><td> data </td><td> mask </td><td> resulting pixel on screen </td></tr>"]
-    #[doc = "  <tr><td>  0   </td><td>  1   </td><td> White </td></tr>"]
-    #[doc = "  <tr><td>  1   </td><td>  1   </td><td> Black </td></tr>"]
-    #[doc = "  <tr><td>  0   </td><td>  0   </td><td> Transparent </td></tr>"]
-    #[doc = "  <tr><td>  1   </td><td>  0   </td><td> Inverted color if possible, black"]
-    #[doc = "                                         if not. </td></tr>"]
-    #[doc = "  </table>"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_FreeCursor()"]
-    pub fn SDL_CreateCursor(
-        data: *const Uint8,
-        mask: *const Uint8,
-        w: ::std::os::raw::c_int,
-        h: ::std::os::raw::c_int,
-        hot_x: ::std::os::raw::c_int,
-        hot_y: ::std::os::raw::c_int,
-    ) -> *mut SDL_Cursor;
-}
-extern "C" {
-    #[doc = "  \\brief Create a color cursor."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_FreeCursor()"]
-    pub fn SDL_CreateColorCursor(
-        surface: *mut SDL_Surface,
-        hot_x: ::std::os::raw::c_int,
-        hot_y: ::std::os::raw::c_int,
-    ) -> *mut SDL_Cursor;
-}
-extern "C" {
-    #[doc = "  \\brief Create a system cursor."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_FreeCursor()"]
-    pub fn SDL_CreateSystemCursor(id: SDL_SystemCursor) -> *mut SDL_Cursor;
-}
-extern "C" {
-    #[doc = "  \\brief Set the active cursor."]
-    pub fn SDL_SetCursor(cursor: *mut SDL_Cursor);
-}
-extern "C" {
-    #[doc = "  \\brief Return the active cursor."]
-    pub fn SDL_GetCursor() -> *mut SDL_Cursor;
-}
-extern "C" {
-    #[doc = "  \\brief Return the default cursor."]
-    pub fn SDL_GetDefaultCursor() -> *mut SDL_Cursor;
-}
-extern "C" {
-    #[doc = "  \\brief Frees a cursor created with SDL_CreateCursor() or similar functions."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_CreateCursor()"]
-    #[doc = "  \\sa SDL_CreateColorCursor()"]
-    #[doc = "  \\sa SDL_CreateSystemCursor()"]
-    pub fn SDL_FreeCursor(cursor: *mut SDL_Cursor);
-}
-extern "C" {
-    #[doc = "  \\brief Toggle whether or not the cursor is shown."]
-    #[doc = ""]
-    #[doc = "  \\param toggle 1 to show the cursor, 0 to hide it, -1 to query the current"]
-    #[doc = "                state."]
-    #[doc = ""]
-    #[doc = "  \\return 1 if the cursor is shown, or 0 if the cursor is hidden."]
-    pub fn SDL_ShowCursor(toggle: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-#[doc = " The joystick structure used to identify an SDL joystick"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct _SDL_Joystick {
-    _unused: [u8; 0],
-}
-pub type SDL_Joystick = _SDL_Joystick;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_JoystickGUID {
-    pub data: [Uint8; 16usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_JoystickGUID() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_JoystickGUID>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_JoystickGUID))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_JoystickGUID>(),
-        1usize,
-        concat!("Alignment of ", stringify!(SDL_JoystickGUID))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoystickGUID>())).data as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoystickGUID),
-            "::",
-            stringify!(data)
-        )
-    );
-}
-#[doc = " This is a unique ID for a joystick for the time it is connected to the system,"]
-#[doc = " and is never reused for the lifetime of the application. If the joystick is"]
-#[doc = " disconnected and reconnected, it will get a new ID."]
-#[doc = ""]
-#[doc = " The ID value starts at 0 and increments from there. The value -1 is an invalid ID."]
-pub type SDL_JoystickID = Sint32;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_UNKNOWN: SDL_JoystickType = 0;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_GAMECONTROLLER: SDL_JoystickType = 1;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_WHEEL: SDL_JoystickType = 2;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_ARCADE_STICK: SDL_JoystickType = 3;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_FLIGHT_STICK: SDL_JoystickType = 4;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_DANCE_PAD: SDL_JoystickType = 5;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_GUITAR: SDL_JoystickType = 6;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_DRUM_KIT: SDL_JoystickType = 7;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_ARCADE_PAD: SDL_JoystickType = 8;
-pub const SDL_JoystickType_SDL_JOYSTICK_TYPE_THROTTLE: SDL_JoystickType = 9;
-pub type SDL_JoystickType = u32;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_UNKNOWN: SDL_JoystickPowerLevel = -1;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_EMPTY: SDL_JoystickPowerLevel = 0;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_LOW: SDL_JoystickPowerLevel = 1;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_MEDIUM: SDL_JoystickPowerLevel = 2;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_FULL: SDL_JoystickPowerLevel = 3;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_WIRED: SDL_JoystickPowerLevel = 4;
-pub const SDL_JoystickPowerLevel_SDL_JOYSTICK_POWER_MAX: SDL_JoystickPowerLevel = 5;
-pub type SDL_JoystickPowerLevel = i32;
-extern "C" {
-    #[doc = " Locking for multi-threaded access to the joystick API"]
-    #[doc = ""]
-    #[doc = " If you are using the joystick API or handling events from multiple threads"]
-    #[doc = " you should use these locking functions to protect access to the joysticks."]
-    #[doc = ""]
-    #[doc = " In particular, you are guaranteed that the joystick list won't change, so"]
-    #[doc = " the API functions that take a joystick index will be valid, and joystick"]
-    #[doc = " and game controller events will not be delivered."]
-    pub fn SDL_LockJoysticks();
-}
-extern "C" {
-    pub fn SDL_UnlockJoysticks();
-}
-extern "C" {
-    #[doc = "  Count the number of joysticks attached to the system right now"]
-    pub fn SDL_NumJoysticks() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the implementation dependent name of a joystick."]
-    #[doc = "  This can be called before any joysticks are opened."]
-    #[doc = "  If no name can be found, this function returns NULL."]
-    pub fn SDL_JoystickNameForIndex(
-        device_index: ::std::os::raw::c_int,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get the player index of a joystick, or -1 if it's not available"]
-    #[doc = "  This can be called before any joysticks are opened."]
-    pub fn SDL_JoystickGetDevicePlayerIndex(
-        device_index: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Return the GUID for the joystick at this index"]
-    #[doc = "  This can be called before any joysticks are opened."]
-    pub fn SDL_JoystickGetDeviceGUID(device_index: ::std::os::raw::c_int) -> SDL_JoystickGUID;
-}
-extern "C" {
-    #[doc = "  Get the USB vendor ID of a joystick, if available."]
-    #[doc = "  This can be called before any joysticks are opened."]
-    #[doc = "  If the vendor ID isn't available this function returns 0."]
-    pub fn SDL_JoystickGetDeviceVendor(device_index: ::std::os::raw::c_int) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the USB product ID of a joystick, if available."]
-    #[doc = "  This can be called before any joysticks are opened."]
-    #[doc = "  If the product ID isn't available this function returns 0."]
-    pub fn SDL_JoystickGetDeviceProduct(device_index: ::std::os::raw::c_int) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the product version of a joystick, if available."]
-    #[doc = "  This can be called before any joysticks are opened."]
-    #[doc = "  If the product version isn't available this function returns 0."]
-    pub fn SDL_JoystickGetDeviceProductVersion(device_index: ::std::os::raw::c_int) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the type of a joystick, if available."]
-    #[doc = "  This can be called before any joysticks are opened."]
-    pub fn SDL_JoystickGetDeviceType(device_index: ::std::os::raw::c_int) -> SDL_JoystickType;
-}
-extern "C" {
-    #[doc = "  Get the instance ID of a joystick."]
-    #[doc = "  This can be called before any joysticks are opened."]
-    #[doc = "  If the index is out of range, this function will return -1."]
-    pub fn SDL_JoystickGetDeviceInstanceID(device_index: ::std::os::raw::c_int) -> SDL_JoystickID;
-}
-extern "C" {
-    #[doc = "  Open a joystick for use."]
-    #[doc = "  The index passed as an argument refers to the N'th joystick on the system."]
-    #[doc = "  This index is not the value which will identify this joystick in future"]
-    #[doc = "  joystick events.  The joystick's instance id (::SDL_JoystickID) will be used"]
-    #[doc = "  there instead."]
-    #[doc = ""]
-    #[doc = "  \\return A joystick identifier, or NULL if an error occurred."]
-    pub fn SDL_JoystickOpen(device_index: ::std::os::raw::c_int) -> *mut SDL_Joystick;
-}
-extern "C" {
-    #[doc = " Return the SDL_Joystick associated with an instance id."]
-    pub fn SDL_JoystickFromInstanceID(instance_id: SDL_JoystickID) -> *mut SDL_Joystick;
-}
-extern "C" {
-    #[doc = " Return the SDL_Joystick associated with a player index."]
-    pub fn SDL_JoystickFromPlayerIndex(player_index: ::std::os::raw::c_int) -> *mut SDL_Joystick;
-}
-extern "C" {
-    #[doc = "  Return the name for this currently opened joystick."]
-    #[doc = "  If no name can be found, this function returns NULL."]
-    pub fn SDL_JoystickName(joystick: *mut SDL_Joystick) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get the player index of an opened joystick, or -1 if it's not available"]
-    #[doc = ""]
-    #[doc = "  For XInput controllers this returns the XInput user index."]
-    pub fn SDL_JoystickGetPlayerIndex(joystick: *mut SDL_Joystick) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Set the player index of an opened joystick"]
-    pub fn SDL_JoystickSetPlayerIndex(
-        joystick: *mut SDL_Joystick,
-        player_index: ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  Return the GUID for this opened joystick"]
-    pub fn SDL_JoystickGetGUID(joystick: *mut SDL_Joystick) -> SDL_JoystickGUID;
-}
-extern "C" {
-    #[doc = "  Get the USB vendor ID of an opened joystick, if available."]
-    #[doc = "  If the vendor ID isn't available this function returns 0."]
-    pub fn SDL_JoystickGetVendor(joystick: *mut SDL_Joystick) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the USB product ID of an opened joystick, if available."]
-    #[doc = "  If the product ID isn't available this function returns 0."]
-    pub fn SDL_JoystickGetProduct(joystick: *mut SDL_Joystick) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the product version of an opened joystick, if available."]
-    #[doc = "  If the product version isn't available this function returns 0."]
-    pub fn SDL_JoystickGetProductVersion(joystick: *mut SDL_Joystick) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the type of an opened joystick."]
-    pub fn SDL_JoystickGetType(joystick: *mut SDL_Joystick) -> SDL_JoystickType;
-}
-extern "C" {
-    #[doc = "  Return a string representation for this guid. pszGUID must point to at least 33 bytes"]
-    #[doc = "  (32 for the string plus a NULL terminator)."]
-    pub fn SDL_JoystickGetGUIDString(
-        guid: SDL_JoystickGUID,
-        pszGUID: *mut ::std::os::raw::c_char,
-        cbGUID: ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  Convert a string into a joystick guid"]
-    pub fn SDL_JoystickGetGUIDFromString(
-        pchGUID: *const ::std::os::raw::c_char,
-    ) -> SDL_JoystickGUID;
-}
-extern "C" {
-    #[doc = "  Returns SDL_TRUE if the joystick has been opened and currently connected, or SDL_FALSE if it has not."]
-    pub fn SDL_JoystickGetAttached(joystick: *mut SDL_Joystick) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  Get the instance ID of an opened joystick or -1 if the joystick is invalid."]
-    pub fn SDL_JoystickInstanceID(joystick: *mut SDL_Joystick) -> SDL_JoystickID;
-}
-extern "C" {
-    #[doc = "  Get the number of general axis controls on a joystick."]
-    pub fn SDL_JoystickNumAxes(joystick: *mut SDL_Joystick) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the number of trackballs on a joystick."]
-    #[doc = ""]
-    #[doc = "  Joystick trackballs have only relative motion events associated"]
-    #[doc = "  with them and their state cannot be polled."]
-    pub fn SDL_JoystickNumBalls(joystick: *mut SDL_Joystick) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the number of POV hats on a joystick."]
-    pub fn SDL_JoystickNumHats(joystick: *mut SDL_Joystick) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the number of buttons on a joystick."]
-    pub fn SDL_JoystickNumButtons(joystick: *mut SDL_Joystick) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Update the current state of the open joysticks."]
-    #[doc = ""]
-    #[doc = "  This is called automatically by the event loop if any joystick"]
-    #[doc = "  events are enabled."]
-    pub fn SDL_JoystickUpdate();
-}
-extern "C" {
-    #[doc = "  Enable/disable joystick event polling."]
-    #[doc = ""]
-    #[doc = "  If joystick events are disabled, you must call SDL_JoystickUpdate()"]
-    #[doc = "  yourself and check the state of the joystick when you want joystick"]
-    #[doc = "  information."]
-    #[doc = ""]
-    #[doc = "  The state can be one of ::SDL_QUERY, ::SDL_ENABLE or ::SDL_IGNORE."]
-    pub fn SDL_JoystickEventState(state: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the current state of an axis control on a joystick."]
-    #[doc = ""]
-    #[doc = "  The state is a value ranging from -32768 to 32767."]
-    #[doc = ""]
-    #[doc = "  The axis indices start at index 0."]
-    pub fn SDL_JoystickGetAxis(joystick: *mut SDL_Joystick, axis: ::std::os::raw::c_int) -> Sint16;
-}
-extern "C" {
-    #[doc = "  Get the initial state of an axis control on a joystick."]
-    #[doc = ""]
-    #[doc = "  The state is a value ranging from -32768 to 32767."]
-    #[doc = ""]
-    #[doc = "  The axis indices start at index 0."]
-    #[doc = ""]
-    #[doc = "  \\return SDL_TRUE if this axis has any initial value, or SDL_FALSE if not."]
-    pub fn SDL_JoystickGetAxisInitialState(
-        joystick: *mut SDL_Joystick,
-        axis: ::std::os::raw::c_int,
-        state: *mut Sint16,
-    ) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  Get the current state of a POV hat on a joystick."]
-    #[doc = ""]
-    #[doc = "  The hat indices start at index 0."]
-    #[doc = ""]
-    #[doc = "  \\return The return value is one of the following positions:"]
-    #[doc = "           - ::SDL_HAT_CENTERED"]
-    #[doc = "           - ::SDL_HAT_UP"]
-    #[doc = "           - ::SDL_HAT_RIGHT"]
-    #[doc = "           - ::SDL_HAT_DOWN"]
-    #[doc = "           - ::SDL_HAT_LEFT"]
-    #[doc = "           - ::SDL_HAT_RIGHTUP"]
-    #[doc = "           - ::SDL_HAT_RIGHTDOWN"]
-    #[doc = "           - ::SDL_HAT_LEFTUP"]
-    #[doc = "           - ::SDL_HAT_LEFTDOWN"]
-    pub fn SDL_JoystickGetHat(joystick: *mut SDL_Joystick, hat: ::std::os::raw::c_int) -> Uint8;
-}
-extern "C" {
-    #[doc = "  Get the ball axis change since the last poll."]
-    #[doc = ""]
-    #[doc = "  \\return 0, or -1 if you passed it invalid parameters."]
-    #[doc = ""]
-    #[doc = "  The ball indices start at index 0."]
-    pub fn SDL_JoystickGetBall(
-        joystick: *mut SDL_Joystick,
-        ball: ::std::os::raw::c_int,
-        dx: *mut ::std::os::raw::c_int,
-        dy: *mut ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the current state of a button on a joystick."]
-    #[doc = ""]
-    #[doc = "  The button indices start at index 0."]
-    pub fn SDL_JoystickGetButton(
-        joystick: *mut SDL_Joystick,
-        button: ::std::os::raw::c_int,
-    ) -> Uint8;
-}
-extern "C" {
-    #[doc = "  Trigger a rumble effect"]
-    #[doc = "  Each call to this function cancels any previous rumble effect, and calling it with 0 intensity stops any rumbling."]
-    #[doc = ""]
-    #[doc = "  \\param joystick The joystick to vibrate"]
-    #[doc = "  \\param low_frequency_rumble The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF"]
-    #[doc = "  \\param high_frequency_rumble The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF"]
-    #[doc = "  \\param duration_ms The duration of the rumble effect, in milliseconds"]
-    #[doc = ""]
-    #[doc = "  \\return 0, or -1 if rumble isn't supported on this joystick"]
-    pub fn SDL_JoystickRumble(
-        joystick: *mut SDL_Joystick,
-        low_frequency_rumble: Uint16,
-        high_frequency_rumble: Uint16,
-        duration_ms: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Close a joystick previously opened with SDL_JoystickOpen()."]
-    pub fn SDL_JoystickClose(joystick: *mut SDL_Joystick);
-}
-extern "C" {
-    #[doc = "  Return the battery level of this joystick"]
-    pub fn SDL_JoystickCurrentPowerLevel(joystick: *mut SDL_Joystick) -> SDL_JoystickPowerLevel;
-}
-#[doc = " The gamecontroller structure used to identify an SDL game controller"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct _SDL_GameController {
-    _unused: [u8; 0],
-}
-pub type SDL_GameController = _SDL_GameController;
-pub const SDL_GameControllerType_SDL_CONTROLLER_TYPE_UNKNOWN: SDL_GameControllerType = 0;
-pub const SDL_GameControllerType_SDL_CONTROLLER_TYPE_XBOX360: SDL_GameControllerType = 1;
-pub const SDL_GameControllerType_SDL_CONTROLLER_TYPE_XBOXONE: SDL_GameControllerType = 2;
-pub const SDL_GameControllerType_SDL_CONTROLLER_TYPE_PS3: SDL_GameControllerType = 3;
-pub const SDL_GameControllerType_SDL_CONTROLLER_TYPE_PS4: SDL_GameControllerType = 4;
-pub const SDL_GameControllerType_SDL_CONTROLLER_TYPE_NINTENDO_SWITCH_PRO: SDL_GameControllerType =
-    5;
-pub type SDL_GameControllerType = u32;
-pub const SDL_GameControllerBindType_SDL_CONTROLLER_BINDTYPE_NONE: SDL_GameControllerBindType = 0;
-pub const SDL_GameControllerBindType_SDL_CONTROLLER_BINDTYPE_BUTTON: SDL_GameControllerBindType = 1;
-pub const SDL_GameControllerBindType_SDL_CONTROLLER_BINDTYPE_AXIS: SDL_GameControllerBindType = 2;
-pub const SDL_GameControllerBindType_SDL_CONTROLLER_BINDTYPE_HAT: SDL_GameControllerBindType = 3;
-pub type SDL_GameControllerBindType = u32;
-#[doc = "  Get the SDL joystick layer binding for this controller button/axis mapping"]
-#[repr(C)]
 #[derive(Copy, Clone)]
-pub struct SDL_GameControllerButtonBind {
-    pub bindType: SDL_GameControllerBindType,
-    pub value: SDL_GameControllerButtonBind__bindgen_ty_1,
-}
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub union SDL_GameControllerButtonBind__bindgen_ty_1 {
-    pub button: ::std::os::raw::c_int,
-    pub axis: ::std::os::raw::c_int,
-    pub hat: SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1,
-    _bindgen_union_align: [u32; 2usize],
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1 {
-    pub hat: ::std::os::raw::c_int,
-    pub hat_mask: ::std::os::raw::c_int,
+pub struct INPUT {
+    pub key_states: [::std::os::raw::c_uchar; 512usize],
+    pub key_buf: [::std::os::raw::c_uchar; 16usize],
+    pub mousebut_buf: [::std::os::raw::c_uchar; 16usize],
+    pub buf_head: ::std::os::raw::c_int,
+    pub buf_tail: ::std::os::raw::c_int,
+    pub mbuf_head: ::std::os::raw::c_int,
+    pub mbuf_tail: ::std::os::raw::c_int,
+    pub cur_mousebut_state: ::std::os::raw::c_int,
+    pub motion_x: ::std::os::raw::c_int,
+    pub motion_y: ::std::os::raw::c_int,
+    pub abs_x: ::std::os::raw::c_int,
+    pub abs_y: ::std::os::raw::c_int,
+    pub mouse_buttons_prev: ::std::os::raw::c_int,
+    pub mouse_buttons_now: ::std::os::raw::c_int,
 }
 #[test]
-fn bindgen_test_layout_SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1() {
+fn bindgen_test_layout_INPUT() {
     assert_eq!(
-        ::std::mem::size_of::<SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1>(),
-        8usize,
-        concat!(
-            "Size of: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1>(),
-        4usize,
-        concat!(
-            "Alignment of ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1>())).hat
-                as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1),
-            "::",
-            stringify!(hat)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1>()))
-                .hat_mask as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1__bindgen_ty_1),
-            "::",
-            stringify!(hat_mask)
-        )
-    );
-}
-#[test]
-fn bindgen_test_layout_SDL_GameControllerButtonBind__bindgen_ty_1() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_GameControllerButtonBind__bindgen_ty_1>(),
-        8usize,
-        concat!(
-            "Size of: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1)
-        )
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_GameControllerButtonBind__bindgen_ty_1>(),
-        4usize,
-        concat!(
-            "Alignment of ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind__bindgen_ty_1>())).button
-                as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind__bindgen_ty_1>())).axis as *const _
-                as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1),
-            "::",
-            stringify!(axis)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind__bindgen_ty_1>())).hat as *const _
-                as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind__bindgen_ty_1),
-            "::",
-            stringify!(hat)
-        )
-    );
-}
-#[test]
-fn bindgen_test_layout_SDL_GameControllerButtonBind() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_GameControllerButtonBind>(),
-        12usize,
-        concat!("Size of: ", stringify!(SDL_GameControllerButtonBind))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_GameControllerButtonBind>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_GameControllerButtonBind))
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind>())).bindType as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind),
-            "::",
-            stringify!(bindType)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_GameControllerButtonBind>())).value as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_GameControllerButtonBind),
-            "::",
-            stringify!(value)
-        )
-    );
-}
-extern "C" {
-    #[doc = "  Load a set of mappings from a seekable SDL data stream (memory or file), filtered by the current SDL_GetPlatform()"]
-    #[doc = "  A community sourced database of controllers is available at https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt"]
-    #[doc = ""]
-    #[doc = "  If \\c freerw is non-zero, the stream will be closed after being read."]
-    #[doc = ""]
-    #[doc = " \\return number of mappings added, -1 on error"]
-    pub fn SDL_GameControllerAddMappingsFromRW(
-        rw: *mut SDL_RWops,
-        freerw: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Add or update an existing mapping configuration"]
-    #[doc = ""]
-    #[doc = " \\return 1 if mapping is added, 0 if updated, -1 on error"]
-    pub fn SDL_GameControllerAddMapping(
-        mappingString: *const ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the number of mappings installed"]
-    #[doc = ""]
-    #[doc = "  \\return the number of mappings"]
-    pub fn SDL_GameControllerNumMappings() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Get the mapping at a particular index."]
-    #[doc = ""]
-    #[doc = "  \\return the mapping string.  Must be freed with SDL_free().  Returns NULL if the index is out of range."]
-    pub fn SDL_GameControllerMappingForIndex(
-        mapping_index: ::std::os::raw::c_int,
-    ) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get a mapping string for a GUID"]
-    #[doc = ""]
-    #[doc = "  \\return the mapping string.  Must be freed with SDL_free().  Returns NULL if no mapping is available"]
-    pub fn SDL_GameControllerMappingForGUID(guid: SDL_JoystickGUID) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get a mapping string for an open GameController"]
-    #[doc = ""]
-    #[doc = "  \\return the mapping string.  Must be freed with SDL_free().  Returns NULL if no mapping is available"]
-    pub fn SDL_GameControllerMapping(
-        gamecontroller: *mut SDL_GameController,
-    ) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Is the joystick on this index supported by the game controller interface?"]
-    pub fn SDL_IsGameController(joystick_index: ::std::os::raw::c_int) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  Get the implementation dependent name of a game controller."]
-    #[doc = "  This can be called before any controllers are opened."]
-    #[doc = "  If no name can be found, this function returns NULL."]
-    pub fn SDL_GameControllerNameForIndex(
-        joystick_index: ::std::os::raw::c_int,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get the type of a game controller."]
-    #[doc = "  This can be called before any controllers are opened."]
-    pub fn SDL_GameControllerTypeForIndex(
-        joystick_index: ::std::os::raw::c_int,
-    ) -> SDL_GameControllerType;
-}
-extern "C" {
-    #[doc = "  Get the mapping of a game controller."]
-    #[doc = "  This can be called before any controllers are opened."]
-    #[doc = ""]
-    #[doc = "  \\return the mapping string.  Must be freed with SDL_free().  Returns NULL if no mapping is available"]
-    pub fn SDL_GameControllerMappingForDeviceIndex(
-        joystick_index: ::std::os::raw::c_int,
-    ) -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Open a game controller for use."]
-    #[doc = "  The index passed as an argument refers to the N'th game controller on the system."]
-    #[doc = "  This index is not the value which will identify this controller in future"]
-    #[doc = "  controller events.  The joystick's instance id (::SDL_JoystickID) will be"]
-    #[doc = "  used there instead."]
-    #[doc = ""]
-    #[doc = "  \\return A controller identifier, or NULL if an error occurred."]
-    pub fn SDL_GameControllerOpen(joystick_index: ::std::os::raw::c_int)
-        -> *mut SDL_GameController;
-}
-extern "C" {
-    #[doc = " Return the SDL_GameController associated with an instance id."]
-    pub fn SDL_GameControllerFromInstanceID(joyid: SDL_JoystickID) -> *mut SDL_GameController;
-}
-extern "C" {
-    #[doc = " Return the SDL_GameController associated with a player index."]
-    pub fn SDL_GameControllerFromPlayerIndex(
-        player_index: ::std::os::raw::c_int,
-    ) -> *mut SDL_GameController;
-}
-extern "C" {
-    #[doc = "  Return the name for this currently opened controller"]
-    pub fn SDL_GameControllerName(
-        gamecontroller: *mut SDL_GameController,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Return the type of this currently opened controller"]
-    pub fn SDL_GameControllerGetType(
-        gamecontroller: *mut SDL_GameController,
-    ) -> SDL_GameControllerType;
-}
-extern "C" {
-    #[doc = "  Get the player index of an opened game controller, or -1 if it's not available"]
-    #[doc = ""]
-    #[doc = "  For XInput controllers this returns the XInput user index."]
-    pub fn SDL_GameControllerGetPlayerIndex(
-        gamecontroller: *mut SDL_GameController,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Set the player index of an opened game controller"]
-    pub fn SDL_GameControllerSetPlayerIndex(
-        gamecontroller: *mut SDL_GameController,
-        player_index: ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  Get the USB vendor ID of an opened controller, if available."]
-    #[doc = "  If the vendor ID isn't available this function returns 0."]
-    pub fn SDL_GameControllerGetVendor(gamecontroller: *mut SDL_GameController) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the USB product ID of an opened controller, if available."]
-    #[doc = "  If the product ID isn't available this function returns 0."]
-    pub fn SDL_GameControllerGetProduct(gamecontroller: *mut SDL_GameController) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Get the product version of an opened controller, if available."]
-    #[doc = "  If the product version isn't available this function returns 0."]
-    pub fn SDL_GameControllerGetProductVersion(gamecontroller: *mut SDL_GameController) -> Uint16;
-}
-extern "C" {
-    #[doc = "  Returns SDL_TRUE if the controller has been opened and currently connected,"]
-    #[doc = "  or SDL_FALSE if it has not."]
-    pub fn SDL_GameControllerGetAttached(gamecontroller: *mut SDL_GameController) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  Get the underlying joystick object used by a controller"]
-    pub fn SDL_GameControllerGetJoystick(
-        gamecontroller: *mut SDL_GameController,
-    ) -> *mut SDL_Joystick;
-}
-extern "C" {
-    #[doc = "  Enable/disable controller event polling."]
-    #[doc = ""]
-    #[doc = "  If controller events are disabled, you must call SDL_GameControllerUpdate()"]
-    #[doc = "  yourself and check the state of the controller when you want controller"]
-    #[doc = "  information."]
-    #[doc = ""]
-    #[doc = "  The state can be one of ::SDL_QUERY, ::SDL_ENABLE or ::SDL_IGNORE."]
-    pub fn SDL_GameControllerEventState(state: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Update the current state of the open game controllers."]
-    #[doc = ""]
-    #[doc = "  This is called automatically by the event loop if any game controller"]
-    #[doc = "  events are enabled."]
-    pub fn SDL_GameControllerUpdate();
-}
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_INVALID: SDL_GameControllerAxis = -1;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_LEFTX: SDL_GameControllerAxis = 0;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_LEFTY: SDL_GameControllerAxis = 1;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_RIGHTX: SDL_GameControllerAxis = 2;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_RIGHTY: SDL_GameControllerAxis = 3;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_TRIGGERLEFT: SDL_GameControllerAxis = 4;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_TRIGGERRIGHT: SDL_GameControllerAxis = 5;
-pub const SDL_GameControllerAxis_SDL_CONTROLLER_AXIS_MAX: SDL_GameControllerAxis = 6;
-#[doc = "  The list of axes available from a controller"]
-#[doc = ""]
-#[doc = "  Thumbstick axis values range from SDL_JOYSTICK_AXIS_MIN to SDL_JOYSTICK_AXIS_MAX,"]
-#[doc = "  and are centered within ~8000 of zero, though advanced UI will allow users to set"]
-#[doc = "  or autodetect the dead zone, which varies between controllers."]
-#[doc = ""]
-#[doc = "  Trigger axis values range from 0 to SDL_JOYSTICK_AXIS_MAX."]
-pub type SDL_GameControllerAxis = i32;
-extern "C" {
-    #[doc = "  turn this string into a axis mapping"]
-    pub fn SDL_GameControllerGetAxisFromString(
-        pchString: *const ::std::os::raw::c_char,
-    ) -> SDL_GameControllerAxis;
-}
-extern "C" {
-    #[doc = "  turn this axis enum into a string mapping"]
-    pub fn SDL_GameControllerGetStringForAxis(
-        axis: SDL_GameControllerAxis,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get the SDL joystick layer binding for this controller button mapping"]
-    pub fn SDL_GameControllerGetBindForAxis(
-        gamecontroller: *mut SDL_GameController,
-        axis: SDL_GameControllerAxis,
-    ) -> SDL_GameControllerButtonBind;
-}
-extern "C" {
-    #[doc = "  Get the current state of an axis control on a game controller."]
-    #[doc = ""]
-    #[doc = "  The state is a value ranging from -32768 to 32767 (except for the triggers,"]
-    #[doc = "  which range from 0 to 32767)."]
-    #[doc = ""]
-    #[doc = "  The axis indices start at index 0."]
-    pub fn SDL_GameControllerGetAxis(
-        gamecontroller: *mut SDL_GameController,
-        axis: SDL_GameControllerAxis,
-    ) -> Sint16;
-}
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_INVALID: SDL_GameControllerButton = -1;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_A: SDL_GameControllerButton = 0;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_B: SDL_GameControllerButton = 1;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_X: SDL_GameControllerButton = 2;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_Y: SDL_GameControllerButton = 3;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_BACK: SDL_GameControllerButton = 4;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_GUIDE: SDL_GameControllerButton = 5;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_START: SDL_GameControllerButton = 6;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_LEFTSTICK: SDL_GameControllerButton = 7;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_RIGHTSTICK: SDL_GameControllerButton = 8;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_LEFTSHOULDER: SDL_GameControllerButton = 9;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_RIGHTSHOULDER: SDL_GameControllerButton =
-    10;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_DPAD_UP: SDL_GameControllerButton = 11;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_DPAD_DOWN: SDL_GameControllerButton = 12;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_DPAD_LEFT: SDL_GameControllerButton = 13;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_DPAD_RIGHT: SDL_GameControllerButton = 14;
-pub const SDL_GameControllerButton_SDL_CONTROLLER_BUTTON_MAX: SDL_GameControllerButton = 15;
-#[doc = "  The list of buttons available from a controller"]
-pub type SDL_GameControllerButton = i32;
-extern "C" {
-    #[doc = "  turn this string into a button mapping"]
-    pub fn SDL_GameControllerGetButtonFromString(
-        pchString: *const ::std::os::raw::c_char,
-    ) -> SDL_GameControllerButton;
-}
-extern "C" {
-    #[doc = "  turn this button enum into a string mapping"]
-    pub fn SDL_GameControllerGetStringForButton(
-        button: SDL_GameControllerButton,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  Get the SDL joystick layer binding for this controller button mapping"]
-    pub fn SDL_GameControllerGetBindForButton(
-        gamecontroller: *mut SDL_GameController,
-        button: SDL_GameControllerButton,
-    ) -> SDL_GameControllerButtonBind;
-}
-extern "C" {
-    #[doc = "  Get the current state of a button on a game controller."]
-    #[doc = ""]
-    #[doc = "  The button indices start at index 0."]
-    pub fn SDL_GameControllerGetButton(
-        gamecontroller: *mut SDL_GameController,
-        button: SDL_GameControllerButton,
-    ) -> Uint8;
-}
-extern "C" {
-    #[doc = "  Trigger a rumble effect"]
-    #[doc = "  Each call to this function cancels any previous rumble effect, and calling it with 0 intensity stops any rumbling."]
-    #[doc = ""]
-    #[doc = "  \\param gamecontroller The controller to vibrate"]
-    #[doc = "  \\param low_frequency_rumble The intensity of the low frequency (left) rumble motor, from 0 to 0xFFFF"]
-    #[doc = "  \\param high_frequency_rumble The intensity of the high frequency (right) rumble motor, from 0 to 0xFFFF"]
-    #[doc = "  \\param duration_ms The duration of the rumble effect, in milliseconds"]
-    #[doc = ""]
-    #[doc = "  \\return 0, or -1 if rumble isn't supported on this joystick"]
-    pub fn SDL_GameControllerRumble(
-        gamecontroller: *mut SDL_GameController,
-        low_frequency_rumble: Uint16,
-        high_frequency_rumble: Uint16,
-        duration_ms: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Close a controller previously opened with SDL_GameControllerOpen()."]
-    pub fn SDL_GameControllerClose(gamecontroller: *mut SDL_GameController);
-}
-pub type SDL_TouchID = Sint64;
-pub type SDL_FingerID = Sint64;
-pub const SDL_TouchDeviceType_SDL_TOUCH_DEVICE_INVALID: SDL_TouchDeviceType = -1;
-pub const SDL_TouchDeviceType_SDL_TOUCH_DEVICE_DIRECT: SDL_TouchDeviceType = 0;
-pub const SDL_TouchDeviceType_SDL_TOUCH_DEVICE_INDIRECT_ABSOLUTE: SDL_TouchDeviceType = 1;
-pub const SDL_TouchDeviceType_SDL_TOUCH_DEVICE_INDIRECT_RELATIVE: SDL_TouchDeviceType = 2;
-pub type SDL_TouchDeviceType = i32;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_Finger {
-    pub id: SDL_FingerID,
-    pub x: f32,
-    pub y: f32,
-    pub pressure: f32,
-}
-#[test]
-fn bindgen_test_layout_SDL_Finger() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_Finger>(),
-        24usize,
-        concat!("Size of: ", stringify!(SDL_Finger))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_Finger>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_Finger))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Finger>())).id as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Finger),
-            "::",
-            stringify!(id)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Finger>())).x as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Finger),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Finger>())).y as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Finger),
-            "::",
-            stringify!(y)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Finger>())).pressure as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Finger),
-            "::",
-            stringify!(pressure)
-        )
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Get the number of registered touch devices."]
-    pub fn SDL_GetNumTouchDevices() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the touch ID with the given index, or 0 if the index is invalid."]
-    pub fn SDL_GetTouchDevice(index: ::std::os::raw::c_int) -> SDL_TouchID;
-}
-extern "C" {
-    #[doc = " \\brief Get the type of the given touch device."]
-    pub fn SDL_GetTouchDeviceType(touchID: SDL_TouchID) -> SDL_TouchDeviceType;
-}
-extern "C" {
-    #[doc = "  \\brief Get the number of active fingers for a given touch device."]
-    pub fn SDL_GetNumTouchFingers(touchID: SDL_TouchID) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the finger object of the given touch, with the given index."]
-    pub fn SDL_GetTouchFinger(
-        touchID: SDL_TouchID,
-        index: ::std::os::raw::c_int,
-    ) -> *mut SDL_Finger;
-}
-pub type SDL_GestureID = Sint64;
-extern "C" {
-    #[doc = "  \\brief Begin Recording a gesture on the specified touch, or all touches (-1)"]
-    #[doc = ""]
-    #[doc = ""]
-    pub fn SDL_RecordGesture(touchId: SDL_TouchID) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Save all currently loaded Dollar Gesture templates"]
-    #[doc = ""]
-    #[doc = ""]
-    pub fn SDL_SaveAllDollarTemplates(dst: *mut SDL_RWops) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Save a currently loaded Dollar Gesture template"]
-    #[doc = ""]
-    #[doc = ""]
-    pub fn SDL_SaveDollarTemplate(
-        gestureId: SDL_GestureID,
-        dst: *mut SDL_RWops,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Load Dollar Gesture templates from a file"]
-    #[doc = ""]
-    #[doc = ""]
-    pub fn SDL_LoadDollarTemplates(
-        touchId: SDL_TouchID,
-        src: *mut SDL_RWops,
-    ) -> ::std::os::raw::c_int;
-}
-#[doc = "< Unused (do not remove)"]
-pub const SDL_EventType_SDL_FIRSTEVENT: SDL_EventType = 0;
-#[doc = "< User-requested quit"]
-pub const SDL_EventType_SDL_QUIT: SDL_EventType = 256;
-#[doc = "< The application is being terminated by the OS"]
-#[doc = "Called on iOS in applicationWillTerminate()"]
-#[doc = "Called on Android in onDestroy()"]
-pub const SDL_EventType_SDL_APP_TERMINATING: SDL_EventType = 257;
-#[doc = "< The application is low on memory, free memory if possible."]
-#[doc = "Called on iOS in applicationDidReceiveMemoryWarning()"]
-#[doc = "Called on Android in onLowMemory()"]
-pub const SDL_EventType_SDL_APP_LOWMEMORY: SDL_EventType = 258;
-#[doc = "< The application is about to enter the background"]
-#[doc = "Called on iOS in applicationWillResignActive()"]
-#[doc = "Called on Android in onPause()"]
-pub const SDL_EventType_SDL_APP_WILLENTERBACKGROUND: SDL_EventType = 259;
-#[doc = "< The application did enter the background and may not get CPU for some time"]
-#[doc = "Called on iOS in applicationDidEnterBackground()"]
-#[doc = "Called on Android in onPause()"]
-pub const SDL_EventType_SDL_APP_DIDENTERBACKGROUND: SDL_EventType = 260;
-#[doc = "< The application is about to enter the foreground"]
-#[doc = "Called on iOS in applicationWillEnterForeground()"]
-#[doc = "Called on Android in onResume()"]
-pub const SDL_EventType_SDL_APP_WILLENTERFOREGROUND: SDL_EventType = 261;
-#[doc = "< The application is now interactive"]
-#[doc = "Called on iOS in applicationDidBecomeActive()"]
-#[doc = "Called on Android in onResume()"]
-pub const SDL_EventType_SDL_APP_DIDENTERFOREGROUND: SDL_EventType = 262;
-#[doc = "< Display state change"]
-pub const SDL_EventType_SDL_DISPLAYEVENT: SDL_EventType = 336;
-#[doc = "< Window state change"]
-pub const SDL_EventType_SDL_WINDOWEVENT: SDL_EventType = 512;
-#[doc = "< System specific event"]
-pub const SDL_EventType_SDL_SYSWMEVENT: SDL_EventType = 513;
-#[doc = "< Key pressed"]
-pub const SDL_EventType_SDL_KEYDOWN: SDL_EventType = 768;
-#[doc = "< Key released"]
-pub const SDL_EventType_SDL_KEYUP: SDL_EventType = 769;
-#[doc = "< Keyboard text editing (composition)"]
-pub const SDL_EventType_SDL_TEXTEDITING: SDL_EventType = 770;
-#[doc = "< Keyboard text input"]
-pub const SDL_EventType_SDL_TEXTINPUT: SDL_EventType = 771;
-#[doc = "< Keymap changed due to a system event such as an"]
-#[doc = "input language or keyboard layout change."]
-pub const SDL_EventType_SDL_KEYMAPCHANGED: SDL_EventType = 772;
-#[doc = "< Mouse moved"]
-pub const SDL_EventType_SDL_MOUSEMOTION: SDL_EventType = 1024;
-#[doc = "< Mouse button pressed"]
-pub const SDL_EventType_SDL_MOUSEBUTTONDOWN: SDL_EventType = 1025;
-#[doc = "< Mouse button released"]
-pub const SDL_EventType_SDL_MOUSEBUTTONUP: SDL_EventType = 1026;
-#[doc = "< Mouse wheel motion"]
-pub const SDL_EventType_SDL_MOUSEWHEEL: SDL_EventType = 1027;
-#[doc = "< Joystick axis motion"]
-pub const SDL_EventType_SDL_JOYAXISMOTION: SDL_EventType = 1536;
-#[doc = "< Joystick trackball motion"]
-pub const SDL_EventType_SDL_JOYBALLMOTION: SDL_EventType = 1537;
-#[doc = "< Joystick hat position change"]
-pub const SDL_EventType_SDL_JOYHATMOTION: SDL_EventType = 1538;
-#[doc = "< Joystick button pressed"]
-pub const SDL_EventType_SDL_JOYBUTTONDOWN: SDL_EventType = 1539;
-#[doc = "< Joystick button released"]
-pub const SDL_EventType_SDL_JOYBUTTONUP: SDL_EventType = 1540;
-#[doc = "< A new joystick has been inserted into the system"]
-pub const SDL_EventType_SDL_JOYDEVICEADDED: SDL_EventType = 1541;
-#[doc = "< An opened joystick has been removed"]
-pub const SDL_EventType_SDL_JOYDEVICEREMOVED: SDL_EventType = 1542;
-#[doc = "< Game controller axis motion"]
-pub const SDL_EventType_SDL_CONTROLLERAXISMOTION: SDL_EventType = 1616;
-#[doc = "< Game controller button pressed"]
-pub const SDL_EventType_SDL_CONTROLLERBUTTONDOWN: SDL_EventType = 1617;
-#[doc = "< Game controller button released"]
-pub const SDL_EventType_SDL_CONTROLLERBUTTONUP: SDL_EventType = 1618;
-#[doc = "< A new Game controller has been inserted into the system"]
-pub const SDL_EventType_SDL_CONTROLLERDEVICEADDED: SDL_EventType = 1619;
-#[doc = "< An opened Game controller has been removed"]
-pub const SDL_EventType_SDL_CONTROLLERDEVICEREMOVED: SDL_EventType = 1620;
-#[doc = "< The controller mapping was updated"]
-pub const SDL_EventType_SDL_CONTROLLERDEVICEREMAPPED: SDL_EventType = 1621;
-pub const SDL_EventType_SDL_FINGERDOWN: SDL_EventType = 1792;
-pub const SDL_EventType_SDL_FINGERUP: SDL_EventType = 1793;
-pub const SDL_EventType_SDL_FINGERMOTION: SDL_EventType = 1794;
-pub const SDL_EventType_SDL_DOLLARGESTURE: SDL_EventType = 2048;
-pub const SDL_EventType_SDL_DOLLARRECORD: SDL_EventType = 2049;
-pub const SDL_EventType_SDL_MULTIGESTURE: SDL_EventType = 2050;
-#[doc = "< The clipboard changed"]
-pub const SDL_EventType_SDL_CLIPBOARDUPDATE: SDL_EventType = 2304;
-#[doc = "< The system requests a file open"]
-pub const SDL_EventType_SDL_DROPFILE: SDL_EventType = 4096;
-#[doc = "< text/plain drag-and-drop event"]
-pub const SDL_EventType_SDL_DROPTEXT: SDL_EventType = 4097;
-#[doc = "< A new set of drops is beginning (NULL filename)"]
-pub const SDL_EventType_SDL_DROPBEGIN: SDL_EventType = 4098;
-#[doc = "< Current set of drops is now complete (NULL filename)"]
-pub const SDL_EventType_SDL_DROPCOMPLETE: SDL_EventType = 4099;
-#[doc = "< A new audio device is available"]
-pub const SDL_EventType_SDL_AUDIODEVICEADDED: SDL_EventType = 4352;
-#[doc = "< An audio device has been removed."]
-pub const SDL_EventType_SDL_AUDIODEVICEREMOVED: SDL_EventType = 4353;
-#[doc = "< A sensor was updated"]
-pub const SDL_EventType_SDL_SENSORUPDATE: SDL_EventType = 4608;
-#[doc = "< The render targets have been reset and their contents need to be updated"]
-pub const SDL_EventType_SDL_RENDER_TARGETS_RESET: SDL_EventType = 8192;
-#[doc = "< The device has been reset and all textures need to be recreated"]
-pub const SDL_EventType_SDL_RENDER_DEVICE_RESET: SDL_EventType = 8193;
-#[doc = " Events ::SDL_USEREVENT through ::SDL_LASTEVENT are for your use,"]
-#[doc = "  and should be allocated with SDL_RegisterEvents()"]
-pub const SDL_EventType_SDL_USEREVENT: SDL_EventType = 32768;
-#[doc = "  This last event is only for bounding internal arrays"]
-pub const SDL_EventType_SDL_LASTEVENT: SDL_EventType = 65535;
-#[doc = " \\brief The types of events that can be delivered."]
-pub type SDL_EventType = u32;
-#[doc = "  \\brief Fields shared by every event"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_CommonEvent {
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_CommonEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_CommonEvent>(),
-        8usize,
-        concat!("Size of: ", stringify!(SDL_CommonEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_CommonEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_CommonEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_CommonEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_CommonEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_CommonEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_CommonEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-}
-#[doc = "  \\brief Display state change event data (event.display.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_DisplayEvent {
-    #[doc = "< ::SDL_DISPLAYEVENT"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The associated display index"]
-    pub display: Uint32,
-    #[doc = "< ::SDL_DisplayEventID"]
-    pub event: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-    #[doc = "< event dependent data"]
-    pub data1: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_DisplayEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_DisplayEvent>(),
-        20usize,
-        concat!("Size of: ", stringify!(SDL_DisplayEvent))
+        ::std::mem::size_of::<INPUT>(),
+        588usize,
+        concat!("Size of: ", stringify!(INPUT))
     );
     assert_eq!(
-        ::std::mem::align_of::<SDL_DisplayEvent>(),
+        ::std::mem::align_of::<INPUT>(),
         4usize,
-        concat!("Alignment of ", stringify!(SDL_DisplayEvent))
+        concat!("Alignment of ", stringify!(INPUT))
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).type_ as *const _ as usize },
+        unsafe { &(*(::std::ptr::null::<INPUT>())).key_states as *const _ as usize },
         0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).display as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
-            "::",
-            stringify!(display)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).event as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
-            "::",
-            stringify!(event)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).padding1 as *const _ as usize },
-        13usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(padding1)
+            stringify!(key_states)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).padding2 as *const _ as usize },
-        14usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).key_buf as *const _ as usize },
+        512usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(padding2)
+            stringify!(key_buf)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).padding3 as *const _ as usize },
-        15usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).mousebut_buf as *const _ as usize },
+        528usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(padding3)
+            stringify!(mousebut_buf)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DisplayEvent>())).data1 as *const _ as usize },
-        16usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).buf_head as *const _ as usize },
+        544usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_DisplayEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(data1)
+            stringify!(buf_head)
         )
     );
-}
-#[doc = "  \\brief Window state change event data (event.window.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_WindowEvent {
-    #[doc = "< ::SDL_WINDOWEVENT"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The associated window"]
-    pub windowID: Uint32,
-    #[doc = "< ::SDL_WindowEventID"]
-    pub event: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-    #[doc = "< event dependent data"]
-    pub data1: Sint32,
-    #[doc = "< event dependent data"]
-    pub data2: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_WindowEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_WindowEvent>(),
-        24usize,
-        concat!("Size of: ", stringify!(SDL_WindowEvent))
-    );
     assert_eq!(
-        ::std::mem::align_of::<SDL_WindowEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_WindowEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).type_ as *const _ as usize },
-        0usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).buf_tail as *const _ as usize },
+        548usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(type_)
+            stringify!(buf_tail)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).timestamp as *const _ as usize },
-        4usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).mbuf_head as *const _ as usize },
+        552usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(timestamp)
+            stringify!(mbuf_head)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).windowID as *const _ as usize },
-        8usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).mbuf_tail as *const _ as usize },
+        556usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(windowID)
+            stringify!(mbuf_tail)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).event as *const _ as usize },
-        12usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).cur_mousebut_state as *const _ as usize },
+        560usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(event)
+            stringify!(cur_mousebut_state)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).padding1 as *const _ as usize },
-        13usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).motion_x as *const _ as usize },
+        564usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(padding1)
+            stringify!(motion_x)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).padding2 as *const _ as usize },
-        14usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).motion_y as *const _ as usize },
+        568usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(padding2)
+            stringify!(motion_y)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).padding3 as *const _ as usize },
-        15usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).abs_x as *const _ as usize },
+        572usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(padding3)
+            stringify!(abs_x)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).data1 as *const _ as usize },
-        16usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).abs_y as *const _ as usize },
+        576usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(data1)
+            stringify!(abs_y)
         )
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowEvent>())).data2 as *const _ as usize },
-        20usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).mouse_buttons_prev as *const _ as usize },
+        580usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_WindowEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(data2)
+            stringify!(mouse_buttons_prev)
         )
-    );
-}
-#[doc = "  \\brief Keyboard button event structure (event.key.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_KeyboardEvent {
-    #[doc = "< ::SDL_KEYDOWN or ::SDL_KEYUP"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The window with keyboard focus, if any"]
-    pub windowID: Uint32,
-    #[doc = "< ::SDL_PRESSED or ::SDL_RELEASED"]
-    pub state: Uint8,
-    #[doc = "< Non-zero if this is a key repeat"]
-    pub repeat: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-    #[doc = "< The key that was pressed or released"]
-    pub keysym: SDL_Keysym,
-}
-#[test]
-fn bindgen_test_layout_SDL_KeyboardEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_KeyboardEvent>(),
-        32usize,
-        concat!("Size of: ", stringify!(SDL_KeyboardEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_KeyboardEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_KeyboardEvent))
     );
     assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).type_ as *const _ as usize },
-        0usize,
+        unsafe { &(*(::std::ptr::null::<INPUT>())).mouse_buttons_now as *const _ as usize },
+        584usize,
         concat!(
             "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
+            stringify!(INPUT),
             "::",
-            stringify!(type_)
+            stringify!(mouse_buttons_now)
         )
     );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).state as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(state)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).repeat as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(repeat)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).padding2 as *const _ as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).padding3 as *const _ as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(padding3)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_KeyboardEvent>())).keysym as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_KeyboardEvent),
-            "::",
-            stringify!(keysym)
-        )
-    );
-}
-#[doc = "  \\brief Keyboard text editing event structure (event.edit.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_TextEditingEvent {
-    #[doc = "< ::SDL_TEXTEDITING"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The window with keyboard focus, if any"]
-    pub windowID: Uint32,
-    #[doc = "< The editing text"]
-    pub text: [::std::os::raw::c_char; 32usize],
-    #[doc = "< The start cursor of selected editing text"]
-    pub start: Sint32,
-    #[doc = "< The length of selected editing text"]
-    pub length: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_TextEditingEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_TextEditingEvent>(),
-        52usize,
-        concat!("Size of: ", stringify!(SDL_TextEditingEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_TextEditingEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_TextEditingEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextEditingEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextEditingEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextEditingEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextEditingEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextEditingEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextEditingEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextEditingEvent>())).text as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextEditingEvent),
-            "::",
-            stringify!(text)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextEditingEvent>())).start as *const _ as usize },
-        44usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextEditingEvent),
-            "::",
-            stringify!(start)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextEditingEvent>())).length as *const _ as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextEditingEvent),
-            "::",
-            stringify!(length)
-        )
-    );
-}
-#[doc = "  \\brief Keyboard text input event structure (event.text.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_TextInputEvent {
-    #[doc = "< ::SDL_TEXTINPUT"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The window with keyboard focus, if any"]
-    pub windowID: Uint32,
-    #[doc = "< The input text"]
-    pub text: [::std::os::raw::c_char; 32usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_TextInputEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_TextInputEvent>(),
-        44usize,
-        concat!("Size of: ", stringify!(SDL_TextInputEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_TextInputEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_TextInputEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextInputEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextInputEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextInputEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextInputEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextInputEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextInputEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TextInputEvent>())).text as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TextInputEvent),
-            "::",
-            stringify!(text)
-        )
-    );
-}
-#[doc = "  \\brief Mouse motion event structure (event.motion.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MouseMotionEvent {
-    #[doc = "< ::SDL_MOUSEMOTION"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The window with mouse focus, if any"]
-    pub windowID: Uint32,
-    #[doc = "< The mouse instance id, or SDL_TOUCH_MOUSEID"]
-    pub which: Uint32,
-    #[doc = "< The current button state"]
-    pub state: Uint32,
-    #[doc = "< X coordinate, relative to window"]
-    pub x: Sint32,
-    #[doc = "< Y coordinate, relative to window"]
-    pub y: Sint32,
-    #[doc = "< The relative motion in the X direction"]
-    pub xrel: Sint32,
-    #[doc = "< The relative motion in the Y direction"]
-    pub yrel: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_MouseMotionEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MouseMotionEvent>(),
-        36usize,
-        concat!("Size of: ", stringify!(SDL_MouseMotionEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MouseMotionEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_MouseMotionEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).which as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).state as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(state)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).x as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).y as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(y)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).xrel as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(xrel)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseMotionEvent>())).yrel as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseMotionEvent),
-            "::",
-            stringify!(yrel)
-        )
-    );
-}
-#[doc = "  \\brief Mouse button event structure (event.button.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MouseButtonEvent {
-    #[doc = "< ::SDL_MOUSEBUTTONDOWN or ::SDL_MOUSEBUTTONUP"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The window with mouse focus, if any"]
-    pub windowID: Uint32,
-    #[doc = "< The mouse instance id, or SDL_TOUCH_MOUSEID"]
-    pub which: Uint32,
-    #[doc = "< The mouse button index"]
-    pub button: Uint8,
-    #[doc = "< ::SDL_PRESSED or ::SDL_RELEASED"]
-    pub state: Uint8,
-    #[doc = "< 1 for single-click, 2 for double-click, etc."]
-    pub clicks: Uint8,
-    pub padding1: Uint8,
-    #[doc = "< X coordinate, relative to window"]
-    pub x: Sint32,
-    #[doc = "< Y coordinate, relative to window"]
-    pub y: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_MouseButtonEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MouseButtonEvent>(),
-        28usize,
-        concat!("Size of: ", stringify!(SDL_MouseButtonEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MouseButtonEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_MouseButtonEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).which as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).button as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).state as *const _ as usize },
-        17usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(state)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).clicks as *const _ as usize },
-        18usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(clicks)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).padding1 as *const _ as usize },
-        19usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).x as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseButtonEvent>())).y as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseButtonEvent),
-            "::",
-            stringify!(y)
-        )
-    );
-}
-#[doc = "  \\brief Mouse wheel event structure (event.wheel.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MouseWheelEvent {
-    #[doc = "< ::SDL_MOUSEWHEEL"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The window with mouse focus, if any"]
-    pub windowID: Uint32,
-    #[doc = "< The mouse instance id, or SDL_TOUCH_MOUSEID"]
-    pub which: Uint32,
-    #[doc = "< The amount scrolled horizontally, positive to the right and negative to the left"]
-    pub x: Sint32,
-    #[doc = "< The amount scrolled vertically, positive away from the user and negative toward the user"]
-    pub y: Sint32,
-    #[doc = "< Set to one of the SDL_MOUSEWHEEL_* defines. When FLIPPED the values in X and Y will be opposite. Multiply by -1 to change them back"]
-    pub direction: Uint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_MouseWheelEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MouseWheelEvent>(),
-        28usize,
-        concat!("Size of: ", stringify!(SDL_MouseWheelEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MouseWheelEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_MouseWheelEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).which as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).x as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).y as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(y)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MouseWheelEvent>())).direction as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MouseWheelEvent),
-            "::",
-            stringify!(direction)
-        )
-    );
-}
-#[doc = "  \\brief Joystick axis motion event structure (event.jaxis.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_JoyAxisEvent {
-    #[doc = "< ::SDL_JOYAXISMOTION"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick instance id"]
-    pub which: SDL_JoystickID,
-    #[doc = "< The joystick axis index"]
-    pub axis: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-    #[doc = "< The axis value (range: -32768 to 32767)"]
-    pub value: Sint16,
-    pub padding4: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_JoyAxisEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_JoyAxisEvent>(),
-        20usize,
-        concat!("Size of: ", stringify!(SDL_JoyAxisEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_JoyAxisEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_JoyAxisEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).axis as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(axis)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).padding1 as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).padding2 as *const _ as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).padding3 as *const _ as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(padding3)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).value as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(value)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyAxisEvent>())).padding4 as *const _ as usize },
-        18usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyAxisEvent),
-            "::",
-            stringify!(padding4)
-        )
-    );
-}
-#[doc = "  \\brief Joystick trackball motion event structure (event.jball.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_JoyBallEvent {
-    #[doc = "< ::SDL_JOYBALLMOTION"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick instance id"]
-    pub which: SDL_JoystickID,
-    #[doc = "< The joystick trackball index"]
-    pub ball: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-    #[doc = "< The relative motion in the X direction"]
-    pub xrel: Sint16,
-    #[doc = "< The relative motion in the Y direction"]
-    pub yrel: Sint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_JoyBallEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_JoyBallEvent>(),
-        20usize,
-        concat!("Size of: ", stringify!(SDL_JoyBallEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_JoyBallEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_JoyBallEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).ball as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(ball)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).padding1 as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).padding2 as *const _ as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).padding3 as *const _ as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(padding3)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).xrel as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(xrel)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyBallEvent>())).yrel as *const _ as usize },
-        18usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyBallEvent),
-            "::",
-            stringify!(yrel)
-        )
-    );
-}
-#[doc = "  \\brief Joystick hat position change event structure (event.jhat.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_JoyHatEvent {
-    #[doc = "< ::SDL_JOYHATMOTION"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick instance id"]
-    pub which: SDL_JoystickID,
-    #[doc = "< The joystick hat index"]
-    pub hat: Uint8,
-    #[doc = "< The hat position value."]
-    #[doc = "   \\sa ::SDL_HAT_LEFTUP ::SDL_HAT_UP ::SDL_HAT_RIGHTUP"]
-    #[doc = "   \\sa ::SDL_HAT_LEFT ::SDL_HAT_CENTERED ::SDL_HAT_RIGHT"]
-    #[doc = "   \\sa ::SDL_HAT_LEFTDOWN ::SDL_HAT_DOWN ::SDL_HAT_RIGHTDOWN"]
-    #[doc = ""]
-    #[doc = "   Note that zero means the POV is centered."]
-    pub value: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_JoyHatEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_JoyHatEvent>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_JoyHatEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_JoyHatEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_JoyHatEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).hat as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(hat)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).value as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(value)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).padding1 as *const _ as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyHatEvent>())).padding2 as *const _ as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyHatEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-}
-#[doc = "  \\brief Joystick button event structure (event.jbutton.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_JoyButtonEvent {
-    #[doc = "< ::SDL_JOYBUTTONDOWN or ::SDL_JOYBUTTONUP"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick instance id"]
-    pub which: SDL_JoystickID,
-    #[doc = "< The joystick button index"]
-    pub button: Uint8,
-    #[doc = "< ::SDL_PRESSED or ::SDL_RELEASED"]
-    pub state: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_JoyButtonEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_JoyButtonEvent>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_JoyButtonEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_JoyButtonEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_JoyButtonEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).button as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).state as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(state)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).padding1 as *const _ as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyButtonEvent>())).padding2 as *const _ as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyButtonEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-}
-#[doc = "  \\brief Joystick device event structure (event.jdevice.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_JoyDeviceEvent {
-    #[doc = "< ::SDL_JOYDEVICEADDED or ::SDL_JOYDEVICEREMOVED"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick device index for the ADDED event, instance id for the REMOVED event"]
-    pub which: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_JoyDeviceEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_JoyDeviceEvent>(),
-        12usize,
-        concat!("Size of: ", stringify!(SDL_JoyDeviceEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_JoyDeviceEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_JoyDeviceEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyDeviceEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyDeviceEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyDeviceEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyDeviceEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_JoyDeviceEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_JoyDeviceEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-}
-#[doc = "  \\brief Game controller axis motion event structure (event.caxis.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_ControllerAxisEvent {
-    #[doc = "< ::SDL_CONTROLLERAXISMOTION"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick instance id"]
-    pub which: SDL_JoystickID,
-    #[doc = "< The controller axis (SDL_GameControllerAxis)"]
-    pub axis: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-    #[doc = "< The axis value (range: -32768 to 32767)"]
-    pub value: Sint16,
-    pub padding4: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_ControllerAxisEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_ControllerAxisEvent>(),
-        20usize,
-        concat!("Size of: ", stringify!(SDL_ControllerAxisEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_ControllerAxisEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_ControllerAxisEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).timestamp as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).axis as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(axis)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).padding1 as *const _ as usize
-        },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).padding2 as *const _ as usize
-        },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).padding3 as *const _ as usize
-        },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(padding3)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).value as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(value)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerAxisEvent>())).padding4 as *const _ as usize
-        },
-        18usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerAxisEvent),
-            "::",
-            stringify!(padding4)
-        )
-    );
-}
-#[doc = "  \\brief Game controller button event structure (event.cbutton.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_ControllerButtonEvent {
-    #[doc = "< ::SDL_CONTROLLERBUTTONDOWN or ::SDL_CONTROLLERBUTTONUP"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick instance id"]
-    pub which: SDL_JoystickID,
-    #[doc = "< The controller button (SDL_GameControllerButton)"]
-    pub button: Uint8,
-    #[doc = "< ::SDL_PRESSED or ::SDL_RELEASED"]
-    pub state: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_ControllerButtonEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_ControllerButtonEvent>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_ControllerButtonEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_ControllerButtonEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_ControllerButtonEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).timestamp as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).button as *const _ as usize
-        },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).state as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(state)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).padding1 as *const _ as usize
-        },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerButtonEvent>())).padding2 as *const _ as usize
-        },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerButtonEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-}
-#[doc = "  \\brief Controller device event structure (event.cdevice.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_ControllerDeviceEvent {
-    #[doc = "< ::SDL_CONTROLLERDEVICEADDED, ::SDL_CONTROLLERDEVICEREMOVED, or ::SDL_CONTROLLERDEVICEREMAPPED"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The joystick device index for the ADDED event, instance id for the REMOVED or REMAPPED event"]
-    pub which: Sint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_ControllerDeviceEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_ControllerDeviceEvent>(),
-        12usize,
-        concat!("Size of: ", stringify!(SDL_ControllerDeviceEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_ControllerDeviceEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_ControllerDeviceEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerDeviceEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerDeviceEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_ControllerDeviceEvent>())).timestamp as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerDeviceEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_ControllerDeviceEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_ControllerDeviceEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-}
-#[doc = "  \\brief Audio device event structure (event.adevice.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_AudioDeviceEvent {
-    #[doc = "< ::SDL_AUDIODEVICEADDED, or ::SDL_AUDIODEVICEREMOVED"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The audio device index for the ADDED event (valid until next SDL_GetNumAudioDevices() call), SDL_AudioDeviceID for the REMOVED event"]
-    pub which: Uint32,
-    #[doc = "< zero if an output device, non-zero if a capture device."]
-    pub iscapture: Uint8,
-    pub padding1: Uint8,
-    pub padding2: Uint8,
-    pub padding3: Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_AudioDeviceEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_AudioDeviceEvent>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_AudioDeviceEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_AudioDeviceEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_AudioDeviceEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).iscapture as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(iscapture)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).padding1 as *const _ as usize },
-        13usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(padding1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).padding2 as *const _ as usize },
-        14usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(padding2)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_AudioDeviceEvent>())).padding3 as *const _ as usize },
-        15usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_AudioDeviceEvent),
-            "::",
-            stringify!(padding3)
-        )
-    );
-}
-#[doc = "  \\brief Touch finger event structure (event.tfinger.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_TouchFingerEvent {
-    #[doc = "< ::SDL_FINGERMOTION or ::SDL_FINGERDOWN or ::SDL_FINGERUP"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The touch device id"]
-    pub touchId: SDL_TouchID,
-    pub fingerId: SDL_FingerID,
-    #[doc = "< Normalized in the range 0...1"]
-    pub x: f32,
-    #[doc = "< Normalized in the range 0...1"]
-    pub y: f32,
-    #[doc = "< Normalized in the range -1...1"]
-    pub dx: f32,
-    #[doc = "< Normalized in the range -1...1"]
-    pub dy: f32,
-    #[doc = "< Normalized in the range 0...1"]
-    pub pressure: f32,
-    #[doc = "< The window underneath the finger, if any"]
-    pub windowID: Uint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_TouchFingerEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_TouchFingerEvent>(),
-        48usize,
-        concat!("Size of: ", stringify!(SDL_TouchFingerEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_TouchFingerEvent>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_TouchFingerEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).touchId as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(touchId)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).fingerId as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(fingerId)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).x as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).y as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(y)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).dx as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(dx)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).dy as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(dy)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).pressure as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(pressure)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_TouchFingerEvent>())).windowID as *const _ as usize },
-        44usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_TouchFingerEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-}
-#[doc = "  \\brief Multiple Finger Gesture Event (event.mgesture.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MultiGestureEvent {
-    #[doc = "< ::SDL_MULTIGESTURE"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The touch device id"]
-    pub touchId: SDL_TouchID,
-    pub dTheta: f32,
-    pub dDist: f32,
-    pub x: f32,
-    pub y: f32,
-    pub numFingers: Uint16,
-    pub padding: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_MultiGestureEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MultiGestureEvent>(),
-        40usize,
-        concat!("Size of: ", stringify!(SDL_MultiGestureEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MultiGestureEvent>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_MultiGestureEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).touchId as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(touchId)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).dTheta as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(dTheta)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).dDist as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(dDist)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).x as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).y as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(y)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).numFingers as *const _ as usize
-        },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(numFingers)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MultiGestureEvent>())).padding as *const _ as usize },
-        34usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MultiGestureEvent),
-            "::",
-            stringify!(padding)
-        )
-    );
-}
-#[doc = " \\brief Dollar Gesture Event (event.dgesture.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_DollarGestureEvent {
-    #[doc = "< ::SDL_DOLLARGESTURE or ::SDL_DOLLARRECORD"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The touch device id"]
-    pub touchId: SDL_TouchID,
-    pub gestureId: SDL_GestureID,
-    pub numFingers: Uint32,
-    pub error: f32,
-    #[doc = "< Normalized center of gesture"]
-    pub x: f32,
-    #[doc = "< Normalized center of gesture"]
-    pub y: f32,
-}
-#[test]
-fn bindgen_test_layout_SDL_DollarGestureEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_DollarGestureEvent>(),
-        40usize,
-        concat!("Size of: ", stringify!(SDL_DollarGestureEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_DollarGestureEvent>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_DollarGestureEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).timestamp as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).touchId as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(touchId)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).gestureId as *const _ as usize
-        },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(gestureId)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).numFingers as *const _ as usize
-        },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(numFingers)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).error as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(error)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).x as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(x)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DollarGestureEvent>())).y as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DollarGestureEvent),
-            "::",
-            stringify!(y)
-        )
-    );
-}
-#[doc = "  \\brief An event used to request a file open by the system (event.drop.*)"]
-#[doc = "         This event is enabled by default, you can disable it with SDL_EventState()."]
-#[doc = "  \\note If this event is enabled, you must free the filename in the event."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_DropEvent {
-    #[doc = "< ::SDL_DROPBEGIN or ::SDL_DROPFILE or ::SDL_DROPTEXT or ::SDL_DROPCOMPLETE"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The file name, which should be freed with SDL_free(), is NULL on begin/complete"]
-    pub file: *mut ::std::os::raw::c_char,
-    #[doc = "< The window that was dropped on, if any"]
-    pub windowID: Uint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_DropEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_DropEvent>(),
-        24usize,
-        concat!("Size of: ", stringify!(SDL_DropEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_DropEvent>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_DropEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DropEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DropEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DropEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DropEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DropEvent>())).file as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DropEvent),
-            "::",
-            stringify!(file)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_DropEvent>())).windowID as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_DropEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-}
-#[doc = "  \\brief Sensor event structure (event.sensor.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_SensorEvent {
-    #[doc = "< ::SDL_SENSORUPDATE"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The instance ID of the sensor"]
-    pub which: Sint32,
-    #[doc = "< Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData()"]
-    pub data: [f32; 6usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_SensorEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_SensorEvent>(),
-        36usize,
-        concat!("Size of: ", stringify!(SDL_SensorEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_SensorEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_SensorEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SensorEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SensorEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SensorEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SensorEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SensorEvent>())).which as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SensorEvent),
-            "::",
-            stringify!(which)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SensorEvent>())).data as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SensorEvent),
-            "::",
-            stringify!(data)
-        )
-    );
-}
-#[doc = "  \\brief The \"quit requested\" event"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_QuitEvent {
-    #[doc = "< ::SDL_QUIT"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_QuitEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_QuitEvent>(),
-        8usize,
-        concat!("Size of: ", stringify!(SDL_QuitEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_QuitEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_QuitEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_QuitEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_QuitEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_QuitEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_QuitEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-}
-#[doc = "  \\brief OS Specific event"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_OSEvent {
-    #[doc = "< ::SDL_QUIT"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-}
-#[test]
-fn bindgen_test_layout_SDL_OSEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_OSEvent>(),
-        8usize,
-        concat!("Size of: ", stringify!(SDL_OSEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_OSEvent>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_OSEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_OSEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_OSEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_OSEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_OSEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-}
-#[doc = "  \\brief A user-defined event type (event.user.*)"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_UserEvent {
-    #[doc = "< ::SDL_USEREVENT through ::SDL_LASTEVENT-1"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< The associated window if any"]
-    pub windowID: Uint32,
-    #[doc = "< User defined event code"]
-    pub code: Sint32,
-    #[doc = "< User defined data pointer"]
-    pub data1: *mut ::std::os::raw::c_void,
-    #[doc = "< User defined data pointer"]
-    pub data2: *mut ::std::os::raw::c_void,
-}
-#[test]
-fn bindgen_test_layout_SDL_UserEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_UserEvent>(),
-        32usize,
-        concat!("Size of: ", stringify!(SDL_UserEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_UserEvent>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_UserEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_UserEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_UserEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_UserEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_UserEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_UserEvent>())).windowID as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_UserEvent),
-            "::",
-            stringify!(windowID)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_UserEvent>())).code as *const _ as usize },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_UserEvent),
-            "::",
-            stringify!(code)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_UserEvent>())).data1 as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_UserEvent),
-            "::",
-            stringify!(data1)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_UserEvent>())).data2 as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_UserEvent),
-            "::",
-            stringify!(data2)
-        )
-    );
-}
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_SysWMmsg {
-    _unused: [u8; 0],
-}
-#[doc = "  \\brief A video driver dependent system event (event.syswm.*)"]
-#[doc = "         This event is disabled by default, you can enable it with SDL_EventState()"]
-#[doc = ""]
-#[doc = "  \\note If you want to use this event, you should include SDL_syswm.h."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_SysWMEvent {
-    #[doc = "< ::SDL_SYSWMEVENT"]
-    pub type_: Uint32,
-    #[doc = "< In milliseconds, populated using SDL_GetTicks()"]
-    pub timestamp: Uint32,
-    #[doc = "< driver dependent data, defined in SDL_syswm.h"]
-    pub msg: *mut SDL_SysWMmsg,
-}
-#[test]
-fn bindgen_test_layout_SDL_SysWMEvent() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_SysWMEvent>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_SysWMEvent))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_SysWMEvent>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_SysWMEvent))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SysWMEvent>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SysWMEvent),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SysWMEvent>())).timestamp as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SysWMEvent),
-            "::",
-            stringify!(timestamp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_SysWMEvent>())).msg as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_SysWMEvent),
-            "::",
-            stringify!(msg)
-        )
-    );
-}
-#[doc = "  \\brief General event structure"]
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub union SDL_Event {
-    #[doc = "< Event type, shared with all events"]
-    pub type_: Uint32,
-    #[doc = "< Common event data"]
-    pub common: SDL_CommonEvent,
-    #[doc = "< Display event data"]
-    pub display: SDL_DisplayEvent,
-    #[doc = "< Window event data"]
-    pub window: SDL_WindowEvent,
-    #[doc = "< Keyboard event data"]
-    pub key: SDL_KeyboardEvent,
-    #[doc = "< Text editing event data"]
-    pub edit: SDL_TextEditingEvent,
-    #[doc = "< Text input event data"]
-    pub text: SDL_TextInputEvent,
-    #[doc = "< Mouse motion event data"]
-    pub motion: SDL_MouseMotionEvent,
-    #[doc = "< Mouse button event data"]
-    pub button: SDL_MouseButtonEvent,
-    #[doc = "< Mouse wheel event data"]
-    pub wheel: SDL_MouseWheelEvent,
-    #[doc = "< Joystick axis event data"]
-    pub jaxis: SDL_JoyAxisEvent,
-    #[doc = "< Joystick ball event data"]
-    pub jball: SDL_JoyBallEvent,
-    #[doc = "< Joystick hat event data"]
-    pub jhat: SDL_JoyHatEvent,
-    #[doc = "< Joystick button event data"]
-    pub jbutton: SDL_JoyButtonEvent,
-    #[doc = "< Joystick device change event data"]
-    pub jdevice: SDL_JoyDeviceEvent,
-    #[doc = "< Game Controller axis event data"]
-    pub caxis: SDL_ControllerAxisEvent,
-    #[doc = "< Game Controller button event data"]
-    pub cbutton: SDL_ControllerButtonEvent,
-    #[doc = "< Game Controller device event data"]
-    pub cdevice: SDL_ControllerDeviceEvent,
-    #[doc = "< Audio device event data"]
-    pub adevice: SDL_AudioDeviceEvent,
-    #[doc = "< Sensor event data"]
-    pub sensor: SDL_SensorEvent,
-    #[doc = "< Quit request event data"]
-    pub quit: SDL_QuitEvent,
-    #[doc = "< Custom event data"]
-    pub user: SDL_UserEvent,
-    #[doc = "< System dependent window event data"]
-    pub syswm: SDL_SysWMEvent,
-    #[doc = "< Touch finger event data"]
-    pub tfinger: SDL_TouchFingerEvent,
-    #[doc = "< Gesture event data"]
-    pub mgesture: SDL_MultiGestureEvent,
-    #[doc = "< Gesture event data"]
-    pub dgesture: SDL_DollarGestureEvent,
-    #[doc = "< Drag and drop event data"]
-    pub drop: SDL_DropEvent,
-    pub padding: [Uint8; 56usize],
-    _bindgen_union_align: [u64; 7usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_Event() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_Event>(),
-        56usize,
-        concat!("Size of: ", stringify!(SDL_Event))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_Event>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_Event))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).common as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(common)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).display as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(display)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).window as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(window)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).key as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(key)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).edit as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(edit)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).text as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(text)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).motion as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(motion)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).button as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).wheel as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(wheel)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).jaxis as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(jaxis)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).jball as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(jball)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).jhat as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(jhat)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).jbutton as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(jbutton)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).jdevice as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(jdevice)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).caxis as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(caxis)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).cbutton as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(cbutton)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).cdevice as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(cdevice)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).adevice as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(adevice)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).sensor as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(sensor)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).quit as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(quit)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).user as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(user)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).syswm as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(syswm)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).tfinger as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(tfinger)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).mgesture as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(mgesture)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).dgesture as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(dgesture)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).drop as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(drop)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_Event>())).padding as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_Event),
-            "::",
-            stringify!(padding)
-        )
-    );
-}
-pub type SDL_compile_time_assert_SDL_Event = [::std::os::raw::c_int; 1usize];
-extern "C" {
-    #[doc = "  Pumps the event loop, gathering events from the input devices."]
-    #[doc = ""]
-    #[doc = "  This function updates the event queue and internal input device state."]
-    #[doc = ""]
-    #[doc = "  This should only be run in the thread that sets the video mode."]
-    pub fn SDL_PumpEvents();
-}
-pub const SDL_eventaction_SDL_ADDEVENT: SDL_eventaction = 0;
-pub const SDL_eventaction_SDL_PEEKEVENT: SDL_eventaction = 1;
-pub const SDL_eventaction_SDL_GETEVENT: SDL_eventaction = 2;
-pub type SDL_eventaction = u32;
-extern "C" {
-    #[doc = "  Checks the event queue for messages and optionally returns them."]
-    #[doc = ""]
-    #[doc = "  If \\c action is ::SDL_ADDEVENT, up to \\c numevents events will be added to"]
-    #[doc = "  the back of the event queue."]
-    #[doc = ""]
-    #[doc = "  If \\c action is ::SDL_PEEKEVENT, up to \\c numevents events at the front"]
-    #[doc = "  of the event queue, within the specified minimum and maximum type,"]
-    #[doc = "  will be returned and will not be removed from the queue."]
-    #[doc = ""]
-    #[doc = "  If \\c action is ::SDL_GETEVENT, up to \\c numevents events at the front"]
-    #[doc = "  of the event queue, within the specified minimum and maximum type,"]
-    #[doc = "  will be returned and will be removed from the queue."]
-    #[doc = ""]
-    #[doc = "  \\return The number of events actually stored, or -1 if there was an error."]
-    #[doc = ""]
-    #[doc = "  This function is thread-safe."]
-    pub fn SDL_PeepEvents(
-        events: *mut SDL_Event,
-        numevents: ::std::os::raw::c_int,
-        action: SDL_eventaction,
-        minType: Uint32,
-        maxType: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Checks to see if certain event types are in the event queue."]
-    pub fn SDL_HasEvent(type_: Uint32) -> SDL_bool;
-}
-extern "C" {
-    pub fn SDL_HasEvents(minType: Uint32, maxType: Uint32) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  This function clears events from the event queue"]
-    #[doc = "  This function only affects currently queued events. If you want to make"]
-    #[doc = "  sure that all pending OS events are flushed, you can call SDL_PumpEvents()"]
-    #[doc = "  on the main thread immediately before the flush call."]
-    pub fn SDL_FlushEvent(type_: Uint32);
-}
-extern "C" {
-    pub fn SDL_FlushEvents(minType: Uint32, maxType: Uint32);
-}
-extern "C" {
-    #[doc = "  \\brief Polls for currently pending events."]
-    #[doc = ""]
-    #[doc = "  \\return 1 if there are any pending events, or 0 if there are none available."]
-    #[doc = ""]
-    #[doc = "  \\param event If not NULL, the next event is removed from the queue and"]
-    #[doc = "               stored in that area."]
-    pub fn SDL_PollEvent(event: *mut SDL_Event) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Waits indefinitely for the next available event."]
-    #[doc = ""]
-    #[doc = "  \\return 1, or 0 if there was an error while waiting for events."]
-    #[doc = ""]
-    #[doc = "  \\param event If not NULL, the next event is removed from the queue and"]
-    #[doc = "               stored in that area."]
-    pub fn SDL_WaitEvent(event: *mut SDL_Event) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Waits until the specified timeout (in milliseconds) for the next"]
-    #[doc = "         available event."]
-    #[doc = ""]
-    #[doc = "  \\return 1, or 0 if there was an error while waiting for events."]
-    #[doc = ""]
-    #[doc = "  \\param event If not NULL, the next event is removed from the queue and"]
-    #[doc = "               stored in that area."]
-    #[doc = "  \\param timeout The timeout (in milliseconds) to wait for next event."]
-    pub fn SDL_WaitEventTimeout(
-        event: *mut SDL_Event,
-        timeout: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Add an event to the event queue."]
-    #[doc = ""]
-    #[doc = "  \\return 1 on success, 0 if the event was filtered, or -1 if the event queue"]
-    #[doc = "          was full or there was some other error."]
-    pub fn SDL_PushEvent(event: *mut SDL_Event) -> ::std::os::raw::c_int;
-}
-pub type SDL_EventFilter = ::std::option::Option<
-    unsafe extern "C" fn(
-        userdata: *mut ::std::os::raw::c_void,
-        event: *mut SDL_Event,
-    ) -> ::std::os::raw::c_int,
->;
-extern "C" {
-    #[doc = "  Sets up a filter to process all events before they change internal state and"]
-    #[doc = "  are posted to the internal event queue."]
-    #[doc = ""]
-    #[doc = "  The filter is prototyped as:"]
-    #[doc = "  \\code"]
-    #[doc = "      int SDL_EventFilter(void *userdata, SDL_Event * event);"]
-    #[doc = "  \\endcode"]
-    #[doc = ""]
-    #[doc = "  If the filter returns 1, then the event will be added to the internal queue."]
-    #[doc = "  If it returns 0, then the event will be dropped from the queue, but the"]
-    #[doc = "  internal state will still be updated.  This allows selective filtering of"]
-    #[doc = "  dynamically arriving events."]
-    #[doc = ""]
-    #[doc = "  \\warning  Be very careful of what you do in the event filter function, as"]
-    #[doc = "            it may run in a different thread!"]
-    #[doc = ""]
-    #[doc = "  There is one caveat when dealing with the ::SDL_QuitEvent event type.  The"]
-    #[doc = "  event filter is only called when the window manager desires to close the"]
-    #[doc = "  application window.  If the event filter returns 1, then the window will"]
-    #[doc = "  be closed, otherwise the window will remain open if possible."]
-    #[doc = ""]
-    #[doc = "  If the quit event is generated by an interrupt signal, it will bypass the"]
-    #[doc = "  internal queue and be delivered to the application at the next event poll."]
-    pub fn SDL_SetEventFilter(filter: SDL_EventFilter, userdata: *mut ::std::os::raw::c_void);
-}
-extern "C" {
-    #[doc = "  Return the current event filter - can be used to \"chain\" filters."]
-    #[doc = "  If there is no event filter set, this function returns SDL_FALSE."]
-    pub fn SDL_GetEventFilter(
-        filter: *mut SDL_EventFilter,
-        userdata: *mut *mut ::std::os::raw::c_void,
-    ) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  Add a function which is called when an event is added to the queue."]
-    pub fn SDL_AddEventWatch(filter: SDL_EventFilter, userdata: *mut ::std::os::raw::c_void);
-}
-extern "C" {
-    #[doc = "  Remove an event watch function added with SDL_AddEventWatch()"]
-    pub fn SDL_DelEventWatch(filter: SDL_EventFilter, userdata: *mut ::std::os::raw::c_void);
-}
-extern "C" {
-    #[doc = "  Run the filter function on the current event queue, removing any"]
-    #[doc = "  events for which the filter returns 0."]
-    pub fn SDL_FilterEvents(filter: SDL_EventFilter, userdata: *mut ::std::os::raw::c_void);
-}
-extern "C" {
-    #[doc = "  This function allows you to set the state of processing certain events."]
-    #[doc = "   - If \\c state is set to ::SDL_IGNORE, that event will be automatically"]
-    #[doc = "     dropped from the event queue and will not be filtered."]
-    #[doc = "   - If \\c state is set to ::SDL_ENABLE, that event will be processed"]
-    #[doc = "     normally."]
-    #[doc = "   - If \\c state is set to ::SDL_QUERY, SDL_EventState() will return the"]
-    #[doc = "     current processing state of the specified event."]
-    pub fn SDL_EventState(type_: Uint32, state: ::std::os::raw::c_int) -> Uint8;
-}
-extern "C" {
-    #[doc = "  This function allocates a set of user-defined events, and returns"]
-    #[doc = "  the beginning event number for that set of events."]
-    #[doc = ""]
-    #[doc = "  If there aren't enough user-defined events left, this function"]
-    #[doc = "  returns (Uint32)-1"]
-    pub fn SDL_RegisterEvents(numevents: ::std::os::raw::c_int) -> Uint32;
-}
-extern "C" {
-    #[doc = " \\brief Get the path where the application resides."]
-    #[doc = ""]
-    #[doc = " Get the \"base path\". This is the directory where the application was run"]
-    #[doc = "  from, which is probably the installation directory, and may or may not"]
-    #[doc = "  be the process's current working directory."]
-    #[doc = ""]
-    #[doc = " This returns an absolute path in UTF-8 encoding, and is guaranteed to"]
-    #[doc = "  end with a path separator ('\\\\' on Windows, '/' most other places)."]
-    #[doc = ""]
-    #[doc = " The pointer returned by this function is owned by you. Please call"]
-    #[doc = "  SDL_free() on the pointer when you are done with it, or it will be a"]
-    #[doc = "  memory leak. This is not necessarily a fast call, though, so you should"]
-    #[doc = "  call this once near startup and save the string if you need it."]
-    #[doc = ""]
-    #[doc = " Some platforms can't determine the application's path, and on other"]
-    #[doc = "  platforms, this might be meaningless. In such cases, this function will"]
-    #[doc = "  return NULL."]
-    #[doc = ""]
-    #[doc = "  \\return String of base dir in UTF-8 encoding, or NULL on error."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_GetPrefPath"]
-    pub fn SDL_GetBasePath() -> *mut ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = " \\brief Get the user-and-app-specific path where files can be written."]
-    #[doc = ""]
-    #[doc = " Get the \"pref dir\". This is meant to be where users can write personal"]
-    #[doc = "  files (preferences and save games, etc) that are specific to your"]
-    #[doc = "  application. This directory is unique per user, per application."]
-    #[doc = ""]
-    #[doc = " This function will decide the appropriate location in the native filesystem,"]
-    #[doc = "  create the directory if necessary, and return a string of the absolute"]
-    #[doc = "  path to the directory in UTF-8 encoding."]
-    #[doc = ""]
-    #[doc = " On Windows, the string might look like:"]
-    #[doc = "  \"C:\\\\Users\\\\bob\\\\AppData\\\\Roaming\\\\My Company\\\\My Program Name\\\\\""]
-    #[doc = ""]
-    #[doc = " On Linux, the string might look like:"]
-    #[doc = "  \"/home/bob/.local/share/My Program Name/\""]
-    #[doc = ""]
-    #[doc = " On Mac OS X, the string might look like:"]
-    #[doc = "  \"/Users/bob/Library/Application Support/My Program Name/\""]
-    #[doc = ""]
-    #[doc = " (etc.)"]
-    #[doc = ""]
-    #[doc = " You specify the name of your organization (if it's not a real organization,"]
-    #[doc = "  your name or an Internet domain you own might do) and the name of your"]
-    #[doc = "  application. These should be untranslated proper names."]
-    #[doc = ""]
-    #[doc = " Both the org and app strings may become part of a directory name, so"]
-    #[doc = "  please follow these rules:"]
-    #[doc = ""]
-    #[doc = "    - Try to use the same org string (including case-sensitivity) for"]
-    #[doc = "      all your applications that use this function."]
-    #[doc = "    - Always use a unique app string for each one, and make sure it never"]
-    #[doc = "      changes for an app once you've decided on it."]
-    #[doc = "    - Unicode characters are legal, as long as it's UTF-8 encoded, but..."]
-    #[doc = "    - ...only use letters, numbers, and spaces. Avoid punctuation like"]
-    #[doc = "      \"Game Name 2: Bad Guy's Revenge!\" ... \"Game Name 2\" is sufficient."]
-    #[doc = ""]
-    #[doc = " This returns an absolute path in UTF-8 encoding, and is guaranteed to"]
-    #[doc = "  end with a path separator ('\\\\' on Windows, '/' most other places)."]
-    #[doc = ""]
-    #[doc = " The pointer returned by this function is owned by you. Please call"]
-    #[doc = "  SDL_free() on the pointer when you are done with it, or it will be a"]
-    #[doc = "  memory leak. This is not necessarily a fast call, though, so you should"]
-    #[doc = "  call this once near startup and save the string if you need it."]
-    #[doc = ""]
-    #[doc = " You should assume the path returned by this function is the only safe"]
-    #[doc = "  place to write files (and that SDL_GetBasePath(), while it might be"]
-    #[doc = "  writable, or even the parent of the returned path, aren't where you"]
-    #[doc = "  should be writing things)."]
-    #[doc = ""]
-    #[doc = " Some platforms can't determine the pref path, and on other"]
-    #[doc = "  platforms, this might be meaningless. In such cases, this function will"]
-    #[doc = "  return NULL."]
-    #[doc = ""]
-    #[doc = "   \\param org The name of your organization."]
-    #[doc = "   \\param app The name of your application."]
-    #[doc = "  \\return UTF-8 string of user dir in platform-dependent notation. NULL"]
-    #[doc = "          if there's a problem (creating directory failed, etc)."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_GetBasePath"]
-    pub fn SDL_GetPrefPath(
-        org: *const ::std::os::raw::c_char,
-        app: *const ::std::os::raw::c_char,
-    ) -> *mut ::std::os::raw::c_char;
-}
-#[doc = "  \\typedef SDL_Haptic"]
-#[doc = ""]
-#[doc = "  \\brief The haptic structure used to identify an SDL haptic."]
-#[doc = ""]
-#[doc = "  \\sa SDL_HapticOpen"]
-#[doc = "  \\sa SDL_HapticOpenFromJoystick"]
-#[doc = "  \\sa SDL_HapticClose"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct _SDL_Haptic {
-    _unused: [u8; 0],
-}
-pub type SDL_Haptic = _SDL_Haptic;
-#[doc = "  \\brief Structure that represents a haptic direction."]
-#[doc = ""]
-#[doc = "  This is the direction where the force comes from,"]
-#[doc = "  instead of the direction in which the force is exerted."]
-#[doc = ""]
-#[doc = "  Directions can be specified by:"]
-#[doc = "   - ::SDL_HAPTIC_POLAR : Specified by polar coordinates."]
-#[doc = "   - ::SDL_HAPTIC_CARTESIAN : Specified by cartesian coordinates."]
-#[doc = "   - ::SDL_HAPTIC_SPHERICAL : Specified by spherical coordinates."]
-#[doc = ""]
-#[doc = "  Cardinal directions of the haptic device are relative to the positioning"]
-#[doc = "  of the device.  North is considered to be away from the user."]
-#[doc = ""]
-#[doc = "  The following diagram represents the cardinal directions:"]
-#[doc = "  \\verbatim"]
-#[doc = ".--."]
-#[doc = "|__| .-------."]
-#[doc = "|=.| |.-----.|"]
-#[doc = "|--| ||     ||"]
-#[doc = "|  | |'-----'|"]
-#[doc = "|__|~')_____('"]
-#[doc = "[ COMPUTER ]"]
-#[doc = ""]
-#[doc = ""]
-#[doc = "North (0,-1)"]
-#[doc = "^"]
-#[doc = "|"]
-#[doc = "|"]
-#[doc = "(-1,0)  West <----[ HAPTIC ]----> East (1,0)"]
-#[doc = "|"]
-#[doc = "|"]
-#[doc = "v"]
-#[doc = "South (0,1)"]
-#[doc = ""]
-#[doc = ""]
-#[doc = "[ USER ]"]
-#[doc = "\\|||/"]
-#[doc = "(o o)"]
-#[doc = "---ooO-(_)-Ooo---"]
-#[doc = "\\endverbatim"]
-#[doc = ""]
-#[doc = "  If type is ::SDL_HAPTIC_POLAR, direction is encoded by hundredths of a"]
-#[doc = "  degree starting north and turning clockwise.  ::SDL_HAPTIC_POLAR only uses"]
-#[doc = "  the first \\c dir parameter.  The cardinal directions would be:"]
-#[doc = "   - North: 0 (0 degrees)"]
-#[doc = "   - East: 9000 (90 degrees)"]
-#[doc = "   - South: 18000 (180 degrees)"]
-#[doc = "   - West: 27000 (270 degrees)"]
-#[doc = ""]
-#[doc = "  If type is ::SDL_HAPTIC_CARTESIAN, direction is encoded by three positions"]
-#[doc = "  (X axis, Y axis and Z axis (with 3 axes)).  ::SDL_HAPTIC_CARTESIAN uses"]
-#[doc = "  the first three \\c dir parameters.  The cardinal directions would be:"]
-#[doc = "   - North:  0,-1, 0"]
-#[doc = "   - East:   1, 0, 0"]
-#[doc = "   - South:  0, 1, 0"]
-#[doc = "   - West:  -1, 0, 0"]
-#[doc = ""]
-#[doc = "  The Z axis represents the height of the effect if supported, otherwise"]
-#[doc = "  it's unused.  In cartesian encoding (1, 2) would be the same as (2, 4), you"]
-#[doc = "  can use any multiple you want, only the direction matters."]
-#[doc = ""]
-#[doc = "  If type is ::SDL_HAPTIC_SPHERICAL, direction is encoded by two rotations."]
-#[doc = "  The first two \\c dir parameters are used.  The \\c dir parameters are as"]
-#[doc = "  follows (all values are in hundredths of degrees):"]
-#[doc = "   - Degrees from (1, 0) rotated towards (0, 1)."]
-#[doc = "   - Degrees towards (0, 0, 1) (device needs at least 3 axes)."]
-#[doc = ""]
-#[doc = ""]
-#[doc = "  Example of force coming from the south with all encodings (force coming"]
-#[doc = "  from the south means the user will have to pull the stick to counteract):"]
-#[doc = "  \\code"]
-#[doc = "  SDL_HapticDirection direction;"]
-#[doc = ""]
-#[doc = "  // Cartesian directions"]
-#[doc = "  direction.type = SDL_HAPTIC_CARTESIAN; // Using cartesian direction encoding."]
-#[doc = "  direction.dir[0] = 0; // X position"]
-#[doc = "  direction.dir[1] = 1; // Y position"]
-#[doc = "  // Assuming the device has 2 axes, we don't need to specify third parameter."]
-#[doc = ""]
-#[doc = "  // Polar directions"]
-#[doc = "  direction.type = SDL_HAPTIC_POLAR; // We'll be using polar direction encoding."]
-#[doc = "  direction.dir[0] = 18000; // Polar only uses first parameter"]
-#[doc = ""]
-#[doc = "  // Spherical coordinates"]
-#[doc = "  direction.type = SDL_HAPTIC_SPHERICAL; // Spherical encoding"]
-#[doc = "  direction.dir[0] = 9000; // Since we only have two axes we don't need more parameters."]
-#[doc = "  \\endcode"]
-#[doc = ""]
-#[doc = "  \\sa SDL_HAPTIC_POLAR"]
-#[doc = "  \\sa SDL_HAPTIC_CARTESIAN"]
-#[doc = "  \\sa SDL_HAPTIC_SPHERICAL"]
-#[doc = "  \\sa SDL_HapticEffect"]
-#[doc = "  \\sa SDL_HapticNumAxes"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticDirection {
-    #[doc = "< The type of encoding."]
-    pub type_: Uint8,
-    #[doc = "< The encoded direction."]
-    pub dir: [Sint32; 3usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticDirection() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticDirection>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_HapticDirection))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticDirection>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_HapticDirection))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticDirection>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticDirection),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticDirection>())).dir as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticDirection),
-            "::",
-            stringify!(dir)
-        )
-    );
-}
-#[doc = "  \\brief A structure containing a template for a Constant effect."]
-#[doc = ""]
-#[doc = "  This struct is exclusively for the ::SDL_HAPTIC_CONSTANT effect."]
-#[doc = ""]
-#[doc = "  A constant effect applies a constant force in the specified direction"]
-#[doc = "  to the joystick."]
-#[doc = ""]
-#[doc = "  \\sa SDL_HAPTIC_CONSTANT"]
-#[doc = "  \\sa SDL_HapticEffect"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticConstant {
-    #[doc = "< ::SDL_HAPTIC_CONSTANT"]
-    pub type_: Uint16,
-    #[doc = "< Direction of the effect."]
-    pub direction: SDL_HapticDirection,
-    #[doc = "< Duration of the effect."]
-    pub length: Uint32,
-    #[doc = "< Delay before starting the effect."]
-    pub delay: Uint16,
-    #[doc = "< Button that triggers the effect."]
-    pub button: Uint16,
-    #[doc = "< How soon it can be triggered again after button."]
-    pub interval: Uint16,
-    #[doc = "< Strength of the constant effect."]
-    pub level: Sint16,
-    #[doc = "< Duration of the attack."]
-    pub attack_length: Uint16,
-    #[doc = "< Level at the start of the attack."]
-    pub attack_level: Uint16,
-    #[doc = "< Duration of the fade."]
-    pub fade_length: Uint16,
-    #[doc = "< Level at the end of the fade."]
-    pub fade_level: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticConstant() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticConstant>(),
-        40usize,
-        concat!("Size of: ", stringify!(SDL_HapticConstant))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticConstant>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_HapticConstant))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).direction as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(direction)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).length as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).delay as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(delay)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).button as *const _ as usize },
-        26usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).interval as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(interval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).level as *const _ as usize },
-        30usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(level)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_HapticConstant>())).attack_length as *const _ as usize
-        },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(attack_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).attack_level as *const _ as usize },
-        34usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(attack_level)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).fade_length as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(fade_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticConstant>())).fade_level as *const _ as usize },
-        38usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticConstant),
-            "::",
-            stringify!(fade_level)
-        )
-    );
-}
-#[doc = "  \\brief A structure containing a template for a Periodic effect."]
-#[doc = ""]
-#[doc = "  The struct handles the following effects:"]
-#[doc = "   - ::SDL_HAPTIC_SINE"]
-#[doc = "   - ::SDL_HAPTIC_LEFTRIGHT"]
-#[doc = "   - ::SDL_HAPTIC_TRIANGLE"]
-#[doc = "   - ::SDL_HAPTIC_SAWTOOTHUP"]
-#[doc = "   - ::SDL_HAPTIC_SAWTOOTHDOWN"]
-#[doc = ""]
-#[doc = "  A periodic effect consists in a wave-shaped effect that repeats itself"]
-#[doc = "  over time.  The type determines the shape of the wave and the parameters"]
-#[doc = "  determine the dimensions of the wave."]
-#[doc = ""]
-#[doc = "  Phase is given by hundredth of a degree meaning that giving the phase a value"]
-#[doc = "  of 9000 will displace it 25% of its period.  Here are sample values:"]
-#[doc = "   -     0: No phase displacement."]
-#[doc = "   -  9000: Displaced 25% of its period."]
-#[doc = "   - 18000: Displaced 50% of its period."]
-#[doc = "   - 27000: Displaced 75% of its period."]
-#[doc = "   - 36000: Displaced 100% of its period, same as 0, but 0 is preferred."]
-#[doc = ""]
-#[doc = "  Examples:"]
-#[doc = "  \\verbatim"]
-#[doc = "SDL_HAPTIC_SINE"]
-#[doc = "__      __      __      __"]
-#[doc = ""]
-#[doc = "SDL_HAPTIC_SQUARE"]
-#[doc = "__    __    __    __    __"]
-#[doc = "|  |  |  |  |  |  |  |  |  |"]
-#[doc = "|  |__|  |__|  |__|  |__|  |"]
-#[doc = ""]
-#[doc = "SDL_HAPTIC_TRIANGLE"]
-#[doc = ""]
-#[doc = "SDL_HAPTIC_SAWTOOTHUP"]
-#[doc = ""]
-#[doc = "SDL_HAPTIC_SAWTOOTHDOWN"]
-#[doc = "\\  |\\  |\\  |\\  |\\  |\\  |\\  |"]
-#[doc = "\\ | \\ | \\ | \\ | \\ | \\ | \\ |"]
-#[doc = "\\|  \\|  \\|  \\|  \\|  \\|  \\|"]
-#[doc = "\\endverbatim"]
-#[doc = ""]
-#[doc = "  \\sa SDL_HAPTIC_SINE"]
-#[doc = "  \\sa SDL_HAPTIC_LEFTRIGHT"]
-#[doc = "  \\sa SDL_HAPTIC_TRIANGLE"]
-#[doc = "  \\sa SDL_HAPTIC_SAWTOOTHUP"]
-#[doc = "  \\sa SDL_HAPTIC_SAWTOOTHDOWN"]
-#[doc = "  \\sa SDL_HapticEffect"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticPeriodic {
-    #[doc = "< ::SDL_HAPTIC_SINE, ::SDL_HAPTIC_LEFTRIGHT,"]
-    #[doc = "::SDL_HAPTIC_TRIANGLE, ::SDL_HAPTIC_SAWTOOTHUP or"]
-    #[doc = "::SDL_HAPTIC_SAWTOOTHDOWN"]
-    pub type_: Uint16,
-    #[doc = "< Direction of the effect."]
-    pub direction: SDL_HapticDirection,
-    #[doc = "< Duration of the effect."]
-    pub length: Uint32,
-    #[doc = "< Delay before starting the effect."]
-    pub delay: Uint16,
-    #[doc = "< Button that triggers the effect."]
-    pub button: Uint16,
-    #[doc = "< How soon it can be triggered again after button."]
-    pub interval: Uint16,
-    #[doc = "< Period of the wave."]
-    pub period: Uint16,
-    #[doc = "< Peak value; if negative, equivalent to 180 degrees extra phase shift."]
-    pub magnitude: Sint16,
-    #[doc = "< Mean value of the wave."]
-    pub offset: Sint16,
-    #[doc = "< Positive phase shift given by hundredth of a degree."]
-    pub phase: Uint16,
-    #[doc = "< Duration of the attack."]
-    pub attack_length: Uint16,
-    #[doc = "< Level at the start of the attack."]
-    pub attack_level: Uint16,
-    #[doc = "< Duration of the fade."]
-    pub fade_length: Uint16,
-    #[doc = "< Level at the end of the fade."]
-    pub fade_level: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticPeriodic() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticPeriodic>(),
-        48usize,
-        concat!("Size of: ", stringify!(SDL_HapticPeriodic))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticPeriodic>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_HapticPeriodic))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).direction as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(direction)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).length as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).delay as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(delay)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).button as *const _ as usize },
-        26usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).interval as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(interval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).period as *const _ as usize },
-        30usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(period)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).magnitude as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(magnitude)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).offset as *const _ as usize },
-        34usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(offset)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).phase as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(phase)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_HapticPeriodic>())).attack_length as *const _ as usize
-        },
-        38usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(attack_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).attack_level as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(attack_level)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).fade_length as *const _ as usize },
-        42usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(fade_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticPeriodic>())).fade_level as *const _ as usize },
-        44usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticPeriodic),
-            "::",
-            stringify!(fade_level)
-        )
-    );
-}
-#[doc = "  \\brief A structure containing a template for a Condition effect."]
-#[doc = ""]
-#[doc = "  The struct handles the following effects:"]
-#[doc = "   - ::SDL_HAPTIC_SPRING: Effect based on axes position."]
-#[doc = "   - ::SDL_HAPTIC_DAMPER: Effect based on axes velocity."]
-#[doc = "   - ::SDL_HAPTIC_INERTIA: Effect based on axes acceleration."]
-#[doc = "   - ::SDL_HAPTIC_FRICTION: Effect based on axes movement."]
-#[doc = ""]
-#[doc = "  Direction is handled by condition internals instead of a direction member."]
-#[doc = "  The condition effect specific members have three parameters.  The first"]
-#[doc = "  refers to the X axis, the second refers to the Y axis and the third"]
-#[doc = "  refers to the Z axis.  The right terms refer to the positive side of the"]
-#[doc = "  axis and the left terms refer to the negative side of the axis.  Please"]
-#[doc = "  refer to the ::SDL_HapticDirection diagram for which side is positive and"]
-#[doc = "  which is negative."]
-#[doc = ""]
-#[doc = "  \\sa SDL_HapticDirection"]
-#[doc = "  \\sa SDL_HAPTIC_SPRING"]
-#[doc = "  \\sa SDL_HAPTIC_DAMPER"]
-#[doc = "  \\sa SDL_HAPTIC_INERTIA"]
-#[doc = "  \\sa SDL_HAPTIC_FRICTION"]
-#[doc = "  \\sa SDL_HapticEffect"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticCondition {
-    #[doc = "< ::SDL_HAPTIC_SPRING, ::SDL_HAPTIC_DAMPER,"]
-    #[doc = "::SDL_HAPTIC_INERTIA or ::SDL_HAPTIC_FRICTION"]
-    pub type_: Uint16,
-    #[doc = "< Direction of the effect - Not used ATM."]
-    pub direction: SDL_HapticDirection,
-    #[doc = "< Duration of the effect."]
-    pub length: Uint32,
-    #[doc = "< Delay before starting the effect."]
-    pub delay: Uint16,
-    #[doc = "< Button that triggers the effect."]
-    pub button: Uint16,
-    #[doc = "< How soon it can be triggered again after button."]
-    pub interval: Uint16,
-    #[doc = "< Level when joystick is to the positive side; max 0xFFFF."]
-    pub right_sat: [Uint16; 3usize],
-    #[doc = "< Level when joystick is to the negative side; max 0xFFFF."]
-    pub left_sat: [Uint16; 3usize],
-    #[doc = "< How fast to increase the force towards the positive side."]
-    pub right_coeff: [Sint16; 3usize],
-    #[doc = "< How fast to increase the force towards the negative side."]
-    pub left_coeff: [Sint16; 3usize],
-    #[doc = "< Size of the dead zone; max 0xFFFF: whole axis-range when 0-centered."]
-    pub deadband: [Uint16; 3usize],
-    #[doc = "< Position of the dead zone."]
-    pub center: [Sint16; 3usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticCondition() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticCondition>(),
-        68usize,
-        concat!("Size of: ", stringify!(SDL_HapticCondition))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticCondition>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_HapticCondition))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).direction as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(direction)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).length as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).delay as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(delay)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).button as *const _ as usize },
-        26usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).interval as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(interval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).right_sat as *const _ as usize },
-        30usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(right_sat)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).left_sat as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(left_sat)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).right_coeff as *const _ as usize },
-        42usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(right_coeff)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).left_coeff as *const _ as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(left_coeff)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).deadband as *const _ as usize },
-        54usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(deadband)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCondition>())).center as *const _ as usize },
-        60usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCondition),
-            "::",
-            stringify!(center)
-        )
-    );
-}
-#[doc = "  \\brief A structure containing a template for a Ramp effect."]
-#[doc = ""]
-#[doc = "  This struct is exclusively for the ::SDL_HAPTIC_RAMP effect."]
-#[doc = ""]
-#[doc = "  The ramp effect starts at start strength and ends at end strength."]
-#[doc = "  It augments in linear fashion.  If you use attack and fade with a ramp"]
-#[doc = "  the effects get added to the ramp effect making the effect become"]
-#[doc = "  quadratic instead of linear."]
-#[doc = ""]
-#[doc = "  \\sa SDL_HAPTIC_RAMP"]
-#[doc = "  \\sa SDL_HapticEffect"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticRamp {
-    #[doc = "< ::SDL_HAPTIC_RAMP"]
-    pub type_: Uint16,
-    #[doc = "< Direction of the effect."]
-    pub direction: SDL_HapticDirection,
-    #[doc = "< Duration of the effect."]
-    pub length: Uint32,
-    #[doc = "< Delay before starting the effect."]
-    pub delay: Uint16,
-    #[doc = "< Button that triggers the effect."]
-    pub button: Uint16,
-    #[doc = "< How soon it can be triggered again after button."]
-    pub interval: Uint16,
-    #[doc = "< Beginning strength level."]
-    pub start: Sint16,
-    #[doc = "< Ending strength level."]
-    pub end: Sint16,
-    #[doc = "< Duration of the attack."]
-    pub attack_length: Uint16,
-    #[doc = "< Level at the start of the attack."]
-    pub attack_level: Uint16,
-    #[doc = "< Duration of the fade."]
-    pub fade_length: Uint16,
-    #[doc = "< Level at the end of the fade."]
-    pub fade_level: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticRamp() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticRamp>(),
-        44usize,
-        concat!("Size of: ", stringify!(SDL_HapticRamp))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticRamp>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_HapticRamp))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).direction as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(direction)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).length as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).delay as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(delay)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).button as *const _ as usize },
-        26usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).interval as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(interval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).start as *const _ as usize },
-        30usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(start)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).end as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(end)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).attack_length as *const _ as usize },
-        34usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(attack_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).attack_level as *const _ as usize },
-        36usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(attack_level)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).fade_length as *const _ as usize },
-        38usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(fade_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticRamp>())).fade_level as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticRamp),
-            "::",
-            stringify!(fade_level)
-        )
-    );
-}
-#[doc = " \\brief A structure containing a template for a Left/Right effect."]
-#[doc = ""]
-#[doc = " This struct is exclusively for the ::SDL_HAPTIC_LEFTRIGHT effect."]
-#[doc = ""]
-#[doc = " The Left/Right effect is used to explicitly control the large and small"]
-#[doc = " motors, commonly found in modern game controllers. The small (right) motor"]
-#[doc = " is high frequency, and the large (left) motor is low frequency."]
-#[doc = ""]
-#[doc = " \\sa SDL_HAPTIC_LEFTRIGHT"]
-#[doc = " \\sa SDL_HapticEffect"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticLeftRight {
-    #[doc = "< ::SDL_HAPTIC_LEFTRIGHT"]
-    pub type_: Uint16,
-    #[doc = "< Duration of the effect in milliseconds."]
-    pub length: Uint32,
-    #[doc = "< Control of the large controller motor."]
-    pub large_magnitude: Uint16,
-    #[doc = "< Control of the small controller motor."]
-    pub small_magnitude: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticLeftRight() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticLeftRight>(),
-        12usize,
-        concat!("Size of: ", stringify!(SDL_HapticLeftRight))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticLeftRight>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_HapticLeftRight))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticLeftRight>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticLeftRight),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticLeftRight>())).length as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticLeftRight),
-            "::",
-            stringify!(length)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_HapticLeftRight>())).large_magnitude as *const _ as usize
-        },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticLeftRight),
-            "::",
-            stringify!(large_magnitude)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_HapticLeftRight>())).small_magnitude as *const _ as usize
-        },
-        10usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticLeftRight),
-            "::",
-            stringify!(small_magnitude)
-        )
-    );
-}
-#[doc = "  \\brief A structure containing a template for the ::SDL_HAPTIC_CUSTOM effect."]
-#[doc = ""]
-#[doc = "  This struct is exclusively for the ::SDL_HAPTIC_CUSTOM effect."]
-#[doc = ""]
-#[doc = "  A custom force feedback effect is much like a periodic effect, where the"]
-#[doc = "  application can define its exact shape.  You will have to allocate the"]
-#[doc = "  data yourself.  Data should consist of channels * samples Uint16 samples."]
-#[doc = ""]
-#[doc = "  If channels is one, the effect is rotated using the defined direction."]
-#[doc = "  Otherwise it uses the samples in data for the different axes."]
-#[doc = ""]
-#[doc = "  \\sa SDL_HAPTIC_CUSTOM"]
-#[doc = "  \\sa SDL_HapticEffect"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_HapticCustom {
-    #[doc = "< ::SDL_HAPTIC_CUSTOM"]
-    pub type_: Uint16,
-    #[doc = "< Direction of the effect."]
-    pub direction: SDL_HapticDirection,
-    #[doc = "< Duration of the effect."]
-    pub length: Uint32,
-    #[doc = "< Delay before starting the effect."]
-    pub delay: Uint16,
-    #[doc = "< Button that triggers the effect."]
-    pub button: Uint16,
-    #[doc = "< How soon it can be triggered again after button."]
-    pub interval: Uint16,
-    #[doc = "< Axes to use, minimum of one."]
-    pub channels: Uint8,
-    #[doc = "< Sample periods."]
-    pub period: Uint16,
-    #[doc = "< Amount of samples."]
-    pub samples: Uint16,
-    #[doc = "< Should contain channels*samples items."]
-    pub data: *mut Uint16,
-    #[doc = "< Duration of the attack."]
-    pub attack_length: Uint16,
-    #[doc = "< Level at the start of the attack."]
-    pub attack_level: Uint16,
-    #[doc = "< Duration of the fade."]
-    pub fade_length: Uint16,
-    #[doc = "< Level at the end of the fade."]
-    pub fade_level: Uint16,
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticCustom() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticCustom>(),
-        56usize,
-        concat!("Size of: ", stringify!(SDL_HapticCustom))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticCustom>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_HapticCustom))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).direction as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(direction)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).length as *const _ as usize },
-        20usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).delay as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(delay)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).button as *const _ as usize },
-        26usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(button)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).interval as *const _ as usize },
-        28usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(interval)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).channels as *const _ as usize },
-        30usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(channels)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).period as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(period)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).samples as *const _ as usize },
-        34usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(samples)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).data as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(data)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).attack_length as *const _ as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(attack_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).attack_level as *const _ as usize },
-        50usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(attack_level)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).fade_length as *const _ as usize },
-        52usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(fade_length)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticCustom>())).fade_level as *const _ as usize },
-        54usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticCustom),
-            "::",
-            stringify!(fade_level)
-        )
-    );
-}
-#[doc = "  \\brief The generic template for any haptic effect."]
-#[doc = ""]
-#[doc = "  All values max at 32767 (0x7FFF).  Signed values also can be negative."]
-#[doc = "  Time values unless specified otherwise are in milliseconds."]
-#[doc = ""]
-#[doc = "  You can also pass ::SDL_HAPTIC_INFINITY to length instead of a 0-32767"]
-#[doc = "  value.  Neither delay, interval, attack_length nor fade_length support"]
-#[doc = "  ::SDL_HAPTIC_INFINITY.  Fade will also not be used since effect never ends."]
-#[doc = ""]
-#[doc = "  Additionally, the ::SDL_HAPTIC_RAMP effect does not support a duration of"]
-#[doc = "  ::SDL_HAPTIC_INFINITY."]
-#[doc = ""]
-#[doc = "  Button triggers may not be supported on all devices, it is advised to not"]
-#[doc = "  use them if possible.  Buttons start at index 1 instead of index 0 like"]
-#[doc = "  the joystick."]
-#[doc = ""]
-#[doc = "  If both attack_length and fade_level are 0, the envelope is not used,"]
-#[doc = "  otherwise both values are used."]
-#[doc = ""]
-#[doc = "  Common parts:"]
-#[doc = "  \\code"]
-#[doc = "  // Replay - All effects have this"]
-#[doc = "  Uint32 length;        // Duration of effect (ms)."]
-#[doc = "  Uint16 delay;         // Delay before starting effect."]
-#[doc = ""]
-#[doc = "  // Trigger - All effects have this"]
-#[doc = "  Uint16 button;        // Button that triggers effect."]
-#[doc = "  Uint16 interval;      // How soon before effect can be triggered again."]
-#[doc = ""]
-#[doc = "  // Envelope - All effects except condition effects have this"]
-#[doc = "  Uint16 attack_length; // Duration of the attack (ms)."]
-#[doc = "  Uint16 attack_level;  // Level at the start of the attack."]
-#[doc = "  Uint16 fade_length;   // Duration of the fade out (ms)."]
-#[doc = "  Uint16 fade_level;    // Level at the end of the fade."]
-#[doc = "  \\endcode"]
-#[doc = ""]
-#[doc = ""]
-#[doc = "  Here we have an example of a constant effect evolution in time:"]
-#[doc = "  \\verbatim"]
-#[doc = "Strength"]
-#[doc = "^"]
-#[doc = "|"]
-#[doc = "|    effect level -->  _________________"]
-#[doc = "|                     /                 \\"]
-#[doc = "|                    /                   \\"]
-#[doc = "|                   /                     \\"]
-#[doc = "|                  /                       \\"]
-#[doc = "| attack_level --> |                        \\"]
-#[doc = "|                  |                        |  <---  fade_level"]
-#[doc = "|"]
-#[doc = "+--------------------------------------------------> Time"]
-#[doc = "[--]                 [---]"]
-#[doc = "attack_length        fade_length"]
-#[doc = ""]
-#[doc = "[------------------][-----------------------]"]
-#[doc = "delay               length"]
-#[doc = "\\endverbatim"]
-#[doc = ""]
-#[doc = "  Note either the attack_level or the fade_level may be above the actual"]
-#[doc = "  effect level."]
-#[doc = ""]
-#[doc = "  \\sa SDL_HapticConstant"]
-#[doc = "  \\sa SDL_HapticPeriodic"]
-#[doc = "  \\sa SDL_HapticCondition"]
-#[doc = "  \\sa SDL_HapticRamp"]
-#[doc = "  \\sa SDL_HapticLeftRight"]
-#[doc = "  \\sa SDL_HapticCustom"]
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub union SDL_HapticEffect {
-    #[doc = "< Effect type."]
-    pub type_: Uint16,
-    #[doc = "< Constant effect."]
-    pub constant: SDL_HapticConstant,
-    #[doc = "< Periodic effect."]
-    pub periodic: SDL_HapticPeriodic,
-    #[doc = "< Condition effect."]
-    pub condition: SDL_HapticCondition,
-    #[doc = "< Ramp effect."]
-    pub ramp: SDL_HapticRamp,
-    #[doc = "< Left/Right effect."]
-    pub leftright: SDL_HapticLeftRight,
-    #[doc = "< Custom effect."]
-    pub custom: SDL_HapticCustom,
-    _bindgen_union_align: [u64; 9usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_HapticEffect() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_HapticEffect>(),
-        72usize,
-        concat!("Size of: ", stringify!(SDL_HapticEffect))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_HapticEffect>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_HapticEffect))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).type_ as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(type_)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).constant as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(constant)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).periodic as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(periodic)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).condition as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(condition)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).ramp as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(ramp)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).leftright as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(leftright)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_HapticEffect>())).custom as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_HapticEffect),
-            "::",
-            stringify!(custom)
-        )
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Count the number of haptic devices attached to the system."]
-    #[doc = ""]
-    #[doc = "  \\return Number of haptic devices detected on the system."]
-    pub fn SDL_NumHaptics() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the implementation dependent name of a haptic device."]
-    #[doc = ""]
-    #[doc = "  This can be called before any joysticks are opened."]
-    #[doc = "  If no name can be found, this function returns NULL."]
-    #[doc = ""]
-    #[doc = "  \\param device_index Index of the device to get its name."]
-    #[doc = "  \\return Name of the device or NULL on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_NumHaptics"]
-    pub fn SDL_HapticName(device_index: ::std::os::raw::c_int) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  \\brief Opens a haptic device for use."]
-    #[doc = ""]
-    #[doc = "  The index passed as an argument refers to the N'th haptic device on this"]
-    #[doc = "  system."]
-    #[doc = ""]
-    #[doc = "  When opening a haptic device, its gain will be set to maximum and"]
-    #[doc = "  autocenter will be disabled.  To modify these values use"]
-    #[doc = "  SDL_HapticSetGain() and SDL_HapticSetAutocenter()."]
-    #[doc = ""]
-    #[doc = "  \\param device_index Index of the device to open."]
-    #[doc = "  \\return Device identifier or NULL on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticIndex"]
-    #[doc = "  \\sa SDL_HapticOpenFromMouse"]
-    #[doc = "  \\sa SDL_HapticOpenFromJoystick"]
-    #[doc = "  \\sa SDL_HapticClose"]
-    #[doc = "  \\sa SDL_HapticSetGain"]
-    #[doc = "  \\sa SDL_HapticSetAutocenter"]
-    #[doc = "  \\sa SDL_HapticPause"]
-    #[doc = "  \\sa SDL_HapticStopAll"]
-    pub fn SDL_HapticOpen(device_index: ::std::os::raw::c_int) -> *mut SDL_Haptic;
-}
-extern "C" {
-    #[doc = "  \\brief Checks if the haptic device at index has been opened."]
-    #[doc = ""]
-    #[doc = "  \\param device_index Index to check to see if it has been opened."]
-    #[doc = "  \\return 1 if it has been opened or 0 if it hasn't."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticOpen"]
-    #[doc = "  \\sa SDL_HapticIndex"]
-    pub fn SDL_HapticOpened(device_index: ::std::os::raw::c_int) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Gets the index of a haptic device."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to get the index of."]
-    #[doc = "  \\return The index of the haptic device or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticOpen"]
-    #[doc = "  \\sa SDL_HapticOpened"]
-    pub fn SDL_HapticIndex(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Gets whether or not the current mouse has haptic capabilities."]
-    #[doc = ""]
-    #[doc = "  \\return SDL_TRUE if the mouse is haptic, SDL_FALSE if it isn't."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticOpenFromMouse"]
-    pub fn SDL_MouseIsHaptic() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Tries to open a haptic device from the current mouse."]
-    #[doc = ""]
-    #[doc = "  \\return The haptic device identifier or NULL on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_MouseIsHaptic"]
-    #[doc = "  \\sa SDL_HapticOpen"]
-    pub fn SDL_HapticOpenFromMouse() -> *mut SDL_Haptic;
-}
-extern "C" {
-    #[doc = "  \\brief Checks to see if a joystick has haptic features."]
-    #[doc = ""]
-    #[doc = "  \\param joystick Joystick to test for haptic capabilities."]
-    #[doc = "  \\return SDL_TRUE if the joystick is haptic, SDL_FALSE if it isn't"]
-    #[doc = "          or -1 if an error occurred."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticOpenFromJoystick"]
-    pub fn SDL_JoystickIsHaptic(joystick: *mut SDL_Joystick) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Opens a haptic device for use from a joystick device."]
-    #[doc = ""]
-    #[doc = "  You must still close the haptic device separately.  It will not be closed"]
-    #[doc = "  with the joystick."]
-    #[doc = ""]
-    #[doc = "  When opening from a joystick you should first close the haptic device before"]
-    #[doc = "  closing the joystick device.  If not, on some implementations the haptic"]
-    #[doc = "  device will also get unallocated and you'll be unable to use force feedback"]
-    #[doc = "  on that device."]
-    #[doc = ""]
-    #[doc = "  \\param joystick Joystick to create a haptic device from."]
-    #[doc = "  \\return A valid haptic device identifier on success or NULL on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticOpen"]
-    #[doc = "  \\sa SDL_HapticClose"]
-    pub fn SDL_HapticOpenFromJoystick(joystick: *mut SDL_Joystick) -> *mut SDL_Haptic;
-}
-extern "C" {
-    #[doc = "  \\brief Closes a haptic device previously opened with SDL_HapticOpen()."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to close."]
-    pub fn SDL_HapticClose(haptic: *mut SDL_Haptic);
-}
-extern "C" {
-    #[doc = "  \\brief Returns the number of effects a haptic device can store."]
-    #[doc = ""]
-    #[doc = "  On some platforms this isn't fully supported, and therefore is an"]
-    #[doc = "  approximation.  Always check to see if your created effect was actually"]
-    #[doc = "  created and do not rely solely on SDL_HapticNumEffects()."]
-    #[doc = ""]
-    #[doc = "  \\param haptic The haptic device to query effect max."]
-    #[doc = "  \\return The number of effects the haptic device can store or"]
-    #[doc = "          -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticNumEffectsPlaying"]
-    #[doc = "  \\sa SDL_HapticQuery"]
-    pub fn SDL_HapticNumEffects(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Returns the number of effects a haptic device can play at the same"]
-    #[doc = "         time."]
-    #[doc = ""]
-    #[doc = "  This is not supported on all platforms, but will always return a value."]
-    #[doc = "  Added here for the sake of completeness."]
-    #[doc = ""]
-    #[doc = "  \\param haptic The haptic device to query maximum playing effects."]
-    #[doc = "  \\return The number of effects the haptic device can play at the same time"]
-    #[doc = "          or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticNumEffects"]
-    #[doc = "  \\sa SDL_HapticQuery"]
-    pub fn SDL_HapticNumEffectsPlaying(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Gets the haptic device's supported features in bitwise manner."]
-    #[doc = ""]
-    #[doc = "  Example:"]
-    #[doc = "  \\code"]
-    #[doc = "  if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {"]
-    #[doc = "      printf(\"We have constant haptic effect!\\n\");"]
-    #[doc = "  }"]
-    #[doc = "  \\endcode"]
-    #[doc = ""]
-    #[doc = "  \\param haptic The haptic device to query."]
-    #[doc = "  \\return Haptic features in bitwise manner (OR'd)."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticNumEffects"]
-    #[doc = "  \\sa SDL_HapticEffectSupported"]
-    pub fn SDL_HapticQuery(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_uint;
-}
-extern "C" {
-    #[doc = "  \\brief Gets the number of haptic axes the device has."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticDirection"]
-    pub fn SDL_HapticNumAxes(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Checks to see if effect is supported by haptic."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to check on."]
-    #[doc = "  \\param effect Effect to check to see if it is supported."]
-    #[doc = "  \\return SDL_TRUE if effect is supported, SDL_FALSE if it isn't or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticQuery"]
-    #[doc = "  \\sa SDL_HapticNewEffect"]
-    pub fn SDL_HapticEffectSupported(
-        haptic: *mut SDL_Haptic,
-        effect: *mut SDL_HapticEffect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Creates a new haptic effect on the device."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to create the effect on."]
-    #[doc = "  \\param effect Properties of the effect to create."]
-    #[doc = "  \\return The identifier of the effect on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticUpdateEffect"]
-    #[doc = "  \\sa SDL_HapticRunEffect"]
-    #[doc = "  \\sa SDL_HapticDestroyEffect"]
-    pub fn SDL_HapticNewEffect(
-        haptic: *mut SDL_Haptic,
-        effect: *mut SDL_HapticEffect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Updates the properties of an effect."]
-    #[doc = ""]
-    #[doc = "  Can be used dynamically, although behavior when dynamically changing"]
-    #[doc = "  direction may be strange.  Specifically the effect may reupload itself"]
-    #[doc = "  and start playing from the start.  You cannot change the type either when"]
-    #[doc = "  running SDL_HapticUpdateEffect()."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device that has the effect."]
-    #[doc = "  \\param effect Identifier of the effect to update."]
-    #[doc = "  \\param data New effect properties to use."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticNewEffect"]
-    #[doc = "  \\sa SDL_HapticRunEffect"]
-    #[doc = "  \\sa SDL_HapticDestroyEffect"]
-    pub fn SDL_HapticUpdateEffect(
-        haptic: *mut SDL_Haptic,
-        effect: ::std::os::raw::c_int,
-        data: *mut SDL_HapticEffect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Runs the haptic effect on its associated haptic device."]
-    #[doc = ""]
-    #[doc = "  If iterations are ::SDL_HAPTIC_INFINITY, it'll run the effect over and over"]
-    #[doc = "  repeating the envelope (attack and fade) every time.  If you only want the"]
-    #[doc = "  effect to last forever, set ::SDL_HAPTIC_INFINITY in the effect's length"]
-    #[doc = "  parameter."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to run the effect on."]
-    #[doc = "  \\param effect Identifier of the haptic effect to run."]
-    #[doc = "  \\param iterations Number of iterations to run the effect. Use"]
-    #[doc = "         ::SDL_HAPTIC_INFINITY for infinity."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticStopEffect"]
-    #[doc = "  \\sa SDL_HapticDestroyEffect"]
-    #[doc = "  \\sa SDL_HapticGetEffectStatus"]
-    pub fn SDL_HapticRunEffect(
-        haptic: *mut SDL_Haptic,
-        effect: ::std::os::raw::c_int,
-        iterations: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Stops the haptic effect on its associated haptic device."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to stop the effect on."]
-    #[doc = "  \\param effect Identifier of the effect to stop."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticRunEffect"]
-    #[doc = "  \\sa SDL_HapticDestroyEffect"]
-    pub fn SDL_HapticStopEffect(
-        haptic: *mut SDL_Haptic,
-        effect: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Destroys a haptic effect on the device."]
-    #[doc = ""]
-    #[doc = "  This will stop the effect if it's running.  Effects are automatically"]
-    #[doc = "  destroyed when the device is closed."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Device to destroy the effect on."]
-    #[doc = "  \\param effect Identifier of the effect to destroy."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticNewEffect"]
-    pub fn SDL_HapticDestroyEffect(haptic: *mut SDL_Haptic, effect: ::std::os::raw::c_int);
-}
-extern "C" {
-    #[doc = "  \\brief Gets the status of the current effect on the haptic device."]
-    #[doc = ""]
-    #[doc = "  Device must support the ::SDL_HAPTIC_STATUS feature."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to query the effect status on."]
-    #[doc = "  \\param effect Identifier of the effect to query its status."]
-    #[doc = "  \\return 0 if it isn't playing, 1 if it is playing or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticRunEffect"]
-    #[doc = "  \\sa SDL_HapticStopEffect"]
-    pub fn SDL_HapticGetEffectStatus(
-        haptic: *mut SDL_Haptic,
-        effect: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Sets the global gain of the device."]
-    #[doc = ""]
-    #[doc = "  Device must support the ::SDL_HAPTIC_GAIN feature."]
-    #[doc = ""]
-    #[doc = "  The user may specify the maximum gain by setting the environment variable"]
-    #[doc = "  SDL_HAPTIC_GAIN_MAX which should be between 0 and 100.  All calls to"]
-    #[doc = "  SDL_HapticSetGain() will scale linearly using SDL_HAPTIC_GAIN_MAX as the"]
-    #[doc = "  maximum."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to set the gain on."]
-    #[doc = "  \\param gain Value to set the gain to, should be between 0 and 100."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticQuery"]
-    pub fn SDL_HapticSetGain(
-        haptic: *mut SDL_Haptic,
-        gain: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Sets the global autocenter of the device."]
-    #[doc = ""]
-    #[doc = "  Autocenter should be between 0 and 100.  Setting it to 0 will disable"]
-    #[doc = "  autocentering."]
-    #[doc = ""]
-    #[doc = "  Device must support the ::SDL_HAPTIC_AUTOCENTER feature."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to set autocentering on."]
-    #[doc = "  \\param autocenter Value to set autocenter to, 0 disables autocentering."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticQuery"]
-    pub fn SDL_HapticSetAutocenter(
-        haptic: *mut SDL_Haptic,
-        autocenter: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Pauses a haptic device."]
-    #[doc = ""]
-    #[doc = "  Device must support the ::SDL_HAPTIC_PAUSE feature.  Call"]
-    #[doc = "  SDL_HapticUnpause() to resume playback."]
-    #[doc = ""]
-    #[doc = "  Do not modify the effects nor add new ones while the device is paused."]
-    #[doc = "  That can cause all sorts of weird errors."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to pause."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticUnpause"]
-    pub fn SDL_HapticPause(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Unpauses a haptic device."]
-    #[doc = ""]
-    #[doc = "  Call to unpause after SDL_HapticPause()."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to unpause."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticPause"]
-    pub fn SDL_HapticUnpause(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Stops all the currently playing effects on a haptic device."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to stop."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    pub fn SDL_HapticStopAll(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Checks to see if rumble is supported on a haptic device."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to check to see if it supports rumble."]
-    #[doc = "  \\return SDL_TRUE if effect is supported, SDL_FALSE if it isn't or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticRumbleInit"]
-    #[doc = "  \\sa SDL_HapticRumblePlay"]
-    #[doc = "  \\sa SDL_HapticRumbleStop"]
-    pub fn SDL_HapticRumbleSupported(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Initializes the haptic device for simple rumble playback."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to initialize for simple rumble playback."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticOpen"]
-    #[doc = "  \\sa SDL_HapticRumbleSupported"]
-    #[doc = "  \\sa SDL_HapticRumblePlay"]
-    #[doc = "  \\sa SDL_HapticRumbleStop"]
-    pub fn SDL_HapticRumbleInit(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Runs simple rumble on a haptic device"]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic device to play rumble effect on."]
-    #[doc = "  \\param strength Strength of the rumble to play as a 0-1 float value."]
-    #[doc = "  \\param length Length of the rumble to play in milliseconds."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticRumbleSupported"]
-    #[doc = "  \\sa SDL_HapticRumbleInit"]
-    #[doc = "  \\sa SDL_HapticRumbleStop"]
-    pub fn SDL_HapticRumblePlay(
-        haptic: *mut SDL_Haptic,
-        strength: f32,
-        length: Uint32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Stops the simple rumble on a haptic device."]
-    #[doc = ""]
-    #[doc = "  \\param haptic Haptic to stop the rumble on."]
-    #[doc = "  \\return 0 on success or -1 on error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_HapticRumbleSupported"]
-    #[doc = "  \\sa SDL_HapticRumbleInit"]
-    #[doc = "  \\sa SDL_HapticRumblePlay"]
-    pub fn SDL_HapticRumbleStop(haptic: *mut SDL_Haptic) -> ::std::os::raw::c_int;
-}
-pub const SDL_HintPriority_SDL_HINT_DEFAULT: SDL_HintPriority = 0;
-pub const SDL_HintPriority_SDL_HINT_NORMAL: SDL_HintPriority = 1;
-pub const SDL_HintPriority_SDL_HINT_OVERRIDE: SDL_HintPriority = 2;
-#[doc = "  \\brief  An enumeration of hint priorities"]
-pub type SDL_HintPriority = u32;
-extern "C" {
-    #[doc = "  \\brief Set a hint with a specific priority"]
-    #[doc = ""]
-    #[doc = "  The priority controls the behavior when setting a hint that already"]
-    #[doc = "  has a value.  Hints will replace existing hints of their priority and"]
-    #[doc = "  lower.  Environment variables are considered to have override priority."]
-    #[doc = ""]
-    #[doc = "  \\return SDL_TRUE if the hint was set, SDL_FALSE otherwise"]
-    pub fn SDL_SetHintWithPriority(
-        name: *const ::std::os::raw::c_char,
-        value: *const ::std::os::raw::c_char,
-        priority: SDL_HintPriority,
-    ) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  \\brief Set a hint with normal priority"]
-    #[doc = ""]
-    #[doc = "  \\return SDL_TRUE if the hint was set, SDL_FALSE otherwise"]
-    pub fn SDL_SetHint(
-        name: *const ::std::os::raw::c_char,
-        value: *const ::std::os::raw::c_char,
-    ) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  \\brief Get a hint"]
-    #[doc = ""]
-    #[doc = "  \\return The string value of a hint variable."]
-    pub fn SDL_GetHint(name: *const ::std::os::raw::c_char) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  \\brief Get a hint"]
-    #[doc = ""]
-    #[doc = "  \\return The boolean value of a hint variable."]
-    pub fn SDL_GetHintBoolean(
-        name: *const ::std::os::raw::c_char,
-        default_value: SDL_bool,
-    ) -> SDL_bool;
-}
-#[doc = " \\brief type definition of the hint callback function."]
-pub type SDL_HintCallback = ::std::option::Option<
-    unsafe extern "C" fn(
-        userdata: *mut ::std::os::raw::c_void,
-        name: *const ::std::os::raw::c_char,
-        oldValue: *const ::std::os::raw::c_char,
-        newValue: *const ::std::os::raw::c_char,
-    ),
->;
-extern "C" {
-    #[doc = "  \\brief Add a function to watch a particular hint"]
-    #[doc = ""]
-    #[doc = "  \\param name The hint to watch"]
-    #[doc = "  \\param callback The function to call when the hint value changes"]
-    #[doc = "  \\param userdata A pointer to pass to the callback function"]
-    pub fn SDL_AddHintCallback(
-        name: *const ::std::os::raw::c_char,
-        callback: SDL_HintCallback,
-        userdata: *mut ::std::os::raw::c_void,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Remove a function watching a particular hint"]
-    #[doc = ""]
-    #[doc = "  \\param name The hint being watched"]
-    #[doc = "  \\param callback The function being called when the hint value changes"]
-    #[doc = "  \\param userdata A pointer being passed to the callback function"]
-    pub fn SDL_DelHintCallback(
-        name: *const ::std::os::raw::c_char,
-        callback: SDL_HintCallback,
-        userdata: *mut ::std::os::raw::c_void,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief  Clear all hints"]
-    #[doc = ""]
-    #[doc = "  This function is called during SDL_Quit() to free stored hints."]
-    pub fn SDL_ClearHints();
-}
-extern "C" {
-    #[doc = "  This function dynamically loads a shared object and returns a pointer"]
-    #[doc = "  to the object handle (or NULL if there was an error)."]
-    #[doc = "  The 'sofile' parameter is a system dependent name of the object file."]
-    pub fn SDL_LoadObject(sofile: *const ::std::os::raw::c_char) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = "  Given an object handle, this function looks up the address of the"]
-    #[doc = "  named function in the shared object and returns it.  This address"]
-    #[doc = "  is no longer valid after calling SDL_UnloadObject()."]
-    pub fn SDL_LoadFunction(
-        handle: *mut ::std::os::raw::c_void,
-        name: *const ::std::os::raw::c_char,
-    ) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = "  Unload a shared object from memory."]
-    pub fn SDL_UnloadObject(handle: *mut ::std::os::raw::c_void);
-}
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_APPLICATION: SDL_LogCategory = 0;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_ERROR: SDL_LogCategory = 1;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_ASSERT: SDL_LogCategory = 2;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_SYSTEM: SDL_LogCategory = 3;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_AUDIO: SDL_LogCategory = 4;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_VIDEO: SDL_LogCategory = 5;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RENDER: SDL_LogCategory = 6;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_INPUT: SDL_LogCategory = 7;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_TEST: SDL_LogCategory = 8;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED1: SDL_LogCategory = 9;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED2: SDL_LogCategory = 10;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED3: SDL_LogCategory = 11;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED4: SDL_LogCategory = 12;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED5: SDL_LogCategory = 13;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED6: SDL_LogCategory = 14;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED7: SDL_LogCategory = 15;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED8: SDL_LogCategory = 16;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED9: SDL_LogCategory = 17;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_RESERVED10: SDL_LogCategory = 18;
-pub const SDL_LogCategory_SDL_LOG_CATEGORY_CUSTOM: SDL_LogCategory = 19;
-#[doc = "  \\brief The predefined log categories"]
-#[doc = ""]
-#[doc = "  By default the application category is enabled at the INFO level,"]
-#[doc = "  the assert category is enabled at the WARN level, test is enabled"]
-#[doc = "  at the VERBOSE level and all other categories are enabled at the"]
-#[doc = "  CRITICAL level."]
-pub type SDL_LogCategory = u32;
-pub const SDL_LogPriority_SDL_LOG_PRIORITY_VERBOSE: SDL_LogPriority = 1;
-pub const SDL_LogPriority_SDL_LOG_PRIORITY_DEBUG: SDL_LogPriority = 2;
-pub const SDL_LogPriority_SDL_LOG_PRIORITY_INFO: SDL_LogPriority = 3;
-pub const SDL_LogPriority_SDL_LOG_PRIORITY_WARN: SDL_LogPriority = 4;
-pub const SDL_LogPriority_SDL_LOG_PRIORITY_ERROR: SDL_LogPriority = 5;
-pub const SDL_LogPriority_SDL_LOG_PRIORITY_CRITICAL: SDL_LogPriority = 6;
-pub const SDL_LogPriority_SDL_NUM_LOG_PRIORITIES: SDL_LogPriority = 7;
-#[doc = "  \\brief The predefined log priorities"]
-pub type SDL_LogPriority = u32;
-extern "C" {
-    #[doc = "  \\brief Set the priority of all log categories"]
-    pub fn SDL_LogSetAllPriority(priority: SDL_LogPriority);
-}
-extern "C" {
-    #[doc = "  \\brief Set the priority of a particular log category"]
-    pub fn SDL_LogSetPriority(category: ::std::os::raw::c_int, priority: SDL_LogPriority);
-}
-extern "C" {
-    #[doc = "  \\brief Get the priority of a particular log category"]
-    pub fn SDL_LogGetPriority(category: ::std::os::raw::c_int) -> SDL_LogPriority;
-}
-extern "C" {
-    #[doc = "  \\brief Reset all priorities to default."]
-    #[doc = ""]
-    #[doc = "  \\note This is called in SDL_Quit()."]
-    pub fn SDL_LogResetPriorities();
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_CATEGORY_APPLICATION and SDL_LOG_PRIORITY_INFO"]
-    pub fn SDL_Log(fmt: *const ::std::os::raw::c_char, ...);
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_PRIORITY_VERBOSE"]
-    pub fn SDL_LogVerbose(category: ::std::os::raw::c_int, fmt: *const ::std::os::raw::c_char, ...);
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_PRIORITY_DEBUG"]
-    pub fn SDL_LogDebug(category: ::std::os::raw::c_int, fmt: *const ::std::os::raw::c_char, ...);
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_PRIORITY_INFO"]
-    pub fn SDL_LogInfo(category: ::std::os::raw::c_int, fmt: *const ::std::os::raw::c_char, ...);
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_PRIORITY_WARN"]
-    pub fn SDL_LogWarn(category: ::std::os::raw::c_int, fmt: *const ::std::os::raw::c_char, ...);
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_PRIORITY_ERROR"]
-    pub fn SDL_LogError(category: ::std::os::raw::c_int, fmt: *const ::std::os::raw::c_char, ...);
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with SDL_LOG_PRIORITY_CRITICAL"]
-    pub fn SDL_LogCritical(
-        category: ::std::os::raw::c_int,
-        fmt: *const ::std::os::raw::c_char,
-        ...
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with the specified category and priority."]
-    pub fn SDL_LogMessage(
-        category: ::std::os::raw::c_int,
-        priority: SDL_LogPriority,
-        fmt: *const ::std::os::raw::c_char,
-        ...
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Log a message with the specified category and priority."]
-    pub fn SDL_LogMessageV(
-        category: ::std::os::raw::c_int,
-        priority: SDL_LogPriority,
-        fmt: *const ::std::os::raw::c_char,
-        ap: *mut __va_list_tag,
-    );
-}
-#[doc = "  \\brief The prototype for the log output function"]
-pub type SDL_LogOutputFunction = ::std::option::Option<
-    unsafe extern "C" fn(
-        userdata: *mut ::std::os::raw::c_void,
-        category: ::std::os::raw::c_int,
-        priority: SDL_LogPriority,
-        message: *const ::std::os::raw::c_char,
-    ),
->;
-extern "C" {
-    #[doc = "  \\brief Get the current log output function."]
-    pub fn SDL_LogGetOutputFunction(
-        callback: *mut SDL_LogOutputFunction,
-        userdata: *mut *mut ::std::os::raw::c_void,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief This function allows you to replace the default log output"]
-    #[doc = "         function with one of your own."]
-    pub fn SDL_LogSetOutputFunction(
-        callback: SDL_LogOutputFunction,
-        userdata: *mut ::std::os::raw::c_void,
-    );
-}
-#[doc = "< error dialog"]
-pub const SDL_MessageBoxFlags_SDL_MESSAGEBOX_ERROR: SDL_MessageBoxFlags = 16;
-#[doc = "< warning dialog"]
-pub const SDL_MessageBoxFlags_SDL_MESSAGEBOX_WARNING: SDL_MessageBoxFlags = 32;
-#[doc = "< informational dialog"]
-pub const SDL_MessageBoxFlags_SDL_MESSAGEBOX_INFORMATION: SDL_MessageBoxFlags = 64;
-#[doc = "< buttons placed left to right"]
-pub const SDL_MessageBoxFlags_SDL_MESSAGEBOX_BUTTONS_LEFT_TO_RIGHT: SDL_MessageBoxFlags = 128;
-#[doc = "< buttons placed right to left"]
-pub const SDL_MessageBoxFlags_SDL_MESSAGEBOX_BUTTONS_RIGHT_TO_LEFT: SDL_MessageBoxFlags = 256;
-#[doc = " \\brief SDL_MessageBox flags. If supported will display warning icon, etc."]
-pub type SDL_MessageBoxFlags = u32;
-#[doc = "< Marks the default button when return is hit"]
-pub const SDL_MessageBoxButtonFlags_SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT:
-    SDL_MessageBoxButtonFlags = 1;
-#[doc = "< Marks the default button when escape is hit"]
-pub const SDL_MessageBoxButtonFlags_SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT:
-    SDL_MessageBoxButtonFlags = 2;
-#[doc = " \\brief Flags for SDL_MessageBoxButtonData."]
-pub type SDL_MessageBoxButtonFlags = u32;
-#[doc = "  \\brief Individual button data."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MessageBoxButtonData {
-    #[doc = "< ::SDL_MessageBoxButtonFlags"]
-    pub flags: Uint32,
-    #[doc = "< User defined button id (value returned via SDL_ShowMessageBox)"]
-    pub buttonid: ::std::os::raw::c_int,
-    #[doc = "< The UTF-8 button text"]
-    pub text: *const ::std::os::raw::c_char,
-}
-#[test]
-fn bindgen_test_layout_SDL_MessageBoxButtonData() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MessageBoxButtonData>(),
-        16usize,
-        concat!("Size of: ", stringify!(SDL_MessageBoxButtonData))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MessageBoxButtonData>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_MessageBoxButtonData))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxButtonData>())).flags as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxButtonData),
-            "::",
-            stringify!(flags)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_MessageBoxButtonData>())).buttonid as *const _ as usize
-        },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxButtonData),
-            "::",
-            stringify!(buttonid)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxButtonData>())).text as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxButtonData),
-            "::",
-            stringify!(text)
-        )
-    );
-}
-#[doc = " \\brief RGB value used in a message box color scheme"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MessageBoxColor {
-    pub r: Uint8,
-    pub g: Uint8,
-    pub b: Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_MessageBoxColor() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MessageBoxColor>(),
-        3usize,
-        concat!("Size of: ", stringify!(SDL_MessageBoxColor))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MessageBoxColor>(),
-        1usize,
-        concat!("Alignment of ", stringify!(SDL_MessageBoxColor))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxColor>())).r as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxColor),
-            "::",
-            stringify!(r)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxColor>())).g as *const _ as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxColor),
-            "::",
-            stringify!(g)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxColor>())).b as *const _ as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxColor),
-            "::",
-            stringify!(b)
-        )
-    );
-}
-pub const SDL_MessageBoxColorType_SDL_MESSAGEBOX_COLOR_BACKGROUND: SDL_MessageBoxColorType = 0;
-pub const SDL_MessageBoxColorType_SDL_MESSAGEBOX_COLOR_TEXT: SDL_MessageBoxColorType = 1;
-pub const SDL_MessageBoxColorType_SDL_MESSAGEBOX_COLOR_BUTTON_BORDER: SDL_MessageBoxColorType = 2;
-pub const SDL_MessageBoxColorType_SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND: SDL_MessageBoxColorType =
-    3;
-pub const SDL_MessageBoxColorType_SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED: SDL_MessageBoxColorType = 4;
-pub const SDL_MessageBoxColorType_SDL_MESSAGEBOX_COLOR_MAX: SDL_MessageBoxColorType = 5;
-pub type SDL_MessageBoxColorType = u32;
-#[doc = " \\brief A set of colors to use for message box dialogs"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MessageBoxColorScheme {
-    pub colors: [SDL_MessageBoxColor; 5usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_MessageBoxColorScheme() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MessageBoxColorScheme>(),
-        15usize,
-        concat!("Size of: ", stringify!(SDL_MessageBoxColorScheme))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MessageBoxColorScheme>(),
-        1usize,
-        concat!("Alignment of ", stringify!(SDL_MessageBoxColorScheme))
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_MessageBoxColorScheme>())).colors as *const _ as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxColorScheme),
-            "::",
-            stringify!(colors)
-        )
-    );
-}
-#[doc = "  \\brief MessageBox structure containing title, text, window, etc."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_MessageBoxData {
-    #[doc = "< ::SDL_MessageBoxFlags"]
-    pub flags: Uint32,
-    #[doc = "< Parent window, can be NULL"]
-    pub window: *mut SDL_Window,
-    #[doc = "< UTF-8 title"]
-    pub title: *const ::std::os::raw::c_char,
-    #[doc = "< UTF-8 message text"]
-    pub message: *const ::std::os::raw::c_char,
-    pub numbuttons: ::std::os::raw::c_int,
-    pub buttons: *const SDL_MessageBoxButtonData,
-    #[doc = "< ::SDL_MessageBoxColorScheme, can be NULL to use system settings"]
-    pub colorScheme: *const SDL_MessageBoxColorScheme,
-}
-#[test]
-fn bindgen_test_layout_SDL_MessageBoxData() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_MessageBoxData>(),
-        56usize,
-        concat!("Size of: ", stringify!(SDL_MessageBoxData))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_MessageBoxData>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_MessageBoxData))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).flags as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(flags)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).window as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(window)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).title as *const _ as usize },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(title)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).message as *const _ as usize },
-        24usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(message)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).numbuttons as *const _ as usize },
-        32usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(numbuttons)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).buttons as *const _ as usize },
-        40usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(buttons)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_MessageBoxData>())).colorScheme as *const _ as usize },
-        48usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_MessageBoxData),
-            "::",
-            stringify!(colorScheme)
-        )
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Create a modal message box."]
-    #[doc = ""]
-    #[doc = "  \\param messageboxdata The SDL_MessageBoxData structure with title, text, etc."]
-    #[doc = "  \\param buttonid The pointer to which user id of hit button should be copied."]
-    #[doc = ""]
-    #[doc = "  \\return -1 on error, otherwise 0 and buttonid contains user id of button"]
-    #[doc = "          hit or -1 if dialog was closed."]
-    #[doc = ""]
-    #[doc = "  \\note This function should be called on the thread that created the parent"]
-    #[doc = "        window, or on the main thread if the messagebox has no parent.  It will"]
-    #[doc = "        block execution of that thread until the user clicks a button or"]
-    #[doc = "        closes the messagebox."]
-    pub fn SDL_ShowMessageBox(
-        messageboxdata: *const SDL_MessageBoxData,
-        buttonid: *mut ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Create a simple modal message box"]
-    #[doc = ""]
-    #[doc = "  \\param flags    ::SDL_MessageBoxFlags"]
-    #[doc = "  \\param title    UTF-8 title text"]
-    #[doc = "  \\param message  UTF-8 message text"]
-    #[doc = "  \\param window   The parent window, or NULL for no parent"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_ShowMessageBox"]
-    pub fn SDL_ShowSimpleMessageBox(
-        flags: Uint32,
-        title: *const ::std::os::raw::c_char,
-        message: *const ::std::os::raw::c_char,
-        window: *mut SDL_Window,
-    ) -> ::std::os::raw::c_int;
-}
-#[doc = "  \\brief A handle to a CAMetalLayer-backed NSView (macOS) or UIView (iOS/tvOS)."]
-#[doc = ""]
-#[doc = "  \\note This can be cast directly to an NSView or UIView."]
-pub type SDL_MetalView = *mut ::std::os::raw::c_void;
-extern "C" {
-    #[doc = "  \\brief Create a CAMetalLayer-backed NSView/UIView and attach it to the"]
-    #[doc = "        specified window."]
-    #[doc = ""]
-    #[doc = "  On macOS, this does *not* associate a MTLDevice with the CAMetalLayer on its"]
-    #[doc = "  own. It is up to user code to do that."]
-    #[doc = ""]
-    #[doc = "  The returned handle can be casted directly to a NSView or UIView, and the"]
-    #[doc = "  CAMetalLayer can be accessed from the view's 'layer' property."]
-    #[doc = ""]
-    #[doc = "  \\code"]
-    #[doc = "  SDL_MetalView metalview = SDL_Metal_CreateView(window);"]
-    #[doc = "  UIView *uiview = (__bridge UIView *)metalview;"]
-    #[doc = "  CAMetalLayer *metallayer = (CAMetalLayer *)uiview.layer;"]
-    #[doc = "  // [...]"]
-    #[doc = "  SDL_Metal_DestroyView(metalview);"]
-    #[doc = "  \\endcode"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_Metal_DestroyView"]
-    pub fn SDL_Metal_CreateView(window: *mut SDL_Window) -> SDL_MetalView;
-}
-extern "C" {
-    #[doc = "  \\brief Destroy an existing SDL_MetalView object."]
-    #[doc = ""]
-    #[doc = "  This should be called before SDL_DestroyWindow, if SDL_Metal_CreateView was"]
-    #[doc = "  called after SDL_CreateWindow."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_Metal_CreateView"]
-    pub fn SDL_Metal_DestroyView(view: SDL_MetalView);
-}
-#[doc = "< cannot determine power status"]
-pub const SDL_PowerState_SDL_POWERSTATE_UNKNOWN: SDL_PowerState = 0;
-#[doc = "< Not plugged in, running on the battery"]
-pub const SDL_PowerState_SDL_POWERSTATE_ON_BATTERY: SDL_PowerState = 1;
-#[doc = "< Plugged in, no battery available"]
-pub const SDL_PowerState_SDL_POWERSTATE_NO_BATTERY: SDL_PowerState = 2;
-#[doc = "< Plugged in, charging battery"]
-pub const SDL_PowerState_SDL_POWERSTATE_CHARGING: SDL_PowerState = 3;
-#[doc = "< Plugged in, battery charged"]
-pub const SDL_PowerState_SDL_POWERSTATE_CHARGED: SDL_PowerState = 4;
-#[doc = "  \\brief The basic state for the system's power supply."]
-pub type SDL_PowerState = u32;
-extern "C" {
-    #[doc = "  \\brief Get the current power supply details."]
-    #[doc = ""]
-    #[doc = "  \\param secs Seconds of battery life left. You can pass a NULL here if"]
-    #[doc = "              you don't care. Will return -1 if we can't determine a"]
-    #[doc = "              value, or we're not running on a battery."]
-    #[doc = ""]
-    #[doc = "  \\param pct Percentage of battery life left, between 0 and 100. You can"]
-    #[doc = "             pass a NULL here if you don't care. Will return -1 if we"]
-    #[doc = "             can't determine a value, or we're not running on a battery."]
-    #[doc = ""]
-    #[doc = "  \\return The state of the battery (if any)."]
-    pub fn SDL_GetPowerInfo(
-        secs: *mut ::std::os::raw::c_int,
-        pct: *mut ::std::os::raw::c_int,
-    ) -> SDL_PowerState;
-}
-#[doc = "< The renderer is a software fallback"]
-pub const SDL_RendererFlags_SDL_RENDERER_SOFTWARE: SDL_RendererFlags = 1;
-#[doc = "< The renderer uses hardware"]
-#[doc = "acceleration"]
-pub const SDL_RendererFlags_SDL_RENDERER_ACCELERATED: SDL_RendererFlags = 2;
-#[doc = "< Present is synchronized"]
-#[doc = "with the refresh rate"]
-pub const SDL_RendererFlags_SDL_RENDERER_PRESENTVSYNC: SDL_RendererFlags = 4;
-#[doc = "< The renderer supports"]
-#[doc = "rendering to texture"]
-pub const SDL_RendererFlags_SDL_RENDERER_TARGETTEXTURE: SDL_RendererFlags = 8;
-#[doc = "  \\brief Flags used when creating a rendering context"]
-pub type SDL_RendererFlags = u32;
-#[doc = "  \\brief Information on the capabilities of a render driver or context."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_RendererInfo {
-    #[doc = "< The name of the renderer"]
-    pub name: *const ::std::os::raw::c_char,
-    #[doc = "< Supported ::SDL_RendererFlags"]
-    pub flags: Uint32,
-    #[doc = "< The number of available texture formats"]
-    pub num_texture_formats: Uint32,
-    #[doc = "< The available texture formats"]
-    pub texture_formats: [Uint32; 16usize],
-    #[doc = "< The maximum texture width"]
-    pub max_texture_width: ::std::os::raw::c_int,
-    #[doc = "< The maximum texture height"]
-    pub max_texture_height: ::std::os::raw::c_int,
-}
-#[test]
-fn bindgen_test_layout_SDL_RendererInfo() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_RendererInfo>(),
-        88usize,
-        concat!("Size of: ", stringify!(SDL_RendererInfo))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_RendererInfo>(),
-        8usize,
-        concat!("Alignment of ", stringify!(SDL_RendererInfo))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RendererInfo>())).name as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RendererInfo),
-            "::",
-            stringify!(name)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_RendererInfo>())).flags as *const _ as usize },
-        8usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RendererInfo),
-            "::",
-            stringify!(flags)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RendererInfo>())).num_texture_formats as *const _ as usize
-        },
-        12usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RendererInfo),
-            "::",
-            stringify!(num_texture_formats)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RendererInfo>())).texture_formats as *const _ as usize
-        },
-        16usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RendererInfo),
-            "::",
-            stringify!(texture_formats)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RendererInfo>())).max_texture_width as *const _ as usize
-        },
-        80usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RendererInfo),
-            "::",
-            stringify!(max_texture_width)
-        )
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_RendererInfo>())).max_texture_height as *const _ as usize
-        },
-        84usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_RendererInfo),
-            "::",
-            stringify!(max_texture_height)
-        )
-    );
-}
-#[doc = "< nearest pixel sampling"]
-pub const SDL_ScaleMode_SDL_ScaleModeNearest: SDL_ScaleMode = 0;
-#[doc = "< linear filtering"]
-pub const SDL_ScaleMode_SDL_ScaleModeLinear: SDL_ScaleMode = 1;
-#[doc = "< anisotropic filtering"]
-pub const SDL_ScaleMode_SDL_ScaleModeBest: SDL_ScaleMode = 2;
-#[doc = "  \\brief The scaling mode for a texture."]
-pub type SDL_ScaleMode = u32;
-#[doc = "< Changes rarely, not lockable"]
-pub const SDL_TextureAccess_SDL_TEXTUREACCESS_STATIC: SDL_TextureAccess = 0;
-#[doc = "< Changes frequently, lockable"]
-pub const SDL_TextureAccess_SDL_TEXTUREACCESS_STREAMING: SDL_TextureAccess = 1;
-#[doc = "< Texture can be used as a render target"]
-pub const SDL_TextureAccess_SDL_TEXTUREACCESS_TARGET: SDL_TextureAccess = 2;
-#[doc = "  \\brief The access pattern allowed for a texture."]
-pub type SDL_TextureAccess = u32;
-#[doc = "< No modulation"]
-pub const SDL_TextureModulate_SDL_TEXTUREMODULATE_NONE: SDL_TextureModulate = 0;
-#[doc = "< srcC = srcC * color"]
-pub const SDL_TextureModulate_SDL_TEXTUREMODULATE_COLOR: SDL_TextureModulate = 1;
-#[doc = "< srcA = srcA * alpha"]
-pub const SDL_TextureModulate_SDL_TEXTUREMODULATE_ALPHA: SDL_TextureModulate = 2;
-#[doc = "  \\brief The texture channel modulation used in SDL_RenderCopy()."]
-pub type SDL_TextureModulate = u32;
-#[doc = "< Do not flip"]
-pub const SDL_RendererFlip_SDL_FLIP_NONE: SDL_RendererFlip = 0;
-#[doc = "< flip horizontally"]
-pub const SDL_RendererFlip_SDL_FLIP_HORIZONTAL: SDL_RendererFlip = 1;
-#[doc = "< flip vertically"]
-pub const SDL_RendererFlip_SDL_FLIP_VERTICAL: SDL_RendererFlip = 2;
-#[doc = "  \\brief Flip constants for SDL_RenderCopyEx"]
-pub type SDL_RendererFlip = u32;
-#[doc = "  \\brief A structure representing rendering state"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_Renderer {
-    _unused: [u8; 0],
-}
-#[doc = "  \\brief An efficient driver-specific representation of pixel data"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_Texture {
-    _unused: [u8; 0],
-}
-extern "C" {
-    #[doc = "  \\brief Get the number of 2D rendering drivers available for the current"]
-    #[doc = "         display."]
-    #[doc = ""]
-    #[doc = "  A render driver is a set of code that handles rendering and texture"]
-    #[doc = "  management on a particular display.  Normally there is only one, but"]
-    #[doc = "  some drivers may have several available with different capabilities."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetRenderDriverInfo()"]
-    #[doc = "  \\sa SDL_CreateRenderer()"]
-    pub fn SDL_GetNumRenderDrivers() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get information about a specific 2D rendering driver for the current"]
-    #[doc = "         display."]
-    #[doc = ""]
-    #[doc = "  \\param index The index of the driver to query information about."]
-    #[doc = "  \\param info  A pointer to an SDL_RendererInfo struct to be filled with"]
-    #[doc = "               information on the rendering driver."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, -1 if the index was out of range."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_CreateRenderer()"]
-    pub fn SDL_GetRenderDriverInfo(
-        index: ::std::os::raw::c_int,
-        info: *mut SDL_RendererInfo,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Create a window and default renderer"]
-    #[doc = ""]
-    #[doc = "  \\param width    The width of the window"]
-    #[doc = "  \\param height   The height of the window"]
-    #[doc = "  \\param window_flags The flags used to create the window"]
-    #[doc = "  \\param window   A pointer filled with the window, or NULL on error"]
-    #[doc = "  \\param renderer A pointer filled with the renderer, or NULL on error"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_CreateWindowAndRenderer(
-        width: ::std::os::raw::c_int,
-        height: ::std::os::raw::c_int,
-        window_flags: Uint32,
-        window: *mut *mut SDL_Window,
-        renderer: *mut *mut SDL_Renderer,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Create a 2D rendering context for a window."]
-    #[doc = ""]
-    #[doc = "  \\param window The window where rendering is displayed."]
-    #[doc = "  \\param index    The index of the rendering driver to initialize, or -1 to"]
-    #[doc = "                  initialize the first one supporting the requested flags."]
-    #[doc = "  \\param flags    ::SDL_RendererFlags."]
-    #[doc = ""]
-    #[doc = "  \\return A valid rendering context or NULL if there was an error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_CreateSoftwareRenderer()"]
-    #[doc = "  \\sa SDL_GetRendererInfo()"]
-    #[doc = "  \\sa SDL_DestroyRenderer()"]
-    pub fn SDL_CreateRenderer(
-        window: *mut SDL_Window,
-        index: ::std::os::raw::c_int,
-        flags: Uint32,
-    ) -> *mut SDL_Renderer;
-}
-extern "C" {
-    #[doc = "  \\brief Create a 2D software rendering context for a surface."]
-    #[doc = ""]
-    #[doc = "  \\param surface The surface where rendering is done."]
-    #[doc = ""]
-    #[doc = "  \\return A valid rendering context or NULL if there was an error."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_CreateRenderer()"]
-    #[doc = "  \\sa SDL_DestroyRenderer()"]
-    pub fn SDL_CreateSoftwareRenderer(surface: *mut SDL_Surface) -> *mut SDL_Renderer;
-}
-extern "C" {
-    #[doc = "  \\brief Get the renderer associated with a window."]
-    pub fn SDL_GetRenderer(window: *mut SDL_Window) -> *mut SDL_Renderer;
-}
-extern "C" {
-    #[doc = "  \\brief Get information about a rendering context."]
-    pub fn SDL_GetRendererInfo(
-        renderer: *mut SDL_Renderer,
-        info: *mut SDL_RendererInfo,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the output size in pixels of a rendering context."]
-    pub fn SDL_GetRendererOutputSize(
-        renderer: *mut SDL_Renderer,
-        w: *mut ::std::os::raw::c_int,
-        h: *mut ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Create a texture for a rendering context."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer."]
-    #[doc = "  \\param format The format of the texture."]
-    #[doc = "  \\param access One of the enumerated values in ::SDL_TextureAccess."]
-    #[doc = "  \\param w      The width of the texture in pixels."]
-    #[doc = "  \\param h      The height of the texture in pixels."]
-    #[doc = ""]
-    #[doc = "  \\return The created texture is returned, or NULL if no rendering context was"]
-    #[doc = "          active,  the format was unsupported, or the width or height were out"]
-    #[doc = "          of range."]
-    #[doc = ""]
-    #[doc = "  \\note The contents of the texture are not defined at creation."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_QueryTexture()"]
-    #[doc = "  \\sa SDL_UpdateTexture()"]
-    #[doc = "  \\sa SDL_DestroyTexture()"]
-    pub fn SDL_CreateTexture(
-        renderer: *mut SDL_Renderer,
-        format: Uint32,
-        access: ::std::os::raw::c_int,
-        w: ::std::os::raw::c_int,
-        h: ::std::os::raw::c_int,
-    ) -> *mut SDL_Texture;
-}
-extern "C" {
-    #[doc = "  \\brief Create a texture from an existing surface."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer."]
-    #[doc = "  \\param surface The surface containing pixel data used to fill the texture."]
-    #[doc = ""]
-    #[doc = "  \\return The created texture is returned, or NULL on error."]
-    #[doc = ""]
-    #[doc = "  \\note The surface is not modified or freed by this function."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_QueryTexture()"]
-    #[doc = "  \\sa SDL_DestroyTexture()"]
-    pub fn SDL_CreateTextureFromSurface(
-        renderer: *mut SDL_Renderer,
-        surface: *mut SDL_Surface,
-    ) -> *mut SDL_Texture;
-}
-extern "C" {
-    #[doc = "  \\brief Query the attributes of a texture"]
-    #[doc = ""]
-    #[doc = "  \\param texture A texture to be queried."]
-    #[doc = "  \\param format  A pointer filled in with the raw format of the texture.  The"]
-    #[doc = "                 actual format may differ, but pixel transfers will use this"]
-    #[doc = "                 format."]
-    #[doc = "  \\param access  A pointer filled in with the actual access to the texture."]
-    #[doc = "  \\param w       A pointer filled in with the width of the texture in pixels."]
-    #[doc = "  \\param h       A pointer filled in with the height of the texture in pixels."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    pub fn SDL_QueryTexture(
-        texture: *mut SDL_Texture,
-        format: *mut Uint32,
-        access: *mut ::std::os::raw::c_int,
-        w: *mut ::std::os::raw::c_int,
-        h: *mut ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Set an additional color value used in render copy operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture The texture to update."]
-    #[doc = "  \\param r       The red color value multiplied into copy operations."]
-    #[doc = "  \\param g       The green color value multiplied into copy operations."]
-    #[doc = "  \\param b       The blue color value multiplied into copy operations."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid or color modulation"]
-    #[doc = "          is not supported."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetTextureColorMod()"]
-    pub fn SDL_SetTextureColorMod(
-        texture: *mut SDL_Texture,
-        r: Uint8,
-        g: Uint8,
-        b: Uint8,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the additional color value used in render copy operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture The texture to query."]
-    #[doc = "  \\param r         A pointer filled in with the current red color value."]
-    #[doc = "  \\param g         A pointer filled in with the current green color value."]
-    #[doc = "  \\param b         A pointer filled in with the current blue color value."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetTextureColorMod()"]
-    pub fn SDL_GetTextureColorMod(
-        texture: *mut SDL_Texture,
-        r: *mut Uint8,
-        g: *mut Uint8,
-        b: *mut Uint8,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Set an additional alpha value used in render copy operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture The texture to update."]
-    #[doc = "  \\param alpha     The alpha value multiplied into copy operations."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid or alpha modulation"]
-    #[doc = "          is not supported."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetTextureAlphaMod()"]
-    pub fn SDL_SetTextureAlphaMod(texture: *mut SDL_Texture, alpha: Uint8)
-        -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the additional alpha value used in render copy operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture The texture to query."]
-    #[doc = "  \\param alpha     A pointer filled in with the current alpha value."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetTextureAlphaMod()"]
-    pub fn SDL_GetTextureAlphaMod(
-        texture: *mut SDL_Texture,
-        alpha: *mut Uint8,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Set the blend mode used for texture copy operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture The texture to update."]
-    #[doc = "  \\param blendMode ::SDL_BlendMode to use for texture blending."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid or the blend mode is"]
-    #[doc = "          not supported."]
-    #[doc = ""]
-    #[doc = "  \\note If the blend mode is not supported, the closest supported mode is"]
-    #[doc = "        chosen."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetTextureBlendMode()"]
-    pub fn SDL_SetTextureBlendMode(
-        texture: *mut SDL_Texture,
-        blendMode: SDL_BlendMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the blend mode used for texture copy operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture   The texture to query."]
-    #[doc = "  \\param blendMode A pointer filled in with the current blend mode."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetTextureBlendMode()"]
-    pub fn SDL_GetTextureBlendMode(
-        texture: *mut SDL_Texture,
-        blendMode: *mut SDL_BlendMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Set the scale mode used for texture scale operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture The texture to update."]
-    #[doc = "  \\param scaleMode ::SDL_ScaleMode to use for texture scaling."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\note If the scale mode is not supported, the closest supported mode is"]
-    #[doc = "        chosen."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetTextureScaleMode()"]
-    pub fn SDL_SetTextureScaleMode(
-        texture: *mut SDL_Texture,
-        scaleMode: SDL_ScaleMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the scale mode used for texture scale operations."]
-    #[doc = ""]
-    #[doc = "  \\param texture   The texture to query."]
-    #[doc = "  \\param scaleMode A pointer filled in with the current scale mode."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetTextureScaleMode()"]
-    pub fn SDL_GetTextureScaleMode(
-        texture: *mut SDL_Texture,
-        scaleMode: *mut SDL_ScaleMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Update the given texture rectangle with new pixel data."]
-    #[doc = ""]
-    #[doc = "  \\param texture   The texture to update"]
-    #[doc = "  \\param rect      A pointer to the rectangle of pixels to update, or NULL to"]
-    #[doc = "                   update the entire texture."]
-    #[doc = "  \\param pixels    The raw pixel data in the format of the texture."]
-    #[doc = "  \\param pitch     The number of bytes in a row of pixel data, including padding between lines."]
-    #[doc = ""]
-    #[doc = "  The pixel data must be in the format of the texture. The pixel format can be"]
-    #[doc = "  queried with SDL_QueryTexture."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\note This is a fairly slow function."]
-    pub fn SDL_UpdateTexture(
-        texture: *mut SDL_Texture,
-        rect: *const SDL_Rect,
-        pixels: *const ::std::os::raw::c_void,
-        pitch: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Update a rectangle within a planar YV12 or IYUV texture with new pixel data."]
-    #[doc = ""]
-    #[doc = "  \\param texture   The texture to update"]
-    #[doc = "  \\param rect      A pointer to the rectangle of pixels to update, or NULL to"]
-    #[doc = "                   update the entire texture."]
-    #[doc = "  \\param Yplane    The raw pixel data for the Y plane."]
-    #[doc = "  \\param Ypitch    The number of bytes between rows of pixel data for the Y plane."]
-    #[doc = "  \\param Uplane    The raw pixel data for the U plane."]
-    #[doc = "  \\param Upitch    The number of bytes between rows of pixel data for the U plane."]
-    #[doc = "  \\param Vplane    The raw pixel data for the V plane."]
-    #[doc = "  \\param Vpitch    The number of bytes between rows of pixel data for the V plane."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid."]
-    #[doc = ""]
-    #[doc = "  \\note You can use SDL_UpdateTexture() as long as your pixel data is"]
-    #[doc = "        a contiguous block of Y and U/V planes in the proper order, but"]
-    #[doc = "        this function is available if your pixel data is not contiguous."]
-    pub fn SDL_UpdateYUVTexture(
-        texture: *mut SDL_Texture,
-        rect: *const SDL_Rect,
-        Yplane: *const Uint8,
-        Ypitch: ::std::os::raw::c_int,
-        Uplane: *const Uint8,
-        Upitch: ::std::os::raw::c_int,
-        Vplane: *const Uint8,
-        Vpitch: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Lock a portion of the texture for write-only pixel access."]
-    #[doc = ""]
-    #[doc = "  \\param texture   The texture to lock for access, which was created with"]
-    #[doc = "                   ::SDL_TEXTUREACCESS_STREAMING."]
-    #[doc = "  \\param rect      A pointer to the rectangle to lock for access. If the rect"]
-    #[doc = "                   is NULL, the entire texture will be locked."]
-    #[doc = "  \\param pixels    This is filled in with a pointer to the locked pixels,"]
-    #[doc = "                   appropriately offset by the locked area."]
-    #[doc = "  \\param pitch     This is filled in with the pitch of the locked pixels."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid or was not created with ::SDL_TEXTUREACCESS_STREAMING."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_UnlockTexture()"]
-    pub fn SDL_LockTexture(
-        texture: *mut SDL_Texture,
-        rect: *const SDL_Rect,
-        pixels: *mut *mut ::std::os::raw::c_void,
-        pitch: *mut ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Lock a portion of the texture for write-only pixel access."]
-    #[doc = "         Expose it as a SDL surface."]
-    #[doc = ""]
-    #[doc = "  \\param texture   The texture to lock for access, which was created with"]
-    #[doc = "                   ::SDL_TEXTUREACCESS_STREAMING."]
-    #[doc = "  \\param rect      A pointer to the rectangle to lock for access. If the rect"]
-    #[doc = "                   is NULL, the entire texture will be locked."]
-    #[doc = "  \\param surface   This is filled in with a SDL surface representing the locked area"]
-    #[doc = "                   Surface is freed internally after calling SDL_UnlockTexture or SDL_DestroyTexture."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the texture is not valid or was not created with ::SDL_TEXTUREACCESS_STREAMING."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_UnlockTexture()"]
-    pub fn SDL_LockTextureToSurface(
-        texture: *mut SDL_Texture,
-        rect: *const SDL_Rect,
-        surface: *mut *mut SDL_Surface,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Unlock a texture, uploading the changes to video memory, if needed."]
-    #[doc = "         If SDL_LockTextureToSurface() was called for locking, the SDL surface is freed."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_LockTexture()"]
-    #[doc = "  \\sa SDL_LockTextureToSurface()"]
-    pub fn SDL_UnlockTexture(texture: *mut SDL_Texture);
-}
-extern "C" {
-    #[doc = " \\brief Determines whether a window supports the use of render targets"]
-    #[doc = ""]
-    #[doc = " \\param renderer The renderer that will be checked"]
-    #[doc = ""]
-    #[doc = " \\return SDL_TRUE if supported, SDL_FALSE if not."]
-    pub fn SDL_RenderTargetSupported(renderer: *mut SDL_Renderer) -> SDL_bool;
-}
-extern "C" {
-    #[doc = " \\brief Set a texture as the current rendering target."]
-    #[doc = ""]
-    #[doc = " \\param renderer The renderer."]
-    #[doc = " \\param texture The targeted texture, which must be created with the SDL_TEXTUREACCESS_TARGET flag, or NULL for the default render target"]
-    #[doc = ""]
-    #[doc = " \\return 0 on success, or -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetRenderTarget()"]
-    pub fn SDL_SetRenderTarget(
-        renderer: *mut SDL_Renderer,
-        texture: *mut SDL_Texture,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Get the current render target or NULL for the default render target."]
-    #[doc = ""]
-    #[doc = " \\return The current render target"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetRenderTarget()"]
-    pub fn SDL_GetRenderTarget(renderer: *mut SDL_Renderer) -> *mut SDL_Texture;
-}
-extern "C" {
-    #[doc = "  \\brief Set device independent resolution for rendering"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which resolution should be set."]
-    #[doc = "  \\param w      The width of the logical resolution"]
-    #[doc = "  \\param h      The height of the logical resolution"]
-    #[doc = ""]
-    #[doc = "  This function uses the viewport and scaling functionality to allow a fixed logical"]
-    #[doc = "  resolution for rendering, regardless of the actual output resolution.  If the actual"]
-    #[doc = "  output resolution doesn't have the same aspect ratio the output rendering will be"]
-    #[doc = "  centered within the output display."]
-    #[doc = ""]
-    #[doc = "  If the output display is a window, mouse events in the window will be filtered"]
-    #[doc = "  and scaled so they seem to arrive within the logical resolution."]
-    #[doc = ""]
-    #[doc = "  \\note If this function results in scaling or subpixel drawing by the"]
-    #[doc = "        rendering backend, it will be handled using the appropriate"]
-    #[doc = "        quality hints."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetLogicalSize()"]
-    #[doc = "  \\sa SDL_RenderSetScale()"]
-    #[doc = "  \\sa SDL_RenderSetViewport()"]
-    pub fn SDL_RenderSetLogicalSize(
-        renderer: *mut SDL_Renderer,
-        w: ::std::os::raw::c_int,
-        h: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get device independent resolution for rendering"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which resolution should be queried."]
-    #[doc = "  \\param w      A pointer filled with the width of the logical resolution"]
-    #[doc = "  \\param h      A pointer filled with the height of the logical resolution"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderSetLogicalSize()"]
-    pub fn SDL_RenderGetLogicalSize(
-        renderer: *mut SDL_Renderer,
-        w: *mut ::std::os::raw::c_int,
-        h: *mut ::std::os::raw::c_int,
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Set whether to force integer scales for resolution-independent rendering"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which integer scaling should be set."]
-    #[doc = "  \\param enable   Enable or disable integer scaling"]
-    #[doc = ""]
-    #[doc = "  This function restricts the logical viewport to integer values - that is, when"]
-    #[doc = "  a resolution is between two multiples of a logical size, the viewport size is"]
-    #[doc = "  rounded down to the lower multiple."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderSetLogicalSize()"]
-    pub fn SDL_RenderSetIntegerScale(
-        renderer: *mut SDL_Renderer,
-        enable: SDL_bool,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get whether integer scales are forced for resolution-independent rendering"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which integer scaling should be queried."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderSetIntegerScale()"]
-    pub fn SDL_RenderGetIntegerScale(renderer: *mut SDL_Renderer) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  \\brief Set the drawing area for rendering on the current target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which the drawing area should be set."]
-    #[doc = "  \\param rect The rectangle representing the drawing area, or NULL to set the viewport to the entire target."]
-    #[doc = ""]
-    #[doc = "  The x,y of the viewport rect represents the origin for rendering."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\note If the window associated with the renderer is resized, the viewport is automatically reset."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetViewport()"]
-    #[doc = "  \\sa SDL_RenderSetLogicalSize()"]
-    pub fn SDL_RenderSetViewport(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_Rect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the drawing area for the current target."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderSetViewport()"]
-    pub fn SDL_RenderGetViewport(renderer: *mut SDL_Renderer, rect: *mut SDL_Rect);
-}
-extern "C" {
-    #[doc = "  \\brief Set the clip rectangle for the current target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which clip rectangle should be set."]
-    #[doc = "  \\param rect   A pointer to the rectangle to set as the clip rectangle,"]
-    #[doc = "                relative to the viewport, or NULL to disable clipping."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetClipRect()"]
-    pub fn SDL_RenderSetClipRect(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_Rect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the clip rectangle for the current target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which clip rectangle should be queried."]
-    #[doc = "  \\param rect   A pointer filled in with the current clip rectangle, or"]
-    #[doc = "                an empty rectangle if clipping is disabled."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderSetClipRect()"]
-    pub fn SDL_RenderGetClipRect(renderer: *mut SDL_Renderer, rect: *mut SDL_Rect);
-}
-extern "C" {
-    #[doc = "  \\brief Get whether clipping is enabled on the given renderer."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which clip state should be queried."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetClipRect()"]
-    pub fn SDL_RenderIsClipEnabled(renderer: *mut SDL_Renderer) -> SDL_bool;
-}
-extern "C" {
-    #[doc = "  \\brief Set the drawing scale for rendering on the current target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which the drawing scale should be set."]
-    #[doc = "  \\param scaleX The horizontal scaling factor"]
-    #[doc = "  \\param scaleY The vertical scaling factor"]
-    #[doc = ""]
-    #[doc = "  The drawing coordinates are scaled by the x/y scaling factors"]
-    #[doc = "  before they are used by the renderer.  This allows resolution"]
-    #[doc = "  independent drawing with a single coordinate system."]
-    #[doc = ""]
-    #[doc = "  \\note If this results in scaling or subpixel drawing by the"]
-    #[doc = "        rendering backend, it will be handled using the appropriate"]
-    #[doc = "        quality hints.  For best results use integer scaling factors."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetScale()"]
-    #[doc = "  \\sa SDL_RenderSetLogicalSize()"]
-    pub fn SDL_RenderSetScale(
-        renderer: *mut SDL_Renderer,
-        scaleX: f32,
-        scaleY: f32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the drawing scale for the current target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which drawing scale should be queried."]
-    #[doc = "  \\param scaleX A pointer filled in with the horizontal scaling factor"]
-    #[doc = "  \\param scaleY A pointer filled in with the vertical scaling factor"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderSetScale()"]
-    pub fn SDL_RenderGetScale(renderer: *mut SDL_Renderer, scaleX: *mut f32, scaleY: *mut f32);
-}
-extern "C" {
-    #[doc = "  \\brief Set the color used for drawing operations (Rect, Line and Clear)."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which drawing color should be set."]
-    #[doc = "  \\param r The red value used to draw on the rendering target."]
-    #[doc = "  \\param g The green value used to draw on the rendering target."]
-    #[doc = "  \\param b The blue value used to draw on the rendering target."]
-    #[doc = "  \\param a The alpha value used to draw on the rendering target, usually"]
-    #[doc = "           ::SDL_ALPHA_OPAQUE (255)."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_SetRenderDrawColor(
-        renderer: *mut SDL_Renderer,
-        r: Uint8,
-        g: Uint8,
-        b: Uint8,
-        a: Uint8,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the color used for drawing operations (Rect, Line and Clear)."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which drawing color should be queried."]
-    #[doc = "  \\param r A pointer to the red value used to draw on the rendering target."]
-    #[doc = "  \\param g A pointer to the green value used to draw on the rendering target."]
-    #[doc = "  \\param b A pointer to the blue value used to draw on the rendering target."]
-    #[doc = "  \\param a A pointer to the alpha value used to draw on the rendering target,"]
-    #[doc = "           usually ::SDL_ALPHA_OPAQUE (255)."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_GetRenderDrawColor(
-        renderer: *mut SDL_Renderer,
-        r: *mut Uint8,
-        g: *mut Uint8,
-        b: *mut Uint8,
-        a: *mut Uint8,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Set the blend mode used for drawing operations (Fill and Line)."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer for which blend mode should be set."]
-    #[doc = "  \\param blendMode ::SDL_BlendMode to use for blending."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\note If the blend mode is not supported, the closest supported mode is"]
-    #[doc = "        chosen."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_GetRenderDrawBlendMode()"]
-    pub fn SDL_SetRenderDrawBlendMode(
-        renderer: *mut SDL_Renderer,
-        blendMode: SDL_BlendMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the blend mode used for drawing operations."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which blend mode should be queried."]
-    #[doc = "  \\param blendMode A pointer filled in with the current blend mode."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_SetRenderDrawBlendMode()"]
-    pub fn SDL_GetRenderDrawBlendMode(
-        renderer: *mut SDL_Renderer,
-        blendMode: *mut SDL_BlendMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Clear the current rendering target with the drawing color"]
-    #[doc = ""]
-    #[doc = "  This function clears the entire rendering target, ignoring the viewport and"]
-    #[doc = "  the clip rectangle."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderClear(renderer: *mut SDL_Renderer) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a point on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw a point."]
-    #[doc = "  \\param x The x coordinate of the point."]
-    #[doc = "  \\param y The y coordinate of the point."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawPoint(
-        renderer: *mut SDL_Renderer,
-        x: ::std::os::raw::c_int,
-        y: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw multiple points on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw multiple points."]
-    #[doc = "  \\param points The points to draw"]
-    #[doc = "  \\param count The number of points to draw"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawPoints(
-        renderer: *mut SDL_Renderer,
-        points: *const SDL_Point,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a line on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw a line."]
-    #[doc = "  \\param x1 The x coordinate of the start point."]
-    #[doc = "  \\param y1 The y coordinate of the start point."]
-    #[doc = "  \\param x2 The x coordinate of the end point."]
-    #[doc = "  \\param y2 The y coordinate of the end point."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawLine(
-        renderer: *mut SDL_Renderer,
-        x1: ::std::os::raw::c_int,
-        y1: ::std::os::raw::c_int,
-        x2: ::std::os::raw::c_int,
-        y2: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a series of connected lines on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw multiple lines."]
-    #[doc = "  \\param points The points along the lines"]
-    #[doc = "  \\param count The number of points, drawing count-1 lines"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawLines(
-        renderer: *mut SDL_Renderer,
-        points: *const SDL_Point,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a rectangle on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw a rectangle."]
-    #[doc = "  \\param rect A pointer to the destination rectangle, or NULL to outline the entire rendering target."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawRect(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_Rect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw some number of rectangles on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw multiple rectangles."]
-    #[doc = "  \\param rects A pointer to an array of destination rectangles."]
-    #[doc = "  \\param count The number of rectangles."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawRects(
-        renderer: *mut SDL_Renderer,
-        rects: *const SDL_Rect,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Fill a rectangle on the current rendering target with the drawing color."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should fill a rectangle."]
-    #[doc = "  \\param rect A pointer to the destination rectangle, or NULL for the entire"]
-    #[doc = "              rendering target."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderFillRect(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_Rect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Fill some number of rectangles on the current rendering target with the drawing color."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should fill multiple rectangles."]
-    #[doc = "  \\param rects A pointer to an array of destination rectangles."]
-    #[doc = "  \\param count The number of rectangles."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderFillRects(
-        renderer: *mut SDL_Renderer,
-        rects: *const SDL_Rect,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Copy a portion of the texture to the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should copy parts of a texture."]
-    #[doc = "  \\param texture The source texture."]
-    #[doc = "  \\param srcrect   A pointer to the source rectangle, or NULL for the entire"]
-    #[doc = "                   texture."]
-    #[doc = "  \\param dstrect   A pointer to the destination rectangle, or NULL for the"]
-    #[doc = "                   entire rendering target."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderCopy(
-        renderer: *mut SDL_Renderer,
-        texture: *mut SDL_Texture,
-        srcrect: *const SDL_Rect,
-        dstrect: *const SDL_Rect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Copy a portion of the source texture to the current rendering target, rotating it by angle around the given center"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should copy parts of a texture."]
-    #[doc = "  \\param texture The source texture."]
-    #[doc = "  \\param srcrect   A pointer to the source rectangle, or NULL for the entire"]
-    #[doc = "                   texture."]
-    #[doc = "  \\param dstrect   A pointer to the destination rectangle, or NULL for the"]
-    #[doc = "                   entire rendering target."]
-    #[doc = "  \\param angle    An angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction"]
-    #[doc = "  \\param center   A pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around dstrect.w/2, dstrect.h/2)."]
-    #[doc = "  \\param flip     An SDL_RendererFlip value stating which flipping actions should be performed on the texture"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderCopyEx(
-        renderer: *mut SDL_Renderer,
-        texture: *mut SDL_Texture,
-        srcrect: *const SDL_Rect,
-        dstrect: *const SDL_Rect,
-        angle: f64,
-        center: *const SDL_Point,
-        flip: SDL_RendererFlip,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a point on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw a point."]
-    #[doc = "  \\param x The x coordinate of the point."]
-    #[doc = "  \\param y The y coordinate of the point."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawPointF(
-        renderer: *mut SDL_Renderer,
-        x: f32,
-        y: f32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw multiple points on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw multiple points."]
-    #[doc = "  \\param points The points to draw"]
-    #[doc = "  \\param count The number of points to draw"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawPointsF(
-        renderer: *mut SDL_Renderer,
-        points: *const SDL_FPoint,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a line on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw a line."]
-    #[doc = "  \\param x1 The x coordinate of the start point."]
-    #[doc = "  \\param y1 The y coordinate of the start point."]
-    #[doc = "  \\param x2 The x coordinate of the end point."]
-    #[doc = "  \\param y2 The y coordinate of the end point."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawLineF(
-        renderer: *mut SDL_Renderer,
-        x1: f32,
-        y1: f32,
-        x2: f32,
-        y2: f32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a series of connected lines on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw multiple lines."]
-    #[doc = "  \\param points The points along the lines"]
-    #[doc = "  \\param count The number of points, drawing count-1 lines"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawLinesF(
-        renderer: *mut SDL_Renderer,
-        points: *const SDL_FPoint,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw a rectangle on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw a rectangle."]
-    #[doc = "  \\param rect A pointer to the destination rectangle, or NULL to outline the entire rendering target."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawRectF(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_FRect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Draw some number of rectangles on the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should draw multiple rectangles."]
-    #[doc = "  \\param rects A pointer to an array of destination rectangles."]
-    #[doc = "  \\param count The number of rectangles."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderDrawRectsF(
-        renderer: *mut SDL_Renderer,
-        rects: *const SDL_FRect,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Fill a rectangle on the current rendering target with the drawing color."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should fill a rectangle."]
-    #[doc = "  \\param rect A pointer to the destination rectangle, or NULL for the entire"]
-    #[doc = "              rendering target."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderFillRectF(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_FRect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Fill some number of rectangles on the current rendering target with the drawing color."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should fill multiple rectangles."]
-    #[doc = "  \\param rects A pointer to an array of destination rectangles."]
-    #[doc = "  \\param count The number of rectangles."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderFillRectsF(
-        renderer: *mut SDL_Renderer,
-        rects: *const SDL_FRect,
-        count: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Copy a portion of the texture to the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should copy parts of a texture."]
-    #[doc = "  \\param texture The source texture."]
-    #[doc = "  \\param srcrect   A pointer to the source rectangle, or NULL for the entire"]
-    #[doc = "                   texture."]
-    #[doc = "  \\param dstrect   A pointer to the destination rectangle, or NULL for the"]
-    #[doc = "                   entire rendering target."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderCopyF(
-        renderer: *mut SDL_Renderer,
-        texture: *mut SDL_Texture,
-        srcrect: *const SDL_Rect,
-        dstrect: *const SDL_FRect,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Copy a portion of the source texture to the current rendering target, rotating it by angle around the given center"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer which should copy parts of a texture."]
-    #[doc = "  \\param texture The source texture."]
-    #[doc = "  \\param srcrect   A pointer to the source rectangle, or NULL for the entire"]
-    #[doc = "                   texture."]
-    #[doc = "  \\param dstrect   A pointer to the destination rectangle, or NULL for the"]
-    #[doc = "                   entire rendering target."]
-    #[doc = "  \\param angle    An angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction"]
-    #[doc = "  \\param center   A pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around dstrect.w/2, dstrect.h/2)."]
-    #[doc = "  \\param flip     An SDL_RendererFlip value stating which flipping actions should be performed on the texture"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 on error"]
-    pub fn SDL_RenderCopyExF(
-        renderer: *mut SDL_Renderer,
-        texture: *mut SDL_Texture,
-        srcrect: *const SDL_Rect,
-        dstrect: *const SDL_FRect,
-        angle: f64,
-        center: *const SDL_FPoint,
-        flip: SDL_RendererFlip,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Read pixels from the current rendering target."]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer from which pixels should be read."]
-    #[doc = "  \\param rect   A pointer to the rectangle to read, or NULL for the entire"]
-    #[doc = "                render target."]
-    #[doc = "  \\param format The desired format of the pixel data, or 0 to use the format"]
-    #[doc = "                of the rendering target"]
-    #[doc = "  \\param pixels A pointer to be filled in with the pixel data"]
-    #[doc = "  \\param pitch  The pitch of the pixels parameter."]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if pixel reading is not supported."]
-    #[doc = ""]
-    #[doc = "  \\warning This is a very slow operation, and should not be used frequently."]
-    pub fn SDL_RenderReadPixels(
-        renderer: *mut SDL_Renderer,
-        rect: *const SDL_Rect,
-        format: Uint32,
-        pixels: *mut ::std::os::raw::c_void,
-        pitch: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Update the screen with rendering performed."]
-    pub fn SDL_RenderPresent(renderer: *mut SDL_Renderer);
-}
-extern "C" {
-    #[doc = "  \\brief Destroy the specified texture."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_CreateTexture()"]
-    #[doc = "  \\sa SDL_CreateTextureFromSurface()"]
-    pub fn SDL_DestroyTexture(texture: *mut SDL_Texture);
-}
-extern "C" {
-    #[doc = "  \\brief Destroy the rendering context for a window and free associated"]
-    #[doc = "         textures."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_CreateRenderer()"]
-    pub fn SDL_DestroyRenderer(renderer: *mut SDL_Renderer);
-}
-extern "C" {
-    #[doc = "  \\brief Force the rendering context to flush any pending commands to the"]
-    #[doc = "         underlying rendering API."]
-    #[doc = ""]
-    #[doc = "  You do not need to (and in fact, shouldn't) call this function unless"]
-    #[doc = "  you are planning to call into OpenGL/Direct3D/Metal/whatever directly"]
-    #[doc = "  in addition to using an SDL_Renderer."]
-    #[doc = ""]
-    #[doc = "  This is for a very-specific case: if you are using SDL's render API,"]
-    #[doc = "  you asked for a specific renderer backend (OpenGL, Direct3D, etc),"]
-    #[doc = "  you set SDL_HINT_RENDER_BATCHING to \"1\", and you plan to make"]
-    #[doc = "  OpenGL/D3D/whatever calls in addition to SDL render API calls. If all of"]
-    #[doc = "  this applies, you should call SDL_RenderFlush() between calls to SDL's"]
-    #[doc = "  render API and the low-level API you're using in cooperation."]
-    #[doc = ""]
-    #[doc = "  In all other cases, you can ignore this function. This is only here to"]
-    #[doc = "  get maximum performance out of a specific situation. In all other cases,"]
-    #[doc = "  SDL will do the right thing, perhaps at a performance loss."]
-    #[doc = ""]
-    #[doc = "  This function is first available in SDL 2.0.10, and is not needed in"]
-    #[doc = "  2.0.9 and earlier, as earlier versions did not queue rendering commands"]
-    #[doc = "  at all, instead flushing them to the OS immediately."]
-    pub fn SDL_RenderFlush(renderer: *mut SDL_Renderer) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Bind the texture to the current OpenGL/ES/ES2 context for use with"]
-    #[doc = "         OpenGL instructions."]
-    #[doc = ""]
-    #[doc = "  \\param texture  The SDL texture to bind"]
-    #[doc = "  \\param texw     A pointer to a float that will be filled with the texture width"]
-    #[doc = "  \\param texh     A pointer to a float that will be filled with the texture height"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the operation is not supported"]
-    pub fn SDL_GL_BindTexture(
-        texture: *mut SDL_Texture,
-        texw: *mut f32,
-        texh: *mut f32,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Unbind a texture from the current OpenGL/ES/ES2 context."]
-    #[doc = ""]
-    #[doc = "  \\param texture  The SDL texture to unbind"]
-    #[doc = ""]
-    #[doc = "  \\return 0 on success, or -1 if the operation is not supported"]
-    pub fn SDL_GL_UnbindTexture(texture: *mut SDL_Texture) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the CAMetalLayer associated with the given Metal renderer"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer to query"]
-    #[doc = ""]
-    #[doc = "  \\return CAMetalLayer* on success, or NULL if the renderer isn't a Metal renderer"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetMetalCommandEncoder()"]
-    pub fn SDL_RenderGetMetalLayer(renderer: *mut SDL_Renderer) -> *mut ::std::os::raw::c_void;
-}
-extern "C" {
-    #[doc = "  \\brief Get the Metal command encoder for the current frame"]
-    #[doc = ""]
-    #[doc = "  \\param renderer The renderer to query"]
-    #[doc = ""]
-    #[doc = "  \\return id<MTLRenderCommandEncoder> on success, or NULL if the renderer isn't a Metal renderer"]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_RenderGetMetalLayer()"]
-    pub fn SDL_RenderGetMetalCommandEncoder(
-        renderer: *mut SDL_Renderer,
-    ) -> *mut ::std::os::raw::c_void;
-}
-#[doc = "  \\brief SDL_sensor.h"]
-#[doc = ""]
-#[doc = "  In order to use these functions, SDL_Init() must have been called"]
-#[doc = "  with the ::SDL_INIT_SENSOR flag.  This causes SDL to scan the system"]
-#[doc = "  for sensors, and load appropriate drivers."]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct _SDL_Sensor {
-    _unused: [u8; 0],
-}
-pub type SDL_Sensor = _SDL_Sensor;
-#[doc = " This is a unique ID for a sensor for the time it is connected to the system,"]
-#[doc = " and is never reused for the lifetime of the application."]
-#[doc = ""]
-#[doc = " The ID value starts at 0 and increments from there. The value -1 is an invalid ID."]
-pub type SDL_SensorID = Sint32;
-#[doc = "< Returned for an invalid sensor"]
-pub const SDL_SensorType_SDL_SENSOR_INVALID: SDL_SensorType = -1;
-#[doc = "< Unknown sensor type"]
-pub const SDL_SensorType_SDL_SENSOR_UNKNOWN: SDL_SensorType = 0;
-#[doc = "< Accelerometer"]
-pub const SDL_SensorType_SDL_SENSOR_ACCEL: SDL_SensorType = 1;
-#[doc = "< Gyroscope"]
-pub const SDL_SensorType_SDL_SENSOR_GYRO: SDL_SensorType = 2;
-pub type SDL_SensorType = i32;
-extern "C" {
-    #[doc = "  \\brief Count the number of sensors attached to the system right now"]
-    pub fn SDL_NumSensors() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the implementation dependent name of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor name, or NULL if device_index is out of range."]
-    pub fn SDL_SensorGetDeviceName(
-        device_index: ::std::os::raw::c_int,
-    ) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  \\brief Get the type of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor type, or SDL_SENSOR_INVALID if device_index is out of range."]
-    pub fn SDL_SensorGetDeviceType(device_index: ::std::os::raw::c_int) -> SDL_SensorType;
-}
-extern "C" {
-    #[doc = "  \\brief Get the platform dependent type of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor platform dependent type, or -1 if device_index is out of range."]
-    pub fn SDL_SensorGetDeviceNonPortableType(
-        device_index: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the instance ID of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor instance ID, or -1 if device_index is out of range."]
-    pub fn SDL_SensorGetDeviceInstanceID(device_index: ::std::os::raw::c_int) -> SDL_SensorID;
-}
-extern "C" {
-    #[doc = "  \\brief Open a sensor for use."]
-    #[doc = ""]
-    #[doc = "  The index passed as an argument refers to the N'th sensor on the system."]
-    #[doc = ""]
-    #[doc = "  \\return A sensor identifier, or NULL if an error occurred."]
-    pub fn SDL_SensorOpen(device_index: ::std::os::raw::c_int) -> *mut SDL_Sensor;
-}
-extern "C" {
-    #[doc = " Return the SDL_Sensor associated with an instance id."]
-    pub fn SDL_SensorFromInstanceID(instance_id: SDL_SensorID) -> *mut SDL_Sensor;
-}
-extern "C" {
-    #[doc = "  \\brief Get the implementation dependent name of a sensor."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor name, or NULL if the sensor is NULL."]
-    pub fn SDL_SensorGetName(sensor: *mut SDL_Sensor) -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  \\brief Get the type of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor type, or SDL_SENSOR_INVALID if the sensor is NULL."]
-    pub fn SDL_SensorGetType(sensor: *mut SDL_Sensor) -> SDL_SensorType;
-}
-extern "C" {
-    #[doc = "  \\brief Get the platform dependent type of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor platform dependent type, or -1 if the sensor is NULL."]
-    pub fn SDL_SensorGetNonPortableType(sensor: *mut SDL_Sensor) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  \\brief Get the instance ID of a sensor."]
-    #[doc = ""]
-    #[doc = "  This can be called before any sensors are opened."]
-    #[doc = ""]
-    #[doc = "  \\return The sensor instance ID, or -1 if the sensor is NULL."]
-    pub fn SDL_SensorGetInstanceID(sensor: *mut SDL_Sensor) -> SDL_SensorID;
-}
-extern "C" {
-    #[doc = "  Get the current state of an opened sensor."]
-    #[doc = ""]
-    #[doc = "  The number of values and interpretation of the data is sensor dependent."]
-    #[doc = ""]
-    #[doc = "  \\param sensor The sensor to query"]
-    #[doc = "  \\param data A pointer filled with the current sensor state"]
-    #[doc = "  \\param num_values The number of values to write to data"]
-    #[doc = ""]
-    #[doc = "  \\return 0 or -1 if an error occurred."]
-    pub fn SDL_SensorGetData(
-        sensor: *mut SDL_Sensor,
-        data: *mut f32,
-        num_values: ::std::os::raw::c_int,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  Close a sensor previously opened with SDL_SensorOpen()"]
-    pub fn SDL_SensorClose(sensor: *mut SDL_Sensor);
-}
-extern "C" {
-    #[doc = "  Update the current state of the open sensors."]
-    #[doc = ""]
-    #[doc = "  This is called automatically by the event loop if sensor events are enabled."]
-    #[doc = ""]
-    #[doc = "  This needs to be called from the thread that initialized the sensor subsystem."]
-    pub fn SDL_SensorUpdate();
-}
-extern "C" {
-    #[doc = "  \\brief Create a window that can be shaped with the specified position, dimensions, and flags."]
-    #[doc = ""]
-    #[doc = "  \\param title The title of the window, in UTF-8 encoding."]
-    #[doc = "  \\param x     The x position of the window, ::SDL_WINDOWPOS_CENTERED, or"]
-    #[doc = "               ::SDL_WINDOWPOS_UNDEFINED."]
-    #[doc = "  \\param y     The y position of the window, ::SDL_WINDOWPOS_CENTERED, or"]
-    #[doc = "               ::SDL_WINDOWPOS_UNDEFINED."]
-    #[doc = "  \\param w     The width of the window."]
-    #[doc = "  \\param h     The height of the window."]
-    #[doc = "  \\param flags The flags for the window, a mask of SDL_WINDOW_BORDERLESS with any of the following:"]
-    #[doc = "               ::SDL_WINDOW_OPENGL,     ::SDL_WINDOW_INPUT_GRABBED,"]
-    #[doc = "               ::SDL_WINDOW_HIDDEN,     ::SDL_WINDOW_RESIZABLE,"]
-    #[doc = "               ::SDL_WINDOW_MAXIMIZED,  ::SDL_WINDOW_MINIMIZED,"]
-    #[doc = "       ::SDL_WINDOW_BORDERLESS is always set, and ::SDL_WINDOW_FULLSCREEN is always unset."]
-    #[doc = ""]
-    #[doc = "  \\return The window created, or NULL if window creation failed."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_DestroyWindow()"]
-    pub fn SDL_CreateShapedWindow(
-        title: *const ::std::os::raw::c_char,
-        x: ::std::os::raw::c_uint,
-        y: ::std::os::raw::c_uint,
-        w: ::std::os::raw::c_uint,
-        h: ::std::os::raw::c_uint,
-        flags: Uint32,
-    ) -> *mut SDL_Window;
-}
-extern "C" {
-    #[doc = " \\brief Return whether the given window is a shaped window."]
-    #[doc = ""]
-    #[doc = " \\param window The window to query for being shaped."]
-    #[doc = ""]
-    #[doc = " \\return SDL_TRUE if the window is a window that can be shaped, SDL_FALSE if the window is unshaped or NULL."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_CreateShapedWindow"]
-    pub fn SDL_IsShapedWindow(window: *const SDL_Window) -> SDL_bool;
-}
-#[doc = " \\brief The default mode, a binarized alpha cutoff of 1."]
-pub const WindowShapeMode_ShapeModeDefault: WindowShapeMode = 0;
-#[doc = " \\brief A binarized alpha cutoff with a given integer value."]
-pub const WindowShapeMode_ShapeModeBinarizeAlpha: WindowShapeMode = 1;
-#[doc = " \\brief A binarized alpha cutoff with a given integer value, but with the opposite comparison."]
-pub const WindowShapeMode_ShapeModeReverseBinarizeAlpha: WindowShapeMode = 2;
-#[doc = " \\brief A color key is applied."]
-pub const WindowShapeMode_ShapeModeColorKey: WindowShapeMode = 3;
-#[doc = " \\brief An enum denoting the specific type of contents present in an SDL_WindowShapeParams union."]
-pub type WindowShapeMode = u32;
-#[doc = " \\brief A union containing parameters for shaped windows."]
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub union SDL_WindowShapeParams {
-    #[doc = " \\brief A cutoff alpha value for binarization of the window shape's alpha channel."]
-    pub binarizationCutoff: Uint8,
-    pub colorKey: SDL_Color,
-    _bindgen_union_align: [u8; 4usize],
-}
-#[test]
-fn bindgen_test_layout_SDL_WindowShapeParams() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_WindowShapeParams>(),
-        4usize,
-        concat!("Size of: ", stringify!(SDL_WindowShapeParams))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_WindowShapeParams>(),
-        1usize,
-        concat!("Alignment of ", stringify!(SDL_WindowShapeParams))
-    );
-    assert_eq!(
-        unsafe {
-            &(*(::std::ptr::null::<SDL_WindowShapeParams>())).binarizationCutoff as *const _
-                as usize
-        },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_WindowShapeParams),
-            "::",
-            stringify!(binarizationCutoff)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowShapeParams>())).colorKey as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_WindowShapeParams),
-            "::",
-            stringify!(colorKey)
-        )
-    );
-}
-#[doc = " \\brief A struct that tags the SDL_WindowShapeParams union with an enum describing the type of its contents."]
-#[repr(C)]
-#[derive(Copy, Clone)]
-pub struct SDL_WindowShapeMode {
-    #[doc = " \\brief The mode of these window-shape parameters."]
-    pub mode: WindowShapeMode,
-    #[doc = " \\brief Window-shape parameters."]
-    pub parameters: SDL_WindowShapeParams,
-}
-#[test]
-fn bindgen_test_layout_SDL_WindowShapeMode() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_WindowShapeMode>(),
-        8usize,
-        concat!("Size of: ", stringify!(SDL_WindowShapeMode))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_WindowShapeMode>(),
-        4usize,
-        concat!("Alignment of ", stringify!(SDL_WindowShapeMode))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowShapeMode>())).mode as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_WindowShapeMode),
-            "::",
-            stringify!(mode)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_WindowShapeMode>())).parameters as *const _ as usize },
-        4usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_WindowShapeMode),
-            "::",
-            stringify!(parameters)
-        )
-    );
-}
-extern "C" {
-    #[doc = " \\brief Set the shape and parameters of a shaped window."]
-    #[doc = ""]
-    #[doc = " \\param window The shaped window whose parameters should be set."]
-    #[doc = " \\param shape A surface encoding the desired shape for the window."]
-    #[doc = " \\param shape_mode The parameters to set for the shaped window."]
-    #[doc = ""]
-    #[doc = " \\return 0 on success, SDL_INVALID_SHAPE_ARGUMENT on an invalid shape argument, or SDL_NONSHAPEABLE_WINDOW"]
-    #[doc = "           if the SDL_Window given does not reference a valid shaped window."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_WindowShapeMode"]
-    #[doc = " \\sa SDL_GetShapedWindowMode."]
-    pub fn SDL_SetWindowShape(
-        window: *mut SDL_Window,
-        shape: *mut SDL_Surface,
-        shape_mode: *mut SDL_WindowShapeMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = " \\brief Get the shape parameters of a shaped window."]
-    #[doc = ""]
-    #[doc = " \\param window The shaped window whose parameters should be retrieved."]
-    #[doc = " \\param shape_mode An empty shape-mode structure to fill, or NULL to check whether the window has a shape."]
-    #[doc = ""]
-    #[doc = " \\return 0 if the window has a shape and, provided shape_mode was not NULL, shape_mode has been filled with the mode"]
-    #[doc = "           data, SDL_NONSHAPEABLE_WINDOW if the SDL_Window given is not a shaped window, or SDL_WINDOW_LACKS_SHAPE if"]
-    #[doc = "           the SDL_Window given is a shapeable window currently lacking a shape."]
-    #[doc = ""]
-    #[doc = " \\sa SDL_WindowShapeMode"]
-    #[doc = " \\sa SDL_SetWindowShape"]
-    pub fn SDL_GetShapedWindowMode(
-        window: *mut SDL_Window,
-        shape_mode: *mut SDL_WindowShapeMode,
-    ) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "\\brief Return true if the current device is a tablet."]
-    pub fn SDL_IsTablet() -> SDL_bool;
-}
-extern "C" {
-    pub fn SDL_OnApplicationWillTerminate();
-}
-extern "C" {
-    pub fn SDL_OnApplicationDidReceiveMemoryWarning();
-}
-extern "C" {
-    pub fn SDL_OnApplicationWillResignActive();
-}
-extern "C" {
-    pub fn SDL_OnApplicationDidEnterBackground();
-}
-extern "C" {
-    pub fn SDL_OnApplicationWillEnterForeground();
-}
-extern "C" {
-    pub fn SDL_OnApplicationDidBecomeActive();
-}
-extern "C" {
-    #[doc = " \\brief Get the number of milliseconds since the SDL library initialization."]
-    #[doc = ""]
-    #[doc = " \\note This value wraps if the program runs for more than ~49 days."]
-    pub fn SDL_GetTicks() -> Uint32;
-}
-extern "C" {
-    #[doc = " \\brief Get the current value of the high resolution counter"]
-    pub fn SDL_GetPerformanceCounter() -> Uint64;
-}
-extern "C" {
-    #[doc = " \\brief Get the count per second of the high resolution counter"]
-    pub fn SDL_GetPerformanceFrequency() -> Uint64;
-}
-extern "C" {
-    #[doc = " \\brief Wait a specified number of milliseconds before returning."]
-    pub fn SDL_Delay(ms: Uint32);
-}
-#[doc = "  Function prototype for the timer callback function."]
-#[doc = ""]
-#[doc = "  The callback function is passed the current timer interval and returns"]
-#[doc = "  the next timer interval.  If the returned value is the same as the one"]
-#[doc = "  passed in, the periodic alarm continues, otherwise a new alarm is"]
-#[doc = "  scheduled.  If the callback returns 0, the periodic alarm is cancelled."]
-pub type SDL_TimerCallback = ::std::option::Option<
-    unsafe extern "C" fn(interval: Uint32, param: *mut ::std::os::raw::c_void) -> Uint32,
->;
-#[doc = " Definition of the timer ID type."]
-pub type SDL_TimerID = ::std::os::raw::c_int;
-extern "C" {
-    #[doc = " \\brief Add a new timer to the pool of timers already running."]
-    #[doc = ""]
-    #[doc = " \\return A timer ID, or 0 when an error occurs."]
-    pub fn SDL_AddTimer(
-        interval: Uint32,
-        callback: SDL_TimerCallback,
-        param: *mut ::std::os::raw::c_void,
-    ) -> SDL_TimerID;
-}
-extern "C" {
-    #[doc = " \\brief Remove a timer knowing its ID."]
-    #[doc = ""]
-    #[doc = " \\return A boolean value indicating success or failure."]
-    #[doc = ""]
-    #[doc = " \\warning It is not safe to remove a timer multiple times."]
-    pub fn SDL_RemoveTimer(id: SDL_TimerID) -> SDL_bool;
-}
-#[doc = "  \\brief Information the version of SDL in use."]
-#[doc = ""]
-#[doc = "  Represents the library's version as three levels: major revision"]
-#[doc = "  (increments with massive changes, additions, and enhancements),"]
-#[doc = "  minor revision (increments with backwards-compatible changes to the"]
-#[doc = "  major revision), and patchlevel (increments with fixes to the minor"]
-#[doc = "  revision)."]
-#[doc = ""]
-#[doc = "  \\sa SDL_VERSION"]
-#[doc = "  \\sa SDL_GetVersion"]
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct SDL_version {
-    #[doc = "< major version"]
-    pub major: Uint8,
-    #[doc = "< minor version"]
-    pub minor: Uint8,
-    #[doc = "< update version"]
-    pub patch: Uint8,
-}
-#[test]
-fn bindgen_test_layout_SDL_version() {
-    assert_eq!(
-        ::std::mem::size_of::<SDL_version>(),
-        3usize,
-        concat!("Size of: ", stringify!(SDL_version))
-    );
-    assert_eq!(
-        ::std::mem::align_of::<SDL_version>(),
-        1usize,
-        concat!("Alignment of ", stringify!(SDL_version))
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_version>())).major as *const _ as usize },
-        0usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_version),
-            "::",
-            stringify!(major)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_version>())).minor as *const _ as usize },
-        1usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_version),
-            "::",
-            stringify!(minor)
-        )
-    );
-    assert_eq!(
-        unsafe { &(*(::std::ptr::null::<SDL_version>())).patch as *const _ as usize },
-        2usize,
-        concat!(
-            "Offset of field: ",
-            stringify!(SDL_version),
-            "::",
-            stringify!(patch)
-        )
-    );
-}
-extern "C" {
-    #[doc = "  \\brief Get the version of SDL that is linked against your program."]
-    #[doc = ""]
-    #[doc = "  If you are linking to SDL dynamically, then it is possible that the"]
-    #[doc = "  current version will be different than the version you compiled against."]
-    #[doc = "  This function returns the current version, while SDL_VERSION() is a"]
-    #[doc = "  macro that tells you what version you compiled with."]
-    #[doc = ""]
-    #[doc = "  \\code"]
-    #[doc = "  SDL_version compiled;"]
-    #[doc = "  SDL_version linked;"]
-    #[doc = ""]
-    #[doc = "  SDL_VERSION(&compiled);"]
-    #[doc = "  SDL_GetVersion(&linked);"]
-    #[doc = "  printf(\"We compiled against SDL version %d.%d.%d ...\\n\","]
-    #[doc = "         compiled.major, compiled.minor, compiled.patch);"]
-    #[doc = "  printf(\"But we linked against SDL version %d.%d.%d.\\n\","]
-    #[doc = "         linked.major, linked.minor, linked.patch);"]
-    #[doc = "  \\endcode"]
-    #[doc = ""]
-    #[doc = "  This function may be called safely at any time, even before SDL_Init()."]
-    #[doc = ""]
-    #[doc = "  \\sa SDL_VERSION"]
-    pub fn SDL_GetVersion(ver: *mut SDL_version);
-}
-extern "C" {
-    #[doc = "  \\brief Get the code revision of SDL that is linked against your program."]
-    #[doc = ""]
-    #[doc = "  Returns an arbitrary string (a hash value) uniquely identifying the"]
-    #[doc = "  exact revision of the SDL library in use, and is only useful in comparing"]
-    #[doc = "  against other revisions. It is NOT an incrementing number."]
-    pub fn SDL_GetRevision() -> *const ::std::os::raw::c_char;
-}
-extern "C" {
-    #[doc = "  \\brief Get the revision number of SDL that is linked against your program."]
-    #[doc = ""]
-    #[doc = "  Returns a number uniquely identifying the exact revision of the SDL"]
-    #[doc = "  library in use. It is an incrementing number based on commits to"]
-    #[doc = "  hg.libsdl.org."]
-    pub fn SDL_GetRevisionNumber() -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  This function initializes  the subsystems specified by \\c flags"]
-    pub fn SDL_Init(flags: Uint32) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  This function initializes specific SDL subsystems"]
-    #[doc = ""]
-    #[doc = "  Subsystem initialization is ref-counted, you must call"]
-    #[doc = "  SDL_QuitSubSystem() for each SDL_InitSubSystem() to correctly"]
-    #[doc = "  shutdown a subsystem manually (or call SDL_Quit() to force shutdown)."]
-    #[doc = "  If a subsystem is already loaded then this call will"]
-    #[doc = "  increase the ref-count and return."]
-    pub fn SDL_InitSubSystem(flags: Uint32) -> ::std::os::raw::c_int;
-}
-extern "C" {
-    #[doc = "  This function cleans up specific SDL subsystems"]
-    pub fn SDL_QuitSubSystem(flags: Uint32);
-}
-extern "C" {
-    #[doc = "  This function returns a mask of the specified subsystems which have"]
-    #[doc = "  previously been initialized."]
-    #[doc = ""]
-    #[doc = "  If \\c flags is 0, it returns a mask of all initialized subsystems."]
-    pub fn SDL_WasInit(flags: Uint32) -> Uint32;
-}
-extern "C" {
-    #[doc = "  This function cleans up all initialized subsystems. You should"]
-    #[doc = "  call it upon all exit conditions."]
-    pub fn SDL_Quit();
-}
-pub const REG_D0: _bindgen_ty_1 = 0;
-pub const REG_D1: _bindgen_ty_1 = 1;
-pub const REG_D2: _bindgen_ty_1 = 2;
-pub const REG_D3: _bindgen_ty_1 = 3;
-pub const REG_D4: _bindgen_ty_1 = 4;
-pub const REG_D5: _bindgen_ty_1 = 5;
-pub const REG_D6: _bindgen_ty_1 = 6;
-pub const REG_D7: _bindgen_ty_1 = 7;
-pub const REG_A0: _bindgen_ty_1 = 8;
-pub const REG_A1: _bindgen_ty_1 = 9;
-pub const REG_A2: _bindgen_ty_1 = 10;
-pub const REG_A3: _bindgen_ty_1 = 11;
-pub const REG_A4: _bindgen_ty_1 = 12;
-pub const REG_A5: _bindgen_ty_1 = 13;
-pub const REG_A6: _bindgen_ty_1 = 14;
-pub const REG_A7: _bindgen_ty_1 = 15;
-pub type _bindgen_ty_1 = u32;
-extern "C" {
-    pub static mut bQuitProgram: BOOL;
-}
-extern "C" {
-    pub static mut bEmulationActive: BOOL;
-}
-extern "C" {
-    pub static mut szName: [::std::os::raw::c_char; 0usize];
-}
-extern "C" {
-    pub static mut szBootDiscImage: [::std::os::raw::c_char; 256usize];
-}
-extern "C" {
-    pub static mut szWorkingDir: [::std::os::raw::c_char; 256usize];
-}
-extern "C" {
-    pub static mut szCurrentDir: [::std::os::raw::c_char; 256usize];
-}
-extern "C" {
-    pub fn Main_SysError(Error: *mut ::std::os::raw::c_char, Title: *mut ::std::os::raw::c_char);
-}
-extern "C" {
-    pub fn Main_Message(
-        lpText: *mut ::std::os::raw::c_char,
-        lpCaption: *mut ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
 }
 extern "C" {
-    pub fn Main_PauseEmulation();
+    pub static mut input: INPUT;
 }
 extern "C" {
-    pub fn Main_UnPauseEmulation();
+    pub fn Input_PressSTKey(ScanCode: ::std::os::raw::c_uchar, bPress: BOOL);
 }
 extern "C" {
-    pub fn Main_EventHandler();
+    pub fn Call_GetMouseInput();
 }
 extern "C" {
-    pub fn lib_main(
-        argc: ::std::os::raw::c_int,
-        argv: *mut *mut ::std::os::raw::c_char,
-    ) -> ::std::os::raw::c_int;
+    pub fn Call_GetKeyboardEvent();
 }
 extern "C" {
-    pub fn Main_ReadParameters(argc: ::std::os::raw::c_int, argv: *mut *mut ::std::os::raw::c_char);
+    pub fn Input_Update();
 }
 extern "C" {
-    pub fn Main_Init();
+    pub fn Input_MousePress(button: ::std::os::raw::c_int);
 }
 extern "C" {
-    pub fn export_SDL_AddTimer(
-        interval: Uint32,
-        callback: SDL_TimerCallback,
-        param: *mut ::std::os::raw::c_void,
-    ) -> SDL_TimerID;
+    pub fn Input_MouseRelease(button: ::std::os::raw::c_int);
 }
 pub type __builtin_va_list = [__va_list_tag; 1usize];
 #[repr(C)]
