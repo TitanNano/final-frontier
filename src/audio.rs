@@ -1,7 +1,6 @@
 use std::fs::File;
 use std::cell::RefCell;
 use std::ops::DerefMut;
-use std::convert::TryInto;
 
 use rand::Rng;
 use lewton::inside_ogg::OggStreamReader;
@@ -167,8 +166,9 @@ impl AudioCallback for Callback {
             return;
         }
 
-        for i in (0..dest_buffer.len()).step_by(4) {
+        for i in (0..dest_buffer.len()).step_by(2) {
             let mut sample: i16 = 0;
+
             for j in 0..MAX_CHANNELS {
                 let wav_channels = self.wav_channels();
 
@@ -181,14 +181,10 @@ impl AudioCallback for Callback {
                 let buffer_pos = channel.buffer_pos();
                 let buffer_len = buffer.len();
 
-                let byte_a = buffer[buffer_pos];
-                let byte_b = buffer[buffer_pos+1];
+                let byte_a = buffer[buffer_pos] as u16;
+                let byte_b = buffer[buffer_pos+1] as u16;
 
-                let byte_a_16 = byte_a as i16;
-                let byte_b_16 = byte_b as i16;
-
-                sample += (byte_a_16 << 8) | byte_b_16;
-                println!("sfx sample: {:#06x}", sample);
+                sample += (byte_a | byte_b << 8) as i16;
 
                 { // create scope to contain mutable ref
                     let mut wav_channels = self.wav_channels_mut();
@@ -317,7 +313,11 @@ fn check_sample_format(spec: &AudioSpecWAV, filename: &str) -> Option<Vec<u8>> {
         AudioFormat::U8 => {
             let old_buffer = spec.buffer();
             let new_buffer: Vec<u8> = old_buffer.iter()
-                .map(|byte| vec!(byte ^ 128, 0))
+                .map(|byte| {
+                    let large_byte = (((byte ^ 128) as i8) as i16) << 8;
+
+                    vec!((large_byte & 0x00FF) as u8, ((large_byte as u16 & 0xFF00) >> 8) as u8)
+                })
                 .collect::<Vec<Vec<u8>>>()
                 .concat();
 
@@ -345,7 +345,7 @@ fn enable_audio(audio_device: &AudioDevice<Callback>, enabled: bool) {
 
 fn play_music_track(playback_context: &mut Callback, track: usize) {
 	let file_path = format!("music/{:02}.ogg", track);
-	let file = File::open(file_path).expect("Can't open file");
+	let file = File::open(&file_path).expect(&format!("Can't open file {}", &file_path));
     let reader = OggStreamReader::new(file).expect("vorbis open");
 
     playback_context.music_file = Some(reader);
@@ -360,9 +360,12 @@ fn rand_tracknum(playback_context: &Callback) -> usize {
     let mut track;
 
     loop {
-    	track = rng.gen::<usize>() % 8;
+        let rand = rng.gen::<usize>();
+    	track = rand % 8;
 
-        if (playback_context.enabled_tracks & (1<<track)) == 0 {
+        println!("chose track: {} {}", rand, track);
+
+        if (playback_context.enabled_tracks & (1<<track)) != 0 {
             break;
         }
     }

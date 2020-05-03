@@ -33,7 +33,7 @@ pub fn init_viewport(context: &SdlContext, config: &GameConfig) {
     let window = sdl_window_builder.build().expect("unable to create SDL window");
     let gl_context = window.gl_create_context().expect("Screen");
 
-    init_viewport_gl();
+    init_viewport_gl(config);
 
     let context = ScreenContext { gl_context, window };
 

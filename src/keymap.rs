@@ -151,6 +151,7 @@ fn pc_to_st_scancode(keycode: Keycode) -> Option<usize> {
         Keycode::Escape => Some(0x01),
         Keycode::RCtrl => Some(0x1D),  /* Control */
         Keycode::RAlt => Some(0x38),  /* Alternate */
+        Keycode::RShift => Some(0x36),  /* Alternate */
         Keycode::Num1 => Some(0x02),
         Keycode::Num2 => Some(0x03),
         Keycode::Num3 => Some(0x04),

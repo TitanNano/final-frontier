@@ -145,6 +145,7 @@ fn read_parameters(args: Vec<String>) -> GameConfig {
             "--size" => {
                 if let Some(value) = args.next() {
                     config.screen_w = u32::from_str_radix(&value, 10).expect("size musst be a number!");
+                    config.screen_h = 5 * config.screen_w / 8;
                 }
             }
 

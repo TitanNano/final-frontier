@@ -10,6 +10,7 @@ use sdl2::video::Window;
 
 use crate::audio;
 use crate::screen;
+use crate::GameConfig;
 
 include!("bindings.rs");
 
@@ -56,11 +57,14 @@ pub fn glu_init() {
     }
 }
 
-pub fn init_viewport_gl() {
+pub fn init_viewport_gl(config: &GameConfig) {
     let SCR_TEX_W =	512;
     let SCR_TEX_H = 256;
 
     unsafe {
+        screen_h = config.screen_h as i32;
+        screen_w = config.screen_w as i32;
+
         glDisable (GL_CULL_FACE);
         glShadeModel (GL_FLAT);
         glDisable (GL_DEPTH_TEST);
@@ -208,7 +212,7 @@ extern "C" fn Call_PlayMusic() {
     println!("entered play music handler!");
 
     let (reg0, reg1, reg2) = unsafe {
-        (GetReg(0) as u32, GetReg(1) as u32, GetReg(2) as u32)
+        (GetReg(0) as i32, GetReg(1) as i32, GetReg(2) as i32)
     };
 
     /* Playing mode in d0:
@@ -221,27 +225,27 @@ extern "C" fn Call_PlayMusic() {
 
     let mut enabled_tracks: usize = 0;
 
-    if reg1 & 0xff00_0000 != 0 {
+    if (reg1 as u32) & 0xff00_0000 != 0 {
         enabled_tracks |= 0x1;
     }
 
-    if reg1 & 0x00ff_0000 != 0 {
+    if (reg1 as u32) & 0x00ff_0000 != 0 {
         enabled_tracks |= 0x2;
     }
 
-    if reg1 & 0x0000_ff00 != 0 {
+    if (reg1 as u32) & 0x0000_ff00 != 0 {
         enabled_tracks |= 0x4;
     }
 
-    if reg1 & 0x0000_00ff != 0 {
+    if (reg1 as u32) & 0x0000_00ff != 0 {
         enabled_tracks |= 0x8;
     }
 
-    if reg2 & 0xff00_0000 != 0 {
+    if (reg2 as u32) & 0xff00_0000 != 0 {
         enabled_tracks |= 0x10;
     }
 
-    if reg2 & 0x00ff_0000 != 0 {
+    if (reg2 as u32) & 0x00ff_0000 != 0 {
         enabled_tracks |= 0x20;
     }
 
@@ -294,3 +298,7 @@ extern "C" fn Call_IsMusicPlaying() {
 extern "C" fn Nu_DrawScreen() {
     screen::nu_draw_screen();
 }
+
+// Keymap module C interface
+#[no_mangle]
+extern "C" fn Keymap_DebounceAllKeys() {}

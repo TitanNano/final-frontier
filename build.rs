@@ -13,7 +13,6 @@ fn main() {
         .object("src/screen.o")
         .object("src/input.o")
         .object("src/hostcall.o")
-        .object("src/keymap.o")
         .object("src/shortcut.o")
         .object("fe2.part1.o")
         .object("fe2.part2.o")
