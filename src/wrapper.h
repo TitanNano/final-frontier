@@ -88,3 +88,4 @@ extern void set_main_viewport();
 #include "screen.h"
 
 #include "input.h"
+#include "hostcall.h"

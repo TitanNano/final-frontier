@@ -124,6 +124,28 @@ pub fn c_Input_PressSTKey(st_scancode: usize, press: bool) {
     }
 }
 
+pub fn c_Call_DumpDebug() {
+    unsafe {
+        Call_DumpDebug()
+    }
+}
+
+pub fn c_get_renderer() -> &'static u32 {
+    unsafe {
+        &use_renderer
+    }
+}
+
+pub fn c_get_max_renderer() -> &'static u32 {
+    &RENDERERS_R_MAX
+}
+
+pub fn c_set_renderer(value: u32) {
+    unsafe {
+        use_renderer = value;
+    }
+}
+
 pub fn update_mouse_input(motion_x: isize, motion_y: isize, abs_x: usize, abs_y: usize) {
     unsafe {
         input.motion_x += motion_x as i32;
@@ -301,4 +323,12 @@ extern "C" fn Nu_DrawScreen() {
 
 // Keymap module C interface
 #[no_mangle]
-extern "C" fn Keymap_DebounceAllKeys() {}
+extern "C" fn Keymap_DebounceAllKeys() {
+    // empty dummy function
+}
+
+// Shortcut module C interface
+#[no_mangle]
+extern "C" fn ShortCut_CheckKeys() {
+    // empty dummy function
+}

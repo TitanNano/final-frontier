@@ -10,6 +10,7 @@ mod screen;
 mod keymap;
 mod audio;
 mod input;
+mod shortcut;
 
 use std::env;
 use std::process::exit;
@@ -186,7 +187,9 @@ fn main() {
 }
 
 pub fn event_handler() {
-    with_static_ref_option!([SDL_CONTEXT => sdl_context] {
+    with_static_ref_option! {
+        let sdl_context = { SDL_CONTEXT } or { println!("Main: SDL context not available yet!") };
+
         while let Some(event) = sdl_context.event_pump_mut().poll_event() {
             println!("handle sdl event {:?}", event);
 
@@ -221,7 +224,7 @@ pub fn event_handler() {
                         continue;
                     }
 
-                    keymap::key_down(keycode.unwrap(), scancode.unwrap(), keymod)
+                    keymap::key_down(keycode.unwrap(), scancode.unwrap(), keymod, sdl_context)
                 },
 
                 Event::KeyUp { keycode, scancode, keymod, .. } => {
@@ -237,9 +240,9 @@ pub fn event_handler() {
                 }
             }
         }
-    } or {
-        println!("Main: SDL context not available yet!");
-    });
+
+
+    };
 }
 
 pub fn idle() {

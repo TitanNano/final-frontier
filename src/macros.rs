@@ -15,7 +15,7 @@ macro_rules! with_static_ref_option {
         });
     };
 
-    (let $name:ident = { $source:expr } or $handle_none:block;$($block:stmt)*) => {
+    (let $name:ident = { $source:expr } or $handle_none:block;$($block:stmt);*) => {
         $source.with(|ref_cell| {
             let ref_pointer = &mut *ref_cell.borrow_mut();
 

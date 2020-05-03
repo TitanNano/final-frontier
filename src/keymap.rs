@@ -2,36 +2,20 @@ use sdl2::keyboard;
 use sdl2::keyboard::{ Keycode, Scancode };
 
 use crate::SdlContext;
+use crate::shortcut;
+use crate::shortcut::ShortcutKey;
 use crate::c_lib::{ c_Input_PressSTKey };
 
 pub fn init(_context: &SdlContext) {}
-
-struct ShortCutKey {
-    shift_pressed: bool,
-    key: Keycode,
-    ctrl_pressed: bool,
-}
-
-impl ShortCutKey {
-    fn new() -> Self {
-        Self {
-            shift_pressed: false,
-            key: Keycode::Escape,
-            ctrl_pressed: false,
-        }
-    }
-}
 
 /*-----------------------------------------------------------------------*/
 /*
 User press key down
 */
-pub fn key_down(keycode: Keycode, scancode: Scancode, keymod: sdl2::keyboard::Mod) {
+pub fn key_down(keycode: Keycode, scancode: Scancode, keymod: sdl2::keyboard::Mod, context: &mut SdlContext) {
     // BOOL bPreviousKeyState;
     // char STScanCode;
     // int symkey = sdlkey->sym; // keycode
-
-    let mut shortcut_key = ShortCutKey::new();
 
     println!("keydown: sym={} scan={} mod=${:x}", keycode, scancode, keymod);
 
@@ -43,8 +27,9 @@ pub fn key_down(keycode: Keycode, scancode: Scancode, keymod: sdl2::keyboard::Mo
         }
 
         Keycode::F11 | Keycode::F12 => {
-            shortcut_key.key = keycode;
-            return;
+            let shortcut = ShortcutKey::from(keycode);
+
+            return shortcut::keychecks(shortcut, context);
         },
 
         _ => {}
@@ -52,17 +37,17 @@ pub fn key_down(keycode: Keycode, scancode: Scancode, keymod: sdl2::keyboard::Mo
 
     /* If pressed short-cut key, retain keypress until safe to execute (start of VBL) */
     if keymod.contains(keyboard::Mod::MODEMOD) || keymod.contains(keyboard::Mod::RGUIMOD) || keymod.intersects(keyboard::Mod::LCTRLMOD|keyboard::Mod::RCTRLMOD) {
-        // ShortCutKey.Key = symkey;
+        let mut shortcut = ShortcutKey::from(keycode);
 
         if keymod.intersects(keyboard::Mod::LCTRLMOD|keyboard::Mod::RCTRLMOD) {
-            shortcut_key.ctrl_pressed = true;
+            shortcut.set_ctrl_pressed(true);
         }
 
         if keymod.intersects(keyboard::Mod::LSHIFTMOD|keyboard::Mod::RSHIFTMOD) {
-            shortcut_key.shift_pressed = true;
+            shortcut.set_shift_pressed(true);
         }
 
-        return;
+        return shortcut::keychecks(shortcut, context);
     }
 
     let st_scancode = remap_key_to_st_scancode(keycode, keymod);

@@ -26025,6 +26025,12 @@ extern "C" {
 extern "C" {
     pub fn Input_MouseRelease(button: ::std::os::raw::c_int);
 }
+extern "C" {
+    pub fn Call_DumpDebug();
+}
+extern "C" {
+    pub fn HCall_OpCode(opcode: u32) -> ::std::os::raw::c_ulong;
+}
 pub type __builtin_va_list = [__va_list_tag; 1usize];
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -3,9 +3,13 @@ use std::cell::RefCell;
 use sdl2::event::EventType;
 use sdl2::video::GLContext;
 use sdl2::video::Window;
+use sdl2::video::FullscreenType;
 
 use crate::{ SdlContext, GameConfig };
-use crate::c_lib::{ glu_init, init_viewport_gl, unsafe_nu_draw_screen };
+use crate::c_lib::{
+    glu_init, init_viewport_gl, unsafe_nu_draw_screen, c_get_renderer,
+    c_get_max_renderer, c_set_renderer
+};
 
 thread_local! {
     static SCREEN_CONTEXT: RefCell<Option<ScreenContext>> = RefCell::default();
@@ -72,4 +76,32 @@ pub fn build_rgb_palette(rgb_palette: &mut [u32], st_palette: &[u16], st_palette
 
 		rgb_palette[i] = 0xff00_0000 | (b<<16) | (g<<8) | (r);
 	}
+}
+
+pub fn toggle_fullscreen() {
+    with_static_ref_option! {
+        let context = { SCREEN_CONTEXT } or { println!("no screen context available!"); };
+        let current_state = context.window.fullscreen_state();
+
+        let new_state = match current_state {
+            FullscreenType::True => FullscreenType::Off,
+            FullscreenType::Desktop => FullscreenType::Off,
+            FullscreenType::Off => FullscreenType::Desktop,
+        };
+
+        context.window.set_fullscreen(new_state).expect("unable to set fullscreen")
+    };
+}
+
+pub fn toggle_renderer() {
+    let max_renderer = c_get_max_renderer();
+    let renderer = c_get_renderer();
+
+    let new_renderer = {
+        let new_renderer = renderer + 1;
+
+        if renderer >= max_renderer { 0 } else { new_renderer }
+    };
+
+    c_set_renderer(new_renderer);
 }
