@@ -12,8 +12,7 @@ default:
 
 fe2clean:
 	rm -f fe2.s.bin
-	rm -f fe2.part1.o
-	rm -f fe2.part2.o
+	rm -f fe2.s.o
 	rm -f fe2.s.c
 	rm -f frontier
 
@@ -24,11 +23,7 @@ fe2:
 
 fe2.s.bin: fe2.s
 	as68k/as68k --output-c fe2.s
-	# this bit can be optimised because it is lots of small functions
-	$(CC) -DPART1 -O1 -fomit-frame-pointer -Wall -Wno-unused -s `sdl-config --cflags` -c fe2.s.c -o fe2.part1.o
-	# this can't unless you have shitloads of memory and a meaty
-	# machine, because it is a huge stinking function.
-	$(CC) -DPART2 -O0 -fomit-frame-pointer -Wall -Wno-unused -s `sdl-config --cflags` -c fe2.s.c -o fe2.part2.o
+	$(CC) -DPART1 -DPART2 -O1 -fomit-frame-pointer -Wall -Wno-unused -s `sdl-config --cflags` -c fe2.s.c -o fe2.s.o
 
 clean:
 	$(MAKE) -C src/ clean

@@ -1,19 +1,18 @@
-
 SDLLIB = $(shell sdl2-config --libs) $(LIBS)
 SDLFLAGS = $(shell sdl2-config --cflags) -L/usr/X11R6/include
 
-SRCS = audio.c hostcall.c keymap.c main.c screen.c shortcut.c input.c lib_main.c
+SRCS = hostcall.c screen.c input.c
 
 OBJS = $(SRCS:.c=.o)
 
+THIS=Makefile
 LIBFLAGS += -lm
 
 .c.o:
 	$(CC) $(CFLAGS) $(INCFLAGS) $(SDLFLAGS) -c $<
 
-../frontier: $(OBJS)
-	$(CC) $(OBJS) $(FE2OBJS) $(SDLLIB) $(LIBFLAGS) -o ../frontier
-
+default:
+	make -f $(THIS) $(OBJS)
 clean:
 	rm -f *.o
 

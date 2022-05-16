@@ -31,6 +31,7 @@
 #include "input.h"
 #include "keymap.h"
 #include "shortcut.h"
+#include "rust.h"
 
 /*
   GEMDOS error codes, See 'The Atari Compendium' D.3
